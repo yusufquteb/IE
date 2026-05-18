@@ -31,6 +31,8 @@ import com.leinardi.android.speeddial.*;
 import com.my.iengineer1.camera.CameraMeasureActivity;
 import com.my.iengineer1.modules.roads.RoadsActivity;
 import com.my.iengineer1.modules.sanitation.SanitationActivity;
+import com.my.iengineer1.modules.cost.CostCalculatorActivity;
+import com.my.iengineer1.modules.converter.UnitConverterActivity;
 import java.io.*;
 import java.text.*;
 import java.util.*;
@@ -91,6 +93,16 @@ public class HomeListFragmentActivity extends Fragment {
 		map.put("text", "القياس بالكاميرا");
 		map.put("subtitle", "قياس وعد العناصر بالكاميرا");
 		map.put("icon", R.drawable.ic_add_action_white_24dp);
+		listmap.add(map);
+		map = new HashMap<>();
+		map.put("text", "حاسبة التكاليف");
+		map.put("subtitle", "تقدير تكلفة المشروع بأسعار السوق");
+		map.put("icon", R.drawable.icon_weight);
+		listmap.add(map);
+		map = new HashMap<>();
+		map.put("text", "محوّل الوحدات");
+		map.put("subtitle", "تحويل وحدات الطول والمساحة والحجم والوزن");
+		map.put("icon", R.drawable.ic_replace_white_24dp);
 		listmap.add(map);
 		recyclerview1.setAdapter(new Recyclerview1Adapter(listmap));
 		recyclerview1.setLayoutManager(new LinearLayoutManager(getActivity()));
@@ -158,6 +170,14 @@ public class HomeListFragmentActivity extends Fragment {
 						break;
 					case 4:
 						nav.setClass(getContext().getApplicationContext(), CameraMeasureActivity.class);
+						getActivity().startActivity(nav);
+						break;
+					case 5:
+						nav.setClass(getContext().getApplicationContext(), CostCalculatorActivity.class);
+						getActivity().startActivity(nav);
+						break;
+					case 6:
+						nav.setClass(getContext().getApplicationContext(), UnitConverterActivity.class);
 						getActivity().startActivity(nav);
 						break;
 				}

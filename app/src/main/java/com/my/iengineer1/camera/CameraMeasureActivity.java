@@ -15,27 +15,26 @@ import androidx.camera.lifecycle.ProcessCameraProvider;
 import androidx.camera.view.PreviewView;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
+import com.google.android.material.button.MaterialButton;
 import com.google.common.util.concurrent.ListenableFuture;
 import com.my.iengineer1.R;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-/**
- * Camera-based measurement and object counting activity.
- * Uses CameraX for live preview and ML Kit for object detection/counting.
- */
 public class CameraMeasureActivity extends AppCompatActivity {
 
     private static final int CAMERA_PERMISSION_REQUEST = 100;
-    private static final String[] REQUIRED_PERMISSIONS = {Manifest.permission.CAMERA};
+    private static final String MODE_MEASURE = "MEASURE";
+    private static final String MODE_COUNT   = "COUNT";
 
     private PreviewView previewView;
-    private TextView tvMeasureResult;
-    private TextView tvCountResult;
-    private TextView tvMode;
+    private TextView tvResult, tvMode, tvHint;
+    private MaterialButton btnToggle, btnCapture;
     private ExecutorService cameraExecutor;
-    private String currentMode = "MEASURE"; // MEASURE or COUNT
+    private EngineeringImageAnalyzer analyzer;
+    private String currentMode = MODE_MEASURE;
+    private String lastResult = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,102 +42,107 @@ public class CameraMeasureActivity extends AppCompatActivity {
         setContentView(R.layout.activity_camera_measure);
 
         previewView = findViewById(R.id.preview_view);
-        tvMeasureResult = findViewById(R.id.tv_measure_result);
-        tvCountResult = findViewById(R.id.tv_count_result);
-        tvMode = findViewById(R.id.tv_mode);
+        tvResult    = findViewById(R.id.tv_measure_result);
+        tvMode      = findViewById(R.id.tv_mode);
+        tvHint      = findViewById(R.id.tv_hint);
+        btnToggle   = findViewById(R.id.btn_toggle_mode);
+        btnCapture  = findViewById(R.id.btn_capture);
 
         cameraExecutor = Executors.newSingleThreadExecutor();
 
-        findViewById(R.id.btn_toggle_mode).setOnClickListener(v -> toggleMode());
-        findViewById(R.id.btn_capture).setOnClickListener(v -> captureResult());
+        btnToggle.setOnClickListener(v -> toggleMode());
+        btnCapture.setOnClickListener(v -> captureResult());
         findViewById(R.id.btn_back).setOnClickListener(v -> finish());
 
-        if (allPermissionsGranted()) {
+        updateModeUI();
+
+        if (ContextCompat.checkSelfPermission(this, Manifest.permission.CAMERA)
+                == PackageManager.PERMISSION_GRANTED) {
             startCamera();
         } else {
-            ActivityCompat.requestPermissions(this, REQUIRED_PERMISSIONS, CAMERA_PERMISSION_REQUEST);
+            ActivityCompat.requestPermissions(this,
+                    new String[]{Manifest.permission.CAMERA}, CAMERA_PERMISSION_REQUEST);
         }
     }
 
     private void toggleMode() {
-        if ("MEASURE".equals(currentMode)) {
-            currentMode = "COUNT";
-            tvMode.setText("وضع العد بالكاميرا");
+        currentMode = MODE_MEASURE.equals(currentMode) ? MODE_COUNT : MODE_MEASURE;
+        updateModeUI();
+        if (analyzer != null) analyzer.setMode(currentMode);
+        tvResult.setText("جارٍ التحليل...");
+    }
+
+    private void updateModeUI() {
+        if (MODE_MEASURE.equals(currentMode)) {
+            tvMode.setText("وضع القياس");
+            btnToggle.setText("تبديل → العد");
+            tvHint.setText("وجّه الكاميرا نحو العنصر الهندسي للحصول على قياسات تقديرية");
         } else {
-            currentMode = "MEASURE";
-            tvMode.setText("وضع القياس بالكاميرا");
+            tvMode.setText("وضع العد");
+            btnToggle.setText("تبديل → القياس");
+            tvHint.setText("وجّه الكاميرا نحو العناصر المتشابهة لعدّها تلقائياً");
         }
     }
 
     private void captureResult() {
-        String result = "MEASURE".equals(currentMode)
-                ? tvMeasureResult.getText().toString()
-                : tvCountResult.getText().toString();
-        Toast.makeText(this, "تم حفظ النتيجة: " + result, Toast.LENGTH_SHORT).show();
+        if (!lastResult.isEmpty()) {
+            Toast.makeText(this, "تم نسخ النتيجة", Toast.LENGTH_SHORT).show();
+            android.content.ClipboardManager cm =
+                    (android.content.ClipboardManager) getSystemService(CLIPBOARD_SERVICE);
+            cm.setPrimaryClip(android.content.ClipData.newPlainText("نتيجة iEngineer", lastResult));
+        } else {
+            Toast.makeText(this, "لا توجد نتيجة بعد", Toast.LENGTH_SHORT).show();
+        }
     }
 
     private void startCamera() {
-        ListenableFuture<ProcessCameraProvider> cameraProviderFuture =
+        ListenableFuture<ProcessCameraProvider> future =
                 ProcessCameraProvider.getInstance(this);
-
-        cameraProviderFuture.addListener(() -> {
+        future.addListener(() -> {
             try {
-                ProcessCameraProvider cameraProvider = cameraProviderFuture.get();
-                bindCameraUseCases(cameraProvider);
+                ProcessCameraProvider provider = future.get();
+                bindCamera(provider);
             } catch (ExecutionException | InterruptedException e) {
                 Toast.makeText(this, "خطأ في تشغيل الكاميرا", Toast.LENGTH_SHORT).show();
             }
         }, ContextCompat.getMainExecutor(this));
     }
 
-    private void bindCameraUseCases(ProcessCameraProvider cameraProvider) {
+    private void bindCamera(ProcessCameraProvider provider) {
         Preview preview = new Preview.Builder().build();
         preview.setSurfaceProvider(previewView.getSurfaceProvider());
 
-        ImageAnalysis imageAnalysis = new ImageAnalysis.Builder()
+        analyzer = new EngineeringImageAnalyzer(currentMode, (measureText, countText) ->
+                runOnUiThread(() -> {
+                    String result = measureText != null ? measureText : countText;
+                    if (result != null) {
+                        lastResult = result;
+                        tvResult.setText(result);
+                    }
+                }));
+
+        ImageAnalysis analysis = new ImageAnalysis.Builder()
                 .setBackpressureStrategy(ImageAnalysis.STRATEGY_KEEP_ONLY_LATEST)
                 .build();
-
-        imageAnalysis.setAnalyzer(cameraExecutor, new EngineeringImageAnalyzer(
-                currentMode,
-                (measureText, countText) -> runOnUiThread(() -> {
-                    if (measureText != null) tvMeasureResult.setText(measureText);
-                    if (countText != null) tvCountResult.setText(countText);
-                })
-        ));
-
-        CameraSelector cameraSelector = CameraSelector.DEFAULT_BACK_CAMERA;
+        analysis.setAnalyzer(cameraExecutor, analyzer);
 
         try {
-            cameraProvider.unbindAll();
-            cameraProvider.bindToLifecycle(this, cameraSelector, preview, imageAnalysis);
+            provider.unbindAll();
+            provider.bindToLifecycle(this, CameraSelector.DEFAULT_BACK_CAMERA, preview, analysis);
         } catch (Exception e) {
-            Toast.makeText(this, "فشل ربط الكاميرا", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "فشل تشغيل الكاميرا", Toast.LENGTH_SHORT).show();
         }
-    }
-
-    private boolean allPermissionsGranted() {
-        for (String permission : REQUIRED_PERMISSIONS) {
-            if (ContextCompat.checkSelfPermission(this, permission)
-                    != PackageManager.PERMISSION_GRANTED) {
-                return false;
-            }
-        }
-        return true;
     }
 
     @Override
-    public void onRequestPermissionsResult(int requestCode,
-                                           @NonNull String[] permissions,
-                                           @NonNull int[] grantResults) {
-        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
-        if (requestCode == CAMERA_PERMISSION_REQUEST) {
-            if (allPermissionsGranted()) {
-                startCamera();
-            } else {
-                Toast.makeText(this, "يلزم منح إذن الكاميرا", Toast.LENGTH_SHORT).show();
-                finish();
-            }
+    public void onRequestPermissionsResult(int code, @NonNull String[] perms, @NonNull int[] results) {
+        super.onRequestPermissionsResult(code, perms, results);
+        if (code == CAMERA_PERMISSION_REQUEST && results.length > 0
+                && results[0] == PackageManager.PERMISSION_GRANTED) {
+            startCamera();
+        } else {
+            Toast.makeText(this, "يجب منح إذن الكاميرا", Toast.LENGTH_LONG).show();
+            finish();
         }
     }
 

@@ -1,7 +1,7 @@
 package com.my.iengineer1;
 
 import android.app.Application;
-import android.content.res.Configuration;
+import com.my.iengineer1.db.AppDatabase;
 
 public class SketchApplication extends Application {
 
@@ -11,14 +11,15 @@ public class SketchApplication extends Application {
     public void onCreate() {
         super.onCreate();
         instance = this;
+        // Warm up Room DB on background thread
+        new Thread(() -> AppDatabase.getInstance(this)).start();
     }
 
     public static SketchApplication getInstance() {
         return instance;
     }
 
-    @Override
-    public void onConfigurationChanged(Configuration newConfig) {
-        super.onConfigurationChanged(newConfig);
+    public static AppDatabase getDatabase() {
+        return AppDatabase.getInstance(instance);
     }
 }

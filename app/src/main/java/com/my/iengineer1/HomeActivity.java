@@ -1,121 +1,55 @@
 package com.my.iengineer1;
-import android.animation.*;
-import android.app.*;
-import android.content.*;
-import android.content.res.*;
-import android.graphics.*;
-import android.graphics.drawable.*;
-import android.media.*;
-import android.net.*;
-import android.os.*;
-import android.text.*;
-import android.text.style.*;
-import android.util.*;
-import android.view.*;
-import android.view.View.*;
-import android.view.animation.*;
-import android.webkit.*;
-import android.widget.*;
-import android.widget.LinearLayout;
-import androidx.annotation.*;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.coordinatorlayout.widget.CoordinatorLayout;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentStatePagerAdapter;
-import androidx.viewpager.widget.PagerAdapter;
-import androidx.viewpager.widget.ViewPager;
-import com.github.angads25.filepicker.*;
-import com.google.android.material.tabs.TabLayout;
-import com.leinardi.android.speeddial.*;
-import java.io.*;
-import java.text.*;
-import java.util.*;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.regex.*;
-import net.cachapa.expandablelayout.*;
-import org.json.*;
 
+import android.os.Bundle;
+import android.view.View;
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentActivity;
+import androidx.viewpager2.adapter.FragmentStateAdapter;
+import androidx.viewpager2.widget.ViewPager2;
+import com.google.android.material.tabs.TabLayout;
+import com.google.android.material.tabs.TabLayoutMediator;
 
 public class HomeActivity extends AppCompatActivity {
-	
-	private double tab_count = 0;
-	private double random = 0;
-	private HashMap<String, Object> map = new HashMap<>();
-	
-	private ArrayList<HashMap<String, Object>> listmap = new ArrayList<>();
-	
-	private TabLayout tablayout1;
-	private CoordinatorLayout linear1;
-	private LinearLayout linear2;
-	private ViewPager viewpager1;
-	
-	private FragFragmentAdapter frag;
-	
-	@Override
-	protected void onCreate(Bundle _savedInstanceState) {
-		super.onCreate(_savedInstanceState);
-		setContentView(R.layout.home);
-		initialize(_savedInstanceState);
-		initializeLogic();
-	}
-	
-	private void initialize(Bundle _savedInstanceState) {
-		tablayout1 = HomeActivity.this.findViewById(R.id.tablayout1);
-		linear1 = HomeActivity.this.findViewById(R.id.linear1);
-		linear2 = HomeActivity.this.findViewById(R.id.linear2);
-		viewpager1 = HomeActivity.this.findViewById(R.id.viewpager1);
-		frag = new FragFragmentAdapter(HomeActivity.this, getSupportFragmentManager());
-	}
-	
-	private void initializeLogic() {
-		tablayout1.setupWithViewPager(viewpager1);
-		frag.setTabCount(1);
-		viewpager1.setAdapter(frag);
-		viewpager1.setCurrentItem((int)0);
-		((PagerAdapter)viewpager1.getAdapter()).notifyDataSetChanged();
-		getWindow().getDecorView()
-		.setSystemUiVisibility(
-		View.SYSTEM_UI_FLAG_HIDE_NAVIGATION | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY
-		);
-	}
-	
-	public class FragFragmentAdapter extends FragmentStatePagerAdapter {
-		// This class is deprecated, you should migrate to ViewPager2:
-		// https://developer.android.com/reference/androidx/viewpager2/widget/ViewPager2
-		Context context;
-		int tabCount;
-		
-		public FragFragmentAdapter(Context context, FragmentManager manager) {
-			super(manager);
-			this.context = context;
-		}
-		
-		public void setTabCount(int tabCount) {
-			this.tabCount = tabCount;
-		}
-		
-		@Override
-		public int getCount() {
-			return tabCount;
-		}
-		
-		@Override
-		public CharSequence getPageTitle(int _position) {
-			if (_position == 0) return "الحصر الهندسي";
-			return "";
-		}
-		
-		
-		@Override
-		public Fragment getItem(int _position) {
-			if (String.valueOf(_position).equals(String.valueOf(0))) {
-				return new HomeListFragmentActivity();
-			}
-			return null; 
-		}
-		
-	}
-	
-}
+
+    private TabLayout tabLayout;
+    private ViewPager2 viewPager;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.home);
+
+        tabLayout = findViewById(R.id.tablayout1);
+        viewPager = findViewById(R.id.viewpager1);
+
+        HomePageAdapter adapter = new HomePageAdapter(this);
+        viewPager.setAdapter(adapter);
+
+        new TabLayoutMediator(tabLayout, viewPager, (tab, position) -> {
+            switch (position) {
+                case 0: tab.setText("الحصر الهندسي"); break;
+                case 1: tab.setText("المشاريع");       break;
+            }
+        }).attach();
+
+        // Hide system navigation bar
+        getWindow().getDecorView().setSystemUiVisibility(
+                View.SYSTEM_UI_FLAG_HIDE_NAVIGATION | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY);
+    }
+
+    // ── ViewPager2 Adapter ────────────────────────────────────────────────────
+    static class HomePageAdapter extends FragmentStateAdapter {
+        HomePageAdapter(FragmentActivity fa) { super(fa); }
+
+        @Override public int getItemCount() { return 2; }
+
+        @NonNull
+        @Override
+        public Fragment createFragment(int position) {
+            if (position == 1) return new ProjectsListFragment();
+            return new HomeListFragmentActivity();
+        }
+    }
+}
