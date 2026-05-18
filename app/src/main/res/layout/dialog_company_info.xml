@@ -1,0 +1,100 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+	android:padding="16dp">
+	<com.google.android.material.textfield.TextInputLayout
+		android:id="@+id/tilCompanyName"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="8dp"
+		style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+		app:hintEnabled="true">
+		<com.google.android.material.textfield.TextInputEditText
+			android:id="@+id/etCompanyName"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:textSize="12sp"
+			android:textColor="#000000"
+			android:hint="Company Name"
+			android:textColorHint="#607D8B"
+			android:imeOptions="actionNext"
+			android:gravity="start|top"
+			android:inputType="textCapWords"
+			android:focusable="true"
+			android:maxLines="1"
+			android:textDirection="locale"
+			android:fontFamily="@fonts/noto_sans_arabic" />
+	</com.google.android.material.textfield.TextInputLayout>
+	<com.google.android.material.textfield.TextInputLayout
+		android:id="@+id/tilAddress"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="8dp"
+		style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+		app:hintEnabled="true">
+		<com.google.android.material.textfield.TextInputEditText
+			android:id="@+id/etAddress"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:textSize="12sp"
+			android:textColor="#000000"
+			android:hint="Address"
+			android:textColorHint="#607D8B"
+			android:imeOptions="actionNext"
+			android:gravity="start|top"
+			android:inputType="textPostalAddress"
+			android:focusable="true"
+			android:maxLines="3"
+			android:textDirection="locale"
+			android:fontFamily="@fonts/noto_sans_arabic" />
+	</com.google.android.material.textfield.TextInputLayout>
+	<com.google.android.material.textfield.TextInputLayout
+		android:id="@+id/tilContact"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="8dp"
+		style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+		app:hintEnabled="true">
+		<com.google.android.material.textfield.TextInputEditText
+			android:id="@+id/etContact"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:textSize="12sp"
+			android:textColor="#000000"
+			android:hint="Contact Number"
+			android:textColorHint="#607D8B"
+			android:inputType="phone"
+			android:imeOptions="actionNext"
+			android:gravity="start|top"
+			android:focusable="true"
+			android:maxLines="1"
+			android:textDirection="locale"
+			android:fontFamily="@fonts/noto_sans_arabic" />
+	</com.google.android.material.textfield.TextInputLayout>
+	<com.google.android.material.textfield.TextInputLayout
+		android:id="@+id/tilPreparedBy"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+		app:hintEnabled="true">
+		<com.google.android.material.textfield.TextInputEditText
+			android:id="@+id/etPreparedBy"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:textSize="12sp"
+			android:textColor="#000000"
+			android:hint="Prepared By"
+			android:textColorHint="#607D8B"
+			android:imeOptions="actionDone"
+			android:gravity="start|top"
+			android:inputType="textCapWords"
+			android:focusable="true"
+			android:maxLines="1"
+			android:textDirection="locale"
+			android:fontFamily="@fonts/noto_sans_arabic" />
+	</com.google.android.material.textfield.TextInputLayout>
+</LinearLayout>

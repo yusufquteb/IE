@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+       android:id="@+id/btn_collection"
+       android:icon="@drawable/ic_live_help_white"
+       android:title="Help"
+       app:showAsAction="ifRoom"/>
+       
+    <item
+       android:id="@+id/btn_calendar"
+       android:icon="@drawable/ic_folder_open_white"
+       android:title="Open"
+       app:showAsAction="ifRoom"/>
+       
+    <item
+       android:id="@+id/btn_download"
+       android:icon="@drawable/ic_save_white"
+       android:title="Save"
+       app:showAsAction="ifRoom"/>          
+</menu>

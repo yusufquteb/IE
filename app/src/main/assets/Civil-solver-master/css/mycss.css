@@ -1,0 +1,319 @@
+
+
+body label{
+    font-family: 'Open Sans',
+    sans-serif;
+    font-size: 20px;
+    margin: 20px 10px;
+}
+ input{
+    border: none;
+   font-family: 'Open Sans',
+    sans-serif;
+    font-size: 18px;
+    padding: 10px;
+}
+.results{
+    padding-left: 13px;
+    color: #dd4b39;
+    
+}
+
+.contentt{
+    display: flex;
+    font-family: sans-serif;
+    padding: 10px 20px;
+}
+select{
+     border: none;
+     font-family: 'Lucida Sans',
+     'Lucida Sans Regular',
+     'Lucida Grande',
+     'Lucida Sans Unicode',
+     Geneva,
+     Verdana,
+     sans-serif;
+     font-size: 18px;
+     padding: 10px;
+}
+.findanswer{
+    padding: 20px;
+    background: rgb(9, 80, 9);
+    color: white;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2),
+    0 4px 20px 0 rgba(0, 0, 0, 0.19);
+    font-size: 17px;
+    position: fixed;
+    border-radius: 50px;
+    bottom: 30px;
+    border: 1px solid transparent;
+    right: 20px;
+    transition: 0.2s;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+.findanswer:hover{
+    color: rgb(3, 65, 3);
+    background: white;
+    border: 1.3px solid rgb(9, 80, 9);
+   
+}
+.tablink {
+    background-color: #ff6f5c;
+    color: rgb(75, 68, 68);
+    float: left;
+    border: none;
+    font-family: 'Open Sans',
+    sans-serif;
+   
+    transition: 0.2s;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 18px;
+    width: 33.33%;
+}
+.active,
+.tablink:hover {
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+
+    
+}
+.tablink1 {
+    background-color: #ff6f5c;
+    color: rgb(75, 68, 68);
+    float: left;
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+    transition: 0.2s;
+    outline: none;
+    height: 65px;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 18px;
+    width: 50%
+}
+
+.active,
+.tablink1:hover {
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+}
+.tabcontent {
+   box-shadow: 0 1px 10px 4px rgba(0, 0, 0, 0.39);
+    display: none;
+    padding: 100px 20px;
+    height: 100%;
+}
+    #Home,
+#Home1,
+#Home2 {
+    background: white;
+}
+        #News,
+    #News1,
+    #News2 {
+    background: rgb(255, 255, 255);
+}
+     #Contact, #Contact1 {
+     background: rgb(255, 255, 255);
+ }
+  
+  .walll{
+      padding: 10px;
+      margin-top: 12px;
+          margin-bottom: 18px;
+      border-radius: 10px;
+      border: 1.4px solid black;
+  }
+  .walll p{
+      font-size: 21px;
+      font-family: sans-serif;
+      color: #673AB7;
+      padding-left: 15px;
+      
+  }
+.tabcontent h2 {
+    font-family: sans-serif;
+    font-size: 28px;
+    color: #dd4b39;
+}
+/* brick , circular, rectangle */
+  .accordion {
+      background-color: white;
+      color: black;
+      cursor: pointer;
+      padding: 18px;
+      border-radius: 5px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      transition: 0.5s;
+      font-family: 'Open Sans',
+      sans-serif;
+      font-size: 17px;
+      
+  }
+
+  .active,
+  .accordion:hover {
+      background-color: black;
+      color: white;
+      padding-left: 35px;
+      letter-spacing: 0.7px;
+      
+  }
+
+  .panel {
+      padding: 0 18px;
+      display: none;
+    transition:  all 0.5s;
+      background-color: white;
+      
+  }
+
+  .areac{
+      padding: 15px;
+      border: 1.3px solid #4CAF50;
+      border-radius: 4px;
+      margin-top: 7px;
+  }
+
+  .areac h3{
+      color: #dd4b39;
+  }
+
+  .allclass{
+      padding: 10px;
+  }
+
+  .loadscreate{
+      padding: 10px;
+      background: #dd4b39;
+      font-family: sans-serif;
+      font-weight: 300;
+      color: white;
+      font-size: 18px;
+     cursor: pointer;
+     width: fit-content;
+     border-radius: 5px;
+
+      
+  }
+
+  .loadscreate:hover{
+       box-shadow: 0 1px 7px 4px rgba(0, 0, 0, 0.267);
+  }
+
+          #formm,
+      {
+      padding: 10px 20px;
+      border-left: 1.3px solid black;
+      margin-top: 13px;
+  }
+ #formm2 {
+     padding: 10px 20px;
+     border-left: 1.3px solid black;
+     margin-top: 13px;
+ }
+              #formm3 #formm4 #formm5 #formm6 {
+      padding: 10px 20px;
+      border-left: 1.3px solid black;
+      margin-top: 13px;
+  }
+ #formm33 {
+     padding: 10px 20px;
+     border-left: 1.3px solid black;
+     margin-top: 13px;
+ }
+  
+
+              #loadyes,
+          #loadyes4,
+          #loadyes5,
+              #loadyes6,
+          #loadyes66,
+          #loadyes331,
+          #loadyes61
+          ,
+          #loadyescn {
+          WIDTH: fit-content;
+          padding: 5px;
+          background: rgb(9, 80, 9);
+           margin: 10px;
+          color: white;
+          border-radius: 5px;
+          font-size: 27px;
+  }
+              #loadyes:hover,
+          #loadyes4:hover,
+          #loadyes5:hover,
+              #loadyes6:hover,
+          #loadyes66:hover,
+          #loadyes331:hover,
+          #loadyes61:hover,
+          #loadyescn:hover {
+      box-shadow: 0 1px 7px 4px rgba(0, 0, 0, 0.267);
+  }
+  #loadyes2 {
+      WIDTH: fit-content;
+      padding: 5px;
+      background: rgb(9, 80, 9);
+      margin: 10px;
+      color: white;
+      border-radius: 5px;
+      font-size: 27px;
+  }
+
+  #loadyes2:hover {
+      box-shadow: 0 1px 7px 4px rgba(0, 0, 0, 0.267);
+  }
+   #loadyes3 {
+       WIDTH: fit-content;
+       padding: 5px;
+       background: rgb(9, 80, 9);
+       margin: 10px;
+       color: white;
+       border-radius: 5px;
+       font-size: 27px;
+   }
+
+   #loadyes3:hover {
+       box-shadow: 0 1px 7px 4px rgba(0, 0, 0, 0.267);
+   }
+    #loadyes33 {
+        WIDTH: fit-content;
+        padding: 5px;
+        background: rgb(9, 80, 9);
+        margin: 10px;
+        color: white;
+        border-radius: 5px;
+        font-size: 27px;
+    }
+
+    #loadyes33:hover {
+        box-shadow: 0 1px 7px 4px rgba(0, 0, 0, 0.267);
+    }
+  
+h4{
+    
+    font-family: sans-serif;
+    font-size: 24px;
+    letter-spacing: 2px;
+    font-weight: 200;
+}
+
+.note{
+    font-family: 'Open Sans',
+    sans-serif;
+    font-size: 22px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    border: 1px solid black;
+    padding: 10px 10px;
+    
+    margin-top: 13px;
+}
+

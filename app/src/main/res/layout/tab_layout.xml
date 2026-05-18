@@ -1,0 +1,55 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:theme="@style/AppTheme">
+	<com.google.android.material.tabs.TabLayout
+		android:id="@+id/tablayout1"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		app:tabGravity="fill"
+		app:tabMode="fixed" />
+	<androidx.coordinatorlayout.widget.CoordinatorLayout
+		android:id="@+id/linear1"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_weight="1">
+		<LinearLayout
+			android:id="@+id/linear2"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_marginBottom="60dp"
+			android:background="?android:attr/colorBackground"
+			android:orientation="vertical"
+			android:layout_weight="1">
+			<androidx.viewpager.widget.ViewPager
+				android:id="@+id/viewpager1"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:padding="4dp"
+				app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+		</LinearLayout>
+		<com.google.android.material.floatingactionbutton.FloatingActionButton
+			android:id="@+id/fab"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="40dp"
+			style="@style/Widget.Material3.FloatingActionButton.DayNight"
+			app:srcCompat="@drawable/add2"
+			app:layout_anchor="@id/bottomAppBar"
+			app:elevation="8dp" />
+		<com.google.android.material.bottomappbar.BottomAppBar
+			android:id="@+id/bottomAppBar"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="30dp"
+			android:layout_gravity="bottom"
+			android:backgroundTint="?attr/colorSurface"
+			app:fabCradleMargin="8dp"
+			app:fabCradleRoundedCornerRadius="8dp"
+			app:menu="@menu/bottom_menu" />
+	</androidx.coordinatorlayout.widget.CoordinatorLayout>
+</LinearLayout>

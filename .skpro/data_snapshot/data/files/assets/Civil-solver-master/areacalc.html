@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Civil engineering</title>
+    <link rel="stylesheet" href="css/mycss.css">
+    <script src="js/areaC.js"></script>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <center>
+        <h1>Area calculator</h1>
+    </center>
+
+
+
+    <div class="allclass">
+
+
+
+    <button class="accordion">Square
+        <i class="fa fa-plus" style="float:right;" aria-hidden="true"></i>
+    </button>
+    <div class="panel">
+        <div class="areac row">
+            <div class="col-sm-6">
+<h3>Square</h3>
+<label>length of one side:</label>
+<input type="number" id="sqrIn" oninput="sqrans()" style="width:100px;border-bottom:1px solid black;">
+<br>
+<br>
+<input type="text" id="sqrOut" style="border-bottom:1px solid black;" placeholder="Area of square.." onfocus="sqrans()">
+            </div>
+            <div class="col-sm-6">
+                <center>
+                <img style="height:140px;margin:10px;" src="shapes/square.png" alt="">
+                </center>
+            </div>
+           
+    </div>
+    </div>
+    
+
+        <button class="accordion">Rectangle
+            
+            <i class="fa fa-plus" style="float:right;" aria-hidden="true"></i>
+        </button>
+        <div class="panel">
+            <div class="areac row">
+                <div class="col-sm-6">
+<h3>Rectangle</h3>
+<label>length of Rectangle:</label>
+<input type="number" id="recSo" oninput="recans()" style="width:100px;border-bottom:1px solid black;">
+<br>
+<label>Bredth of Rectangle:</label>
+<input type="number" id="recSb" oninput="recans()" style="width:100px;border-bottom:1px solid black;">
+<br>
+<br>
+<input type="text" id="recOut" style="border-bottom:1px solid black;" placeholder="Area of rectangle.." onfocus="recans()">
+                </div>
+                <div class="col-sm-6">
+                <center>
+                    <img style="height:125px;    margin:10px;
+    width: 200px;" src="shapes/square1.png" alt="">
+                </center>
+</div>
+                 </div>
+        </div>
+
+        <button class="accordion">Parallelogram
+            <i class="fa fa-plus" style="float:right;" aria-hidden="true"></i>
+        </button>
+        <div class="panel">
+            <div class="areac row">
+                <div class="col-sm-6">
+                    <h3>Parallelogram</h3>
+                    <label>Bredth of Parallelogram:</label>
+                    <input type="number" oninput="parans()" id="breP" style="width:100px;border-bottom:1px solid black;">
+                    <br>
+                    <label>Height of Parallelogram:</label>
+                    <input type="number" oninput="parans()" id="heiP" style="width:100px;border-bottom:1px solid black;">
+                    <br>
+                    <br>
+                    <input type="text" id="parOut" style="border-bottom:1px solid black;" placeholder="Area of Parallelogram.." onfocus="parans()">
+                </div>
+                <div class="col-sm-6">
+                    <center>
+                        <img style="height:140px" src="shapes/square2.png" alt="">
+                    </center>
+                </div>
+                </div>
+        </div>
+
+        <button class="accordion">Trapezoid
+            <i class="fa fa-plus" style="float:right;" aria-hidden="true"></i>
+        </button>
+        <div class="panel">
+            <div class="areac row">
+                <div class="col-sm-6">
+                    <h3>Trapezoid</h3>
+                    <label>Bredth (a) of a side:</label>
+                    <input type="number" oninput="traans()" id="breT" style="width:100px;border-bottom:1px solid black;">
+                    <br>
+                    <label>Bredth (b) of a side:</label>
+                    <input type="number" oninput="traans()" id="breTT" style="width:100px;border-bottom:1px solid black;">
+                    <br>
+                    <label>Height of Trapezoid:</label>
+                    <input type="number" oninput="traans()" id="heiT" style="width:100px;border-bottom:1px solid black;">
+                    <br>
+                    <br>
+                    <input type="text" id="traOut" style="border-bottom:1px solid black;" placeholder="Area of Trapezoid.." onfocus="traans()">
+                </div>
+                <div class="col-sm-6">
+                    <center>
+                        <img style="height:140px" src="shapes/square3.png" alt="">
+                    </center>
+                </div>
+                 </div>
+        </div>
+
+<button class="accordion">Circle
+    <i class="fa fa-plus" style="float:right;" aria-hidden="true"></i>
+</button>
+<div class="panel">
+    <div class="areac row">
+        <div class="col-sm-6">
+            <h3>Circle</h3>
+            <label>Radius (r) of the circle:</label>
+            <input type="number" oninput="cirans()" id="cirR" style="width:100px;border-bottom:1px solid black;">
+            <br>
+            <br>
+            <input type="text" id="cirOut" style="border-bottom:1px solid black;" placeholder="Area of Circle.." onfocus="cirans()">
+        </div>
+        <div class="col-sm-6">
+            <center>
+                <img style="height:140px;margin: 10px;" src="shapes/square4.png" alt="">
+            </center>
+        </div>
+        </div>
+</div>
+
+<button class="accordion">Ellipse
+    <i class="fa fa-plus" style="float:right;" aria-hidden="true"></i>
+</button>
+<div class="panel">
+    <div class="areac row">
+        <div class="col-sm-6">
+            <h3>Ellipse</h3>
+            <label>Radius (r1) of the Ellipse:</label>
+            <input type="number" oninput="ellans()" id="elR1" style="width:100px;border-bottom:1px solid black;">
+            <br>
+            <label>Radius (r2) of the Ellipse:</label>
+            <input type="number" oninput="ellans()" id="elR2" style="width:100px;border-bottom:1px solid black;">
+            <br>
+            <br>
+            <input type="text" id="ellOut" style="border-bottom:1px solid black;" placeholder="Area of Ellipse.." onfocus="ellans()">
+        </div>
+        <div class="col-sm-6">
+            <center>
+                <img style="height:140px" src="shapes/square5.png" alt="">
+            </center>
+        </div>
+        </div>
+</div>
+
+<button class="accordion">Triangle
+    <i class="fa fa-plus" style="float:right;" aria-hidden="true"></i>
+</button>
+<div class="panel">
+    <div class="areac row">
+        <div class="col-sm-6">
+            <h3>Triangle</h3>
+            <label>Bredth (b) of triangle:</label>
+            <input type="number" id="breTrg" oninput="trglans()" style="width:100px;border-bottom:1px solid black;">
+            <br>
+            <label>Height (h) of triangle:</label>
+            <input type="number" id="heiTrg" oninput="trglans()" style="width:100px;border-bottom:1px solid black;">
+            <br>
+            <br>
+            <input type="text" style="border-bottom:1px solid black;" placeholder="Area of Triangle.." id="trglOut" onfocus="trglans()">
+            <br>
+            <br>
+            <h3>Equilateral Triangle</h3>
+            <label>Length (a) of one side:</label>
+            <input type="number" id="sidTrg" oninput="Etrglans()" style="width:100px;border-bottom:1px solid black;">
+            <br>
+            
+            <br>
+            <input type="text" style="border-bottom:1px solid black;"  placeholder="Area of Triangle.." id="EtrglOut"  onfocus="Etrglans()">
+        </div>
+        <div class="col-sm-6">
+            <center>
+                <img style="height:140px;margin: 10px" src="shapes/square6.png" alt="">
+            </center>
+        </div>
+        </div>
+</div>
+
+
+    </div>
+
+
+</body>
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+                panel.style.display = "none";
+            } else {
+                panel.style.display = "block";
+            }
+        });
+    }
+</script>
