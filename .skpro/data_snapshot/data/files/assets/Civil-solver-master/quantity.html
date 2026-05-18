@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Civil engineering</title>
+    <link rel="stylesheet" href="css/mycss.css">
+    <script src="js/quantity.js"></script>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body onload='hideTotal()' style="padding: 17px;">
+   <center> <h1>Quantity calculator</h1></center>
+<button class="tablink" onclick="openPage('Home', this, 'white')" id="defaultOpen">Brick</button>
+<button class="tablink" onclick="openPage('News', this, 'white')">Tile</button>
+<button class="tablink" onclick="openPage('Contact', this, 'white')">Concrete</button>
+
+
+    <div id="Home" class="tabcontent">
+
+
+
+        <button class="accordion">Wall<i class="fa fa-plus" style="float:right;" aria-hidden="true"></i></button>
+        <div class="panel">
+
+            <div class="walll">
+                <div class="findanswer" data-toggle="modal" data-target="#myModal" onclick="findall()">Result</div>
+                <p>Wall</p>
+                <h2>1. Brick</h2>
+                
+                <label>Size of brick (in cm) l*b*h:</label>
+
+                <input type="number" style="width:100px;border-bottom:1px solid black;" id="lofbri" value="19">
+
+                <input type="number" style="width:100px;border-bottom:1px solid black;" id="wofbri" value="9">
+
+                <input type="number" style="width:100px;border-bottom:1px solid black;" id="hofbri" value="9">
+                <br>
+                <label>Length, width and height of the wall:</label>
+                <input style="border-bottom:1px solid black;width:100px;" type="number" id="lengthofwall">
+
+                <input style="border-bottom:1px solid black;width:100px;" type="number" id="widthhofwall">
+
+                <input style="border-bottom:1px solid black;width:100px;" type="number" id="heightofwall">
+                <br>
+<label>Mortar thickness (in cm)</label>
+<input style="border-bottom:1px solid black;" type="number" id="mortarthick" value="1">
+<br>
+            </div>
+            
+            
+
+            <label>Area of the Brick work:</label>
+            <input style="border-bottom:1px solid black;" type="text" id="areaofwall" onfocus="findarea()">
+            <br>
+
+            <label>Brick work volume:</label>
+            <input style="border-bottom:1px solid black;" type="text" id="volumee" onfocus="findvolume()">
+            <br>
+            <label>Volume of 1 brick with mortar:</label>
+            <input type="text" style="border-bottom:1px solid black;" id="volof1" onfocus="volonebr()">
+            <br>
+            <label>No: of bricks required for 1 m³:</label>
+            <input type="text" id="nobrireq" style="border-bottom:1px solid black;" onfocus="reqnumb()">
+            <br>
+            <label>Volume of one brick without mortar:</label>
+            <input type="text" id="volwithmor" style="border-bottom:1px solid black;" onfocus="volwimor()">
+            <br>
+            <label>Volume of
+                <label id="noss" style="color: red;"></label> bricks without mortar:</label>
+            <input type="text" id="volwnosss" style="border-bottom:1px solid black;" onfocus="volwnos()">
+            <br>
+            <br>
+            <h2>2. Cement</h2>
+            <label>Required amount of cement mortar (in Wet condition):</label>
+            <input type="text" style="border-bottom:1px solid black;" id="reqamd" onfocus="reqamdm()">
+            <br>
+            <label>Required amount of cement mortar (in dry condition):</label>
+            <input type="text" style="border-bottom:1px solid black;" id="reqamdr" onfocus="reqamdry()">
+            <br>
+            <label>Mortar ratio</label>
+            <input style="width:100px;border-bottom:1px solid black;" type="number" value="1" id="ratio1">
+            <label>:</label>
+            <input style="width:100px;border-bottom:1px solid black;" type="number" value="6" id="ratio2">
+            <br>
+            <label>Required amount of cement quantity in brick work:</label>
+            <input type="text" style="border-bottom:1px solid black;" id="amdcmqnty" onfocus="amdcmqntyv()">
+            <br>
+            <label>No: of cement bag required:</label>
+            <input type="text" style="border-bottom:1px solid black;" id="cementbagr" onfocus="cementbag()">
+            <br>
+            <br>
+            <h2>3. Sand</h2>
+            <label>Required amount of sand quantity in brick work:</label>
+            <input type="text" style="border-bottom:1px solid black;" id="sandq" onfocus="sandqntty()">
+            <br>
+        </div>
+
+        <button class="accordion">Circular tank<i class="fa fa-plus" style="float:right;" aria-hidden="true"></i></button>
+        <div class="panel">
+            <div class="walll">
+                <div class="findanswer" data-toggle="modal" data-target="#myModal" onclick="findallTank()">Result</div>
+
+
+                <p>Circular tank</p>
+                <h2>1. Brick</h2>
+                <br>
+                <label>Size of brick (in cm) l*b*h:</label>
+
+                <input type="number" style="width:100px;border-bottom:1px solid black;" id="lofbriT" value="19">
+
+                <input type="number" style="width:100px;border-bottom:1px solid black;" id="wofbriT" value="9">
+
+                <input type="number" style="width:100px;border-bottom:1px solid black;" id="hofbriT" value="9">
+                <br>
+                
+                <label>Outer area:</label>
+                <input type="number" style="width:100px;border-bottom:1px solid black;" id="outD">
+                <br>
+                <label>Inner area:</label>
+                <input type="number" style="width:100px;border-bottom:1px solid black;" id="innD">
+                <br>
+                <label>Height of the tank:</label>
+                <input style="border-bottom:1px solid black;width:100px;" type="number" id="heightofTank">
+                <br>
+                <label>Mortar thickness (in cm)</label>
+                <input style="border-bottom:1px solid black;" type="number" id="mortarthickT" value="1">
+                <br>
+
+            </div>
+<label>Area of brick work:</label>
+<input style="border-bottom:1px solid black;" type="text" onfocus="areaofCt()" id="areaoftank">
+
+<br>
+            <!--  -->
+            
+
+
+
+            <label>Brick work volume:</label>
+            <input style="border-bottom:1px solid black;" type="text" id="volumeeT" onfocus="findvolumeT()">
+            <br>
+            <label>Volume of 1 brick with mortar:</label>
+            <input type="text" style="border-bottom:1px solid black;" id="volof1T" onfocus="volonebrT()">
+            <br>
+            <label>No: of bricks required for 1 m³:</label>
+            <input type="text" id="nobrireqT" style="border-bottom:1px solid black;" onfocus="reqnumbT()">
+            <br>
+            <label>Volume of one brick without mortar:</label>
+            <input type="text" id="volwithmorT" style="border-bottom:1px solid black;" onfocus="volwimorT()">
+            <br>
+            <label>Volume of
+                <label id="nossT" style="color: red;"></label> bricks without mortar:</label>
+            <input type="text" id="volwnosssT" style="border-bottom:1px solid black;" onfocus="volwnosT()">
+            <br>
+            <br>
+            <h2>2. Cement</h2>
+            <label>Required amount of cement mortar (in Wet condition):</label>
+            <input type="text" style="border-bottom:1px solid black;" id="reqamdT" onfocus="reqamdmT()">
+            <br>
+            <label>Required amount of cement mortar (in dry condition):</label>
+            <input type="text" style="border-bottom:1px solid black;" id="reqamdrT" onfocus="reqamdryT()">
+            <br>
+            <label>Mortar ratio</label>
+            <input style="width:100px;border-bottom:1px solid black;" type="number" value="1" id="ratio1T">
+            <label>:</label>
+            <input style="width:100px;border-bottom:1px solid black;" type="number" value="6" id="ratio2T">
+            <br>
+            <label>Required amount of cement quantity in brick work:</label>
+            <input type="text" style="border-bottom:1px solid black;" id="amdcmqntyT" onfocus="amdcmqntyvT()">
+            <br>
+            <label>No: of cement bag required:</label>
+            <input type="text" style="border-bottom:1px solid black;" id="cementbagrT" onfocus="cementbagT()">
+            <br>
+            <br>
+            <h2>3. Sand</h2>
+            <label>Required amount of sand quantity in brick work:</label>
+            <input type="text" style="border-bottom:1px solid black;" id="sandqT" onfocus="sandqnttyT()">
+            <br>
+
+        </div>
+
+
+        <button class="accordion">Rectangular tank<i class="fa fa-plus" style="float:right;" aria-hidden="true"></i></button>
+        <div class="panel">
+
+            <div class="walll">
+                <div class="findanswer" data-toggle="modal" data-target="#myModal" onclick="findallTankR()">Result</div>
+
+
+                <p>Rectangular tank</p>
+                <h2>1. Brick</h2>
+                <br>
+                <label>Size of brick (in cm) l*b*h:</label>
+
+                <input type="number" style="width:100px;border-bottom:1px solid black;" id="lofbriR" value="19">
+
+                <input type="number" style="width:100px;border-bottom:1px solid black;" id="wofbriR" value="9">
+
+                <input type="number" style="width:100px;border-bottom:1px solid black;" id="hofbriR" value="9">
+                <br>
+                
+                <label>Outer Dimentions:</label>
+                <input type="number" style="width:100px;border-bottom:1px solid black;" id="outDR">
+                <input type="number" style="width:100px;border-bottom:1px solid black;" id="outDR1">
+                <br>
+                <label>Inner Dimentions:</label>
+                <input type="number" style="width:100px;border-bottom:1px solid black;" id="innDR">
+                <input type="number" style="width:100px;border-bottom:1px solid black;" id="innDR1">
+                <br>
+                <label>Height of the tank:</label>
+                <input style="border-bottom:1px solid black;width:100px;" type="number" id="heightofTankR">
+                <br>
+                <label>Mortar thickness (in cm)</label>
+                <input style="border-bottom:1px solid black;" type="number" id="mortarthickR" value="1">
+                <br>
+
+            </div>
+<label>Area of brick work:</label>
+<input style="border-bottom:1px solid black;" type="text" onfocus="areaofCtR()" id="areaoftankR">
+
+<br>
+            <!--  -->
+            
+
+
+
+            <label>Brick work volume:</label>
+            <input style="border-bottom:1px solid black;" type="text" id="volumeeR" onfocus="findvolumeR()">
+            <br>
+            <label>Volume of 1 brick with mortar:</label>
+            <input type="text" style="border-bottom:1px solid black;" id="volof1R" onfocus="volonebrR()">
+            <br>
+            <label>No: of bricks required for 1 m³:</label>
+            <input type="text" id="nobrireqR" style="border-bottom:1px solid black;" onfocus="reqnumbR()">
+            <br>
+            <label>Volume of one brick without mortar:</label>
+            <input type="text" id="volwithmorR" style="border-bottom:1px solid black;" onfocus="volwimorR()">
+            <br>
+            <label>Volume of
+                <label id="nossR" style="color: red;"></label> bricks without mortar:</label>
+            <input type="text" id="volwnosssR" style="border-bottom:1px solid black;" onfocus="volwnosR()">
+            <br>
+            <br>
+            <h2>2. Cement</h2>
+            <label>Required amount of cement mortar (in Wet condition):</label>
+            <input type="text" style="border-bottom:1px solid black;" id="reqamdR" onfocus="reqamdmR()">
+            <br>
+            <label>Required amount of cement mortar (in dry condition):</label>
+            <input type="text" style="border-bottom:1px solid black;" id="reqamdrR" onfocus="reqamdryR()">
+            <br>
+            <label>Mortar ratio</label>
+            <input style="width:100px;border-bottom:1px solid black;" type="number" value="1" id="ratio1R">
+            <label>:</label>
+            <input style="width:100px;border-bottom:1px solid black;" type="number" value="6" id="ratio2R">
+            <br>
+            <label>Required amount of cement quantity in brick work:</label>
+            <input type="text" style="border-bottom:1px solid black;" id="amdcmqntyR" onfocus="amdcmqntyvR()">
+            <br>
+            <label>No: of cement bag required:</label>
+            <input type="text" style="border-bottom:1px solid black;" id="cementbagrR" onfocus="cementbagR()">
+            <br>
+            <br>
+            <h2>3. Sand</h2>
+            <label>Required amount of sand quantity in brick work:</label>
+            <input type="text" style="border-bottom:1px solid black;" id="sandqR" onfocus="sandqnttyR()">
+            <br>
+
+
+        </div>
+
+
+
+
+
+    </div>
+
+
+    <div id="News" class="tabcontent">
+        <div class="findanswer" data-toggle="modal" data-target="#myModal" onclick="findallTile()">Result</div>
+
+
+        <div class="walll">
+            <label>length and breadth of the room:</label>
+            <input style="border-bottom:1px solid black;width:100px;" placeholder="length in m" type="number" id="lengthofroom">
+
+            <input style="border-bottom:1px solid black;width:100px;" placeholder="bredth in m" type="number" id="widthhofroom">
+            <br>
+            <label>Size of the tile (l * b):</label>
+            <input style="border-bottom:1px solid black;width:100px;" placeholder="in meter" type="number" id="lengthoftile">
+
+            <input style="border-bottom:1px solid black;width:100px;" type="number" placeholder="in meter" id="widthhoftile">
+            <br>
+
+            <label>Width of the door:</label>
+            <input style="border-bottom:1px solid black;" type="number" id="lengthofdoor" placeholder="in meter">
+
+            <br>
+            <label>Skirting tile height (in inches):</label>
+            <input style="border-bottom:1px solid black;" type="number" id="skirtuingt" placeholder="in meter" value="4">
+            <br>
+            <label>Wastage:</label>
+<input style="border-bottom:1px solid black;width:70px;" type="number" id="wastageT" placeholder="in meter" value="5">
+<label>
+    <b>%</b>
+</label>
+
+
+        </div>
+        <label>Area of the room:</label>
+        <input style="border-bottom:1px solid black;" type="text" id="areaofrr" onfocus="findroomarea()">
+        <br>
+        <label>Area of 1 tile:</label>
+        <input style="border-bottom:1px solid black;" type="text" id="areaoftilee" onfocus="findtilearea()">
+        <br>
+        <label>Perimeter of the room:</label>
+        <input style="border-bottom:1px solid black;" type="text" id="periofroom" onfocus="periofthroom()">
+        <br>
+        <label>Skirting tile area:</label>
+        <input style="border-bottom:1px solid black;" type="text" id="skrtile" onfocus="aktilearea()">
+        <br>
+        <label>Total area to be laid:</label>
+        <input style="border-bottom:1px solid black;" type="text" id="areatoLaid" onfocus="areatoLaaid()">
+        <br>
+<label>No: of tiles required:</label>
+<input style="border-bottom:1px solid black;" type="text" id="Reqtiles" onfocus="Reqtilred()">
+<br>
+
+
+    </div>
+
+
+    <div id="Contact" class="tabcontent">
+<div class="findanswer" data-toggle="modal" data-target="#myModal" onclick="findallconc()">Result</div>
+
+
+<div class="walll">
+   
+<label>Volume of concrete:</label>
+<input style="border-bottom:1px solid black;" placeholder="in cubic meter" type="number" id="volofconc">
+<br>
+<label>Select your congrete mix:</label>
+<select style="border-bottom:1px solid black;width:120px;" id="ratiosel" onchange="ratiomix()">
+    <option value="M-5">M-5</option>
+    <option value="M-7.5">M-7.5</option>
+    <option value="M-10">M-10</option>
+    <option value="M-15">M-15</option>
+    <option value="M-20" selected>M-20</option>
+    <option value="M-25">M-25</option>
+    <option value="M-30">M-30</option>
+    <option value="M-35">M-35</option>
+    <option value="M-40">M-40</option>
+    <option value="M-45">M-45</option>
+    <option value="M-50">M-50</option>
+    <option value="M-55">M-55</option>
+    <option value="M-60">M-60</option>
+    <option value="M-65">M-65</option>
+    <option value="M-70">M-70</option>
+    <option value="M-75">M-75</option>
+    <option value="M-80">M-80</option>
+
+</select>
+<br>
+<label>Ratio </label>
+<input style="border-bottom:1px solid black;width:100px;" type="number" id="ratioOne" value="1">
+<b>:</b>
+<input style="border-bottom:1px solid black;width:100px;" type="number" id="ratioTwo" value="1.5">
+<b>:</b>
+<input style="border-bottom:1px solid black;width:100px;" type="number" id="ratioThree" value="3">
+
+
+
+</div>
+
+<h2>1.Cement</h2>
+<label>Cement quantity:</label>
+<input style="border-bottom:1px solid black;" type="text" id="cemntqnty" onfocus="cementquntty()">
+<br>
+<label>No: of cement bags required:</label>
+<input style="border-bottom:1px solid black;" type="text" id="cemntbag" onfocus="cementbagy()">
+<br>
+<h2>2.Sand</h2>
+<label>Sand quantity:</label>
+<input style="border-bottom:1px solid black;" type="text" id="sandqntyu" onfocus="sandqntyuio()">
+<br>
+<h2>3.Coarse aggrigate</h2>
+<label>Coarse aggrigate quantity:</label>
+<input style="border-bottom:1px solid black;" type="text" id="qrseagg" onfocus="qrseaggrigate()">
+<br>
+<h2>4.Water</h2>
+<label>Water cement ratio:</label>
+<select style="border-bottom:1px solid black;width:100px;" type="number" id="waterratio" onchange="wateramd()">
+    <option value="0.40">0.40</option>
+<option selected value="0.45">0.45</option>
+<option value="0.50">0.50</option>
+<option value="0.55">0.55</option>
+<option value="0.65">0.60</option>
+</select>
+<br>
+
+<label>Amount of water:</label>
+<input style="border-bottom:1px solid black;" type="text" id="wateramount" onfocus="wateramd()">
+<br>
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    
+                    <h4 class="modal-title">Result</h4>
+                   
+                   
+                </div>
+                <div class="modal-body">
+                    <div id="bricks23" class="contentt">
+                    <h4>No: of bricks:</h4>
+                  <h4 class="results" id=result1></h4>
+                </div>
+                <div class="contentt" id="cementy">
+                    <h4>Cement:</h4>
+                    <h4 class="results" id=result2></h4>
+                </div>
+                <div class="contentt" id="tilesreqd">
+                    <h4>No of tiles required:</h4>
+                    <h4 class="results" id=result2.5></h4>
+                </div>
+                <div class="contentt" id="sanddf">
+                    <h4>Sand:</h4>
+                    <h4 class="results" id=result3></h4>
+                </div>
+                <div id="coarseaggvv" class="contentt">
+                    <h4>Coarse aggrigate:</h4>
+                    <h4 class="results" id=result4></h4>
+                </div>
+                <div id="watervvu" class="contentt">
+                    <h4>Water:</h4>
+                    <h4 class="results" id=result5></h4>
+                </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+</body>
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+                panel.style.display = "none";
+            } else {
+                panel.style.display = "block";
+            }
+        });
+    }
+</script>
+
+<script>
+    function openPage(pageName, elmnt, color, color2) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].style.backgroundColor = "";
+        }
+        document.getElementById(pageName).style.display = "block";
+        elmnt.style.backgroundColor = color;
+        elmnt.style.color = color2;
+
+
+
+    }
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+</script>
+
+</html>

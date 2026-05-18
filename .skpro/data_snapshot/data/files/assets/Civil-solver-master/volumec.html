@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Civil engineering</title>
+    <link rel="stylesheet" href="css/mycss.css">
+    <script src="js/volumc.js"></script>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <center>
+        <h1>Volume calculator</h1>
+    </center>
+
+    <div class="allclass">
+
+
+
+        <button class="accordion">Rectangular prism
+            <i class="fa fa-plus" style="float:right;" aria-hidden="true"></i>
+        </button>
+        <div class="panel">
+
+            <div class="areac row">
+                <div class="col-sm-6">
+                    <h3>Rectangular prism</h3>
+                    <label>length:</label>
+                    <input type="number" id="priL" oninput="prians()" style="width:100px;border-bottom:1px solid black;">
+                    <br>
+                    <label>Width:</label>
+                    <input type="number" id="priW" oninput="prians()" style="width:100px;border-bottom:1px solid black;">
+                    <br>
+                    <label>Height:</label>
+                    <input type="number" id="priH" oninput="prians()" style="width:100px;border-bottom:1px solid black;">
+                    <br>
+                    <br>
+                    <input type="text" id="priOut" style="border-bottom:1px solid black;" placeholder="Volume of rectangular pr..">
+                </div>
+                <div class="col-sm-6">
+                    <center>
+                        <img style="height:140px;margin:20px 10px;" src="shapes/Rprism.png" alt="">
+                    </center>
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <button class="accordion">Cube
+            <i class="fa fa-plus" style="float:right;" aria-hidden="true"></i>
+        </button>
+        <div class="panel">
+
+            <div class="areac row">
+                <div class="col-sm-6">
+                    <h3>Cube</h3>
+                    <label>length of any side:</label>
+                    <input type="number" id="sqrL" oninput="sqrans()" style="width:100px;border-bottom:1px solid black;">
+                    <br>
+
+                    <br>
+                    <input type="text" id="sqrOut" style="border-bottom:1px solid black;" placeholder="Volume of Cube..">
+                </div>
+                <div class="col-sm-6">
+                    <center>
+                        <img style="height:140px;margin:20px 10px;" src="shapes/cubR.png" alt="">
+                    </center>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+
+        <button class="accordion">Triangular prism
+            <i class="fa fa-plus" style="float:right;" aria-hidden="true"></i>
+        </button>
+        <div class="panel">
+
+            <div class="areac row">
+                <div class="col-sm-6">
+                    <h3>Triangular prism</h3>
+                    <label>length (l):</label>
+                    <input type="number" id="triL" oninput="trians()" style="width:100px;border-bottom:1px solid black;">
+                    <br>
+                    <label>Width (b):</label>
+                    <input type="number" id="triW" oninput="trians()" style="width:100px;border-bottom:1px solid black;">
+                    <br>
+                    <label>Height (h):</label>
+                    <input type="number" id="triH" oninput="trians()" style="width:100px;border-bottom:1px solid black;">
+                    <br>
+                    <br>
+                    <input type="text" id="triOut" style="border-bottom:1px solid black;" placeholder="Volume of Triangular pr..">
+                </div>
+                <div class="col-sm-6">
+                    <center>
+                        <img style="height:140px;margin:20px 0px;" src="shapes/triP.png" alt="">
+                    </center>
+                </div>
+
+            </div>
+        </div>
+
+
+        <button class="accordion">
+            Trapezoidal prism
+            <i class="fa fa-plus" style="float:right;" aria-hidden="true"></i>
+        </button>
+        <div class="panel">
+
+            <div class="areac row">
+                <div class="col-sm-6">
+                    <h3>Trapezoidal prism</h3>
+                    <label>length (l):</label>
+                    <input type="number" id="tpiL" oninput="tpians()" style="width:100px;border-bottom:1px solid black;">
+                    <br>
+                    <label>Width (a):</label>
+                    <input type="number" id="tpiW" oninput="tpians()" style="width:100px;border-bottom:1px solid black;">
+                    <br>
+                    <label>Width (b):</label>
+                    <input type="number" id="tpiWW" oninput="tpians()" style="width:100px;border-bottom:1px solid black;">
+                    <br>
+                    <label>Height (h):</label>
+                    <input type="number" id="tpiH" oninput="tpians()" style="width:100px;border-bottom:1px solid black;">
+                    <br>
+                    <br>
+                    <input type="text" id="tpiOut" style="border-bottom:1px solid black;" placeholder="Volume of Trapezoidal pr..">
+                </div>
+                <div class="col-sm-6">
+                    <center>
+                        <img style="height:140px;margin:20px 0px;" src="shapes/trapzP.png" alt="">
+                    </center>
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+        <button class="accordion">Hexagonal prism
+            <i class="fa fa-plus" style="float:right;" aria-hidden="true"></i>
+        </button>
+        <div class="panel">
+
+            <div class="areac row">
+                <div class="col-sm-6">
+                    <h3>Hexagonal prism</h3>
+                    <label>length of any side (b):</label>
+                    <input type="number" id="HriL" oninput="Hrians()" style="width:100px;border-bottom:1px solid black;">
+
+
+                    <br>
+                    <label>Height:</label>
+                    <input type="number" id="HriH" oninput="Hrians()" style="width:100px;border-bottom:1px solid black;">
+                    <br>
+                    <br>
+                    <input type="text" id="HriOut" style="border-bottom:1px solid black;" placeholder="Volume of Hexagonal pr..">
+                </div>
+                <div class="col-sm-6">
+                    <center>
+                        <img style="width: 150px;height:154px;margin:20px 10px;" src="shapes/hexP.png" alt="">
+                    </center>
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+        <button class="accordion">Sphere
+            <i class="fa fa-plus" style="float:right;" aria-hidden="true"></i>
+        </button>
+        <div class="panel">
+
+            <div class="areac row">
+                <div class="col-sm-6">
+                    <h3>Sphere</h3>
+                    <label>Radius (r):</label>
+                    <input type="number" id="Rsp" oninput="spans()" style="width:100px;border-bottom:1px solid black;">
+
+
+                    <br>
+
+                    <br>
+                    <input type="text" id="spOut" style="border-bottom:1px solid black;" placeholder="Volume of Sphere..">
+                </div>
+                <div class="col-sm-6">
+                    <center>
+                        <img style="height:154px;margin:20px 10px;" src="shapes/spP.png" alt="">
+                    </center>
+                </div>
+
+            </div>
+            <div class="areac row">
+                <div class="col-sm-6">
+                    <h3>Semi sphere</h3>
+                    <label>Radius (r):</label>
+                    <input type="number" id="Rspp" oninput="sppans()" style="width:100px;border-bottom:1px solid black;">
+
+
+                    <br>
+
+                    <br>
+                    <input type="text" id="sppOut" style="border-bottom:1px solid black;" placeholder="Volume of Semi sphere..">
+                </div>
+                <div class="col-sm-6">
+                    <center>
+                        <img style="height: 156px;
+    width: 161px;margin:20px 10px;" src="shapes/spPp.png" alt="">
+                    </center>
+                </div>
+
+            </div>
+
+
+        </div>
+
+<button class="accordion">Pentagon
+    <i class="fa fa-plus" style="float:right;" aria-hidden="true"></i>
+</button>
+<div class="panel">
+
+    <div class="areac row">
+        <div class="col-sm-6">
+            <h3>Pentagon</h3>
+            <label>Base length (b):</label>
+            <input type="number" id="penL" oninput="penans()" style="width:100px;border-bottom:1px solid black;">
+
+
+            <br>
+            <label>Hength (h):</label>
+            <input type="number" id="penHH" oninput="penans()" style="width:100px;border-bottom:1px solid black;">
+            
+            
+            <br>
+            <label>Center point to base edge center (a):</label>
+            <input type="number" id="penH" oninput="penans()" style="width:100px;border-bottom:1px solid black;">
+            <br>
+            <br>
+            <input type="text" id="penOut" style="border-bottom:1px solid black;" placeholder="Volume of Pentagon..">
+        </div>
+        <div class="col-sm-6">
+            <center>
+                <img style="width: 150px;margin:20px 10px;" src="shapes/pentag.png" alt="">
+            </center>
+        </div>
+
+    </div>
+
+
+</div>
+
+
+
+
+
+    </div>
+
+</body>
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+                panel.style.display = "none";
+            } else {
+                panel.style.display = "block";
+            }
+        });
+    }
+</script>

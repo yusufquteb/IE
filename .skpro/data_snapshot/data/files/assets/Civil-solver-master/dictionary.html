@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Civil Dictionary</title>
+   
+    
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+<link rel='stylesheet prefetch' href='http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css'>
+  
+<script src='https://code.jquery.com/jquery-1.12.4.js'></script>
+<script src='https://code.jquery.com/ui/1.12.1/jquery-ui.js'></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<style>
+ .ui-menu .ui-menu-item-wrapper{ 
+     text-transform: capitalize;
+ transition: all 0.5s;
+
+ font-family:'Open sans', sans-serif;
+ }
+ .ui-widget.ui-widget-content { border: 1px solid #000000; max-height: 500px; overflow-y: auto; padding: 0 6px;
+ }
+ .ui-menu .ui-menu-item-wrapper:hover{
+     background-color: black;
+     color: white;
+     border: none;
+     border-radius: 2px;
+     letter-spacing: 0.8px;
+     padding:4px 18px;
+ }
+    .dict{
+        padding: 8px;
+        margin: 20px auto;
+        width: 80%;
+       max-width:  500px;
+
+        height: 40px;
+        font-family: 'Open sans',
+  sans-serif;
+  font-size: 18px;
+box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+border-radius: 3px;
+border: none; 
+    }
+    h1{
+        letter-spacing: 1px;
+        font-weight: 100;
+    }
+    .outpp{
+        text-align: left;
+        font-family: 'Open sans',
+  sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+  margin: 15px 50px;
+
+    }
+   
+
+    @media screen and (max-width:794px){
+        .outpp{
+font-size: 22px;
+        }
+    }
+</style>
+
+<body>
+<center>
+    <h1>Civil dictionary</h1>
+    </center>
+<center>    <input class="dict" type="text" id="autocomplete" placeholder="search words here" oninput="changed()"  onChange="changed()" />
+    </center>
+    <div id="outp" class="outpp"></div>
+
+
+
+
+<script src="js/dict.js"></script>
+</body>

@@ -1,0 +1,900 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:theme="@style/AppTheme.DayNight">
+	<ScrollView
+		android:id="@+id/vscroll1"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:padding="8dp"
+		android:layout_weight="1"
+		android:scrollbars="vertical"
+		android:fadeScrollbars="false">
+		<TableLayout
+			android:id="@+id/table_layout1"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="16dp"
+			android:background="@drawable/table_background"
+			android:orientation="vertical"
+			android:stretchColumns="*"
+			android:elevation="2dp">
+			<TableRow
+				android:id="@+id/tableHeaderRow"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+				<TextView
+					android:id="@+id/headerItem"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Item"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					style="@style/TableHeaderStyle.DayNight" />
+				<TextView
+					android:id="@+id/headerUnit"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Unit"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					style="@style/TableHeaderStyle.DayNight" />
+				<TextView
+					android:id="@+id/headerUnitPrice"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Unit Price"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					style="@style/TableHeaderStyle.DayNight" />
+				<TextView
+					android:id="@+id/headerQuantity"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Quantity"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					style="@style/TableHeaderStyle.DayNight" />
+				<TextView
+					android:id="@+id/headerTotalPrice"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Total Price"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					style="@style/TableHeaderStyle.DayNight" />
+			</TableRow>
+			<TableRow
+				android:id="@+id/dataRow1"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+				<TextView
+					android:id="@+id/itemConcrete"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Concrete"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					style="@style/TableHeaderStyle.DayNight" />
+				<TextView
+					android:id="@+id/unitConcrete"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="m3"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					style="@style/TableHeaderStyle.DayNight" />
+				<EditText
+					android:id="@+id/unitPriceConcrete"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					android:hint="0.00"
+					android:textColorHint="#607D8B"
+					style="@style/TableEditTextStyle.DayNight" />
+				<EditText
+					android:id="@+id/quantityConcrete"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					android:hint="0.00"
+					android:textColorHint="#607D8B"
+					style="@style/TableEditTextStyle.DayNight" />
+				<TextView
+					android:id="@+id/totalPriceConcrete"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="0.00"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					style="@style/TableHeaderStyle.DayNight" />
+			</TableRow>
+			<TableRow
+				android:id="@+id/dataRow2"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+				<TextView
+					android:id="@+id/itemSteel"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Steel"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					style="@style/TableHeaderStyle.DayNight" />
+				<TextView
+					android:id="@+id/unitSteel"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="kg"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					style="@style/TableHeaderStyle.DayNight" />
+				<EditText
+					android:id="@+id/unitPriceSteel"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					android:hint="0.00"
+					android:textColorHint="#607D8B"
+					style="@style/TableEditTextStyle.DayNight" />
+				<EditText
+					android:id="@+id/quantitySteel"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					android:hint="0.00"
+					android:textColorHint="#607D8B"
+					style="@style/TableEditTextStyle.DayNight" />
+				<TextView
+					android:id="@+id/totalPriceSteel"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="0.00"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					style="@style/TableHeaderStyle.DayNight" />
+			</TableRow>
+			<TableRow
+				android:id="@+id/dataRow3"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+				<TextView
+					android:id="@+id/itemBrickwork"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Brickwork"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					style="@style/TableHeaderStyle.DayNight" />
+				<TextView
+					android:id="@+id/unitBrickwork"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="m2"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					style="@style/TableHeaderStyle.DayNight" />
+				<EditText
+					android:id="@+id/unitPriceBrickwork"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					android:hint="0.00"
+					android:textColorHint="#607D8B"
+					style="@style/TableEditTextStyle.DayNight" />
+				<EditText
+					android:id="@+id/quantityBrickwork"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					android:hint="0.00"
+					android:textColorHint="#607D8B"
+					style="@style/TableEditTextStyle.DayNight" />
+				<TextView
+					android:id="@+id/totalPriceBrickwork"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="0.00"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					style="@style/TableHeaderStyle.DayNight" />
+			</TableRow>
+			<TableRow
+				android:id="@+id/dataRow4"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+				<TextView
+					android:id="@+id/itemPlaster"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Plaster"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					style="@style/TableHeaderStyle.DayNight" />
+				<TextView
+					android:id="@+id/unitPlaster"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="m2"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					style="@style/TableHeaderStyle.DayNight" />
+				<EditText
+					android:id="@+id/unitPricePlaster"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					android:hint="0.00"
+					android:textColorHint="#607D8B"
+					style="@style/TableEditTextStyle.DayNight" />
+				<EditText
+					android:id="@+id/quantityPlaster"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					android:hint="0.00"
+					android:textColorHint="#607D8B"
+					style="@style/TableEditTextStyle.DayNight" />
+				<TextView
+					android:id="@+id/totalPricePlaster"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="0.00"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					style="@style/TableHeaderStyle.DayNight" />
+			</TableRow>
+			<TableRow
+				android:id="@+id/dataRow5"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+				<TextView
+					android:id="@+id/itemPainting"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Painting"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					style="@style/TableHeaderStyle.DayNight" />
+				<TextView
+					android:id="@+id/unitPainting"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="m2"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					style="@style/TableHeaderStyle.DayNight" />
+				<EditText
+					android:id="@+id/unitPricePainting"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					android:hint="0.00"
+					android:textColorHint="#607D8B"
+					style="@style/TableEditTextStyle.DayNight" />
+				<EditText
+					android:id="@+id/quantityPainting"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					android:hint="0.00"
+					android:textColorHint="#607D8B"
+					style="@style/TableEditTextStyle.DayNight" />
+				<TextView
+					android:id="@+id/totalPricePainting"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="0.00"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					style="@style/TableHeaderStyle.DayNight" />
+			</TableRow>
+			<TableRow
+				android:id="@+id/dataRow6"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+				<TextView
+					android:id="@+id/itemFlooring"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Flooring"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					style="@style/TableHeaderStyle.DayNight" />
+				<TextView
+					android:id="@+id/unitFlooring"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="m2"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					style="@style/TableHeaderStyle.DayNight" />
+				<EditText
+					android:id="@+id/unitPriceFlooring"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					android:hint="0.00"
+					android:textColorHint="#607D8B"
+					style="@style/TableEditTextStyle.DayNight" />
+				<EditText
+					android:id="@+id/quantityFlooring"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					android:hint="0.00"
+					android:textColorHint="#607D8B"
+					style="@style/TableEditTextStyle.DayNight" />
+				<TextView
+					android:id="@+id/totalPriceFlooring"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="0.00"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					style="@style/TableHeaderStyle.DayNight" />
+			</TableRow>
+			<TableRow
+				android:id="@+id/dataRow7"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+				<TextView
+					android:id="@+id/itemRoofing"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Roofing"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					style="@style/TableHeaderStyle.DayNight" />
+				<TextView
+					android:id="@+id/unitRoofing"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="m2"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					style="@style/TableHeaderStyle.DayNight" />
+				<EditText
+					android:id="@+id/unitPriceRoofing"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					android:hint="0.00"
+					android:textColorHint="#607D8B"
+					style="@style/TableEditTextStyle.DayNight" />
+				<EditText
+					android:id="@+id/quantityRoofing"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					android:hint="0.00"
+					android:textColorHint="#607D8B"
+					style="@style/TableEditTextStyle.DayNight" />
+				<TextView
+					android:id="@+id/totalPriceRoofing"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="0.00"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					style="@style/TableHeaderStyle.DayNight" />
+			</TableRow>
+			<TableRow
+				android:id="@+id/dataRow8"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+				<TextView
+					android:id="@+id/itemDoors"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Doors"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					style="@style/TableHeaderStyle.DayNight" />
+				<TextView
+					android:id="@+id/unitDoors"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="pcs"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					style="@style/TableHeaderStyle.DayNight" />
+				<EditText
+					android:id="@+id/unitPriceDoors"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					android:hint="0.00"
+					android:textColorHint="#607D8B"
+					style="@style/TableEditTextStyle.DayNight" />
+				<EditText
+					android:id="@+id/quantityDoors"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					android:hint="0.00"
+					android:textColorHint="#607D8B"
+					style="@style/TableEditTextStyle.DayNight" />
+				<TextView
+					android:id="@+id/totalPriceDoors"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="0.00"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					style="@style/TableHeaderStyle.DayNight" />
+			</TableRow>
+			<TableRow
+				android:id="@+id/dataRow9"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+				<TextView
+					android:id="@+id/itemWindows"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Windows"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					style="@style/TableHeaderStyle.DayNight" />
+				<TextView
+					android:id="@+id/unitWindows"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="pcs"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					style="@style/TableHeaderStyle.DayNight" />
+				<EditText
+					android:id="@+id/unitPriceWindows"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					android:hint="0.00"
+					android:textColorHint="#607D8B"
+					style="@style/TableEditTextStyle.DayNight" />
+				<EditText
+					android:id="@+id/quantityWindows"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					android:hint="0.00"
+					android:textColorHint="#607D8B"
+					style="@style/TableEditTextStyle.DayNight" />
+				<TextView
+					android:id="@+id/totalPriceWindows"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="0.00"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					style="@style/TableHeaderStyle.DayNight" />
+			</TableRow>
+			<TableRow
+				android:id="@+id/dataRow10"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+				<TextView
+					android:id="@+id/itemCeiling"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Ceiling"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					style="@style/TableHeaderStyle.DayNight" />
+				<TextView
+					android:id="@+id/unitCeiling"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="m2"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					style="@style/TableHeaderStyle.DayNight" />
+				<EditText
+					android:id="@+id/unitPriceCeiling"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					android:hint="0.00"
+					android:textColorHint="#607D8B"
+					style="@style/TableEditTextStyle.DayNight" />
+				<EditText
+					android:id="@+id/quantityCeiling"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					android:hint="0.00"
+					android:textColorHint="#607D8B"
+					style="@style/TableEditTextStyle.DayNight" />
+				<TextView
+					android:id="@+id/totalPriceCeiling"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="0.00"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					style="@style/TableHeaderStyle.DayNight" />
+			</TableRow>
+			<TableRow
+				android:id="@+id/dataRow11"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+				<TextView
+					android:id="@+id/itemElectricWork"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Electric Work"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					style="@style/TableHeaderStyle.DayNight" />
+				<TextView
+					android:id="@+id/unitElectricWork"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="points"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					style="@style/TableHeaderStyle.DayNight" />
+				<EditText
+					android:id="@+id/unitPriceElectricWork"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					android:hint="0.00"
+					android:textColorHint="#607D8B"
+					style="@style/TableEditTextStyle.DayNight" />
+				<EditText
+					android:id="@+id/quantityElectricWork"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					android:hint="0.00"
+					android:textColorHint="#607D8B"
+					style="@style/TableEditTextStyle.DayNight" />
+				<TextView
+					android:id="@+id/totalPriceElectricWork"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="0.00"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					style="@style/TableHeaderStyle.DayNight" />
+			</TableRow>
+			<TableRow
+				android:id="@+id/dataRow12"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+				<TextView
+					android:id="@+id/itemPlumbingWork"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Plumbing Work"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					style="@style/TableHeaderStyle.DayNight" />
+				<TextView
+					android:id="@+id/unitPlumbingWork"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="points"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					style="@style/TableHeaderStyle.DayNight" />
+				<EditText
+					android:id="@+id/unitPricePlumbingWork"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					android:hint="0.00"
+					android:textColorHint="#607D8B"
+					style="@style/TableEditTextStyle.DayNight" />
+				<EditText
+					android:id="@+id/quantityPlumbingWork"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					android:hint="0.00"
+					android:textColorHint="#607D8B"
+					style="@style/TableEditTextStyle.DayNight" />
+				<TextView
+					android:id="@+id/totalPricePlumbingWork"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="0.00"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					style="@style/TableHeaderStyle.DayNight" />
+			</TableRow>
+			<TableRow
+				android:id="@+id/dataRow13"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+				<TextView
+					android:id="@+id/itemTiles"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Tiles"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					style="@style/TableHeaderStyle.DayNight" />
+				<TextView
+					android:id="@+id/unitTiles"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="m2"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					style="@style/TableHeaderStyle.DayNight" />
+				<EditText
+					android:id="@+id/unitPriceTiles"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					android:hint="0.00"
+					android:textColorHint="#607D8B"
+					style="@style/TableEditTextStyle.DayNight" />
+				<EditText
+					android:id="@+id/quantityTiles"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					android:hint="0.00"
+					android:textColorHint="#607D8B"
+					style="@style/TableEditTextStyle.DayNight" />
+				<TextView
+					android:id="@+id/totalPriceTiles"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="0.00"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					style="@style/TableHeaderStyle.DayNight" />
+			</TableRow>
+			<TableRow
+				android:id="@+id/dataRow14"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+				<TextView
+					android:id="@+id/itemGlasswork"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Glasswork"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					style="@style/TableHeaderStyle.DayNight" />
+				<TextView
+					android:id="@+id/unitGlasswork"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="m2"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					style="@style/TableHeaderStyle.DayNight" />
+				<EditText
+					android:id="@+id/unitPriceGlasswork"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					android:hint="0.00"
+					android:textColorHint="#607D8B"
+					style="@style/TableEditTextStyle.DayNight" />
+				<EditText
+					android:id="@+id/quantityGlasswork"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					android:hint="0.00"
+					android:textColorHint="#607D8B"
+					style="@style/TableEditTextStyle.DayNight" />
+				<TextView
+					android:id="@+id/totalPriceGlasswork"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="0.00"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					style="@style/TableHeaderStyle.DayNight" />
+			</TableRow>
+			<TableRow
+				android:id="@+id/dataRow15"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+				<TextView
+					android:id="@+id/itemWoodwork"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Woodwork"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					style="@style/TableHeaderStyle.DayNight" />
+				<TextView
+					android:id="@+id/unitWoodwork"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="m3"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					style="@style/TableHeaderStyle.DayNight" />
+				<EditText
+					android:id="@+id/unitPriceWoodwork"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					android:hint="0.00"
+					android:textColorHint="#607D8B"
+					style="@style/TableEditTextStyle.DayNight" />
+				<EditText
+					android:id="@+id/quantityWoodwork"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					android:hint="0.00"
+					android:textColorHint="#607D8B"
+					style="@style/TableEditTextStyle.DayNight" />
+				<TextView
+					android:id="@+id/totalPriceWoodwork"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="0.00"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					style="@style/TableHeaderStyle.DayNight" />
+			</TableRow>
+			<TableRow
+				android:id="@+id/dataRow16"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+				<TextView
+					android:id="@+id/itemWaterproofing"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Waterproofing"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					style="@style/TableHeaderStyle.DayNight" />
+				<TextView
+					android:id="@+id/unitWaterproofing"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="m2"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					style="@style/TableHeaderStyle.DayNight" />
+				<EditText
+					android:id="@+id/unitPriceWaterproofing"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					android:hint="0.00"
+					android:textColorHint="#607D8B"
+					style="@style/TableEditTextStyle.DayNight" />
+				<EditText
+					android:id="@+id/quantityWaterproofing"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					android:hint="0.00"
+					android:textColorHint="#607D8B"
+					style="@style/TableEditTextStyle.DayNight" />
+				<TextView
+					android:id="@+id/totalPriceWaterproofing"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="0.00"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					style="@style/TableHeaderStyle.DayNight" />
+			</TableRow>
+			<TableRow
+				android:id="@+id/dataRow17"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+				<TextView
+					android:id="@+id/itemLandscaping"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Landscaping"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					style="@style/TableHeaderStyle.DayNight" />
+				<TextView
+					android:id="@+id/unitLandscaping"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="m2"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					style="@style/TableHeaderStyle.DayNight" />
+				<EditText
+					android:id="@+id/unitPriceLandscaping"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					android:hint="0.00"
+					android:textColorHint="#607D8B"
+					style="@style/TableEditTextStyle.DayNight" />
+				<EditText
+					android:id="@+id/quantityLandscaping"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					android:hint="0.00"
+					android:textColorHint="#607D8B"
+					style="@style/TableEditTextStyle.DayNight" />
+				<TextView
+					android:id="@+id/totalPriceLandscaping"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="0.00"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					style="@style/TableHeaderStyle.DayNight" />
+			</TableRow>
+			<TableRow
+				android:id="@+id/table_row15"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="8dp"
+				android:padding="12dp"
+				android:background="?attr/colorPrimary">
+				<TextView
+					android:id="@+id/textview8"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:gravity="center_horizontal|center_vertical"
+					android:text="Total Cost"
+					android:textSize="18sp"
+					android:textStyle="bold"
+					android:layout_weight="3"
+					android:textColor="?attr/colorOnPrimary" />
+				<TextView
+					android:id="@+id/grandTotal"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:gravity="center_horizontal|center_vertical"
+					android:text="0.00"
+					android:textSize="18sp"
+					android:textStyle="bold"
+					android:layout_weight="2"
+					android:textColor="?attr/colorOnPrimary" />
+			</TableRow>
+		</TableLayout>
+	</ScrollView>
+</LinearLayout>
