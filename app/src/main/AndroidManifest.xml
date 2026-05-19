@@ -111,6 +111,13 @@
 			android:screenOrientation="portrait"
 			android:windowSoftInputMode="stateHidden|adjustResize"
 			android:exported="false" />
+		<activity
+			android:name=".modules.summary.BOQSummaryActivity"
+			android:configChanges="orientation|screenSize|keyboardHidden"
+			android:hardwareAccelerated="true"
+			android:screenOrientation="portrait"
+			android:windowSoftInputMode="stateHidden|adjustResize"
+			android:exported="false" />
 		<provider
 			android:name="androidx.startup.InitializationProvider"
 			android:authorities="com.my.iengineer1.androidx-startup"

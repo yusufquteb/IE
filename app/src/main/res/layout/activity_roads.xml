@@ -4,39 +4,108 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorBackground"
+    android:background="?attr/colorBackground"
     android:layoutDirection="rtl">
 
+    <!-- ══════════════════════════════════════════════════════════════════════ -->
+    <!--  App Bar                                                              -->
+    <!-- ══════════════════════════════════════════════════════════════════════ -->
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.Material3.Toolbar"
         app:elevation="4dp">
+
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             style="@style/Toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            app:title="حصر الطرق"
-            app:titleTextColor="@color/colorOnSurface" />
+            app:title="حصر الطرق والأسفلت" />
+
     </com.google.android.material.appbar.AppBarLayout>
 
+    <!-- ══════════════════════════════════════════════════════════════════════ -->
+    <!--  Scrollable content                                                   -->
+    <!-- ══════════════════════════════════════════════════════════════════════ -->
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior"
-        android:padding="16dp">
+        android:padding="16dp"
+        android:clipToPadding="false"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <!-- Input Card -->
+            <!-- ────────────────────────────────────────────────────────────── -->
+            <!--  Road Sections Card                                            -->
+            <!-- ────────────────────────────────────────────────────────────── -->
             <com.google.android.material.card.MaterialCardView
                 style="@style/CardViewStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="12dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <!-- Header row -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginBottom="8dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="مقاطع الطريق"
+                            android:textColor="?attr/colorPrimary"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btn_add_section"
+                            style="Widget.Material3.Button.IconButton"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:padding="0dp"
+                            android:contentDescription="إضافة مقطع"
+                            app:icon="@drawable/ic_add_action_white_24dp"
+                            app:iconTint="?attr/colorPrimary"
+                            app:iconSize="22dp"
+                            app:iconGravity="textStart"
+                            app:iconPadding="0dp" />
+
+                    </LinearLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_road_sections"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:nestedScrollingEnabled="false"
+                        android:overScrollMode="never" />
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- ────────────────────────────────────────────────────────────── -->
+            <!--  Layer Configuration Card                                      -->
+            <!-- ────────────────────────────────────────────────────────────── -->
+            <com.google.android.material.card.MaterialCardView
+                style="@style/CardViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp">
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -44,97 +113,128 @@
                     android:padding="16dp">
 
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="أبعاد الطريق"
-                        android:textSize="16sp"
+                        android:text="إعدادات طبقات الرصف"
+                        android:textColor="?attr/colorPrimary"
+                        android:textSize="15sp"
                         android:textStyle="bold"
-                        android:textColor="@color/colorPrimary"
                         android:layout_marginBottom="12dp" />
 
-                    <com.google.android.material.textfield.TextInputLayout
-                        style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense"
+                    <!-- Row 1: Sub-base + Base -->
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="طول الطريق (م)"
-                        android:layout_marginBottom="8dp"
-                        app:startIconDrawable="@drawable/ic_pencil_alt_white_24dp">
-                        <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/et_road_length"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:inputType="numberDecimal" />
-                    </com.google.android.material.textfield.TextInputLayout>
-
-                    <com.google.android.material.textfield.TextInputLayout
-                        style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:hint="عرض الطريق (م)"
+                        android:orientation="horizontal"
                         android:layout_marginBottom="8dp">
-                        <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/et_road_width"
-                            android:layout_width="match_parent"
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:inputType="numberDecimal" />
-                    </com.google.android.material.textfield.TextInputLayout>
+                            android:layout_weight="1"
+                            android:layout_marginEnd="6dp"
+                            android:hint="سُمك Sub-base (م)">
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="سُمك الطبقات"
-                        android:textSize="14sp"
-                        android:textStyle="bold"
-                        android:textColor="@color/colorSecondary"
-                        android:layout_marginTop="8dp"
-                        android:layout_marginBottom="8dp" />
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/et_subbase_depth"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="numberDecimal"
+                                android:imeOptions="actionNext" />
 
-                    <com.google.android.material.textfield.TextInputLayout
-                        style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense"
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginStart="6dp"
+                            android:hint="سُمك Base (م)">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/et_base_depth"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="numberDecimal"
+                                android:imeOptions="actionNext" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </LinearLayout>
+
+                    <!-- Row 2: Binder + Wearing -->
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="سُمك الإساس الجيري Sub-base (م)"
+                        android:orientation="horizontal"
                         android:layout_marginBottom="8dp">
-                        <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/et_subbase_depth"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:inputType="numberDecimal" />
-                    </com.google.android.material.textfield.TextInputLayout>
 
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginEnd="6dp"
+                            android:hint="سُمك Binder (م)">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/et_binder_depth"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="numberDecimal"
+                                android:imeOptions="actionNext" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginStart="6dp"
+                            android:hint="سُمك Wearing (م)">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/et_wearing_depth"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="numberDecimal"
+                                android:imeOptions="actionNext" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </LinearLayout>
+
+                    <!-- Row 3: Swell factor -->
                     <com.google.android.material.textfield.TextInputLayout
                         style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="سُمك الأساس Base Course (م)"
-                        android:layout_marginBottom="8dp">
-                        <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/et_base_depth"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:inputType="numberDecimal" />
-                    </com.google.android.material.textfield.TextInputLayout>
+                        android:hint="معامل الانتفاش (افتراضي 1.25)">
 
-                    <com.google.android.material.textfield.TextInputLayout
-                        style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:hint="سُمك الأسفلت (م)">
                         <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/et_asphalt_depth"
+                            android:id="@+id/et_swell_factor"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:inputType="numberDecimal" />
+                            android:inputType="numberDecimal"
+                            android:imeOptions="actionNext" />
+
                     </com.google.android.material.textfield.TextInputLayout>
 
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
 
-            <!-- Results Card -->
+            <!-- ────────────────────────────────────────────────────────────── -->
+            <!--  Miscellaneous Works Card                                      -->
+            <!-- ────────────────────────────────────────────────────────────── -->
             <com.google.android.material.card.MaterialCardView
-                style="@style/CardViewStyle_total"
+                style="@style/CardViewStyle"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp">
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -142,43 +242,574 @@
                     android:padding="16dp">
 
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="نتائج الحصر"
-                        android:textSize="16sp"
-                        android:textStyle="bold"
-                        android:textColor="@color/colorPrimary"
-                        android:layout_marginBottom="12dp" />
-
-                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="8dp">
-                        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="حجم الإساس الجيري:" android:textColor="@color/colorOnSurface" android:textSize="13sp" />
-                        <TextView android:id="@+id/tv_subbase_vol" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0.000 م³" android:textColor="@color/colorPrimary" android:textSize="13sp" android:textStyle="bold" />
-                    </LinearLayout>
-
-                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="8dp">
-                        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="حجم طبقة الأساس:" android:textColor="@color/colorOnSurface" android:textSize="13sp" />
-                        <TextView android:id="@+id/tv_base_vol" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0.000 م³" android:textColor="@color/colorPrimary" android:textSize="13sp" android:textStyle="bold" />
-                    </LinearLayout>
-
-                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="8dp">
-                        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="حجم الأسفلت:" android:textColor="@color/colorOnSurface" android:textSize="13sp" />
-                        <TextView android:id="@+id/tv_asphalt_vol" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0.000 م³" android:textColor="@color/colorPrimary" android:textSize="13sp" android:textStyle="bold" />
-                    </LinearLayout>
-
-                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="8dp">
-                        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="حجم الحفر:" android:textColor="@color/colorOnSurface" android:textSize="13sp" />
-                        <TextView android:id="@+id/tv_earthwork" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0.000 م³" android:textColor="@color/colorTertiary" android:textSize="13sp" android:textStyle="bold" />
-                    </LinearLayout>
-
-                    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/colorOutlineVariant" android:layout_marginVertical="8dp" />
-
-                    <TextView
-                        android:id="@+id/tv_roads_total"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="المساحة: 0 م²  |  إجمالي الحفر: 0.000 م³"
-                        android:textColor="@color/colorOnSurface"
+                        android:text="أعمال منوعة (اختياري)"
+                        android:textColor="?attr/colorSecondary"
                         android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="12dp" />
+
+                    <!-- Kerbs + Markings -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="8dp">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginEnd="6dp"
+                            android:hint="طول العربيات (م)">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/et_kerbs_length"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="numberDecimal"
+                                android:imeOptions="actionNext" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginStart="6dp"
+                            android:hint="خطوط المرور (م)">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/et_markings_length"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="numberDecimal"
+                                android:imeOptions="actionNext" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </LinearLayout>
+
+                    <!-- Signs count -->
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="عدد اللوحات الإرشادية">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/et_signs_count"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="number"
+                            android:imeOptions="actionDone" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- ────────────────────────────────────────────────────────────── -->
+            <!--  BOQ Results Card                                              -->
+            <!-- ────────────────────────────────────────────────────────────── -->
+            <com.google.android.material.card.MaterialCardView
+                style="@style/CardViewStyle_total"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="80dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="جدول الكميات"
+                        android:textColor="?attr/colorPrimary"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="12dp" />
+
+                    <!-- Table header row -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="6dp">
+
+                        <TextView
+                            android:layout_width="28dp"
+                            android:layout_height="wrap_content"
+                            android:text="#"
+                            android:textColor="?attr/colorOnSurfaceVariant"
+                            android:textSize="11sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="وصف العمل"
+                            android:textColor="?attr/colorOnSurfaceVariant"
+                            android:textSize="11sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="44dp"
+                            android:layout_height="wrap_content"
+                            android:text="الوحدة"
+                            android:textColor="?attr/colorOnSurfaceVariant"
+                            android:textSize="11sp"
+                            android:textStyle="bold"
+                            android:gravity="center" />
+
+                        <TextView
+                            android:layout_width="72dp"
+                            android:layout_height="wrap_content"
+                            android:text="الكمية"
+                            android:textColor="?attr/colorOnSurfaceVariant"
+                            android:textSize="11sp"
+                            android:textStyle="bold"
+                            android:gravity="end" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="?attr/colorOutlineVariant"
+                        android:layout_marginBottom="6dp" />
+
+                    <!-- Row 1: تحضير وتنظيف -->
+                    <LinearLayout
+                        android:id="@+id/row_prep"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp">
+
+                        <TextView
+                            android:layout_width="28dp"
+                            android:layout_height="wrap_content"
+                            android:text="1"
+                            android:textColor="?attr/colorOnSurfaceVariant"
+                            android:textSize="11sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="أعمال تحضير وتنظيف"
+                            android:textColor="?attr/colorOnSurface"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="44dp"
+                            android:layout_height="wrap_content"
+                            android:text="م²"
+                            android:textColor="?attr/colorOutline"
+                            android:textSize="11sp"
+                            android:gravity="center" />
+
+                        <TextView
+                            android:id="@+id/tv_qty_prep"
+                            android:layout_width="72dp"
+                            android:layout_height="wrap_content"
+                            android:text="0.00"
+                            android:textColor="?attr/colorPrimary"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:gravity="end" />
+
+                    </LinearLayout>
+
+                    <!-- Row 2: حفريات وردم -->
+                    <LinearLayout
+                        android:id="@+id/row_earth"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp">
+
+                        <TextView
+                            android:layout_width="28dp"
+                            android:layout_height="wrap_content"
+                            android:text="2"
+                            android:textColor="?attr/colorOnSurfaceVariant"
+                            android:textSize="11sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="حفريات وردم معدلة"
+                            android:textColor="?attr/colorOnSurface"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="44dp"
+                            android:layout_height="wrap_content"
+                            android:text="م³"
+                            android:textColor="?attr/colorOutline"
+                            android:textSize="11sp"
+                            android:gravity="center" />
+
+                        <TextView
+                            android:id="@+id/tv_qty_earth"
+                            android:layout_width="72dp"
+                            android:layout_height="wrap_content"
+                            android:text="0.00"
+                            android:textColor="?attr/colorPrimary"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:gravity="end" />
+
+                    </LinearLayout>
+
+                    <!-- Row 3: Sub-base -->
+                    <LinearLayout
+                        android:id="@+id/row_subbase"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp">
+
+                        <TextView
+                            android:layout_width="28dp"
+                            android:layout_height="wrap_content"
+                            android:text="3"
+                            android:textColor="?attr/colorOnSurfaceVariant"
+                            android:textSize="11sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="إساس جيري Sub-base"
+                            android:textColor="?attr/colorOnSurface"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="44dp"
+                            android:layout_height="wrap_content"
+                            android:text="م³"
+                            android:textColor="?attr/colorOutline"
+                            android:textSize="11sp"
+                            android:gravity="center" />
+
+                        <TextView
+                            android:id="@+id/tv_qty_subbase"
+                            android:layout_width="72dp"
+                            android:layout_height="wrap_content"
+                            android:text="0.00"
+                            android:textColor="?attr/colorPrimary"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:gravity="end" />
+
+                    </LinearLayout>
+
+                    <!-- Row 4: Base -->
+                    <LinearLayout
+                        android:id="@+id/row_base"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp">
+
+                        <TextView
+                            android:layout_width="28dp"
+                            android:layout_height="wrap_content"
+                            android:text="4"
+                            android:textColor="?attr/colorOnSurfaceVariant"
+                            android:textSize="11sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="أساس حجري Base Course"
+                            android:textColor="?attr/colorOnSurface"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="44dp"
+                            android:layout_height="wrap_content"
+                            android:text="م³"
+                            android:textColor="?attr/colorOutline"
+                            android:textSize="11sp"
+                            android:gravity="center" />
+
+                        <TextView
+                            android:id="@+id/tv_qty_base"
+                            android:layout_width="72dp"
+                            android:layout_height="wrap_content"
+                            android:text="0.00"
+                            android:textColor="?attr/colorPrimary"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:gravity="end" />
+
+                    </LinearLayout>
+
+                    <!-- Row 5: Binder -->
+                    <LinearLayout
+                        android:id="@+id/row_binder"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp">
+
+                        <TextView
+                            android:layout_width="28dp"
+                            android:layout_height="wrap_content"
+                            android:text="5"
+                            android:textColor="?attr/colorOnSurfaceVariant"
+                            android:textSize="11sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="طبقة رابطة Binder"
+                            android:textColor="?attr/colorOnSurface"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="44dp"
+                            android:layout_height="wrap_content"
+                            android:text="طن"
+                            android:textColor="?attr/colorOutline"
+                            android:textSize="11sp"
+                            android:gravity="center" />
+
+                        <TextView
+                            android:id="@+id/tv_qty_binder"
+                            android:layout_width="72dp"
+                            android:layout_height="wrap_content"
+                            android:text="0.00"
+                            android:textColor="?attr/colorPrimary"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:gravity="end" />
+
+                    </LinearLayout>
+
+                    <!-- Row 6: Wearing -->
+                    <LinearLayout
+                        android:id="@+id/row_wearing"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp">
+
+                        <TextView
+                            android:layout_width="28dp"
+                            android:layout_height="wrap_content"
+                            android:text="6"
+                            android:textColor="?attr/colorOnSurfaceVariant"
+                            android:textSize="11sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="طبقة سطحية Wearing"
+                            android:textColor="?attr/colorOnSurface"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="44dp"
+                            android:layout_height="wrap_content"
+                            android:text="طن"
+                            android:textColor="?attr/colorOutline"
+                            android:textSize="11sp"
+                            android:gravity="center" />
+
+                        <TextView
+                            android:id="@+id/tv_qty_wearing"
+                            android:layout_width="72dp"
+                            android:layout_height="wrap_content"
+                            android:text="0.00"
+                            android:textColor="?attr/colorPrimary"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:gravity="end" />
+
+                    </LinearLayout>
+
+                    <!-- Row 7: Kerbs (hidden by default) -->
+                    <LinearLayout
+                        android:id="@+id/row_kerbs"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="28dp"
+                            android:layout_height="wrap_content"
+                            android:text="7"
+                            android:textColor="?attr/colorOnSurfaceVariant"
+                            android:textSize="11sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="عربيات خرسانية Kerbs"
+                            android:textColor="?attr/colorOnSurface"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="44dp"
+                            android:layout_height="wrap_content"
+                            android:text="م.ط"
+                            android:textColor="?attr/colorOutline"
+                            android:textSize="11sp"
+                            android:gravity="center" />
+
+                        <TextView
+                            android:id="@+id/tv_qty_kerbs"
+                            android:layout_width="72dp"
+                            android:layout_height="wrap_content"
+                            android:text="0.00"
+                            android:textColor="?attr/colorPrimary"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:gravity="end" />
+
+                    </LinearLayout>
+
+                    <!-- Row 8: Markings (hidden by default) -->
+                    <LinearLayout
+                        android:id="@+id/row_markings"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="28dp"
+                            android:layout_height="wrap_content"
+                            android:text="8"
+                            android:textColor="?attr/colorOnSurfaceVariant"
+                            android:textSize="11sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="رسم خطوط مرور"
+                            android:textColor="?attr/colorOnSurface"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="44dp"
+                            android:layout_height="wrap_content"
+                            android:text="م.ط"
+                            android:textColor="?attr/colorOutline"
+                            android:textSize="11sp"
+                            android:gravity="center" />
+
+                        <TextView
+                            android:id="@+id/tv_qty_markings"
+                            android:layout_width="72dp"
+                            android:layout_height="wrap_content"
+                            android:text="0.00"
+                            android:textColor="?attr/colorPrimary"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:gravity="end" />
+
+                    </LinearLayout>
+
+                    <!-- Row 9: Signs (hidden by default) -->
+                    <LinearLayout
+                        android:id="@+id/row_signs"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="28dp"
+                            android:layout_height="wrap_content"
+                            android:text="9"
+                            android:textColor="?attr/colorOnSurfaceVariant"
+                            android:textSize="11sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="لوحات إرشادية"
+                            android:textColor="?attr/colorOnSurface"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="44dp"
+                            android:layout_height="wrap_content"
+                            android:text="عدد"
+                            android:textColor="?attr/colorOutline"
+                            android:textSize="11sp"
+                            android:gravity="center" />
+
+                        <TextView
+                            android:id="@+id/tv_qty_signs"
+                            android:layout_width="72dp"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textColor="?attr/colorPrimary"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:gravity="end" />
+
+                    </LinearLayout>
+
+                    <!-- Divider -->
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="?attr/colorOutlineVariant"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp" />
+
+                    <!-- Summary banner -->
+                    <TextView
+                        android:id="@+id/tv_roads_summary"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="إجمالي مساحة الرصف: 0 م²"
+                        android:textColor="?attr/colorOnSurface"
+                        android:textSize="13sp"
                         android:textStyle="bold"
                         android:gravity="center"
                         android:padding="8dp"
@@ -189,5 +820,21 @@
 
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
+
+    <!-- ══════════════════════════════════════════════════════════════════════ -->
+    <!--  Save to Project FAB                                                  -->
+    <!-- ══════════════════════════════════════════════════════════════════════ -->
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/fab_save_project"
+        style="Widget.Material3.ExtendedFloatingActionButton.Icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:text="حفظ في مشروع"
+        android:textColor="?attr/colorOnPrimary"
+        app:icon="@drawable/ic_export"
+        app:iconTint="?attr/colorOnPrimary"
+        app:backgroundTint="?attr/colorPrimary" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

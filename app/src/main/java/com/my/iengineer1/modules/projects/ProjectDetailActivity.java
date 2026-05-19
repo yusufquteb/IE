@@ -81,6 +81,13 @@ public class ProjectDetailActivity extends AppCompatActivity {
             exportToPdf();
             return true;
         }
+        if (item.getItemId() == R.id.action_view_summary) {
+            android.content.Intent intent = new android.content.Intent(this,
+                    com.my.iengineer1.modules.summary.BOQSummaryActivity.class);
+            intent.putExtra("project_id", projectId);
+            startActivity(intent);
+            return true;
+        }
         return super.onOptionsItemSelected(item);
     }
 
