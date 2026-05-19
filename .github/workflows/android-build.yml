@@ -31,6 +31,13 @@ jobs:
           gradle-version: '8.11'
           cache-read-only: false
 
+      - name: Install Android SDK platform-36
+        run: |
+          SDKMANAGER=$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager
+          echo "y" | $SDKMANAGER "platforms;android-36" "build-tools;35.0.0" 2>&1 | tail -10 || true
+        env:
+          ANDROID_HOME: /usr/local/lib/android/sdk
+
       - name: Build Debug APK
         run: gradle assembleDebug --stacktrace 2>&1 | tee /tmp/build.log; exit ${PIPESTATUS[0]}
         env:
