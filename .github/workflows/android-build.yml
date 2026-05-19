@@ -71,6 +71,26 @@ jobs:
           path: app/build/outputs/apk/debug/app-debug.apk
           retention-days: 7
 
+      - name: Post build errors as PR comment
+        if: failure() && github.event_name == 'pull_request'
+        run: |
+          {
+            echo "## CI Build Failed — Error Summary"
+            echo ""
+            echo "**Key errors from build log:**"
+            echo "\`\`\`"
+            grep -n "error:\|FAILED\|Exception\|Cannot resolve\|Could not find\|Failed to find" /tmp/build.log 2>/dev/null | head -40 || echo "(no log)"
+            echo "\`\`\`"
+            echo ""
+            echo "**Last 60 lines of build log:**"
+            echo "\`\`\`"
+            tail -60 /tmp/build.log 2>/dev/null || echo "(no log)"
+            echo "\`\`\`"
+          } > /tmp/comment.md
+          gh pr comment ${{ github.event.pull_request.number }} --body-file /tmp/comment.md || true
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Upload build reports on failure
         if: failure()
         uses: actions/upload-artifact@v4
