@@ -379,7 +379,7 @@ public class SanitationActivity extends AppCompatActivity {
             PipeSegment seg = segments.get(pos);
 
             ArrayAdapter<String> dAdapter = new ArrayAdapter<>(
-                    SanitationActivity.this, R.layout.simple_dropdown_item_1line, DIAMETERS);
+                    SanitationActivity.this, android.R.layout.simple_dropdown_item_1line, DIAMETERS);
             h.ddDiameter.setAdapter(dAdapter);
             h.ddDiameter.setText(seg.diameter, false);
             h.ddDiameter.setOnItemClickListener((av, v, i, id) -> {
