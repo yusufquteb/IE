@@ -64,7 +64,8 @@ import net.cachapa.expandablelayout.*;
 import org.json.*;
 
 
-//import com.my.iengineer1.utils.ExportUtils;
+//import com.my.iengineer1.utils.ExportUtils;
+
 
 public class TabLayoutActivity extends AppCompatActivity {
 	
@@ -522,12 +523,10 @@ public class TabLayoutActivity extends AppCompatActivity {
 			public boolean onMenuItemClick(MenuItem item) {
 				
 				
-				switch(item.getItemId()) {
-					case R.id.btn_collection: {
-						
-						break;
-					}
-					case R.id.btn_calendar: {
+				int _menuItemId = item.getItemId();
+				if (_menuItemId == R.id.btn_collection) {
+					
+				} else if (_menuItemId == R.id.btn_calendar) {
 						switch(getIntent().getStringExtra("key")) {
 							case "all_dirty_work": {
 								switch((int)viewpager1.getCurrentItem()) {
@@ -598,9 +597,7 @@ public class TabLayoutActivity extends AppCompatActivity {
 								break;
 							}
 						}
-						break;
-					}
-					case R.id.btn_download: {
+				} else if (_menuItemId == R.id.btn_download) {
 						switch(getIntent().getStringExtra("key")) {
 							case "finishes": {
 								switch((int)viewpager1.getCurrentItem()) {
@@ -621,8 +618,6 @@ getSupportFragmentManager()
 								break;
 							}
 						}
-						break;
-					}
 				}
 				return false;
 			}
@@ -671,4 +666,4 @@ getSupportFragmentManager()
 		SummaryFragmentActivity.Amount10.setText(String.valueOf(sum));
 	}
 	
-}
+}

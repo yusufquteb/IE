@@ -119,7 +119,7 @@ public class OpeningsFragmentActivity extends Fragment {
 		TextInputLayout_total = _view.findViewById(R.id.TextInputLayout_total);
 		total_area = _view.findViewById(R.id.total_area);
 		
-		remove_button.setOnClickListener((_view) -> {
+		remove_button.setOnClickListener((v) -> {
 			com.google.android.material.dialog.MaterialAlertDialogBuilder builder = 
 			new com.google.android.material.dialog.MaterialAlertDialogBuilder(getActivity());
 			
