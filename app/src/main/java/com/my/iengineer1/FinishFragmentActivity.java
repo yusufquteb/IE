@@ -49,7 +49,8 @@ import net.cachapa.expandablelayout.ExpandableLayout;
 import org.json.*;
 
 
-
+
+
 
 public class FinishFragmentActivity extends Fragment {
 	
@@ -375,9 +376,9 @@ public class FinishFragmentActivity extends Fragment {
 			
 			// تغيير لون الأزرار
 			dialog.getButton(androidx.appcompat.app.AlertDialog.BUTTON_POSITIVE).setTextColor(
-			getResources().getColor(android.R.color.holo_red_dark));
+			androidx.core.content.ContextCompat.getColor(requireContext(), R.color.md_theme_error));
 			dialog.getButton(androidx.appcompat.app.AlertDialog.BUTTON_NEGATIVE).setTextColor(
-			getResources().getColor(android.R.color.holo_blue_dark));
+			androidx.core.content.ContextCompat.getColor(requireContext(), R.color.md_theme_primary));
 		});
 		
 		shape_dropdown.addTextChangedListener(new TextWatcher() {
@@ -450,7 +451,7 @@ public class FinishFragmentActivity extends Fragment {
 						total_area.setText("");
 						textinputlayout_no.setHelperText(getString(R.string.repetitions_helper));
 						textinputlayout_no.setHelperTextColor(ColorStateList.valueOf(
-						getResources().getColor(R.color.md_theme_onSurfaceVariant)));
+						androidx.core.content.ContextCompat.getColor(requireContext(), R.color.md_theme_onSurfaceVariant)));
 						return;
 					}
 					
@@ -708,7 +709,7 @@ public class FinishFragmentActivity extends Fragment {
 						net_total.setText("");
 						textinputlayout_net.setHelperText(getString(R.string.net_area_helper));
 						textinputlayout_net.setHelperTextColor(ColorStateList.valueOf(
-						getResources().getColor(R.color.md_theme_onSurfaceVariant)));
+						androidx.core.content.ContextCompat.getColor(requireContext(), R.color.md_theme_onSurfaceVariant)));
 						return;
 					}
 					
@@ -720,7 +721,7 @@ public class FinishFragmentActivity extends Fragment {
 						net_total.setText(_string_format(totalAreaValue));
 						textinputlayout_net.setHelperText("✓ لا توجد فتحات");
 						textinputlayout_net.setHelperTextColor(ColorStateList.valueOf(
-						getResources().getColor(R.color.md_theme_primary)));
+						androidx.core.content.ContextCompat.getColor(requireContext(), R.color.md_theme_primary)));
 						return;
 					}
 					
@@ -731,7 +732,7 @@ public class FinishFragmentActivity extends Fragment {
 						net_total.setText("0");
 						textinputlayout_net.setHelperText("⚠️ مساحة الفتحات أكبر من مساحة الجدار!");
 						textinputlayout_net.setHelperTextColor(ColorStateList.valueOf(
-						getResources().getColor(R.color.md_theme_error)));
+						androidx.core.content.ContextCompat.getColor(requireContext(), R.color.md_theme_error)));
 						textinputlayout_open.setError("الفتحات أكبر من الجدار");
 						return;
 					}
@@ -741,7 +742,7 @@ public class FinishFragmentActivity extends Fragment {
 						net_total.setText("0");
 						textinputlayout_net.setHelperText("⚠️ الفتحات تساوي مساحة الجدار بالكامل");
 						textinputlayout_net.setHelperTextColor(ColorStateList.valueOf(
-						getResources().getColor(R.color.md_theme_tertiary)));
+						androidx.core.content.ContextCompat.getColor(requireContext(), R.color.md_theme_tertiary)));
 						return;
 					}
 					
@@ -753,21 +754,21 @@ public class FinishFragmentActivity extends Fragment {
 						net_total.setText(_string_format(netValue));
 						textinputlayout_net.setHelperText("✓ المساحة الصافية (" + _string_format(percentage) + "% فتحات)");
 						textinputlayout_net.setHelperTextColor(ColorStateList.valueOf(
-						getResources().getColor(R.color.md_theme_primary)));
+						androidx.core.content.ContextCompat.getColor(requireContext(), R.color.md_theme_primary)));
 					} 
 					// الحالة 4: الفتحات بين 50% و 80% - تحذير
 					else if (percentage < 80) {
 						net_total.setText(_string_format(netValue));
 						textinputlayout_net.setHelperText("⚠️ نسبة الفتحات مرتفعة (" + _string_format(percentage) + "%)");
 						textinputlayout_net.setHelperTextColor(ColorStateList.valueOf(
-						getResources().getColor(R.color.md_theme_tertiary)));
+						androidx.core.content.ContextCompat.getColor(requireContext(), R.color.md_theme_tertiary)));
 					}
 					// الحالة 5: الفتحات أكثر من 80% - تحذير شديد
 					else {
 						net_total.setText(_string_format(netValue));
 						textinputlayout_net.setHelperText("⚠️ نسبة الفتحات مرتفعة جداً (" + _string_format(percentage) + "%)");
 						textinputlayout_net.setHelperTextColor(ColorStateList.valueOf(
-						getResources().getColor(R.color.md_theme_error)));
+						androidx.core.content.ContextCompat.getColor(requireContext(), R.color.md_theme_error)));
 					}
 					
 				} catch (Exception e) {
@@ -775,7 +776,7 @@ public class FinishFragmentActivity extends Fragment {
 					net_total.setText("");
 					textinputlayout_net.setHelperText("خطأ في الحساب");
 					textinputlayout_net.setHelperTextColor(ColorStateList.valueOf(
-					getResources().getColor(R.color.md_theme_error)));
+					androidx.core.content.ContextCompat.getColor(requireContext(), R.color.md_theme_error)));
 				}
 				
 			}
@@ -807,7 +808,7 @@ public class FinishFragmentActivity extends Fragment {
 							net_total.setText(_string_format(Double.parseDouble(totalText)));
 							textinputlayout_net.setHelperText("✓ لا توجد فتحات");
 							textinputlayout_net.setHelperTextColor(ColorStateList.valueOf(
-							getResources().getColor(R.color.md_theme_primary)));
+							androidx.core.content.ContextCompat.getColor(requireContext(), R.color.md_theme_primary)));
 						} else {
 							net_total.setText("");
 						}
@@ -822,7 +823,7 @@ public class FinishFragmentActivity extends Fragment {
 						net_total.setText("0");
 						textinputlayout_net.setHelperText("⚠️ يجب إدخال مساحة الجدار أولاً");
 						textinputlayout_net.setHelperTextColor(ColorStateList.valueOf(
-						getResources().getColor(R.color.md_theme_error)));
+						androidx.core.content.ContextCompat.getColor(requireContext(), R.color.md_theme_error)));
 						textinputlayout_total.setError("أدخل مساحة الجدار");
 						return;
 					}
@@ -834,7 +835,7 @@ public class FinishFragmentActivity extends Fragment {
 						net_total.setText("0");
 						textinputlayout_net.setHelperText("⚠️ مساحة الفتحات أكبر من مساحة الجدار!");
 						textinputlayout_net.setHelperTextColor(ColorStateList.valueOf(
-						getResources().getColor(R.color.md_theme_error)));
+						androidx.core.content.ContextCompat.getColor(requireContext(), R.color.md_theme_error)));
 						textinputlayout_open.setError("الفتحات أكبر من الجدار");
 						return;
 					}
@@ -844,7 +845,7 @@ public class FinishFragmentActivity extends Fragment {
 						net_total.setText("0");
 						textinputlayout_net.setHelperText("⚠️ الفتحات تساوي مساحة الجدار بالكامل");
 						textinputlayout_net.setHelperTextColor(ColorStateList.valueOf(
-						getResources().getColor(R.color.md_theme_tertiary)));
+						androidx.core.content.ContextCompat.getColor(requireContext(), R.color.md_theme_tertiary)));
 						return;
 					}
 					
@@ -856,21 +857,21 @@ public class FinishFragmentActivity extends Fragment {
 						net_total.setText(_string_format(netValue));
 						textinputlayout_net.setHelperText("✓ المساحة الصافية (" + _string_format(percentage) + "% فتحات)");
 						textinputlayout_net.setHelperTextColor(ColorStateList.valueOf(
-						getResources().getColor(R.color.md_theme_primary)));
+						androidx.core.content.ContextCompat.getColor(requireContext(), R.color.md_theme_primary)));
 					} 
 					// الحالة 4: الفتحات بين 50% و 80% - تحذير
 					else if (percentage < 80) {
 						net_total.setText(_string_format(netValue));
 						textinputlayout_net.setHelperText("⚠️ نسبة الفتحات مرتفعة (" + _string_format(percentage) + "%)");
 						textinputlayout_net.setHelperTextColor(ColorStateList.valueOf(
-						getResources().getColor(R.color.md_theme_tertiary)));
+						androidx.core.content.ContextCompat.getColor(requireContext(), R.color.md_theme_tertiary)));
 					}
 					// الحالة 5: الفتحات أكثر من 80% - تحذير شديد
 					else {
 						net_total.setText(_string_format(netValue));
 						textinputlayout_net.setHelperText("⚠️ نسبة الفتحات مرتفعة جداً (" + _string_format(percentage) + "%)");
 						textinputlayout_net.setHelperTextColor(ColorStateList.valueOf(
-						getResources().getColor(R.color.md_theme_error)));
+						androidx.core.content.ContextCompat.getColor(requireContext(), R.color.md_theme_error)));
 					}
 					
 				} catch (Exception e) {
@@ -878,7 +879,7 @@ public class FinishFragmentActivity extends Fragment {
 					net_total.setText("");
 					textinputlayout_net.setHelperText("خطأ في الحساب");
 					textinputlayout_net.setHelperTextColor(ColorStateList.valueOf(
-					getResources().getColor(R.color.md_theme_error)));
+					androidx.core.content.ContextCompat.getColor(requireContext(), R.color.md_theme_error)));
 				}
 			}
 			
@@ -1012,7 +1013,7 @@ public class FinishFragmentActivity extends Fragment {
 				
 				textinputlayout_open.setHelperText("لا توجد فتحات");
 				textinputlayout_open.setHelperTextColor(ColorStateList.valueOf(
-				getResources().getColor(R.color.md_theme_onSurfaceVariant)));
+				androidx.core.content.ContextCompat.getColor(requireContext(), R.color.md_theme_onSurfaceVariant)));
 				
 				return;
 			} else {
@@ -1062,7 +1063,7 @@ public class FinishFragmentActivity extends Fragment {
 				total_opening.setText(_string_format(sum));
 				textinputlayout_open.setHelperText("✓ " + validOpenings + " opening" + (validOpenings > 1 ? "s" : ""));
 				textinputlayout_open.setHelperTextColor(ColorStateList.valueOf(
-				getResources().getColor(R.color.md_theme_primary)));
+				androidx.core.content.ContextCompat.getColor(requireContext(), R.color.md_theme_primary)));
 				
 				Log.d("FinishFragment", "✓ عدد الفتحات الصالحة: " + validOpenings);
 				Log.d("FinishFragment", "✓ المجموع الكلي: " + sum);
@@ -1070,7 +1071,7 @@ public class FinishFragmentActivity extends Fragment {
 				total_opening.setText("");
 				textinputlayout_open.setHelperText("لا توجد فتحات صالحة");
 				textinputlayout_open.setHelperTextColor(ColorStateList.valueOf(
-				getResources().getColor(R.color.md_theme_error)));
+				androidx.core.content.ContextCompat.getColor(requireContext(), R.color.md_theme_error)));
 			}
 			_updateStepProgress();
 			
@@ -1225,9 +1226,9 @@ public class FinishFragmentActivity extends Fragment {
 				alertDialog.show();
 				
 				alertDialog.getButton(androidx.appcompat.app.AlertDialog.BUTTON_POSITIVE)
-				.setTextColor(getResources().getColor(android.R.color.holo_red_dark));
+				.setTextColor(androidx.core.content.ContextCompat.getColor(requireContext(), R.color.md_theme_error));
 				alertDialog.getButton(androidx.appcompat.app.AlertDialog.BUTTON_NEGATIVE)
-				.setTextColor(getResources().getColor(android.R.color.holo_blue_dark));
+				.setTextColor(androidx.core.content.ContextCompat.getColor(requireContext(), R.color.md_theme_primary));
 			}
 			
 		} catch (Exception e) {
@@ -1420,9 +1421,9 @@ public class FinishFragmentActivity extends Fragment {
 			// Customize button colors
 			try {
 				dialog.getButton(androidx.appcompat.app.AlertDialog.BUTTON_POSITIVE)
-				.setTextColor(getResources().getColor(android.R.color.holo_red_dark));
+				.setTextColor(androidx.core.content.ContextCompat.getColor(requireContext(), R.color.md_theme_error));
 				dialog.getButton(androidx.appcompat.app.AlertDialog.BUTTON_NEGATIVE)
-				.setTextColor(getResources().getColor(android.R.color.holo_blue_dark));
+				.setTextColor(androidx.core.content.ContextCompat.getColor(requireContext(), R.color.md_theme_primary));
 			} catch (Exception e) {
 				Log.e("FinishFragment", "Color error: " + e.getMessage());
 			}
@@ -1448,4 +1449,4 @@ public class FinishFragmentActivity extends Fragment {
 		}
 	}
 	
-}
+}

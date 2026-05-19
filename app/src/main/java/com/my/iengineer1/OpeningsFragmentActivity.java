@@ -157,9 +157,9 @@ public class OpeningsFragmentActivity extends Fragment {
 			
 			// تخصيص ألوان الأزرار
 			dialog.getButton(androidx.appcompat.app.AlertDialog.BUTTON_POSITIVE).setTextColor(
-			getResources().getColor(android.R.color.holo_red_dark));
+			androidx.core.content.ContextCompat.getColor(requireContext(), R.color.md_theme_error));
 			dialog.getButton(androidx.appcompat.app.AlertDialog.BUTTON_NEGATIVE).setTextColor(
-			getResources().getColor(android.R.color.holo_blue_dark));
+			androidx.core.content.ContextCompat.getColor(requireContext(), R.color.md_theme_primary));
 			
 		});
 		
@@ -352,4 +352,4 @@ public class OpeningsFragmentActivity extends Fragment {
 		}
 	}
 	
-}
+}
