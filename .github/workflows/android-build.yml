@@ -14,6 +14,9 @@ jobs:
   build:
     name: Build Debug APK
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
 
     steps:
       - name: Checkout code
@@ -44,6 +47,22 @@ jobs:
         run: ./gradlew assembleDebug --stacktrace 2>&1 | tee /tmp/build.log; exit ${PIPESTATUS[0]}
         env:
           ANDROID_HOME: /usr/local/lib/android/sdk
+
+      - name: Write build errors to Step Summary
+        if: failure()
+        run: |
+          echo "## Build Failed" >> $GITHUB_STEP_SUMMARY
+          echo '```' >> $GITHUB_STEP_SUMMARY
+          head -300 /tmp/build.log 2>/dev/null || echo "(no build log — failure was before Build step)"
+          echo '```' >> $GITHUB_STEP_SUMMARY
+          echo "### Key error lines" >> $GITHUB_STEP_SUMMARY
+          echo '```' >> $GITHUB_STEP_SUMMARY
+          grep -n "error:\|FAILED\|Exception\|Cannot resolve\|Could not find\|Failed to find\|warning: \[" /tmp/build.log 2>/dev/null | head -60 >> $GITHUB_STEP_SUMMARY || echo "(none found)" >> $GITHUB_STEP_SUMMARY
+          echo '```' >> $GITHUB_STEP_SUMMARY
+          echo "### Last 100 lines" >> $GITHUB_STEP_SUMMARY
+          echo '```' >> $GITHUB_STEP_SUMMARY
+          tail -100 /tmp/build.log 2>/dev/null >> $GITHUB_STEP_SUMMARY || echo "(no build log)" >> $GITHUB_STEP_SUMMARY
+          echo '```' >> $GITHUB_STEP_SUMMARY
 
       - name: Show build errors
         if: failure()
@@ -77,17 +96,16 @@ jobs:
           {
             echo "## CI Build Failed — Error Summary"
             echo ""
-            echo "**Key errors from build log:**"
+            echo "**Key errors:**"
             echo "\`\`\`"
-            grep -n "error:\|FAILED\|Exception\|Cannot resolve\|Could not find\|Failed to find" /tmp/build.log 2>/dev/null | head -40 || echo "(no log)"
+            grep -n "error:\|FAILED\|Exception\|Cannot resolve\|Could not find\|Failed to find" /tmp/build.log 2>/dev/null | head -40 || echo "(no build log — check Show environment step)"
             echo "\`\`\`"
-            echo ""
             echo "**Last 60 lines of build log:**"
             echo "\`\`\`"
-            tail -60 /tmp/build.log 2>/dev/null || echo "(no log)"
+            tail -60 /tmp/build.log 2>/dev/null || echo "(no build log)"
             echo "\`\`\`"
           } > /tmp/comment.md
-          gh pr comment ${{ github.event.pull_request.number }} --body-file /tmp/comment.md || true
+          gh pr comment ${{ github.event.pull_request.number }} --body-file /tmp/comment.md
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
