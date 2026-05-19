@@ -31,10 +31,13 @@ jobs:
           gradle-version: '8.11'
           cache-read-only: false
 
-      - name: Install Android SDK platform-36
+      - name: Show Gradle version and install SDK platform-36
         run: |
+          gradle --version
           SDKMANAGER=$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager
-          echo "y" | $SDKMANAGER "platforms;android-36" "build-tools;35.0.0" 2>&1 | tail -10 || true
+          echo "y" | $SDKMANAGER "platforms;android-36" "build-tools;35.0.0" 2>&1 | tail -5 || true
+          echo "=== Installed platforms ==="
+          ls $ANDROID_HOME/platforms/ 2>/dev/null || true
         env:
           ANDROID_HOME: /usr/local/lib/android/sdk
 
@@ -43,13 +46,15 @@ jobs:
         env:
           ANDROID_HOME: /usr/local/lib/android/sdk
 
-      - name: Show compiler errors
+      - name: Show build errors
         if: failure()
         run: |
-          echo "====== JAVA ERRORS ======"
-          grep -n "^.*\.java:[0-9]*: error:" /tmp/build.log | head -40 || true
-          echo "====== LAST 80 LINES ======"
-          tail -80 /tmp/build.log
+          echo "====== FIRST 120 LINES ======"
+          head -120 /tmp/build.log || true
+          echo "====== ALL ERROR LINES ======"
+          grep -n "error:\|FAILED\|Exception\|Cannot resolve\|Could not find\|Failed to find" /tmp/build.log | head -50 || true
+          echo "====== LAST 100 LINES ======"
+          tail -100 /tmp/build.log || true
 
       - name: Upload APK
         if: success()
