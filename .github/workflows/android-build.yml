@@ -31,13 +31,13 @@ jobs:
           gradle-version: '8.11'
           cache-read-only: false
 
-      - name: Show Gradle version and install SDK platform-36
+      - name: Show Gradle version and available Android SDK
         run: |
           gradle --version
-          SDKMANAGER=$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager
-          echo "y" | $SDKMANAGER "platforms;android-36" "build-tools;35.0.0" 2>&1 | tail -5 || true
           echo "=== Installed platforms ==="
-          ls $ANDROID_HOME/platforms/ 2>/dev/null || true
+          ls $ANDROID_HOME/platforms/ 2>/dev/null || echo "No platforms dir"
+          echo "=== Build tools ==="
+          ls $ANDROID_HOME/build-tools/ 2>/dev/null || echo "No build-tools dir"
         env:
           ANDROID_HOME: /usr/local/lib/android/sdk
 
