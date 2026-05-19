@@ -21,67 +21,12 @@ public class SketchwareUtil {
     public static int BOTTOM = 3;
 
     public static void CustomToast(Context _context, String _message, int _textColor, int _textSize, int _bgColor, int _radius, int _gravity) {
-        Toast _toast = Toast.makeText(_context, _message, Toast.LENGTH_SHORT);
-        View _view = _toast.getView();
-        TextView _textView = _view.findViewById(android.R.id.message);
-        _textView.setTextSize(_textSize);
-        _textView.setTextColor(_textColor);
-        _textView.setGravity(Gravity.CENTER);
-
-        GradientDrawable _gradientDrawable = new GradientDrawable();
-        _gradientDrawable.setColor(_bgColor);
-        _gradientDrawable.setCornerRadius(_radius);
-        _view.setBackground(_gradientDrawable);
-        _view.setPadding(15, 10, 15, 10);
-        _view.setElevation(10);
-
-        switch (_gravity) {
-            case 1:
-                _toast.setGravity(Gravity.TOP, 0, 150);
-                break;
-
-            case 2:
-                _toast.setGravity(Gravity.CENTER, 0, 0);
-                break;
-
-            case 3:
-                _toast.setGravity(Gravity.BOTTOM, 0, 150);
-                break;
-        }
-        _toast.show();
+        // Toast.getView() was removed in API 35; fall back to a standard toast.
+        Toast.makeText(_context, _message, Toast.LENGTH_SHORT).show();
     }
 
     public static void CustomToastWithIcon(Context _context, String _message, int _textColor, int _textSize, int _bgColor, int _radius, int _gravity, int _icon) {
-        Toast _toast = Toast.makeText(_context, _message, Toast.LENGTH_SHORT);
-        View _view = _toast.getView();
-        TextView _textView = (TextView) _view.findViewById(android.R.id.message);
-        _textView.setTextSize(_textSize);
-        _textView.setTextColor(_textColor);
-        _textView.setCompoundDrawablesWithIntrinsicBounds(_icon, 0, 0, 0);
-        _textView.setGravity(Gravity.CENTER);
-        _textView.setCompoundDrawablePadding(10);
-
-        GradientDrawable _gradientDrawable = new GradientDrawable();
-        _gradientDrawable.setColor(_bgColor);
-        _gradientDrawable.setCornerRadius(_radius);
-        _view.setBackground(_gradientDrawable);
-        _view.setPadding(10, 10, 10, 10);
-        _view.setElevation(10);
-
-        switch (_gravity) {
-            case 1:
-                _toast.setGravity(Gravity.TOP, 0, 150);
-                break;
-
-            case 2:
-                _toast.setGravity(Gravity.CENTER, 0, 0);
-                break;
-
-            case 3:
-                _toast.setGravity(Gravity.BOTTOM, 0, 150);
-                break;
-        }
-        _toast.show();
+        Toast.makeText(_context, _message, Toast.LENGTH_SHORT).show();
     }
 
     public static void sortListMap(final ArrayList<HashMap<String, Object>> listMap, final String key, final boolean isNumber, final boolean ascending) {
@@ -125,9 +70,15 @@ public class SketchwareUtil {
     }
 
     public static boolean isConnected(Context _context) {
-        ConnectivityManager _connectivityManager = (ConnectivityManager) _context.getSystemService(Context.CONNECTIVITY_SERVICE);
-        NetworkInfo _activeNetworkInfo = _connectivityManager.getActiveNetworkInfo();
-        return _activeNetworkInfo != null && _activeNetworkInfo.isConnected();
+        // getActiveNetworkInfo() was removed in API 33; use NetworkCapabilities instead.
+        ConnectivityManager cm = (ConnectivityManager) _context.getSystemService(Context.CONNECTIVITY_SERVICE);
+        if (cm == null) return false;
+        android.net.Network network = cm.getActiveNetwork();
+        if (network == null) return false;
+        android.net.NetworkCapabilities caps = cm.getNetworkCapabilities(network);
+        return caps != null && (caps.hasTransport(android.net.NetworkCapabilities.TRANSPORT_WIFI)
+                || caps.hasTransport(android.net.NetworkCapabilities.TRANSPORT_CELLULAR)
+                || caps.hasTransport(android.net.NetworkCapabilities.TRANSPORT_ETHERNET));
     }
 
     public static String copyFromInputStream(InputStream _inputStream) {
