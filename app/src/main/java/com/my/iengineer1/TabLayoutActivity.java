@@ -181,7 +181,7 @@ public class TabLayoutActivity extends AppCompatActivity {
 		path1 = this.getSharedPreferences("path1", Activity.MODE_PRIVATE);
 		dialog = new AlertDialog.Builder(TabLayoutActivity.this);
 		
-		fab.setOnClickListener(View _view -> {
+		fab.setOnClickListener((_view) -> {
 			if (String.valueOf(getIntent().getStringExtra("key")).equals(String.valueOf("all_dirty_work"))) {
 				if (String.valueOf(viewpager1.getCurrentItem()).equals(String.valueOf(0))) {
 					_dynamic_view();

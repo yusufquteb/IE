@@ -291,7 +291,7 @@ public class FinishFragmentActivity extends Fragment {
 		textview72 = _view.findViewById(R.id.textview72);
 		icon_empty_state = _view.findViewById(R.id.icon_empty_state);
 		
-		cardview7.setOnLongClickListener(View _view -> {
+		cardview7.setOnLongClickListener((_view) -> {
 			try {
 				Vibrator vibrator = (Vibrator) requireContext().getSystemService(Context.VIBRATOR_SERVICE);
 				if (vibrator != null && vibrator.hasVibrator()) {
@@ -311,7 +311,7 @@ public class FinishFragmentActivity extends Fragment {
 			return true;
 		});
 		
-		helpButton.setOnClickListener(View _view -> {
+		helpButton.setOnClickListener((_view) -> {
 			new MaterialAlertDialogBuilder(requireContext())
 			.setTitle("Help")
 			.setMessage("• Choose a shape type from the dropdown\n" +
@@ -324,7 +324,7 @@ public class FinishFragmentActivity extends Fragment {
 			.show();
 		});
 		
-		expand_arrow.setOnClickListener(View _view -> {
+		expand_arrow.setOnClickListener((_view) -> {
 			if (expandableLayout.isExpanded()) {
 				expandableLayout.collapse();
 				expand_arrow.animate().rotation((float)0).setDuration((int)300);
@@ -343,7 +343,7 @@ public class FinishFragmentActivity extends Fragment {
 			}
 		});
 		
-		close.setOnClickListener(View _view -> {
+		close.setOnClickListener((_view) -> {
 			com.google.android.material.dialog.MaterialAlertDialogBuilder builder = 
 			new com.google.android.material.dialog.MaterialAlertDialogBuilder(getActivity());
 			
@@ -400,7 +400,7 @@ public class FinishFragmentActivity extends Fragment {
 			}
 		});
 		
-		add_opening_button.setOnClickListener(View _view -> {
+		add_opening_button.setOnClickListener((_view) -> {
 			if (!expandableLayout.isExpanded()) {
 				expandableLayout.expand();
 				expand_arrow.animate().rotation((float)-180).setDuration((int)300);
@@ -924,7 +924,7 @@ public class FinishFragmentActivity extends Fragment {
 			}
 		});
 		
-		delete_all_openings.setOnClickListener(View _view -> {
+		delete_all_openings.setOnClickListener((_view) -> {
 			_removeAllOpenings();
 		});
 	}
