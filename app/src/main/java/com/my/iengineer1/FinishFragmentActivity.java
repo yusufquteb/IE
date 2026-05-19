@@ -291,7 +291,7 @@ public class FinishFragmentActivity extends Fragment {
 		textview72 = _view.findViewById(R.id.textview72);
 		icon_empty_state = _view.findViewById(R.id.icon_empty_state);
 		
-		cardview7.setOnLongClickListener(View _view -> {
+		cardview7.setOnLongClickListener((v) -> {
 			try {
 				Vibrator vibrator = (Vibrator) requireContext().getSystemService(Context.VIBRATOR_SERVICE);
 				if (vibrator != null && vibrator.hasVibrator()) {
@@ -311,7 +311,7 @@ public class FinishFragmentActivity extends Fragment {
 			return true;
 		});
 		
-		helpButton.setOnClickListener(View _view -> {
+		helpButton.setOnClickListener((v) -> {
 			new MaterialAlertDialogBuilder(requireContext())
 			.setTitle("Help")
 			.setMessage("• Choose a shape type from the dropdown\n" +
@@ -324,7 +324,7 @@ public class FinishFragmentActivity extends Fragment {
 			.show();
 		});
 		
-		expand_arrow.setOnClickListener(View _view -> {
+		expand_arrow.setOnClickListener((v) -> {
 			if (expandableLayout.isExpanded()) {
 				expandableLayout.collapse();
 				expand_arrow.animate().rotation((float)0).setDuration((int)300);
@@ -343,7 +343,7 @@ public class FinishFragmentActivity extends Fragment {
 			}
 		});
 		
-		close.setOnClickListener(View _view -> {
+		close.setOnClickListener((v) -> {
 			com.google.android.material.dialog.MaterialAlertDialogBuilder builder = 
 			new com.google.android.material.dialog.MaterialAlertDialogBuilder(getActivity());
 			
@@ -400,7 +400,7 @@ public class FinishFragmentActivity extends Fragment {
 			}
 		});
 		
-		add_opening_button.setOnClickListener(View _view -> {
+		add_opening_button.setOnClickListener((v) -> {
 			if (!expandableLayout.isExpanded()) {
 				expandableLayout.expand();
 				expand_arrow.animate().rotation((float)-180).setDuration((int)300);
@@ -417,20 +417,20 @@ public class FinishFragmentActivity extends Fragment {
 			step_3.setVisibility(View.VISIBLE);
 			progress_line_2.setVisibility(View.VISIBLE);
 			progress_line_2.setBackgroundColor(
-			MaterialColors.getColor(progress_line_2, R.attr.colorPrimary)
+			MaterialColors.getColor(progress_line_2, com.google.android.material.R.attr.colorPrimary)
 			);
 			// Activate Step 3
 			step_3_indicator.setCardBackgroundColor(
-			MaterialColors.getColor(step_3_indicator, R.attr.colorPrimaryContainer)
+			MaterialColors.getColor(step_3_indicator, com.google.android.material.R.attr.colorPrimaryContainer)
 			);
 			step_3_indicator.setStrokeColor(
-			MaterialColors.getColor(step_3_indicator, R.attr.colorPrimary)
+			MaterialColors.getColor(step_3_indicator, com.google.android.material.R.attr.colorPrimary)
 			);
 			step_3_label.setTextColor(
-			MaterialColors.getColor(step_3_label, R.attr.colorPrimary)
+			MaterialColors.getColor(step_3_label, com.google.android.material.R.attr.colorPrimary)
 			);
 			step_3_number.setTextColor(
-			MaterialColors.getColor(step_3_number, R.attr.colorOnPrimaryContainer)
+			MaterialColors.getColor(step_3_number, com.google.android.material.R.attr.colorOnPrimaryContainer)
 			);
 			// Animate Step 3 appearance
 			step_3.setAlpha(0f);
@@ -924,7 +924,7 @@ public class FinishFragmentActivity extends Fragment {
 			}
 		});
 		
-		delete_all_openings.setOnClickListener(View _view -> {
+		delete_all_openings.setOnClickListener((v) -> {
 			_removeAllOpenings();
 		});
 	}
@@ -1247,13 +1247,13 @@ public class FinishFragmentActivity extends Fragment {
 			if (isStep1Complete) {
 				// Update Step 1 to Complete
 				step_1_indicator.setCardBackgroundColor(
-				MaterialColors.getColor(step_1_indicator, R.attr.colorPrimary)
+				MaterialColors.getColor(step_1_indicator, com.google.android.material.R.attr.colorPrimary)
 				);
 				step_1_indicator.setStrokeColor(
-				MaterialColors.getColor(step_1_indicator, R.attr.colorPrimary)
+				MaterialColors.getColor(step_1_indicator, com.google.android.material.R.attr.colorPrimary)
 				);
 				step_1_label.setTextColor(
-				MaterialColors.getColor(step_1_label, R.attr.colorPrimary)
+				MaterialColors.getColor(step_1_label, com.google.android.material.R.attr.colorPrimary)
 				);
 				// Animate check icon
 				step_1_check.setScaleX(0f);
@@ -1265,20 +1265,20 @@ public class FinishFragmentActivity extends Fragment {
 				.start();
 				// Show Step 2
 				progress_line_1.setBackgroundColor(
-				MaterialColors.getColor(progress_line_1, R.attr.colorPrimary)
+				MaterialColors.getColor(progress_line_1, com.google.android.material.R.attr.colorPrimary)
 				);
 				// Activate Step 2 appearance
 				step_2_indicator.setCardBackgroundColor(
-				MaterialColors.getColor(step_2_indicator, R.attr.colorPrimaryContainer)
+				MaterialColors.getColor(step_2_indicator, com.google.android.material.R.attr.colorPrimaryContainer)
 				);
 				step_2_indicator.setStrokeColor(
-				MaterialColors.getColor(step_2_indicator, R.attr.colorPrimary)
+				MaterialColors.getColor(step_2_indicator, com.google.android.material.R.attr.colorPrimary)
 				);
 				step_2_label.setTextColor(
-				MaterialColors.getColor(step_2_label, R.attr.colorPrimary)
+				MaterialColors.getColor(step_2_label, com.google.android.material.R.attr.colorPrimary)
 				);
 				step_2_number.setTextColor(
-				MaterialColors.getColor(step_2_number, R.attr.colorOnPrimaryContainer)
+				MaterialColors.getColor(step_2_number, com.google.android.material.R.attr.colorOnPrimaryContainer)
 				);
 				// Animate Step 2 appearance
 				step_2.setAlpha(0f);
@@ -1293,16 +1293,16 @@ public class FinishFragmentActivity extends Fragment {
 				step_1_number.setVisibility(View.GONE);
 			} else {
 				step_1_indicator.setCardBackgroundColor(
-				MaterialColors.getColor(step_1_indicator, R.attr.colorPrimaryContainer)
+				MaterialColors.getColor(step_1_indicator, com.google.android.material.R.attr.colorPrimaryContainer)
 				);
 				step_1_indicator.setStrokeColor(
-				MaterialColors.getColor(step_1_indicator, R.attr.colorPrimary)
+				MaterialColors.getColor(step_1_indicator, com.google.android.material.R.attr.colorPrimary)
 				);
 				step_1_label.setTextColor(
-				MaterialColors.getColor(step_1_label, R.attr.colorPrimary)
+				MaterialColors.getColor(step_1_label, com.google.android.material.R.attr.colorPrimary)
 				);
 				progress_line_1.setBackgroundColor(
-				MaterialColors.getColor(progress_line_1, R.attr.colorSurfaceVariant)
+				MaterialColors.getColor(progress_line_1, com.google.android.material.R.attr.colorSurfaceVariant)
 				);
 				dimensions_step_card.setVisibility(View.GONE);
 				cardview3.setVisibility(View.GONE);
@@ -1312,15 +1312,15 @@ public class FinishFragmentActivity extends Fragment {
 			if (isStep1Complete && isStep2Complete) {
 				// Update Step 2 to Complete
 				step_2_indicator.setCardBackgroundColor(
-				MaterialColors.getColor(step_2_indicator, R.attr.colorPrimary)
+				MaterialColors.getColor(step_2_indicator, com.google.android.material.R.attr.colorPrimary)
 				);
 				step_2_indicator.setStrokeColor(
-				MaterialColors.getColor(step_2_indicator, R.attr.colorPrimary)
+				MaterialColors.getColor(step_2_indicator, com.google.android.material.R.attr.colorPrimary)
 				);
 				step_2_number.setVisibility(View.GONE);
 				step_2_check.setVisibility(View.VISIBLE);
 				step_2_label.setTextColor(
-				MaterialColors.getColor(step_2_label, R.attr.colorPrimary)
+				MaterialColors.getColor(step_2_label, com.google.android.material.R.attr.colorPrimary)
 				);
 				// Animate check icon
 				step_2_check.setScaleX(0f);
@@ -1337,15 +1337,15 @@ public class FinishFragmentActivity extends Fragment {
 				if (openingsCount > 0) {
 					
 					step_3_indicator.setCardBackgroundColor(
-					MaterialColors.getColor(step_3_indicator, R.attr.colorPrimary)
+					MaterialColors.getColor(step_3_indicator, com.google.android.material.R.attr.colorPrimary)
 					);
 					step_3_indicator.setStrokeColor(
-					MaterialColors.getColor(step_3_indicator, R.attr.colorPrimary)
+					MaterialColors.getColor(step_3_indicator, com.google.android.material.R.attr.colorPrimary)
 					);
 					step_3_number.setVisibility(View.GONE);
 					step_3_check.setVisibility(View.VISIBLE);
 					step_3_label.setTextColor(
-					MaterialColors.getColor(step_3_label, R.attr.colorPrimary)
+					MaterialColors.getColor(step_3_label, com.google.android.material.R.attr.colorPrimary)
 					);
 					
 					// Animate check
@@ -1371,16 +1371,16 @@ public class FinishFragmentActivity extends Fragment {
 				
 				
 				step_2_indicator.setCardBackgroundColor(
-				MaterialColors.getColor(step_2_indicator, R.attr.colorSurfaceVariant)
+				MaterialColors.getColor(step_2_indicator, com.google.android.material.R.attr.colorSurfaceVariant)
 				);
 				step_2_indicator.setStrokeColor(
-				MaterialColors.getColor(step_2_indicator, R.attr.colorOutlineVariant)
+				MaterialColors.getColor(step_2_indicator, com.google.android.material.R.attr.colorOutlineVariant)
 				);
 				step_2_label.setTextColor(
-				MaterialColors.getColor(step_2_label, R.attr.colorOnSurfaceVariant)
+				MaterialColors.getColor(step_2_label, com.google.android.material.R.attr.colorOnSurfaceVariant)
 				);
 				step_2_number.setTextColor(
-				MaterialColors.getColor(step_2_number, R.attr.colorOnSurfaceVariant)
+				MaterialColors.getColor(step_2_number, com.google.android.material.R.attr.colorOnSurfaceVariant)
 				);
 				cardview4.setVisibility(View.GONE);
 				add_opening_button.setVisibility(View.GONE);

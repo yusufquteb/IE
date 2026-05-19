@@ -32,7 +32,6 @@ import java.util.Locale;
 import java.util.Map;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-import java.util.function.Consumer;
 
 /**
  * Sanitation Quantity Survey — Phase 3
@@ -380,7 +379,7 @@ public class SanitationActivity extends AppCompatActivity {
             PipeSegment seg = segments.get(pos);
 
             ArrayAdapter<String> dAdapter = new ArrayAdapter<>(
-                    SanitationActivity.this, R.layout.simple_dropdown_item_1line, DIAMETERS);
+                    SanitationActivity.this, android.R.layout.simple_dropdown_item_1line, DIAMETERS);
             h.ddDiameter.setAdapter(dAdapter);
             h.ddDiameter.setText(seg.diameter, false);
             h.ddDiameter.setOnItemClickListener((av, v, i, id) -> {
@@ -460,7 +459,9 @@ public class SanitationActivity extends AppCompatActivity {
         return it;
     }
 
-    private TextWatcher makeWatcher(Consumer<String> fn) {
+    interface StringConsumer { void accept(String s); }
+
+    private TextWatcher makeWatcher(StringConsumer fn) {
         return new TextWatcher() {
             @Override public void beforeTextChanged(CharSequence s, int st, int c, int a) {}
             @Override public void onTextChanged(CharSequence s, int st, int b, int c) {}

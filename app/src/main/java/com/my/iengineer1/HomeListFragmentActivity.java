@@ -147,7 +147,7 @@ public class HomeListFragmentActivity extends Fragment {
 			if (_data.get((int)_position).containsKey("icon")) {
 				ImageView2.setImageResource((int) _data.get((int)_position).get("icon"));
 			}
-			cardview2.setOnClickListener(View _view -> {
+			cardview2.setOnClickListener((v) -> {
 				Intent nav = new Intent();
 				switch((int)_position) {
 					case 0:

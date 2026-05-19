@@ -387,10 +387,6 @@ public class RoadsActivity extends AppCompatActivity {
     }
 
     private void createNewProjectAndSave() {
-        // Show a simple name input dialog
-        View inputView = LayoutInflater.from(this)
-                .inflate(R.layout.dialog_input_name, null);
-        // Fallback if dialog_input_name layout doesn't exist: use plain EditText
         android.widget.EditText etName = new android.widget.EditText(this);
         etName.setHint("اسم المشروع");
 

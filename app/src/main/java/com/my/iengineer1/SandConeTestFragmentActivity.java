@@ -250,7 +250,7 @@ public class SandConeTestFragmentActivity extends Fragment {
 		relativeDensity = _view.findViewById(R.id.relativeDensity);
 		textview50 = _view.findViewById(R.id.textview50);
 		
-		buttonToggleCalculations.setOnClickListener(View _view -> {
+		buttonToggleCalculations.setOnClickListener((v) -> {
 			
 		});
 	}

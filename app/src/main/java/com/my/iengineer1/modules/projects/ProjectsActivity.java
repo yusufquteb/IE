@@ -158,7 +158,7 @@ public class ProjectsActivity extends AppCompatActivity {
     private void confirmDelete(Project project) {
         new MaterialAlertDialogBuilder(this)
                 .setTitle("حذف المشروع")
-                .setMessage("هل تريد حذف مشروع "" + project.name + ""؟")
+                .setMessage("هل تريد حذف مشروع \"" + project.name + "\"؟")
                 .setPositiveButton("حذف", (d, w) ->
                         executor.execute(() -> db.projectDao().delete(project)))
                 .setNegativeButton("إلغاء", null)
