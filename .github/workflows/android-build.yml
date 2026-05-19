@@ -25,22 +25,16 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
-      - name: Cache Gradle packages
-        uses: actions/cache@v4
+      # setup-gradle installs the specified Gradle version and makes
+      # the `gradle` binary available — no wrapper needed in the repo
+      - name: Setup Gradle 8.7
+        uses: gradle/actions/setup-gradle@v3
         with:
-          path: |
-            ~/.gradle/caches
-            ~/.gradle/wrapper
-          key: gradle-${{ hashFiles('**/*.gradle', 'gradle/wrapper/gradle-wrapper.properties') }}
-          restore-keys: gradle-
-
-      - name: Generate Gradle wrapper
-        run: |
-          gradle wrapper --gradle-version=8.7 --distribution-type=bin
-          chmod +x gradlew
+          gradle-version: '8.7'
+          cache-read-only: false
 
       - name: Build Debug APK
-        run: ./gradlew assembleDebug --stacktrace 2>&1
+        run: gradle assembleDebug --stacktrace
         env:
           ANDROID_HOME: /usr/local/lib/android/sdk
 
@@ -52,10 +46,12 @@ jobs:
           path: app/build/outputs/apk/debug/app-debug.apk
           retention-days: 7
 
-      - name: Upload error reports on failure
+      - name: Upload build reports on failure
         if: failure()
         uses: actions/upload-artifact@v4
         with:
           name: build-reports
-          path: app/build/reports/
+          path: |
+            app/build/reports/
+            app/build/tmp/compileDebugJavaWithJavac/
           retention-days: 3
