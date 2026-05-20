@@ -29,6 +29,8 @@ import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
+import androidx.activity.result.ActivityResultLauncher;
+import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.annotation.*;
 import androidx.fragment.app.Fragment;
 import com.github.angads25.filepicker.*;
@@ -77,6 +79,27 @@ public class FinishFragmentActivity extends Fragment {
 	
 	private ArrayList<String> editTexts = new ArrayList<>();
 	
+	private TextInputEditText pendingCameraField;
+	private final ActivityResultLauncher<Intent> cameraLauncher = registerForActivityResult(
+		new ActivityResultContracts.StartActivityForResult(),
+		result -> {
+			if (result.getResultCode() == android.app.Activity.RESULT_OK && result.getData() != null) {
+				double widthVal  = result.getData().getDoubleExtra("width_value",  0);
+				double heightVal = result.getData().getDoubleExtra("height_value", 0);
+				double areaVal   = result.getData().getDoubleExtra("area_value",   0);
+				if (pendingCameraField == len && widthVal > 0) {
+					len.setText(String.format(Locale.ENGLISH, "%.2f", widthVal));
+				} else if (pendingCameraField == wed && heightVal > 0) {
+					wed.setText(String.format(Locale.ENGLISH, "%.2f", heightVal));
+				} else if (pendingCameraField == radius && widthVal > 0) {
+					radius.setText(String.format(Locale.ENGLISH, "%.2f", widthVal / 2.0));
+				} else if (pendingCameraField == area && areaVal > 0) {
+					area.setText(String.format(Locale.ENGLISH, "%.3f", areaVal));
+				}
+				pendingCameraField = null;
+			}
+		});
+
 	private ScrollView scroll_view;
 	private LinearLayout main_container;
 	private MaterialCardView cardview7;
@@ -926,6 +949,23 @@ public class FinishFragmentActivity extends Fragment {
 		
 		delete_all_openings.setOnClickListener((v) -> {
 			_removeAllOpenings();
+		});
+
+		textinputlayout_length.setEndIconOnClickListener(v -> {
+			pendingCameraField = len;
+			cameraLauncher.launch(new Intent(requireActivity(), com.my.iengineer1.camera.CameraMeasureActivity.class));
+		});
+		textinputlayout_width.setEndIconOnClickListener(v -> {
+			pendingCameraField = wed;
+			cameraLauncher.launch(new Intent(requireActivity(), com.my.iengineer1.camera.CameraMeasureActivity.class));
+		});
+		textinputlayout_radius.setEndIconOnClickListener(v -> {
+			pendingCameraField = radius;
+			cameraLauncher.launch(new Intent(requireActivity(), com.my.iengineer1.camera.CameraMeasureActivity.class));
+		});
+		textinputlayout_area.setEndIconOnClickListener(v -> {
+			pendingCameraField = area;
+			cameraLauncher.launch(new Intent(requireActivity(), com.my.iengineer1.camera.CameraMeasureActivity.class));
 		});
 	}
 	

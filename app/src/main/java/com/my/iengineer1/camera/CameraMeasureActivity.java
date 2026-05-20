@@ -35,6 +35,7 @@ public class CameraMeasureActivity extends AppCompatActivity {
     private EngineeringImageAnalyzer analyzer;
     private String currentMode = MODE_MEASURE;
     private String lastResult = "";
+    private double lastWidthM = 0, lastHeightM = 0, lastAreaM2 = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -85,14 +86,28 @@ public class CameraMeasureActivity extends AppCompatActivity {
     }
 
     private void captureResult() {
-        if (!lastResult.isEmpty()) {
-            Toast.makeText(this, "تم نسخ النتيجة", Toast.LENGTH_SHORT).show();
-            android.content.ClipboardManager cm =
-                    (android.content.ClipboardManager) getSystemService(CLIPBOARD_SERVICE);
-            cm.setPrimaryClip(android.content.ClipData.newPlainText("نتيجة iEngineer", lastResult));
-        } else {
+        if (lastResult.isEmpty()) {
             Toast.makeText(this, "لا توجد نتيجة بعد", Toast.LENGTH_SHORT).show();
+            return;
         }
+        android.content.Intent resultIntent = new android.content.Intent();
+        resultIntent.putExtra("width_value",  lastWidthM);
+        resultIntent.putExtra("height_value", lastHeightM);
+        resultIntent.putExtra("area_value",   lastAreaM2);
+        resultIntent.putExtra("full_result",  lastResult);
+        setResult(RESULT_OK, resultIntent);
+        finish();
+    }
+
+    private double extractDouble(String text, String label) {
+        int idx = text.indexOf(label);
+        if (idx == -1) return 0;
+        java.util.regex.Matcher m =
+                java.util.regex.Pattern.compile("([0-9]+\\.?[0-9]*)").matcher(text.substring(idx));
+        if (m.find()) {
+            try { return Double.parseDouble(m.group(1)); } catch (Exception ignored) {}
+        }
+        return 0;
     }
 
     private void startCamera() {
@@ -118,6 +133,11 @@ public class CameraMeasureActivity extends AppCompatActivity {
                     if (result != null) {
                         lastResult = result;
                         tvResult.setText(result);
+                        if (measureText != null) {
+                            lastWidthM  = extractDouble(measureText, "العرض التقديري");
+                            lastHeightM = extractDouble(measureText, "الارتفاع التقديري");
+                            lastAreaM2  = extractDouble(measureText, "المساحة التقديرية");
+                        }
                     }
                 }));
 

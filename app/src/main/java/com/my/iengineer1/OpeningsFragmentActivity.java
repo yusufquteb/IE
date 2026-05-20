@@ -22,6 +22,8 @@ import android.webkit.*;
 import android.widget.*;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import androidx.activity.result.ActivityResultLauncher;
+import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.annotation.*;
 import androidx.fragment.app.Fragment;
 import com.github.angads25.filepicker.*;
@@ -64,6 +66,27 @@ public class OpeningsFragmentActivity extends Fragment {
 	private TextInputLayout textinputlayout_width;
 	private TextInputLayout textinputlayout_radius;
 	private TextInputLayout textinputlayout_area;
+	private TextInputEditText pendingCameraField;
+	private final ActivityResultLauncher<Intent> cameraLauncher = registerForActivityResult(
+		new ActivityResultContracts.StartActivityForResult(),
+		result -> {
+			if (result.getResultCode() == android.app.Activity.RESULT_OK && result.getData() != null) {
+				double widthVal  = result.getData().getDoubleExtra("width_value",  0);
+				double heightVal = result.getData().getDoubleExtra("height_value", 0);
+				double areaVal   = result.getData().getDoubleExtra("area_value",   0);
+				if (pendingCameraField == len && widthVal > 0) {
+					len.setText(String.format(java.util.Locale.ENGLISH, "%.2f", widthVal));
+				} else if (pendingCameraField == width && heightVal > 0) {
+					width.setText(String.format(java.util.Locale.ENGLISH, "%.2f", heightVal));
+				} else if (pendingCameraField == radius && widthVal > 0) {
+					radius.setText(String.format(java.util.Locale.ENGLISH, "%.2f", widthVal / 2.0));
+				} else if (pendingCameraField == area && areaVal > 0) {
+					area.setText(String.format(java.util.Locale.ENGLISH, "%.3f", areaVal));
+				}
+				pendingCameraField = null;
+			}
+		});
+
 	private MaterialCardView total_card;
 	private AutoCompleteTextView area_type;
 	private AutoCompleteTextView shape;
@@ -273,7 +296,7 @@ public class OpeningsFragmentActivity extends Fragment {
 			@Override
 			public void onTextChanged(CharSequence _param1, int _param2, int _param3, int _param4) {
 				final String _charSeq = _param1.toString();
-				
+
 				try {
 					// الانتظار قليلاً قبل إعادة الحساب (debounce)
 					new Handler(Looper.getMainLooper()).postDelayed(() -> {
@@ -282,22 +305,56 @@ public class OpeningsFragmentActivity extends Fragment {
 							((FinishFragmentActivity) parentFragment)._recalculateOpenings();
 						}
 					}, 500); // انتظار 500ms بعد آخر تغيير
-					
+
 				} catch (Exception e) {
 					Log.e("OpeningsFragment", "خطأ في TextWatcher: " + e.getMessage());
 				}
-				
+
 			}
-			
+
 			@Override
 			public void beforeTextChanged(CharSequence _param1, int _param2, int _param3, int _param4) {
-				
+
 			}
-			
+
 			@Override
 			public void afterTextChanged(Editable _param1) {
-				
+
 			}
+		});
+
+		no.addTextChangedListener(new TextWatcher() {
+			@Override
+			public void onTextChanged(CharSequence _param1, int _param2, int _param3, int _param4) {
+				final String _charSeq = _param1.toString();
+				if (_is_number(_charSeq) && _is_number(area.getText().toString())) {
+					total_area.setText(String.valueOf(
+						Double.parseDouble(_charSeq) * Double.parseDouble(area.getText().toString())));
+				} else {
+					total_area.setText("");
+				}
+			}
+			@Override
+			public void beforeTextChanged(CharSequence _param1, int _param2, int _param3, int _param4) {}
+			@Override
+			public void afterTextChanged(Editable _param1) {}
+		});
+
+		textinputlayout_length.setEndIconOnClickListener(v -> {
+			pendingCameraField = len;
+			cameraLauncher.launch(new Intent(requireActivity(), com.my.iengineer1.camera.CameraMeasureActivity.class));
+		});
+		textinputlayout_width.setEndIconOnClickListener(v -> {
+			pendingCameraField = width;
+			cameraLauncher.launch(new Intent(requireActivity(), com.my.iengineer1.camera.CameraMeasureActivity.class));
+		});
+		textinputlayout_radius.setEndIconOnClickListener(v -> {
+			pendingCameraField = radius;
+			cameraLauncher.launch(new Intent(requireActivity(), com.my.iengineer1.camera.CameraMeasureActivity.class));
+		});
+		textinputlayout_area.setEndIconOnClickListener(v -> {
+			pendingCameraField = area;
+			cameraLauncher.launch(new Intent(requireActivity(), com.my.iengineer1.camera.CameraMeasureActivity.class));
 		});
 	}
 	

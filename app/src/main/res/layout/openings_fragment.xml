@@ -179,7 +179,10 @@
 						app:helperText="@string/length_helper"
 						app:suffixText="m"
 						app:startIconDrawable="@drawable/icon_straighten"
-						app:startIconContentDescription="@string/length_icon">
+						app:startIconContentDescription="@string/length_icon"
+						app:endIconMode="custom"
+						app:endIconDrawable="@drawable/ic_camera_24"
+						app:endIconContentDescription="@string/camera_measure_icon">
 						<com.google.android.material.textfield.TextInputEditText
 							android:id="@+id/len"
 							android:layout_width="match_parent"
@@ -201,7 +204,10 @@
 						app:helperText="@string/width_helper"
 						app:suffixText="m"
 						app:startIconDrawable="@drawable/icon_width"
-						app:startIconContentDescription="@string/width_icon">
+						app:startIconContentDescription="@string/width_icon"
+						app:endIconMode="custom"
+						app:endIconDrawable="@drawable/ic_camera_24"
+						app:endIconContentDescription="@string/camera_measure_icon">
 						<com.google.android.material.textfield.TextInputEditText
 							android:id="@+id/width"
 							android:layout_width="match_parent"
@@ -222,7 +228,10 @@
 						app:helperText="@string/radius_helper"
 						app:suffixText="m"
 						app:startIconDrawable="@drawable/icon_radius"
-						app:startIconContentDescription="@string/radius_icon">
+						app:startIconContentDescription="@string/radius_icon"
+						app:endIconMode="custom"
+						app:endIconDrawable="@drawable/ic_camera_24"
+						app:endIconContentDescription="@string/camera_measure_icon">
 						<com.google.android.material.textfield.TextInputEditText
 							android:id="@+id/radius"
 							android:layout_width="match_parent"
@@ -243,7 +252,10 @@
 						app:helperText="@string/area_helper"
 						app:suffixText="m²"
 						app:startIconDrawable="@drawable/icon_area"
-						app:startIconContentDescription="@string/area_icon">
+						app:startIconContentDescription="@string/area_icon"
+						app:endIconMode="custom"
+						app:endIconDrawable="@drawable/ic_camera_24"
+						app:endIconContentDescription="@string/camera_measure_icon">
 						<com.google.android.material.textfield.TextInputEditText
 							android:id="@+id/area"
 							android:layout_width="match_parent"
