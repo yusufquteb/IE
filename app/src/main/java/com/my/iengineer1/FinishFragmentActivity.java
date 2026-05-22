@@ -29,6 +29,7 @@ import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
+import androidx.activity.result.ActivityResult;
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.annotation.*;
@@ -80,25 +81,7 @@ public class FinishFragmentActivity extends Fragment {
 	private ArrayList<String> editTexts = new ArrayList<>();
 	
 	private TextInputEditText pendingCameraField;
-	private final ActivityResultLauncher<Intent> cameraLauncher = registerForActivityResult(
-		new ActivityResultContracts.StartActivityForResult(),
-		result -> {
-			if (result.getResultCode() == android.app.Activity.RESULT_OK && result.getData() != null) {
-				double widthVal  = result.getData().getDoubleExtra("width_value",  0);
-				double heightVal = result.getData().getDoubleExtra("height_value", 0);
-				double areaVal   = result.getData().getDoubleExtra("area_value",   0);
-				if (pendingCameraField == len && widthVal > 0) {
-					len.setText(String.format(Locale.ENGLISH, "%.2f", widthVal));
-				} else if (pendingCameraField == wed && heightVal > 0) {
-					wed.setText(String.format(Locale.ENGLISH, "%.2f", heightVal));
-				} else if (pendingCameraField == radius && widthVal > 0) {
-					radius.setText(String.format(Locale.ENGLISH, "%.2f", widthVal / 2.0));
-				} else if (pendingCameraField == area && areaVal > 0) {
-					area.setText(String.format(Locale.ENGLISH, "%.3f", areaVal));
-				}
-				pendingCameraField = null;
-			}
-		});
+	private ActivityResultLauncher<Intent> cameraLauncher;
 
 	private ScrollView scroll_view;
 	private LinearLayout main_container;
@@ -202,6 +185,32 @@ public class FinishFragmentActivity extends Fragment {
 	private TextView textview72;
 	private ImageView icon_empty_state;
 	
+	@Override
+	public void onAttach(@NonNull Context context) {
+		super.onAttach(context);
+		cameraLauncher = registerForActivityResult(
+			new ActivityResultContracts.StartActivityForResult(),
+			this::_handleCameraResult);
+	}
+
+	private void _handleCameraResult(ActivityResult result) {
+		if (result.getResultCode() == android.app.Activity.RESULT_OK && result.getData() != null) {
+			double widthVal  = result.getData().getDoubleExtra("width_value",  0);
+			double heightVal = result.getData().getDoubleExtra("height_value", 0);
+			double areaVal   = result.getData().getDoubleExtra("area_value",   0);
+			if (pendingCameraField == len && widthVal > 0) {
+				len.setText(String.format(Locale.ENGLISH, "%.2f", widthVal));
+			} else if (pendingCameraField == wed && heightVal > 0) {
+				wed.setText(String.format(Locale.ENGLISH, "%.2f", heightVal));
+			} else if (pendingCameraField == radius && widthVal > 0) {
+				radius.setText(String.format(Locale.ENGLISH, "%.2f", widthVal / 2.0));
+			} else if (pendingCameraField == area && areaVal > 0) {
+				area.setText(String.format(Locale.ENGLISH, "%.3f", areaVal));
+			}
+			pendingCameraField = null;
+		}
+	}
+
 	@NonNull
 	@Override
 	public View onCreateView(@NonNull LayoutInflater _inflater, @Nullable ViewGroup _container, @Nullable Bundle _savedInstanceState) {
@@ -210,7 +219,7 @@ public class FinishFragmentActivity extends Fragment {
 		initializeLogic();
 		return _view;
 	}
-	
+
 	private void initialize(Bundle _savedInstanceState, View _view) {
 		scroll_view = _view.findViewById(R.id.scroll_view);
 		main_container = _view.findViewById(R.id.main_container);

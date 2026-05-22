@@ -22,6 +22,7 @@ import android.webkit.*;
 import android.widget.*;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import androidx.activity.result.ActivityResult;
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.annotation.*;
@@ -67,25 +68,7 @@ public class OpeningsFragmentActivity extends Fragment {
 	private TextInputLayout textinputlayout_radius;
 	private TextInputLayout textinputlayout_area;
 	private TextInputEditText pendingCameraField;
-	private final ActivityResultLauncher<Intent> cameraLauncher = registerForActivityResult(
-		new ActivityResultContracts.StartActivityForResult(),
-		result -> {
-			if (result.getResultCode() == android.app.Activity.RESULT_OK && result.getData() != null) {
-				double widthVal  = result.getData().getDoubleExtra("width_value",  0);
-				double heightVal = result.getData().getDoubleExtra("height_value", 0);
-				double areaVal   = result.getData().getDoubleExtra("area_value",   0);
-				if (pendingCameraField == len && widthVal > 0) {
-					len.setText(String.format(java.util.Locale.ENGLISH, "%.2f", widthVal));
-				} else if (pendingCameraField == width && heightVal > 0) {
-					width.setText(String.format(java.util.Locale.ENGLISH, "%.2f", heightVal));
-				} else if (pendingCameraField == radius && widthVal > 0) {
-					radius.setText(String.format(java.util.Locale.ENGLISH, "%.2f", widthVal / 2.0));
-				} else if (pendingCameraField == area && areaVal > 0) {
-					area.setText(String.format(java.util.Locale.ENGLISH, "%.3f", areaVal));
-				}
-				pendingCameraField = null;
-			}
-		});
+	private ActivityResultLauncher<Intent> cameraLauncher;
 
 	private MaterialCardView total_card;
 	private AutoCompleteTextView area_type;
@@ -100,6 +83,32 @@ public class OpeningsFragmentActivity extends Fragment {
 	private TextInputLayout TextInputLayout_total;
 	private TextInputEditText total_area;
 	
+	@Override
+	public void onAttach(@NonNull Context context) {
+		super.onAttach(context);
+		cameraLauncher = registerForActivityResult(
+			new ActivityResultContracts.StartActivityForResult(),
+			this::_handleCameraResult);
+	}
+
+	private void _handleCameraResult(ActivityResult result) {
+		if (result.getResultCode() == android.app.Activity.RESULT_OK && result.getData() != null) {
+			double widthVal  = result.getData().getDoubleExtra("width_value",  0);
+			double heightVal = result.getData().getDoubleExtra("height_value", 0);
+			double areaVal   = result.getData().getDoubleExtra("area_value",   0);
+			if (pendingCameraField == len && widthVal > 0) {
+				len.setText(String.format(java.util.Locale.ENGLISH, "%.2f", widthVal));
+			} else if (pendingCameraField == width && heightVal > 0) {
+				width.setText(String.format(java.util.Locale.ENGLISH, "%.2f", heightVal));
+			} else if (pendingCameraField == radius && widthVal > 0) {
+				radius.setText(String.format(java.util.Locale.ENGLISH, "%.2f", widthVal / 2.0));
+			} else if (pendingCameraField == area && areaVal > 0) {
+				area.setText(String.format(java.util.Locale.ENGLISH, "%.3f", areaVal));
+			}
+			pendingCameraField = null;
+		}
+	}
+
 	@NonNull
 	@Override
 	public View onCreateView(@NonNull LayoutInflater _inflater, @Nullable ViewGroup _container, @Nullable Bundle _savedInstanceState) {
@@ -108,7 +117,7 @@ public class OpeningsFragmentActivity extends Fragment {
 		initializeLogic();
 		return _view;
 	}
-	
+
 	private void initialize(Bundle _savedInstanceState, View _view) {
 		cardview1 = _view.findViewById(R.id.cardview1);
 		bg = _view.findViewById(R.id.bg);
