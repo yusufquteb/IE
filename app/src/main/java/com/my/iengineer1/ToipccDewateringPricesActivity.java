@@ -624,37 +624,6 @@ public class ToipccDewateringPricesActivity extends AppCompatActivity {
 			}
 		});
 		
-		textview2.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccDewateringPricesActivity.this, textview2)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("* ثابت ١\n\" مدخل إختياري في حالة عدم إدخاله سيقوم البرنامج بإفتراضه بقيمة ١١٠ \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
-			}
-		});
-		
 		edittext3.addTextChangedListener(new TextWatcher() {
 			@Override
 			public void onTextChanged(CharSequence _param1, int _param2, int _param3, int _param4) {
@@ -674,37 +643,6 @@ public class ToipccDewateringPricesActivity extends AppCompatActivity {
 			@Override
 			public void afterTextChanged(Editable _param1) {
 				
-			}
-		});
-		
-		textview3.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccDewateringPricesActivity.this, textview3)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("* ثابت ٢\n\" مدخل إختياري في حالة عدم إدخاله سيقوم البرنامج بإفتراضه بقيمة ٠.٧٣ \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
 			}
 		});
 		
@@ -752,37 +690,6 @@ public class ToipccDewateringPricesActivity extends AppCompatActivity {
 			}
 		});
 		
-		textview5.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccDewateringPricesActivity.this, textview5)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("* ثابت ٣\n\" مدخل إختياري في حالة عدم إدخاله سيقوم البرنامج بإفتراضه بقيمة ٢١ \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
-			}
-		});
-		
 		edittext6.addTextChangedListener(new TextWatcher() {
 			@Override
 			public void onTextChanged(CharSequence _param1, int _param2, int _param3, int _param4) {
@@ -802,37 +709,6 @@ public class ToipccDewateringPricesActivity extends AppCompatActivity {
 			@Override
 			public void afterTextChanged(Editable _param1) {
 				
-			}
-		});
-		
-		textview6.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccDewateringPricesActivity.this, textview6)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("* ثابت ٤\n\" مدخل إختياري في حالة عدم إدخاله سيقوم البرنامج بإفتراضه بقيمة ٠.١١ \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
 			}
 		});
 		
@@ -880,37 +756,6 @@ public class ToipccDewateringPricesActivity extends AppCompatActivity {
 			}
 		});
 		
-		textview8.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccDewateringPricesActivity.this, textview8)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("* ثابت ٥\n\" مدخل إختياري في حالة عدم إدخاله سيقوم البرنامج بإفتراضه بقيمة ٤٠٠ \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
-			}
-		});
-		
 		edittext9.addTextChangedListener(new TextWatcher() {
 			@Override
 			public void onTextChanged(CharSequence _param1, int _param2, int _param3, int _param4) {
@@ -933,37 +778,6 @@ public class ToipccDewateringPricesActivity extends AppCompatActivity {
 			}
 		});
 		
-		textview9.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccDewateringPricesActivity.this, textview9)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("* ثابت ٦\n\" مدخل إختياري في حالة عدم إدخاله سيقوم البرنامج بإفتراضه بقيمة ٠.٠٥ \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
-			}
-		});
-		
 		edittext10.addTextChangedListener(new TextWatcher() {
 			@Override
 			public void onTextChanged(CharSequence _param1, int _param2, int _param3, int _param4) {
@@ -983,37 +797,6 @@ public class ToipccDewateringPricesActivity extends AppCompatActivity {
 			@Override
 			public void afterTextChanged(Editable _param1) {
 				
-			}
-		});
-		
-		textview10.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccDewateringPricesActivity.this, textview10)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("* ثابت ٧\n\" مدخل إختياري في حالة عدم إدخاله سيقوم البرنامج بإفتراضه بقيمة ٠.١١ \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
 			}
 		});
 		
@@ -1259,37 +1042,6 @@ public class ToipccDewateringPricesActivity extends AppCompatActivity {
 			}
 		});
 		
-		textview2029.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccDewateringPricesActivity.this, textview2029)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("* نسبة المصاريف الادارية والأرباح\n\" مدخل إختياري في حالة عدم إدخاله سيقوم البرنامج بإفتراضه بقيمة ١٩ % \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
-			}
-		});
-		
 		button2.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
@@ -1344,37 +1096,6 @@ public class ToipccDewateringPricesActivity extends AppCompatActivity {
 			@Override
 			public void afterTextChanged(Editable _param1) {
 				
-			}
-		});
-		
-		textview19.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccDewateringPricesActivity.this, textview19)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("* نسبة مصاريف التصميم\n( إن وجدت ) ( جنيه )\n\" مدخل إختياري في حالة عدم إدخاله سيقوم البرنامج بإفتراضه بقيمة ٠.٤ % \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
 			}
 		});
 		

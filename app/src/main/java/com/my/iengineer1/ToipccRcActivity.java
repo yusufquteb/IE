@@ -1306,37 +1306,6 @@ public class ToipccRcActivity extends AppCompatActivity {
 			}
 		});
 		
-		textview10.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccRcActivity.this, textview10)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("* معدل الرش\n( كجم / م٢ )\n\" مدخل إختياري في حالة عدم إدخاله\nسيقوم البرنامج بأفتراضه بقيمة = ٠.٥ كجم / م٢ \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
-			}
-		});
-		
 		button1.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
@@ -1575,37 +1544,6 @@ public class ToipccRcActivity extends AppCompatActivity {
 			@Override
 			public void afterTextChanged(Editable _param1) {
 				
-			}
-		});
-		
-		textview1264.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccRcActivity.this, textview1264)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("* نسبة الهالك\nوهي تعبر عن كمية الهالك التي تحدث أثناء النقل وأثناء التشغيل وبعد التشغيل عند قطع اللحامات\n\" مدخل إختياري في حالة عدم إدخاله سيقوم البرنامج بإفتراضه بقيمة ٣ % \" وذلك عند الضغط علي زرار أحسب")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
 			}
 		});
 		
@@ -2063,37 +2001,6 @@ public class ToipccRcActivity extends AppCompatActivity {
 			}
 		});
 		
-		textview424.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccRcActivity.this, textview424)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("\n* سعر منشار\nقطع الأسفلت\nلكل يوم\n( جنيه / يوم )\n\n\nوهو يعبر عن المبلغ الذي يتكلفة منشار الأسفلت للعمل يوم واحد\n\" مدخل إختياري في حالة عدم إدخاله سيقوم البرنامج بإفتراضه بقيمة = ٠.٠٠ جنيه / يوم \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
-			}
-		});
-		
 		edittext123.addTextChangedListener(new TextWatcher() {
 			@Override
 			public void onTextChanged(CharSequence _param1, int _param2, int _param3, int _param4) {
@@ -2115,37 +2022,6 @@ public class ToipccRcActivity extends AppCompatActivity {
 			@Override
 			public void afterTextChanged(Editable _param1) {
 				
-			}
-		});
-		
-		textview423.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccRcActivity.this, textview423)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("* عدد أيام\nالعمل التي\nسيتم استخدام\nمنشار قطع\nالأسفلت بها\nلزوم تنفيذ\nالبند\n\" مدخل إختياري في حالة عدم إدخاله سيقوم البرنامج بإفتراضه بقيمة = ١ يوم \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
 			}
 		});
 		
@@ -2173,37 +2049,6 @@ public class ToipccRcActivity extends AppCompatActivity {
 			}
 		});
 		
-		textview422.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccRcActivity.this, textview422)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("* عدد منشار\nقطع الأسفلت\nالمتوقع\nاستخدامها\nفي اليوم\n( منشار أسفلت\n/ يوم )\n\n\nوهو يعبر عن عدد منشار الأسفلت التي يمكن استخدامها خلال اليوم في حالة الحاجة\n\" مدخل إختياري في حالة عدم إدخاله سيقوم البرنامج بإفتراضه بقيمة = ٠.٠٠ منشار أسلفت / يوم \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
-			}
-		});
-		
 		edittext121.addTextChangedListener(new TextWatcher() {
 			@Override
 			public void onTextChanged(CharSequence _param1, int _param2, int _param3, int _param4) {
@@ -2225,37 +2070,6 @@ public class ToipccRcActivity extends AppCompatActivity {
 			@Override
 			public void afterTextChanged(Editable _param1) {
 				
-			}
-		});
-		
-		textview428.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccRcActivity.this, textview428)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("* يومية\nالمكنسة\n( جنيه / يوم )\nوهو يعبر عن المبلغ الذي تتقاضاه المكنسة بنهاية اليوم عن الأعمال التي قام بتنفيذها خلال اليوم \n\" مدخل إختياري في حالة عدم إدخاله سيقوم البرنامج بإفتراضه بقيمة = ٠.٠٠ جنيه / يوم \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
 			}
 		});
 		
@@ -2283,37 +2097,6 @@ public class ToipccRcActivity extends AppCompatActivity {
 			}
 		});
 		
-		textview427.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccRcActivity.this, textview427)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("عدد أيام\nالعمل\nالمفترضة\nلتنفيذ البند\n\" مدخل إختياري في حالة عدم إدخاله سيقوم البرنامج بإفتراضه بقيمة = ١ يوم \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
-			}
-		});
-		
 		edittext126.addTextChangedListener(new TextWatcher() {
 			@Override
 			public void onTextChanged(CharSequence _param1, int _param2, int _param3, int _param4) {
@@ -2335,37 +2118,6 @@ public class ToipccRcActivity extends AppCompatActivity {
 			@Override
 			public void afterTextChanged(Editable _param1) {
 				
-			}
-		});
-		
-		textview426.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccRcActivity.this, textview426)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("* عدد\nالمكنسة\nالمستخدم\nفي اليوم\n( مكنسة / يوم )\n\n\n\" مدخل إختياري في حالة عدم إدخاله سيقوم البرنامج بإفتراضه بقيمة = ٠٠.٠٠ مكنسة / يوم \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
 			}
 		});
 		
@@ -2393,37 +2145,6 @@ public class ToipccRcActivity extends AppCompatActivity {
 			}
 		});
 		
-		textview1206.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccRcActivity.this, textview1206)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("* يومية\nالجرار أو \nالسيارة\nاللازمة\nلجر \nالكومبرسور\n( جنيه / يوم )\nوهو يعبر عن المبلغ الذي يتقاضاه الجرار أو \nالسيارة\nاللازمة\nلجر \nالكومبرسور بنهاية اليوم عن الأعمال التي قام بتنفيذها خلال اليوم \n\" مدخل إختياري في حالة عدم إدخاله سيقوم البرنامج بإفتراضه بقيمة = ٠.٠٠ جنيه / يوم \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
-			}
-		});
-		
 		edittext131.addTextChangedListener(new TextWatcher() {
 			@Override
 			public void onTextChanged(CharSequence _param1, int _param2, int _param3, int _param4) {
@@ -2445,37 +2166,6 @@ public class ToipccRcActivity extends AppCompatActivity {
 			@Override
 			public void afterTextChanged(Editable _param1) {
 				
-			}
-		});
-		
-		textview1207.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccRcActivity.this, textview1207)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("عدد أيام\nالعمل\nالمفترضة\nلتنفيذ البند\n\" مدخل إختياري في حالة عدم إدخاله سيقوم البرنامج بإفتراضه بقيمة = ١ يوم \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
 			}
 		});
 		
@@ -2503,37 +2193,6 @@ public class ToipccRcActivity extends AppCompatActivity {
 			}
 		});
 		
-		textview1208.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccRcActivity.this, textview1208)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("* عدد الجرارات\nأو السيارات \nالمستخدمة لجر\nالكومبرسور بالبند\nخلال اليوم\n( جرار أو سيارة\n / يوم )\n\n\n\" مدخل إختياري في حالة عدم إدخاله سيقوم البرنامج بإفتراضه بقيمة = ٠٠.٠٠ جرار أو سيارة لجر الكومبرسور / يوم \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
-			}
-		});
-		
 		edittext129.addTextChangedListener(new TextWatcher() {
 			@Override
 			public void onTextChanged(CharSequence _param1, int _param2, int _param3, int _param4) {
@@ -2555,37 +2214,6 @@ public class ToipccRcActivity extends AppCompatActivity {
 			@Override
 			public void afterTextChanged(Editable _param1) {
 				
-			}
-		});
-		
-		textview1150.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccRcActivity.this, textview1150)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("* يومية\nالكومبرسور\n( جنيه / يوم )\nوهو يعبر عن المبلغ الذي يتقاضاه الكومبرسور بنهاية اليوم عن الأعمال التي قام بتنفيذها خلال اليوم \n\" مدخل إختياري في حالة عدم إدخاله سيقوم البرنامج بإفتراضه بقيمة = ٠.٠٠ جنيه / يوم \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
 			}
 		});
 		
@@ -2613,37 +2241,6 @@ public class ToipccRcActivity extends AppCompatActivity {
 			}
 		});
 		
-		textview1151.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccRcActivity.this, textview1151)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("عدد أيام\nالعمل\nالمفترضة\nلتنفيذ البند\n\" مدخل إختياري في حالة عدم إدخاله سيقوم البرنامج بإفتراضه بقيمة = ١ يوم \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
-			}
-		});
-		
 		edittext134.addTextChangedListener(new TextWatcher() {
 			@Override
 			public void onTextChanged(CharSequence _param1, int _param2, int _param3, int _param4) {
@@ -2665,37 +2262,6 @@ public class ToipccRcActivity extends AppCompatActivity {
 			@Override
 			public void afterTextChanged(Editable _param1) {
 				
-			}
-		});
-		
-		textview1152.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccRcActivity.this, textview1152)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("* عدد\nالكومبرسورات\nالمستخدمة\nبالبند خلال\nاليوم\n( كومبرسور\n / يوم )\n\n\n\" مدخل إختياري في حالة عدم إدخاله سيقوم البرنامج بإفتراضه بقيمة = ٠٠.٠٠ كومبرسور / يوم \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
 			}
 		});
 		
@@ -2723,37 +2289,6 @@ public class ToipccRcActivity extends AppCompatActivity {
 			}
 		});
 		
-		textview475.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccRcActivity.this, textview475)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("يومية\nالأتينير\n( جنيه / يوم )\nوهو يعبر عن المبلغ الذي يتقاضاه الأتينير بنهاية اليوم عن الأعمال التي قام بتنفيذها خلال اليوم \n\" مدخل إختياري في حالة عدم إدخاله سيقوم البرنامج بإفتراضه بقيمة = ٠.٠٠ جنيه / يوم \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
-			}
-		});
-		
 		edittext139.addTextChangedListener(new TextWatcher() {
 			@Override
 			public void onTextChanged(CharSequence _param1, int _param2, int _param3, int _param4) {
@@ -2775,37 +2310,6 @@ public class ToipccRcActivity extends AppCompatActivity {
 			@Override
 			public void afterTextChanged(Editable _param1) {
 				
-			}
-		});
-		
-		textview474.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccRcActivity.this, textview474)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("عدد أيام\nالعمل\nالمفترضة\nلتنفيذ البند\n\" مدخل إختياري في حالة عدم إدخاله سيقوم البرنامج بإفتراضه بقيمة = ١ يوم \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
 			}
 		});
 		
@@ -2833,37 +2337,6 @@ public class ToipccRcActivity extends AppCompatActivity {
 			}
 		});
 		
-		textview473.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccRcActivity.this, textview473)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("* عدد الأتينير المستخدم بالبند خلال اليوم\n( أتينير / يوم )\n\" مدخل إختياري في حالة عدم إدخاله سيقوم البرنامج بإفتراضه بقيمة = ١ أتينير / يوم \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
-			}
-		});
-		
 		edittext137.addTextChangedListener(new TextWatcher() {
 			@Override
 			public void onTextChanged(CharSequence _param1, int _param2, int _param3, int _param4) {
@@ -2885,37 +2358,6 @@ public class ToipccRcActivity extends AppCompatActivity {
 			@Override
 			public void afterTextChanged(Editable _param1) {
 				
-			}
-		});
-		
-		textview440.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccRcActivity.this, textview440)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("يومية\nالعمالة والشواكة\n( جنيه / يوم )\nوهو يعبر عن المبلغ الذي يتقاضاه العامل أو الشواك خلال اليوم \n\" مدخل إختياري في حالة عدم إدخاله سيقوم البرنامج بإفتراضه بقيمة = ٠.٠٠ جنيه / يوم \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
 			}
 		});
 		
@@ -2943,37 +2385,6 @@ public class ToipccRcActivity extends AppCompatActivity {
 			}
 		});
 		
-		textview439.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccRcActivity.this, textview439)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("عدد أيام\nالعمل\nالمفترضة\nلتنفيذ البند\n\" مدخل إختياري في حالة عدم إدخاله سيقوم البرنامج بإفتراضه بقيمة = ١ يوم \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
-			}
-		});
-		
 		edittext142.addTextChangedListener(new TextWatcher() {
 			@Override
 			public void onTextChanged(CharSequence _param1, int _param2, int _param3, int _param4) {
@@ -2995,37 +2406,6 @@ public class ToipccRcActivity extends AppCompatActivity {
 			@Override
 			public void afterTextChanged(Editable _param1) {
 				
-			}
-		});
-		
-		textview438.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccRcActivity.this, textview438)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("عدد العمال والشواكة العاملين بالبند خلال اليوم\n( عامل أو شواك / يوم )\n\" مدخل إختياري في حالة عدم إدخاله سيقوم البرنامج بإفتراضه بقيمة = ٠.٠٠ عامل أو شواك / يوم \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
 			}
 		});
 		
@@ -3053,37 +2433,6 @@ public class ToipccRcActivity extends AppCompatActivity {
 			}
 		});
 		
-		textview443.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccRcActivity.this, textview443)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("اليومية\n( جنيه / يوم ) \n\" مدخل إختياري في حالة عدم إدخاله سيقوم البرنامج بإفتراضه بقيمة = ٠.٠٠ جنيه / يوم \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
-			}
-		});
-		
 		edittext148.addTextChangedListener(new TextWatcher() {
 			@Override
 			public void onTextChanged(CharSequence _param1, int _param2, int _param3, int _param4) {
@@ -3108,37 +2457,6 @@ public class ToipccRcActivity extends AppCompatActivity {
 			}
 		});
 		
-		textview442.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccRcActivity.this, textview442)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("عدد أيام\nالعمل\nالمفترضة\nلتنفيذ البند\n\" مدخل إختياري في حالة عدم إدخاله سيقوم البرنامج بإفتراضه بقيمة = ١ يوم \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
-			}
-		});
-		
 		edittext147.addTextChangedListener(new TextWatcher() {
 			@Override
 			public void onTextChanged(CharSequence _param1, int _param2, int _param3, int _param4) {
@@ -3160,37 +2478,6 @@ public class ToipccRcActivity extends AppCompatActivity {
 			@Override
 			public void afterTextChanged(Editable _param1) {
 				
-			}
-		});
-		
-		textview441.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccRcActivity.this, textview441)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("العدد\n\" مدخل إختياري في حالة عدم إدخاله سيقوم البرنامج بإفتراضه بقيمة = ٠.٠٠  / يوم \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
 			}
 		});
 		
@@ -3590,37 +2877,6 @@ public class ToipccRcActivity extends AppCompatActivity {
 			}
 		});
 		
-		textview619.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccRcActivity.this, textview619)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("* يومية المنشار\n( جنيه / يوم )\n\" مدخل إختياري في حالة عدم إدخاله\nسيقوم البرنامج بأفتراضه بقيمة = ٠.٠٠ جنيه / يوم \"\nبمعني أنه لم يتم استخدام هذه المعدة بالعمل")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
-			}
-		});
-		
 		edittext212.addTextChangedListener(new TextWatcher() {
 			@Override
 			public void onTextChanged(CharSequence _param1, int _param2, int _param3, int _param4) {
@@ -3644,37 +2900,6 @@ public class ToipccRcActivity extends AppCompatActivity {
 			@Override
 			public void afterTextChanged(Editable _param1) {
 				
-			}
-		});
-		
-		textview618.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccRcActivity.this, textview618)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text(" * عدد منشار\nقطع الاسفلت\nالمستخدم\n( منشار )\nوفي حالة عدم استخدام منشار قطع الأسفلت يتم وضع القيمة = ٠\n\" مدخل إختياري في حالة عدم إدخاله\nسيقوم البرنامج بأفتراضه بقيمة = ٠ \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
 			}
 		});
 		
@@ -3704,37 +2929,6 @@ public class ToipccRcActivity extends AppCompatActivity {
 			}
 		});
 		
-		textview622.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccRcActivity.this, textview622)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("يومية\nالمكنسة\n\" مدخل إختياري في حالة عدم إدخاله\nسيقوم البرنامج بأفتراضه بقيمة = ٠.٠٠ \"\nبمعني أنه لم يتم استخدام هذه المعدة بالعمل")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
-			}
-		});
-		
 		edittext216.addTextChangedListener(new TextWatcher() {
 			@Override
 			public void onTextChanged(CharSequence _param1, int _param2, int _param3, int _param4) {
@@ -3758,37 +2952,6 @@ public class ToipccRcActivity extends AppCompatActivity {
 			@Override
 			public void afterTextChanged(Editable _param1) {
 				
-			}
-		});
-		
-		textview621.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccRcActivity.this, textview621)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("* عدد المكانس\nالمستخدمة\n( مكنسة )\nوفي حالة عدم استخدام المكنسة يتم وضع القيمة = ٠\n\" مدخل إختياري في حالة عدم إدخاله\nسيقوم البرنامج بأفتراضه بقيمة = ٠.٠٠ مكنسة \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
 			}
 		});
 		
@@ -3818,37 +2981,6 @@ public class ToipccRcActivity extends AppCompatActivity {
 			}
 		});
 		
-		textview627.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccRcActivity.this, textview627)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("* يومية\nالجرار أو\nالسيارة\nاللازمة لجر\nالكومبرسور\n\" مدخل إختياري في حالة عدم إدخاله\nسيقوم البرنامج بأفتراضه بقيمة = ٠.٠٠ \"\nبمعني أنه لم يتم استخدام هذه المعدة بالعمل")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
-			}
-		});
-		
 		edittext218.addTextChangedListener(new TextWatcher() {
 			@Override
 			public void onTextChanged(CharSequence _param1, int _param2, int _param3, int _param4) {
@@ -3872,37 +3004,6 @@ public class ToipccRcActivity extends AppCompatActivity {
 			@Override
 			public void afterTextChanged(Editable _param1) {
 				
-			}
-		});
-		
-		textview626.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccRcActivity.this, textview626)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("* عدد الجرارات\nأو السيارات\nاللازمة لجر\nالكومبرسور\nوفي حالة عدم استخدام جرار أو سيارة لزوم جر الكومبرسور يتم وضع القيمة = ٠\n\" مدخل إختياري في حالة عدم إدخاله\nسيقوم البرنامج بأفتراضه بقيمة = ٠.٠٠ جرار أو سيارة لزوم جر الكومبرسور \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
 			}
 		});
 		
@@ -3932,37 +3033,6 @@ public class ToipccRcActivity extends AppCompatActivity {
 			}
 		});
 		
-		textview640.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccRcActivity.this, textview640)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("* يومية\nالكومبرسور\n\n\" مدخل إختياري في حالة عدم إدخاله\nسيقوم البرنامج بأفتراضه بقيمة = ٠.٠٠ \"\nبمعني أنه لم يتم استخدام هذه المعدة بالعمل")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
-			}
-		});
-		
 		edittext220.addTextChangedListener(new TextWatcher() {
 			@Override
 			public void onTextChanged(CharSequence _param1, int _param2, int _param3, int _param4) {
@@ -3986,37 +3056,6 @@ public class ToipccRcActivity extends AppCompatActivity {
 			@Override
 			public void afterTextChanged(Editable _param1) {
 				
-			}
-		});
-		
-		textview639.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccRcActivity.this, textview639)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("* عدد\nالكومبرسورات\nالمستخدمة\nوفي حالة عدم استخدام الكومبرسور يتم وضع القيمة = ٠\n\" مدخل إختياري في حالة عدم إدخاله\nسيقوم البرنامج بأفتراضه بقيمة = ٠.٠٠ كومبرسور \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
 			}
 		});
 		
@@ -4046,37 +3085,6 @@ public class ToipccRcActivity extends AppCompatActivity {
 			}
 		});
 		
-		textview625.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccRcActivity.this, textview625)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("يومية\nالأتينير\n\" مدخل إختياري في حالة عدم إدخاله\nسيقوم البرنامج بأفتراضه بقيمة = ٠.٠٠ جنيه \"\nبمعني أنه لم يتم استخدام هذه المعدة بالعمل")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
-			}
-		});
-		
 		edittext222.addTextChangedListener(new TextWatcher() {
 			@Override
 			public void onTextChanged(CharSequence _param1, int _param2, int _param3, int _param4) {
@@ -4100,37 +3108,6 @@ public class ToipccRcActivity extends AppCompatActivity {
 			@Override
 			public void afterTextChanged(Editable _param1) {
 				
-			}
-		});
-		
-		textview624.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccRcActivity.this, textview624)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("عدد الأتينير\nالمستخدمة\nوفي حالة عدم استخدام الأتينير يتم وضع القيمة = ٠\n\" مدخل إختياري في حالة عدم إدخاله\nسيقوم البرنامج بأفتراضه بقيمة = ١ أتينير \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
 			}
 		});
 		
@@ -4160,37 +3137,6 @@ public class ToipccRcActivity extends AppCompatActivity {
 			}
 		});
 		
-		textview631.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccRcActivity.this, textview631)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("يومية\nالعامل او الشواكة\n\" مدخل إختياري في حالة عدم إدخاله\nسيقوم البرنامج بأفتراضه بقيمة = ٠.٠٠ \"\nبمعني أنه لم يتم استخدام عمالة او شواكة بالعمل وهذا غير واقعي")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
-			}
-		});
-		
 		edittext224.addTextChangedListener(new TextWatcher() {
 			@Override
 			public void onTextChanged(CharSequence _param1, int _param2, int _param3, int _param4) {
@@ -4214,37 +3160,6 @@ public class ToipccRcActivity extends AppCompatActivity {
 			@Override
 			public void afterTextChanged(Editable _param1) {
 				
-			}
-		});
-		
-		textview630.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccRcActivity.this, textview630)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("عدد العمالة والشواكة\nالمستخدمة\nوفي حالة عدم الأحتياج لعماله أو شوكه يتم وضع القيمة = ٠ ولكن هذا غير واقعي\n\" مدخل إختياري في حالة عدم إدخاله\nسيقوم البرنامج بأفتراضه بقيمة = ١ \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
 			}
 		});
 		
@@ -4274,37 +3189,6 @@ public class ToipccRcActivity extends AppCompatActivity {
 			}
 		});
 		
-		textview633.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccRcActivity.this, textview633)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("يومية\nالمعدة أو العامل\n\" مدخل إختياري في حالة عدم إدخاله\nسيقوم البرنامج بأفتراضه بقيمة = ٠.٠٠ \"\nبمعني أنه لم يتم استخدام هذه المعدة بالعمل")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
-			}
-		});
-		
 		edittext227.addTextChangedListener(new TextWatcher() {
 			@Override
 			public void onTextChanged(CharSequence _param1, int _param2, int _param3, int _param4) {
@@ -4328,37 +3212,6 @@ public class ToipccRcActivity extends AppCompatActivity {
 			@Override
 			public void afterTextChanged(Editable _param1) {
 				
-			}
-		});
-		
-		textview632.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccRcActivity.this, textview632)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("عدد المعدات الأخري أو العمالة الأخري\n\" مدخل إختياري في حالة عدم إدخاله\nسيقوم البرنامج بأفتراضه بقيمة = ٠ \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
 			}
 		});
 		
@@ -4503,37 +3356,6 @@ public class ToipccRcActivity extends AppCompatActivity {
 			@Override
 			public void afterTextChanged(Editable _param1) {
 				
-			}
-		});
-		
-		textview634.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccRcActivity.this, textview634)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("نسبة الهالك\nوهي النسبة التي تحدث بسبب النقل والتشغيل وخلافه")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
 			}
 		});
 		

@@ -642,37 +642,6 @@ public class EipplainconcretefootingsActivity extends AppCompatActivity {
 			}
 		});
 		
-		textview795.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(EipplainconcretefootingsActivity.this, textview795)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("سمك الخشب المستخدم في نجارة\nالقواعد العادية ( سم )\nمدخل إختياري في حالة عدم إدخاله\nسيقوم البرنامج بإفتراضه بقيمة = ٢.٥ سم")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
-			}
-		});
-		
 		edittext8.addTextChangedListener(new TextWatcher() {
 			@Override
 			public void onTextChanged(CharSequence _param1, int _param2, int _param3, int _param4) {
@@ -698,37 +667,6 @@ public class EipplainconcretefootingsActivity extends AppCompatActivity {
 			@Override
 			public void afterTextChanged(Editable _param1) {
 				
-			}
-		});
-		
-		textview3.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(EipplainconcretefootingsActivity.this, textview3)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("منسوب سطح الأحلال التصميمي\n\" منسوب التأسيس \"\n\" طبقآ للقطاعات بالوحات التصميمية\nوتقرير الجسات \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
 			}
 		});
 		

@@ -1352,37 +1352,6 @@ public class ToipccPlainconcreteWallsActivity extends AppCompatActivity {
 			}
 		});
 		
-		textview7.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccPlainconcreteWallsActivity.this, textview7)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("* ارتفاع الحائط ( م )\nوالمقصود هنا صافي ارتفاع الحائط الخرساني المسلح\n( ويقاس أما من ظهر القاعدة الخرسانية أو من ظهر خرسانة السقف حتي بطنية خرسانة السقف الذي يليه )")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
-			}
-		});
-		
 		edittext22.addTextChangedListener(new TextWatcher() {
 			@Override
 			public void onTextChanged(CharSequence _param1, int _param2, int _param3, int _param4) {
@@ -1431,37 +1400,6 @@ public class ToipccPlainconcreteWallsActivity extends AppCompatActivity {
 			@Override
 			public void afterTextChanged(Editable _param1) {
 				
-			}
-		});
-		
-		textview11.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccPlainconcreteWallsActivity.this, textview11)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("* عدد الحوائط من هذا النموذج\n\" مدخل إختياري في حالة عدم إدخاله سيقوم البرنامج بإفتراضه بقيمة ١ حائط \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
 			}
 		});
 		
@@ -2063,37 +2001,6 @@ public class ToipccPlainconcreteWallsActivity extends AppCompatActivity {
 			}
 		});
 		
-		textview530.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccPlainconcreteWallsActivity.this, textview530)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("نسبة الهالك بالخرسانة وهي عبارة عن ( هالك غسيل عربيات نقل الخلطة وهالك البامب ان وجدت )\n\" مدخل إختياري في حالة عدم إدخاله سيقوم البرنامج بإفتراضه بقيمة ٥ % \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
-			}
-		});
-		
 		button66.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
@@ -2204,37 +2111,6 @@ public class ToipccPlainconcreteWallsActivity extends AppCompatActivity {
 			}
 		});
 		
-		textview965.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccPlainconcreteWallsActivity.this, textview965)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("سعر مصنعية الصب والفرمجة شامل إيجار الخلاطة ( جنيه / م٣ )\nفي حالة عدم الرغبة في ادخاله واعتباره محمل علي سعر النجارة سيهمله البرنامج\n\" مدخل إختياري في حالة عدم الرغبة في إدخاله سيقوم البرنامج بافتراضه بقيمة = ٠٠.٠٠ جنيه/م٣ \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
-			}
-		});
-		
 		button65.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
@@ -2312,37 +2188,6 @@ public class ToipccPlainconcreteWallsActivity extends AppCompatActivity {
 			@Override
 			public void afterTextChanged(Editable _param1) {
 				
-			}
-		});
-		
-		textview724.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccPlainconcreteWallsActivity.this, textview724)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("إجمالي تكلفة النجارة ( جنيه )\nبيتم حسابها علي أساس الكمية التصميمية لا الفعلية لان معظم الخرسانة الموردة بتكون أكبر من التصميمية المحسوبة وبنسب مختلفة غير ثابتة\nوهي = أجمالى كمية الخرسانة للقواعد التي يتم ادخال أبعاده وبياناتها في أول الصفحة ( الكمية التصميمية ) * سعر مصنعية النجارة ( جنيه )")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
 			}
 		});
 		
@@ -2453,37 +2298,6 @@ public class ToipccPlainconcreteWallsActivity extends AppCompatActivity {
 			}
 		});
 		
-		textview335.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccPlainconcreteWallsActivity.this, textview335)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("نسبة الرمل بالخلطة الخرسانية ( م٣ / م٣ ) \" مدخل إختياري في حالة عدم إدخاله سيقوم البرنامج بافتراضه بقيمة = ٠.٤ \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
-			}
-		});
-		
 		edittext62.addTextChangedListener(new TextWatcher() {
 			@Override
 			public void onTextChanged(CharSequence _param1, int _param2, int _param3, int _param4) {
@@ -2507,37 +2321,6 @@ public class ToipccPlainconcreteWallsActivity extends AppCompatActivity {
 			@Override
 			public void afterTextChanged(Editable _param1) {
 				
-			}
-		});
-		
-		textview340.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccPlainconcreteWallsActivity.this, textview340)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("نسبة الزلط أو السن بالخلطة الخرسانية ( م٣ / م٣ ) \" مدخل إختياري في حالة عدم إدخاله سيقوم البرنامج بافتراضه بقيمة = ٠.٨ \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
 			}
 		});
 		
@@ -2582,37 +2365,6 @@ public class ToipccPlainconcreteWallsActivity extends AppCompatActivity {
 			}
 		});
 		
-		textview344.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccPlainconcreteWallsActivity.this, textview344)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("نسبة الأسمنت بالخلطة الخرسانية [ المحتوي الأسمنتي ] ( كجم / م٣ ) \" مدخل إختياري في حالة عدم إدخاله سيقوم البرنامج بافتراضه بقيمة = ٢٥٠ كجم / م٣ \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
-			}
-		});
-		
 		edittext64.addTextChangedListener(new TextWatcher() {
 			@Override
 			public void onTextChanged(CharSequence _param1, int _param2, int _param3, int _param4) {
@@ -2636,37 +2388,6 @@ public class ToipccPlainconcreteWallsActivity extends AppCompatActivity {
 			@Override
 			public void afterTextChanged(Editable _param1) {
 				
-			}
-		});
-		
-		textview350.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccPlainconcreteWallsActivity.this, textview350)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("نسبة المياه بالخلطة الخرسانية ( لتر / كجم أسمنت ) \" مدخل إختياري في حالة عدم إدخاله سيقوم البرنامج بافتراضه بقيمة = ٠.٥ لتر/كجم أسمنت \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
 			}
 		});
 		
@@ -2932,37 +2653,6 @@ public class ToipccPlainconcreteWallsActivity extends AppCompatActivity {
 			}
 		});
 		
-		textview529.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccPlainconcreteWallsActivity.this, textview529)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("عدد شكاير الأسمنت المطلوبة بدون هالك ( فى حالة وزن الشيكارة ٥٠ كجم )")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
-			}
-		});
-		
 		edittext70.addTextChangedListener(new TextWatcher() {
 			@Override
 			public void onTextChanged(CharSequence _param1, int _param2, int _param3, int _param4) {
@@ -2978,37 +2668,6 @@ public class ToipccPlainconcreteWallsActivity extends AppCompatActivity {
 			@Override
 			public void afterTextChanged(Editable _param1) {
 				
-			}
-		});
-		
-		textview537.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccPlainconcreteWallsActivity.this, textview537)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("عدد شكاير الأسمنت المطلوبة شامل الهالك ( فى حالة وزن الشيكارة ٥٠ كجم )")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
 			}
 		});
 		
@@ -3168,37 +2827,6 @@ public class ToipccPlainconcreteWallsActivity extends AppCompatActivity {
 			}
 		});
 		
-		textview348.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccPlainconcreteWallsActivity.this, textview348)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("سعر ال م٣ من المياه\n( جنيه / م٣ )\nفي بعض المشروعات لا يتم حساب تكلفة لمياه الخلط وبالتالى يكون سعرها صفر اي بيتم أهمال تكلفة مياه الخلط\n\" مدخل إختياري في حالة عدم الرغبة في إدخاله سيقوم البرنامج بافتراضه بقيمة = ٠٠.٠٠ جنيه/م٣ \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
-			}
-		});
-		
 		edittext78.addTextChangedListener(new TextWatcher() {
 			@Override
 			public void onTextChanged(CharSequence _param1, int _param2, int _param3, int _param4) {
@@ -3244,37 +2872,6 @@ public class ToipccPlainconcreteWallsActivity extends AppCompatActivity {
 			@Override
 			public void afterTextChanged(Editable _param1) {
 				
-			}
-		});
-		
-		textview971.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccPlainconcreteWallsActivity.this, textview971)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("سعر مصنعية الصب والفرمجة شامل إيجار الخلاطة ( جنيه / يوم )\nفي حالة عدم الرغبة في ادخاله واعتباره محمل علي سعر النجارة سيهمله البرنامج\n\" مدخل إختياري في حالة عدم الرغبة في إدخاله سيقوم البرنامج بافتراضه بقيمة = ٠٠.٠٠ جنيه/م٣ \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
 			}
 		});
 		
@@ -3491,37 +3088,6 @@ public class ToipccPlainconcreteWallsActivity extends AppCompatActivity {
 			}
 		});
 		
-		textview316.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccPlainconcreteWallsActivity.this, textview316)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("إجمالي تكلفة النجارة ( جنيه )\nبيتم حسابها علي أساس الكمية التصميمية لا الفعلية لان معظم الخرسانة الموردة بتكون أكبر من التصميمية المحسوبة وبنسب مختلفة غير ثابتة\nوهي = أجمالى كمية الخرسانة للقواعد التي يتم ادخال أبعاده وبياناتها في أول الصفحة ( الكمية التصميمية ) * سعر مصنعية النجارة والصب ( جنيه )")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
-			}
-		});
-		
 		edittext119.addTextChangedListener(new TextWatcher() {
 			@Override
 			public void onTextChanged(CharSequence _param1, int _param2, int _param3, int _param4) {
@@ -3665,37 +3231,6 @@ public class ToipccPlainconcreteWallsActivity extends AppCompatActivity {
 			}
 		});
 		
-		textview844.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccPlainconcreteWallsActivity.this, textview844)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("نسبة الهالك بالخرسانة وهي عبارة عن ( هالك غسيل عربيات نقل الخلطة وهالك البامب ان وجدت )\n\" والطبيعي أن تتراوح قيمته من ٥ % الى ٧ % علي الأكثر \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
-			}
-		});
-		
 		edittext89.addTextChangedListener(new TextWatcher() {
 			@Override
 			public void onTextChanged(CharSequence _param1, int _param2, int _param3, int _param4) {
@@ -3762,37 +3297,6 @@ public class ToipccPlainconcreteWallsActivity extends AppCompatActivity {
 			}
 		});
 		
-		textview977.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccPlainconcreteWallsActivity.this, textview956)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("سعر مصنعية الصب والفرمجة ( جنيه / م٣ )\nفي حالة عدم الرغبة في ادخاله واعتباره محمل علي سعر النجارة سيهمله البرنامج\n\" مدخل إختياري في حالة عدم الرغبة في إدخاله سيقوم البرنامج بافتراضه بقيمة = ٠٠.٠٠ جنيه/م٣ \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
-			}
-		});
-		
 		button91.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
@@ -3848,37 +3352,6 @@ public class ToipccPlainconcreteWallsActivity extends AppCompatActivity {
 			@Override
 			public void afterTextChanged(Editable _param1) {
 				
-			}
-		});
-		
-		textview832.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccPlainconcreteWallsActivity.this, textview832)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("إجمالي تكلفة النجارة ( جنيه )\nبيتم حسابها علي أساس الكمية التصميمية لا الفعلية لان معظم الخرسانة الموردة بتكون أكبر من التصميمية المحسوبة وبنسب مختلفة غير ثابتة\nوهي = أجمالى كمية الخرسانة للقواعد التي يتم ادخال أبعاده وبياناتها في أول الصفحة ( الكمية التصميمية ) * سعر مصنعية النجارة ( جنيه )")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
 			}
 		});
 		
@@ -4017,37 +3490,6 @@ public class ToipccPlainconcreteWallsActivity extends AppCompatActivity {
 			}
 		});
 		
-		textview859.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccPlainconcreteWallsActivity.this, textview859)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("كمية الأسمنت الموردة لزوم الخلطة الخرسانية للقواعد العادية ( شكارة )\n( وذلك بفرض إن وزن شكارة الأسمنت = ٥٠ كجم )")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
-			}
-		});
-		
 		edittext97.addTextChangedListener(new TextWatcher() {
 			@Override
 			public void onTextChanged(CharSequence _param1, int _param2, int _param3, int _param4) {
@@ -4070,37 +3512,6 @@ public class ToipccPlainconcreteWallsActivity extends AppCompatActivity {
 			}
 		});
 		
-		textview861.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccPlainconcreteWallsActivity.this, textview861)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("كمية المياه الموردة لزوم الخلطة الخرسانية للقواعد العادية ( م٣ )\nوتمثل نصف كمية الأسمنت بالطن تقريبآ \nولا يمكن إن تزيد قيمته عن ( ٠.٧٥ * كمية الأسمنت بالطن )\nولا يمكن أن تقل عن ( ٠.٢٥ * كمية الأسمنت بالطن )\n\" مدخل إختياري في حالة عدم إدخاله سيقوم البرنامج بإفتراضه بقيمة = ( كمية الأسمنت بالطن ÷ ٢ )")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
-			}
-		});
-		
 		edittext115.addTextChangedListener(new TextWatcher() {
 			@Override
 			public void onTextChanged(CharSequence _param1, int _param2, int _param3, int _param4) {
@@ -4120,37 +3531,6 @@ public class ToipccPlainconcreteWallsActivity extends AppCompatActivity {
 			@Override
 			public void afterTextChanged(Editable _param1) {
 				
-			}
-		});
-		
-		textview962.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccPlainconcreteWallsActivity.this, textview962)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("عدد أيام الصب وهو يعبر عن عدد الأيام التي تمت بها صب العنصر الخرساني ومدة ايجار الخلاطة ومعدات الخلط وعمالة الخلط والفرمجة\n\" مدخل إختياري في حالة عدم إدخاله سيقوم البرنامج بإفتراضه بقيمة = ١ يوم \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
 			}
 		});
 		
@@ -4248,37 +3628,6 @@ public class ToipccPlainconcreteWallsActivity extends AppCompatActivity {
 			}
 		});
 		
-		textview904.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccPlainconcreteWallsActivity.this, textview904)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("سعر ال م٣ من المياه\n( جنيه / م٣ )\nفي بعض المشروعات لا يتم حساب تكلفة لمياه الخلط وبالتالى يكون سعرها صفر اي بيتم أهمال تكلفة مياه الخلط\n\" مدخل إختياري في حالة عدم الرغبة في إدخاله سيقوم البرنامج بافتراضه بقيمة = ٠٠.٠٠ جنيه/م٣ \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
-			}
-		});
-		
 		edittext102.addTextChangedListener(new TextWatcher() {
 			@Override
 			public void onTextChanged(CharSequence _param1, int _param2, int _param3, int _param4) {
@@ -4320,37 +3669,6 @@ public class ToipccPlainconcreteWallsActivity extends AppCompatActivity {
 			@Override
 			public void afterTextChanged(Editable _param1) {
 				
-			}
-		});
-		
-		textview956.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccPlainconcreteWallsActivity.this, textview956)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("سعر مصنعية الصب والفرمجة شامل إيجار الخلاطة ( جنيه / يوم )\nفي حالة عدم الرغبة في ادخاله واعتباره محمل علي سعر النجارة سيهمله البرنامج\n\" مدخل إختياري في حالة عدم الرغبة في إدخاله سيقوم البرنامج بافتراضه بقيمة = ٠٠.٠٠ جنيه/يوم \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
 			}
 		});
 		
@@ -4571,37 +3889,6 @@ public class ToipccPlainconcreteWallsActivity extends AppCompatActivity {
 			@Override
 			public void afterTextChanged(Editable _param1) {
 				
-			}
-		});
-		
-		textview929.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccPlainconcreteWallsActivity.this, textview929)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("إجمالي تكلفة النجارة ( جنيه )\nبيتم حسابها علي أساس الكمية التصميمية لا الفعلية لان معظم الخرسانة الموردة بتكون أكبر من التصميمية المحسوبة وبنسب مختلفة غير ثابتة\nوهي = أجمالى كمية الخرسانة للقواعد التي يتم ادخال أبعاده وبياناتها في أول الصفحة ( الكمية التصميمية ) * سعر مصنعية النجارة ( جنيه )")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
 			}
 		});
 		

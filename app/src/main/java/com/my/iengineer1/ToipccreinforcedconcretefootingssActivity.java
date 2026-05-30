@@ -4732,37 +4732,6 @@ public class ToipccreinforcedconcretefootingssActivity extends AppCompatActivity
 			}
 		});
 		
-		textview11.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccreinforcedconcretefootingssActivity.this, textview11)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("العدد \" مدخل إختياري في حالة عدم إدخاله سيقوم البرنامج بإفتراضه بقيمة = ١ \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
-			}
-		});
-		
 		edittext4.addTextChangedListener(new TextWatcher() {
 			@Override
 			public void onTextChanged(CharSequence _param1, int _param2, int _param3, int _param4) {
@@ -6385,37 +6354,6 @@ public class ToipccreinforcedconcretefootingssActivity extends AppCompatActivity
 			}
 		});
 		
-		textview125.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccreinforcedconcretefootingssActivity.this, textview125)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("الغطاء الخرسانى بالقواعد وهو عبارة عن الغطاء الخرسانى أو طبقة الخرسانة الموجودة حول حديد تسليح القواعد الخرسانية ( م )\n\" مدخل إختياري في حالة عدم إدخاله سيقوم البرنامج بافتراضه بقيمة = ٠.٠٥ م \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
-			}
-		});
-		
 		edittext158fm1.addTextChangedListener(new TextWatcher() {
 			@Override
 			public void onTextChanged(CharSequence _param1, int _param2, int _param3, int _param4) {
@@ -6438,37 +6376,6 @@ public class ToipccreinforcedconcretefootingssActivity extends AppCompatActivity
 			@Override
 			public void afterTextChanged(Editable _param1) {
 				
-			}
-		});
-		
-		textview136.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccreinforcedconcretefootingssActivity.this, textview136)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("عدد الأسياخ / م.ط\nوهو يعبر عن عدد الأسياخ المكتوبة بجدول التسليح الموجود باللوحات التصميمية وأيضآ الموجود في القطاع التصميمي \nويجب أن لا يزيد عن ١٤ سيخ ف المتر الطولى من بعد القاعدة بحيث لا تقل المسافة بين كل سيخين متتاليين عن ٧ سم\nولا يقل عن ٥ أسياخ ف المتر الطولى من بعد القاعدة بحيث لا تزيد المسافة بين كل سيخين متتاليين عن ٢٠ سم\n\" مدخل إختياري في حالة عدم إدخاله سيقوم البرنامج بإفتراضه بقيمة = ٦ أسياخ / م.ط \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
 			}
 		});
 		
@@ -6513,37 +6420,6 @@ public class ToipccreinforcedconcretefootingssActivity extends AppCompatActivity
 			@Override
 			public void afterTextChanged(Editable _param1) {
 				
-			}
-		});
-		
-		textview354.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccreinforcedconcretefootingssActivity.this, textview354)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("عدد أرجل السيخ ويعبر عن شكل أسياخ تسليح القاعدة ما إذا كان السيخ برجل واحدة من إتجاه واحد أم برجلين من الأتجاهين ) \n\" مدخل إختياري في حالة عدم إدخاله سيقوم البرنامج بافتراض عدد الأرجل = ٢ \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
 			}
 		});
 		
@@ -6783,37 +6659,6 @@ public class ToipccreinforcedconcretefootingssActivity extends AppCompatActivity
 			}
 		});
 		
-		textview135.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccreinforcedconcretefootingssActivity.this, textview135)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("عدد الأسياخ / م.ط\nوهو يعبر عن عدد الأسياخ المكتوبة بجدول التسليح الموجود باللوحات التصميمية وأيضآ الموجود في القطاع التصميمي \nويجب أن لا يزيد عن ١٤ سيخ ف المتر الطولى من بعد القاعدة بحيث لا تقل المسافة بين كل سيخين متتاليين عن ٧ سم\nولا يقل عن ٥ أسياخ ف المتر الطولى من بعد القاعدة بحيث لا تزيد المسافة بين كل سيخين متتاليين عن ٢٠ سم\n\" مدخل إختياري في حالة عدم إدخاله سيقوم البرنامج بإفتراضه بقيمة = ٦ أسياخ / م.ط \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
-			}
-		});
-		
 		edittext148fm1.addTextChangedListener(new TextWatcher() {
 			@Override
 			public void onTextChanged(CharSequence _param1, int _param2, int _param3, int _param4) {
@@ -6855,37 +6700,6 @@ public class ToipccreinforcedconcretefootingssActivity extends AppCompatActivity
 			@Override
 			public void afterTextChanged(Editable _param1) {
 				
-			}
-		});
-		
-		textview1083.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccreinforcedconcretefootingssActivity.this, textview1083)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("عدد أرجل السيخ ويعبر عن شكل أسياخ تسليح القاعدة ما إذا كان السيخ برجل واحدة من إتجاه واحد أم برجلين من الأتجاهين ) \n\" مدخل إختياري في حالة عدم إدخاله سيقوم البرنامج بافتراض عدد الأرجل = ٢ \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
 			}
 		});
 		
@@ -7125,37 +6939,6 @@ public class ToipccreinforcedconcretefootingssActivity extends AppCompatActivity
 			}
 		});
 		
-		textview1108.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccreinforcedconcretefootingssActivity.this, textview1108)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("المسافة البينية بين الأسياخ ( م )\nوهو يعبر المسافة البينية بين كل سيخين متتاليين والتي تكون مذكورة بجدول التسليح الموجود باللوحات التصميمية وأيضآ الموجود في القطاع التصميمي \nويجب أن لا تقل المسافة بين كل سيخين متتاليين عن ٧ سم بحيث لا يزيد عدد الأسياخ عن ١٤ سيخ ف المتر الطولى من بعد القاعدة\nولا تزيد المسافة بين كل سيخين متتاليين عن ٢٠ سم بحيث لا يقل عدد الأسياخ عن  ٥ أسياخ ف المتر الطولى من بعد القاعدة \n\" مدخل إختياري في حالة عدم إدخاله سيقوم البرنامج بإفتراضه بقيمة = ٠.١٥ م / م.ط \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
-			}
-		});
-		
 		edittext181fm1.addTextChangedListener(new TextWatcher() {
 			@Override
 			public void onTextChanged(CharSequence _param1, int _param2, int _param3, int _param4) {
@@ -7197,37 +6980,6 @@ public class ToipccreinforcedconcretefootingssActivity extends AppCompatActivity
 			@Override
 			public void afterTextChanged(Editable _param1) {
 				
-			}
-		});
-		
-		textview1111.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccreinforcedconcretefootingssActivity.this, textview1111)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("عدد أرجل السيخ ويعبر عن شكل أسياخ تسليح القاعدة ما إذا كان السيخ برجل واحدة من إتجاه واحد أم برجلين من الأتجاهين ) \n\" مدخل إختياري في حالة عدم إدخاله سيقوم البرنامج بافتراض عدد الأرجل = ٢ \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
 			}
 		});
 		
@@ -7467,37 +7219,6 @@ public class ToipccreinforcedconcretefootingssActivity extends AppCompatActivity
 			}
 		});
 		
-		textview1134.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccreinforcedconcretefootingssActivity.this, textview1134)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("المسافة البينية بين الأسياخ ( م )\nوهو يعبر المسافة البينية بين كل سيخين متتاليين والتي تكون مذكورة بجدول التسليح الموجود باللوحات التصميمية وأيضآ الموجود في القطاع التصميمي \nويجب أن لا تقل المسافة بين كل سيخين متتاليين عن ٧ سم بحيث لا يزيد عدد الأسياخ عن ١٤ سيخ ف المتر الطولى من بعد القاعدة\nولا تزيد المسافة بين كل سيخين متتاليين عن ٢٠ سم بحيث لا يقل عدد الأسياخ عن  ٥ أسياخ ف المتر الطولى من بعد القاعدة \n\" مدخل إختياري في حالة عدم إدخاله سيقوم البرنامج بإفتراضه بقيمة = ٠.١٥ م / م.ط \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
-			}
-		});
-		
 		edittext170fm1.addTextChangedListener(new TextWatcher() {
 			@Override
 			public void onTextChanged(CharSequence _param1, int _param2, int _param3, int _param4) {
@@ -7539,37 +7260,6 @@ public class ToipccreinforcedconcretefootingssActivity extends AppCompatActivity
 			@Override
 			public void afterTextChanged(Editable _param1) {
 				
-			}
-		});
-		
-		textview1137.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccreinforcedconcretefootingssActivity.this, textview1137)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("عدد أرجل السيخ ويعبر عن شكل أسياخ تسليح القاعدة ما إذا كان السيخ برجل واحدة من إتجاه واحد أم برجلين من الأتجاهين ) \n\" مدخل إختياري في حالة عدم إدخاله سيقوم البرنامج بافتراض عدد الأرجل = ٢ \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
 			}
 		});
 		
@@ -7850,37 +7540,6 @@ public class ToipccreinforcedconcretefootingssActivity extends AppCompatActivity
 			}
 		});
 		
-		textview1164.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccreinforcedconcretefootingssActivity.this, textview1164)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("عدد أرجل السيخ ويعبر عن شكل أسياخ تسليح القاعدة ما إذا كان السيخ برجل واحدة من إتجاه واحد أم برجلين من الأتجاهين ) \n\" مدخل إختياري في حالة عدم إدخاله سيقوم البرنامج بافتراض عدد الأرجل = ٢ \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
-			}
-		});
-		
 		button103.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
@@ -8112,37 +7771,6 @@ public class ToipccreinforcedconcretefootingssActivity extends AppCompatActivity
 			}
 		});
 		
-		textview1190.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccreinforcedconcretefootingssActivity.this, textview1190)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("عدد أرجل السيخ ويعبر عن شكل أسياخ تسليح القاعدة ما إذا كان السيخ برجل واحدة من إتجاه واحد أم برجلين من الأتجاهين ) \n\" مدخل إختياري في حالة عدم إدخاله سيقوم البرنامج بافتراض عدد الأرجل = ٢ \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
-			}
-		});
-		
 		button104.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
@@ -8330,37 +7958,6 @@ public class ToipccreinforcedconcretefootingssActivity extends AppCompatActivity
 			}
 		});
 		
-		textview176.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccreinforcedconcretefootingssActivity.this, textview176)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("طول قفل كانة الداير بيكون من الأتجاهين وهو عبارة عن الزيادة في طول سيخ داير ربط حديد تسليح القاعدة عن محيط داير حديد تسليح القاعدة وبيتم عمله لأحكام غلق كانة داير الربط علي حديد تسليح القاعدة\n\" مدخل إختياري في حالة عدم إدخاله سيقوم البرنامج بإفتراضه بقيمة = ٠.١٠ م \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
-			}
-		});
-		
 		edittext212fm1.addTextChangedListener(new TextWatcher() {
 			@Override
 			public void onTextChanged(CharSequence _param1, int _param2, int _param3, int _param4) {
@@ -8380,37 +7977,6 @@ public class ToipccreinforcedconcretefootingssActivity extends AppCompatActivity
 			@Override
 			public void afterTextChanged(Editable _param1) {
 				
-			}
-		});
-		
-		textview184.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccreinforcedconcretefootingssActivity.this, textview184)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("قطر السيخ المسخدم في كانة الداير \n\" مدخل إختياري في حالة عدم إدخاله سيقوم البرنامج بأفتراضه بقيمة = ١٠ مم \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
 			}
 		});
 		
@@ -8614,37 +8180,6 @@ public class ToipccreinforcedconcretefootingssActivity extends AppCompatActivity
 			}
 		});
 		
-		textview231.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccreinforcedconcretefootingssActivity.this, textview231)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("الغطاء الخرساني للعمود الموجود بالقاعدة وهو عبارة عن الغطاء الخرسانى أو طبقة الخرسانة الموجودة حول حديد تسليح العمود أو رقبة العمود ( م )\n\" مدخل إختياري في حالة عدم إدخاله سيقوم البرنامج بافتراضه بقيمة = ٠.٠٢٥ م \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
-			}
-		});
-		
 		edittext220fm1.addTextChangedListener(new TextWatcher() {
 			@Override
 			public void onTextChanged(CharSequence _param1, int _param2, int _param3, int _param4) {
@@ -8716,37 +8251,6 @@ public class ToipccreinforcedconcretefootingssActivity extends AppCompatActivity
 			}
 		});
 		
-		textview1258.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccreinforcedconcretefootingssActivity.this, textview1258)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("نسبة طول الرباط\nلأشاير العمود داخل\nالقاعدة هي عبارة عن ثابت يتم ضربه في قطر سيخ أشاير العمود\nوغالبآ = ٦٥  لتكون\nالقيمة النهائية لطول\nالرباط = ٦٥ × قطر\nسيخ تسليح العمود\nبالمتر ( مدخل إختياري\nفي حالة عدم إدخاله\nسيقوم البرنامج\nبإفتراضه بقيمة = ٦٥ )")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
-			}
-		});
-		
 		edittext224fm1.addTextChangedListener(new TextWatcher() {
 			@Override
 			public void onTextChanged(CharSequence _param1, int _param2, int _param3, int _param4) {
@@ -8768,37 +8272,6 @@ public class ToipccreinforcedconcretefootingssActivity extends AppCompatActivity
 			@Override
 			public void afterTextChanged(Editable _param1) {
 				
-			}
-		});
-		
-		textview404.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccreinforcedconcretefootingssActivity.this, textview404)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("القيمة الصغرى لطول \nالرباط Ld1 لأشاير\nالعمود داخل القاعدة\n( طول الجزء المدفون\nداخل القاعدة )\n( م )\nوذلك طبقآ للملاحظات\nعلى اللوحات\nوغالبآ = ١ م أو ١.٢٠ م\n( مدخل إختياري في\nحالةعدم إدخاله\nسيقوم البرنامج\nبإفتراضه بقيمة = ١ م )")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
 			}
 		});
 		
@@ -8826,37 +8299,6 @@ public class ToipccreinforcedconcretefootingssActivity extends AppCompatActivity
 			}
 		});
 		
-		textview1260.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccreinforcedconcretefootingssActivity.this, textview1260)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("نسبة طول الرباط\nلأشاير العمود فوق\nالقاعدة هي عبارة عن ثابت يتم ضربه في قطر سيخ أشاير العمود\nو غالبآ = ٦٠ لتكون\nالقيمة النهائية لطول\nالرباط = ٦٠ × قطر\nسيخ تسليح العمود\nبالمتر ( مدخل إختياري\nفي حالة عدم إدخاله\nسيقوم البرنامج\nبإفتراضه بقيمة = ٦٠ )")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
-			}
-		});
-		
 		edittext226fm1.addTextChangedListener(new TextWatcher() {
 			@Override
 			public void onTextChanged(CharSequence _param1, int _param2, int _param3, int _param4) {
@@ -8878,37 +8320,6 @@ public class ToipccreinforcedconcretefootingssActivity extends AppCompatActivity
 			@Override
 			public void afterTextChanged(Editable _param1) {
 				
-			}
-		});
-		
-		textview406.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccreinforcedconcretefootingssActivity.this, textview406)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("القيمة الصغرى لطول الرباط Ld2 لأشاير\nالعمود فوق القاعدة ( طول الجزء فوق\nالقاعدة للربط مع حديد العمود الرئيسى ) ( م )\nوذلك طبقآ للملاحظات على اللوحات وغالبآ\n= ١ م أو ١.٢٠ م\n( مدخل إختياري في حالة عدم إدخاله\nسيقوم البرنامج بإفتراضه بقيمة = ١ م )")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
 			}
 		});
 		
@@ -9473,37 +8884,6 @@ public class ToipccreinforcedconcretefootingssActivity extends AppCompatActivity
 			}
 		});
 		
-		textview260.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccreinforcedconcretefootingssActivity.this, textview260)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("عدد صفوف الكانات بالعمود لكل م.ط\n( بيكون مساوى لعدد كانات الداير بالعمود لكل م.ط )\n\" مدخل إختياري في حالة عدم إدخاله سيقوم البرنامج بإفتراضه بقيمة =\n٦ كانات / م.ط \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
-			}
-		});
-		
 		edittext233fm1.addTextChangedListener(new TextWatcher() {
 			@Override
 			public void onTextChanged(CharSequence _param1, int _param2, int _param3, int _param4) {
@@ -9526,37 +8906,6 @@ public class ToipccreinforcedconcretefootingssActivity extends AppCompatActivity
 			}
 		});
 		
-		textview232.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccreinforcedconcretefootingssActivity.this, textview232)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("قطر سيخ كانات الأعمدة ( مم )\n\" مدخل إختياري في حالة عدم إدخاله سيقوم البرنامج بإفتراضه بقيمة = ٨ مم \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
-			}
-		});
-		
 		edittext234fm1.addTextChangedListener(new TextWatcher() {
 			@Override
 			public void onTextChanged(CharSequence _param1, int _param2, int _param3, int _param4) {
@@ -9576,37 +8925,6 @@ public class ToipccreinforcedconcretefootingssActivity extends AppCompatActivity
 			@Override
 			public void afterTextChanged(Editable _param1) {
 				
-			}
-		});
-		
-		textview1249.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccreinforcedconcretefootingssActivity.this, textview1249)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("طول قفل كانة العمود ( م )\n\" مدخل إختياري في حالة عدم إدخاله سيفترضه البرنامج بقيمة = ٠.١٠ م \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
 			}
 		});
 		
@@ -9792,37 +9110,6 @@ public class ToipccreinforcedconcretefootingssActivity extends AppCompatActivity
 			}
 		});
 		
-		textview258.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccreinforcedconcretefootingssActivity.this, textview258)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("* عدد الكانات بالصف الواحد \nوبيختلف علي حسب شكل الكانة ف من الممكن أن تكون هناك كانة علي شكل سداسى مع الكانة الداير لربط الأسياخ الداخلية بالعمود ولضبط توزيع حديد التسليح بشكل صحيح داخل قطاع العمود \nوممكن تكون كانتين كل واحدة علي شكل مثلث مع الكانة الداير\nوبيتم وضع عدد الكانات دي الموجوده بنفس الصف مع الكانة الداير سواء مثلا ١ علي شكل سداسى أو ٢ علي شكل مثلث أو الخ في هذه الخانة \n\nوفي بعض الأعمدة ذات القطاع الكبير يمكن أستخدام عدد أكبر من الكانات ف نفس الصف لضمان التوزيع السليم لحديد العمود ولمقاومة قوى ال Shear\n\n\" مدخل إختياري في حالة عدم إدخاله سيقوم البرنامج بإفتراضه بقيمة = ١ كانة بالصف \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
-			}
-		});
-		
 		button37.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
@@ -9921,37 +9208,6 @@ public class ToipccreinforcedconcretefootingssActivity extends AppCompatActivity
 			@Override
 			public void afterTextChanged(Editable _param1) {
 				
-			}
-		});
-		
-		textview1390.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccreinforcedconcretefootingssActivity.this, textview1390)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("* عدد الكانات بالصف الواحد \nوبيختلف علي حسب شكل الكانة ف من الممكن أن تكون هناك كانة علي شكل سداسى مع الكانة الداير لربط الأسياخ الداخلية بالعمود ولضبط توزيع حديد التسليح بشكل صحيح داخل قطاع العمود \nوممكن تكون كانتين كل واحدة علي شكل مثلث مع الكانة الداير\nوبيتم وضع عدد الكانات دي الموجوده بنفس الصف مع الكانة الداير سواء مثلا ١ علي شكل سداسى أو ٢ علي شكل مثلث أو الخ في هذه الخانة \n\nوفي بعض الأعمدة ذات القطاع الكبير يمكن أستخدام عدد أكبر من الكانات ف نفس الصف لضمان التوزيع السليم لحديد العمود ولمقاومة قوى ال Shear\n\n\" مدخل إختياري في حالة عدم إدخاله سيقوم البرنامج بإفتراضه بقيمة = ١ كانة بالصف \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
 			}
 		});
 		
@@ -10056,37 +9312,6 @@ public class ToipccreinforcedconcretefootingssActivity extends AppCompatActivity
 			}
 		});
 		
-		textview1403.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccreinforcedconcretefootingssActivity.this, textview1403)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("* عدد الكانات بالصف الواحد \nوبيختلف علي حسب شكل الكانة ف من الممكن أن تكون هناك كانة علي شكل سداسى مع الكانة الداير لربط الأسياخ الداخلية بالعمود ولضبط توزيع حديد التسليح بشكل صحيح داخل قطاع العمود \nوممكن تكون كانتين كل واحدة علي شكل مثلث مع الكانة الداير\nوبيتم وضع عدد الكانات دي الموجوده بنفس الصف مع الكانة الداير سواء مثلا ١ علي شكل سداسى أو ٢ علي شكل مثلث أو الخ في هذه الخانة \n\nوفي بعض الأعمدة ذات القطاع الكبير يمكن أستخدام عدد أكبر من الكانات ف نفس الصف لضمان التوزيع السليم لحديد العمود ولمقاومة قوى ال Shear\n\n\" مدخل إختياري في حالة عدم إدخاله سيقوم البرنامج بإفتراضه بقيمة = ١ كانة بالصف \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
-			}
-		});
-		
 		button121.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
@@ -10188,37 +9413,6 @@ public class ToipccreinforcedconcretefootingssActivity extends AppCompatActivity
 			}
 		});
 		
-		textview1416.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccreinforcedconcretefootingssActivity.this, textview1416)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("* عدد الكانات بالصف الواحد \nوبيختلف علي حسب شكل الكانة ف من الممكن أن تكون هناك كانة علي شكل سداسى مع الكانة الداير لربط الأسياخ الداخلية بالعمود ولضبط توزيع حديد التسليح بشكل صحيح داخل قطاع العمود \nوممكن تكون كانتين كل واحدة علي شكل مثلث مع الكانة الداير\nوبيتم وضع عدد الكانات دي الموجوده بنفس الصف مع الكانة الداير سواء مثلا ١ علي شكل سداسى أو ٢ علي شكل مثلث أو الخ في هذه الخانة \n\nوفي بعض الأعمدة ذات القطاع الكبير يمكن أستخدام عدد أكبر من الكانات ف نفس الصف لضمان التوزيع السليم لحديد العمود ولمقاومة قوى ال Shear\n\n\" مدخل إختياري في حالة عدم إدخاله سيقوم البرنامج بإفتراضه بقيمة = ١ كانة بالصف \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
-			}
-		});
-		
 		button124.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
@@ -10286,37 +9480,6 @@ public class ToipccreinforcedconcretefootingssActivity extends AppCompatActivity
 			}
 		});
 		
-		textview1431.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccreinforcedconcretefootingssActivity.this, textview1431)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("المسافات البينية بين صفوف الكانات بالعمود لكل م.ط\n( بيكون مساوى للمسافات البينية بين كانات الداير بالعمود لكل م.ط )\n\" مدخل إختياري في حالة عدم إدخاله سيقوم البرنامج بإفتراضه بقيمة =\n٠.١٥ م / م.ط \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
-			}
-		});
-		
 		edittext252fm1.addTextChangedListener(new TextWatcher() {
 			@Override
 			public void onTextChanged(CharSequence _param1, int _param2, int _param3, int _param4) {
@@ -10339,37 +9502,6 @@ public class ToipccreinforcedconcretefootingssActivity extends AppCompatActivity
 			}
 		});
 		
-		textview1434.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccreinforcedconcretefootingssActivity.this, textview1434)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("قطر سيخ كانات الأعمدة ( مم )\n\" مدخل إختياري في حالة عدم إدخاله سيقوم البرنامج بإفتراضه بقيمة = ٨ مم \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
-			}
-		});
-		
 		edittext253fm1.addTextChangedListener(new TextWatcher() {
 			@Override
 			public void onTextChanged(CharSequence _param1, int _param2, int _param3, int _param4) {
@@ -10389,37 +9521,6 @@ public class ToipccreinforcedconcretefootingssActivity extends AppCompatActivity
 			@Override
 			public void afterTextChanged(Editable _param1) {
 				
-			}
-		});
-		
-		textview1437.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccreinforcedconcretefootingssActivity.this, textview1437)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("طول قفل كانة العمود ( م )\n\" مدخل إختياري في حالة عدم إدخاله سيفترضه البرنامج بقيمة = ٠.١٠ م \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
 			}
 		});
 		
@@ -10607,37 +9708,6 @@ public class ToipccreinforcedconcretefootingssActivity extends AppCompatActivity
 			}
 		});
 		
-		textview1459.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccreinforcedconcretefootingssActivity.this, textview1459)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("* عدد الكانات بالصف الواحد \nوبيختلف علي حسب شكل الكانة ف من الممكن أن تكون هناك كانة علي شكل سداسى مع الكانة الداير لربط الأسياخ الداخلية بالعمود ولضبط توزيع حديد التسليح بشكل صحيح داخل قطاع العمود \nوممكن تكون كانتين كل واحدة علي شكل مثلث مع الكانة الداير\nوبيتم وضع عدد الكانات دي الموجوده بنفس الصف مع الكانة الداير سواء مثلا ١ علي شكل سداسى أو ٢ علي شكل مثلث أو الخ في هذه الخانة \n\nوفي بعض الأعمدة ذات القطاع الكبير يمكن أستخدام عدد أكبر من الكانات ف نفس الصف لضمان التوزيع السليم لحديد العمود ولمقاومة قوى ال Shear\n\n\" مدخل إختياري في حالة عدم إدخاله سيقوم البرنامج بإفتراضه بقيمة = ١ كانة بالصف \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
-			}
-		});
-		
 		button128.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
@@ -10737,37 +9807,6 @@ public class ToipccreinforcedconcretefootingssActivity extends AppCompatActivity
 			@Override
 			public void afterTextChanged(Editable _param1) {
 				
-			}
-		});
-		
-		textview1472.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccreinforcedconcretefootingssActivity.this, textview1472)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("* عدد الكانات بالصف الواحد \nوبيختلف علي حسب شكل الكانة ف من الممكن أن تكون هناك كانة علي شكل سداسى مع الكانة الداير لربط الأسياخ الداخلية بالعمود ولضبط توزيع حديد التسليح بشكل صحيح داخل قطاع العمود \nوممكن تكون كانتين كل واحدة علي شكل مثلث مع الكانة الداير\nوبيتم وضع عدد الكانات دي الموجوده بنفس الصف مع الكانة الداير سواء مثلا ١ علي شكل سداسى أو ٢ علي شكل مثلث أو الخ في هذه الخانة \n\nوفي بعض الأعمدة ذات القطاع الكبير يمكن أستخدام عدد أكبر من الكانات ف نفس الصف لضمان التوزيع السليم لحديد العمود ولمقاومة قوى ال Shear\n\n\" مدخل إختياري في حالة عدم إدخاله سيقوم البرنامج بإفتراضه بقيمة = ١ كانة بالصف \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
 			}
 		});
 		
@@ -10873,37 +9912,6 @@ public class ToipccreinforcedconcretefootingssActivity extends AppCompatActivity
 			}
 		});
 		
-		textview1485.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccreinforcedconcretefootingssActivity.this, textview1485)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("* عدد الكانات بالصف الواحد \nوبيختلف علي حسب شكل الكانة ف من الممكن أن تكون هناك كانة علي شكل سداسى مع الكانة الداير لربط الأسياخ الداخلية بالعمود ولضبط توزيع حديد التسليح بشكل صحيح داخل قطاع العمود \nوممكن تكون كانتين كل واحدة علي شكل مثلث مع الكانة الداير\nوبيتم وضع عدد الكانات دي الموجوده بنفس الصف مع الكانة الداير سواء مثلا ١ علي شكل سداسى أو ٢ علي شكل مثلث أو الخ في هذه الخانة \n\nوفي بعض الأعمدة ذات القطاع الكبير يمكن أستخدام عدد أكبر من الكانات ف نفس الصف لضمان التوزيع السليم لحديد العمود ولمقاومة قوى ال Shear\n\n\" مدخل إختياري في حالة عدم إدخاله سيقوم البرنامج بإفتراضه بقيمة = ١ كانة بالصف \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
-			}
-		});
-		
 		button134.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
@@ -11006,37 +10014,6 @@ public class ToipccreinforcedconcretefootingssActivity extends AppCompatActivity
 			}
 		});
 		
-		textview1498.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccreinforcedconcretefootingssActivity.this, textview1498)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("* عدد الكانات بالصف الواحد \nوبيختلف علي حسب شكل الكانة ف من الممكن أن تكون هناك كانة علي شكل سداسى مع الكانة الداير لربط الأسياخ الداخلية بالعمود ولضبط توزيع حديد التسليح بشكل صحيح داخل قطاع العمود \nوممكن تكون كانتين كل واحدة علي شكل مثلث مع الكانة الداير\nوبيتم وضع عدد الكانات دي الموجوده بنفس الصف مع الكانة الداير سواء مثلا ١ علي شكل سداسى أو ٢ علي شكل مثلث أو الخ في هذه الخانة \n\nوفي بعض الأعمدة ذات القطاع الكبير يمكن أستخدام عدد أكبر من الكانات ف نفس الصف لضمان التوزيع السليم لحديد العمود ولمقاومة قوى ال Shear\n\n\" مدخل إختياري في حالة عدم إدخاله سيقوم البرنامج بإفتراضه بقيمة = ١ كانة بالصف \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
-			}
-		});
-		
 		button137.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
@@ -11105,37 +10082,6 @@ public class ToipccreinforcedconcretefootingssActivity extends AppCompatActivity
 			}
 		});
 		
-		textview1733.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccreinforcedconcretefootingssActivity.this, textview1733)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("عدد صفوف الكانات بالعمود لكل م.ط\n( بيكون مساوى لعدد الكانات الأوتوماتيك بالعمود لكل م.ط )\n\" مدخل إختياري في حالة عدم إدخاله سيقوم البرنامج بإفتراضه بقيمة =\n٦ كانات / م.ط \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
-			}
-		});
-		
 		edittext271fm1.addTextChangedListener(new TextWatcher() {
 			@Override
 			public void onTextChanged(CharSequence _param1, int _param2, int _param3, int _param4) {
@@ -11155,37 +10101,6 @@ public class ToipccreinforcedconcretefootingssActivity extends AppCompatActivity
 			@Override
 			public void afterTextChanged(Editable _param1) {
 				
-			}
-		});
-		
-		textview1736.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccreinforcedconcretefootingssActivity.this, textview1736)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("قطر سيخ كانات الأعمدة ( مم )\n\" مدخل إختياري في حالة عدم إدخاله سيقوم البرنامج بإفتراضه بقيمة = ٨ مم \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
 			}
 		});
 		
@@ -11365,37 +10280,6 @@ public class ToipccreinforcedconcretefootingssActivity extends AppCompatActivity
 			}
 		});
 		
-		textview1761.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccreinforcedconcretefootingssActivity.this, textview1761)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("* عدد الكانات بالصف الواحد \nوبيختلف علي حسب شكل الكانة ف من الممكن أن تكون هناك كانة علي شكل سداسى مع الكانة الداير لربط الأسياخ الداخلية بالعمود ولضبط توزيع حديد التسليح بشكل صحيح داخل قطاع العمود \nوممكن تكون كانتين كل واحدة علي شكل مثلث مع الكانة الداير\nوبيتم وضع عدد الكانات دي الموجوده بنفس الصف مع الكانة الداير سواء مثلا ١ علي شكل سداسى أو ٢ علي شكل مثلث أو الخ في هذه الخانة \n\nوفي بعض الأعمدة ذات القطاع الكبير يمكن أستخدام عدد أكبر من الكانات ف نفس الصف لضمان التوزيع السليم لحديد العمود ولمقاومة قوى ال Shear\n\n\" مدخل إختياري في حالة عدم إدخاله سيقوم البرنامج بإفتراضه بقيمة = ١ كانة بالصف \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
-			}
-		});
-		
 		button156.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
@@ -11495,37 +10379,6 @@ public class ToipccreinforcedconcretefootingssActivity extends AppCompatActivity
 			@Override
 			public void afterTextChanged(Editable _param1) {
 				
-			}
-		});
-		
-		textview1774.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccreinforcedconcretefootingssActivity.this, textview1774)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("* عدد الكانات بالصف الواحد \nوبيختلف علي حسب شكل الكانة ف من الممكن أن تكون هناك كانة علي شكل سداسى مع الكانة الداير لربط الأسياخ الداخلية بالعمود ولضبط توزيع حديد التسليح بشكل صحيح داخل قطاع العمود \nوممكن تكون كانتين كل واحدة علي شكل مثلث مع الكانة الداير\nوبيتم وضع عدد الكانات دي الموجوده بنفس الصف مع الكانة الداير سواء مثلا ١ علي شكل سداسى أو ٢ علي شكل مثلث أو الخ في هذه الخانة \n\nوفي بعض الأعمدة ذات القطاع الكبير يمكن أستخدام عدد أكبر من الكانات ف نفس الصف لضمان التوزيع السليم لحديد العمود ولمقاومة قوى ال Shear\n\n\" مدخل إختياري في حالة عدم إدخاله سيقوم البرنامج بإفتراضه بقيمة = ١ كانة بالصف \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
 			}
 		});
 		
@@ -11631,37 +10484,6 @@ public class ToipccreinforcedconcretefootingssActivity extends AppCompatActivity
 			}
 		});
 		
-		textview1787.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccreinforcedconcretefootingssActivity.this, textview1787)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("* عدد الكانات بالصف الواحد \nوبيختلف علي حسب شكل الكانة ف من الممكن أن تكون هناك كانة علي شكل سداسى مع الكانة الداير لربط الأسياخ الداخلية بالعمود ولضبط توزيع حديد التسليح بشكل صحيح داخل قطاع العمود \nوممكن تكون كانتين كل واحدة علي شكل مثلث مع الكانة الداير\nوبيتم وضع عدد الكانات دي الموجوده بنفس الصف مع الكانة الداير سواء مثلا ١ علي شكل سداسى أو ٢ علي شكل مثلث أو الخ في هذه الخانة \n\nوفي بعض الأعمدة ذات القطاع الكبير يمكن أستخدام عدد أكبر من الكانات ف نفس الصف لضمان التوزيع السليم لحديد العمود ولمقاومة قوى ال Shear\n\n\" مدخل إختياري في حالة عدم إدخاله سيقوم البرنامج بإفتراضه بقيمة = ١ كانة بالصف \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
-			}
-		});
-		
 		button162.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
@@ -11764,37 +10586,6 @@ public class ToipccreinforcedconcretefootingssActivity extends AppCompatActivity
 			}
 		});
 		
-		textview1800.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccreinforcedconcretefootingssActivity.this, textview1800)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("* عدد الكانات بالصف الواحد \nوبيختلف علي حسب شكل الكانة ف من الممكن أن تكون هناك كانة علي شكل سداسى مع الكانة الداير لربط الأسياخ الداخلية بالعمود ولضبط توزيع حديد التسليح بشكل صحيح داخل قطاع العمود \nوممكن تكون كانتين كل واحدة علي شكل مثلث مع الكانة الداير\nوبيتم وضع عدد الكانات دي الموجوده بنفس الصف مع الكانة الداير سواء مثلا ١ علي شكل سداسى أو ٢ علي شكل مثلث أو الخ في هذه الخانة \n\nوفي بعض الأعمدة ذات القطاع الكبير يمكن أستخدام عدد أكبر من الكانات ف نفس الصف لضمان التوزيع السليم لحديد العمود ولمقاومة قوى ال Shear\n\n\" مدخل إختياري في حالة عدم إدخاله سيقوم البرنامج بإفتراضه بقيمة = ١ كانة بالصف \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
-			}
-		});
-		
 		button165.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
@@ -11863,37 +10654,6 @@ public class ToipccreinforcedconcretefootingssActivity extends AppCompatActivity
 			}
 		});
 		
-		textview1812.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccreinforcedconcretefootingssActivity.this, textview1812)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("المسافات البينية بين صفوف الكانات بالعمود لكل م.ط\n( بيكون مساوى للمسافات البينية بين الكانات الأوتوماتيك بالعمود لكل م.ط )\n\" مدخل إختياري في حالة عدم إدخاله سيقوم البرنامج بإفتراضه بقيمة =\n٠.١٥ م / م.ط \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
-			}
-		});
-		
 		edittext289fm1.addTextChangedListener(new TextWatcher() {
 			@Override
 			public void onTextChanged(CharSequence _param1, int _param2, int _param3, int _param4) {
@@ -11913,37 +10673,6 @@ public class ToipccreinforcedconcretefootingssActivity extends AppCompatActivity
 			@Override
 			public void afterTextChanged(Editable _param1) {
 				
-			}
-		});
-		
-		textview1815.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccreinforcedconcretefootingssActivity.this, textview1815)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("قطر سيخ كانات الأعمدة ( مم )\n\" مدخل إختياري في حالة عدم إدخاله سيقوم البرنامج بإفتراضه بقيمة = ٨ مم \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
 			}
 		});
 		
@@ -12123,37 +10852,6 @@ public class ToipccreinforcedconcretefootingssActivity extends AppCompatActivity
 			}
 		});
 		
-		textview1840.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccreinforcedconcretefootingssActivity.this, textview1840)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("* عدد الكانات بالصف الواحد \nوبيختلف علي حسب شكل الكانة ف من الممكن أن تكون هناك كانة علي شكل سداسى مع الكانة الداير لربط الأسياخ الداخلية بالعمود ولضبط توزيع حديد التسليح بشكل صحيح داخل قطاع العمود \nوممكن تكون كانتين كل واحدة علي شكل مثلث مع الكانة الداير\nوبيتم وضع عدد الكانات دي الموجوده بنفس الصف مع الكانة الداير سواء مثلا ١ علي شكل سداسى أو ٢ علي شكل مثلث أو الخ في هذه الخانة \n\nوفي بعض الأعمدة ذات القطاع الكبير يمكن أستخدام عدد أكبر من الكانات ف نفس الصف لضمان التوزيع السليم لحديد العمود ولمقاومة قوى ال Shear\n\n\" مدخل إختياري في حالة عدم إدخاله سيقوم البرنامج بإفتراضه بقيمة = ١ كانة بالصف \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
-			}
-		});
-		
 		button169.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
@@ -12253,37 +10951,6 @@ public class ToipccreinforcedconcretefootingssActivity extends AppCompatActivity
 			@Override
 			public void afterTextChanged(Editable _param1) {
 				
-			}
-		});
-		
-		textview1853.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccreinforcedconcretefootingssActivity.this, textview1853)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("* عدد الكانات بالصف الواحد \nوبيختلف علي حسب شكل الكانة ف من الممكن أن تكون هناك كانة علي شكل سداسى مع الكانة الداير لربط الأسياخ الداخلية بالعمود ولضبط توزيع حديد التسليح بشكل صحيح داخل قطاع العمود \nوممكن تكون كانتين كل واحدة علي شكل مثلث مع الكانة الداير\nوبيتم وضع عدد الكانات دي الموجوده بنفس الصف مع الكانة الداير سواء مثلا ١ علي شكل سداسى أو ٢ علي شكل مثلث أو الخ في هذه الخانة \n\nوفي بعض الأعمدة ذات القطاع الكبير يمكن أستخدام عدد أكبر من الكانات ف نفس الصف لضمان التوزيع السليم لحديد العمود ولمقاومة قوى ال Shear\n\n\" مدخل إختياري في حالة عدم إدخاله سيقوم البرنامج بإفتراضه بقيمة = ١ كانة بالصف \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
 			}
 		});
 		
@@ -12389,37 +11056,6 @@ public class ToipccreinforcedconcretefootingssActivity extends AppCompatActivity
 			}
 		});
 		
-		textview1866.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccreinforcedconcretefootingssActivity.this, textview1866)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("* عدد الكانات بالصف الواحد \nوبيختلف علي حسب شكل الكانة ف من الممكن أن تكون هناك كانة علي شكل سداسى مع الكانة الداير لربط الأسياخ الداخلية بالعمود ولضبط توزيع حديد التسليح بشكل صحيح داخل قطاع العمود \nوممكن تكون كانتين كل واحدة علي شكل مثلث مع الكانة الداير\nوبيتم وضع عدد الكانات دي الموجوده بنفس الصف مع الكانة الداير سواء مثلا ١ علي شكل سداسى أو ٢ علي شكل مثلث أو الخ في هذه الخانة \n\nوفي بعض الأعمدة ذات القطاع الكبير يمكن أستخدام عدد أكبر من الكانات ف نفس الصف لضمان التوزيع السليم لحديد العمود ولمقاومة قوى ال Shear\n\n\" مدخل إختياري في حالة عدم إدخاله سيقوم البرنامج بإفتراضه بقيمة = ١ كانة بالصف \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
-			}
-		});
-		
 		button175.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
@@ -12519,37 +11155,6 @@ public class ToipccreinforcedconcretefootingssActivity extends AppCompatActivity
 			@Override
 			public void afterTextChanged(Editable _param1) {
 				
-			}
-		});
-		
-		textview1879.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccreinforcedconcretefootingssActivity.this, textview1879)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("* عدد الكانات بالصف الواحد \nوبيختلف علي حسب شكل الكانة ف من الممكن أن تكون هناك كانة علي شكل سداسى مع الكانة الداير لربط الأسياخ الداخلية بالعمود ولضبط توزيع حديد التسليح بشكل صحيح داخل قطاع العمود \nوممكن تكون كانتين كل واحدة علي شكل مثلث مع الكانة الداير\nوبيتم وضع عدد الكانات دي الموجوده بنفس الصف مع الكانة الداير سواء مثلا ١ علي شكل سداسى أو ٢ علي شكل مثلث أو الخ في هذه الخانة \n\nوفي بعض الأعمدة ذات القطاع الكبير يمكن أستخدام عدد أكبر من الكانات ف نفس الصف لضمان التوزيع السليم لحديد العمود ولمقاومة قوى ال Shear\n\n\" مدخل إختياري في حالة عدم إدخاله سيقوم البرنامج بإفتراضه بقيمة = ١ كانة بالصف \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
 			}
 		});
 		
@@ -12683,37 +11288,6 @@ public class ToipccreinforcedconcretefootingssActivity extends AppCompatActivity
 			}
 		});
 		
-		textview215.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccreinforcedconcretefootingssActivity.this, textview215)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("المسافة البينية بين أسياخ الربط أو أشاير الربط وهي المسافة في الأتجاهين\nبين كل سيخين أو بين كل أشارتين\nربط بين القاعدة العادية والقاعدة \nالمسلحة Shear dowels ( م ) \n\" مدخل إختياري\nفي حالة عدم\nإدخاله سيقوم \nالبرنامج بأفتراضه بقيمة = ٠.٣٠ م \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
-			}
-		});
-		
 		edittext307fm1.addTextChangedListener(new TextWatcher() {
 			@Override
 			public void onTextChanged(CharSequence _param1, int _param2, int _param3, int _param4) {
@@ -12731,37 +11305,6 @@ public class ToipccreinforcedconcretefootingssActivity extends AppCompatActivity
 			@Override
 			public void afterTextChanged(Editable _param1) {
 				
-			}
-		});
-		
-		textview212.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccreinforcedconcretefootingssActivity.this, textview212)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("طول سيخ أو أشارة الربط بين \nالقاعدة العادية والقاعدة المسلحة\nShear dowels ( م ) =\nوهو بيكون علي شكل حرف Z قائم يتكون من\n١ - الضلع السفلي الأفقي \" وتكون قيمته تقريبآ ١٠ سم \"\n٢ - الضلع الأوسط القائم \" وتكون قيمته تقريبآ ٣٠ سم \"\n١ - الضلع العلوى الأفقي \" وتكون قيمته تقريبآ ١٠ سم \"\nويتم تركيبه كالأتي : جزء منه مدفون داخل العادية طوله بيساوي ( الضلع السفلي الأفقي + نصف الضلع الأوسط القائم ) وجزء مدفون بالمسلحة طوله بيساوي ( النصف المتبقي من الضلع الأوسط القائم + الضلع العلوى الأفقي )\nوبيتم تثبيته بمجرد ما العادية بتشمع يعني بعد من ( ٣٠ دقيقة الي ٤٥ دقيقة ) تقريبآ من الصب\n\" مدخل إختياري في حالة عدم إدخاله سيقوم البرنامج بإفتراض قيمته = ٠.٥ م \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
 			}
 		});
 		
@@ -12784,37 +11327,6 @@ public class ToipccreinforcedconcretefootingssActivity extends AppCompatActivity
 			@Override
 			public void afterTextChanged(Editable _param1) {
 				
-			}
-		});
-		
-		textview214.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccreinforcedconcretefootingssActivity.this, textview214)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("قطر سيخ أو أشارة الربط بين \nالقاعدة العادية والقاعدة المسلحة\nShear dowels ( مم )\n\" مدخل إختياري\nفي حالة عدم\nإدخاله سيقوم \nالبرنامج بأفتراضه بقيمة = ١٠ مم \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
 			}
 		});
 		
@@ -12939,37 +11451,6 @@ public class ToipccreinforcedconcretefootingssActivity extends AppCompatActivity
 			}
 		});
 		
-		textview1543.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccreinforcedconcretefootingssActivity.this, textview1543)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("طول سيخ أو أشارة الربط بين \nالقاعدة العادية والقاعدة المسلحة\nShear dowels ( م ) =\nوهو بيكون علي شكل حرف Z قائم يتكون من\n١ - الضلع السفلي الأفقي \" وتكون قيمته تقريبآ ١٠ سم \"\n٢ - الضلع الأوسط القائم \" وتكون قيمته تقريبآ ٣٠ سم \"\n١ - الضلع العلوى الأفقي \" وتكون قيمته تقريبآ ١٠ سم \"\nويتم تركيبه كالأتي : جزء منه مدفون داخل العادية طوله بيساوي ( الضلع السفلي الأفقي + نصف الضلع الأوسط القائم ) وجزء مدفون بالمسلحة طوله بيساوي ( النصف المتبقي من الضلع الأوسط القائم + الضلع العلوى الأفقي )\nوبيتم تثبيته بمجرد ما العادية بتشمع يعني بعد من ( ٣٠ دقيقة الي ٤٥ دقيقة ) تقريبآ من الصب\n\" مدخل إختياري في حالة عدم إدخاله سيقوم البرنامج بإفتراض قيمته = ٠.٥ م \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
-			}
-		});
-		
 		edittext314fm1.addTextChangedListener(new TextWatcher() {
 			@Override
 			public void onTextChanged(CharSequence _param1, int _param2, int _param3, int _param4) {
@@ -12989,37 +11470,6 @@ public class ToipccreinforcedconcretefootingssActivity extends AppCompatActivity
 			@Override
 			public void afterTextChanged(Editable _param1) {
 				
-			}
-		});
-		
-		textview1546.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccreinforcedconcretefootingssActivity.this, textview1546)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("قطر سيخ أو أشارة الربط بين \nالقاعدة العادية والقاعدة المسلحة\nShear dowels ( مم )\n\" مدخل إختياري\nفي حالة عدم\nإدخاله سيقوم \nالبرنامج بأفتراضه بقيمة = ١٠ مم \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
 			}
 		});
 		
@@ -13124,37 +11574,6 @@ public class ToipccreinforcedconcretefootingssActivity extends AppCompatActivity
 			}
 		});
 		
-		textview1296.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccreinforcedconcretefootingssActivity.this, textview1296)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("* عدد الصفوف التي سيتم توزيع الأسياخ عليها\nوذلك في حالة زيادة ارتفاع القاعدة عن ٧٠ سم\nفيتم وضع أكثر من صف من أسياخ داير محيط القاعدة بمنتصف الأرتفاع لتفادي الأنكماش ولكن في معظم الأحيان بيكون سمك القاعدة أقل من ٧٠ سم وبالتالي بيكون غير موجود\n\" مدخل إختياري في حالة عدم إدخاله سيقوم البرنامج بإفتراضه بقيمة = ١ شيخ \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
-			}
-		});
-		
 		edittext318fm1.addTextChangedListener(new TextWatcher() {
 			@Override
 			public void onTextChanged(CharSequence _param1, int _param2, int _param3, int _param4) {
@@ -13181,37 +11600,6 @@ public class ToipccreinforcedconcretefootingssActivity extends AppCompatActivity
 			}
 		});
 		
-		textview1291.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccreinforcedconcretefootingssActivity.this, textview1291)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("* طول قفل سيخ أو كانة الأنكماش بالقاعدة ( م )\n\" مدخل إختياري في حالة عدم إدخاله سيفترضه البرنامج بقيمة = ٠.١٠ م \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
-			}
-		});
-		
 		edittext319fm1.addTextChangedListener(new TextWatcher() {
 			@Override
 			public void onTextChanged(CharSequence _param1, int _param2, int _param3, int _param4) {
@@ -13231,37 +11619,6 @@ public class ToipccreinforcedconcretefootingssActivity extends AppCompatActivity
 			@Override
 			public void afterTextChanged(Editable _param1) {
 				
-			}
-		});
-		
-		textview1294.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccreinforcedconcretefootingssActivity.this, textview1294)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("* قطر سيخ داير الأنكماش بالقاعدة ( مم )\n\" مدخل إختياري\nفي حالة عدم\nإدخاله سيقوم \nالبرنامج بأفتراضه بقيمة = ١٠ مم \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
 			}
 		});
 		
@@ -13430,37 +11787,6 @@ public class ToipccreinforcedconcretefootingssActivity extends AppCompatActivity
 			@Override
 			public void afterTextChanged(Editable _param1) {
 				
-			}
-		});
-		
-		textview1722.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccreinforcedconcretefootingssActivity.this, textview1722)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("الغطاء الخرسانى بالقواعد وهو عبارة عن الغطاء الخرسانى أو طبقة الخرسانة الموجودة حول حديد تسليح القواعد الخرسانية ( م )\n\" مدخل إختياري في حالة عدم إدخاله سيقوم البرنامج بافتراضه بقيمة = ٠.٠٥ م \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
 			}
 		});
 		
@@ -13924,37 +12250,6 @@ public class ToipccreinforcedconcretefootingssActivity extends AppCompatActivity
 			}
 		});
 		
-		textview1632.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccreinforcedconcretefootingssActivity.this, textview1632)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("قطر السيخ المسخدم في كانة الداير \n\" مدخل إختياري في حالة عدم إدخاله سيقوم البرنامج بأفتراضه بقيمة = ١٠ مم \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
-			}
-		});
-		
 		button146.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
@@ -14065,37 +12360,6 @@ public class ToipccreinforcedconcretefootingssActivity extends AppCompatActivity
 			@Override
 			public void afterTextChanged(Editable _param1) {
 				
-			}
-		});
-		
-		textview1665.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccreinforcedconcretefootingssActivity.this, textview1665)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("الغطاء الخرساني للعمود الموجود بالقاعدة وهو عبارة عن الغطاء الخرسانى أو طبقة الخرسانة الموجودة حول حديد تسليح العمود أو رقبة العمود ( م )\n\" مدخل إختياري في حالة عدم إدخاله سيقوم البرنامج بافتراضه بقيمة = ٠.٠٢٥ م \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
 			}
 		});
 		
@@ -14278,37 +12542,6 @@ public class ToipccreinforcedconcretefootingssActivity extends AppCompatActivity
 			}
 		});
 		
-		textview1897.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccreinforcedconcretefootingssActivity.this, textview1897)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("قطر سيخ كانات الأعمدة ( مم )\n\" مدخل إختياري في حالة عدم إدخاله سيقوم البرنامج بإفتراضه بقيمة = ٨ مم \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
-			}
-		});
-		
 		edittext356fm1.addTextChangedListener(new TextWatcher() {
 			@Override
 			public void onTextChanged(CharSequence _param1, int _param2, int _param3, int _param4) {
@@ -14443,37 +12676,6 @@ public class ToipccreinforcedconcretefootingssActivity extends AppCompatActivity
 			}
 		});
 		
-		textview1922.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccreinforcedconcretefootingssActivity.this, textview1922)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("* عدد الكانات بالصف الواحد \nوبيختلف علي حسب شكل الكانة ف من الممكن أن تكون هناك كانة علي شكل سداسى مع الكانة الداير لربط الأسياخ الداخلية بالعمود ولضبط توزيع حديد التسليح بشكل صحيح داخل قطاع العمود \nوممكن تكون كانتين كل واحدة علي شكل مثلث مع الكانة الداير\nوبيتم وضع عدد الكانات دي الموجوده بنفس الصف مع الكانة الداير سواء مثلا ١ علي شكل سداسى أو ٢ علي شكل مثلث أو الخ في هذه الخانة \n\nوفي بعض الأعمدة ذات القطاع الكبير يمكن أستخدام عدد أكبر من الكانات ف نفس الصف لضمان التوزيع السليم لحديد العمود ولمقاومة قوى ال Shear\n\n\" مدخل إختياري في حالة عدم إدخاله سيقوم البرنامج بإفتراضه بقيمة = ١ كانة بالصف \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
-			}
-		});
-		
 		button182.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
@@ -14573,37 +12775,6 @@ public class ToipccreinforcedconcretefootingssActivity extends AppCompatActivity
 			@Override
 			public void afterTextChanged(Editable _param1) {
 				
-			}
-		});
-		
-		textview1935.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccreinforcedconcretefootingssActivity.this, textview1935)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("* عدد الكانات بالصف الواحد \nوبيختلف علي حسب شكل الكانة ف من الممكن أن تكون هناك كانة علي شكل سداسى مع الكانة الداير لربط الأسياخ الداخلية بالعمود ولضبط توزيع حديد التسليح بشكل صحيح داخل قطاع العمود \nوممكن تكون كانتين كل واحدة علي شكل مثلث مع الكانة الداير\nوبيتم وضع عدد الكانات دي الموجوده بنفس الصف مع الكانة الداير سواء مثلا ١ علي شكل سداسى أو ٢ علي شكل مثلث أو الخ في هذه الخانة \n\nوفي بعض الأعمدة ذات القطاع الكبير يمكن أستخدام عدد أكبر من الكانات ف نفس الصف لضمان التوزيع السليم لحديد العمود ولمقاومة قوى ال Shear\n\n\" مدخل إختياري في حالة عدم إدخاله سيقوم البرنامج بإفتراضه بقيمة = ١ كانة بالصف \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
 			}
 		});
 		
@@ -14709,37 +12880,6 @@ public class ToipccreinforcedconcretefootingssActivity extends AppCompatActivity
 			}
 		});
 		
-		textview1948.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccreinforcedconcretefootingssActivity.this, textview1948)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("* عدد الكانات بالصف الواحد \nوبيختلف علي حسب شكل الكانة ف من الممكن أن تكون هناك كانة علي شكل سداسى مع الكانة الداير لربط الأسياخ الداخلية بالعمود ولضبط توزيع حديد التسليح بشكل صحيح داخل قطاع العمود \nوممكن تكون كانتين كل واحدة علي شكل مثلث مع الكانة الداير\nوبيتم وضع عدد الكانات دي الموجوده بنفس الصف مع الكانة الداير سواء مثلا ١ علي شكل سداسى أو ٢ علي شكل مثلث أو الخ في هذه الخانة \n\nوفي بعض الأعمدة ذات القطاع الكبير يمكن أستخدام عدد أكبر من الكانات ف نفس الصف لضمان التوزيع السليم لحديد العمود ولمقاومة قوى ال Shear\n\n\" مدخل إختياري في حالة عدم إدخاله سيقوم البرنامج بإفتراضه بقيمة = ١ كانة بالصف \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
-			}
-		});
-		
 		button188.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
@@ -14839,37 +12979,6 @@ public class ToipccreinforcedconcretefootingssActivity extends AppCompatActivity
 			@Override
 			public void afterTextChanged(Editable _param1) {
 				
-			}
-		});
-		
-		textview1961.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccreinforcedconcretefootingssActivity.this, textview1961)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("* عدد الكانات بالصف الواحد \nوبيختلف علي حسب شكل الكانة ف من الممكن أن تكون هناك كانة علي شكل سداسى مع الكانة الداير لربط الأسياخ الداخلية بالعمود ولضبط توزيع حديد التسليح بشكل صحيح داخل قطاع العمود \nوممكن تكون كانتين كل واحدة علي شكل مثلث مع الكانة الداير\nوبيتم وضع عدد الكانات دي الموجوده بنفس الصف مع الكانة الداير سواء مثلا ١ علي شكل سداسى أو ٢ علي شكل مثلث أو الخ في هذه الخانة \n\nوفي بعض الأعمدة ذات القطاع الكبير يمكن أستخدام عدد أكبر من الكانات ف نفس الصف لضمان التوزيع السليم لحديد العمود ولمقاومة قوى ال Shear\n\n\" مدخل إختياري في حالة عدم إدخاله سيقوم البرنامج بإفتراضه بقيمة = ١ كانة بالصف \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
 			}
 		});
 		
@@ -14977,37 +13086,6 @@ public class ToipccreinforcedconcretefootingssActivity extends AppCompatActivity
 			}
 		});
 		
-		textview1974.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccreinforcedconcretefootingssActivity.this, textview1974)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("طول سيخ أو أشارة الربط بين \nالقاعدة العادية والقاعدة المسلحة\nShear dowels ( م ) =\nوهو بيكون علي شكل حرف Z قائم يتكون من\n١ - الضلع السفلي الأفقي \" وتكون قيمته تقريبآ ١٠ سم \"\n٢ - الضلع الأوسط القائم \" وتكون قيمته تقريبآ ٣٠ سم \"\n١ - الضلع العلوى الأفقي \" وتكون قيمته تقريبآ ١٠ سم \"\nويتم تركيبه كالأتي : جزء منه مدفون داخل العادية طوله بيساوي ( الضلع السفلي الأفقي + نصف الضلع الأوسط القائم ) وجزء مدفون بالمسلحة طوله بيساوي ( النصف المتبقي من الضلع الأوسط القائم + الضلع العلوى الأفقي )\nوبيتم تثبيته بمجرد ما العادية بتشمع يعني بعد من ( ٣٠ دقيقة الي ٤٥ دقيقة ) تقريبآ من الصب\n\" مدخل إختياري في حالة عدم إدخاله سيقوم البرنامج بإفتراض قيمته = ٠.٥٠ م \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
-			}
-		});
-		
 		edittext373fm1.addTextChangedListener(new TextWatcher() {
 			@Override
 			public void onTextChanged(CharSequence _param1, int _param2, int _param3, int _param4) {
@@ -15027,37 +13105,6 @@ public class ToipccreinforcedconcretefootingssActivity extends AppCompatActivity
 			@Override
 			public void afterTextChanged(Editable _param1) {
 				
-			}
-		});
-		
-		textview1977.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccreinforcedconcretefootingssActivity.this, textview1977)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("قطر سيخ أو أشارة الربط بين \nالقاعدة العادية والقاعدة المسلحة\nShear dowels ( مم )\n\" مدخل إختياري\nفي حالة عدم\nإدخاله سيقوم \nالبرنامج بأفتراضه بقيمة = ١٠ مم \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
 			}
 		});
 		
@@ -15180,37 +13227,6 @@ public class ToipccreinforcedconcretefootingssActivity extends AppCompatActivity
 			@Override
 			public void afterTextChanged(Editable _param1) {
 				
-			}
-		});
-		
-		textview1993.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccreinforcedconcretefootingssActivity.this, textview1993)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("* قطر سيخ داير الأنكماش بالقاعدة ( مم )\n\" مدخل إختياري\nفي حالة عدم\nإدخاله سيقوم \nالبرنامج بأفتراضه بقيمة = ١٠ مم \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
 			}
 		});
 		
@@ -15869,37 +13885,6 @@ public class ToipccreinforcedconcretefootingssActivity extends AppCompatActivity
 			}
 		});
 		
-		textview530.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccreinforcedconcretefootingssActivity.this, textview530)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("نسبة الهالك بالخرسانة وهي عبارة عن ( هالك غسيل عربيات نقل الخلطة وهالك البامب ان وجدت )\n\" مدخل إختياري في حالة عدم إدخاله سيقوم البرنامج بإفتراضه بقيمة ٥ % \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
-			}
-		});
-		
 		button66.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
@@ -15961,37 +13946,6 @@ public class ToipccreinforcedconcretefootingssActivity extends AppCompatActivity
 			@Override
 			public void afterTextChanged(Editable _param1) {
 				
-			}
-		});
-		
-		textview998.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccreinforcedconcretefootingssActivity.this, textview998)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("نسبة الهالك بحديد تسليح القواعد\n\" مدخل إختياري في حالة عدم إدخاله سيقوم البرنامج بإفتراضه بقيمة = ١٠ % \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
 			}
 		});
 		
@@ -16148,37 +14102,6 @@ public class ToipccreinforcedconcretefootingssActivity extends AppCompatActivity
 			}
 		});
 		
-		textview965.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccreinforcedconcretefootingssActivity.this, textview965)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("سعر مصنعية الصب والفرمجة شامل إيجار الخلاطة ( جنيه / م٣ )\nفي حالة عدم الرغبة في ادخاله واعتباره محمل علي سعر النجارة والحدادة سيهمله البرنامج\n\" مدخل إختياري في حالة عدم الرغبة في إدخاله سيقوم البرنامج بافتراضه بقيمة = ٠٠.٠٠ جنيه/م٣ \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
-			}
-		});
-		
 		button65.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
@@ -16302,37 +14225,6 @@ public class ToipccreinforcedconcretefootingssActivity extends AppCompatActivity
 			}
 		});
 		
-		textview724.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccreinforcedconcretefootingssActivity.this, textview724)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("إجمالي تكلفة النجارة والحدادة ( جنيه )\nبيتم حسابها علي أساس الكمية التصميمية لا الفعلية لان معظم الخرسانة الموردة بتكون أكبر من التصميمية المحسوبة وبنسب مختلفة غير ثابتة\nوهي = أجمالى كمية الخرسانة للقواعد التي يتم ادخال أبعاده وبياناتها في أول الصفحة ( الكمية التصميمية ) * سعر مصنعية النجارة والحدادة ( جنيه )")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
-			}
-		});
-		
 		edittext117.addTextChangedListener(new TextWatcher() {
 			@Override
 			public void onTextChanged(CharSequence _param1, int _param2, int _param3, int _param4) {
@@ -16413,37 +14305,6 @@ public class ToipccreinforcedconcretefootingssActivity extends AppCompatActivity
 			}
 		});
 		
-		textview335.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccreinforcedconcretefootingssActivity.this, textview335)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("نسبة الرمل بالخلطة الخرسانية ( م٣ / م٣ ) \" مدخل إختياري في حالة عدم إدخاله سيقوم البرنامج بافتراضه بقيمة = ٠.٤ \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
-			}
-		});
-		
 		edittext62.addTextChangedListener(new TextWatcher() {
 			@Override
 			public void onTextChanged(CharSequence _param1, int _param2, int _param3, int _param4) {
@@ -16467,37 +14328,6 @@ public class ToipccreinforcedconcretefootingssActivity extends AppCompatActivity
 			@Override
 			public void afterTextChanged(Editable _param1) {
 				
-			}
-		});
-		
-		textview340.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccreinforcedconcretefootingssActivity.this, textview340)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("نسبة الزلط أو السن بالخلطة الخرسانية ( م٣ / م٣ ) \" مدخل إختياري في حالة عدم إدخاله سيقوم البرنامج بافتراضه بقيمة = ٠.٨ \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
 			}
 		});
 		
@@ -16542,37 +14372,6 @@ public class ToipccreinforcedconcretefootingssActivity extends AppCompatActivity
 			}
 		});
 		
-		textview344.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccreinforcedconcretefootingssActivity.this, textview344)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("نسبة الأسمنت بالخلطة الخرسانية [ المحتوي الأسمنتي ] ( كجم / م٣ ) \" مدخل إختياري في حالة عدم إدخاله سيقوم البرنامج بافتراضه بقيمة = ٣٥٠ كجم / م٣ \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
-			}
-		});
-		
 		edittext64.addTextChangedListener(new TextWatcher() {
 			@Override
 			public void onTextChanged(CharSequence _param1, int _param2, int _param3, int _param4) {
@@ -16599,37 +14398,6 @@ public class ToipccreinforcedconcretefootingssActivity extends AppCompatActivity
 			}
 		});
 		
-		textview350.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccreinforcedconcretefootingssActivity.this, textview350)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("نسبة المياه بالخلطة الخرسانية ( لتر / كجم أسمنت ) \" مدخل إختياري في حالة عدم إدخاله سيقوم البرنامج بافتراضه بقيمة = ٠.٥ لتر/كجم أسمنت \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
-			}
-		});
-		
 		edittext132.addTextChangedListener(new TextWatcher() {
 			@Override
 			public void onTextChanged(CharSequence _param1, int _param2, int _param3, int _param4) {
@@ -16651,37 +14419,6 @@ public class ToipccreinforcedconcretefootingssActivity extends AppCompatActivity
 			@Override
 			public void afterTextChanged(Editable _param1) {
 				
-			}
-		});
-		
-		textview1012.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccreinforcedconcretefootingssActivity.this, textview1012)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("نسبة الهالك بحديد تسليح القواعد\n\" مدخل إختياري في حالة عدم إدخاله سيقوم البرنامج بإفتراضه بقيمة = ١٠ % \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
 			}
 		});
 		
@@ -16960,37 +14697,6 @@ public class ToipccreinforcedconcretefootingssActivity extends AppCompatActivity
 			}
 		});
 		
-		textview529.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccreinforcedconcretefootingssActivity.this, textview529)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("عدد شكاير الأسمنت المطلوبة بدون هالك ( فى حالة وزن الشيكارة ٥٠ كجم )")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
-			}
-		});
-		
 		edittext70.addTextChangedListener(new TextWatcher() {
 			@Override
 			public void onTextChanged(CharSequence _param1, int _param2, int _param3, int _param4) {
@@ -17006,37 +14712,6 @@ public class ToipccreinforcedconcretefootingssActivity extends AppCompatActivity
 			@Override
 			public void afterTextChanged(Editable _param1) {
 				
-			}
-		});
-		
-		textview537.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccreinforcedconcretefootingssActivity.this, textview537)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("عدد شكاير الأسمنت المطلوبة شامل الهالك ( فى حالة وزن الشيكارة ٥٠ كجم )")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
 			}
 		});
 		
@@ -17250,37 +14925,6 @@ public class ToipccreinforcedconcretefootingssActivity extends AppCompatActivity
 			}
 		});
 		
-		textview348.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccreinforcedconcretefootingssActivity.this, textview348)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("سعر ال م٣ من المياه\n( جنيه / م٣ )\nفي بعض المشروعات لا يتم حساب تكلفة لمياه الخلط وبالتالى يكون سعرها صفر اي بيتم أهمال تكلفة مياه الخلط\n\" مدخل إختياري في حالة عدم الرغبة في إدخاله سيقوم البرنامج بافتراضه بقيمة = ٠٠.٠٠ جنيه/م٣ \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
-			}
-		});
-		
 		edittext134.addTextChangedListener(new TextWatcher() {
 			@Override
 			public void onTextChanged(CharSequence _param1, int _param2, int _param3, int _param4) {
@@ -17352,37 +14996,6 @@ public class ToipccreinforcedconcretefootingssActivity extends AppCompatActivity
 			@Override
 			public void afterTextChanged(Editable _param1) {
 				
-			}
-		});
-		
-		textview971.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccreinforcedconcretefootingssActivity.this, textview971)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("سعر مصنعية الصب والفرمجة شامل إيجار الخلاطة ( جنيه / يوم )\nفي حالة عدم الرغبة في ادخاله واعتباره محمل علي سعر النجارة والحدادة سيهمله البرنامج\n\" مدخل إختياري في حالة عدم الرغبة في إدخاله سيقوم البرنامج بافتراضه بقيمة = ٠٠.٠٠ جنيه/م٣ \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
 			}
 		});
 		
@@ -17647,37 +15260,6 @@ public class ToipccreinforcedconcretefootingssActivity extends AppCompatActivity
 			}
 		});
 		
-		textview316.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccreinforcedconcretefootingssActivity.this, textview316)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("إجمالي تكلفة النجارة والحدادة ( جنيه )\nبيتم حسابها علي أساس الكمية التصميمية لا الفعلية لان معظم الخرسانة الموردة بتكون أكبر من التصميمية المحسوبة وبنسب مختلفة غير ثابتة\nوهي = أجمالى كمية الخرسانة للقواعد التي يتم ادخال أبعاده وبياناتها في أول الصفحة ( الكمية التصميمية ) * سعر مصنعية النجارة والحدادة ( جنيه )")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
-			}
-		});
-		
 		edittext119.addTextChangedListener(new TextWatcher() {
 			@Override
 			public void onTextChanged(CharSequence _param1, int _param2, int _param3, int _param4) {
@@ -17866,37 +15448,6 @@ public class ToipccreinforcedconcretefootingssActivity extends AppCompatActivity
 			}
 		});
 		
-		textview844.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccreinforcedconcretefootingssActivity.this, textview844)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("نسبة الهالك بالخرسانة وهي عبارة عن ( هالك غسيل عربيات نقل الخلطة وهالك البامب ان وجدت )\n\" والطبيعي أن تتراوح قيمته من ٥ % الى ٧ % علي الأكثر \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
-			}
-		});
-		
 		edittext138.addTextChangedListener(new TextWatcher() {
 			@Override
 			public void onTextChanged(CharSequence _param1, int _param2, int _param3, int _param4) {
@@ -18030,37 +15581,6 @@ public class ToipccreinforcedconcretefootingssActivity extends AppCompatActivity
 			}
 		});
 		
-		textview977.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccreinforcedconcretefootingssActivity.this, textview977)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("سعر مصنعية الصب والفرمجة ( جنيه / م٣ )\nفي حالة عدم الرغبة في ادخاله واعتباره محمل علي سعر النجارة والحدادة سيهمله البرنامج\n\" مدخل إختياري في حالة عدم الرغبة في إدخاله سيقوم البرنامج بافتراضه بقيمة = ٠٠.٠٠ جنيه/م٣ \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
-			}
-		});
-		
 		button91.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
@@ -18121,37 +15641,6 @@ public class ToipccreinforcedconcretefootingssActivity extends AppCompatActivity
 			@Override
 			public void afterTextChanged(Editable _param1) {
 				
-			}
-		});
-		
-		textview832.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccreinforcedconcretefootingssActivity.this, textview832)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("إجمالي تكلفة النجارة والحدادة ( جنيه )\nبيتم حسابها علي أساس الكمية التصميمية لا الفعلية لان معظم الخرسانة الموردة بتكون أكبر من التصميمية المحسوبة وبنسب مختلفة غير ثابتة\nوهي = أجمالى كمية الخرسانة للقواعد التي يتم ادخال أبعاده وبياناتها في أول الصفحة ( الكمية التصميمية ) * سعر مصنعية النجارة والحدادة ( جنيه )")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
 			}
 		});
 		
@@ -18263,37 +15752,6 @@ public class ToipccreinforcedconcretefootingssActivity extends AppCompatActivity
 			}
 		});
 		
-		textview859.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccreinforcedconcretefootingssActivity.this, textview859)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("كمية الأسمنت الموردة لزوم الخلطة الخرسانية للقواعد المسلحة ( شكارة )\n( وذلك بفرض إن وزن شكارة الأسمنت = ٥٠ كجم )")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
-			}
-		});
-		
 		edittext97.addTextChangedListener(new TextWatcher() {
 			@Override
 			public void onTextChanged(CharSequence _param1, int _param2, int _param3, int _param4) {
@@ -18313,37 +15771,6 @@ public class ToipccreinforcedconcretefootingssActivity extends AppCompatActivity
 			@Override
 			public void afterTextChanged(Editable _param1) {
 				
-			}
-		});
-		
-		textview861.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccreinforcedconcretefootingssActivity.this, textview861)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("كمية المياه الموردة لزوم الخلطة الخرسانية للقواعد المسلحة ( م٣ )\nوتمثل نصف كمية الأسمنت بالطن تقريبآ \nولا يمكن إن تزيد قيمته عن ( ٠.٧٥ * كمية الأسمنت بالطن )\nولا يمكن أن تقل عن ( ٠.٢٥ * كمية الأسمنت بالطن )\n\" مدخل إختياري في حالة عدم إدخاله سيقوم البرنامج بإفتراضه بقيمة = ( كمية الأسمنت بالطن ÷ ٢ )")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
 			}
 		});
 		
@@ -18392,37 +15819,6 @@ public class ToipccreinforcedconcretefootingssActivity extends AppCompatActivity
 			@Override
 			public void afterTextChanged(Editable _param1) {
 				
-			}
-		});
-		
-		textview962.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccreinforcedconcretefootingssActivity.this, textview962)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("عدد أيام الصب ( يوم )\n\" مدخل إختياري في حالة عدم إدخاله سيقوم البرنامج بإفتراضه بقيمة = ١ \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
 			}
 		});
 		
@@ -18556,37 +15952,6 @@ public class ToipccreinforcedconcretefootingssActivity extends AppCompatActivity
 			}
 		});
 		
-		textview904.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccreinforcedconcretefootingssActivity.this, textview904)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("سعر ال م٣ من المياه\n( جنيه / م٣ )\nفي بعض المشروعات لا يتم حساب تكلفة لمياه الخلط وبالتالى يكون سعرها صفر اي بيتم أهمال تكلفة مياه الخلط\n\" مدخل إختياري في حالة عدم الرغبة في إدخاله سيقوم البرنامج بافتراضه بقيمة = ٠٠.٠٠ جنيه/م٣ \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
-			}
-		});
-		
 		edittext143.addTextChangedListener(new TextWatcher() {
 			@Override
 			public void onTextChanged(CharSequence _param1, int _param2, int _param3, int _param4) {
@@ -18650,37 +16015,6 @@ public class ToipccreinforcedconcretefootingssActivity extends AppCompatActivity
 			@Override
 			public void afterTextChanged(Editable _param1) {
 				
-			}
-		});
-		
-		textview956.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccreinforcedconcretefootingssActivity.this, textview956)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("سعر مصنعية الصب والفرمجة شامل إيجار الخلاطة ( جنيه / يوم )\nفي حالة عدم الرغبة في ادخاله واعتباره محمل علي سعر النجارة والحدادة سيهمله البرنامج\n\" مدخل إختياري في حالة عدم الرغبة في إدخاله سيقوم البرنامج بافتراضه بقيمة = ٠٠.٠٠ جنيه/يوم \"")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
 			}
 		});
 		
@@ -18920,37 +16254,6 @@ public class ToipccreinforcedconcretefootingssActivity extends AppCompatActivity
 			@Override
 			public void afterTextChanged(Editable _param1) {
 				
-			}
-		});
-		
-		textview929.setOnLongClickListener(new View.OnLongClickListener() {
-			@Override
-			public boolean onLongClick(View _view) {
-				ViewTooltip
-				        .on(ToipccreinforcedconcretefootingssActivity.this, textview929)
-				        .autoHide(true, 5000)
-				        .position(ViewTooltip.Position.TOP)
-				        .text("إجمالي تكلفة النجارة والحدادة ( جنيه )\nبيتم حسابها علي أساس الكمية التصميمية لا الفعلية لان معظم الخرسانة الموردة بتكون أكبر من التصميمية المحسوبة وبنسب مختلفة غير ثابتة\nوهي = أجمالى كمية الخرسانة للقواعد التي يتم ادخال أبعاده وبياناتها في أول الصفحة ( الكمية التصميمية ) * سعر مصنعية النجارة والحدادة ( جنيه )")
-				        .textColor(0xFFFFFFFF)
-				        .color(0xFF607D8B)
-				        .corner((int) 25)
-				        .arrowWidth((int) 25)
-				        .arrowHeight((int) 25)
-				        .distanceWithView((int) 25)
-				        .onDisplay(new ViewTooltip.ListenerDisplay() {
-					            @Override
-					            public void onDisplay(View view) {
-						                 
-						            }
-					        })
-				        .onHide(new ViewTooltip.ListenerHide() {
-					            @Override
-					            public void onHide(View view) {
-						                 
-						            }
-					        })
-				        .show();
-				return true;
 			}
 		});
 		
