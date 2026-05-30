@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="4dp"
+    android:layoutDirection="rtl">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="2dp"
+        app:strokeWidth="1dp"
+        app:strokeColor="?attr/colorOutlineVariant"
+        app:cardBackgroundColor="?attr/colorSurface"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackground">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="14dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_marginEnd="14dp"
+                android:background="@drawable/circle_background"
+                android:backgroundTint="?attr/colorSecondaryContainer">
+
+                <ImageView
+                    android:id="@+id/item_icon"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_arrow_forward"
+                    app:tint="?attr/colorOnSecondaryContainer"
+                    android:contentDescription="icon" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/item_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="العنوان"
+                android:textSize="13sp"
+                android:textColor="?attr/colorOnSurface"
+                android:lineSpacingMultiplier="1.3" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="8dp"
+                android:src="@drawable/ic_arrow_forward"
+                app:tint="?attr/colorOutline"
+                android:contentDescription="فتح"
+                android:rotation="180" />
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>
