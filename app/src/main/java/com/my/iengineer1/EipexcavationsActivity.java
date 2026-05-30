@@ -533,25 +533,16 @@ public class EipexcavationsActivity extends AppCompatActivity {
 	@Override
 	public void onDestroy() {
 		super.onDestroy();
-		if (adview1 != null) {
-			adview1.destroy();
-		}
 	}
 	
 	@Override
 	public void onPause() {
 		super.onPause();
-		if (adview1 != null) {
-			adview1.pause();
-		}
 	}
 	
 	@Override
 	public void onResume() {
 		super.onResume();
-		if (adview1 != null) {
-			adview1.resume();
-		}
 	}
 	public void _CardStyle(final View _view, final double _shadow, final double _radius, final String _color, final boolean _touch) {
 		android.graphics.drawable.GradientDrawable gd = new android.graphics.drawable.GradientDrawable();

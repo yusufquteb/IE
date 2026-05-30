@@ -3327,25 +3327,16 @@ Hidden linears
 	@Override
 	public void onDestroy() {
 		super.onDestroy();
-		if (adview2 != null) {
-			adview2.destroy();
-		}
 	}
 	
 	@Override
 	public void onPause() {
 		super.onPause();
-		if (adview2 != null) {
-			adview2.pause();
-		}
 	}
 	
 	@Override
 	public void onResume() {
 		super.onResume();
-		if (adview2 != null) {
-			adview2.resume();
-		}
 	}
 	public String _English_Decimal_Format(final double _number) {
 		return (String.format(Locale.ENGLISH,"%.02f", _number));

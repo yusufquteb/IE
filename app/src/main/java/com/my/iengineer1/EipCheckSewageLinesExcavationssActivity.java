@@ -244,25 +244,16 @@ public class EipCheckSewageLinesExcavationssActivity extends AppCompatActivity {
 	@Override
 	public void onDestroy() {
 		super.onDestroy();
-		if (adview1 != null) {
-			adview1.destroy();
-		}
 	}
 	
 	@Override
 	public void onPause() {
 		super.onPause();
-		if (adview1 != null) {
-			adview1.pause();
-		}
 	}
 	
 	@Override
 	public void onResume() {
 		super.onResume();
-		if (adview1 != null) {
-			adview1.resume();
-		}
 	}
 	public void _removeView(final View _view) {
 		try {
