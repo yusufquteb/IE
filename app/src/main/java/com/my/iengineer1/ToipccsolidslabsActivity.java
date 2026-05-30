@@ -746,8 +746,6 @@ public class ToipccsolidslabsActivity extends AppCompatActivity {
 	private TextView textview935;
 	
 	private Intent price = new Intent();
-	private RequestNetwork internet;
-	private RequestNetwork.RequestListener _internet_request_listener;
 	
 	@Override
 	protected void onCreate(Bundle _savedInstanceState) {
@@ -1461,7 +1459,6 @@ public class ToipccsolidslabsActivity extends AppCompatActivity {
 		edittext111 = findViewById(R.id.edittext111);
 		textview934 = findViewById(R.id.textview934);
 		textview935 = findViewById(R.id.textview935);
-		internet = new RequestNetwork(this);
 		
 		//ScrollChange2
 		vscroll1.setOnScrollChangeListener(new ScrollView.OnScrollChangeListener() {
@@ -1644,7 +1641,6 @@ public class ToipccsolidslabsActivity extends AppCompatActivity {
 		add_dynamic_element.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					dynamic_all.setVisibility(View.VISIBLE);
 					_dynamic_view();
@@ -1877,7 +1873,6 @@ public class ToipccsolidslabsActivity extends AppCompatActivity {
 		button95.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					linear256.setVisibility(View.GONE);
 					linear337.setVisibility(View.VISIBLE);
@@ -1930,7 +1925,6 @@ public class ToipccsolidslabsActivity extends AppCompatActivity {
 		button96.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					linear256.setVisibility(View.VISIBLE);
 					linear337.setVisibility(View.GONE);
@@ -1983,7 +1977,6 @@ public class ToipccsolidslabsActivity extends AppCompatActivity {
 		button68.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					linear178.setVisibility(View.GONE);
 					linear140.setVisibility(View.VISIBLE);
@@ -2053,7 +2046,6 @@ public class ToipccsolidslabsActivity extends AppCompatActivity {
 		button67.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					linear178.setVisibility(View.VISIBLE);
 					linear140.setVisibility(View.GONE);
@@ -2112,7 +2104,6 @@ public class ToipccsolidslabsActivity extends AppCompatActivity {
 		button97.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					linear290.setVisibility(View.GONE);
 					linear301.setVisibility(View.VISIBLE);
@@ -2182,7 +2173,6 @@ public class ToipccsolidslabsActivity extends AppCompatActivity {
 		button98.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					linear290.setVisibility(View.VISIBLE);
 					linear301.setVisibility(View.GONE);
@@ -5391,23 +5381,6 @@ public class ToipccsolidslabsActivity extends AppCompatActivity {
 				_PrintHelper(linear1);
 			}
 		});
-		
-		_internet_request_listener = new RequestNetwork.RequestListener() {
-			@Override
-			public void onResponse(String _param1, String _param2, HashMap<String, Object> _param3) {
-				final String _tag = _param1;
-				final String _response = _param2;
-				final HashMap<String, Object> _responseHeaders = _param3;
-				
-			}
-			
-			@Override
-			public void onErrorResponse(String _param1, String _param2) {
-				final String _tag = _param1;
-				final String _message = _param2;
-				
-			}
-		};
 	}
 	
 	private void initializeLogic() {

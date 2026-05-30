@@ -101,8 +101,6 @@ public class EipCheckSewageLinesExcavationActivity extends AppCompatActivity {
 	private Button add_dynamic_pipe_line;
 	
 	private Intent price = new Intent();
-	private RequestNetwork internet;
-	private RequestNetwork.RequestListener _internet_request_listener;
 	private AlertDialog.Builder dialog;
 	
 	@Override
@@ -158,7 +156,6 @@ public class EipCheckSewageLinesExcavationActivity extends AppCompatActivity {
 		textview809 = findViewById(R.id.textview809);
 		textview704 = findViewById(R.id.textview704);
 		add_dynamic_pipe_line = findViewById(R.id.add_dynamic_pipe_line);
-		internet = new RequestNetwork(this);
 		dialog = new AlertDialog.Builder(this);
 		
 		button195.setOnClickListener(new View.OnClickListener() {
@@ -198,7 +195,6 @@ public class EipCheckSewageLinesExcavationActivity extends AppCompatActivity {
 		add_dynamic_pipe_line.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					_dynamic_excavaion();
 				}
@@ -214,23 +210,6 @@ public class EipCheckSewageLinesExcavationActivity extends AppCompatActivity {
 				_PrintHelper(linear1);
 			}
 		});
-		
-		_internet_request_listener = new RequestNetwork.RequestListener() {
-			@Override
-			public void onResponse(String _param1, String _param2, HashMap<String, Object> _param3) {
-				final String _tag = _param1;
-				final String _response = _param2;
-				final HashMap<String, Object> _responseHeaders = _param3;
-				
-			}
-			
-			@Override
-			public void onErrorResponse(String _param1, String _param2) {
-				final String _tag = _param1;
-				final String _message = _param2;
-				
-			}
-		};
 	}
 	
 	private void initializeLogic() {
@@ -991,7 +970,6 @@ if (edittext_am13d.getText().toString().contains("a.m") || edittext_am15dnn.cont
 		button2dw.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					LayoutInflater inflater = LayoutInflater.from(getApplicationContext());
 					final LinearLayout dynamic_pipe_line_check_excavation_width = (LinearLayout) inflater.inflate(R.layout.eip_d_check_sewage_lines_excavation_width, null, false);
@@ -1163,7 +1141,6 @@ if ((Double.parseDouble(edittext14d.getText().toString()) == 00.00d) || edittext
 		button5dl.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					LayoutInflater inflater = LayoutInflater.from(getApplicationContext());
 					final LinearLayout dynamic_pipe_line_check_excavation_level = (LinearLayout) inflater.inflate(R.layout.eip_d_check_sewage_lines_excavation_level, null, false);

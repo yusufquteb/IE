@@ -88,8 +88,6 @@ public class ToipccEjectionLinePriceAndStudysssActivity extends AppCompatActivit
 	private EditText edittext18;
 	
 	private AlertDialog.Builder dialog;
-	private RequestNetwork internet;
-	private RequestNetwork.RequestListener _internet_request_listener;
 	
 	@Override
 	protected void onCreate(Bundle _savedInstanceState) {
@@ -148,12 +146,10 @@ public class ToipccEjectionLinePriceAndStudysssActivity extends AppCompatActivit
 		textview1420 = findViewById(R.id.textview1420);
 		edittext18 = findViewById(R.id.edittext18);
 		dialog = new AlertDialog.Builder(this);
-		internet = new RequestNetwork(this);
 		
 		add_dynamic_pipe_line.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					_ToipccEjectionLinePriceAndStudysss();
 				}
@@ -187,23 +183,6 @@ public class ToipccEjectionLinePriceAndStudysssActivity extends AppCompatActivit
 				_PrintHelper(linear1);
 			}
 		});
-		
-		_internet_request_listener = new RequestNetwork.RequestListener() {
-			@Override
-			public void onResponse(String _param1, String _param2, HashMap<String, Object> _param3) {
-				final String _tag = _param1;
-				final String _response = _param2;
-				final HashMap<String, Object> _responseHeaders = _param3;
-				
-			}
-			
-			@Override
-			public void onErrorResponse(String _param1, String _param2) {
-				final String _tag = _param1;
-				final String _message = _param2;
-				
-			}
-		};
 	}
 	
 	private void initializeLogic() {

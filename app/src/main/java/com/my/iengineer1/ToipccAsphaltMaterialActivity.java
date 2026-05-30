@@ -634,9 +634,6 @@ public class ToipccAsphaltMaterialActivity extends AppCompatActivity {
 	private EditText edittext213;
 	private TextView textview1971;
 	private TextView textview1972;
-	
-	private RequestNetwork internet;
-	private RequestNetwork.RequestListener _internet_request_listener;
 	private AlertDialog.Builder dialog;
 	
 	@Override
@@ -1230,7 +1227,6 @@ public class ToipccAsphaltMaterialActivity extends AppCompatActivity {
 		edittext213 = findViewById(R.id.edittext213);
 		textview1971 = findViewById(R.id.textview1971);
 		textview1972 = findViewById(R.id.textview1972);
-		internet = new RequestNetwork(this);
 		dialog = new AlertDialog.Builder(this);
 		
 		//ScrollChange2
@@ -1404,7 +1400,6 @@ public class ToipccAsphaltMaterialActivity extends AppCompatActivity {
 		button1.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					if ((edittext1.getText().toString().equals("") || edittext1.getText().toString().equals(".")) || (edittext1.getText().toString().equals("-") || (Double.parseDouble(edittext1.getText().toString()) < 0))) {
 						SketchwareUtil.showMessage(getApplicationContext(), "من فضلك أملئ الخانات الفارغة");
@@ -2368,7 +2363,6 @@ public class ToipccAsphaltMaterialActivity extends AppCompatActivity {
 		add_dynamic_element.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					dynamic_all.setVisibility(View.VISIBLE);
 					_dynamic_view();
@@ -4258,23 +4252,6 @@ public class ToipccAsphaltMaterialActivity extends AppCompatActivity {
 				_PrintHelper(linear1);
 			}
 		});
-		
-		_internet_request_listener = new RequestNetwork.RequestListener() {
-			@Override
-			public void onResponse(String _param1, String _param2, HashMap<String, Object> _param3) {
-				final String _tag = _param1;
-				final String _response = _param2;
-				final HashMap<String, Object> _responseHeaders = _param3;
-				
-			}
-			
-			@Override
-			public void onErrorResponse(String _param1, String _param2) {
-				final String _tag = _param1;
-				final String _message = _param2;
-				
-			}
-		};
 	}
 	
 	private void initializeLogic() {

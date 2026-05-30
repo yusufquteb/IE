@@ -479,8 +479,6 @@ public class ToipccBrickWorkssActivity extends AppCompatActivity {
 	private EditText edittext64;
 	
 	private Intent price = new Intent();
-	private RequestNetwork internet;
-	private RequestNetwork.RequestListener _internet_request_listener;
 	
 	@Override
 	protected void onCreate(Bundle _savedInstanceState) {
@@ -921,12 +919,10 @@ public class ToipccBrickWorkssActivity extends AppCompatActivity {
 		linear871 = findViewById(R.id.linear871);
 		textview2060 = findViewById(R.id.textview2060);
 		edittext64 = findViewById(R.id.edittext64);
-		internet = new RequestNetwork(this);
 		
 		add_dynamic_wall.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					_dynamic_view();
 				}
@@ -939,7 +935,6 @@ public class ToipccBrickWorkssActivity extends AppCompatActivity {
 		button28.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					linear57.setVisibility(View.VISIBLE);
 					edittext24.setText("");
@@ -1006,7 +1001,6 @@ public class ToipccBrickWorkssActivity extends AppCompatActivity {
 		add_dynamic_hole.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					_dynamic_hole_in_wall();
 					linear722.setVisibility(View.VISIBLE);
@@ -2296,7 +2290,6 @@ public class ToipccBrickWorkssActivity extends AppCompatActivity {
 		button53.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					linear780.setVisibility(View.VISIBLE);
 					edittext43.setText("");
@@ -2314,7 +2307,6 @@ public class ToipccBrickWorkssActivity extends AppCompatActivity {
 		button54.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					linear778.setVisibility(View.VISIBLE);
 					edittext52.setText("");
@@ -2330,7 +2322,6 @@ public class ToipccBrickWorkssActivity extends AppCompatActivity {
 		button48.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					linear777.setVisibility(View.VISIBLE);
 					linear767.setVisibility(View.VISIBLE);
@@ -2351,7 +2342,6 @@ public class ToipccBrickWorkssActivity extends AppCompatActivity {
 		button49.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					linear777.setVisibility(View.VISIBLE);
 					linear767.setVisibility(View.GONE);
@@ -2780,7 +2770,6 @@ public class ToipccBrickWorkssActivity extends AppCompatActivity {
 		button50.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					linear779.setVisibility(View.VISIBLE);
 					linear93.setVisibility(View.VISIBLE);
@@ -2801,7 +2790,6 @@ public class ToipccBrickWorkssActivity extends AppCompatActivity {
 		button51.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					linear779.setVisibility(View.VISIBLE);
 					linear93.setVisibility(View.GONE);
@@ -2822,7 +2810,6 @@ public class ToipccBrickWorkssActivity extends AppCompatActivity {
 		button52.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					linear779.setVisibility(View.VISIBLE);
 					linear93.setVisibility(View.GONE);
@@ -2989,23 +2976,6 @@ public class ToipccBrickWorkssActivity extends AppCompatActivity {
 				_PrintHelper(linear1);
 			}
 		});
-		
-		_internet_request_listener = new RequestNetwork.RequestListener() {
-			@Override
-			public void onResponse(String _param1, String _param2, HashMap<String, Object> _param3) {
-				final String _tag = _param1;
-				final String _response = _param2;
-				final HashMap<String, Object> _responseHeaders = _param3;
-				
-			}
-			
-			@Override
-			public void onErrorResponse(String _param1, String _param2) {
-				final String _tag = _param1;
-				final String _message = _param2;
-				
-			}
-		};
 	}
 	
 	private void initializeLogic() {

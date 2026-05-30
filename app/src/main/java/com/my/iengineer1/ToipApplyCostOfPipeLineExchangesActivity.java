@@ -118,8 +118,6 @@ public class ToipApplyCostOfPipeLineExchangesActivity extends AppCompatActivity 
 	private TextView textview50;
 	
 	private Intent price = new Intent();
-	private RequestNetwork internet;
-	private RequestNetwork.RequestListener _internet_request_listener;
 	private AlertDialog.Builder dialog;
 	
 	@Override
@@ -197,7 +195,6 @@ public class ToipApplyCostOfPipeLineExchangesActivity extends AppCompatActivity 
 		edittext50 = findViewById(R.id.edittext50);
 		textview1175 = findViewById(R.id.textview1175);
 		textview50 = findViewById(R.id.textview50);
-		internet = new RequestNetwork(this);
 		dialog = new AlertDialog.Builder(this);
 		
 		button195.setOnClickListener(new View.OnClickListener() {
@@ -226,7 +223,6 @@ public class ToipApplyCostOfPipeLineExchangesActivity extends AppCompatActivity 
 		button2.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					_toip_d_apply_cost_of_pipe_line_exchangess();
 				}
@@ -239,7 +235,6 @@ public class ToipApplyCostOfPipeLineExchangesActivity extends AppCompatActivity 
 		button1.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					_toip_apply_cost_of_pipe_line_exchanges();
 				}
@@ -302,23 +297,6 @@ public class ToipApplyCostOfPipeLineExchangesActivity extends AppCompatActivity 
 				_PrintHelper(linear1);
 			}
 		});
-		
-		_internet_request_listener = new RequestNetwork.RequestListener() {
-			@Override
-			public void onResponse(String _param1, String _param2, HashMap<String, Object> _param3) {
-				final String _tag = _param1;
-				final String _response = _param2;
-				final HashMap<String, Object> _responseHeaders = _param3;
-				
-			}
-			
-			@Override
-			public void onErrorResponse(String _param1, String _param2) {
-				final String _tag = _param1;
-				final String _message = _param2;
-				
-			}
-		};
 	}
 	
 	private void initializeLogic() {
@@ -481,7 +459,6 @@ if (Double.parseDouble(edittext_am3dnn) == 0) {
 		add_dynamic_equipments.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					LayoutInflater inflater = LayoutInflater.from(getApplicationContext());
 					final LinearLayout dynamic_equipments = (LinearLayout) inflater.inflate(R.layout.toip_d_equipments_and_labours, null, false);
@@ -842,7 +819,6 @@ temp = 0;
 		add_dynamic_labours.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					LayoutInflater inflater = LayoutInflater.from(getApplicationContext());
 					final LinearLayout dynamic_equipments = (LinearLayout) inflater.inflate(R.layout.toip_d_equipments_and_labours, null, false);
@@ -1354,7 +1330,6 @@ if (Double.parseDouble(edittext_am3dnn) == 0) {
 		add_dynamic_equipments.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					LayoutInflater inflater = LayoutInflater.from(getApplicationContext());
 					final LinearLayout dynamic_equipments = (LinearLayout) inflater.inflate(R.layout.toip_d_equipments_and_labours, null, false);
@@ -1610,7 +1585,6 @@ temp = 0;
 		add_dynamic_labours.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					LayoutInflater inflater = LayoutInflater.from(getApplicationContext());
 					final LinearLayout dynamic_equipments = (LinearLayout) inflater.inflate(R.layout.toip_d_equipments_and_labours, null, false);

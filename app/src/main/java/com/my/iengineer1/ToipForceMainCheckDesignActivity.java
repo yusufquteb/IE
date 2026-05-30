@@ -101,8 +101,6 @@ public class ToipForceMainCheckDesignActivity extends AppCompatActivity {
 	private Button add_dynamic_pipe_line;
 	
 	private Intent price = new Intent();
-	private RequestNetwork internet;
-	private RequestNetwork.RequestListener _internet_request_listener;
 	private AlertDialog.Builder dialog;
 	
 	@Override
@@ -158,7 +156,6 @@ public class ToipForceMainCheckDesignActivity extends AppCompatActivity {
 		textview809 = findViewById(R.id.textview809);
 		textview704 = findViewById(R.id.textview704);
 		add_dynamic_pipe_line = findViewById(R.id.add_dynamic_pipe_line);
-		internet = new RequestNetwork(this);
 		dialog = new AlertDialog.Builder(this);
 		
 		button195.setOnClickListener(new View.OnClickListener() {
@@ -198,7 +195,6 @@ public class ToipForceMainCheckDesignActivity extends AppCompatActivity {
 		add_dynamic_pipe_line.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					_EipCheckSewagePipeLinesLevels();
 				}
@@ -214,23 +210,6 @@ public class ToipForceMainCheckDesignActivity extends AppCompatActivity {
 				_PrintHelper(linear1);
 			}
 		});
-		
-		_internet_request_listener = new RequestNetwork.RequestListener() {
-			@Override
-			public void onResponse(String _param1, String _param2, HashMap<String, Object> _param3) {
-				final String _tag = _param1;
-				final String _response = _param2;
-				final HashMap<String, Object> _responseHeaders = _param3;
-				
-			}
-			
-			@Override
-			public void onErrorResponse(String _param1, String _param2) {
-				final String _tag = _param1;
-				final String _message = _param2;
-				
-			}
-		};
 	}
 	
 	private void initializeLogic() {

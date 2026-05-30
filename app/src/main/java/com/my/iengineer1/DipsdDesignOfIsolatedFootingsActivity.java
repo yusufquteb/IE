@@ -676,8 +676,6 @@ public class DipsdDesignOfIsolatedFootingsActivity extends AppCompatActivity {
 	private TextView textview3040;
 	
 	private AlertDialog.Builder dialog;
-	private RequestNetwork internet;
-	private RequestNetwork.RequestListener _internet_request_listener;
 	private Intent price = new Intent();
 	
 	@Override
@@ -1322,7 +1320,6 @@ public class DipsdDesignOfIsolatedFootingsActivity extends AppCompatActivity {
 		textview3039 = findViewById(R.id.textview3039);
 		textview3040 = findViewById(R.id.textview3040);
 		dialog = new AlertDialog.Builder(this);
-		internet = new RequestNetwork(this);
 		
 		print1d.setOnClickListener(new View.OnClickListener() {
 			@Override
@@ -3127,23 +3124,6 @@ public class DipsdDesignOfIsolatedFootingsActivity extends AppCompatActivity {
 				
 			}
 		});
-		
-		_internet_request_listener = new RequestNetwork.RequestListener() {
-			@Override
-			public void onResponse(String _param1, String _param2, HashMap<String, Object> _param3) {
-				final String _tag = _param1;
-				final String _response = _param2;
-				final HashMap<String, Object> _responseHeaders = _param3;
-				
-			}
-			
-			@Override
-			public void onErrorResponse(String _param1, String _param2) {
-				final String _tag = _param1;
-				final String _message = _param2;
-				
-			}
-		};
 	}
 	
 	private void initializeLogic() {

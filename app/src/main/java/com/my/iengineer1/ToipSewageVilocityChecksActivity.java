@@ -188,9 +188,6 @@ public class ToipSewageVilocityChecksActivity extends AppCompatActivity {
 	private TextView textview1072;
 	private Button add_dynamic_element;
 	
-	private RequestNetwork internet;
-	private RequestNetwork.RequestListener _internet_request_listener;
-	
 	@Override
 	protected void onCreate(Bundle _savedInstanceState) {
 		super.onCreate(_savedInstanceState);
@@ -336,12 +333,10 @@ public class ToipSewageVilocityChecksActivity extends AppCompatActivity {
 		textview355 = findViewById(R.id.textview355);
 		textview1072 = findViewById(R.id.textview1072);
 		add_dynamic_element = findViewById(R.id.add_dynamic_element);
-		internet = new RequestNetwork(this);
 		
 		button1.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					linear11.setVisibility(View.VISIBLE);
 					linear10.setVisibility(View.VISIBLE);
@@ -355,7 +350,6 @@ public class ToipSewageVilocityChecksActivity extends AppCompatActivity {
 		button2.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					linear23.setVisibility(View.VISIBLE);
 				}
@@ -368,7 +362,6 @@ public class ToipSewageVilocityChecksActivity extends AppCompatActivity {
 		button3.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					linear6.setVisibility(View.VISIBLE);
 				}
@@ -506,7 +499,6 @@ public class ToipSewageVilocityChecksActivity extends AppCompatActivity {
 		button12.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					linear2.setVisibility(View.GONE);
 					linear3.setVisibility(View.GONE);
@@ -524,7 +516,6 @@ public class ToipSewageVilocityChecksActivity extends AppCompatActivity {
 		button11.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					linear2.setVisibility(View.VISIBLE);
 					linear3.setVisibility(View.VISIBLE);
@@ -754,23 +745,6 @@ public class ToipSewageVilocityChecksActivity extends AppCompatActivity {
 				_PrintHelper(linear1);
 			}
 		});
-		
-		_internet_request_listener = new RequestNetwork.RequestListener() {
-			@Override
-			public void onResponse(String _param1, String _param2, HashMap<String, Object> _param3) {
-				final String _tag = _param1;
-				final String _response = _param2;
-				final HashMap<String, Object> _responseHeaders = _param3;
-				
-			}
-			
-			@Override
-			public void onErrorResponse(String _param1, String _param2) {
-				final String _tag = _param1;
-				final String _message = _param2;
-				
-			}
-		};
 	}
 	
 	private void initializeLogic() {

@@ -185,8 +185,6 @@ public class ToipccPaintsActivity extends AppCompatActivity {
 	private EditText edittext42;
 	
 	private Intent price = new Intent();
-	private RequestNetwork internet;
-	private RequestNetwork.RequestListener _internet_request_listener;
 	
 	@Override
 	protected void onCreate(Bundle _savedInstanceState) {
@@ -335,12 +333,10 @@ public class ToipccPaintsActivity extends AppCompatActivity {
 		linear95 = findViewById(R.id.linear95);
 		textview473 = findViewById(R.id.textview473);
 		edittext42 = findViewById(R.id.edittext42);
-		internet = new RequestNetwork(this);
 		
 		add_dynamic_wall.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					_dynamic_view();
 				}
@@ -353,7 +349,6 @@ public class ToipccPaintsActivity extends AppCompatActivity {
 		button28.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					linear57.setVisibility(View.VISIBLE);
 					edittext38.setText("");
@@ -383,7 +378,6 @@ public class ToipccPaintsActivity extends AppCompatActivity {
 		add_dynamic_hole.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					_dynamic_hole_in_wall();
 					linear722.setVisibility(View.VISIBLE);
@@ -694,23 +688,6 @@ public class ToipccPaintsActivity extends AppCompatActivity {
 				_PrintHelper(linear1);
 			}
 		});
-		
-		_internet_request_listener = new RequestNetwork.RequestListener() {
-			@Override
-			public void onResponse(String _param1, String _param2, HashMap<String, Object> _param3) {
-				final String _tag = _param1;
-				final String _response = _param2;
-				final HashMap<String, Object> _responseHeaders = _param3;
-				
-			}
-			
-			@Override
-			public void onErrorResponse(String _param1, String _param2) {
-				final String _tag = _param1;
-				final String _message = _param2;
-				
-			}
-		};
 	}
 	
 	private void initializeLogic() {

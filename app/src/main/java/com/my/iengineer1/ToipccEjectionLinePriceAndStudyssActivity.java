@@ -984,9 +984,6 @@ public class ToipccEjectionLinePriceAndStudyssActivity extends AppCompatActivity
 	private TextView textview885;
 	private EditText edittext89;
 	
-	private RequestNetwork internet;
-	private RequestNetwork.RequestListener _internet_request_listener;
-	
 	@Override
 	protected void onCreate(Bundle _savedInstanceState) {
 		super.onCreate(_savedInstanceState);
@@ -1943,12 +1940,10 @@ public class ToipccEjectionLinePriceAndStudyssActivity extends AppCompatActivity
 		linear438 = findViewById(R.id.linear438);
 		textview885 = findViewById(R.id.textview885);
 		edittext89 = findViewById(R.id.edittext89);
-		internet = new RequestNetwork(this);
 		
 		button68.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					linear390.setVisibility(View.VISIBLE);
 					edittext33.setText("");
@@ -1964,7 +1959,6 @@ public class ToipccEjectionLinePriceAndStudyssActivity extends AppCompatActivity
 		button69.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					linear392.setVisibility(View.VISIBLE);
 					edittext37.setText("");
@@ -1979,7 +1973,6 @@ public class ToipccEjectionLinePriceAndStudyssActivity extends AppCompatActivity
 		button70.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					linear395.setVisibility(View.VISIBLE);
 					edittext41.setText("");
@@ -1994,7 +1987,6 @@ public class ToipccEjectionLinePriceAndStudyssActivity extends AppCompatActivity
 		button71.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					linear398.setVisibility(View.VISIBLE);
 					edittext45.setText("");
@@ -2009,7 +2001,6 @@ public class ToipccEjectionLinePriceAndStudyssActivity extends AppCompatActivity
 		button72.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					linear401.setVisibility(View.VISIBLE);
 					edittext49.setText("");
@@ -2024,7 +2015,6 @@ public class ToipccEjectionLinePriceAndStudyssActivity extends AppCompatActivity
 		button73.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					linear404.setVisibility(View.VISIBLE);
 					edittext53.setText("");
@@ -2039,7 +2029,6 @@ public class ToipccEjectionLinePriceAndStudyssActivity extends AppCompatActivity
 		button74.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					linear537.setVisibility(View.VISIBLE);
 					edittext155.setText("");
@@ -2058,7 +2047,6 @@ public class ToipccEjectionLinePriceAndStudyssActivity extends AppCompatActivity
 		button117.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					linear640.setVisibility(View.VISIBLE);
 					edittext190.setText("");
@@ -2073,7 +2061,6 @@ public class ToipccEjectionLinePriceAndStudyssActivity extends AppCompatActivity
 		button75.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					linear467.setVisibility(View.VISIBLE);
 					edittext107.setText("");
@@ -2088,7 +2075,6 @@ public class ToipccEjectionLinePriceAndStudyssActivity extends AppCompatActivity
 		button123.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					linear664.setVisibility(View.VISIBLE);
 					edittext197.setText("");
@@ -2103,7 +2089,6 @@ public class ToipccEjectionLinePriceAndStudyssActivity extends AppCompatActivity
 		button76.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					linear458.setVisibility(View.VISIBLE);
 					edittext108.setText("");
@@ -2122,7 +2107,6 @@ public class ToipccEjectionLinePriceAndStudyssActivity extends AppCompatActivity
 		button77.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					linear525.setVisibility(View.VISIBLE);
 				}
@@ -2135,7 +2119,6 @@ public class ToipccEjectionLinePriceAndStudyssActivity extends AppCompatActivity
 		button88.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					linear577.setVisibility(View.VISIBLE);
 					edittext63.setText("");
@@ -2150,7 +2133,6 @@ public class ToipccEjectionLinePriceAndStudyssActivity extends AppCompatActivity
 		button89.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					linear581.setVisibility(View.VISIBLE);
 					edittext178.setText("");
@@ -2165,7 +2147,6 @@ public class ToipccEjectionLinePriceAndStudyssActivity extends AppCompatActivity
 		button102.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					linear585.setVisibility(View.VISIBLE);
 					edittext179.setText("");
@@ -2180,7 +2161,6 @@ public class ToipccEjectionLinePriceAndStudyssActivity extends AppCompatActivity
 		button108.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					linear609.setVisibility(View.VISIBLE);
 					edittext185.setText("");
@@ -2195,7 +2175,6 @@ public class ToipccEjectionLinePriceAndStudyssActivity extends AppCompatActivity
 		button103.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					linear589.setVisibility(View.VISIBLE);
 					edittext180.setText("");
@@ -2210,7 +2189,6 @@ public class ToipccEjectionLinePriceAndStudyssActivity extends AppCompatActivity
 		button104.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					linear593.setVisibility(View.VISIBLE);
 					edittext181.setText("");
@@ -2225,7 +2203,6 @@ public class ToipccEjectionLinePriceAndStudyssActivity extends AppCompatActivity
 		button121.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					linear656.setVisibility(View.VISIBLE);
 					edittext195.setText("");
@@ -2240,7 +2217,6 @@ public class ToipccEjectionLinePriceAndStudyssActivity extends AppCompatActivity
 		button122.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					linear660.setVisibility(View.VISIBLE);
 					edittext196.setText("");
@@ -2255,7 +2231,6 @@ public class ToipccEjectionLinePriceAndStudyssActivity extends AppCompatActivity
 		button120.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					linear652.setVisibility(View.VISIBLE);
 					edittext194.setText("");
@@ -2270,7 +2245,6 @@ public class ToipccEjectionLinePriceAndStudyssActivity extends AppCompatActivity
 		button105.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					linear597.setVisibility(View.VISIBLE);
 					edittext182.setText("");
@@ -2285,7 +2259,6 @@ public class ToipccEjectionLinePriceAndStudyssActivity extends AppCompatActivity
 		button118.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					linear644.setVisibility(View.VISIBLE);
 					edittext191.setText("");
@@ -2300,7 +2273,6 @@ public class ToipccEjectionLinePriceAndStudyssActivity extends AppCompatActivity
 		button119.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					linear648.setVisibility(View.VISIBLE);
 					edittext192.setText("");
@@ -2315,7 +2287,6 @@ public class ToipccEjectionLinePriceAndStudyssActivity extends AppCompatActivity
 		button106.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					linear601.setVisibility(View.VISIBLE);
 					edittext183.setText("");
@@ -2330,7 +2301,6 @@ public class ToipccEjectionLinePriceAndStudyssActivity extends AppCompatActivity
 		button107.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					linear605.setVisibility(View.VISIBLE);
 					edittext184.setText("");
@@ -2345,7 +2315,6 @@ public class ToipccEjectionLinePriceAndStudyssActivity extends AppCompatActivity
 		button109.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					linear613.setVisibility(View.VISIBLE);
 					edittext186.setText("");
@@ -2360,7 +2329,6 @@ public class ToipccEjectionLinePriceAndStudyssActivity extends AppCompatActivity
 		button110.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					linear617.setVisibility(View.VISIBLE);
 					edittext187.setText("");
@@ -2375,7 +2343,6 @@ public class ToipccEjectionLinePriceAndStudyssActivity extends AppCompatActivity
 		button112.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					linear624.setVisibility(View.VISIBLE);
 					edittext71.setText("");
@@ -2390,7 +2357,6 @@ public class ToipccEjectionLinePriceAndStudyssActivity extends AppCompatActivity
 		button113.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					linear429.setVisibility(View.VISIBLE);
 					edittext77.setText("");
@@ -2405,7 +2371,6 @@ public class ToipccEjectionLinePriceAndStudyssActivity extends AppCompatActivity
 		button114.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					linear444.setVisibility(View.VISIBLE);
 					edittext81.setText("");
@@ -2420,7 +2385,6 @@ public class ToipccEjectionLinePriceAndStudyssActivity extends AppCompatActivity
 		button115.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					linear628.setVisibility(View.VISIBLE);
 					edittext85.setText("");
@@ -3282,7 +3246,6 @@ public class ToipccEjectionLinePriceAndStudyssActivity extends AppCompatActivity
 		button81.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					linear623.setVisibility(View.VISIBLE);
 					linear526.setVisibility(View.VISIBLE);
@@ -3305,7 +3268,6 @@ public class ToipccEjectionLinePriceAndStudyssActivity extends AppCompatActivity
 		button82.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					linear623.setVisibility(View.VISIBLE);
 					linear526.setVisibility(View.GONE);
@@ -3738,7 +3700,6 @@ public class ToipccEjectionLinePriceAndStudyssActivity extends AppCompatActivity
 		button78.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					linear538.setVisibility(View.VISIBLE);
 					edittext94.setText("");
@@ -3781,7 +3742,6 @@ public class ToipccEjectionLinePriceAndStudyssActivity extends AppCompatActivity
 		button79.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					linear576.setVisibility(View.VISIBLE);
 					linear539.setVisibility(View.GONE);
@@ -3841,7 +3801,6 @@ public class ToipccEjectionLinePriceAndStudyssActivity extends AppCompatActivity
 		button83.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					linear576.setVisibility(View.VISIBLE);
 					linear539.setVisibility(View.GONE);
@@ -3901,7 +3860,6 @@ public class ToipccEjectionLinePriceAndStudyssActivity extends AppCompatActivity
 		button84.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					linear576.setVisibility(View.VISIBLE);
 					linear539.setVisibility(View.VISIBLE);
@@ -5830,23 +5788,6 @@ public class ToipccEjectionLinePriceAndStudyssActivity extends AppCompatActivity
 				_fghhh(linear1);
 			}
 		});
-		
-		_internet_request_listener = new RequestNetwork.RequestListener() {
-			@Override
-			public void onResponse(String _param1, String _param2, HashMap<String, Object> _param3) {
-				final String _tag = _param1;
-				final String _response = _param2;
-				final HashMap<String, Object> _responseHeaders = _param3;
-				
-			}
-			
-			@Override
-			public void onErrorResponse(String _param1, String _param2) {
-				final String _tag = _param1;
-				final String _message = _param2;
-				
-			}
-		};
 	}
 	
 	private void initializeLogic() {

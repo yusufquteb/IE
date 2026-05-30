@@ -130,9 +130,6 @@ public class EipreplacementsActivity extends AppCompatActivity {
 	private TextView textview704;
 	private Button add_dynamic_point;
 	
-	private RequestNetwork internet;
-	private RequestNetwork.RequestListener _internet_request_listener;
-	
 	@Override
 	protected void onCreate(Bundle _savedInstanceState) {
 		super.onCreate(_savedInstanceState);
@@ -235,7 +232,6 @@ public class EipreplacementsActivity extends AppCompatActivity {
 		textview489 = findViewById(R.id.textview489);
 		textview704 = findViewById(R.id.textview704);
 		add_dynamic_point = findViewById(R.id.add_dynamic_point);
-		internet = new RequestNetwork(this);
 		
 		edittext1.addTextChangedListener(new TextWatcher() {
 			@Override
@@ -468,7 +464,6 @@ public class EipreplacementsActivity extends AppCompatActivity {
 		add_dynamic_point.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					dynamic_point.setVisibility(View.VISIBLE);
 					_eip_d_soil1();
@@ -485,23 +480,6 @@ public class EipreplacementsActivity extends AppCompatActivity {
 				_PrintHelper(linear1);
 			}
 		});
-		
-		_internet_request_listener = new RequestNetwork.RequestListener() {
-			@Override
-			public void onResponse(String _param1, String _param2, HashMap<String, Object> _param3) {
-				final String _tag = _param1;
-				final String _response = _param2;
-				final HashMap<String, Object> _responseHeaders = _param3;
-				
-			}
-			
-			@Override
-			public void onErrorResponse(String _param1, String _param2) {
-				final String _tag = _param1;
-				final String _message = _param2;
-				
-			}
-		};
 	}
 	
 	private void initializeLogic() {

@@ -1559,8 +1559,6 @@ public class ToipccreinforcedconcretecolumnssActivity extends AppCompatActivity 
 	private TextView textview935;
 	
 	private Intent price = new Intent();
-	private RequestNetwork internet;
-	private RequestNetwork.RequestListener _internet_request_listener;
 	
 	@Override
 	protected void onCreate(Bundle _savedInstanceState) {
@@ -3088,7 +3086,6 @@ public class ToipccreinforcedconcretecolumnssActivity extends AppCompatActivity 
 		edittext111 = findViewById(R.id.edittext111);
 		textview934 = findViewById(R.id.textview934);
 		textview935 = findViewById(R.id.textview935);
-		internet = new RequestNetwork(this);
 		
 		//ScrollChange2
 		vscroll1.setOnScrollChangeListener(new ScrollView.OnScrollChangeListener() {
@@ -3378,7 +3375,6 @@ public class ToipccreinforcedconcretecolumnssActivity extends AppCompatActivity 
 		button49.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					textview1410.setVisibility(View.VISIBLE);
 					linear434.setVisibility(View.VISIBLE);
@@ -3512,7 +3508,6 @@ public class ToipccreinforcedconcretecolumnssActivity extends AppCompatActivity 
 		button50.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					textview1410.setVisibility(View.VISIBLE);
 					linear434.setVisibility(View.VISIBLE);
@@ -4029,7 +4024,6 @@ public class ToipccreinforcedconcretecolumnssActivity extends AppCompatActivity 
 		button150.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					linear538.setVisibility(View.GONE);
 					linear718.setVisibility(View.VISIBLE);
@@ -4121,7 +4115,6 @@ public class ToipccreinforcedconcretecolumnssActivity extends AppCompatActivity 
 		button151.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					linear538.setVisibility(View.VISIBLE);
 					linear718.setVisibility(View.GONE);
@@ -4213,7 +4206,6 @@ public class ToipccreinforcedconcretecolumnssActivity extends AppCompatActivity 
 		button106.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					linear511.setVisibility(View.GONE);
 					linear608.setVisibility(View.VISIBLE);
@@ -4307,7 +4299,6 @@ public class ToipccreinforcedconcretecolumnssActivity extends AppCompatActivity 
 		button107.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					linear511.setVisibility(View.VISIBLE);
 					linear608.setVisibility(View.GONE);
@@ -4401,7 +4392,6 @@ public class ToipccreinforcedconcretecolumnssActivity extends AppCompatActivity 
 		button152.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					linear511.setVisibility(View.GONE);
 					linear608.setVisibility(View.GONE);
@@ -4495,7 +4485,6 @@ public class ToipccreinforcedconcretecolumnssActivity extends AppCompatActivity 
 		button153.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					linear511.setVisibility(View.GONE);
 					linear608.setVisibility(View.GONE);
@@ -4871,7 +4860,6 @@ public class ToipccreinforcedconcretecolumnssActivity extends AppCompatActivity 
 		button109.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					linear181.setVisibility(View.VISIBLE);
 					edittext239fm1.setText("");
@@ -5004,7 +4992,6 @@ public class ToipccreinforcedconcretecolumnssActivity extends AppCompatActivity 
 		button115.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					linear588.setVisibility(View.VISIBLE);
 					edittext242fm1.setText("");
@@ -5137,7 +5124,6 @@ public class ToipccreinforcedconcretecolumnssActivity extends AppCompatActivity 
 		button120.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					linear594.setVisibility(View.VISIBLE);
 					edittext245fm1.setText("");
@@ -5277,7 +5263,6 @@ public class ToipccreinforcedconcretecolumnssActivity extends AppCompatActivity 
 		button123.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					linear600.setVisibility(View.VISIBLE);
 					edittext248fm1.setText("");
@@ -5692,7 +5677,6 @@ public class ToipccreinforcedconcretecolumnssActivity extends AppCompatActivity 
 		button127.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					linear618.setVisibility(View.VISIBLE);
 					edittext258fm1.setText("");
@@ -5826,7 +5810,6 @@ public class ToipccreinforcedconcretecolumnssActivity extends AppCompatActivity 
 		button130.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					linear619.setVisibility(View.VISIBLE);
 					edittext261fm1.setText("");
@@ -5960,7 +5943,6 @@ public class ToipccreinforcedconcretecolumnssActivity extends AppCompatActivity 
 		button133.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					linear620.setVisibility(View.VISIBLE);
 					edittext264fm1.setText("");
@@ -6094,7 +6076,6 @@ public class ToipccreinforcedconcretecolumnssActivity extends AppCompatActivity 
 		button136.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					linear621.setVisibility(View.VISIBLE);
 					edittext267fm1.setText("");
@@ -6428,7 +6409,6 @@ public class ToipccreinforcedconcretecolumnssActivity extends AppCompatActivity 
 		button155.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					linear729.setVisibility(View.VISIBLE);
 					edittext276fm1.setText("");
@@ -6562,7 +6542,6 @@ public class ToipccreinforcedconcretecolumnssActivity extends AppCompatActivity 
 		button158.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					linear730.setVisibility(View.VISIBLE);
 					edittext279fm1.setText("");
@@ -6692,7 +6671,6 @@ public class ToipccreinforcedconcretecolumnssActivity extends AppCompatActivity 
 		button161.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					linear731.setVisibility(View.VISIBLE);
 					edittext282fm1.setText("");
@@ -6826,7 +6804,6 @@ public class ToipccreinforcedconcretecolumnssActivity extends AppCompatActivity 
 		button164.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					linear732.setVisibility(View.VISIBLE);
 					edittext285fm1.setText("");
@@ -7160,7 +7137,6 @@ public class ToipccreinforcedconcretecolumnssActivity extends AppCompatActivity 
 		button168.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					linear763.setVisibility(View.VISIBLE);
 					edittext294fm1.setText("");
@@ -7294,7 +7270,6 @@ public class ToipccreinforcedconcretecolumnssActivity extends AppCompatActivity 
 		button171.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					linear764.setVisibility(View.VISIBLE);
 					edittext297fm1.setText("");
@@ -7428,7 +7403,6 @@ public class ToipccreinforcedconcretecolumnssActivity extends AppCompatActivity 
 		button174.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					linear765.setVisibility(View.VISIBLE);
 					edittext300fm1.setText("");
@@ -7562,7 +7536,6 @@ public class ToipccreinforcedconcretecolumnssActivity extends AppCompatActivity 
 		button177.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					linear766.setVisibility(View.VISIBLE);
 					edittext303fm1.setText("");
@@ -7949,7 +7922,6 @@ public class ToipccreinforcedconcretecolumnssActivity extends AppCompatActivity 
 		button181.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					linear797.setVisibility(View.VISIBLE);
 					edittext359fm1.setText("");
@@ -8083,7 +8055,6 @@ public class ToipccreinforcedconcretecolumnssActivity extends AppCompatActivity 
 		button184.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					linear798.setVisibility(View.VISIBLE);
 					edittext362fm1.setText("");
@@ -8217,7 +8188,6 @@ public class ToipccreinforcedconcretecolumnssActivity extends AppCompatActivity 
 		button187.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					linear799.setVisibility(View.VISIBLE);
 					edittext365fm1.setText("");
@@ -8351,7 +8321,6 @@ public class ToipccreinforcedconcretecolumnssActivity extends AppCompatActivity 
 		button190.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					linear800.setVisibility(View.VISIBLE);
 					edittext368fm1.setText("");
@@ -8636,7 +8605,6 @@ public class ToipccreinforcedconcretecolumnssActivity extends AppCompatActivity 
 		button95.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					linear256.setVisibility(View.GONE);
 					linear337.setVisibility(View.VISIBLE);
@@ -8689,7 +8657,6 @@ public class ToipccreinforcedconcretecolumnssActivity extends AppCompatActivity 
 		button96.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					linear256.setVisibility(View.VISIBLE);
 					linear337.setVisibility(View.GONE);
@@ -8742,7 +8709,6 @@ public class ToipccreinforcedconcretecolumnssActivity extends AppCompatActivity 
 		button68.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					linear178.setVisibility(View.GONE);
 					linear140.setVisibility(View.VISIBLE);
@@ -8812,7 +8778,6 @@ public class ToipccreinforcedconcretecolumnssActivity extends AppCompatActivity 
 		button67.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					linear178.setVisibility(View.VISIBLE);
 					linear140.setVisibility(View.GONE);
@@ -8871,7 +8836,6 @@ public class ToipccreinforcedconcretecolumnssActivity extends AppCompatActivity 
 		button97.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					linear290.setVisibility(View.GONE);
 					linear301.setVisibility(View.VISIBLE);
@@ -8941,7 +8905,6 @@ public class ToipccreinforcedconcretecolumnssActivity extends AppCompatActivity 
 		button98.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					linear290.setVisibility(View.VISIBLE);
 					linear301.setVisibility(View.GONE);
@@ -12134,23 +12097,6 @@ public class ToipccreinforcedconcretecolumnssActivity extends AppCompatActivity 
 				_PrintHelper(linear1);
 			}
 		});
-		
-		_internet_request_listener = new RequestNetwork.RequestListener() {
-			@Override
-			public void onResponse(String _param1, String _param2, HashMap<String, Object> _param3) {
-				final String _tag = _param1;
-				final String _response = _param2;
-				final HashMap<String, Object> _responseHeaders = _param3;
-				
-			}
-			
-			@Override
-			public void onErrorResponse(String _param1, String _param2) {
-				final String _tag = _param1;
-				final String _message = _param2;
-				
-			}
-		};
 	}
 	
 	private void initializeLogic() {

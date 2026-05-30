@@ -219,9 +219,6 @@ public class EipplainconcretefootingsActivity extends AppCompatActivity {
 	private TextView textview704;
 	private Button add_dynamic_element;
 	
-	private RequestNetwork internet;
-	private RequestNetwork.RequestListener _internet_request_listener;
-	
 	@Override
 	protected void onCreate(Bundle _savedInstanceState) {
 		super.onCreate(_savedInstanceState);
@@ -412,7 +409,6 @@ public class EipplainconcretefootingsActivity extends AppCompatActivity {
 		textview16 = findViewById(R.id.textview16);
 		textview704 = findViewById(R.id.textview704);
 		add_dynamic_element = findViewById(R.id.add_dynamic_element);
-		internet = new RequestNetwork(this);
 		
 		edittext2.addTextChangedListener(new TextWatcher() {
 			@Override
@@ -1079,7 +1075,6 @@ public class EipplainconcretefootingsActivity extends AppCompatActivity {
 		add_dynamic_element.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					dynamic_all.setVisibility(View.VISIBLE);
 					_eip_d_plainconcrete();
@@ -1096,23 +1091,6 @@ public class EipplainconcretefootingsActivity extends AppCompatActivity {
 				_PrintHelper(linear1);
 			}
 		});
-		
-		_internet_request_listener = new RequestNetwork.RequestListener() {
-			@Override
-			public void onResponse(String _param1, String _param2, HashMap<String, Object> _param3) {
-				final String _tag = _param1;
-				final String _response = _param2;
-				final HashMap<String, Object> _responseHeaders = _param3;
-				
-			}
-			
-			@Override
-			public void onErrorResponse(String _param1, String _param2) {
-				final String _tag = _param1;
-				final String _message = _param2;
-				
-			}
-		};
 	}
 	
 	private void initializeLogic() {

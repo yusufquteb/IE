@@ -672,8 +672,6 @@ public class DipsdDesignOfIsolatedFootingssActivity extends AppCompatActivity {
 	private TextView textview3040;
 	
 	private AlertDialog.Builder dialog;
-	private RequestNetwork design_isolated_footings;
-	private RequestNetwork.RequestListener _design_isolated_footings_request_listener;
 	
 	@Override
 	protected void onCreate(Bundle _savedInstanceState) {
@@ -1317,7 +1315,6 @@ public class DipsdDesignOfIsolatedFootingssActivity extends AppCompatActivity {
 		textview3039 = findViewById(R.id.textview3039);
 		textview3040 = findViewById(R.id.textview3040);
 		dialog = new AlertDialog.Builder(this);
-		design_isolated_footings = new RequestNetwork(this);
 		
 		print1d.setOnClickListener(new View.OnClickListener() {
 			@Override
@@ -3251,23 +3248,6 @@ public class DipsdDesignOfIsolatedFootingssActivity extends AppCompatActivity {
 				
 			}
 		});
-		
-		_design_isolated_footings_request_listener = new RequestNetwork.RequestListener() {
-			@Override
-			public void onResponse(String _param1, String _param2, HashMap<String, Object> _param3) {
-				final String _tag = _param1;
-				final String _response = _param2;
-				final HashMap<String, Object> _responseHeaders = _param3;
-				
-			}
-			
-			@Override
-			public void onErrorResponse(String _param1, String _param2) {
-				final String _tag = _param1;
-				final String _message = _param2;
-				
-			}
-		};
 	}
 	
 	private void initializeLogic() {

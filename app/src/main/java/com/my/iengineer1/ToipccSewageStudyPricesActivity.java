@@ -146,9 +146,6 @@ public class ToipccSewageStudyPricesActivity extends AppCompatActivity {
 	private TextView textview2019;
 	private EditText edittext24;
 	
-	private RequestNetwork internet;
-	private RequestNetwork.RequestListener _internet_request_listener;
-	
 	@Override
 	protected void onCreate(Bundle _savedInstanceState) {
 		super.onCreate(_savedInstanceState);
@@ -252,7 +249,6 @@ public class ToipccSewageStudyPricesActivity extends AppCompatActivity {
 		linear2328 = findViewById(R.id.linear2328);
 		textview2019 = findViewById(R.id.textview2019);
 		edittext24 = findViewById(R.id.edittext24);
-		internet = new RequestNetwork(this);
 		
 		//ScrollChange2
 		vscroll1.setOnScrollChangeListener(new ScrollView.OnScrollChangeListener() {
@@ -449,7 +445,6 @@ public class ToipccSewageStudyPricesActivity extends AppCompatActivity {
 		add_dynamic_element.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					dynamic_all.setVisibility(View.VISIBLE);
 					_toipcc_dynamic_dewatering_price();
@@ -503,23 +498,6 @@ public class ToipccSewageStudyPricesActivity extends AppCompatActivity {
 				_PrintHelper(linear1);
 			}
 		});
-		
-		_internet_request_listener = new RequestNetwork.RequestListener() {
-			@Override
-			public void onResponse(String _param1, String _param2, HashMap<String, Object> _param3) {
-				final String _tag = _param1;
-				final String _response = _param2;
-				final HashMap<String, Object> _responseHeaders = _param3;
-				
-			}
-			
-			@Override
-			public void onErrorResponse(String _param1, String _param2) {
-				final String _tag = _param1;
-				final String _message = _param2;
-				
-			}
-		};
 	}
 	
 	private void initializeLogic() {

@@ -112,8 +112,6 @@ public class ToipPipeLineLengthDifferencesActivity extends AppCompatActivity {
 	private TextView textview40;
 	
 	private Intent price = new Intent();
-	private RequestNetwork internet;
-	private RequestNetwork.RequestListener _internet_request_listener;
 	private AlertDialog.Builder dialog;
 	
 	@Override
@@ -189,7 +187,6 @@ public class ToipPipeLineLengthDifferencesActivity extends AppCompatActivity {
 		edittext40 = findViewById(R.id.edittext40);
 		textview1151 = findViewById(R.id.textview1151);
 		textview40 = findViewById(R.id.textview40);
-		internet = new RequestNetwork(this);
 		dialog = new AlertDialog.Builder(this);
 		
 		button195.setOnClickListener(new View.OnClickListener() {
@@ -204,7 +201,6 @@ public class ToipPipeLineLengthDifferencesActivity extends AppCompatActivity {
 		add_dynamic_pipe_line_length_difference.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					_ToipPipeLineLengthDifferencess();
 				}
@@ -220,23 +216,6 @@ public class ToipPipeLineLengthDifferencesActivity extends AppCompatActivity {
 				_PrintHelper(linear1);
 			}
 		});
-		
-		_internet_request_listener = new RequestNetwork.RequestListener() {
-			@Override
-			public void onResponse(String _param1, String _param2, HashMap<String, Object> _param3) {
-				final String _tag = _param1;
-				final String _response = _param2;
-				final HashMap<String, Object> _responseHeaders = _param3;
-				
-			}
-			
-			@Override
-			public void onErrorResponse(String _param1, String _param2) {
-				final String _tag = _param1;
-				final String _message = _param2;
-				
-			}
-		};
 	}
 	
 	private void initializeLogic() {
@@ -1381,7 +1360,6 @@ edittext19d.setText(_English_Decimal_Format(Double.parseDouble(edittext_am15dnn)
 		add_dynamic_short_piece.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					LayoutInflater inflater = LayoutInflater.from(getApplicationContext());
 					final LinearLayout dynamic_short_piece = (LinearLayout) inflater.inflate(R.layout.toip_d_pipe_line_short_pieces, null, false);
@@ -1575,7 +1553,6 @@ temp3 = 0;
 		button1d.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					if (edittext_am3d.getText().toString().equals("0")) {
 						SketchwareUtil.showMessage(getApplicationContext(), "من فضلك راجع المدخلات مرة اخري");

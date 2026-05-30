@@ -740,8 +740,6 @@ public class ToipccExcavationForRoadssActivity extends AppCompatActivity {
 	private TextView textview2245;
 	
 	private Intent price = new Intent();
-	private RequestNetwork internet;
-	private RequestNetwork.RequestListener _internet_request_listener;
 	
 	@Override
 	protected void onCreate(Bundle _savedInstanceState) {
@@ -1436,12 +1434,10 @@ public class ToipccExcavationForRoadssActivity extends AppCompatActivity {
 		edittext238 = findViewById(R.id.edittext238);
 		textview2244 = findViewById(R.id.textview2244);
 		textview2245 = findViewById(R.id.textview2245);
-		internet = new RequestNetwork(this);
 		
 		button4.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					linear69.setVisibility(View.VISIBLE);
 				}
@@ -1769,7 +1765,6 @@ public class ToipccExcavationForRoadssActivity extends AppCompatActivity {
 		add_dynamic_pipe_line.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					_eip_d_soil1();
 				}
@@ -2029,7 +2024,6 @@ public class ToipccExcavationForRoadssActivity extends AppCompatActivity {
 		button5.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					linear190.setVisibility(View.VISIBLE);
 					edittext30.setText("");
@@ -2044,7 +2038,6 @@ public class ToipccExcavationForRoadssActivity extends AppCompatActivity {
 		button6.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					linear179.setVisibility(View.VISIBLE);
 					edittext34.setText("");
@@ -2063,7 +2056,6 @@ public class ToipccExcavationForRoadssActivity extends AppCompatActivity {
 		button7.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					linear870.setVisibility(View.VISIBLE);
 					edittext113.setText("");
@@ -2127,7 +2119,6 @@ public class ToipccExcavationForRoadssActivity extends AppCompatActivity {
 		button8.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				internet.startRequestNetwork(RequestNetworkController.GET, "www.google.com", "a", _internet_request_listener);
 				if (SketchwareUtil.isConnected(getApplicationContext())) {
 					linear193.setVisibility(View.VISIBLE);
 					edittext204.setText("");
@@ -5862,23 +5853,6 @@ public class ToipccExcavationForRoadssActivity extends AppCompatActivity {
 				_PrintHelper(linear1);
 			}
 		});
-		
-		_internet_request_listener = new RequestNetwork.RequestListener() {
-			@Override
-			public void onResponse(String _param1, String _param2, HashMap<String, Object> _param3) {
-				final String _tag = _param1;
-				final String _response = _param2;
-				final HashMap<String, Object> _responseHeaders = _param3;
-				
-			}
-			
-			@Override
-			public void onErrorResponse(String _param1, String _param2) {
-				final String _tag = _param1;
-				final String _message = _param2;
-				
-			}
-		};
 	}
 	
 	private void initializeLogic() {
