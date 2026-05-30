@@ -44,7 +44,8 @@
                     android:layout_gravity="center"
                     android:src="@drawable/default_image"
                     app:tint="?attr/colorOnPrimaryContainer"
-                    android:contentDescription="module icon" />
+                    android:contentDescription="module icon"
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.Material3.Circle" />
             </FrameLayout>
 
             <LinearLayout

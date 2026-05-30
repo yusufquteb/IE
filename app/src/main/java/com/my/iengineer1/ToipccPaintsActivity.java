@@ -720,7 +720,6 @@ public class ToipccPaintsActivity extends AppCompatActivity {
 		linear57.setVisibility(View.GONE);
 		
 		{
-			AdRequest adRequest = new AdRequest.Builder().build();
 		}
 		textview666.setVisibility(View.GONE);
 		textview668.setVisibility(View.GONE);

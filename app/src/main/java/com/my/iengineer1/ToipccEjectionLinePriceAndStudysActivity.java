@@ -2574,7 +2574,6 @@ public class ToipccEjectionLinePriceAndStudysActivity extends AppCompatActivity 
 		linear648.setVisibility(View.GONE);
 		
 		{
-			AdRequest adRequest = new AdRequest.Builder().build();
 		}
 	}
 	

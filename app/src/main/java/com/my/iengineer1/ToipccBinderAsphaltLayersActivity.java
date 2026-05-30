@@ -6795,7 +6795,6 @@ public class ToipccBinderAsphaltLayersActivity extends AppCompatActivity {
 */
 		
 		{
-			AdRequest adRequest = new AdRequest.Builder().build();
 		}
 		/*
 ملاحظة طول الطبقة

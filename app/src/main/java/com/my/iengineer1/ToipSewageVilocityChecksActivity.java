@@ -784,7 +784,6 @@ public class ToipSewageVilocityChecksActivity extends AppCompatActivity {
 		linear6.setVisibility(View.GONE);
 		
 		{
-			AdRequest adRequest = new AdRequest.Builder().build();
 		}
 	}
 	

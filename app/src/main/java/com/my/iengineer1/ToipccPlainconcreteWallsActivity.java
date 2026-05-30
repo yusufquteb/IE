@@ -4714,7 +4714,6 @@ public class ToipccPlainconcreteWallsActivity extends AppCompatActivity {
 */
 		
 		{
-			AdRequest adRequest = new AdRequest.Builder().build();
 		}
 		/*
 الفتحات

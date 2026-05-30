@@ -3040,7 +3040,6 @@ public class ToipccBrickWorksActivity extends AppCompatActivity {
 		linear57.setVisibility(View.GONE);
 		
 		{
-			AdRequest adRequest = new AdRequest.Builder().build();
 		}
 		linear780.setVisibility(View.GONE);
 		linear777.setVisibility(View.GONE);

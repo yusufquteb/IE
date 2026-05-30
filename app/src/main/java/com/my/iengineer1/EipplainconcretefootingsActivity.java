@@ -1157,7 +1157,6 @@ public class EipplainconcretefootingsActivity extends AppCompatActivity {
 		_round(linear150, "#FFF3E5F5", "#FF000000", 0);
 		
 		{
-			AdRequest adRequest = new AdRequest.Builder().build();
 		}
 	}
 	

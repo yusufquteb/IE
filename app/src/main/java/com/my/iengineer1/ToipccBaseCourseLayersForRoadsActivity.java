@@ -5584,7 +5584,6 @@ public class ToipccBaseCourseLayersForRoadsActivity extends AppCompatActivity {
 	private void initializeLogic() {
 		
 		{
-			AdRequest adRequest = new AdRequest.Builder().build();
 		}
 		/*
 linears الدينامك

@@ -7709,7 +7709,6 @@ public class ToipccWearingSerfaceAsphaltLayersActivity extends AppCompatActivity
 */
 		
 		{
-			AdRequest adRequest = new AdRequest.Builder().build();
 		}
 		/*
 ملاحظة طول الطبقة

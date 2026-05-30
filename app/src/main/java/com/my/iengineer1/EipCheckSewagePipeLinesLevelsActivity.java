@@ -236,7 +236,6 @@ public class EipCheckSewagePipeLinesLevelsActivity extends AppCompatActivity {
 	private void initializeLogic() {
 		
 		{
-			AdRequest adRequest = new AdRequest.Builder().build();
 		}
 		_dynamic_excavaion();
 	}

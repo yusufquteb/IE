@@ -236,7 +236,6 @@ public class ToipForceMainCheckDesignActivity extends AppCompatActivity {
 	private void initializeLogic() {
 		
 		{
-			AdRequest adRequest = new AdRequest.Builder().build();
 		}
 		_EipCheckSewagePipeLinesLevels();
 	}

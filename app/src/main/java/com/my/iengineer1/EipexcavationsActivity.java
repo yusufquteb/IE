@@ -526,7 +526,6 @@ public class EipexcavationsActivity extends AppCompatActivity {
 		dynamic_point.setVisibility(View.GONE);
 		
 		{
-			AdRequest adRequest = new AdRequest.Builder().build();
 		}
 	}
 	

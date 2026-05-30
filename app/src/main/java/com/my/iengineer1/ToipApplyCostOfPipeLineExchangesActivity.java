@@ -324,7 +324,6 @@ public class ToipApplyCostOfPipeLineExchangesActivity extends AppCompatActivity 
 	private void initializeLogic() {
 		
 		{
-			AdRequest adRequest = new AdRequest.Builder().build();
 		}
 		linear176.setVisibility(View.GONE);
 	}

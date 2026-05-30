@@ -12264,7 +12264,6 @@ public class ToipccreinforcedconcretecolumnssActivity extends AppCompatActivity 
 */
 		
 		{
-			AdRequest adRequest = new AdRequest.Builder().build();
 		}
 	}
 	

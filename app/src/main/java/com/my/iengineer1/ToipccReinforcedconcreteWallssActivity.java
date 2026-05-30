@@ -5718,7 +5718,6 @@ public class ToipccReinforcedconcreteWallssActivity extends AppCompatActivity {
 */
 		
 		{
-			AdRequest adRequest = new AdRequest.Builder().build();
 		}
 		/*
 التعليقات علي الابعاد

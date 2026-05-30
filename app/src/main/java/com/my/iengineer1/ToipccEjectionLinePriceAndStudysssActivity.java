@@ -209,7 +209,6 @@ public class ToipccEjectionLinePriceAndStudysssActivity extends AppCompatActivit
 	private void initializeLogic() {
 		
 		{
-			AdRequest adRequest = new AdRequest.Builder().build();
 		}
 		add_dynamic_pipe_line.performClick();
 	}

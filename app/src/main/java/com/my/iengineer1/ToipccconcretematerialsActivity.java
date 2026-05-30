@@ -2952,7 +2952,6 @@ public class ToipccconcretematerialsActivity extends AppCompatActivity {
 		_round(linear301, "#FFE0F2F1", "#FF000000", 50);
 		
 		{
-			AdRequest adRequest = new AdRequest.Builder().build();
 		}
 	}
 	

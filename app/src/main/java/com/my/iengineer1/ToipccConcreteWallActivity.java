@@ -129,7 +129,6 @@ public class ToipccConcreteWallActivity extends AppCompatActivity {
 	private void initializeLogic() {
 		
 		{
-			AdRequest adRequest = new AdRequest.Builder().build();
 		}
 	}
 	

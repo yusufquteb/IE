@@ -235,7 +235,6 @@ public class ToipqcManholeConcreteActivity extends AppCompatActivity {
 		linear721.setVisibility(View.VISIBLE);
 		linear722.setVisibility(View.VISIBLE);
 		{
-			AdRequest adRequest = new AdRequest.Builder().build();
 		}
 		
 		add_dynamic_manhole.performClick(); 

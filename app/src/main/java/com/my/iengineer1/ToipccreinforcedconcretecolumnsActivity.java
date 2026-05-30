@@ -5483,7 +5483,6 @@ public class ToipccreinforcedconcretecolumnsActivity extends AppCompatActivity {
 		_CardStyle(add_dynamic_element, 25, 25, "#FF4DD0E1", false);
 		
 		{
-			AdRequest adRequest = new AdRequest.Builder().build();
 		}
 	}
 	

@@ -3273,7 +3273,6 @@ public class DipsdDesignOfIsolatedFootingssActivity extends AppCompatActivity {
 	private void initializeLogic() {
 		
 		{
-			AdRequest adRequest = new AdRequest.Builder().build();
 		}
 		/*
 Hidden edittexts

@@ -548,7 +548,6 @@ public class ToipccSteelBarsWieghtAndPriceActivity extends AppCompatActivity {
 		linear706.setVisibility(View.GONE);
 		
 		{
-			AdRequest adRequest = new AdRequest.Builder().build();
 		}
 	}
 	

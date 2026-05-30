@@ -4800,7 +4800,6 @@ public class ToipccRcActivity extends AppCompatActivity {
 */
 		
 		{
-			AdRequest adRequest = new AdRequest.Builder().build();
 		}
 		/*
 ملاحظة طول الطبقة

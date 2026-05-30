@@ -4512,7 +4512,6 @@ public class ToipccslabongridessActivity extends AppCompatActivity {
 		dynamic_concrete_sum_linear.setVisibility(View.GONE);
 		
 		{
-			AdRequest adRequest = new AdRequest.Builder().build();
 		}
 	}
 	

@@ -1150,7 +1150,6 @@ public class ToipPipeLineLengthDifferenceActivity extends AppCompatActivity {
 		linear153.setVisibility(View.GONE);
 		
 		{
-			AdRequest adRequest = new AdRequest.Builder().build();
 		}
 	}
 	

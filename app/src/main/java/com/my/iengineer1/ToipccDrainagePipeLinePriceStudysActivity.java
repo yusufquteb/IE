@@ -2489,7 +2489,6 @@ public class ToipccDrainagePipeLinePriceStudysActivity extends AppCompatActivity
 		linear648.setVisibility(View.GONE);
 		
 		{
-			AdRequest adRequest = new AdRequest.Builder().build();
 		}
 	}
 	

@@ -8,27 +8,19 @@
 	<com.google.android.material.appbar.AppBarLayout
 		android:id="@+id/_app_bar"
 		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
-		android:theme="@style/AppTheme.AppBarOverlay">
+		android:layout_height="wrap_content">
 		<androidx.appcompat.widget.Toolbar
 			android:id="@+id/_toolbar"
 			android:layout_width="match_parent"
 			android:layout_height="?attr/actionBarSize"
-			android:background="?attr/colorPrimary"
-			app:popupTheme="@style/AppTheme.PopupOverlay" />
+			android:background="?attr/colorPrimary" />
 	</com.google.android.material.appbar.AppBarLayout>
 	<LinearLayout
 		android:layout_width="match_parent"
 		android:layout_height="match_parent"
 		android:orientation="vertical"
 		app:layout_behavior="@string/appbar_scrolling_view_behavior">
-		<com.google.android.gms.ads.AdView
-			android:id="@+id/adview1"
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			app:adSize="SMART_BANNER"
-			app:adUnitId="ca-app-pub-8740221854029861/1241530910" />
-		<ScrollView
+<ScrollView
 			android:id="@+id/vscroll1"
 			android:layout_width="match_parent"
 			android:layout_height="match_parent"
@@ -615,7 +607,7 @@
 							android:id="@+id/clos"
 							android:layout_width="30dp"
 							android:layout_height="30dp"
-							android:src="@drawable/clos1"
+							android:src="@drawable/ic_close_24"
 							android:scaleType="fitCenter"
 							android:layout_gravity="left|center_vertical" />
 						<LinearLayout
@@ -861,7 +853,7 @@
 							android:id="@+id/imageview7"
 							android:layout_width="30dp"
 							android:layout_height="30dp"
-							android:src="@drawable/clos1"
+							android:src="@drawable/ic_close_24"
 							android:scaleType="fitCenter"
 							android:layout_gravity="left|center_vertical" />
 						<LinearLayout
@@ -1054,7 +1046,7 @@
 							android:id="@+id/imageview8"
 							android:layout_width="30dp"
 							android:layout_height="30dp"
-							android:src="@drawable/clos1"
+							android:src="@drawable/ic_close_24"
 							android:scaleType="fitCenter"
 							android:layout_gravity="left|center_vertical" />
 						<LinearLayout
@@ -1248,7 +1240,7 @@
 							android:id="@+id/imageview9"
 							android:layout_width="30dp"
 							android:layout_height="30dp"
-							android:src="@drawable/clos1"
+							android:src="@drawable/ic_close_24"
 							android:scaleType="fitCenter"
 							android:layout_gravity="left|center_vertical" />
 						<LinearLayout
@@ -1442,7 +1434,7 @@
 							android:id="@+id/imageview10"
 							android:layout_width="30dp"
 							android:layout_height="30dp"
-							android:src="@drawable/clos1"
+							android:src="@drawable/ic_close_24"
 							android:scaleType="fitCenter"
 							android:layout_gravity="left|center_vertical" />
 						<LinearLayout
@@ -1636,7 +1628,7 @@
 							android:id="@+id/imageview11"
 							android:layout_width="30dp"
 							android:layout_height="30dp"
-							android:src="@drawable/clos1"
+							android:src="@drawable/ic_close_24"
 							android:scaleType="fitCenter"
 							android:layout_gravity="left|center_vertical" />
 						<LinearLayout
@@ -2062,7 +2054,7 @@
 							android:id="@+id/imageview18"
 							android:layout_width="30dp"
 							android:layout_height="30dp"
-							android:src="@drawable/clos1"
+							android:src="@drawable/ic_close_24"
 							android:scaleType="fitCenter"
 							android:layout_gravity="left|center_vertical" />
 						<LinearLayout
@@ -2183,7 +2175,7 @@
 							android:id="@+id/imageview21"
 							android:layout_width="30dp"
 							android:layout_height="30dp"
-							android:src="@drawable/clos1"
+							android:src="@drawable/ic_close_24"
 							android:scaleType="fitCenter"
 							android:layout_gravity="left|center_vertical" />
 						<LinearLayout
@@ -2300,7 +2292,7 @@
 							android:id="@+id/imageview23"
 							android:layout_width="30dp"
 							android:layout_height="30dp"
-							android:src="@drawable/clos1"
+							android:src="@drawable/ic_close_24"
 							android:scaleType="fitCenter"
 							android:layout_gravity="left|center_vertical" />
 						<LinearLayout
@@ -2417,7 +2409,7 @@
 							android:id="@+id/imageview34"
 							android:layout_width="30dp"
 							android:layout_height="30dp"
-							android:src="@drawable/clos1"
+							android:src="@drawable/ic_close_24"
 							android:scaleType="fitCenter"
 							android:layout_gravity="left|center_vertical" />
 						<LinearLayout
@@ -2534,7 +2526,7 @@
 							android:id="@+id/imageview35"
 							android:layout_width="30dp"
 							android:layout_height="30dp"
-							android:src="@drawable/clos1"
+							android:src="@drawable/ic_close_24"
 							android:scaleType="fitCenter"
 							android:layout_gravity="left|center_vertical" />
 						<LinearLayout
@@ -2651,7 +2643,7 @@
 							android:id="@+id/imageview25"
 							android:layout_width="30dp"
 							android:layout_height="30dp"
-							android:src="@drawable/clos1"
+							android:src="@drawable/ic_close_24"
 							android:scaleType="fitCenter"
 							android:layout_gravity="left|center_vertical" />
 						<LinearLayout
@@ -2768,7 +2760,7 @@
 							android:id="@+id/imageview28"
 							android:layout_width="30dp"
 							android:layout_height="30dp"
-							android:src="@drawable/clos1"
+							android:src="@drawable/ic_close_24"
 							android:scaleType="fitCenter"
 							android:layout_gravity="left|center_vertical" />
 						<LinearLayout
@@ -3195,7 +3187,7 @@
 							android:id="@+id/imageview29"
 							android:layout_width="30dp"
 							android:layout_height="30dp"
-							android:src="@drawable/clos1"
+							android:src="@drawable/ic_close_24"
 							android:scaleType="fitCenter"
 							android:layout_gravity="left|center_vertical" />
 						<LinearLayout
@@ -3465,7 +3457,7 @@
 							android:id="@+id/imageview30"
 							android:layout_width="30dp"
 							android:layout_height="30dp"
-							android:src="@drawable/clos1"
+							android:src="@drawable/ic_close_24"
 							android:scaleType="fitCenter"
 							android:layout_gravity="left|center_vertical" />
 						<LinearLayout
@@ -3659,7 +3651,7 @@
 							android:id="@+id/imageview31"
 							android:layout_width="30dp"
 							android:layout_height="30dp"
-							android:src="@drawable/clos1"
+							android:src="@drawable/ic_close_24"
 							android:scaleType="fitCenter"
 							android:layout_gravity="left|center_vertical" />
 						<LinearLayout
@@ -3872,7 +3864,7 @@
 							android:id="@+id/imageview32"
 							android:layout_width="30dp"
 							android:layout_height="30dp"
-							android:src="@drawable/clos1"
+							android:src="@drawable/ic_close_24"
 							android:scaleType="fitCenter"
 							android:layout_gravity="left|center_vertical" />
 						<LinearLayout
@@ -4111,5 +4103,5 @@
 		android:layout_height="wrap_content"
 		android:layout_margin="16dp"
 		android:layout_gravity="right|bottom"
-		app:srcCompat="@drawable/ic_local_print_shop_black" />
+		app:srcCompat="@drawable/ic_menu_home" />
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

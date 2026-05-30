@@ -4512,7 +4512,6 @@ public class ToipccAsphaltRoadMillingMachineActivity extends AppCompatActivity {
 */
 		
 		{
-			AdRequest adRequest = new AdRequest.Builder().build();
 		}
 		/*
 ملاحظة طول الطبقة

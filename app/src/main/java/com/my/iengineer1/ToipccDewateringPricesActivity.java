@@ -1541,7 +1541,6 @@ public class ToipccDewateringPricesActivity extends AppCompatActivity {
 */
 		
 		{
-			AdRequest adRequest = new AdRequest.Builder().build();
 		}
 		linear152.setVisibility(View.GONE);
 	}

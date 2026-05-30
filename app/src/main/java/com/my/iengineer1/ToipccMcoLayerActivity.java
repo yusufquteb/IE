@@ -3965,7 +3965,6 @@ public class ToipccMcoLayerActivity extends AppCompatActivity {
 */
 		
 		{
-			AdRequest adRequest = new AdRequest.Builder().build();
 		}
 		/*
 ملاحظة طول الطبقة
