@@ -1,0 +1,4004 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/_coordinator"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	<com.google.android.material.appbar.AppBarLayout
+		android:id="@+id/_app_bar"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:theme="@style/AppTheme.AppBarOverlay">
+		<androidx.appcompat.widget.Toolbar
+			android:id="@+id/_toolbar"
+			android:layout_width="match_parent"
+			android:layout_height="?attr/actionBarSize"
+			android:background="?attr/colorPrimary"
+			app:popupTheme="@style/AppTheme.PopupOverlay" />
+	</com.google.android.material.appbar.AppBarLayout>
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical"
+		app:layout_behavior="@string/appbar_scrolling_view_behavior">
+		<com.google.android.gms.ads.AdView
+			android:id="@+id/adview1"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			app:adSize="SMART_BANNER"
+			app:adUnitId="ca-app-pub-8740221854029861/1241530910" />
+		<ScrollView
+			android:id="@+id/vscroll1"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:padding="8dp"
+			android:background="#E0F2F1"
+			android:layout_gravity="center_horizontal">
+			<LinearLayout
+				android:id="@+id/linear1"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:background="#E0F2F1"
+				android:gravity="center_horizontal|top"
+				android:orientation="vertical"
+				android:layout_gravity="center_horizontal|top">
+				<LinearLayout
+					android:id="@+id/linear723"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:orientation="vertical">
+					<TextView
+						android:id="@+id/textview1"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:background="#FFFFFF"
+						android:gravity="right"
+						android:text="حصر كميات وحساب خامات وتكلفة المباني للحوائط بالمتر المكعب ( سمك طوبة ) &quot; صفين للعرض &quot;\n-------------------------------------------------"
+						android:textSize="16sp"
+						android:textStyle="bold"
+						android:textColor="#000000" />
+					<LinearLayout
+						android:id="@+id/linear872"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:gravity="right|center_vertical"
+						android:orientation="horizontal">
+						<Button
+							android:id="@+id/button195"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="فيديو شرح\nطريقة الأستخدام"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+						<LinearLayout
+							android:id="@+id/linear873"
+							android:layout_width="wrap_content"
+							android:layout_height="15dp"
+							android:padding="8dp"
+							android:orientation="horizontal"
+							android:layout_weight="1" />
+						<LinearLayout
+							android:id="@+id/linear707"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="right|bottom"
+							android:orientation="vertical"
+							android:layout_gravity="right|bottom">
+							<TextView
+								android:id="@+id/textview1221"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:gravity="right|center_vertical"
+								android:text="طريقة الأستخدام :"
+								android:textSize="14sp"
+								android:textStyle="bold"
+								android:textColor="#E91E63"
+								android:layout_gravity="right" />
+						</LinearLayout>
+					</LinearLayout>
+					<TextView
+						android:id="@+id/textview1222"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:gravity="right"
+						android:text="دليل المدخلات\n---------------"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000"
+						android:layout_gravity="right" />
+					<LinearLayout
+						android:id="@+id/linear386"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:gravity="right"
+						android:orientation="horizontal">
+						<TextView
+							android:id="@+id/textview583"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="right|center_vertical"
+							android:text="١ - &quot; * &quot; علامة وجود تعريفات أو ملاحظات\n-----------------------------------------\nفى حالة وجود علامة &quot; * &quot; بجوار أسم أو منطوق أو صيغة أي مدخل فيمكنك الضغط علي الأسم أو الصيغة أو المنطوق للمدخل ضغطة طويله وسيظهر تعريف أو ملاحظة لهذا المدخل"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000"
+							android:layout_gravity="right" />
+					</LinearLayout>
+					<LinearLayout
+						android:id="@+id/linear724"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:gravity="right|center_vertical"
+						android:orientation="horizontal">
+						<EditText
+							android:id="@+id/edittext129"
+							android:layout_width="40dp"
+							android:layout_height="30dp"
+							android:padding="8dp"
+							android:background="#BBDEFB"
+							android:textSize="12sp"
+							android:textColor="#000000"
+							android:textColorHint="#607D8B"
+							android:inputType="numberDecimal"
+							android:enabled="false" />
+						<TextView
+							android:id="@+id/textview579"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:text="٢ - مدخل أساسي يجب إدخاله"
+							android:textSize="11sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+					</LinearLayout>
+					<LinearLayout
+						android:id="@+id/linear725"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:gravity="right|center_vertical"
+						android:orientation="horizontal">
+						<EditText
+							android:id="@+id/edittext125"
+							android:layout_width="40dp"
+							android:layout_height="30dp"
+							android:padding="8dp"
+							android:background="#C8E6C9"
+							android:gravity="center_horizontal|center_vertical"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000"
+							android:hint="##"
+							android:textColorHint="#B0BEC5"
+							android:inputType="numberDecimal"
+							android:enabled="false" />
+						<TextView
+							android:id="@+id/textview580"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:text="٣ - مدخل إختياري في حالة عدم إدخاله سيقوم البرنامج بإفتراض قيمته بالقيمة الموجودة داخل المستطيل وذلك عند الضغط علي زرار &quot; أحسب = &quot;"
+							android:textSize="11sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+					</LinearLayout>
+					<LinearLayout
+						android:id="@+id/linear410"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:gravity="right|center_vertical"
+						android:orientation="horizontal">
+						<EditText
+							android:id="@+id/edittext137"
+							android:layout_width="40dp"
+							android:layout_height="30dp"
+							android:padding="8dp"
+							android:background="#CFD8DC"
+							android:textSize="12sp"
+							android:textColor="#000000"
+							android:textColorHint="#607D8B"
+							android:inputType="numberDecimal"
+							android:enabled="false" />
+						<TextView
+							android:id="@+id/textview845"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:text="٤ - ناتج قابل للتعديل"
+							android:textSize="11sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+					</LinearLayout>
+					<LinearLayout
+						android:id="@+id/linear726"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:gravity="center_horizontal|center_vertical"
+						android:orientation="horizontal"
+						android:layout_gravity="center_horizontal">
+						<TextView
+							android:id="@+id/textview585"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:background="#000000"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="أحسب\n="
+							android:textSize="10sp"
+							android:textStyle="bold"
+							android:textColor="#4CAF50" />
+						<TextView
+							android:id="@+id/textview584"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="right|center_vertical"
+							android:text="٥ - للحصول علي الناتج أضغط علي الزر الأسود وعند تعديل أو تغيير أي مدخل يتم الضغط مرة أخرى علي الزر الأسود"
+							android:textSize="11sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+					</LinearLayout>
+					<LinearLayout
+						android:id="@+id/linear289"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:gravity="center_horizontal|center_vertical"
+						android:orientation="horizontal"
+						android:layout_gravity="center_horizontal">
+						<Button
+							android:id="@+id/button29"
+							android:layout_width="40dp"
+							android:layout_height="30dp"
+							android:padding="8dp"
+							android:textSize="12sp"
+							android:textColor="#000000" />
+						<TextView
+							android:id="@+id/textview809"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="right|center_vertical"
+							android:text="٦ - لأضافة أو إلغاء أو إظهار قائمة أضغط علي الزر"
+							android:textSize="11sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+					</LinearLayout>
+					<TextView
+						android:id="@+id/textview555"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:gravity="center_horizontal|center_vertical"
+						android:text="-----‐---------------------------------"
+						android:textSize="14sp"
+						android:textStyle="bold"
+						android:textColor="#E91E63" />
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/linear2"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:gravity="center_horizontal|center_vertical"
+					android:orientation="vertical"
+					android:layout_gravity="center_horizontal|center_vertical"
+					android:background="@drawable/rectangle_0_tealffe0f2f1_075_blackff000000">
+					<LinearLayout
+						android:id="@+id/linear389"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:background="#FFE0B2"
+						android:gravity="right|center_vertical"
+						android:orientation="horizontal"
+						android:layout_gravity="right">
+						<TextView
+							android:id="@+id/textview18"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="2dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="("
+							android:textSize="14sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+						<EditText
+							android:id="@+id/edittext7"
+							android:layout_width="40dp"
+							android:layout_height="wrap_content"
+							android:padding="2dp"
+							android:background="@android:color/transparent"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="1"
+							android:textSize="14sp"
+							android:textStyle="bold"
+							android:textColor="#000000"
+							android:textColorHint="#607D8B"
+							android:enabled="false" />
+						<TextView
+							android:id="@+id/textview17"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:text="ح"
+							android:textSize="14sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+						<TextView
+							android:id="@+id/textview16"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:text=")"
+							android:textSize="14sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+						<EditText
+							android:id="@+id/edittext6"
+							android:layout_width="40dp"
+							android:layout_height="wrap_content"
+							android:padding="2dp"
+							android:background="#C8E6C9"
+							android:gravity="center_horizontal|center_vertical"
+							android:text=" 1"
+							android:textSize="14sp"
+							android:textStyle="bold"
+							android:textColor="#000000"
+							android:textColorHint="#607D8B"
+							android:inputType="numberSigned" />
+						<TextView
+							android:id="@+id/textview10"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="right"
+							android:text="الحائط رقم :"
+							android:textSize="14sp"
+							android:textStyle="bold"
+							android:textColor="#000000"
+							android:layout_gravity="right|center_vertical" />
+					</LinearLayout>
+					<HorizontalScrollView
+						android:id="@+id/hscroll94"
+						android:layout_width="match_parent"
+						android:layout_height="7dp"
+						android:padding="8dp" />
+					<LinearLayout
+						android:id="@+id/linear56"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:gravity="center_horizontal|center_vertical"
+						android:orientation="horizontal"
+						android:background="@drawable/rectangle_0_purplefff3e5f5_050_blackff000000">
+						<TextView
+							android:id="@+id/textview446"
+							android:layout_width="wrap_content"
+							android:layout_height="35dp"
+							android:padding="8dp"
+							android:text="م"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+						<EditText
+							android:id="@+id/edittext1"
+							android:layout_width="80dp"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:background="#BBDEFB"
+							android:gravity="center_horizontal|center_vertical"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000"
+							android:textColorHint="#607D8B"
+							android:inputType="numberDecimal" />
+						<TextView
+							android:id="@+id/textview81"
+							android:layout_width="50dp"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="="
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+						<TextView
+							android:id="@+id/textview5"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="طول الحائط ( م )"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+					</LinearLayout>
+					<HorizontalScrollView
+						android:id="@+id/hscroll33"
+						android:layout_width="match_parent"
+						android:layout_height="7dp"
+						android:padding="8dp"
+						android:layout_gravity="center_horizontal|center_vertical" />
+					<LinearLayout
+						android:id="@+id/linear162"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:gravity="center_horizontal|center_vertical"
+						android:orientation="horizontal"
+						android:background="@drawable/rectangle_0_purplefff3e5f5_050_blackff000000">
+						<TextView
+							android:id="@+id/textview448"
+							android:layout_width="wrap_content"
+							android:layout_height="35dp"
+							android:padding="8dp"
+							android:text="م"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+						<EditText
+							android:id="@+id/edittext2"
+							android:layout_width="80dp"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:background="#BBDEFB"
+							android:gravity="center_horizontal|center_vertical"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000"
+							android:textColorHint="#607D8B"
+							android:inputType="numberDecimal" />
+						<TextView
+							android:id="@+id/textview422"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="="
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+						<TextView
+							android:id="@+id/textview11"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="أرتفاع الحائط ( م )"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+					</LinearLayout>
+					<HorizontalScrollView
+						android:id="@+id/hscroll35"
+						android:layout_width="match_parent"
+						android:layout_height="7dp"
+						android:padding="8dp"
+						android:layout_gravity="center_horizontal|center_vertical" />
+					<LinearLayout
+						android:id="@+id/linear161"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:gravity="center_horizontal|center_vertical"
+						android:orientation="horizontal"
+						android:background="@drawable/rectangle_0_purplefff3e5f5_050_blackff000000">
+						<TextView
+							android:id="@+id/textview447"
+							android:layout_width="wrap_content"
+							android:layout_height="35dp"
+							android:padding="8dp"
+							android:text="م"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+						<EditText
+							android:id="@+id/edittext22"
+							android:layout_width="75dp"
+							android:layout_height="35dp"
+							android:padding="8dp"
+							android:background="#C8E6C9"
+							android:gravity="center_horizontal|center_vertical"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000"
+							android:hint="0.25"
+							android:textColorHint="#B0BEC5"
+							android:inputType="numberDecimal" />
+						<TextView
+							android:id="@+id/textview421"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="="
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+						<TextView
+							android:id="@+id/L1"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="* عرض الحائط أو سمك الحائط ( م )"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+					</LinearLayout>
+					<HorizontalScrollView
+						android:id="@+id/hscroll37"
+						android:layout_width="match_parent"
+						android:layout_height="7dp"
+						android:padding="8dp"
+						android:layout_gravity="center_horizontal|center_vertical" />
+					<LinearLayout
+						android:id="@+id/linear164"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:gravity="center_horizontal|center_vertical"
+						android:orientation="horizontal"
+						android:background="@drawable/rectangle_0_purplefff3e5f5_050_blackff000000">
+						<EditText
+							android:id="@+id/edittext3"
+							android:layout_width="80dp"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:background="#C8E6C9"
+							android:gravity="center_horizontal|center_vertical"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000"
+							android:hint="1"
+							android:textColorHint="#B0BEC5"
+							android:inputType="numberSigned" />
+						<TextView
+							android:id="@+id/textview426"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="="
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+						<TextView
+							android:id="@+id/textview7"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="* عدد الحوائط"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+					</LinearLayout>
+					<LinearLayout
+						android:id="@+id/linear194"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:gravity="center_horizontal|center_vertical"
+						android:orientation="horizontal">
+						<EditText
+							android:id="@+id/edittext444"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:background="#E1BEE7"
+							android:text="00.00"
+							android:textSize="12sp"
+							android:textColor="#000000"
+							android:textColorHint="#607D8B"
+							android:inputType="numberDecimal"
+							android:enabled="false" />
+						<Button
+							android:id="@+id/button1"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:background="#000000"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="أحسب\n="
+							android:textSize="14sp"
+							android:textStyle="bold"
+							android:textColor="#4CAF50"
+							android:layout_gravity="center_horizontal|center_vertical" />
+					</LinearLayout>
+					<TextView
+						android:id="@+id/textview666"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:gravity="right"
+						android:text="من فضلك أعد مراجعة طول الحائط حيث ان طول الحائط أقل من طول الفتحة وهذا غير منطقي وغير هندسي"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#E91E63" />
+					<TextView
+						android:id="@+id/textview668"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:text="من فضلك أعد مراجعة ارتفاع الحائط حيث ان ارتفاع الحائط أقل من ارتفاع الفتحة وهذا غير منطقي وغير هندسي"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#E91E63" />
+					<TextView
+						android:id="@+id/textview667"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:text="من فضلك أعد مراجعة عرض الحائط حيث ان عرض الحائط أو سمك الحائط أقل من عرض أو سمك الفتحة وهذا غير منطقي وغير هندسي"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#E91E63"
+						android:layout_gravity="center_horizontal" />
+					<LinearLayout
+						android:id="@+id/linear188"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:gravity="center_horizontal|center_vertical"
+						android:orientation="horizontal"
+						android:background="@drawable/rectangle_0_purplefff3e5f5_050_blackff000000">
+						<TextView
+							android:id="@+id/textview510"
+							android:layout_width="wrap_content"
+							android:layout_height="35dp"
+							android:padding="8dp"
+							android:text="م٢"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+						<EditText
+							android:id="@+id/edittext4"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:background="#D7CCC8"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="00.00"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000"
+							android:hint="Edit Text"
+							android:textColorHint="#607D8B"
+							android:inputType="numberDecimal"
+							android:enabled="false" />
+						<TextView
+							android:id="@+id/textview508"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="="
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+						<TextView
+							android:id="@+id/textview509"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="مسطحات المباني لجميع الحوائط من هذا النموذج بدون خصم الفتحات ( م٢ )"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+					</LinearLayout>
+					<HorizontalScrollView
+						android:id="@+id/hscroll57"
+						android:layout_width="match_parent"
+						android:layout_height="7dp"
+						android:padding="8dp" />
+					<LinearLayout
+						android:id="@+id/linear13"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:gravity="center_horizontal|center_vertical"
+						android:orientation="horizontal"
+						android:background="@drawable/rectangle_0_purplefff3e5f5_050_blackff000000">
+						<TextView
+							android:id="@+id/textview449"
+							android:layout_width="wrap_content"
+							android:layout_height="37dp"
+							android:padding="8dp"
+							android:text="م٣"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+						<EditText
+							android:id="@+id/edittext5"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:background="#FFC107"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="00.00"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000"
+							android:hint="Edit Text"
+							android:textColorHint="#607D8B"
+							android:inputType="numberDecimal"
+							android:enabled="false" />
+						<TextView
+							android:id="@+id/textview13"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="="
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+						<TextView
+							android:id="@+id/textview12"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="مكعب مباني جميع الحوائط من هذا النموذج بدون خصم الفتحات ( م٣ )"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+					</LinearLayout>
+					<TextView
+						android:id="@+id/textview477"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:text="-----‐---------------------------------"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000" />
+					<LinearLayout
+						android:id="@+id/add_dynamic_hole_linear"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:gravity="center_horizontal|center_vertical"
+						android:orientation="vertical"
+						android:layout_gravity="center_horizontal|center_vertical" />
+					<LinearLayout
+						android:id="@+id/linear722"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:gravity="center_horizontal|center_vertical"
+						android:orientation="horizontal"
+						android:background="@drawable/rectangle_0_yellowfffff59d_050_blackff000000">
+						<TextView
+							android:id="@+id/textview705"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:text="م٢"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+						<EditText
+							android:id="@+id/edittext16"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:background="#D7CCC8"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="00.00"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000"
+							android:hint="Edit Text"
+							android:textColorHint="#B0BEC5"
+							android:inputType="numberDecimal"
+							android:enabled="false" />
+						<TextView
+							android:id="@+id/textview706"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="="
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+						<TextView
+							android:id="@+id/textview707"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="مسطح الفتحات ( م٢ )"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+					</LinearLayout>
+					<HorizontalScrollView
+						android:id="@+id/hscroll19"
+						android:layout_width="match_parent"
+						android:layout_height="7dp"
+						android:padding="8dp"
+						android:layout_gravity="center_horizontal|center_vertical" />
+					<LinearLayout
+						android:id="@+id/linear74"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:gravity="center_horizontal|center_vertical"
+						android:orientation="horizontal"
+						android:background="@drawable/rectangle_0_yellowfffff59d_050_blackff000000">
+						<TextView
+							android:id="@+id/textview467"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:text="م٣"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+						<EditText
+							android:id="@+id/edittext15"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:background="#D7CCC8"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="00.00"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000"
+							android:hint="Edit Text"
+							android:textColorHint="#607D8B"
+							android:inputType="numberDecimal"
+							android:enabled="false" />
+						<TextView
+							android:id="@+id/textview286"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="="
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+						<TextView
+							android:id="@+id/textview112"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="مكعب الفتحات ( م٣ )"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+					</LinearLayout>
+					<Button
+						android:id="@+id/add_dynamic_hole"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:text="أضافة فتحة"
+						android:textSize="16sp"
+						android:textStyle="bold"
+						android:textColor="#000000"
+						android:layout_gravity="right"
+						android:layout_weight="1" />
+					<HorizontalScrollView
+						android:id="@+id/hscroll56"
+						android:layout_width="match_parent"
+						android:layout_height="7dp"
+						android:padding="8dp" />
+					<TextView
+						android:id="@+id/textview55"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:text="المسطح الأجمالي لمباني جميع الحوائط من هذا النموذج أقل من المسطح الاجمالى لجميع الفتحات"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#E91E63" />
+					<LinearLayout
+						android:id="@+id/linear183"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:gravity="center_horizontal|center_vertical"
+						android:orientation="horizontal"
+						android:background="@drawable/rectangle_0_limefff0f4c3_075_blackff000000">
+						<TextView
+							android:id="@+id/textview488"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:text="م٢"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+						<EditText
+							android:id="@+id/edittext17"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:background="#80CBC4"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="00.00"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000"
+							android:hint="Edit Text"
+							android:textColorHint="#607D8B"
+							android:inputType="numberDecimal"
+							android:enabled="false" />
+						<TextView
+							android:id="@+id/textview489"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="="
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+						<TextView
+							android:id="@+id/textview487"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="المسطح الأجمالي لمباني جميع الحوائط من هذا النموذج بعد خصم الفتحات ( م٢ )"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+					</LinearLayout>
+					<TextView
+						android:id="@+id/textview1430"
+						android:layout_width="match_parent"
+						android:layout_height="7dp"
+						android:padding="8dp"
+						android:gravity="center_horizontal|center_vertical"
+						android:text="       "
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000" />
+					<TextView
+						android:id="@+id/textview56"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:text="المكعب الأجمالي لمباني جميع الحوائط من هذا النموذج أقل من المكعب الاجمالى لجميع الفتحات"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#E91E63" />
+					<LinearLayout
+						android:id="@+id/linear758"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:gravity="center_horizontal|center_vertical"
+						android:orientation="horizontal"
+						android:background="@drawable/rectangle_0_limefff0f4c3_075_blackff000000">
+						<TextView
+							android:id="@+id/textview1421"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:text="م٣"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+						<EditText
+							android:id="@+id/edittext20"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:background="#CDDC39"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="00.00"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000"
+							android:hint="Edit Text"
+							android:textColorHint="#B0BEC5"
+							android:inputType="numberDecimal"
+							android:enabled="false" />
+						<TextView
+							android:id="@+id/textview1422"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="="
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+						<TextView
+							android:id="@+id/textview1423"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="المكعب الأجمالي لمباني جميع الحوائط من هذا النموذج بعد خصم الفتحات ( م٣ )"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+					</LinearLayout>
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/add_dynamic_wall_linear"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:orientation="vertical" />
+				<Button
+					android:id="@+id/add_dynamic_wall"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="إضافة حائط جديد"
+					android:textSize="16sp"
+					android:textStyle="bold"
+					android:textColor="#000000"
+					android:layout_gravity="right" />
+				<LinearLayout
+					android:id="@+id/linear120"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:background="#F3E5F5"
+					android:gravity="center_horizontal|center_vertical"
+					android:orientation="horizontal">
+					<TextView
+						android:id="@+id/textview708"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:text="م٢"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000" />
+					<EditText
+						android:id="@+id/edittext18"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:background="#D7CCC8"
+						android:gravity="center_horizontal|center_vertical"
+						android:text="00.00"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000"
+						android:hint="Edit Text"
+						android:textColorHint="#B0BEC5"
+						android:inputType="numberDecimal"
+						android:enabled="false" />
+					<TextView
+						android:id="@+id/textview532"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:gravity="center_horizontal|center_vertical"
+						android:text="="
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000" />
+					<TextView
+						android:id="@+id/textview533"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:gravity="center_horizontal|center_vertical"
+						android:text="كمية المباني لجميع الحوائط من جميع النماذج الدينامك بعد خصم الفتحات ( م٢ )"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000" />
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/linear759"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:background="#F3E5F5"
+					android:gravity="center_horizontal|center_vertical"
+					android:orientation="horizontal">
+					<TextView
+						android:id="@+id/textview1424"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:text="م٣"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000" />
+					<EditText
+						android:id="@+id/edittext21"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:background="#D7CCC8"
+						android:gravity="center_horizontal|center_vertical"
+						android:text="00.00"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000"
+						android:hint="Edit Text"
+						android:textColorHint="#B0BEC5"
+						android:inputType="numberDecimal"
+						android:enabled="false" />
+					<TextView
+						android:id="@+id/textview1425"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:gravity="center_horizontal|center_vertical"
+						android:text="="
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000" />
+					<TextView
+						android:id="@+id/textview1426"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:gravity="center_horizontal|center_vertical"
+						android:text="كمية المباني لجميع الحوائط من جميع النماذج الدينامك بعد خصم الفتحات ( م٣ )"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000" />
+				</LinearLayout>
+				<HorizontalScrollView
+					android:id="@+id/hscroll2"
+					android:layout_width="match_parent"
+					android:layout_height="7dp"
+					android:padding="8dp"
+					android:layout_gravity="center_horizontal|center_vertical" />
+				<LinearLayout
+					android:id="@+id/linear144"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:gravity="center_horizontal|center_vertical"
+					android:orientation="horizontal"
+					android:background="@drawable/rectangle_0_indigoff9fa8da_075_blackff000000">
+					<TextView
+						android:id="@+id/textview601"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:text="م٢"
+						android:textSize="14sp"
+						android:textStyle="bold"
+						android:textColor="#000000" />
+					<EditText
+						android:id="@+id/edittext19"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:background="#795548"
+						android:gravity="center_horizontal|center_vertical"
+						android:text="00.00"
+						android:textSize="14sp"
+						android:textStyle="bold"
+						android:textColor="#FFFFFF"
+						android:hint="Edit Text"
+						android:textColorHint="#B0BEC5"
+						android:inputType="numberDecimal"
+						android:enabled="false" />
+					<TextView
+						android:id="@+id/textview602"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:gravity="center_horizontal|center_vertical"
+						android:text="="
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000" />
+					<TextView
+						android:id="@+id/textview603"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:gravity="center_horizontal|center_vertical"
+						android:text="مسطح المباني لجميع الحوائط من جميع النماذج بعد خصم الفتحات ( م٢ )"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000" />
+				</LinearLayout>
+				<TextView
+					android:id="@+id/textview14"
+					android:layout_width="match_parent"
+					android:layout_height="7dp"
+					android:padding="8dp"
+					android:gravity="center_horizontal|center_vertical"
+					android:text="       "
+					android:textSize="12sp"
+					android:textStyle="bold"
+					android:textColor="#000000" />
+				<LinearLayout
+					android:id="@+id/linear760"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:gravity="center_horizontal|center_vertical"
+					android:orientation="horizontal"
+					android:background="@drawable/rectangle_0_purplefff3e5f5_075_blackff000000">
+					<TextView
+						android:id="@+id/textview1427"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:text="م٣"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000" />
+					<EditText
+						android:id="@+id/edittext23"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:background="#9E9E9E"
+						android:gravity="center_horizontal|center_vertical"
+						android:text="00.00"
+						android:textSize="14sp"
+						android:textStyle="bold"
+						android:textColor="#FFFFFF"
+						android:hint="Edit Text"
+						android:textColorHint="#B0BEC5"
+						android:inputType="numberDecimal"
+						android:enabled="false" />
+					<TextView
+						android:id="@+id/textview1428"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:gravity="center_horizontal|center_vertical"
+						android:text="="
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000" />
+					<TextView
+						android:id="@+id/textview1429"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:gravity="center_horizontal|center_vertical"
+						android:text="كمية المباني لجميع الحوائط من جميع النماذج بعد خصم الفتحات ( م٣ )"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000" />
+				</LinearLayout>
+				<TextView
+					android:id="@+id/textview482"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="-----‐---------------------------------"
+					android:textSize="12sp"
+					android:textStyle="bold"
+					android:textColor="#000000" />
+				<Button
+					android:id="@+id/button28"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="حساب الخامات والتكلفة"
+					android:textSize="16sp"
+					android:textStyle="bold"
+					android:textColor="#000000" />
+				<HorizontalScrollView
+					android:id="@+id/hscroll32"
+					android:layout_width="match_parent"
+					android:layout_height="7dp"
+					android:padding="8dp"
+					android:layout_gravity="center_horizontal|center_vertical" />
+				<LinearLayout
+					android:id="@+id/linear57"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:gravity="center_horizontal|center_vertical"
+					android:orientation="vertical"
+					android:layout_gravity="center_horizontal|center_vertical"
+					android:background="@drawable/rectangle_15_tealffe0f2f1_1_blackff000000">
+					<LinearLayout
+						android:id="@+id/linear713"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:gravity="right|center_vertical"
+						android:orientation="horizontal"
+						android:background="@drawable/rectangle_0_greyffe0e0e0_050_blackff000000">
+						<ImageView
+							android:id="@+id/imageview36"
+							android:layout_width="30dp"
+							android:layout_height="30dp"
+							android:src="@drawable/clos1"
+							android:scaleType="fitCenter"
+							android:layout_gravity="left|center_vertical" />
+						<LinearLayout
+							android:id="@+id/linear720"
+							android:layout_width="wrap_content"
+							android:layout_height="15dp"
+							android:padding="8dp"
+							android:orientation="horizontal"
+							android:layout_weight="1" />
+						<TextView
+							android:id="@+id/textview1336"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="right|center_vertical"
+							android:text="• حساب الخامات والتكلفة"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000"
+							android:layout_gravity="right" />
+					</LinearLayout>
+					<HorizontalScrollView
+						android:id="@+id/hscroll40"
+						android:layout_width="match_parent"
+						android:layout_height="7dp"
+						android:padding="8dp"
+						android:layout_gravity="center_horizontal|center_vertical" />
+					<LinearLayout
+						android:id="@+id/linear746"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:gravity="center_horizontal|top"
+						android:orientation="vertical"
+						android:background="@drawable/rectangle_0_tealffe0f2f1_075_blackff000000">
+						<TextView
+							android:id="@+id/textview83"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="right"
+							android:text="حساب الخامات\n-----------------"
+							android:textSize="16sp"
+							android:textStyle="bold"
+							android:textColor="#000000"
+							android:layout_gravity="right" />
+						<LinearLayout
+							android:id="@+id/linear181"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:orientation="horizontal">
+							<TextView
+								android:id="@+id/textview88"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:gravity="center_horizontal|center_vertical"
+								android:text="أبعاد الطوبة"
+								android:textSize="14sp"
+								android:textStyle="bold"
+								android:textColor="#8D6E63" />
+						</LinearLayout>
+						<LinearLayout
+							android:id="@+id/linear109"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:orientation="horizontal"
+							android:background="@drawable/rectangle_0_purplefff3e5f5_050_blackff000000">
+							<TextView
+								android:id="@+id/textview450"
+								android:layout_width="wrap_content"
+								android:layout_height="35dp"
+								android:padding="8dp"
+								android:text="سم"
+								android:textSize="12sp"
+								android:textStyle="bold"
+								android:textColor="#000000" />
+							<EditText
+								android:id="@+id/edittext24"
+								android:layout_width="80dp"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:background="#C8E6C9"
+								android:gravity="center_horizontal|center_vertical"
+								android:textSize="12sp"
+								android:textStyle="bold"
+								android:textColor="#000000"
+								android:hint="25"
+								android:textColorHint="#B0BEC5"
+								android:inputType="numberDecimal" />
+							<TextView
+								android:id="@+id/textview316"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:gravity="center_horizontal|center_vertical"
+								android:text="="
+								android:textSize="12sp"
+								android:textStyle="bold"
+								android:textColor="#000000" />
+							<TextView
+								android:id="@+id/textview196"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:gravity="center_horizontal|center_vertical"
+								android:text="* طول الطوبة ( سم )"
+								android:textSize="12sp"
+								android:textStyle="bold"
+								android:textColor="#000000" />
+						</LinearLayout>
+						<HorizontalScrollView
+							android:id="@+id/hscroll13"
+							android:layout_width="match_parent"
+							android:layout_height="7dp"
+							android:padding="8dp"
+							android:layout_gravity="center_horizontal|center_vertical" />
+						<LinearLayout
+							android:id="@+id/linear165"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:orientation="horizontal"
+							android:background="@drawable/rectangle_0_purplefff3e5f5_050_blackff000000">
+							<TextView
+								android:id="@+id/textview451"
+								android:layout_width="wrap_content"
+								android:layout_height="35dp"
+								android:padding="8dp"
+								android:text="سم"
+								android:textSize="12sp"
+								android:textStyle="bold"
+								android:textColor="#000000" />
+							<EditText
+								android:id="@+id/edittext25"
+								android:layout_width="80dp"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:background="#C8E6C9"
+								android:gravity="center_horizontal|center_vertical"
+								android:textSize="12sp"
+								android:textStyle="bold"
+								android:textColor="#000000"
+								android:hint="12"
+								android:textColorHint="#B0BEC5"
+								android:inputType="numberDecimal" />
+							<TextView
+								android:id="@+id/textview428"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:gravity="center_horizontal|center_vertical"
+								android:text="="
+								android:textSize="12sp"
+								android:textStyle="bold"
+								android:textColor="#000000" />
+							<TextView
+								android:id="@+id/textview90"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:gravity="center_horizontal|center_vertical"
+								android:text="* عرض الطوبة ( سم )"
+								android:textSize="12sp"
+								android:textStyle="bold"
+								android:textColor="#000000" />
+						</LinearLayout>
+						<HorizontalScrollView
+							android:id="@+id/hscroll38"
+							android:layout_width="match_parent"
+							android:layout_height="7dp"
+							android:padding="8dp"
+							android:layout_gravity="center_horizontal|center_vertical" />
+						<LinearLayout
+							android:id="@+id/linear166"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:orientation="horizontal"
+							android:background="@drawable/rectangle_0_purplefff3e5f5_050_blackff000000">
+							<TextView
+								android:id="@+id/textview452"
+								android:layout_width="wrap_content"
+								android:layout_height="35dp"
+								android:padding="8dp"
+								android:text="سم"
+								android:textSize="12sp"
+								android:textStyle="bold"
+								android:textColor="#000000" />
+							<EditText
+								android:id="@+id/edittext26"
+								android:layout_width="80dp"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:background="#C8E6C9"
+								android:gravity="center_horizontal|center_vertical"
+								android:textSize="12sp"
+								android:textStyle="bold"
+								android:textColor="#000000"
+								android:hint="6"
+								android:textColorHint="#B0BEC5"
+								android:inputType="numberDecimal" />
+							<TextView
+								android:id="@+id/textview429"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:gravity="center_horizontal|center_vertical"
+								android:text="="
+								android:textSize="12sp"
+								android:textStyle="bold"
+								android:textColor="#000000" />
+							<TextView
+								android:id="@+id/textview377"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:gravity="center_horizontal|center_vertical"
+								android:text="* إرتفاع الطوبة ( سم )"
+								android:textSize="12sp"
+								android:textStyle="bold"
+								android:textColor="#000000" />
+						</LinearLayout>
+						<HorizontalScrollView
+							android:id="@+id/hscroll39"
+							android:layout_width="match_parent"
+							android:layout_height="7dp"
+							android:padding="8dp"
+							android:layout_gravity="center_horizontal|center_vertical" />
+						<TextView
+							android:id="@+id/textview84"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="مدخلات مونة اللصق"
+							android:textSize="14sp"
+							android:textStyle="bold"
+							android:textColor="#8D6E63" />
+						<LinearLayout
+							android:id="@+id/linear167"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:orientation="horizontal"
+							android:background="@drawable/rectangle_0_purplefff3e5f5_050_blackff000000">
+							<TextView
+								android:id="@+id/textview453"
+								android:layout_width="wrap_content"
+								android:layout_height="35dp"
+								android:padding="8dp"
+								android:text="سم"
+								android:textSize="12sp"
+								android:textStyle="bold"
+								android:textColor="#000000" />
+							<EditText
+								android:id="@+id/edittext27"
+								android:layout_width="80dp"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:background="#C8E6C9"
+								android:gravity="center_horizontal|center_vertical"
+								android:textSize="12sp"
+								android:textStyle="bold"
+								android:textColor="#000000"
+								android:hint="1"
+								android:textColorHint="#B0BEC5"
+								android:inputType="numberDecimal" />
+							<TextView
+								android:id="@+id/textview430"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:gravity="center_horizontal|center_vertical"
+								android:text="="
+								android:textSize="12sp"
+								android:textStyle="bold"
+								android:textColor="#000000" />
+							<TextView
+								android:id="@+id/textview260"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:gravity="center_horizontal|center_vertical"
+								android:text="* سمك العرموس &quot; سمك عرموس الربط بين الطوب &quot; ( سم )"
+								android:textSize="12sp"
+								android:textStyle="bold"
+								android:textColor="#000000" />
+						</LinearLayout>
+						<HorizontalScrollView
+							android:id="@+id/hscroll41"
+							android:layout_width="match_parent"
+							android:layout_height="7dp"
+							android:padding="8dp"
+							android:layout_gravity="center_horizontal|center_vertical" />
+						<LinearLayout
+							android:id="@+id/linear16"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:orientation="horizontal"
+							android:background="@drawable/rectangle_0_purplefff3e5f5_050_blackff000000">
+							<TextView
+								android:id="@+id/textview454"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:gravity="center_horizontal|center_vertical"
+								android:text="كجم\n/\nم٣رمل"
+								android:textSize="12sp"
+								android:textStyle="bold"
+								android:textColor="#000000" />
+							<EditText
+								android:id="@+id/edittext28"
+								android:layout_width="80dp"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:background="#C8E6C9"
+								android:gravity="center_horizontal|center_vertical"
+								android:textSize="12sp"
+								android:textStyle="bold"
+								android:textColor="#000000"
+								android:hint="300"
+								android:textColorHint="#B0BEC5"
+								android:inputType="numberDecimal" />
+							<TextView
+								android:id="@+id/textview431"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:gravity="center_horizontal|center_vertical"
+								android:text="="
+								android:textSize="12sp"
+								android:textStyle="bold"
+								android:textColor="#000000" />
+							<TextView
+								android:id="@+id/textview232"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:gravity="center_horizontal|center_vertical"
+								android:text="* نسبة الأسمنت بمونة الربط واللصق ( كجم / م٣رمل )"
+								android:textSize="12sp"
+								android:textStyle="bold"
+								android:textColor="#000000" />
+						</LinearLayout>
+						<TextView
+							android:id="@+id/textview511"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:text="-----‐---------------------------------"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+						<Button
+							android:id="@+id/button31"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:background="#000000"
+							android:text="أضغط للحصول علي النتائج\n="
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#4CAF50" />
+						<TextView
+							android:id="@+id/textview512"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:text="-----‐---------------------------------"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+						<TextView
+							android:id="@+id/textview1351"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:text="كمية الطوب الأجمالية ونسبة الهالك"
+							android:textSize="14sp"
+							android:textStyle="bold"
+							android:textColor="#E91E63" />
+						<LinearLayout
+							android:id="@+id/linear768"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:orientation="horizontal"
+							android:background="@drawable/rectangle_0_purplefff3e5f5_050_blackff000000">
+							<TextView
+								android:id="@+id/textview1449"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:text="م٣"
+								android:textSize="12sp"
+								android:textStyle="bold"
+								android:textColor="#000000" />
+							<EditText
+								android:id="@+id/edittext29"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:background="#D7CCC8"
+								android:gravity="center_horizontal|center_vertical"
+								android:text="00.00"
+								android:textSize="12sp"
+								android:textStyle="bold"
+								android:textColor="#000000"
+								android:hint="Edit Text"
+								android:textColorHint="#B0BEC5"
+								android:inputType="numberDecimal"
+								android:enabled="false" />
+							<TextView
+								android:id="@+id/textview1450"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:gravity="center_horizontal|center_vertical"
+								android:text="="
+								android:textSize="12sp"
+								android:textStyle="bold"
+								android:textColor="#000000" />
+							<TextView
+								android:id="@+id/textview1451"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:gravity="center_horizontal|center_vertical"
+								android:text="مكعب الطوبة بدون حساب عراميس الربط ( م٣ )"
+								android:textSize="12sp"
+								android:textStyle="bold"
+								android:textColor="#000000" />
+						</LinearLayout>
+						<HorizontalScrollView
+							android:id="@+id/hscroll48"
+							android:layout_width="match_parent"
+							android:layout_height="7dp"
+							android:padding="8dp" />
+						<LinearLayout
+							android:id="@+id/linear418"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:orientation="vertical">
+							<LinearLayout
+								android:id="@+id/linear172"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:gravity="center_horizontal|center_vertical"
+								android:orientation="horizontal"
+								android:background="@drawable/rectangle_0_purplefff3e5f5_050_blackff000000">
+								<TextView
+									android:id="@+id/textview203"
+									android:layout_width="wrap_content"
+									android:layout_height="35dp"
+									android:padding="8dp"
+									android:gravity="center_horizontal|center_vertical"
+									android:text="طوبة"
+									android:textSize="12sp"
+									android:textStyle="bold"
+									android:textColor="#000000" />
+								<EditText
+									android:id="@+id/edittext30"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:background="#D7CCC8"
+									android:gravity="center_horizontal|center_vertical"
+									android:text="00.00"
+									android:textSize="12sp"
+									android:textStyle="bold"
+									android:textColor="#000000"
+									android:hint="Edit Text"
+									android:textColorHint="#607D8B"
+									android:inputType="numberDecimal"
+									android:enabled="false" />
+								<TextView
+									android:id="@+id/textview435"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:gravity="center_horizontal|center_vertical"
+									android:text="="
+									android:textSize="12sp"
+									android:textStyle="bold"
+									android:textColor="#000000" />
+								<TextView
+									android:id="@+id/textview202"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:gravity="center_horizontal|center_vertical"
+									android:text="كمية الطوب الأجمالية هندسيآ بدون أي هالك مع الاخذ ف الاعتبار سمك العراميس ( طوبة )"
+									android:textSize="12sp"
+									android:textStyle="bold"
+									android:textColor="#000000" />
+							</LinearLayout>
+							<HorizontalScrollView
+								android:id="@+id/hscroll49"
+								android:layout_width="match_parent"
+								android:layout_height="7dp"
+								android:padding="8dp" />
+							<LinearLayout
+								android:id="@+id/linear173"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:gravity="center_horizontal|center_vertical"
+								android:orientation="horizontal"
+								android:background="@drawable/rectangle_0_purplefff3e5f5_050_blackff000000">
+								<TextView
+									android:id="@+id/textview1431"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:gravity="center_horizontal|center_vertical"
+									android:text="%"
+									android:textSize="12sp"
+									android:textStyle="bold"
+									android:textColor="#000000" />
+								<EditText
+									android:id="@+id/edittext31"
+									android:layout_width="80dp"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:background="#CFD8DC"
+									android:gravity="center_horizontal|center_vertical"
+									android:textSize="12sp"
+									android:textStyle="bold"
+									android:textColor="#000000"
+									android:hint="10"
+									android:textColorHint="#B0BEC5"
+									android:inputType="numberDecimal" />
+								<TextView
+									android:id="@+id/textview438"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:gravity="center_horizontal|center_vertical"
+									android:text="="
+									android:textSize="12sp"
+									android:textStyle="bold"
+									android:textColor="#000000" />
+								<TextView
+									android:id="@+id/textview234"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:gravity="center_horizontal|center_vertical"
+									android:text="* نسبة الهالك للطوب"
+									android:textSize="12sp"
+									android:textStyle="bold"
+									android:textColor="#000000" />
+							</LinearLayout>
+							<HorizontalScrollView
+								android:id="@+id/hscroll66"
+								android:layout_width="match_parent"
+								android:layout_height="7dp"
+								android:padding="8dp" />
+							<LinearLayout
+								android:id="@+id/linear754"
+								android:layout_width="match_parent"
+								android:layout_height="match_parent"
+								android:padding="8dp"
+								android:orientation="vertical"
+								android:background="@drawable/rectangle_0_yellowffffeb3b_075_blackff000000">
+								<TextView
+									android:id="@+id/textview1370"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:gravity="center_horizontal|center_vertical"
+									android:text="كمية الطوب الأجمالية شامل الهالك ( طوبة )"
+									android:textSize="14sp"
+									android:textStyle="bold"
+									android:textColor="#000000"
+									android:layout_gravity="center_horizontal" />
+								<TextView
+									android:id="@+id/textview1401"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:gravity="center_horizontal|center_vertical"
+									android:text="="
+									android:textSize="14sp"
+									android:textStyle="bold"
+									android:textColor="#000000"
+									android:layout_gravity="center_horizontal|center_vertical" />
+								<LinearLayout
+									android:id="@+id/linear388"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:gravity="center_horizontal|center_vertical"
+									android:orientation="horizontal">
+									<TextView
+										android:id="@+id/textview815"
+										android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										android:padding="8dp"
+										android:text="طوبة"
+										android:textSize="14sp"
+										android:textStyle="bold"
+										android:textColor="#000000" />
+									<EditText
+										android:id="@+id/edittext32"
+										android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										android:padding="8dp"
+										android:background="#FFC107"
+										android:gravity="center_horizontal|center_vertical"
+										android:text="00.00"
+										android:textSize="14sp"
+										android:textStyle="bold"
+										android:textColor="#000000"
+										android:hint="Edit Text"
+										android:textColorHint="#607D8B"
+										android:inputType="numberDecimal"
+										android:enabled="false" />
+								</LinearLayout>
+							</LinearLayout>
+						</LinearLayout>
+						<TextView
+							android:id="@+id/textview475"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:text="-----‐---------------------------------"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+						<TextView
+							android:id="@+id/textview440"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:text="كمية مونة الربط واللصق المطلوبة\nوالخامات داخل مونة الربط واللصق"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#E91E63" />
+						<HorizontalScrollView
+							android:id="@+id/hscroll63"
+							android:layout_width="match_parent"
+							android:layout_height="7dp"
+							android:padding="8dp"
+							android:layout_gravity="center_horizontal|center_vertical" />
+						<LinearLayout
+							android:id="@+id/linear737"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:orientation="horizontal"
+							android:background="@drawable/rectangle_0_purplefff3e5f5_050_blackff000000">
+							<TextView
+								android:id="@+id/textview1371"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:text="م٣"
+								android:textSize="14sp"
+								android:textStyle="bold"
+								android:textColor="#000000" />
+							<EditText
+								android:id="@+id/edittext33"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:background="#D7CCC8"
+								android:gravity="center_horizontal|center_vertical"
+								android:text="00.00"
+								android:textSize="14sp"
+								android:textStyle="bold"
+								android:textColor="#000000"
+								android:hint="Edit Text"
+								android:textColorHint="#607D8B"
+								android:inputType="numberSigned" />
+							<TextView
+								android:id="@+id/textview1372"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:gravity="center_horizontal|center_vertical"
+								android:text="="
+								android:textSize="12sp"
+								android:textStyle="bold"
+								android:textColor="#000000" />
+							<TextView
+								android:id="@+id/textview1373"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:gravity="center_horizontal|center_vertical"
+								android:text="كمية مونة اللصق المطلوبة ( م٣ )"
+								android:textSize="14sp"
+								android:textStyle="bold"
+								android:textColor="#000000" />
+						</LinearLayout>
+						<HorizontalScrollView
+							android:id="@+id/hscroll67"
+							android:layout_width="match_parent"
+							android:layout_height="7dp"
+							android:padding="8dp" />
+						<LinearLayout
+							android:id="@+id/linear747"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:orientation="vertical">
+							<LinearLayout
+								android:id="@+id/linear176"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:gravity="center_horizontal|center_vertical"
+								android:orientation="horizontal"
+								android:background="@drawable/rectangle_0_purplefff3e5f5_050_blackff000000">
+								<TextView
+									android:id="@+id/textview1374"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:text="كجم"
+									android:textSize="12sp"
+									android:textStyle="bold"
+									android:textColor="#000000" />
+								<EditText
+									android:id="@+id/edittext34"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:background="#FFC107"
+									android:gravity="center_horizontal|center_vertical"
+									android:text="00.00"
+									android:textSize="12sp"
+									android:textStyle="bold"
+									android:textColor="#000000"
+									android:hint="Edit Text"
+									android:textColorHint="#607D8B"
+									android:inputType="numberDecimal" />
+								<TextView
+									android:id="@+id/textview1375"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:gravity="center_horizontal|center_vertical"
+									android:text="="
+									android:textSize="12sp"
+									android:textStyle="bold"
+									android:textColor="#000000" />
+								<TextView
+									android:id="@+id/textview1376"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:gravity="center_horizontal|center_vertical"
+									android:text="كمية الأسمنت بمونة اللصق ( كجم )"
+									android:textSize="12sp"
+									android:textStyle="bold"
+									android:textColor="#000000" />
+							</LinearLayout>
+							<HorizontalScrollView
+								android:id="@+id/hscroll68"
+								android:layout_width="match_parent"
+								android:layout_height="7dp"
+								android:padding="8dp" />
+							<LinearLayout
+								android:id="@+id/linear748"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:gravity="center_horizontal|center_vertical"
+								android:orientation="horizontal"
+								android:background="@drawable/rectangle_0_purplefff3e5f5_050_blackff000000">
+								<TextView
+									android:id="@+id/textview1432"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:gravity="center_horizontal|center_vertical"
+									android:text="%"
+									android:textSize="12sp"
+									android:textStyle="bold"
+									android:textColor="#000000" />
+								<EditText
+									android:id="@+id/edittext35"
+									android:layout_width="80dp"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:background="#CFD8DC"
+									android:gravity="center_horizontal|center_vertical"
+									android:textSize="12sp"
+									android:textStyle="bold"
+									android:textColor="#000000"
+									android:hint="5"
+									android:textColorHint="#B0BEC5"
+									android:inputType="numberDecimal" />
+								<TextView
+									android:id="@+id/textview1404"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:gravity="center_horizontal|center_vertical"
+									android:text="="
+									android:textSize="12sp"
+									android:textStyle="bold"
+									android:textColor="#000000" />
+								<TextView
+									android:id="@+id/textview1405"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:gravity="center_horizontal|center_vertical"
+									android:text="* نسبة الهالك بالأسمنت"
+									android:textSize="12sp"
+									android:textStyle="bold"
+									android:textColor="#000000" />
+							</LinearLayout>
+							<HorizontalScrollView
+								android:id="@+id/hscroll78"
+								android:layout_width="match_parent"
+								android:layout_height="7dp"
+								android:padding="8dp" />
+							<LinearLayout
+								android:id="@+id/linear753"
+								android:layout_width="match_parent"
+								android:layout_height="match_parent"
+								android:padding="8dp"
+								android:orientation="vertical"
+								android:background="@drawable/rectangle_0_yellowffffeb3b_075_blackff000000">
+								<TextView
+									android:id="@+id/textview1402"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:gravity="center_horizontal|center_vertical"
+									android:text="كمية الأسمنت شامل الهالك ( كجم )"
+									android:textSize="14sp"
+									android:textStyle="bold"
+									android:textColor="#000000"
+									android:layout_gravity="center_horizontal" />
+								<TextView
+									android:id="@+id/textview1403"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:gravity="center_horizontal|center_vertical"
+									android:text="="
+									android:textSize="14sp"
+									android:textStyle="bold"
+									android:textColor="#000000"
+									android:layout_gravity="center_horizontal|center_vertical" />
+								<LinearLayout
+									android:id="@+id/linear749"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:gravity="center_horizontal|center_vertical"
+									android:orientation="horizontal">
+									<TextView
+										android:id="@+id/textview1406"
+										android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										android:padding="8dp"
+										android:text="كجم"
+										android:textSize="14sp"
+										android:textStyle="bold"
+										android:textColor="#000000" />
+									<EditText
+										android:id="@+id/edittext36"
+										android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										android:padding="8dp"
+										android:background="#FFC107"
+										android:gravity="center_horizontal|center_vertical"
+										android:text="00.00"
+										android:textSize="14sp"
+										android:textStyle="bold"
+										android:textColor="#000000"
+										android:hint="Edit Text"
+										android:textColorHint="#607D8B"
+										android:inputType="numberDecimal"
+										android:enabled="false" />
+								</LinearLayout>
+							</LinearLayout>
+							<HorizontalScrollView
+								android:id="@+id/hscroll84"
+								android:layout_width="match_parent"
+								android:layout_height="7dp"
+								android:padding="8dp" />
+							<LinearLayout
+								android:id="@+id/linear152"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:gravity="center_horizontal|center_vertical"
+								android:orientation="horizontal"
+								android:background="@drawable/rectangle_0_purplefff3e5f5_050_blackff000000">
+								<TextView
+									android:id="@+id/textview629"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:text="شيكارة"
+									android:textSize="12sp"
+									android:textStyle="bold"
+									android:textColor="#000000" />
+								<EditText
+									android:id="@+id/edittext37"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:background="#D7CCC8"
+									android:gravity="center_horizontal|center_vertical"
+									android:text="00.00"
+									android:textSize="12sp"
+									android:textStyle="bold"
+									android:textColor="#000000"
+									android:hint="Edit Text"
+									android:textColorHint="#B0BEC5"
+									android:inputType="numberDecimal"
+									android:enabled="false" />
+								<TextView
+									android:id="@+id/textview630"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:gravity="center_horizontal|center_vertical"
+									android:text="="
+									android:textSize="12sp"
+									android:textStyle="bold"
+									android:textColor="#000000" />
+								<TextView
+									android:id="@+id/textview631"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:gravity="center_horizontal|center_vertical"
+									android:text="عدد الشكاير المطلوبة شامل الهالك بدون تقريب ( شيكارة )"
+									android:textSize="12sp"
+									android:textStyle="bold"
+									android:textColor="#000000" />
+							</LinearLayout>
+							<HorizontalScrollView
+								android:id="@+id/hscroll81"
+								android:layout_width="match_parent"
+								android:layout_height="7dp"
+								android:padding="8dp" />
+							<LinearLayout
+								android:id="@+id/linear752"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:gravity="center_horizontal|center_vertical"
+								android:orientation="horizontal"
+								android:background="@drawable/rectangle_0_purplefff3e5f5_050_blackff000000">
+								<TextView
+									android:id="@+id/textview1413"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:text="شيكارة"
+									android:textSize="12sp"
+									android:textStyle="bold"
+									android:textColor="#000000" />
+								<EditText
+									android:id="@+id/edittext38"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:background="#D7CCC8"
+									android:gravity="center_horizontal|center_vertical"
+									android:text="00.00"
+									android:textSize="12sp"
+									android:textStyle="bold"
+									android:textColor="#000000"
+									android:hint="Edit Text"
+									android:textColorHint="#B0BEC5"
+									android:inputType="numberDecimal"
+									android:enabled="false" />
+								<TextView
+									android:id="@+id/textview1414"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:gravity="center_horizontal|center_vertical"
+									android:text="="
+									android:textSize="12sp"
+									android:textStyle="bold"
+									android:textColor="#000000" />
+								<TextView
+									android:id="@+id/textview1415"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:gravity="center_horizontal|center_vertical"
+									android:text="عدد الشكاير المطلوبة شامل الهالك بعد التقريب لأقرب شيكارة ( شيكارة )"
+									android:textSize="12sp"
+									android:textStyle="bold"
+									android:textColor="#000000" />
+							</LinearLayout>
+							<HorizontalScrollView
+								android:id="@+id/hscroll82"
+								android:layout_width="match_parent"
+								android:layout_height="7dp"
+								android:padding="8dp" />
+							<LinearLayout
+								android:id="@+id/linear769"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:gravity="center_horizontal|center_vertical"
+								android:orientation="vertical"
+								android:background="@drawable/rectangle_0_yellowffffeb3b_075_blackff000000">
+								<TextView
+									android:id="@+id/textview1379"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:gravity="center_horizontal|center_vertical"
+									android:text="كمية الأسمنت بمونة اللصق &quot; شامل الهالك وبعد التقريب &quot; ( طن )"
+									android:textSize="14sp"
+									android:textStyle="bold"
+									android:textColor="#000000" />
+								<TextView
+									android:id="@+id/textview1378"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:gravity="center_horizontal|center_vertical"
+									android:text="="
+									android:textSize="12sp"
+									android:textStyle="bold"
+									android:textColor="#000000" />
+								<LinearLayout
+									android:id="@+id/linear770"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:gravity="center_horizontal|center_vertical"
+									android:orientation="horizontal">
+									<TextView
+										android:id="@+id/textview1377"
+										android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										android:padding="8dp"
+										android:text="طن"
+										android:textSize="14sp"
+										android:textStyle="bold"
+										android:textColor="#000000"
+										android:enabled="false" />
+									<EditText
+										android:id="@+id/edittext39"
+										android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										android:padding="8dp"
+										android:background="#80CBC4"
+										android:gravity="center_horizontal|center_vertical"
+										android:text="00.00"
+										android:textSize="14sp"
+										android:textStyle="bold"
+										android:textColor="#000000"
+										android:hint="Edit Text"
+										android:textColorHint="#607D8B"
+										android:inputType="numberDecimal"
+										android:enabled="false" />
+								</LinearLayout>
+							</LinearLayout>
+						</LinearLayout>
+						<HorizontalScrollView
+							android:id="@+id/hscroll69"
+							android:layout_width="match_parent"
+							android:layout_height="7dp"
+							android:padding="8dp" />
+						<LinearLayout
+							android:id="@+id/linear785"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:orientation="vertical">
+							<LinearLayout
+								android:id="@+id/linear739"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:gravity="center_horizontal|center_vertical"
+								android:orientation="horizontal"
+								android:background="@drawable/rectangle_0_purplefff3e5f5_050_blackff000000">
+								<TextView
+									android:id="@+id/textview1400"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:gravity="center_horizontal|center_vertical"
+									android:text="م٣"
+									android:textSize="14sp"
+									android:textStyle="bold"
+									android:textColor="#000000" />
+								<EditText
+									android:id="@+id/edittext40"
+									android:layout_width="80dp"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:background="#80CBC4"
+									android:gravity="center_horizontal|center_vertical"
+									android:text="00.00"
+									android:textSize="14sp"
+									android:textStyle="bold"
+									android:textColor="#000000"
+									android:hint="Edit Text"
+									android:textColorHint="#607D8B"
+									android:inputType="numberDecimal"
+									android:enabled="false" />
+								<TextView
+									android:id="@+id/textview1380"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:text="="
+									android:textSize="12sp"
+									android:textStyle="bold"
+									android:textColor="#000000"
+									android:enabled="false" />
+								<TextView
+									android:id="@+id/textview1381"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:gravity="center_horizontal|center_vertical"
+									android:text="كمية الرمل بدون هالك ( م٣ )"
+									android:textSize="14sp"
+									android:textStyle="bold"
+									android:textColor="#000000" />
+							</LinearLayout>
+							<HorizontalScrollView
+								android:id="@+id/hscroll70"
+								android:layout_width="match_parent"
+								android:layout_height="7dp"
+								android:padding="8dp"
+								android:layout_gravity="center_horizontal|center_vertical" />
+							<LinearLayout
+								android:id="@+id/linear756"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:gravity="center_horizontal|center_vertical"
+								android:orientation="horizontal"
+								android:background="@drawable/rectangle_0_purplefff3e5f5_050_blackff000000">
+								<TextView
+									android:id="@+id/textview1433"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:gravity="center_horizontal|center_vertical"
+									android:text="%"
+									android:textSize="12sp"
+									android:textStyle="bold"
+									android:textColor="#000000" />
+								<EditText
+									android:id="@+id/edittext41"
+									android:layout_width="80dp"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:background="#CFD8DC"
+									android:gravity="center_horizontal|center_vertical"
+									android:textSize="12sp"
+									android:textStyle="bold"
+									android:textColor="#000000"
+									android:hint="10"
+									android:textColorHint="#B0BEC5"
+									android:inputType="numberDecimal" />
+								<TextView
+									android:id="@+id/textview1418"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:gravity="center_horizontal|center_vertical"
+									android:text="="
+									android:textSize="12sp"
+									android:textStyle="bold"
+									android:textColor="#000000" />
+								<TextView
+									android:id="@+id/textview1419"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:gravity="center_horizontal|center_vertical"
+									android:text="* نسبة الهالك"
+									android:textSize="12sp"
+									android:textStyle="bold"
+									android:textColor="#000000" />
+							</LinearLayout>
+							<HorizontalScrollView
+								android:id="@+id/hscroll79"
+								android:layout_width="match_parent"
+								android:layout_height="7dp"
+								android:padding="8dp" />
+							<LinearLayout
+								android:id="@+id/linear755"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:orientation="vertical"
+								android:background="@drawable/rectangle_0_yellowffffeb3b_075_blackff000000">
+								<TextView
+									android:id="@+id/textview1416"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:gravity="center_horizontal|center_vertical"
+									android:text="كمية الرمل الأجمالية شامل الهالك ( م٣ )"
+									android:textSize="14sp"
+									android:textStyle="bold"
+									android:textColor="#000000"
+									android:layout_gravity="center_horizontal" />
+								<TextView
+									android:id="@+id/textview1417"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:gravity="center_horizontal|center_vertical"
+									android:text="="
+									android:textSize="14sp"
+									android:textStyle="bold"
+									android:textColor="#000000"
+									android:layout_gravity="center_horizontal|center_vertical" />
+								<LinearLayout
+									android:id="@+id/linear757"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:gravity="center_horizontal|center_vertical"
+									android:orientation="horizontal">
+									<TextView
+										android:id="@+id/textview1420"
+										android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										android:padding="8dp"
+										android:text="م٣"
+										android:textSize="14sp"
+										android:textStyle="bold"
+										android:textColor="#000000" />
+									<EditText
+										android:id="@+id/edittext42"
+										android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										android:padding="8dp"
+										android:background="#FFC107"
+										android:gravity="center_horizontal|center_vertical"
+										android:text="00.00"
+										android:textSize="14sp"
+										android:textStyle="bold"
+										android:textColor="#000000"
+										android:hint="Edit Text"
+										android:textColorHint="#607D8B"
+										android:inputType="numberDecimal"
+										android:enabled="false" />
+								</LinearLayout>
+							</LinearLayout>
+						</LinearLayout>
+					</LinearLayout>
+					<TextView
+						android:id="@+id/textview1352"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:text="-----‐---------------------------------"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000" />
+					<LinearLayout
+						android:id="@+id/linear731"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:paddingTop="8dp"
+						android:paddingBottom="8dp"
+						android:gravity="center_horizontal|center_vertical"
+						android:orientation="vertical"
+						android:layout_gravity="center_horizontal|center_vertical">
+						<TextView
+							android:id="@+id/textview103"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:text="حساب التكلفة"
+							android:textSize="16sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+						<Button
+							android:id="@+id/button53"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:text="أولآ تكلفة التوريد والخامات"
+							android:textSize="14sp"
+							android:textStyle="bold"
+							android:textColor="#000000"
+							android:layout_gravity="right|center_vertical" />
+						<LinearLayout
+							android:id="@+id/linear780"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:background="@android:color/transparent"
+							android:gravity="right|center_vertical"
+							android:orientation="vertical">
+							<TextView
+								android:id="@+id/textview613"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:text="أولآ تكلفة التوريد والخامات"
+								android:textSize="12sp"
+								android:textStyle="bold"
+								android:textColor="#000000" />
+							<Button
+								android:id="@+id/button48"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:text="- في حالة توريد الطوب بالألف طوبة"
+								android:textSize="12sp"
+								android:textStyle="bold"
+								android:textColor="#000000" />
+							<Button
+								android:id="@+id/button49"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:gravity="center_horizontal|center_vertical"
+								android:text="- في حالة توريد الطوب بالمتر المكعب"
+								android:textSize="12sp"
+								android:textStyle="bold"
+								android:textColor="#000000" />
+						</LinearLayout>
+						<LinearLayout
+							android:id="@+id/linear777"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="center_horizontal|top"
+							android:orientation="vertical"
+							android:background="@drawable/rectangle_0_tealffe0f2f1_075_blackff000000">
+							<LinearLayout
+								android:id="@+id/linear781"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:gravity="right|center_vertical"
+								android:orientation="horizontal"
+								android:background="@drawable/rectangle_0_greyffe0e0e0_050_blackff000000">
+								<ImageView
+									android:id="@+id/imageview37"
+									android:layout_width="30dp"
+									android:layout_height="30dp"
+									android:src="@drawable/clos1"
+									android:scaleType="fitCenter"
+									android:layout_gravity="left|center_vertical" />
+								<LinearLayout
+									android:id="@+id/linear782"
+									android:layout_width="wrap_content"
+									android:layout_height="15dp"
+									android:padding="8dp"
+									android:orientation="horizontal"
+									android:layout_weight="1" />
+								<TextView
+									android:id="@+id/textview1462"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:gravity="right|center_vertical"
+									android:text="• تكلفة التوريد والخامات"
+									android:textSize="12sp"
+									android:textStyle="bold"
+									android:textColor="#000000"
+									android:layout_gravity="right" />
+							</LinearLayout>
+							<HorizontalScrollView
+								android:id="@+id/hscroll71"
+								android:layout_width="wrap_content"
+								android:layout_height="7dp"
+								android:padding="8dp"
+								android:layout_gravity="center_horizontal|center_vertical" />
+							<LinearLayout
+								android:id="@+id/linear767"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:gravity="center_horizontal|center_vertical"
+								android:orientation="horizontal"
+								android:background="@drawable/rectangle_0_purplefff3e5f5_050_blackff000000">
+								<TextView
+									android:id="@+id/textview1446"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:text="جنيه /\nألف طوبة"
+									android:textSize="12sp"
+									android:textStyle="bold"
+									android:textColor="#000000" />
+								<EditText
+									android:id="@+id/edittext43"
+									android:layout_width="80dp"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:background="#BBDEFB"
+									android:gravity="center_horizontal|center_vertical"
+									android:textSize="12sp"
+									android:textStyle="bold"
+									android:textColor="#000000"
+									android:textColorHint="#B0BEC5"
+									android:inputType="numberDecimal" />
+								<TextView
+									android:id="@+id/textview1447"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:gravity="center_horizontal|center_vertical"
+									android:text="="
+									android:textSize="12sp"
+									android:textStyle="bold"
+									android:textColor="#000000" />
+								<TextView
+									android:id="@+id/textview1448"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:gravity="center_horizontal|center_vertical"
+									android:text="سعر توريد الطوب\n( جنيه / ألف طوبة )"
+									android:textSize="12sp"
+									android:textStyle="bold"
+									android:textColor="#000000" />
+							</LinearLayout>
+							<HorizontalScrollView
+								android:id="@+id/hscroll80"
+								android:layout_width="match_parent"
+								android:layout_height="7dp"
+								android:padding="8dp" />
+							<LinearLayout
+								android:id="@+id/linear740"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:gravity="center_horizontal|center_vertical"
+								android:orientation="horizontal"
+								android:background="@drawable/rectangle_0_purplefff3e5f5_050_blackff000000">
+								<TextView
+									android:id="@+id/textview1382"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:gravity="center_horizontal|center_vertical"
+									android:text="جنيه\n/\nم٣ طوب"
+									android:textSize="12sp"
+									android:textStyle="bold"
+									android:textColor="#000000" />
+								<EditText
+									android:id="@+id/edittext44"
+									android:layout_width="80dp"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:background="#BBDEFB"
+									android:gravity="center_horizontal|center_vertical"
+									android:textSize="12sp"
+									android:textStyle="bold"
+									android:textColor="#000000"
+									android:textColorHint="#607D8B"
+									android:inputType="numberDecimal" />
+								<TextView
+									android:id="@+id/textview1383"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:gravity="center_horizontal|center_vertical"
+									android:text="="
+									android:textSize="12sp"
+									android:textStyle="bold"
+									android:textColor="#000000" />
+								<TextView
+									android:id="@+id/textview1384"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:gravity="center_horizontal|center_vertical"
+									android:text="سعر توريد الطوب\n( جنيه / م٣ طوب )"
+									android:textSize="12sp"
+									android:textStyle="bold"
+									android:textColor="#000000" />
+							</LinearLayout>
+							<Button
+								android:id="@+id/button104"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:text="سعر توريد الطوب اليوم"
+								android:textSize="12sp"
+								android:textStyle="bold"
+								android:textColor="#000000" />
+							<HorizontalScrollView
+								android:id="@+id/hscroll72"
+								android:layout_width="match_parent"
+								android:layout_height="7dp"
+								android:padding="8dp"
+								android:layout_gravity="center_horizontal|center_vertical" />
+							<LinearLayout
+								android:id="@+id/linear741"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:gravity="center_horizontal|center_vertical"
+								android:orientation="horizontal"
+								android:background="@drawable/rectangle_0_purplefff3e5f5_050_blackff000000">
+								<TextView
+									android:id="@+id/textview1385"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:text="جنيه / طن"
+									android:textSize="12sp"
+									android:textStyle="bold"
+									android:textColor="#000000" />
+								<EditText
+									android:id="@+id/edittext45"
+									android:layout_width="80dp"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:background="#BBDEFB"
+									android:gravity="center_horizontal|center_vertical"
+									android:textSize="12sp"
+									android:textStyle="bold"
+									android:textColor="#000000"
+									android:textColorHint="#607D8B"
+									android:inputType="numberDecimal" />
+								<TextView
+									android:id="@+id/textview1386"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:gravity="center_horizontal|center_vertical"
+									android:text="="
+									android:textSize="12sp"
+									android:textStyle="bold"
+									android:textColor="#000000" />
+								<TextView
+									android:id="@+id/textview1387"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:gravity="center_horizontal|center_vertical"
+									android:text="سعر توريد الأسمنت\n( جنيه / طن )"
+									android:textSize="12sp"
+									android:textStyle="bold"
+									android:textColor="#000000" />
+							</LinearLayout>
+							<Button
+								android:id="@+id/button102"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:text="سعر طن الأسمنت اليوم"
+								android:textSize="12sp"
+								android:textStyle="bold"
+								android:textColor="#000000" />
+							<HorizontalScrollView
+								android:id="@+id/hscroll73"
+								android:layout_width="match_parent"
+								android:layout_height="7dp"
+								android:padding="8dp" />
+							<LinearLayout
+								android:id="@+id/linear742"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:gravity="center_horizontal|center_vertical"
+								android:orientation="horizontal"
+								android:background="@drawable/rectangle_0_purplefff3e5f5_050_blackff000000">
+								<TextView
+									android:id="@+id/textview1388"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:text="جنيه / م٣"
+									android:textSize="12sp"
+									android:textStyle="bold"
+									android:textColor="#000000" />
+								<EditText
+									android:id="@+id/edittext46"
+									android:layout_width="80dp"
+									android:layout_height="35dp"
+									android:padding="8dp"
+									android:background="#BBDEFB"
+									android:gravity="center_horizontal|center_vertical"
+									android:textSize="12sp"
+									android:textStyle="bold"
+									android:textColor="#000000"
+									android:textColorHint="#607D8B"
+									android:inputType="numberDecimal" />
+								<TextView
+									android:id="@+id/textview1389"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:gravity="center_horizontal|center_vertical"
+									android:text="="
+									android:textSize="12sp"
+									android:textStyle="bold"
+									android:textColor="#000000" />
+								<TextView
+									android:id="@+id/textview1390"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:gravity="center_horizontal|center_vertical"
+									android:text="سعر توريد الرمل\n( جنيه / م٣ )"
+									android:textSize="12sp"
+									android:textStyle="bold"
+									android:textColor="#000000" />
+							</LinearLayout>
+							<Button
+								android:id="@+id/button103"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:text="سعر م٣ الرمل اليوم"
+								android:textSize="12sp"
+								android:textStyle="bold"
+								android:textColor="#000000" />
+							<HorizontalScrollView
+								android:id="@+id/hscroll30"
+								android:layout_width="match_parent"
+								android:layout_height="30dp"
+								android:padding="8dp"
+								android:layout_gravity="center_horizontal|center_vertical" />
+							<LinearLayout
+								android:id="@+id/linear743"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:gravity="center_horizontal|center_vertical"
+								android:orientation="horizontal"
+								android:background="@drawable/rectangle_0_purplefff3e5f5_050_blackff000000">
+								<TextView
+									android:id="@+id/textview1391"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:text="جنيه"
+									android:textSize="14sp"
+									android:textStyle="bold"
+									android:textColor="#000000" />
+								<EditText
+									android:id="@+id/edittext47"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:background="#81C784"
+									android:gravity="center_horizontal|center_vertical"
+									android:text="00.00"
+									android:textSize="14sp"
+									android:textStyle="bold"
+									android:textColor="#000000"
+									android:hint="Edit Text"
+									android:textColorHint="#607D8B"
+									android:inputType="numberDecimal"
+									android:enabled="false" />
+								<TextView
+									android:id="@+id/textview1392"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:gravity="center_horizontal|center_vertical"
+									android:text="="
+									android:textSize="12sp"
+									android:textStyle="bold"
+									android:textColor="#000000" />
+								<TextView
+									android:id="@+id/textview1393"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:gravity="center_horizontal|center_vertical"
+									android:text="إجمالي تكلفة توريد الطوب بدون هالك ( جنيه )"
+									android:textSize="12sp"
+									android:textStyle="bold"
+									android:textColor="#000000" />
+							</LinearLayout>
+							<HorizontalScrollView
+								android:id="@+id/hscroll75"
+								android:layout_width="match_parent"
+								android:layout_height="7dp"
+								android:padding="8dp"
+								android:layout_gravity="center_horizontal|center_vertical" />
+							<LinearLayout
+								android:id="@+id/linear153"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:gravity="center_horizontal|center_vertical"
+								android:orientation="horizontal"
+								android:background="@drawable/rectangle_0_purplefff3e5f5_050_blackff000000">
+								<TextView
+									android:id="@+id/textview1169"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:text="جنيه"
+									android:textSize="12sp"
+									android:textStyle="bold"
+									android:textColor="#000000" />
+								<EditText
+									android:id="@+id/edittext60"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:background="#FFC107"
+									android:gravity="center_horizontal|center_vertical"
+									android:text="00.00"
+									android:textSize="14sp"
+									android:textStyle="bold"
+									android:textColor="#000000"
+									android:hint="Edit Text"
+									android:textColorHint="#B0BEC5"
+									android:inputType="numberDecimal"
+									android:enabled="false" />
+								<TextView
+									android:id="@+id/textview1170"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:gravity="center_horizontal|center_vertical"
+									android:text="="
+									android:textSize="12sp"
+									android:textStyle="bold"
+									android:textColor="#000000" />
+								<TextView
+									android:id="@+id/textview1171"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:gravity="center_horizontal|center_vertical"
+									android:text="إجمالي تكلفة توريد الطوب شامل الهالك ( جنيه )"
+									android:textSize="12sp"
+									android:textStyle="bold"
+									android:textColor="#000000" />
+							</LinearLayout>
+							<HorizontalScrollView
+								android:id="@+id/hscroll88"
+								android:layout_width="match_parent"
+								android:layout_height="7dp"
+								android:padding="8dp" />
+							<LinearLayout
+								android:id="@+id/linear744"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:gravity="center_horizontal|center_vertical"
+								android:orientation="horizontal"
+								android:background="@drawable/rectangle_0_purplefff3e5f5_050_blackff000000">
+								<TextView
+									android:id="@+id/textview1394"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:text="جنيه"
+									android:textSize="14sp"
+									android:textStyle="bold"
+									android:textColor="#000000" />
+								<EditText
+									android:id="@+id/edittext48"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:background="#81C784"
+									android:gravity="center_horizontal|center_vertical"
+									android:text="00.00"
+									android:textSize="14sp"
+									android:textStyle="bold"
+									android:textColor="#000000"
+									android:hint="Edit Text"
+									android:textColorHint="#607D8B"
+									android:inputType="numberDecimal"
+									android:enabled="false" />
+								<TextView
+									android:id="@+id/textview1395"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:gravity="center_horizontal|center_vertical"
+									android:text="="
+									android:textSize="12sp"
+									android:textStyle="bold"
+									android:textColor="#000000" />
+								<TextView
+									android:id="@+id/textview1396"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:gravity="center_horizontal|center_vertical"
+									android:text="إجمالي تكلفة توريد الأسمنت بدون هالك ( جنيه )"
+									android:textSize="12sp"
+									android:textStyle="bold"
+									android:textColor="#000000" />
+							</LinearLayout>
+							<HorizontalScrollView
+								android:id="@+id/hscroll76"
+								android:layout_width="match_parent"
+								android:layout_height="7dp"
+								android:padding="8dp" />
+							<LinearLayout
+								android:id="@+id/linear786"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:gravity="center_horizontal|center_vertical"
+								android:orientation="horizontal"
+								android:background="@drawable/rectangle_0_purplefff3e5f5_050_blackff000000">
+								<TextView
+									android:id="@+id/textview1472"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:text="جنيه"
+									android:textSize="12sp"
+									android:textStyle="bold"
+									android:textColor="#000000" />
+								<EditText
+									android:id="@+id/edittext61"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:background="#FFC107"
+									android:gravity="center_horizontal|center_vertical"
+									android:text="00.00"
+									android:textSize="14sp"
+									android:textStyle="bold"
+									android:textColor="#000000"
+									android:hint="Edit Text"
+									android:textColorHint="#B0BEC5"
+									android:inputType="numberDecimal"
+									android:enabled="false" />
+								<TextView
+									android:id="@+id/textview1473"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:gravity="center_horizontal|center_vertical"
+									android:text="="
+									android:textSize="12sp"
+									android:textStyle="bold"
+									android:textColor="#000000" />
+								<TextView
+									android:id="@+id/textview1474"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:gravity="center_horizontal|center_vertical"
+									android:text="إجمالي تكلفة توريد الأسمنت شامل الهالك ( جنيه )"
+									android:textSize="12sp"
+									android:textStyle="bold"
+									android:textColor="#000000" />
+							</LinearLayout>
+							<HorizontalScrollView
+								android:id="@+id/hscroll89"
+								android:layout_width="match_parent"
+								android:layout_height="7dp"
+								android:padding="8dp" />
+							<LinearLayout
+								android:id="@+id/linear745"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:gravity="center_horizontal|center_vertical"
+								android:orientation="horizontal"
+								android:background="@drawable/rectangle_0_purplefff3e5f5_050_blackff000000">
+								<TextView
+									android:id="@+id/textview1397"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:text="جنيه"
+									android:textSize="14sp"
+									android:textStyle="bold"
+									android:textColor="#000000" />
+								<EditText
+									android:id="@+id/edittext49"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:background="#81C784"
+									android:gravity="center_horizontal|center_vertical"
+									android:text="00.00"
+									android:textSize="14sp"
+									android:textStyle="bold"
+									android:textColor="#000000"
+									android:hint="Edit Text"
+									android:textColorHint="#607D8B"
+									android:inputType="numberDecimal" />
+								<TextView
+									android:id="@+id/textview1398"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:gravity="center_horizontal|center_vertical"
+									android:text="="
+									android:textSize="12sp"
+									android:textStyle="bold"
+									android:textColor="#000000" />
+								<TextView
+									android:id="@+id/textview1399"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:gravity="center_horizontal|center_vertical"
+									android:text="اجمالي تكلفة الرمل بدون هالك ( جنيه )"
+									android:textSize="12sp"
+									android:textStyle="bold"
+									android:textColor="#000000" />
+							</LinearLayout>
+							<HorizontalScrollView
+								android:id="@+id/hscroll31"
+								android:layout_width="match_parent"
+								android:layout_height="7dp"
+								android:padding="8dp"
+								android:layout_gravity="center_horizontal|center_vertical" />
+							<LinearLayout
+								android:id="@+id/linear862"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:gravity="center_horizontal|center_vertical"
+								android:orientation="horizontal"
+								android:background="@drawable/rectangle_0_purplefff3e5f5_050_blackff000000">
+								<TextView
+									android:id="@+id/textview2041"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:text="جنيه"
+									android:textSize="12sp"
+									android:textStyle="bold"
+									android:textColor="#000000" />
+								<EditText
+									android:id="@+id/edittext62"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:background="#FFC107"
+									android:gravity="center_horizontal|center_vertical"
+									android:text="00.00"
+									android:textSize="14sp"
+									android:textStyle="bold"
+									android:textColor="#000000"
+									android:hint="Edit Text"
+									android:textColorHint="#B0BEC5"
+									android:inputType="numberDecimal"
+									android:enabled="false" />
+								<TextView
+									android:id="@+id/textview2042"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:gravity="center_horizontal|center_vertical"
+									android:text="="
+									android:textSize="12sp"
+									android:textStyle="bold"
+									android:textColor="#000000" />
+								<TextView
+									android:id="@+id/textview2043"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:gravity="center_horizontal|center_vertical"
+									android:text="اجمالي تكلفة الرمل شامل الهالك ( جنيه )"
+									android:textSize="12sp"
+									android:textStyle="bold"
+									android:textColor="#000000" />
+							</LinearLayout>
+							<HorizontalScrollView
+								android:id="@+id/hscroll90"
+								android:layout_width="match_parent"
+								android:layout_height="7dp"
+								android:padding="8dp" />
+							<LinearLayout
+								android:id="@+id/linear771"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:gravity="center_horizontal|center_vertical"
+								android:orientation="horizontal"
+								android:background="@drawable/rectangle_0_purplefff3e5f5_050_blackff000000">
+								<TextView
+									android:id="@+id/textview1453"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:text="جنيه"
+									android:textSize="14sp"
+									android:textStyle="bold"
+									android:textColor="#000000" />
+								<EditText
+									android:id="@+id/edittext50"
+									android:layout_width="100dp"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:background="#C8E6C9"
+									android:gravity="center_horizontal|center_vertical"
+									android:textSize="12sp"
+									android:textStyle="bold"
+									android:textColor="#000000"
+									android:textColorHint="#B0BEC5"
+									android:inputType="numberDecimal" />
+								<TextView
+									android:id="@+id/textview1454"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:gravity="center_horizontal|center_vertical"
+									android:text="="
+									android:textSize="12sp"
+									android:textStyle="bold"
+									android:textColor="#000000" />
+								<TextView
+									android:id="@+id/textview1455"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:gravity="center_horizontal|center_vertical"
+									android:text="* تكلفة المسامير وزوايا الربط بالمباني &quot; ان وجدت &quot; ( جنيه )"
+									android:textSize="12sp"
+									android:textStyle="bold"
+									android:textColor="#000000" />
+							</LinearLayout>
+							<HorizontalScrollView
+								android:id="@+id/hscroll83"
+								android:layout_width="match_parent"
+								android:layout_height="7dp"
+								android:padding="8dp" />
+							<LinearLayout
+								android:id="@+id/linear773"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:gravity="center_horizontal|center_vertical"
+								android:orientation="vertical"
+								android:background="@drawable/rectangle_0_purplefff3e5f5_075_blackff000000">
+								<EditText
+									android:id="@+id/edittext56y"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:background="@android:color/transparent"
+									android:gravity="center_horizontal|center_vertical"
+									android:text="اجمالي تكلفة توريد الخامات بدون هالك ( جنيه )"
+									android:textSize="14sp"
+									android:textStyle="bold"
+									android:textColor="#000000"
+									android:textColorHint="#607D8B"
+									android:enabled="false"
+									android:layout_gravity="right" />
+								<TextView
+									android:id="@+id/textview1457"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:gravity="center_horizontal|center_vertical"
+									android:text="="
+									android:textSize="12sp"
+									android:textStyle="bold"
+									android:textColor="#000000" />
+								<LinearLayout
+									android:id="@+id/linear774"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:gravity="center_horizontal|center_vertical"
+									android:orientation="horizontal">
+									<TextView
+										android:id="@+id/textview1459"
+										android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										android:padding="8dp"
+										android:text="جنيه"
+										android:textSize="12sp"
+										android:textStyle="bold"
+										android:textColor="#000000" />
+									<EditText
+										android:id="@+id/edittext51"
+										android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										android:padding="8dp"
+										android:background="#C5CAE9"
+										android:gravity="center_horizontal|center_vertical"
+										android:text="00.00"
+										android:textSize="14sp"
+										android:textStyle="bold"
+										android:textColor="#000000"
+										android:hint="Edit Text"
+										android:textColorHint="#607D8B"
+										android:inputType="numberDecimal"
+										android:enabled="false" />
+								</LinearLayout>
+							</LinearLayout>
+							<HorizontalScrollView
+								android:id="@+id/hscroll91"
+								android:layout_width="match_parent"
+								android:layout_height="7dp"
+								android:padding="8dp" />
+							<LinearLayout
+								android:id="@+id/linear865"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:orientation="vertical"
+								android:background="@drawable/rectangle_0_yellowffffeb3b_075_blackff000000">
+								<TextView
+									android:id="@+id/textview2050"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:gravity="center_horizontal|center_vertical"
+									android:text="اجمالي تكلفة توريد الخامات شامل الهالك ( جنيه )"
+									android:textSize="14sp"
+									android:textStyle="bold"
+									android:textColor="#000000"
+									android:layout_gravity="center_horizontal" />
+								<TextView
+									android:id="@+id/textview2051"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:gravity="center_horizontal|center_vertical"
+									android:text="="
+									android:textSize="14sp"
+									android:textStyle="bold"
+									android:textColor="#000000"
+									android:layout_gravity="center_horizontal|center_vertical" />
+								<LinearLayout
+									android:id="@+id/linear867"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:gravity="center_horizontal|center_vertical"
+									android:orientation="horizontal">
+									<TextView
+										android:id="@+id/textview2054"
+										android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										android:padding="8dp"
+										android:text="طوبة"
+										android:textSize="14sp"
+										android:textStyle="bold"
+										android:textColor="#000000" />
+									<EditText
+										android:id="@+id/edittext63"
+										android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										android:padding="8dp"
+										android:background="#C5CAE9"
+										android:gravity="center_horizontal|center_vertical"
+										android:text="00.00"
+										android:textSize="14sp"
+										android:textStyle="bold"
+										android:textColor="#000000"
+										android:hint="Edit Text"
+										android:textColorHint="#607D8B"
+										android:inputType="numberDecimal"
+										android:enabled="false" />
+								</LinearLayout>
+							</LinearLayout>
+						</LinearLayout>
+						<TextView
+							android:id="@+id/textview513"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:text="-----‐---------------------------------"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+						<Button
+							android:id="@+id/button54"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:text="ثانيآ تكلفة المصنعيات"
+							android:textSize="14sp"
+							android:textStyle="bold"
+							android:textColor="#000000"
+							android:layout_gravity="right" />
+						<LinearLayout
+							android:id="@+id/linear778"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:background="@android:color/transparent"
+							android:gravity="right|center_vertical"
+							android:orientation="vertical">
+							<TextView
+								android:id="@+id/textview1461"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:text="ثانيآ تكلفة المصنعيات"
+								android:textSize="12sp"
+								android:textStyle="bold"
+								android:textColor="#000000" />
+							<Button
+								android:id="@+id/button50"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:text="- في حالة مصنعية التركيب للألف طوبة"
+								android:textSize="12sp"
+								android:textStyle="bold"
+								android:textColor="#000000" />
+							<Button
+								android:id="@+id/button51"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:gravity="center_horizontal|center_vertical"
+								android:text="- في حالة مصنعية التركيب لل م٢"
+								android:textSize="12sp"
+								android:textStyle="bold"
+								android:textColor="#000000" />
+							<Button
+								android:id="@+id/button52"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:text="- في حالة مصنعية التركيب لل م٣"
+								android:textSize="12sp"
+								android:textStyle="bold"
+								android:textColor="#000000" />
+						</LinearLayout>
+						<LinearLayout
+							android:id="@+id/linear779"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:orientation="vertical"
+							android:background="@drawable/rectangle_0_tealffe0f2f1_075_blackff000000">
+							<LinearLayout
+								android:id="@+id/linear783"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:gravity="right|center_vertical"
+								android:orientation="horizontal"
+								android:background="@drawable/rectangle_0_greyffe0e0e0_050_blackff000000">
+								<ImageView
+									android:id="@+id/imageview38"
+									android:layout_width="30dp"
+									android:layout_height="30dp"
+									android:src="@drawable/clos1"
+									android:scaleType="fitCenter"
+									android:layout_gravity="left|center_vertical" />
+								<LinearLayout
+									android:id="@+id/linear784"
+									android:layout_width="wrap_content"
+									android:layout_height="15dp"
+									android:padding="8dp"
+									android:orientation="horizontal"
+									android:layout_weight="1" />
+								<TextView
+									android:id="@+id/textview1463"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:gravity="right|center_vertical"
+									android:text="• تكلفة المصنعية"
+									android:textSize="12sp"
+									android:textStyle="bold"
+									android:textColor="#000000"
+									android:layout_gravity="right" />
+							</LinearLayout>
+							<HorizontalScrollView
+								android:id="@+id/hscroll85"
+								android:layout_width="match_parent"
+								android:layout_height="7dp"
+								android:padding="8dp" />
+							<LinearLayout
+								android:id="@+id/linear93"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:gravity="center_horizontal|center_vertical"
+								android:orientation="horizontal"
+								android:background="@drawable/rectangle_0_purplefff3e5f5_050_blackff000000">
+								<TextView
+									android:id="@+id/textview466"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:gravity="center_horizontal|center_vertical"
+									android:text="جنيه /\nألف طوبة"
+									android:textSize="12sp"
+									android:textStyle="bold"
+									android:textColor="#000000" />
+								<EditText
+									android:id="@+id/edittext52"
+									android:layout_width="80dp"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:background="#BBDEFB"
+									android:gravity="center_horizontal|center_vertical"
+									android:textSize="12sp"
+									android:textStyle="bold"
+									android:textColor="#000000"
+									android:textColorHint="#607D8B"
+									android:inputType="numberDecimal" />
+								<TextView
+									android:id="@+id/textview276"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:gravity="center_horizontal|center_vertical"
+									android:text="="
+									android:textSize="12sp"
+									android:textStyle="bold"
+									android:textColor="#000000" />
+								<TextView
+									android:id="@+id/textview277"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:gravity="center_horizontal|center_vertical"
+									android:text="سعر مصنعية المباني ( تركيب الطوب )\n( جنيه / ألف طوبة )"
+									android:textSize="12sp"
+									android:textStyle="bold"
+									android:textColor="#000000" />
+							</LinearLayout>
+							<HorizontalScrollView
+								android:id="@+id/hscroll86"
+								android:layout_width="match_parent"
+								android:layout_height="7dp"
+								android:padding="8dp" />
+							<LinearLayout
+								android:id="@+id/linear94"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:gravity="center_horizontal|center_vertical"
+								android:orientation="horizontal"
+								android:background="@drawable/rectangle_0_purplefff3e5f5_050_blackff000000">
+								<TextView
+									android:id="@+id/textview1466"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:text="جنيه / م٢"
+									android:textSize="12sp"
+									android:textStyle="bold"
+									android:textColor="#000000" />
+								<EditText
+									android:id="@+id/edittext53"
+									android:layout_width="80dp"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:background="#BBDEFB"
+									android:gravity="center_horizontal|center_vertical"
+									android:textSize="12sp"
+									android:textStyle="bold"
+									android:textColor="#000000"
+									android:textColorHint="#B0BEC5"
+									android:inputType="numberDecimal" />
+								<TextView
+									android:id="@+id/textview1467"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:gravity="center_horizontal|center_vertical"
+									android:text="="
+									android:textSize="12sp"
+									android:textStyle="bold"
+									android:textColor="#000000" />
+								<TextView
+									android:id="@+id/textview1468"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:gravity="center_horizontal|center_vertical"
+									android:text="سعر مصنعية المباني ( تركيب الطوب )\n( جنيه / م٢ )"
+									android:textSize="12sp"
+									android:textStyle="bold"
+									android:textColor="#000000" />
+							</LinearLayout>
+							<HorizontalScrollView
+								android:id="@+id/hscroll87"
+								android:layout_width="match_parent"
+								android:layout_height="7dp"
+								android:padding="8dp" />
+							<LinearLayout
+								android:id="@+id/linear96"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:gravity="center_horizontal|center_vertical"
+								android:orientation="horizontal"
+								android:background="@drawable/rectangle_0_purplefff3e5f5_050_blackff000000">
+								<TextView
+									android:id="@+id/textview1469"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:text="جنيه / م٣"
+									android:textSize="12sp"
+									android:textStyle="bold"
+									android:textColor="#000000" />
+								<EditText
+									android:id="@+id/edittext54"
+									android:layout_width="80dp"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:background="#BBDEFB"
+									android:gravity="center_horizontal|center_vertical"
+									android:textSize="12sp"
+									android:textStyle="bold"
+									android:textColor="#000000"
+									android:textColorHint="#B0BEC5"
+									android:inputType="numberDecimal" />
+								<TextView
+									android:id="@+id/textview1470"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:gravity="center_horizontal|center_vertical"
+									android:text="="
+									android:textSize="12sp"
+									android:textStyle="bold"
+									android:textColor="#000000" />
+								<TextView
+									android:id="@+id/textview1471"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:gravity="center_horizontal|center_vertical"
+									android:text="سعر مصنعية المباني ( تركيب الطوب )\n( جنيه / م٣ )"
+									android:textSize="12sp"
+									android:textStyle="bold"
+									android:textColor="#000000" />
+							</LinearLayout>
+							<HorizontalScrollView
+								android:id="@+id/hscroll74"
+								android:layout_width="match_parent"
+								android:layout_height="7dp"
+								android:padding="8dp"
+								android:layout_gravity="center_horizontal|center_vertical" />
+							<LinearLayout
+								android:id="@+id/linear775"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:gravity="center_horizontal|center_vertical"
+								android:orientation="vertical"
+								android:background="@drawable/rectangle_0_yellowffffeb3b_075_blackff000000">
+								<EditText
+									android:id="@+id/edittext195"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:background="@android:color/transparent"
+									android:gravity="center_horizontal|center_vertical"
+									android:text="إجمالي تكلفة مصنعية  المباني ( جنيه )"
+									android:textSize="14sp"
+									android:textStyle="bold"
+									android:textColor="#000000"
+									android:textColorHint="#607D8B"
+									android:enabled="false"
+									android:layout_gravity="right" />
+								<TextView
+									android:id="@+id/textview288"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:gravity="center_horizontal|center_vertical"
+									android:text="="
+									android:textSize="12sp"
+									android:textStyle="bold"
+									android:textColor="#000000" />
+								<LinearLayout
+									android:id="@+id/linear776"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:gravity="center_horizontal|center_vertical"
+									android:orientation="horizontal">
+									<TextView
+										android:id="@+id/textview1460"
+										android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										android:padding="8dp"
+										android:text="جنيه"
+										android:textSize="12sp"
+										android:textStyle="bold"
+										android:textColor="#000000" />
+									<EditText
+										android:id="@+id/edittext55"
+										android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										android:padding="8dp"
+										android:background="#C5CAE9"
+										android:gravity="center_horizontal|center_vertical"
+										android:text="00.00"
+										android:textSize="14sp"
+										android:textStyle="bold"
+										android:textColor="#000000"
+										android:hint="Edit Text"
+										android:textColorHint="#607D8B"
+										android:inputType="numberDecimal"
+										android:enabled="false" />
+								</LinearLayout>
+							</LinearLayout>
+						</LinearLayout>
+					</LinearLayout>
+					<TextView
+						android:id="@+id/textview114"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:gravity="center_horizontal|center_vertical"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000" />
+					<LinearLayout
+						android:id="@+id/linear863"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:padding="8dp"
+						android:gravity="center_horizontal|center_vertical"
+						android:orientation="vertical"
+						android:background="@drawable/rectangle_0_limefff0f4c3_075_blackff000000">
+						<TextView
+							android:id="@+id/textview292"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="إجمالي تكلفة المباني بدون هالك\n( جنيه )"
+							android:textSize="16sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+						<TextView
+							android:id="@+id/textview291"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="="
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+						<LinearLayout
+							android:id="@+id/linear95"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:orientation="horizontal">
+							<TextView
+								android:id="@+id/textview473"
+								android:layout_width="wrap_content"
+								android:layout_height="37dp"
+								android:padding="8dp"
+								android:text="جنيه"
+								android:textSize="14sp"
+								android:textStyle="bold"
+								android:textColor="#000000" />
+							<EditText
+								android:id="@+id/edittext56"
+								android:layout_width="wrap_content"
+								android:layout_height="37dp"
+								android:padding="8dp"
+								android:background="#795548"
+								android:gravity="center_horizontal|center_vertical"
+								android:text="00.00"
+								android:textSize="14sp"
+								android:textStyle="bold"
+								android:textColor="#FFFFFF"
+								android:hint="Edit Text"
+								android:textColorHint="#607D8B"
+								android:inputType="numberDecimal"
+								android:enabled="false" />
+						</LinearLayout>
+					</LinearLayout>
+					<HorizontalScrollView
+						android:id="@+id/hscroll93"
+						android:layout_width="match_parent"
+						android:layout_height="7dp"
+						android:padding="8dp" />
+					<LinearLayout
+						android:id="@+id/linear870"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:orientation="vertical"
+						android:background="@drawable/rectangle_0_amberffffe082_075_blackff000000">
+						<TextView
+							android:id="@+id/textview2058"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="إجمالي تكلفة المباني شامل الهالك\n( جنيه )"
+							android:textSize="16sp"
+							android:textStyle="bold"
+							android:textColor="#000000"
+							android:layout_gravity="center_horizontal" />
+						<TextView
+							android:id="@+id/textview2059"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="="
+							android:textSize="14sp"
+							android:textStyle="bold"
+							android:textColor="#000000"
+							android:layout_gravity="center_horizontal|center_vertical" />
+						<LinearLayout
+							android:id="@+id/linear871"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:orientation="horizontal">
+							<TextView
+								android:id="@+id/textview2060"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:text="جنيه"
+								android:textSize="14sp"
+								android:textStyle="bold"
+								android:textColor="#000000" />
+							<EditText
+								android:id="@+id/edittext64"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:background="#795548"
+								android:gravity="center_horizontal|center_vertical"
+								android:text="00.00"
+								android:textSize="14sp"
+								android:textStyle="bold"
+								android:textColor="#FFFFFF"
+								android:hint="Edit Text"
+								android:textColorHint="#607D8B"
+								android:inputType="numberDecimal"
+								android:enabled="false" />
+						</LinearLayout>
+					</LinearLayout>
+				</LinearLayout>
+			</LinearLayout>
+		</ScrollView>
+	</LinearLayout>
+	<com.google.android.material.floatingactionbutton.FloatingActionButton
+		android:id="@+id/_fab"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_margin="16dp"
+		android:layout_gravity="right|bottom"
+		app:srcCompat="@drawable/ic_local_print_shop_black" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,3314 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<TextView
+		android:id="@+id/textview519"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:padding="8dp"
+		android:gravity="center_horizontal|center_vertical"
+		android:text="-----‐---------------------------"
+		android:textSize="14sp"
+		android:textStyle="bold"
+		android:textColor="#E91E63" />
+	<ScrollView
+		android:id="@+id/vscroll1"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:padding="8dp">
+		<LinearLayout
+			android:id="@+id/linear2d"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="8dp"
+			android:orientation="vertical"
+			android:background="@drawable/rectangle_0_tealffe0f2f1_1_blackff000000">
+			<LinearLayout
+				android:id="@+id/linear713"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:gravity="right|center_vertical"
+				android:orientation="horizontal"
+				android:background="@drawable/rectangle_0_greyffe0e0e0_050_blackff000000">
+				<ImageView
+					android:id="@+id/close"
+					android:layout_width="30dp"
+					android:layout_height="30dp"
+					android:src="@drawable/clos1"
+					android:scaleType="fitCenter"
+					android:layout_gravity="left|center_vertical" />
+				<LinearLayout
+					android:id="@+id/linear720"
+					android:layout_width="wrap_content"
+					android:layout_height="15dp"
+					android:padding="8dp"
+					android:orientation="horizontal"
+					android:layout_weight="1" />
+			</LinearLayout>
+			<TextView
+				android:id="@+id/textview1195"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:gravity="center_horizontal|center_vertical"
+				android:text="حساب عمق المطبق"
+				android:textSize="12sp"
+				android:textStyle="bold"
+				android:textColor="#000000"
+				android:layout_gravity="right" />
+			<LinearLayout
+				android:id="@+id/linear121"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:gravity="center_horizontal|center_vertical"
+				android:orientation="horizontal">
+				<EditText
+					android:id="@+id/edittext1d"
+					android:layout_width="150dp"
+					android:layout_height="35dp"
+					android:padding="8dp"
+					android:background="#C8E6C9"
+					android:gravity="center_horizontal|center_vertical"
+					android:textSize="12sp"
+					android:textStyle="bold"
+					android:textColor="#000000"
+					android:textColorHint="#B0BEC5" />
+				<TextView
+					android:id="@+id/textview341"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:gravity="center_horizontal|center_vertical"
+					android:text="ادخل اسم المطبق"
+					android:textSize="12sp"
+					android:textStyle="bold"
+					android:textColor="#000000" />
+			</LinearLayout>
+			<HorizontalScrollView
+				android:id="@+id/hscroll5"
+				android:layout_width="match_parent"
+				android:layout_height="7dp"
+				android:padding="8dp" />
+			<LinearLayout
+				android:id="@+id/linear77"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:gravity="center_horizontal|top"
+				android:orientation="vertical"
+				android:background="@drawable/rectangle_0_tealffe0f2f1_075_blackff000000">
+				<LinearLayout
+					android:id="@+id/linear456"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:background="#F3E5F5"
+					android:gravity="center_horizontal|center_vertical"
+					android:orientation="horizontal">
+					<EditText
+						android:id="@+id/edittext2xd"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:gravity="center_horizontal|center_vertical"
+						android:text="00.00"
+						android:textSize="12sp"
+						android:textColor="#000000"
+						android:hint="Edit Text"
+						android:textColorHint="#607D8B"
+						android:inputType="numberDecimal"
+						android:enabled="false" />
+					<TextView
+						android:id="@+id/textview1208"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:text="مم"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000" />
+					<EditText
+						android:id="@+id/edittext2d"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:background="#BBDEFB"
+						android:gravity="center_horizontal|center_vertical"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000"
+						android:hint="                              "
+						android:textColorHint="#B0BEC5"
+						android:inputType="numberSigned" />
+					<TextView
+						android:id="@+id/textview1209"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:gravity="center_horizontal|center_vertical"
+						android:text="="
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000" />
+					<TextView
+						android:id="@+id/textview22"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:gravity="center_horizontal|center_vertical"
+						android:text="قطر مأسورة الخروج من المطبق ( مم )"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000" />
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/linear119"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:background="#F3E5F5"
+					android:gravity="center_horizontal|center_vertical"
+					android:orientation="horizontal">
+					<EditText
+						android:id="@+id/edittext3d"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:background="#BBDEFB"
+						android:gravity="center_horizontal|center_vertical"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000"
+						android:hint="                              "
+						android:textColorHint="#607D8B"
+						android:inputType="numberSigned|numberDecimal" />
+					<TextView
+						android:id="@+id/textview592"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:text="="
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000" />
+					<TextView
+						android:id="@+id/textview135"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:gravity="center_horizontal|center_vertical"
+						android:text="منسوب الأرض\nالطبيعية"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000" />
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/linear120"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:background="#F3E5F5"
+					android:gravity="center_horizontal|center_vertical"
+					android:orientation="horizontal">
+					<EditText
+						android:id="@+id/edittext4d"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:background="#BBDEFB"
+						android:gravity="center_horizontal|center_vertical"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000"
+						android:hint="                              "
+						android:textColorHint="#607D8B"
+						android:inputType="numberSigned|numberDecimal" />
+					<TextView
+						android:id="@+id/textview340"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:gravity="center_horizontal|center_vertical"
+						android:text="="
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000" />
+					<TextView
+						android:id="@+id/textview138"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:gravity="center_horizontal|center_vertical"
+						android:text="منسوب مية المأسورة\nالخارجة من المطبق"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000" />
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/linear118"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:gravity="center_horizontal|center_vertical"
+					android:orientation="horizontal"
+					android:background="@drawable/rectangle_0_purplefff3e5f5_050_blackff000000">
+					<TextView
+						android:id="@+id/textview606"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:text="م"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000" />
+					<EditText
+						android:id="@+id/edittext5d"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:background="#D7CCC8"
+						android:gravity="center_horizontal|center_vertical"
+						android:text="00.00"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000"
+						android:hint="                              "
+						android:textColorHint="#607D8B"
+						android:inputType="numberDecimal"
+						android:enabled="false" />
+					<TextView
+						android:id="@+id/textview334"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:gravity="center_horizontal|center_vertical"
+						android:text="="
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000" />
+					<TextView
+						android:id="@+id/textview335"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:gravity="center_horizontal|center_vertical"
+						android:text="عمق المطبق\n( م )"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000" />
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/linear195"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:gravity="center_horizontal|center_vertical"
+					android:orientation="horizontal">
+					<TextView
+						android:id="@+id/textview2d"
+						android:layout_width="200dp"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:gravity="center_horizontal|center_vertical"
+						android:text="................................."
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000" />
+					<TextView
+						android:id="@+id/textview603"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:gravity="center_horizontal|center_vertical"
+						android:text="="
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000" />
+					<TextView
+						android:id="@+id/textview604"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:gravity="center_horizontal|center_vertical"
+						android:text="فئة المطبق"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000" />
+				</LinearLayout>
+			</LinearLayout>
+			<TextView
+				android:id="@+id/textview123d"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:gravity="center_horizontal|center_vertical"
+				android:text="حساب الخرسانات"
+				android:textSize="14sp"
+				android:textStyle="bold"
+				android:textColor="#E91E63"
+				android:layout_gravity="center_horizontal" />
+			<LinearLayout
+				android:id="@+id/linear222d"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:padding="8dp"
+				android:orientation="vertical"
+				android:background="@drawable/rectangle_0_tealffe0f2f1_075_blackff000000">
+				<TextView
+					android:id="@+id/textview659d"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="■ بيانات المطبق"
+					android:textSize="12sp"
+					android:textStyle="bold"
+					android:textColor="#000000"
+					android:layout_gravity="right" />
+				<TextView
+					android:id="@+id/textview660d"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:gravity="right|center_vertical"
+					android:text="تفاصيل المطبق : ........................................"
+					android:textSize="12sp"
+					android:textStyle="bold"
+					android:textColor="#000000"
+					android:layout_gravity="right" />
+				<LinearLayout
+					android:id="@+id/linear157d"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:background="#F3E5F5"
+					android:gravity="center_horizontal|center_vertical"
+					android:orientation="horizontal">
+					<TextView
+						android:id="@+id/textview605"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:text="م"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000" />
+					<EditText
+						android:id="@+id/edittext6d"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:background="#CFD8DC"
+						android:gravity="center_horizontal|center_vertical"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000"
+						android:hint="                         "
+						android:textColorHint="#607D8B"
+						android:inputType="numberDecimal" />
+					<TextView
+						android:id="@+id/textview405"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:gravity="center_horizontal|center_vertical"
+						android:text="="
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000" />
+					<TextView
+						android:id="@+id/textview406"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:gravity="center_horizontal|center_vertical"
+						android:text="القطر الداخلي للمطبق\n( م ) "
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000" />
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/linear158d"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:gravity="center_horizontal|center_vertical"
+					android:orientation="vertical">
+					<TextView
+						android:id="@+id/textview631d"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:gravity="right|center_vertical"
+						android:text="الأبعاد الداخليه للمطبق"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000" />
+					<LinearLayout
+						android:id="@+id/linear1051"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:gravity="center_horizontal|center_vertical"
+						android:orientation="horizontal"
+						android:layout_gravity="center_horizontal|center_vertical">
+						<LinearLayout
+							android:id="@+id/linear1053"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:background="#F3E5F5"
+							android:gravity="center_horizontal|top"
+							android:orientation="vertical">
+							<TextView
+								android:id="@+id/textview2360"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:gravity="center_horizontal|center_vertical"
+								android:text="العرض ( م )"
+								android:textSize="12sp"
+								android:textStyle="bold"
+								android:textColor="#000000" />
+							<EditText
+								android:id="@+id/edittext102d"
+								android:layout_width="75dp"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:background="#CFD8DC"
+								android:gravity="center_horizontal|center_vertical"
+								android:textSize="12sp"
+								android:textStyle="bold"
+								android:textColor="#000000"
+								android:textColorHint="#607D8B"
+								android:inputType="numberDecimal" />
+						</LinearLayout>
+						<TextView
+							android:id="@+id/textview2358"
+							android:layout_width="wrap_content"
+							android:layout_height="match_parent"
+							android:padding="8dp"
+							android:text=".\n.\n.\n."
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+						<LinearLayout
+							android:id="@+id/linear1054"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:background="#F3E5F5"
+							android:gravity="center_horizontal|top"
+							android:orientation="vertical">
+							<TextView
+								android:id="@+id/textview2361"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:gravity="center_horizontal|center_vertical"
+								android:text="الطول ( م )"
+								android:textSize="12sp"
+								android:textStyle="bold"
+								android:textColor="#000000" />
+							<EditText
+								android:id="@+id/edittext101d"
+								android:layout_width="75dp"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:background="#CFD8DC"
+								android:gravity="center_horizontal|center_vertical"
+								android:textSize="12sp"
+								android:textStyle="bold"
+								android:textColor="#000000"
+								android:textColorHint="#607D8B"
+								android:inputType="numberDecimal" />
+						</LinearLayout>
+					</LinearLayout>
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/linear125d"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:background="#F3E5F5"
+					android:gravity="center_horizontal|center_vertical"
+					android:orientation="horizontal">
+					<TextView
+						android:id="@+id/textview60"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:gravity="center_horizontal|center_vertical"
+						android:text="م"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000" />
+					<EditText
+						android:id="@+id/edittext7d"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:background="#CFD8DC"
+						android:gravity="center_horizontal|center_vertical"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000"
+						android:hint="                         "
+						android:textColorHint="#607D8B"
+						android:inputType="numberDecimal" />
+					<TextView
+						android:id="@+id/textview601"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:text="="
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000" />
+					<TextView
+						android:id="@+id/textview136d"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:gravity="center_horizontal|center_vertical"
+						android:text="سمك حائط الحطة الأخيرة\nسواء أسفل الغطاء ( رقبة المطبق )\nأو أسفل السقف ( م )"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000" />
+				</LinearLayout>
+			</LinearLayout>
+			<LinearLayout
+				android:id="@+id/linear220d"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:padding="8dp"
+				android:gravity="center_horizontal|center_vertical"
+				android:orientation="vertical"
+				android:background="@drawable/rectangle_0_tealffe0f2f1_075_blackff000000">
+				<TextView
+					android:id="@+id/textview658d"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:gravity="right|center_vertical"
+					android:text="■ بيانات الغطاء"
+					android:textSize="12sp"
+					android:textStyle="bold"
+					android:textColor="#000000"
+					android:layout_gravity="right|center_vertical" />
+				<LinearLayout
+					android:id="@+id/linear177d"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:gravity="center_horizontal|center_vertical"
+					android:orientation="horizontal"
+					android:layout_gravity="center_horizontal|center_vertical">
+					<LinearLayout
+						android:id="@+id/linear178d"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:background="#F3E5F5"
+						android:gravity="center_horizontal|top"
+						android:orientation="vertical">
+						<TextView
+							android:id="@+id/textview564d"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="ارتفاع شنبر\nالغطاء ( م )"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+						<EditText
+							android:id="@+id/edittext9d"
+							android:layout_width="75dp"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:background="#CFD8DC"
+							android:gravity="center_horizontal|center_vertical"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000"
+							android:textColorHint="#607D8B"
+							android:inputType="numberDecimal" />
+					</LinearLayout>
+					<TextView
+						android:id="@+id/textview568d"
+						android:layout_width="10dp"
+						android:layout_height="match_parent"
+						android:paddingTop="8dp"
+						android:paddingBottom="8dp"
+						android:gravity="center_horizontal|center_vertical"
+						android:text=".\n.\n.\n."
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000" />
+					<LinearLayout
+						android:id="@+id/linear567d"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:background="#F3E5F5"
+						android:gravity="center_horizontal|top"
+						android:orientation="vertical">
+						<TextView
+							android:id="@+id/textview567d"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="قطر الغطاء\nالثاني ( م )"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+						<EditText
+							android:id="@+id/edittext103d"
+							android:layout_width="75dp"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:background="#CFD8DC"
+							android:gravity="center_horizontal|center_vertical"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000"
+							android:textColorHint="#607D8B"
+							android:inputType="numberDecimal" />
+					</LinearLayout>
+					<TextView
+						android:id="@+id/textview565d"
+						android:layout_width="10dp"
+						android:layout_height="match_parent"
+						android:paddingTop="8dp"
+						android:paddingBottom="8dp"
+						android:gravity="center_horizontal|center_vertical"
+						android:text=".\n.\n.\n."
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000" />
+					<LinearLayout
+						android:id="@+id/linear566d"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:background="#F3E5F5"
+						android:gravity="center_horizontal|top"
+						android:orientation="vertical">
+						<TextView
+							android:id="@+id/textview566d"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="قطر الغطاء\n( م )"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+						<EditText
+							android:id="@+id/edittext8d"
+							android:layout_width="75dp"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:background="#CFD8DC"
+							android:gravity="center_horizontal|center_vertical"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000"
+							android:textColorHint="#607D8B"
+							android:inputType="numberDecimal" />
+					</LinearLayout>
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/linear453d"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:gravity="center_horizontal|center_vertical"
+					android:orientation="horizontal"
+					android:background="@drawable/rectangle_0_purplefff3e5f5_050_blackff000000">
+					<TextView
+						android:id="@+id/textview531"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:text="م"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000" />
+					<EditText
+						android:id="@+id/edittext10d"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:background="#FFC107"
+						android:gravity="center_horizontal|center_vertical"
+						android:text="00.00"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000"
+						android:hint="                              "
+						android:textColorHint="#B0BEC5"
+						android:inputType="numberDecimal"
+						android:enabled="false" />
+					<TextView
+						android:id="@+id/textview532"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:gravity="center_horizontal|center_vertical"
+						android:text="="
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000" />
+					<TextView
+						android:id="@+id/textview533d"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:gravity="center_horizontal|center_vertical"
+						android:text="كمية الخرسانة حول الغطاء ( م٣ )"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000" />
+				</LinearLayout>
+				<HorizontalScrollView
+					android:id="@+id/hscroll6"
+					android:layout_width="match_parent"
+					android:layout_height="7dp"
+					android:padding="8dp" />
+				<LinearLayout
+					android:id="@+id/linear101d"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:orientation="vertical"
+					android:background="@drawable/rectangle_0_tealffe0f2f1_050_blackff000000">
+					<LinearLayout
+						android:id="@+id/linear102d"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:background="#F3E5F5"
+						android:gravity="center_horizontal|center_vertical"
+						android:orientation="horizontal">
+						<TextView
+							android:id="@+id/textview400"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="كجم/م٣"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000"
+							android:enabled="false" />
+						<EditText
+							android:id="@+id/edittext41d"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:background="#BBDEFB"
+							android:gravity="center_horizontal|center_vertical"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000"
+							android:hint="                              "
+							android:textColorHint="#607D8B"
+							android:inputType="numberDecimal" />
+						<TextView
+							android:id="@+id/textview2362"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="="
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+						<TextView
+							android:id="@+id/textview41d"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="المحتوي الأسمنتي بالمتر المكعب خرسانة\n&quot;كمية الأسمنت لكل م٣&quot;\n( كجم/م٣ )"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+					</LinearLayout>
+					<LinearLayout
+						android:id="@+id/linear103d"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:background="#F3E5F5"
+						android:gravity="center_horizontal|center_vertical"
+						android:orientation="horizontal">
+						<TextView
+							android:id="@+id/textview1169"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:text="كجم"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+						<EditText
+							android:id="@+id/edittext42d"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:background="#CFD8DC"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="50"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000"
+							android:hint="                              "
+							android:textColorHint="#B0BEC5"
+							android:inputType="numberDecimal" />
+						<TextView
+							android:id="@+id/textview1170"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="="
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+						<TextView
+							android:id="@+id/textview42d"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="كمية الأسمنت بالشيكارة الواحدة\n( كجم )"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+					</LinearLayout>
+					<LinearLayout
+						android:id="@+id/linear104d"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:gravity="center_horizontal|center_vertical"
+						android:orientation="horizontal"
+						android:background="@drawable/rectangle_0_purplefff3e5f5_050_blackff000000">
+						<TextView
+							android:id="@+id/textview2363"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:text="شيكارة"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+						<EditText
+							android:id="@+id/edittext43d"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:background="#D7CCC8"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="00.00"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000"
+							android:hint="                              "
+							android:textColorHint="#607D8B"
+							android:inputType="numberDecimal"
+							android:enabled="false" />
+						<TextView
+							android:id="@+id/textview2364"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="="
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+						<TextView
+							android:id="@+id/textview43d"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="عدد الشكاير اللازمة لصب البند ( شيكارة )"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+					</LinearLayout>
+				</LinearLayout>
+			</LinearLayout>
+			<LinearLayout
+				android:id="@+id/linear221d"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:padding="8dp"
+				android:orientation="vertical"
+				android:background="@drawable/rectangle_0_tealffe0f2f1_075_blackff000000">
+				<TextView
+					android:id="@+id/textview122d"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:padding="8dp"
+					android:gravity="center_horizontal|center_vertical"
+					android:text="■ السقف"
+					android:textSize="12sp"
+					android:textStyle="bold"
+					android:textColor="#000000"
+					android:layout_gravity="right|center_vertical" />
+				<LinearLayout
+					android:id="@+id/linear197d"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:background="#F3E5F5"
+					android:gravity="center_horizontal|center_vertical"
+					android:orientation="horizontal">
+					<TextView
+						android:id="@+id/textview611"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:gravity="center_horizontal|center_vertical"
+						android:text="م"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000" />
+					<EditText
+						android:id="@+id/edittext11d"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:background="#CFD8DC"
+						android:gravity="center_horizontal|center_vertical"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000"
+						android:hint="                         "
+						android:textColorHint="#607D8B"
+						android:inputType="numberDecimal" />
+					<TextView
+						android:id="@+id/textview609"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:gravity="center_horizontal|center_vertical"
+						android:text="="
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000" />
+					<TextView
+						android:id="@+id/textview610d"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:gravity="center_horizontal|center_vertical"
+						android:text="سمك السقف\n( م )"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000" />
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/linear196d"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:gravity="center_horizontal|center_vertical"
+					android:orientation="horizontal"
+					android:background="@drawable/rectangle_0_purplefff3e5f5_050_blackff000000">
+					<TextView
+						android:id="@+id/textview14"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:gravity="center_horizontal|center_vertical"
+						android:text="م٣"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000" />
+					<EditText
+						android:id="@+id/edittext12d"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:background="#FFC107"
+						android:gravity="center_horizontal|center_vertical"
+						android:text="00.00"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000"
+						android:hint="                              "
+						android:textColorHint="#B0BEC5"
+						android:inputType="numberDecimal"
+						android:enabled="false" />
+					<TextView
+						android:id="@+id/textview607"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:gravity="center_horizontal|center_vertical"
+						android:text="="
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000" />
+					<TextView
+						android:id="@+id/textview608d"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:gravity="center_horizontal|center_vertical"
+						android:text="كمية الخرسانة المسلحة بالسقف ( م٣ )"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000" />
+				</LinearLayout>
+				<HorizontalScrollView
+					android:id="@+id/hscroll9"
+					android:layout_width="match_parent"
+					android:layout_height="7dp"
+					android:padding="8dp" />
+				<LinearLayout
+					android:id="@+id/linear111d"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:orientation="vertical"
+					android:background="@drawable/rectangle_0_tealffe0f2f1_050_blackff000000">
+					<LinearLayout
+						android:id="@+id/linear112d"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:background="#F3E5F5"
+						android:gravity="center_horizontal|center_vertical"
+						android:orientation="horizontal">
+						<TextView
+							android:id="@+id/textview2392"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="كجم/م٣"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000"
+							android:enabled="false" />
+						<EditText
+							android:id="@+id/edittext10"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:background="#BBDEFB"
+							android:gravity="center_horizontal|center_vertical"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000"
+							android:hint="                              "
+							android:textColorHint="#607D8B"
+							android:inputType="numberDecimal" />
+						<TextView
+							android:id="@+id/textview2393"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="="
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+						<TextView
+							android:id="@+id/textview2394"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="المحتوي الأسمنتي بالمتر المكعب خرسانة\n&quot;كمية الأسمنت لكل م٣&quot;\n( كجم/م٣ )"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+					</LinearLayout>
+					<LinearLayout
+						android:id="@+id/linear113d"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:background="#F3E5F5"
+						android:gravity="center_horizontal|center_vertical"
+						android:orientation="horizontal">
+						<TextView
+							android:id="@+id/textview2395"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:text="كجم"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+						<EditText
+							android:id="@+id/edittext11"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:background="#CFD8DC"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="50"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000"
+							android:hint="                              "
+							android:textColorHint="#B0BEC5"
+							android:inputType="numberDecimal" />
+						<TextView
+							android:id="@+id/textview2396"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="="
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+						<TextView
+							android:id="@+id/textview2397"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="كمية الأسمنت بالشيكارة الواحدة\n( كجم )"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+					</LinearLayout>
+					<LinearLayout
+						android:id="@+id/linear114d"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:gravity="center_horizontal|center_vertical"
+						android:orientation="horizontal"
+						android:background="@drawable/rectangle_0_purplefff3e5f5_050_blackff000000">
+						<TextView
+							android:id="@+id/textview2398"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:text="شيكارة"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+						<EditText
+							android:id="@+id/edittext12"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:background="#D7CCC8"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="00.00"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000"
+							android:hint="                              "
+							android:textColorHint="#607D8B"
+							android:inputType="numberDecimal"
+							android:enabled="false" />
+						<TextView
+							android:id="@+id/textview2399"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="="
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+						<TextView
+							android:id="@+id/textview2400"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="عدد الشكاير اللازمة لصب البند ( شيكارة )"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+					</LinearLayout>
+				</LinearLayout>
+			</LinearLayout>
+			<LinearLayout
+				android:id="@+id/linear223d"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:padding="8dp"
+				android:orientation="vertical"
+				android:background="@drawable/rectangle_0_tealffe0f2f1_075_blackff000000">
+				<TextView
+					android:id="@+id/textview661d"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:padding="8dp"
+					android:gravity="center_horizontal|center_vertical"
+					android:text="■ رقبة المطبق"
+					android:textSize="12sp"
+					android:textStyle="bold"
+					android:textColor="#000000"
+					android:layout_gravity="right|center_vertical" />
+				<LinearLayout
+					android:id="@+id/linear224d"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:background="#F3E5F5"
+					android:gravity="center_horizontal|center_vertical"
+					android:orientation="horizontal">
+					<TextView
+						android:id="@+id/textview662"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:gravity="center_horizontal|center_vertical"
+						android:text="م"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000" />
+					<EditText
+						android:id="@+id/edittext13d"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:background="#CFD8DC"
+						android:gravity="center_horizontal|center_vertical"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000"
+						android:hint="                         "
+						android:textColorHint="#607D8B"
+						android:inputType="numberDecimal" />
+					<TextView
+						android:id="@+id/textview663"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:gravity="center_horizontal|center_vertical"
+						android:text="="
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000" />
+					<TextView
+						android:id="@+id/textview664d"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:gravity="center_horizontal|center_vertical"
+						android:text="ارتفاع الرقبه\n( م )"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000" />
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/linear14d"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:gravity="center_horizontal|center_vertical"
+					android:orientation="horizontal"
+					android:background="@drawable/rectangle_0_purplefff3e5f5_050_blackff000000">
+					<TextView
+						android:id="@+id/textview665"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:gravity="center_horizontal|center_vertical"
+						android:text="م٣"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000" />
+					<EditText
+						android:id="@+id/edittext14d"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:background="#FFC107"
+						android:gravity="center_horizontal|center_vertical"
+						android:text="00.00"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000"
+						android:hint="                              "
+						android:textColorHint="#B0BEC5"
+						android:inputType="numberDecimal"
+						android:enabled="false" />
+					<TextView
+						android:id="@+id/textview666"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:gravity="center_horizontal|center_vertical"
+						android:text="="
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000" />
+					<TextView
+						android:id="@+id/textview14d"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:gravity="center_horizontal|center_vertical"
+						android:text="كمية الخرسانة العادية بالرقبة\n( م٣ )"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000" />
+				</LinearLayout>
+				<HorizontalScrollView
+					android:id="@+id/hscroll7"
+					android:layout_width="match_parent"
+					android:layout_height="7dp"
+					android:padding="8dp" />
+				<LinearLayout
+					android:id="@+id/linear121d"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:orientation="vertical"
+					android:background="@drawable/rectangle_0_tealffe0f2f1_050_blackff000000">
+					<LinearLayout
+						android:id="@+id/linear122d"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:background="#F3E5F5"
+						android:gravity="center_horizontal|center_vertical"
+						android:orientation="horizontal">
+						<TextView
+							android:id="@+id/textview2365"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="كجم/م٣"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000"
+							android:enabled="false" />
+						<EditText
+							android:id="@+id/edittext1"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:background="#BBDEFB"
+							android:gravity="center_horizontal|center_vertical"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000"
+							android:hint="                              "
+							android:textColorHint="#607D8B"
+							android:inputType="numberDecimal" />
+						<TextView
+							android:id="@+id/textview2366"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="="
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+						<TextView
+							android:id="@+id/textview2367"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="المحتوي الأسمنتي بالمتر المكعب خرسانة\n&quot;كمية الأسمنت لكل م٣&quot;\n( كجم/م٣ )"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+					</LinearLayout>
+					<LinearLayout
+						android:id="@+id/linear123d"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:background="#F3E5F5"
+						android:gravity="center_horizontal|center_vertical"
+						android:orientation="horizontal">
+						<TextView
+							android:id="@+id/textview2368"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:text="كجم"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+						<EditText
+							android:id="@+id/edittext2"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:background="#CFD8DC"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="50"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000"
+							android:hint="                              "
+							android:textColorHint="#B0BEC5"
+							android:inputType="numberDecimal" />
+						<TextView
+							android:id="@+id/textview2369"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="="
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+						<TextView
+							android:id="@+id/textview2370"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="كمية الأسمنت بالشيكارة الواحدة\n( كجم )"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+					</LinearLayout>
+					<LinearLayout
+						android:id="@+id/linear124d"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:gravity="center_horizontal|center_vertical"
+						android:orientation="horizontal"
+						android:background="@drawable/rectangle_0_purplefff3e5f5_050_blackff000000">
+						<TextView
+							android:id="@+id/textview2371"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:text="شيكارة"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+						<EditText
+							android:id="@+id/edittext3"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:background="#D7CCC8"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="00.00"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000"
+							android:hint="                              "
+							android:textColorHint="#607D8B"
+							android:inputType="numberDecimal"
+							android:enabled="false" />
+						<TextView
+							android:id="@+id/textview2372"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="="
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+						<TextView
+							android:id="@+id/textview2373"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="عدد الشكاير اللازمة لصب البند ( شيكارة )"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+					</LinearLayout>
+				</LinearLayout>
+			</LinearLayout>
+			<LinearLayout
+				android:id="@+id/linear229d"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:padding="8dp"
+				android:orientation="vertical"
+				android:background="@drawable/rectangle_0_tealffe0f2f1_075_blackff000000">
+				<TextView
+					android:id="@+id/textview675d"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:padding="8dp"
+					android:gravity="center_horizontal|center_vertical"
+					android:text="■ المائل"
+					android:textSize="12sp"
+					android:textStyle="bold"
+					android:textColor="#000000"
+					android:layout_gravity="right|center_vertical" />
+				<LinearLayout
+					android:id="@+id/linear230d"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:background="#F3E5F5"
+					android:gravity="center_horizontal|center_vertical"
+					android:orientation="horizontal">
+					<TextView
+						android:id="@+id/textview676"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:gravity="center_horizontal|center_vertical"
+						android:text="م"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000" />
+					<EditText
+						android:id="@+id/edittext15d"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:background="#CFD8DC"
+						android:gravity="center_horizontal|center_vertical"
+						android:text="                         "
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000"
+						android:textColorHint="#607D8B"
+						android:inputType="numberDecimal" />
+					<TextView
+						android:id="@+id/textview677"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:gravity="center_horizontal|center_vertical"
+						android:text="="
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000" />
+					<TextView
+						android:id="@+id/textview678d"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:gravity="center_horizontal|center_vertical"
+						android:text="سمك حائط المائل\n( م )"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000" />
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/linear231d"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:background="#F3E5F5"
+					android:gravity="center_horizontal|center_vertical"
+					android:orientation="horizontal">
+					<TextView
+						android:id="@+id/textview679"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:text="م"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000" />
+					<EditText
+						android:id="@+id/edittext16d"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:background="#CFD8DC"
+						android:gravity="center_horizontal|center_vertical"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000"
+						android:hint="                         "
+						android:textColorHint="#607D8B"
+						android:inputType="numberDecimal" />
+					<TextView
+						android:id="@+id/textview680"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:gravity="center_horizontal|center_vertical"
+						android:text="="
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000" />
+					<TextView
+						android:id="@+id/textview681d"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:gravity="center_horizontal|center_vertical"
+						android:text="ارتفاع المائل\n( م )"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000" />
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/linear232d"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:gravity="center_horizontal|center_vertical"
+					android:orientation="horizontal"
+					android:background="@drawable/rectangle_0_purplefff3e5f5_050_blackff000000">
+					<TextView
+						android:id="@+id/textview682"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:gravity="center_horizontal|center_vertical"
+						android:text="م٣"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000" />
+					<EditText
+						android:id="@+id/edittext17d"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:background="#FFC107"
+						android:gravity="center_horizontal|center_vertical"
+						android:text="00.00"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000"
+						android:hint="                              "
+						android:textColorHint="#B0BEC5"
+						android:inputType="numberDecimal"
+						android:enabled="false" />
+					<TextView
+						android:id="@+id/textview683"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:gravity="center_horizontal|center_vertical"
+						android:text="="
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000" />
+					<TextView
+						android:id="@+id/textview684d"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:gravity="center_horizontal|center_vertical"
+						android:text="كمية الخرسانة العادية بالمائل\n( م٣ )"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000" />
+				</LinearLayout>
+				<HorizontalScrollView
+					android:id="@+id/hscroll10"
+					android:layout_width="match_parent"
+					android:layout_height="7dp"
+					android:padding="8dp" />
+				<LinearLayout
+					android:id="@+id/linear131d"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:orientation="vertical"
+					android:background="@drawable/rectangle_0_tealffe0f2f1_050_blackff000000">
+					<LinearLayout
+						android:id="@+id/linear132d"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:background="#F3E5F5"
+						android:gravity="center_horizontal|center_vertical"
+						android:orientation="horizontal">
+						<TextView
+							android:id="@+id/textview2419"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="كجم/م٣"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000"
+							android:enabled="false" />
+						<EditText
+							android:id="@+id/edittext19"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:background="#BBDEFB"
+							android:gravity="center_horizontal|center_vertical"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000"
+							android:hint="                              "
+							android:textColorHint="#607D8B"
+							android:inputType="numberDecimal" />
+						<TextView
+							android:id="@+id/textview2420"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="="
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+						<TextView
+							android:id="@+id/textview2421"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="المحتوي الأسمنتي بالمتر المكعب خرسانة\n&quot;كمية الأسمنت لكل م٣&quot;\n( كجم/م٣ )"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+					</LinearLayout>
+					<LinearLayout
+						android:id="@+id/linear133d"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:background="#F3E5F5"
+						android:gravity="center_horizontal|center_vertical"
+						android:orientation="horizontal">
+						<TextView
+							android:id="@+id/textview2422"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:text="كجم"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+						<EditText
+							android:id="@+id/edittext20"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:background="#CFD8DC"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="50"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000"
+							android:hint="                              "
+							android:textColorHint="#B0BEC5"
+							android:inputType="numberDecimal" />
+						<TextView
+							android:id="@+id/textview2423"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="="
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+						<TextView
+							android:id="@+id/textview2424"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="كمية الأسمنت بالشيكارة الواحدة\n( كجم )"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+					</LinearLayout>
+					<LinearLayout
+						android:id="@+id/linear134d"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:gravity="center_horizontal|center_vertical"
+						android:orientation="horizontal"
+						android:background="@drawable/rectangle_0_purplefff3e5f5_050_blackff000000">
+						<TextView
+							android:id="@+id/textview2425"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:text="شيكارة"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+						<EditText
+							android:id="@+id/edittext21"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:background="#D7CCC8"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="00.00"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000"
+							android:hint="                              "
+							android:textColorHint="#607D8B"
+							android:inputType="numberDecimal"
+							android:enabled="false" />
+						<TextView
+							android:id="@+id/textview2426"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="="
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+						<TextView
+							android:id="@+id/textview2427"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="عدد الشكاير اللازمة لصب البند ( شيكارة )"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+					</LinearLayout>
+				</LinearLayout>
+			</LinearLayout>
+			<LinearLayout
+				android:id="@+id/linear233d"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:padding="8dp"
+				android:orientation="vertical"
+				android:background="@drawable/rectangle_0_tealffe0f2f1_075_blackff000000">
+				<TextView
+					android:id="@+id/textview685d"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:padding="8dp"
+					android:gravity="center_horizontal|center_vertical"
+					android:text="■ الحطة الأخيرة أسفل المائل مباشرة"
+					android:textSize="12sp"
+					android:textStyle="bold"
+					android:textColor="#000000"
+					android:layout_gravity="right|center_vertical" />
+				<LinearLayout
+					android:id="@+id/linear234d"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:background="#F3E5F5"
+					android:gravity="center_horizontal|center_vertical"
+					android:orientation="horizontal">
+					<TextView
+						android:id="@+id/textview686"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:gravity="center_horizontal|center_vertical"
+						android:text="م"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000" />
+					<EditText
+						android:id="@+id/edittext18d"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:background="#CFD8DC"
+						android:gravity="center_horizontal|center_vertical"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000"
+						android:hint="                         "
+						android:textColorHint="#607D8B"
+						android:inputType="numberDecimal" />
+					<TextView
+						android:id="@+id/textview687"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:gravity="center_horizontal|center_vertical"
+						android:text="="
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000" />
+					<TextView
+						android:id="@+id/textview688d"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:gravity="center_horizontal|center_vertical"
+						android:text="سمك حائط الحطة الأخيرة أسفل المائل مباشرة ( م )"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000" />
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/linear235d"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:background="#F3E5F5"
+					android:gravity="center_horizontal|center_vertical"
+					android:orientation="horizontal">
+					<TextView
+						android:id="@+id/textview689"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:text="م"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000" />
+					<EditText
+						android:id="@+id/edittext19d"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:background="#CFD8DC"
+						android:gravity="center_horizontal|center_vertical"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000"
+						android:hint="                         "
+						android:textColorHint="#607D8B"
+						android:inputType="numberDecimal" />
+					<TextView
+						android:id="@+id/textview690"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:gravity="center_horizontal|center_vertical"
+						android:text="="
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000" />
+					<TextView
+						android:id="@+id/textview691d"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:gravity="center_horizontal|center_vertical"
+						android:text="ارتفاع الحطة الأخيرة أسفل المائل مباشرة ( م )"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000" />
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/linear236d"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:gravity="center_horizontal|center_vertical"
+					android:orientation="horizontal"
+					android:background="@drawable/rectangle_0_purplefff3e5f5_050_blackff000000">
+					<TextView
+						android:id="@+id/textview692"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:gravity="center_horizontal|center_vertical"
+						android:text="م٣"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000" />
+					<EditText
+						android:id="@+id/edittext20d"
+						android:layout_width="wrap_content"
+						android:layout_height="35dp"
+						android:padding="8dp"
+						android:background="#FFC107"
+						android:gravity="center_horizontal|center_vertical"
+						android:text="00.00"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000"
+						android:hint="                              "
+						android:textColorHint="#B0BEC5"
+						android:inputType="numberDecimal"
+						android:enabled="false" />
+					<TextView
+						android:id="@+id/textview693"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:gravity="center_horizontal|center_vertical"
+						android:text="="
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000" />
+					<TextView
+						android:id="@+id/textview694d"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:gravity="center_horizontal|center_vertical"
+						android:text="كمية الخرسانة العادية بالحطة الأخيرة أسفل المائل مباشرة ( م٣ )"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000" />
+				</LinearLayout>
+				<HorizontalScrollView
+					android:id="@+id/hscroll11"
+					android:layout_width="match_parent"
+					android:layout_height="7dp"
+					android:padding="8dp" />
+				<LinearLayout
+					android:id="@+id/linear141d"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:orientation="vertical"
+					android:background="@drawable/rectangle_0_tealffe0f2f1_050_blackff000000">
+					<LinearLayout
+						android:id="@+id/linear142d"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:background="#F3E5F5"
+						android:gravity="center_horizontal|center_vertical"
+						android:orientation="horizontal">
+						<TextView
+							android:id="@+id/textview2464"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="كجم/م٣"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000"
+							android:enabled="false" />
+						<EditText
+							android:id="@+id/edittext34"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:background="#BBDEFB"
+							android:gravity="center_horizontal|center_vertical"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000"
+							android:hint="                              "
+							android:textColorHint="#607D8B"
+							android:inputType="numberDecimal" />
+						<TextView
+							android:id="@+id/textview2465"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="="
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+						<TextView
+							android:id="@+id/textview2466"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="المحتوي الأسمنتي بالمتر المكعب خرسانة\n&quot;كمية الأسمنت لكل م٣&quot;\n( كجم/م٣ )"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+					</LinearLayout>
+					<LinearLayout
+						android:id="@+id/linear143d"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:background="#F3E5F5"
+						android:gravity="center_horizontal|center_vertical"
+						android:orientation="horizontal">
+						<TextView
+							android:id="@+id/textview2467"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:text="كجم"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+						<EditText
+							android:id="@+id/edittext35"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:background="#CFD8DC"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="50"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000"
+							android:hint="                              "
+							android:textColorHint="#B0BEC5"
+							android:inputType="numberDecimal" />
+						<TextView
+							android:id="@+id/textview2468"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="="
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+						<TextView
+							android:id="@+id/textview2469"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="كمية الأسمنت بالشيكارة الواحدة\n( كجم )"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+					</LinearLayout>
+					<LinearLayout
+						android:id="@+id/linear144d"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:gravity="center_horizontal|center_vertical"
+						android:orientation="horizontal"
+						android:background="@drawable/rectangle_0_purplefff3e5f5_050_blackff000000">
+						<TextView
+							android:id="@+id/textview2470"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:text="شيكارة"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+						<EditText
+							android:id="@+id/edittext36"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:background="#D7CCC8"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="00.00"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000"
+							android:hint="                              "
+							android:textColorHint="#607D8B"
+							android:inputType="numberDecimal"
+							android:enabled="false" />
+						<TextView
+							android:id="@+id/textview2471"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="="
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+						<TextView
+							android:id="@+id/textview2472"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="عدد الشكاير اللازمة لصب البند ( شيكارة )"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+					</LinearLayout>
+				</LinearLayout>
+			</LinearLayout>
+			<LinearLayout
+				android:id="@+id/linear226d"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:padding="8dp"
+				android:orientation="vertical"
+				android:background="@drawable/rectangle_0_tealffe0f2f1_075_blackff000000">
+				<TextView
+					android:id="@+id/textview668d"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:padding="8dp"
+					android:gravity="center_horizontal|center_vertical"
+					android:text="■ الحطة الأولي بعد القاعدة مباشرة"
+					android:textSize="12sp"
+					android:textStyle="bold"
+					android:textColor="#000000"
+					android:layout_gravity="right|center_vertical" />
+				<LinearLayout
+					android:id="@+id/linear227d"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:background="#F3E5F5"
+					android:gravity="center_horizontal|center_vertical"
+					android:orientation="horizontal">
+					<TextView
+						android:id="@+id/textview669"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:gravity="center_horizontal|center_vertical"
+						android:text="م"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000" />
+					<EditText
+						android:id="@+id/edittext21d"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:background="#CFD8DC"
+						android:gravity="center_horizontal|center_vertical"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000"
+						android:hint="                         "
+						android:textColorHint="#607D8B"
+						android:inputType="numberDecimal" />
+					<TextView
+						android:id="@+id/textview670"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:gravity="center_horizontal|center_vertical"
+						android:text="="
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000" />
+					<TextView
+						android:id="@+id/textview671d"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:gravity="center_horizontal|center_vertical"
+						android:text="سمك حائط الحطة الأولي بعد القاعدة مباشرة ( م )"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000" />
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/linear74d"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:background="#F3E5F5"
+					android:gravity="center_horizontal|center_vertical"
+					android:orientation="horizontal">
+					<TextView
+						android:id="@+id/textview467"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:text="م"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000" />
+					<EditText
+						android:id="@+id/edittext22d"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:background="#FFC107"
+						android:gravity="center_horizontal|center_vertical"
+						android:text="00.00"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000"
+						android:hint="                              "
+						android:textColorHint="#607D8B"
+						android:inputType="numberDecimal"
+						android:enabled="false" />
+					<TextView
+						android:id="@+id/textview286"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:gravity="center_horizontal|center_vertical"
+						android:text="="
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000" />
+					<TextView
+						android:id="@+id/textview112d"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:gravity="center_horizontal|center_vertical"
+						android:text=" ارتفاع الحطة الأولي بعد القاعدة مباشرة ( م )"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000" />
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/linear228d"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:gravity="center_horizontal|center_vertical"
+					android:orientation="horizontal"
+					android:background="@drawable/rectangle_0_purplefff3e5f5_050_blackff000000">
+					<TextView
+						android:id="@+id/textview672"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:gravity="center_horizontal|center_vertical"
+						android:text="م٣"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000" />
+					<EditText
+						android:id="@+id/edittext23d"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:background="#FFC107"
+						android:gravity="center_horizontal|center_vertical"
+						android:text="00.00"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000"
+						android:hint="                              "
+						android:textColorHint="#B0BEC5"
+						android:inputType="numberDecimal"
+						android:enabled="false" />
+					<TextView
+						android:id="@+id/textview673"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:gravity="center_horizontal|center_vertical"
+						android:text="="
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000" />
+					<TextView
+						android:id="@+id/textview674d"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:gravity="center_horizontal|center_vertical"
+						android:text="كمية الخرسانة العادية بالحطة الأولي بعد القاعدة مباشرة ( م٣ )"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000" />
+				</LinearLayout>
+				<HorizontalScrollView
+					android:id="@+id/hscroll13"
+					android:layout_width="match_parent"
+					android:layout_height="7dp"
+					android:padding="8dp" />
+				<LinearLayout
+					android:id="@+id/linear151d"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:orientation="vertical"
+					android:background="@drawable/rectangle_0_tealffe0f2f1_050_blackff000000">
+					<LinearLayout
+						android:id="@+id/linear152d"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:background="#F3E5F5"
+						android:gravity="center_horizontal|center_vertical"
+						android:orientation="horizontal">
+						<TextView
+							android:id="@+id/textview2473"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="كجم/م٣"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000"
+							android:enabled="false" />
+						<EditText
+							android:id="@+id/edittext37"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:background="#BBDEFB"
+							android:gravity="center_horizontal|center_vertical"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000"
+							android:hint="                              "
+							android:textColorHint="#607D8B"
+							android:inputType="numberDecimal" />
+						<TextView
+							android:id="@+id/textview2474"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="="
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+						<TextView
+							android:id="@+id/textview2475"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="المحتوي الأسمنتي بالمتر المكعب خرسانة\n&quot;كمية الأسمنت لكل م٣&quot;\n( كجم/م٣ )"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+					</LinearLayout>
+					<LinearLayout
+						android:id="@+id/linear153d"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:background="#F3E5F5"
+						android:gravity="center_horizontal|center_vertical"
+						android:orientation="horizontal">
+						<TextView
+							android:id="@+id/textview2476"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:text="كجم"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+						<EditText
+							android:id="@+id/edittext38"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:background="#CFD8DC"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="50"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000"
+							android:hint="                              "
+							android:textColorHint="#B0BEC5"
+							android:inputType="numberDecimal" />
+						<TextView
+							android:id="@+id/textview2477"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="="
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+						<TextView
+							android:id="@+id/textview2478"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="كمية الأسمنت بالشيكارة الواحدة\n( كجم )"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+					</LinearLayout>
+					<LinearLayout
+						android:id="@+id/linear154d"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:gravity="center_horizontal|center_vertical"
+						android:orientation="horizontal"
+						android:background="@drawable/rectangle_0_purplefff3e5f5_050_blackff000000">
+						<TextView
+							android:id="@+id/textview2479"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:text="شيكارة"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+						<EditText
+							android:id="@+id/edittext39"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:background="#D7CCC8"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="00.00"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000"
+							android:hint="                              "
+							android:textColorHint="#607D8B"
+							android:inputType="numberDecimal"
+							android:enabled="false" />
+						<TextView
+							android:id="@+id/textview2480"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="="
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+						<TextView
+							android:id="@+id/textview2481"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="عدد الشكاير اللازمة لصب البند ( شيكارة )"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+					</LinearLayout>
+				</LinearLayout>
+			</LinearLayout>
+			<LinearLayout
+				android:id="@+id/linear219d"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:padding="8dp"
+				android:orientation="vertical"
+				android:background="@drawable/rectangle_0_tealffe0f2f1_075_blackff000000">
+				<TextView
+					android:id="@+id/textview615d"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:gravity="right|center_vertical"
+					android:text="■ قاعدة المطبق"
+					android:textSize="12sp"
+					android:textStyle="bold"
+					android:textColor="#000000"
+					android:layout_gravity="right" />
+				<LinearLayout
+					android:id="@+id/linear202d"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:gravity="center_horizontal|center_vertical"
+					android:orientation="horizontal"
+					android:layout_gravity="center_horizontal|center_vertical">
+					<LinearLayout
+						android:id="@+id/linear218d"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:background="#F3E5F5"
+						android:gravity="center_horizontal|top"
+						android:orientation="vertical">
+						<TextView
+							android:id="@+id/textview657"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="الأرتفاع ( م )"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+						<EditText
+							android:id="@+id/edittext26d"
+							android:layout_width="75dp"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:background="#CFD8DC"
+							android:gravity="center_horizontal|center_vertical"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000"
+							android:textColorHint="#607D8B"
+							android:inputType="numberDecimal" />
+					</LinearLayout>
+					<TextView
+						android:id="@+id/textview642"
+						android:layout_width="wrap_content"
+						android:layout_height="match_parent"
+						android:padding="4dp"
+						android:gravity="center_horizontal|center_vertical"
+						android:text=".\n.\n.\n."
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000" />
+					<LinearLayout
+						android:id="@+id/linear205d"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:background="#F3E5F5"
+						android:gravity="center_horizontal|top"
+						android:orientation="vertical">
+						<TextView
+							android:id="@+id/textview643"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="العرض ( م )"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+						<EditText
+							android:id="@+id/edittext25d"
+							android:layout_width="75dp"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:background="#CFD8DC"
+							android:gravity="center_horizontal|center_vertical"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000"
+							android:textColorHint="#607D8B"
+							android:inputType="numberDecimal" />
+					</LinearLayout>
+					<TextView
+						android:id="@+id/textview644"
+						android:layout_width="wrap_content"
+						android:layout_height="match_parent"
+						android:padding="4dp"
+						android:text=".\n.\n.\n."
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000" />
+					<LinearLayout
+						android:id="@+id/linear203d"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:background="#F3E5F5"
+						android:gravity="center_horizontal|top"
+						android:orientation="vertical">
+						<TextView
+							android:id="@+id/textview641"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="الطول ( م )"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+						<EditText
+							android:id="@+id/edittext24d"
+							android:layout_width="75dp"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:background="#CFD8DC"
+							android:gravity="center_horizontal|center_vertical"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000"
+							android:textColorHint="#607D8B"
+							android:inputType="numberDecimal" />
+					</LinearLayout>
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/linear198d"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:gravity="center_horizontal|center_vertical"
+					android:orientation="horizontal"
+					android:background="@drawable/rectangle_0_purplefff3e5f5_050_blackff000000">
+					<TextView
+						android:id="@+id/textview614"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:gravity="center_horizontal|center_vertical"
+						android:text="م٣"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000" />
+					<EditText
+						android:id="@+id/edittext27d"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:background="#FFC107"
+						android:gravity="center_horizontal|center_vertical"
+						android:text="00.00"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000"
+						android:hint="                              "
+						android:textColorHint="#607D8B"
+						android:inputType="numberDecimal"
+						android:enabled="false" />
+					<TextView
+						android:id="@+id/textview612"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:gravity="center_horizontal|center_vertical"
+						android:text="="
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000" />
+					<TextView
+						android:id="@+id/textview613d"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:gravity="center_horizontal|center_vertical"
+						android:text="اجمالي كمية الخرسانة العادية بقاعدة المطبق ( م٣ )"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000" />
+				</LinearLayout>
+				<HorizontalScrollView
+					android:id="@+id/hscroll14"
+					android:layout_width="match_parent"
+					android:layout_height="7dp"
+					android:padding="8dp" />
+				<LinearLayout
+					android:id="@+id/linear161d"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:orientation="vertical"
+					android:background="@drawable/rectangle_0_tealffe0f2f1_050_blackff000000">
+					<LinearLayout
+						android:id="@+id/linear162d"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:background="#F3E5F5"
+						android:gravity="center_horizontal|center_vertical"
+						android:orientation="horizontal">
+						<TextView
+							android:id="@+id/textview2455"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="كجم/م٣"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000"
+							android:enabled="false" />
+						<EditText
+							android:id="@+id/edittext31"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:background="#BBDEFB"
+							android:gravity="center_horizontal|center_vertical"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000"
+							android:hint="                              "
+							android:textColorHint="#607D8B"
+							android:inputType="numberDecimal" />
+						<TextView
+							android:id="@+id/textview2456"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="="
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+						<TextView
+							android:id="@+id/textview2457"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="المحتوي الأسمنتي بالمتر المكعب خرسانة\n&quot;كمية الأسمنت لكل م٣&quot;\n( كجم/م٣ )"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+					</LinearLayout>
+					<LinearLayout
+						android:id="@+id/linear163d"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:background="#F3E5F5"
+						android:gravity="center_horizontal|center_vertical"
+						android:orientation="horizontal">
+						<TextView
+							android:id="@+id/textview2458"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:text="كجم"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+						<EditText
+							android:id="@+id/edittext32"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:background="#CFD8DC"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="50"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000"
+							android:hint="                              "
+							android:textColorHint="#B0BEC5"
+							android:inputType="numberDecimal" />
+						<TextView
+							android:id="@+id/textview2459"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="="
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+						<TextView
+							android:id="@+id/textview2460"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="كمية الأسمنت بالشيكارة الواحدة\n( كجم )"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+					</LinearLayout>
+					<LinearLayout
+						android:id="@+id/linear164d"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:gravity="center_horizontal|center_vertical"
+						android:orientation="horizontal"
+						android:background="@drawable/rectangle_0_purplefff3e5f5_050_blackff000000">
+						<TextView
+							android:id="@+id/textview2461"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:text="شيكارة"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+						<EditText
+							android:id="@+id/edittext33"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:background="#D7CCC8"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="00.00"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000"
+							android:hint="                              "
+							android:textColorHint="#607D8B"
+							android:inputType="numberDecimal"
+							android:enabled="false" />
+						<TextView
+							android:id="@+id/textview2462"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="="
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+						<TextView
+							android:id="@+id/textview2463"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="عدد الشكاير اللازمة لصب البند ( شيكارة )"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+					</LinearLayout>
+				</LinearLayout>
+			</LinearLayout>
+			<LinearLayout
+				android:id="@+id/linear457d"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:padding="8dp"
+				android:orientation="vertical"
+				android:background="@drawable/rectangle_0_tealffe0f2f1_075_blackff000000">
+				<TextView
+					android:id="@+id/textview1211"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:padding="8dp"
+					android:gravity="center_horizontal|center_vertical"
+					android:text="■ البلشنج"
+					android:textSize="12sp"
+					android:textStyle="bold"
+					android:textColor="#000000"
+					android:layout_gravity="right|center_vertical" />
+				<LinearLayout
+					android:id="@+id/linear459"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:gravity="center_horizontal|center_vertical"
+					android:orientation="horizontal"
+					android:background="@drawable/rectangle_0_purplefff3e5f5_050_blackff000000">
+					<TextView
+						android:id="@+id/textview1215"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:gravity="center_horizontal|center_vertical"
+						android:text="م٣"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000" />
+					<EditText
+						android:id="@+id/edittext28d"
+						android:layout_width="wrap_content"
+						android:layout_height="35dp"
+						android:padding="8dp"
+						android:background="#FFC107"
+						android:gravity="center_horizontal|center_vertical"
+						android:text="00.00"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000"
+						android:hint="                              "
+						android:textColorHint="#B0BEC5"
+						android:inputType="numberDecimal"
+						android:enabled="false" />
+					<TextView
+						android:id="@+id/textview1216"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:gravity="center_horizontal|center_vertical"
+						android:text="="
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000" />
+					<TextView
+						android:id="@+id/textview1217"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:gravity="center_horizontal|center_vertical"
+						android:text="كمية الخرسانة بالبلشنج\n( م٣ )"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000" />
+				</LinearLayout>
+				<HorizontalScrollView
+					android:id="@+id/hscroll15"
+					android:layout_width="match_parent"
+					android:layout_height="7dp"
+					android:padding="8dp" />
+				<LinearLayout
+					android:id="@+id/linear171d"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:orientation="vertical"
+					android:background="@drawable/rectangle_0_tealffe0f2f1_050_blackff000000">
+					<LinearLayout
+						android:id="@+id/linear172d"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:background="#F3E5F5"
+						android:gravity="center_horizontal|center_vertical"
+						android:orientation="horizontal">
+						<TextView
+							android:id="@+id/textview2437"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="كجم/م٣"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000"
+							android:enabled="false" />
+						<EditText
+							android:id="@+id/edittext25"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:background="#BBDEFB"
+							android:gravity="center_horizontal|center_vertical"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000"
+							android:hint="                              "
+							android:textColorHint="#607D8B"
+							android:inputType="numberDecimal" />
+						<TextView
+							android:id="@+id/textview2438"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="="
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+						<TextView
+							android:id="@+id/textview2439"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="المحتوي الأسمنتي بالمتر المكعب خرسانة\n&quot;كمية الأسمنت لكل م٣&quot;\n( كجم/م٣ )"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+					</LinearLayout>
+					<LinearLayout
+						android:id="@+id/linear173d"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:background="#F3E5F5"
+						android:gravity="center_horizontal|center_vertical"
+						android:orientation="horizontal">
+						<TextView
+							android:id="@+id/textview2440"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:text="كجم"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+						<EditText
+							android:id="@+id/edittext26"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:background="#CFD8DC"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="50"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000"
+							android:hint="                              "
+							android:textColorHint="#B0BEC5"
+							android:inputType="numberDecimal" />
+						<TextView
+							android:id="@+id/textview2441"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="="
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+						<TextView
+							android:id="@+id/textview2442"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="كمية الأسمنت بالشيكارة الواحدة\n( كجم )"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+					</LinearLayout>
+					<LinearLayout
+						android:id="@+id/linear174d"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:gravity="center_horizontal|center_vertical"
+						android:orientation="horizontal"
+						android:background="@drawable/rectangle_0_purplefff3e5f5_050_blackff000000">
+						<TextView
+							android:id="@+id/textview2443"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:text="شيكارة"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+						<EditText
+							android:id="@+id/edittext27"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:background="#D7CCC8"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="00.00"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000"
+							android:hint="                              "
+							android:textColorHint="#607D8B"
+							android:inputType="numberDecimal"
+							android:enabled="false" />
+						<TextView
+							android:id="@+id/textview2444"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="="
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+						<TextView
+							android:id="@+id/textview2445"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="عدد الشكاير اللازمة لصب البند ( شيكارة )"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+					</LinearLayout>
+				</LinearLayout>
+			</LinearLayout>
+			<HorizontalScrollView
+				android:id="@+id/hscroll1d"
+				android:layout_width="match_parent"
+				android:layout_height="7dp"
+				android:padding="8dp" />
+			<LinearLayout
+				android:id="@+id/linear460d"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:gravity="center_horizontal|center_vertical"
+				android:orientation="horizontal"
+				android:background="@drawable/rectangle_0_yellowfffff59d_075_blackff000000">
+				<TextView
+					android:id="@+id/textview1218"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="م٣"
+					android:textSize="12sp"
+					android:textStyle="bold"
+					android:textColor="#000000" />
+				<EditText
+					android:id="@+id/edittext29d"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:background="#D7CCC8"
+					android:gravity="center_horizontal|center_vertical"
+					android:text="00.00"
+					android:textSize="12sp"
+					android:textStyle="bold"
+					android:textColor="#000000"
+					android:hint="                              "
+					android:textColorHint="#B0BEC5"
+					android:inputType="numberDecimal"
+					android:enabled="false" />
+				<TextView
+					android:id="@+id/textview1219"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:gravity="center_horizontal|center_vertical"
+					android:text="="
+					android:textSize="12sp"
+					android:textStyle="bold"
+					android:textColor="#000000" />
+				<TextView
+					android:id="@+id/textview1220"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:gravity="center_horizontal|center_vertical"
+					android:text="اجمالي كمية الخرسانة المسلحة بالمطبق ان وجدت ( م٣ )"
+					android:textSize="12sp"
+					android:textStyle="bold"
+					android:textColor="#795548" />
+			</LinearLayout>
+			<HorizontalScrollView
+				android:id="@+id/hscroll2d"
+				android:layout_width="match_parent"
+				android:layout_height="7dp"
+				android:padding="8dp" />
+			<LinearLayout
+				android:id="@+id/linear30d"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:gravity="center_horizontal|center_vertical"
+				android:orientation="horizontal"
+				android:background="@drawable/rectangle_0_yellowfffff59d_075_blackff000000">
+				<TextView
+					android:id="@+id/textview695"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="م٣"
+					android:textSize="12sp"
+					android:textStyle="bold"
+					android:textColor="#000000" />
+				<EditText
+					android:id="@+id/edittext30d"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:background="#D7CCC8"
+					android:gravity="center_horizontal|center_vertical"
+					android:text="00.00"
+					android:textSize="12sp"
+					android:textStyle="bold"
+					android:textColor="#000000"
+					android:hint="                              "
+					android:textColorHint="#B0BEC5"
+					android:inputType="numberDecimal"
+					android:enabled="false" />
+				<TextView
+					android:id="@+id/textview602"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:gravity="center_horizontal|center_vertical"
+					android:text="="
+					android:textSize="12sp"
+					android:textStyle="bold"
+					android:textColor="#000000" />
+				<TextView
+					android:id="@+id/textview30d"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:gravity="center_horizontal|center_vertical"
+					android:text="اجمالي كمية الخرسانة العادية بالمطبق ( م٣ )"
+					android:textSize="12sp"
+					android:textStyle="bold"
+					android:textColor="#795548" />
+			</LinearLayout>
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

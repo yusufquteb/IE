@@ -1,0 +1,1293 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<TextView
+		android:id="@+id/textview519"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:padding="8dp"
+		android:gravity="center_horizontal|center_vertical"
+		android:text="-----‐---------------------------"
+		android:textSize="14sp"
+		android:textStyle="bold"
+		android:textColor="#E91E63" />
+	<ScrollView
+		android:id="@+id/vscroll1"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:paddingTop="8dp"
+		android:paddingBottom="8dp">
+		<LinearLayout
+			android:id="@+id/dynamic_linear4p"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="8dp"
+			android:gravity="center_horizontal|top"
+			android:orientation="vertical"
+			android:layout_gravity="center_horizontal|top"
+			android:background="@drawable/rectangle_0_tealffe0f2f1_1_blackff000000">
+			<LinearLayout
+				android:id="@+id/linear5"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:background="#F3E5F5"
+				android:gravity="center_horizontal|center_vertical"
+				android:orientation="horizontal">
+				<EditText
+					android:id="@+id/dynamic_edittext1p"
+					android:layout_width="200dp"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:background="#C8E6C9"
+					android:gravity="center_horizontal|center_vertical"
+					android:textSize="12sp"
+					android:textStyle="bold"
+					android:textColor="#000000"
+					android:textColorHint="#607D8B" />
+				<TextView
+					android:id="@+id/textview1"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:gravity="center_horizontal|center_vertical"
+					android:text="اسم الفرعة أو الخط"
+					android:textSize="12sp"
+					android:textStyle="bold"
+					android:textColor="#000000" />
+			</LinearLayout>
+			<TextView
+				android:id="@+id/textview1158"
+				android:layout_width="match_parent"
+				android:layout_height="7dp"
+				android:padding="8dp"
+				android:gravity="center_horizontal|center_vertical"
+				android:text="       "
+				android:textSize="12sp"
+				android:textStyle="bold"
+				android:textColor="#000000" />
+			<LinearLayout
+				android:id="@+id/linear144"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:background="#F3E5F5"
+				android:gravity="center_horizontal|center_vertical"
+				android:orientation="horizontal">
+				<TextView
+					android:id="@+id/textview1155"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="مم"
+					android:textSize="12sp"
+					android:textStyle="bold"
+					android:textColor="#000000" />
+				<EditText
+					android:id="@+id/edittext94"
+					android:layout_width="75dp"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:background="#C8E6C9"
+					android:gravity="center_horizontal|center_vertical"
+					android:textSize="12sp"
+					android:textStyle="bold"
+					android:textColor="#000000"
+					android:textColorHint="#B0BEC5"
+					android:inputType="numberDecimal" />
+				<TextView
+					android:id="@+id/textview1156"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:gravity="center_horizontal|center_vertical"
+					android:text="="
+					android:textSize="12sp"
+					android:textStyle="bold"
+					android:textColor="#000000" />
+				<TextView
+					android:id="@+id/textview1157"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:gravity="center_horizontal|center_vertical"
+					android:text="قطر الفرعة أو الخط\n( مم )"
+					android:textSize="12sp"
+					android:textStyle="bold"
+					android:textColor="#000000" />
+			</LinearLayout>
+			<TextView
+				android:id="@+id/textview1149"
+				android:layout_width="match_parent"
+				android:layout_height="10dp"
+				android:padding="8dp"
+				android:textSize="12sp"
+				android:textColor="#000000" />
+			<LinearLayout
+				android:id="@+id/linear2"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:background="#F3E5F5"
+				android:gravity="center_horizontal|center_vertical"
+				android:orientation="horizontal">
+				<EditText
+					android:id="@+id/edittext2d"
+					android:layout_width="80dp"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:background="#D7CCC8"
+					android:gravity="center_horizontal|center_vertical"
+					android:text="00.00"
+					android:textSize="12sp"
+					android:textStyle="bold"
+					android:textColor="#000000"
+					android:textColorHint="#B0BEC5"
+					android:inputType="numberDecimal"
+					android:enabled="false" />
+				<TextView
+					android:id="@+id/textview531"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="م"
+					android:textSize="12sp"
+					android:textStyle="bold"
+					android:textColor="#000000" />
+				<EditText
+					android:id="@+id/dynamic_edittext2p"
+					android:layout_width="80dp"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:background="#BBDEFB"
+					android:gravity="center_horizontal|center_vertical"
+					android:textSize="12sp"
+					android:textStyle="bold"
+					android:textColor="#000000"
+					android:textColorHint="#B0BEC5"
+					android:inputType="numberDecimal" />
+				<TextView
+					android:id="@+id/textview532"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:gravity="center_horizontal|center_vertical"
+					android:text="="
+					android:textSize="12sp"
+					android:textStyle="bold"
+					android:textColor="#000000" />
+				<TextView
+					android:id="@+id/dynamic_textview2p"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:gravity="center_horizontal|center_vertical"
+					android:text="* طول الفرعة الفعلى\nمن المطبق للمطبق ( م )\nأو\nطول الفرعة التصميمي\nمن علي اللوحات ( م )"
+					android:textSize="12sp"
+					android:textStyle="bold"
+					android:textColor="#000000" />
+			</LinearLayout>
+			<TextView
+				android:id="@+id/textview614"
+				android:layout_width="match_parent"
+				android:layout_height="10dp"
+				android:padding="8dp"
+				android:textSize="12sp"
+				android:textColor="#000000" />
+			<HorizontalScrollView
+				android:id="@+id/hscroll1"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:paddingTop="8dp"
+				android:paddingBottom="8dp">
+				<LinearLayout
+					android:id="@+id/linear3"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:gravity="center_horizontal|center_vertical"
+					android:orientation="horizontal">
+					<LinearLayout
+						android:id="@+id/linear416"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:background="#F3E5F5"
+						android:gravity="center_horizontal|center_vertical"
+						android:orientation="vertical">
+						<TextView
+							android:id="@+id/textview3"
+							android:layout_width="wrap_content"
+							android:layout_height="50dp"
+							android:padding="8dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="اسم المطبق\nبنهاية الفرعة"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+						<EditText
+							android:id="@+id/dynamic_edittext3p"
+							android:layout_width="100dp"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:background="#C8E6C9"
+							android:gravity="center_horizontal|center_vertical"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000"
+							android:textColorHint="#607D8B" />
+						<TextView
+							android:id="@+id/textview140"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="-----------"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+						<TextView
+							android:id="@+id/dynamic_textview5p"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="* سمك حائط المطبق\nبنهاية الفرعة ( م )"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+						<TextView
+							android:id="@+id/textview374"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="="
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+						<EditText
+							android:id="@+id/dynamic_edittext5p"
+							android:layout_width="80dp"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:background="#C8E6C9"
+							android:gravity="center_horizontal|center_vertical"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000"
+							android:hint="0.25"
+							android:textColorHint="#B0BEC5"
+							android:inputType="numberDecimal" />
+					</LinearLayout>
+					<TextView
+						android:id="@+id/textview1134"
+						android:layout_width="wrap_content"
+						android:layout_height="match_parent"
+						android:padding="8dp"
+						android:text="|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000" />
+					<LinearLayout
+						android:id="@+id/linear415"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:background="#F3E5F5"
+						android:gravity="center_horizontal|center_vertical"
+						android:orientation="vertical">
+						<TextView
+							android:id="@+id/textview4"
+							android:layout_width="wrap_content"
+							android:layout_height="50dp"
+							android:padding="8dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="اسم المطبق\nببداية الفرعة"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+						<EditText
+							android:id="@+id/dynamic_edittext4p"
+							android:layout_width="100dp"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:background="#C8E6C9"
+							android:gravity="center_horizontal|center_vertical"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000"
+							android:textColorHint="#607D8B" />
+						<TextView
+							android:id="@+id/textview150"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="-----------"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+						<TextView
+							android:id="@+id/dynamic_textview6p"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="* سمك حائط المطبق\nببداية الفرعة ( م )"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+						<TextView
+							android:id="@+id/textview124"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="="
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+						<EditText
+							android:id="@+id/dynamic_edittext6p"
+							android:layout_width="80dp"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:background="#C8E6C9"
+							android:gravity="center_horizontal|center_vertical"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="#000000"
+							android:hint="0.25"
+							android:textColorHint="#B0BEC5"
+							android:inputType="numberDecimal" />
+					</LinearLayout>
+				</LinearLayout>
+			</HorizontalScrollView>
+			<TextView
+				android:id="@+id/textview126"
+				android:layout_width="match_parent"
+				android:layout_height="10dp"
+				android:padding="8dp"
+				android:gravity="center_horizontal|center_vertical"
+				android:textSize="12sp"
+				android:textColor="#000000" />
+			<LinearLayout
+				android:id="@+id/linear7"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:background="#F3E5F5"
+				android:gravity="center_horizontal|center_vertical"
+				android:orientation="horizontal">
+				<TextView
+					android:id="@+id/textview1135"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="م"
+					android:textSize="12sp"
+					android:textStyle="bold"
+					android:textColor="#000000" />
+				<EditText
+					android:id="@+id/dynamic_edittext7p"
+					android:layout_width="80dp"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:background="#C8E6C9"
+					android:gravity="center_horizontal|center_vertical"
+					android:textSize="12sp"
+					android:textStyle="bold"
+					android:textColor="#000000"
+					android:hint="0.10"
+					android:textColorHint="#B0BEC5"
+					android:inputType="numberDecimal" />
+				<TextView
+					android:id="@+id/textview280"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="="
+					android:textSize="12sp"
+					android:textStyle="bold"
+					android:textColor="#000000" />
+				<TextView
+					android:id="@+id/dynamic_textview7p"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:gravity="center_horizontal|center_vertical"
+					android:text="* قيمة الدخول داخل المطبق\nبعد الحائط ( ان وجدت ) ( م )"
+					android:textSize="12sp"
+					android:textStyle="bold"
+					android:textColor="#000000" />
+			</LinearLayout>
+			<LinearLayout
+				android:id="@+id/linear101s1"
+				android:layout_width="match_parent"
+				android:layout_height="10dp"
+				android:padding="8dp"
+				android:gravity="center_horizontal|center_vertical"
+				android:orientation="horizontal" />
+			<LinearLayout
+				android:id="@+id/linear8"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:background="#F3E5F5"
+				android:gravity="center_horizontal|center_vertical"
+				android:orientation="horizontal">
+				<TextView
+					android:id="@+id/textview123"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:gravity="center_horizontal|center_vertical"
+					android:text="م"
+					android:textSize="12sp"
+					android:textStyle="bold"
+					android:textColor="#000000" />
+				<EditText
+					android:id="@+id/dynamic_edittext8p"
+					android:layout_width="80dp"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:background="#C8E6C9"
+					android:gravity="center_horizontal|center_vertical"
+					android:textSize="12sp"
+					android:textStyle="bold"
+					android:textColor="#000000"
+					android:hint="0.20"
+					android:textColorHint="#B0BEC5"
+					android:inputType="numberDecimal" />
+				<TextView
+					android:id="@+id/textview403"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:gravity="center_horizontal|center_vertical"
+					android:text="="
+					android:textSize="12sp"
+					android:textStyle="bold"
+					android:textColor="#000000" />
+				<TextView
+					android:id="@+id/dynamic_textview8p"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:gravity="center_horizontal|center_vertical"
+					android:text="* قيمة التداخل بين المواسير ( م )\nطبقآ لكتالوج الشركة الموردة\nأو طبقآ للقياس علي الطبيعة "
+					android:textSize="12sp"
+					android:textStyle="bold"
+					android:textColor="#000000" />
+			</LinearLayout>
+			<LinearLayout
+				android:id="@+id/linear417"
+				android:layout_width="match_parent"
+				android:layout_height="10dp"
+				android:padding="8dp"
+				android:orientation="horizontal" />
+			<LinearLayout
+				android:id="@+id/linear9"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:background="#F3E5F5"
+				android:gravity="center_horizontal|center_vertical"
+				android:orientation="horizontal">
+				<TextView
+					android:id="@+id/textview612"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:gravity="center_horizontal|center_vertical"
+					android:text="م"
+					android:textSize="12sp"
+					android:textStyle="bold"
+					android:textColor="#000000" />
+				<EditText
+					android:id="@+id/dynamic_edittext9p"
+					android:layout_width="80dp"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:background="#C8E6C9"
+					android:gravity="center_horizontal|center_vertical"
+					android:textSize="12sp"
+					android:textStyle="bold"
+					android:textColor="#000000"
+					android:hint="6"
+					android:textColorHint="#B0BEC5"
+					android:inputType="numberDecimal" />
+				<TextView
+					android:id="@+id/textview592"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="="
+					android:textSize="12sp"
+					android:textStyle="bold"
+					android:textColor="#000000" />
+				<TextView
+					android:id="@+id/dynamic_textview9p"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:gravity="center_horizontal|center_vertical"
+					android:text="* طول الماسورة ال standard ( م )"
+					android:textSize="12sp"
+					android:textStyle="bold"
+					android:textColor="#000000" />
+			</LinearLayout>
+			<TextView
+				android:id="@+id/textview1137"
+				android:layout_width="match_parent"
+				android:layout_height="10dp"
+				android:padding="8dp"
+				android:textSize="12sp"
+				android:textStyle="bold"
+				android:textColor="#000000" />
+			<LinearLayout
+				android:id="@+id/linear153d"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:background="#F3E5F5"
+				android:gravity="center_horizontal|center_vertical"
+				android:orientation="horizontal">
+				<TextView
+					android:id="@+id/textview1169"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="م"
+					android:textSize="12sp"
+					android:textStyle="bold"
+					android:textColor="#000000" />
+				<EditText
+					android:id="@+id/edittext23d"
+					android:layout_width="80dp"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:background="#D7CCC8"
+					android:gravity="center_horizontal|center_vertical"
+					android:text="00.00"
+					android:textSize="12sp"
+					android:textStyle="bold"
+					android:textColor="#000000"
+					android:textColorHint="#B0BEC5"
+					android:inputType="numberDecimal"
+					android:enabled="false" />
+				<TextView
+					android:id="@+id/textview1170"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:gravity="center_horizontal|center_vertical"
+					android:text="="
+					android:textSize="12sp"
+					android:textStyle="bold"
+					android:textColor="#000000" />
+				<TextView
+					android:id="@+id/textview1171"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:gravity="center_horizontal|center_vertical"
+					android:text="الطول المدخل للماسورة الأولي بالفرعة أو الوصلة الأولي بالفرعة بعد مطبق البداية&quot; طول ماسورة البداية &quot; ( م )"
+					android:textSize="12sp"
+					android:textStyle="bold"
+					android:textColor="#000000" />
+			</LinearLayout>
+			<TextView
+				android:id="@+id/textview112d"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:gravity="right"
+				android:text="طول الماسورة الأولي بالفرعة أو الوصلة الأولي بالفرعة بعد مطبق البداية&quot; طول ماسورة البداية &quot; ( م )\n( short piece )\nأكبر من طول الماسورة ال standard وهذا غير منطقي وغير هندسي\nوعليه سيقوم البرنامج بافتراض الطول ب ١ م ( short piece )"
+				android:textSize="12sp"
+				android:textStyle="bold"
+				android:textColor="#E91E63" />
+			<LinearLayout
+				android:id="@+id/linear152d"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:background="#F3E5F5"
+				android:gravity="center_horizontal|center_vertical"
+				android:orientation="horizontal">
+				<TextView
+					android:id="@+id/textview629"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="م"
+					android:textSize="12sp"
+					android:textStyle="bold"
+					android:textColor="#000000" />
+				<EditText
+					android:id="@+id/edittext22d"
+					android:layout_width="80dp"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:background="#D7CCC8"
+					android:gravity="center_horizontal|center_vertical"
+					android:text="00.00"
+					android:textSize="12sp"
+					android:textStyle="bold"
+					android:textColor="#000000"
+					android:textColorHint="#B0BEC5"
+					android:inputType="numberDecimal"
+					android:enabled="false" />
+				<TextView
+					android:id="@+id/textview630"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:gravity="center_horizontal|center_vertical"
+					android:text="="
+					android:textSize="12sp"
+					android:textStyle="bold"
+					android:textColor="#000000" />
+				<TextView
+					android:id="@+id/textview631"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:gravity="center_horizontal|center_vertical"
+					android:text="الطول المدخل للماسورة الأولي بالفرعة أو الوصلة الأولي بالفرعة بعد مطبق البداية&quot; طول ماسورة البداية &quot; ( م )"
+					android:textSize="12sp"
+					android:textStyle="bold"
+					android:textColor="#000000" />
+			</LinearLayout>
+			<TextView
+				android:id="@+id/textview111d"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:gravity="right"
+				android:text="طول الماسورة الأولي بالفرعة أو الوصلة الأولي بالفرعة بعد مطبق البداية&quot; طول ماسورة البداية &quot; ( م )\n( short piece )\nأقل من مجموع ( طول الدخول داخل المطبق + سمك حائط مطبق بداية الفرعة + قيمة التداخل بين المواسير ) وهذا غير منطقي وغير هندسي\nوعليه سيقوم البرنامج بافتراض الطول ب ١ م ( short piece )"
+				android:textSize="12sp"
+				android:textStyle="bold"
+				android:textColor="#E91E63" />
+			<LinearLayout
+				android:id="@+id/linear10"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:background="#F3E5F5"
+				android:gravity="center_horizontal|center_vertical"
+				android:orientation="horizontal">
+				<TextView
+					android:id="@+id/textview1136"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="م"
+					android:textSize="12sp"
+					android:textStyle="bold"
+					android:textColor="#000000" />
+				<EditText
+					android:id="@+id/dynamic_edittext10p"
+					android:layout_width="80dp"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:background="#C8E6C9"
+					android:gravity="center_horizontal|center_vertical"
+					android:textSize="12sp"
+					android:textStyle="bold"
+					android:textColor="#000000"
+					android:hint="1"
+					android:textColorHint="#B0BEC5"
+					android:inputType="numberDecimal" />
+				<TextView
+					android:id="@+id/textview593"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:gravity="center_horizontal|center_vertical"
+					android:text="="
+					android:textSize="12sp"
+					android:textStyle="bold"
+					android:textColor="#000000" />
+				<TextView
+					android:id="@+id/dynamic_textview10p"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:gravity="center_horizontal|center_vertical"
+					android:text="* طول الماسورة الأولي بالفرعة\nأو الوصلة الأولي بالفرعة بعد مطبق\nالبداية&quot; طول ماسورة البداية &quot; ( م )"
+					android:textSize="12sp"
+					android:textStyle="bold"
+					android:textColor="#000000" />
+			</LinearLayout>
+			<LinearLayout
+				android:id="@+id/linear104s1"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:gravity="center_horizontal|top"
+				android:orientation="vertical">
+				<Button
+					android:id="@+id/dynamic_button1p"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:background="#000000"
+					android:text="أضغط للحصول علي النتائج\n="
+					android:textSize="12sp"
+					android:textStyle="bold"
+					android:textColor="#4CAF50" />
+			</LinearLayout>
+			<LinearLayout
+				android:id="@+id/dynamic_linear11p"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:background="#F3E5F5"
+				android:gravity="center_horizontal|center_vertical"
+				android:orientation="horizontal">
+				<TextView
+					android:id="@+id/textview400"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:gravity="center_horizontal|center_vertical"
+					android:text="م"
+					android:textSize="12sp"
+					android:textStyle="bold"
+					android:textColor="#000000"
+					android:enabled="false" />
+				<EditText
+					android:id="@+id/dynamic_edittext11p"
+					android:layout_width="80dp"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:background="#D7CCC8"
+					android:gravity="center_horizontal|center_vertical"
+					android:text="00.00"
+					android:textSize="12sp"
+					android:textStyle="bold"
+					android:textColor="#000000"
+					android:hint="Edit Text"
+					android:textColorHint="#607D8B"
+					android:inputType="numberDecimal"
+					android:enabled="false" />
+				<TextView
+					android:id="@+id/textview334"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:gravity="center_horizontal|center_vertical"
+					android:text="="
+					android:textSize="12sp"
+					android:textStyle="bold"
+					android:textColor="#000000" />
+				<TextView
+					android:id="@+id/textview11"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:gravity="center_horizontal|center_vertical"
+					android:text="كامل طول المواسير بالفرعة بدون تداخل أو أوفر لاب ( م )"
+					android:textSize="12sp"
+					android:textStyle="bold"
+					android:textColor="#000000" />
+			</LinearLayout>
+			<LinearLayout
+				android:id="@+id/dynamic_linear12p"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:background="#F3E5F5"
+				android:gravity="center_horizontal|center_vertical"
+				android:orientation="horizontal">
+				<TextView
+					android:id="@+id/textview399"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:gravity="center_horizontal|center_vertical"
+					android:text="م"
+					android:textSize="12sp"
+					android:textStyle="bold"
+					android:textColor="#000000"
+					android:enabled="false" />
+				<EditText
+					android:id="@+id/dynamic_edittext12p"
+					android:layout_width="80dp"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:background="#D7CCC8"
+					android:gravity="center_horizontal|center_vertical"
+					android:text="00.00"
+					android:textSize="12sp"
+					android:textStyle="bold"
+					android:textColor="#000000"
+					android:textColorHint="#607D8B"
+					android:inputType="numberDecimal"
+					android:enabled="false" />
+				<TextView
+					android:id="@+id/textview342"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:gravity="center_horizontal|center_vertical"
+					android:text="="
+					android:textSize="12sp"
+					android:textStyle="bold"
+					android:textColor="#000000" />
+				<TextView
+					android:id="@+id/textview12"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:gravity="center_horizontal|center_vertical"
+					android:text="طول المواسير بالفرعة بدون تداخل أو أوفر لاب بعد خصم ماسورة البداية ( م )"
+					android:textSize="12sp"
+					android:textStyle="bold"
+					android:textColor="#000000" />
+			</LinearLayout>
+			<LinearLayout
+				android:id="@+id/dynamic_linear13p"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:background="#F3E5F5"
+				android:gravity="center_horizontal|center_vertical"
+				android:orientation="horizontal">
+				<TextView
+					android:id="@+id/textview1139"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="ماسورة"
+					android:textSize="12sp"
+					android:textStyle="bold"
+					android:textColor="#000000" />
+				<EditText
+					android:id="@+id/dynamic_edittext13p"
+					android:layout_width="80dp"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:background="#D7CCC8"
+					android:gravity="center_horizontal|center_vertical"
+					android:text="00.00"
+					android:textSize="12sp"
+					android:textStyle="bold"
+					android:textColor="#000000"
+					android:hint="Edit Text"
+					android:textColorHint="#607D8B"
+					android:inputType="numberDecimal"
+					android:enabled="false" />
+				<TextView
+					android:id="@+id/textview346"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:gravity="center_horizontal|center_vertical"
+					android:text="="
+					android:textSize="12sp"
+					android:textStyle="bold"
+					android:textColor="#000000" />
+				<TextView
+					android:id="@+id/textview13"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:gravity="center_horizontal|center_vertical"
+					android:text="عدد المواسير بطول الماسورة ال standard قبل التقريب بعد خصم ماسورة البداية"
+					android:textSize="12sp"
+					android:textStyle="bold"
+					android:textColor="#000000" />
+			</LinearLayout>
+			<LinearLayout
+				android:id="@+id/dynamic_linear14p"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:background="#F3E5F5"
+				android:gravity="center_horizontal|center_vertical"
+				android:orientation="horizontal">
+				<TextView
+					android:id="@+id/textview1140"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="ماسورة"
+					android:textSize="12sp"
+					android:textStyle="bold"
+					android:textColor="#000000" />
+				<EditText
+					android:id="@+id/dynamic_edittext14p"
+					android:layout_width="80dp"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:background="#D7CCC8"
+					android:gravity="center_horizontal|center_vertical"
+					android:text="00.00"
+					android:textSize="12sp"
+					android:textStyle="bold"
+					android:textColor="#000000"
+					android:textColorHint="#607D8B"
+					android:inputType="numberDecimal"
+					android:enabled="false" />
+				<TextView
+					android:id="@+id/textview596"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="="
+					android:textSize="12sp"
+					android:textStyle="bold"
+					android:textColor="#000000" />
+				<TextView
+					android:id="@+id/textview14"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:gravity="center_horizontal|center_vertical"
+					android:text="عدد المواسير بطول الماسورة ال standard بعد التقريب بعد خصم ماسورة البداية"
+					android:textSize="12sp"
+					android:textStyle="bold"
+					android:textColor="#000000" />
+			</LinearLayout>
+			<LinearLayout
+				android:id="@+id/dynamic_linear15p"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:background="#F3E5F5"
+				android:gravity="center_horizontal|center_vertical"
+				android:orientation="horizontal">
+				<TextView
+					android:id="@+id/textview1141"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="م"
+					android:textSize="12sp"
+					android:textStyle="bold"
+					android:textColor="#000000" />
+				<EditText
+					android:id="@+id/dynamic_edittext15p"
+					android:layout_width="80dp"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:background="#D7CCC8"
+					android:gravity="center_horizontal|center_vertical"
+					android:text="00.00"
+					android:textSize="12sp"
+					android:textStyle="bold"
+					android:textColor="#000000"
+					android:hint="Edit Text"
+					android:textColorHint="#607D8B"
+					android:inputType="numberDecimal"
+					android:enabled="false" />
+				<TextView
+					android:id="@+id/textview357"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:gravity="center_horizontal|center_vertical"
+					android:text="="
+					android:textSize="12sp"
+					android:textStyle="bold"
+					android:textColor="#000000" />
+				<TextView
+					android:id="@+id/textview15"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:gravity="center_horizontal|center_vertical"
+					android:text="طول الماسورة المتبقية بدون التداخل أو الأوفر لاب ( م )"
+					android:textSize="12sp"
+					android:textStyle="bold"
+					android:textColor="#000000" />
+			</LinearLayout>
+			<LinearLayout
+				android:id="@+id/dynamic_linear16p"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:background="#F3E5F5"
+				android:gravity="center_horizontal|center_vertical"
+				android:orientation="horizontal">
+				<TextView
+					android:id="@+id/textview1142"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="م"
+					android:textSize="12sp"
+					android:textStyle="bold"
+					android:textColor="#000000" />
+				<EditText
+					android:id="@+id/dynamic_edittext16p"
+					android:layout_width="80dp"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:background="#D7CCC8"
+					android:gravity="center_horizontal|center_vertical"
+					android:text="00.00"
+					android:textSize="12sp"
+					android:textStyle="bold"
+					android:textColor="#000000"
+					android:hint="Edit Text"
+					android:textColorHint="#607D8B"
+					android:inputType="numberDecimal"
+					android:enabled="false" />
+				<TextView
+					android:id="@+id/textview365"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:gravity="center_horizontal|center_vertical"
+					android:text="="
+					android:textSize="12sp"
+					android:textStyle="bold"
+					android:textColor="#000000" />
+				<TextView
+					android:id="@+id/textview16"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:gravity="center_horizontal|center_vertical"
+					android:text="طول الماسورة المتبقية &quot; الماسورة الأخير &quot; شامل طول التداخل أو الأوفر لاب ( م )"
+					android:textSize="12sp"
+					android:textStyle="bold"
+					android:textColor="#000000" />
+			</LinearLayout>
+			<TextView
+				android:id="@+id/textview1146"
+				android:layout_width="match_parent"
+				android:layout_height="10dp"
+				android:padding="8dp"
+				android:textSize="12sp"
+				android:textColor="#000000" />
+			<LinearLayout
+				android:id="@+id/linear17"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:gravity="center_horizontal|center_vertical"
+				android:orientation="horizontal"
+				android:background="@drawable/rectangle_0_yellowfffff59d_075_blackff000000">
+				<TextView
+					android:id="@+id/textview1147"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="م"
+					android:textSize="12sp"
+					android:textStyle="bold"
+					android:textColor="#000000" />
+				<EditText
+					android:id="@+id/dynamic_edittext17p"
+					android:layout_width="80dp"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:background="#D7CCC8"
+					android:gravity="center_horizontal|center_vertical"
+					android:text="00.00"
+					android:textSize="12sp"
+					android:textStyle="bold"
+					android:textColor="#000000"
+					android:textColorHint="#607D8B"
+					android:inputType="numberDecimal"
+					android:enabled="false" />
+				<TextView
+					android:id="@+id/textview597"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:gravity="center_horizontal|center_vertical"
+					android:text="="
+					android:textSize="12sp"
+					android:textStyle="bold"
+					android:textColor="#000000" />
+				<TextView
+					android:id="@+id/textview17"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:gravity="center_horizontal|center_vertical"
+					android:text="إجمالى أطوال المواسير شامل كل أطوال التداخلات أو كل أطوال الأوفر لاب بالمواسير ( م )"
+					android:textSize="12sp"
+					android:textStyle="bold"
+					android:textColor="#000000" />
+			</LinearLayout>
+			<TextView
+				android:id="@+id/textview1153"
+				android:layout_width="match_parent"
+				android:layout_height="10dp"
+				android:padding="8dp"
+				android:textSize="12sp"
+				android:textColor="#000000" />
+			<Button
+				android:id="@+id/dynamic_button2p"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:gravity="center_horizontal|center_vertical"
+				android:text="في حالة الرغبة في استخدام\nوصلة ماسورة في نهاية الفرعة\nمثلا بطول ١ م  ( short piece )\nأضغط هنا"
+				android:textSize="12sp"
+				android:textStyle="bold"
+				android:textColor="#000000"
+				android:background="@drawable/rectangle_15_cyanff4dd0e1" />
+			<TextView
+				android:id="@+id/textview1154"
+				android:layout_width="match_parent"
+				android:layout_height="5dp"
+				android:padding="8dp"
+				android:text="\n"
+				android:textSize="12sp"
+				android:textColor="#000000" />
+			<LinearLayout
+				android:id="@+id/dynamic_linear18p"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:background="#F3E5F5"
+				android:gravity="center_horizontal|center_vertical"
+				android:orientation="horizontal">
+				<TextView
+					android:id="@+id/textview1150"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="م"
+					android:textSize="12sp"
+					android:textStyle="bold"
+					android:textColor="#000000" />
+				<EditText
+					android:id="@+id/dynamic_edittext18p"
+					android:layout_width="80dp"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:background="#C8E6C9"
+					android:gravity="center_horizontal|center_vertical"
+					android:textSize="12sp"
+					android:textStyle="bold"
+					android:textColor="#000000"
+					android:hint="1"
+					android:textColorHint="#B0BEC5"
+					android:inputType="numberDecimal" />
+				<TextView
+					android:id="@+id/textview1151"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:gravity="center_horizontal|center_vertical"
+					android:text="="
+					android:textSize="12sp"
+					android:textStyle="bold"
+					android:textColor="#000000" />
+				<TextView
+					android:id="@+id/textview533"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:gravity="center_horizontal|center_vertical"
+					android:text="* طول وصلة الماسورة المراد تركيبها في نهاية الفرعة ( short piece )\n( إن وجدت ) ( م )"
+					android:textSize="12sp"
+					android:textStyle="bold"
+					android:textColor="#000000" />
+			</LinearLayout>
+			<TextView
+				android:id="@+id/textview1152"
+				android:layout_width="match_parent"
+				android:layout_height="10dp"
+				android:padding="8dp"
+				android:gravity="center_horizontal|center_vertical"
+				android:text="       "
+				android:textSize="12sp"
+				android:textStyle="bold"
+				android:textColor="#000000" />
+			<LinearLayout
+				android:id="@+id/dynamic_linear19p"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:gravity="center_horizontal|center_vertical"
+				android:orientation="horizontal"
+				android:background="@drawable/rectangle_0_yellowfffff59d_075_blackff000000">
+				<TextView
+					android:id="@+id/textview601"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="م"
+					android:textSize="12sp"
+					android:textStyle="bold"
+					android:textColor="#000000" />
+				<EditText
+					android:id="@+id/dynamic_edittext19p"
+					android:layout_width="80dp"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:background="#FFC107"
+					android:gravity="center_horizontal|center_vertical"
+					android:text="00.00"
+					android:textSize="12sp"
+					android:textStyle="bold"
+					android:textColor="#000000"
+					android:textColorHint="#B0BEC5"
+					android:inputType="numberDecimal"
+					android:enabled="false" />
+				<TextView
+					android:id="@+id/textview602"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:gravity="center_horizontal|center_vertical"
+					android:text="="
+					android:textSize="12sp"
+					android:textStyle="bold"
+					android:textColor="#000000" />
+				<TextView
+					android:id="@+id/textview603"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:gravity="center_horizontal|center_vertical"
+					android:text="إجمالى أطوال المواسير الكلى ( م )"
+					android:textSize="12sp"
+					android:textStyle="bold"
+					android:textColor="#795548" />
+			</LinearLayout>
+			<LinearLayout
+				android:id="@+id/add_dynamic_element_lin"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:gravity="right|center_vertical"
+				android:orientation="horizontal"
+				android:layout_gravity="center_horizontal">
+				<Button
+					android:id="@+id/dynamic_remove"
+					android:layout_width="100dp"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="الغاء الفرعة\nالحالية"
+					android:textSize="16sp"
+					android:textStyle="bold"
+					android:textColor="#000000"
+					android:layout_weight="1"
+					android:background="@drawable/rectangle_15_cyanff4dd0e1" />
+				<TextView
+					android:id="@+id/textview704"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					android:layout_weight="2" />
+			</LinearLayout>
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

@@ -1,0 +1,114 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<LinearLayout
+		android:id="@+id/linear119dl"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:gravity="left|center_vertical"
+		android:orientation="horizontal"
+		android:layout_gravity="right"
+		android:background="@drawable/rectangle_0_greyffe0e0e0_050_blackff000000">
+		<ImageView
+			android:id="@+id/close3dl"
+			android:layout_width="30dp"
+			android:layout_height="30dp"
+			android:src="@drawable/clos1"
+			android:scaleType="fitCenter"
+			android:layout_gravity="left|center_vertical" />
+		<LinearLayout
+			android:id="@+id/linear116dl"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:padding="8dp"
+			android:gravity="center_horizontal|center_vertical"
+			android:orientation="vertical"
+			android:background="@drawable/rectangle_0_purplefff3e5f5_050_blackff000000">
+			<EditText
+				android:id="@+id/edittext6dl"
+				android:layout_width="100dp"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:background="#D7CCC8"
+				android:gravity="center_horizontal|center_vertical"
+				android:textSize="12sp"
+				android:textStyle="bold"
+				android:textColor="#000000"
+				android:textColorHint="#B0BEC5"
+				android:inputType="numberSigned|numberDecimal"
+				android:enabled="false" />
+			<EditText
+				android:id="@+id/edittext_am6dl"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:gravity="center_horizontal|center_vertical"
+				android:text="0.00"
+				android:textSize="12sp"
+				android:textColor="#000000"
+				android:textColorHint="#607D8B"
+				android:inputType="numberSigned|numberDecimal"
+				android:enabled="false" />
+		</LinearLayout>
+		<LinearLayout
+			android:id="@+id/linear115dl"
+			android:layout_width="91dp"
+			android:layout_height="match_parent"
+			android:padding="8dp"
+			android:gravity="center_horizontal|center_vertical"
+			android:orientation="vertical"
+			android:background="@drawable/rectangle_0_purplefff3e5f5_050_blackff000000">
+			<EditText
+				android:id="@+id/edittext5dl"
+				android:layout_width="70dp"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:background="#BBDEFB"
+				android:gravity="center_horizontal|center_vertical"
+				android:textSize="12sp"
+				android:textStyle="bold"
+				android:textColor="#000000"
+				android:textColorHint="#B0BEC5"
+				android:inputType="numberSigned|numberDecimal" />
+			<EditText
+				android:id="@+id/edittext_am5dl"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:gravity="center_horizontal|center_vertical"
+				android:text="0"
+				android:textSize="12sp"
+				android:textColor="#000000"
+				android:hint="Edit Text"
+				android:textColorHint="#607D8B"
+				android:inputType="numberSigned|numberDecimal"
+				android:enabled="false" />
+		</LinearLayout>
+		<LinearLayout
+			android:id="@+id/linear114dl"
+			android:layout_width="91dp"
+			android:layout_height="100dp"
+			android:padding="8dp"
+			android:gravity="center_horizontal|center_vertical"
+			android:orientation="vertical"
+			android:background="@drawable/rectangle_0_purplefff3e5f5_050_blackff000000">
+			<EditText
+				android:id="@+id/edittext4dl"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:background="#C8E6C9"
+				android:gravity="center_horizontal|center_vertical"
+				android:text="1"
+				android:textSize="12sp"
+				android:textStyle="bold"
+				android:textColor="#000000"
+				android:hint="                    "
+				android:textColorHint="#B0BEC5" />
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>
