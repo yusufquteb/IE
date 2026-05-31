@@ -39,6 +39,10 @@ import java.text.*;
 import java.util.*;
 import java.util.regex.*;
 import org.json.*;
+import android.print.PrintDocumentAdapter;
+import android.print.PrintManager;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
 
 public class ToipccPlasteringActivity extends AppCompatActivity {
 	
@@ -144,5 +148,51 @@ public class ToipccPlasteringActivity extends AppCompatActivity {
 		return super.onOptionsItemSelected(item);
 	}
 
+
+
+	public void _PrintHelper(final View _view) {
+		StringBuilder htmlContent = new StringBuilder();
+		htmlContent.append("<!DOCTYPE html><html><head><meta charset=\"UTF-8\">");
+		htmlContent.append("<style>body{font-family:Arial,sans-serif;direction:rtl;padding:16px;background:#fff;}");
+		htmlContent.append("p{margin:4px 0;padding:6px 8px;border-radius:4px;}");
+		htmlContent.append(".input{background:#E8F5E9;border-left:3px solid #4CAF50;}");
+		htmlContent.append(".result{background:#E3F2FD;border-left:3px solid #2196F3;}");
+		htmlContent.append("h4{color:#006064;margin-top:12px;}");
+		htmlContent.append("</style></head><body>");
+		_collectViewsHtml(_view, htmlContent);
+		htmlContent.append("</body></html>");
+		WebView webView = new WebView(ToipccPlasteringActivity.this);
+		webView.loadDataWithBaseURL(null, htmlContent.toString(), "text/html", "UTF-8", null);
+		webView.setWebViewClient(new WebViewClient() {
+			@Override
+			public void onPageFinished(WebView view, String url) {
+				PrintManager printManager = (PrintManager) ToipccPlasteringActivity.this.getSystemService(PRINT_SERVICE);
+				if (printManager != null) {
+					PrintDocumentAdapter printAdapter = view.createPrintDocumentAdapter("طباعة");
+					printManager.print("طباعة", printAdapter, new android.print.PrintAttributes.Builder().build());
+				}
+			}
+		});
+	}
+
+	private void _collectViewsHtml(View v, StringBuilder sb) {
+		if (v instanceof android.view.ViewGroup) {
+			android.view.ViewGroup vg = (android.view.ViewGroup) v;
+			for (int i = 0; i < vg.getChildCount(); i++) {
+				_collectViewsHtml(vg.getChildAt(i), sb);
+			}
+		} else if (v instanceof TextView) {
+			String text = ((TextView) v).getText().toString().trim();
+			if (!text.isEmpty()) {
+				int bgColor = 0;
+				if (v.getBackground() instanceof android.graphics.drawable.ColorDrawable) {
+					bgColor = ((android.graphics.drawable.ColorDrawable) v.getBackground()).getColor();
+				}
+				String css = (bgColor == 0xFF4CAF50 || bgColor == 0xFFE8F5E9) ? " class=\"input\"" :
+						(bgColor == 0xFF2196F3 || bgColor == 0xFFE3F2FD) ? " class=\"result\"" : "";
+				sb.append("<p").append(css).append(">").append(android.text.Html.escapeHtml(text)).append("</p>\n");
+			}
+		}
+	}
 
 }
