@@ -4,16 +4,18 @@
 	xmlns:tools="http://schemas.android.com/tools"
 	android:id="@+id/_coordinator"
 	android:layout_width="match_parent"
-	android:layout_height="match_parent">
+	android:layout_height="match_parent"
+	android:fitsSystemWindows="true">
 	<com.google.android.material.appbar.AppBarLayout
 		android:id="@+id/_app_bar"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content">
-		<androidx.appcompat.widget.Toolbar
+		<com.google.android.material.appbar.MaterialToolbar
 			android:id="@+id/_toolbar"
 			android:layout_width="match_parent"
 			android:layout_height="?attr/actionBarSize"
-			android:background="?attr/colorPrimary" />
+			android:background="?attr/colorPrimary"
+			app:menu="@menu/menu_calc" />
 	</com.google.android.material.appbar.AppBarLayout>
 	<LinearLayout
 		android:layout_width="match_parent"
@@ -22,10 +24,12 @@
 		app:layout_behavior="@string/appbar_scrolling_view_behavior">
 <ScrollView
 			android:id="@+id/vscroll1"
+			android:paddingBottom="88dp"
+			android:clipToPadding="false"
 			android:layout_width="match_parent"
 			android:layout_height="match_parent"
 			android:padding="8dp"
-			android:background="#E0F2F1">
+			android:background="?android:attr/colorBackground">
 			<LinearLayout
 				android:id="@+id/linear1"
 				android:layout_width="match_parent"
@@ -44,237 +48,6 @@
 					android:textStyle="bold"
 					android:textColor="#000000"
 					android:layout_gravity="center_horizontal" />
-				<LinearLayout
-					android:id="@+id/linear176"
-					android:layout_width="match_parent"
-					android:layout_height="wrap_content"
-					android:padding="8dp"
-					android:orientation="vertical">
-					<LinearLayout
-						android:id="@+id/linear2335"
-						android:layout_width="match_parent"
-						android:layout_height="wrap_content"
-						android:gravity="right|center_vertical"
-						android:orientation="horizontal">
-						<Button
-							android:id="@+id/button195"
-							android:layout_width="wrap_content"
-							android:layout_height="wrap_content"
-							android:padding="8dp"
-							android:gravity="center_horizontal|center_vertical"
-							android:text="فيديو شرح\nطريقة الأستخدام"
-							android:textSize="12sp"
-							android:textStyle="bold"
-							android:textColor="#000000" />
-						<LinearLayout
-							android:id="@+id/linear728"
-							android:layout_width="wrap_content"
-							android:layout_height="15dp"
-							android:padding="8dp"
-							android:orientation="horizontal"
-							android:layout_weight="1" />
-						<LinearLayout
-							android:id="@+id/linear707"
-							android:layout_width="wrap_content"
-							android:layout_height="wrap_content"
-							android:padding="8dp"
-							android:gravity="right|bottom"
-							android:orientation="vertical"
-							android:layout_gravity="right|bottom">
-							<TextView
-								android:id="@+id/textview1221"
-								android:layout_width="wrap_content"
-								android:layout_height="wrap_content"
-								android:padding="8dp"
-								android:gravity="right|center_vertical"
-								android:text="طريقة الأستخدام :"
-								android:textSize="14sp"
-								android:textStyle="bold"
-								android:textColor="#E91E63"
-								android:layout_gravity="right" />
-						</LinearLayout>
-					</LinearLayout>
-					<TextView
-						android:id="@+id/textview811"
-						android:layout_width="wrap_content"
-						android:layout_height="wrap_content"
-						android:padding="8dp"
-						android:gravity="right"
-						android:text="دليل المدخلات\n---------------"
-						android:textSize="12sp"
-						android:textStyle="bold"
-						android:textColor="#000000"
-						android:layout_gravity="right" />
-					<LinearLayout
-						android:id="@+id/linear386"
-						android:layout_width="match_parent"
-						android:layout_height="wrap_content"
-						android:padding="8dp"
-						android:gravity="right"
-						android:orientation="horizontal">
-						<TextView
-							android:id="@+id/textview583"
-							android:layout_width="wrap_content"
-							android:layout_height="wrap_content"
-							android:padding="8dp"
-							android:gravity="right|center_vertical"
-							android:text="١ - &quot; * &quot; علامة وجود تعريفات أو ملاحظات\n-----------------------------------------\nفى حالة وجود علامة &quot; * &quot; بجوار أسم أو منطوق أو صيغة أي مدخل فيمكنك الضغط علي الأسم أو الصيغة أو المنطوق للمدخل ضغطة طويله وسيظهر تعريف أو ملاحظة لهذا المدخل"
-							android:textSize="12sp"
-							android:textStyle="bold"
-							android:textColor="#000000"
-							android:layout_gravity="right" />
-					</LinearLayout>
-					<LinearLayout
-						android:id="@+id/linear172"
-						android:layout_width="match_parent"
-						android:layout_height="wrap_content"
-						android:padding="8dp"
-						android:gravity="right|center_vertical"
-						android:orientation="horizontal">
-						<EditText
-							android:id="@+id/edittext129"
-							android:layout_width="40dp"
-							android:layout_height="30dp"
-							android:padding="8dp"
-							android:background="#BBDEFB"
-							android:textSize="12sp"
-							android:textColor="#000000"
-							android:textColorHint="#607D8B"
-							android:inputType="numberDecimal"
-							android:enabled="false" />
-						<TextView
-							android:id="@+id/textview579"
-							android:layout_width="match_parent"
-							android:layout_height="wrap_content"
-							android:padding="8dp"
-							android:text="٢ - مدخل أساسي يجب إدخاله"
-							android:textSize="11sp"
-							android:textStyle="bold"
-							android:textColor="#000000" />
-					</LinearLayout>
-					<LinearLayout
-						android:id="@+id/linear173"
-						android:layout_width="match_parent"
-						android:layout_height="wrap_content"
-						android:padding="8dp"
-						android:gravity="right|center_vertical"
-						android:orientation="horizontal">
-						<EditText
-							android:id="@+id/edittext125"
-							android:layout_width="40dp"
-							android:layout_height="30dp"
-							android:padding="8dp"
-							android:background="#C8E6C9"
-							android:gravity="center_horizontal|center_vertical"
-							android:textSize="12sp"
-							android:textStyle="bold"
-							android:textColor="#000000"
-							android:hint="##"
-							android:textColorHint="#B0BEC5"
-							android:inputType="numberDecimal"
-							android:enabled="false" />
-						<TextView
-							android:id="@+id/textview580"
-							android:layout_width="match_parent"
-							android:layout_height="wrap_content"
-							android:padding="8dp"
-							android:text="٣ - مدخل إختياري لا يؤثر في الحسابات"
-							android:textSize="11sp"
-							android:textStyle="bold"
-							android:textColor="#000000" />
-					</LinearLayout>
-					<LinearLayout
-						android:id="@+id/linear289"
-						android:layout_width="match_parent"
-						android:layout_height="wrap_content"
-						android:padding="8dp"
-						android:gravity="center_horizontal|center_vertical"
-						android:orientation="horizontal"
-						android:layout_gravity="center_horizontal">
-						<Button
-							android:id="@+id/button18"
-							android:layout_width="40dp"
-							android:layout_height="30dp"
-							android:padding="8dp"
-							android:textSize="12sp"
-							android:textColor="#000000" />
-						<TextView
-							android:id="@+id/textview809"
-							android:layout_width="match_parent"
-							android:layout_height="wrap_content"
-							android:padding="8dp"
-							android:gravity="right|center_vertical"
-							android:text="٤ - لأضافة فرعة جديدة أضغط علي الزر"
-							android:textSize="11sp"
-							android:textStyle="bold"
-							android:textColor="#000000" />
-					</LinearLayout>
-					<TextView
-						android:id="@+id/textview555"
-						android:layout_width="match_parent"
-						android:layout_height="wrap_content"
-						android:padding="8dp"
-						android:gravity="center_horizontal|center_vertical"
-						android:text="-----‐---------------------------------"
-						android:textSize="14sp"
-						android:textStyle="bold"
-						android:textColor="#E91E63" />
-				</LinearLayout>
-				<TextView
-					android:id="@+id/textview101"
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					android:padding="8dp"
-					android:background="#FFFFFF"
-					android:text="استلام قاع الحفر لفرعة صرف صحي أو خط طرد أو خط مياه أو خط ري أو خط حريق بمعلومية منسوب ميه الماسورة ببداية الفرعة أو الخط والميل التصميمي للفرعة أو الخط :"
-					android:textSize="16sp"
-					android:textStyle="bold"
-					android:textColor="#000000"
-					android:layout_gravity="right" />
-				<HorizontalScrollView
-					android:id="@+id/hscroll17"
-					android:layout_width="match_parent"
-					android:layout_height="10dp"
-					android:padding="8dp" />
-				<LinearLayout
-					android:id="@+id/linear_dynamic_pipe_line_check_excavation"
-					android:layout_width="match_parent"
-					android:layout_height="wrap_content"
-					android:paddingTop="8dp"
-					android:paddingBottom="8dp"
-					android:gravity="center_horizontal|center_vertical"
-					android:orientation="vertical"
-					android:layout_gravity="center_horizontal|center_vertical" />
-				<LinearLayout
-					android:id="@+id/add_dynamic_element_lin"
-					android:layout_width="match_parent"
-					android:layout_height="wrap_content"
-					android:padding="8dp"
-					android:gravity="right|center_vertical"
-					android:orientation="horizontal"
-					android:layout_gravity="center_horizontal">
-					<TextView
-						android:id="@+id/textview704"
-						android:layout_width="wrap_content"
-						android:layout_height="wrap_content"
-						android:padding="8dp"
-						android:textSize="12sp"
-						android:textColor="#000000"
-						android:layout_weight="2" />
-					<Button
-						android:id="@+id/add_dynamic_pipe_line"
-						android:layout_width="150dp"
-						android:layout_height="wrap_content"
-						android:padding="8dp"
-						android:text="أضافة خط أو فرعة\nجديدة"
-						android:textSize="16sp"
-						android:textStyle="bold"
-						android:textColor="#000000"
-						android:layout_weight="1" />
-				</LinearLayout>
-			</LinearLayout>
-		</ScrollView>
-	</LinearLayout>
 	<com.google.android.material.floatingactionbutton.FloatingActionButton
 		android:id="@+id/_fab"
 		android:layout_width="wrap_content"
