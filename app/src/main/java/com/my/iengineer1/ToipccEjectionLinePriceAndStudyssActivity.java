@@ -42,6 +42,10 @@ import java.text.DecimalFormat;
 import java.util.*;
 import java.util.regex.*;
 import org.json.*;
+import android.print.PrintManager;
+import android.print.PrintDocumentAdapter;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
 import androidx.print.PrintHelper;
 
 
@@ -5850,23 +5854,69 @@ public class ToipccEjectionLinePriceAndStudyssActivity extends AppCompatActivity
 		super.onResume();
 	}
 	public void _fghhh(final View _view) {
-		Bitmap bm = Bitmap.createBitmap(_view.getWidth(), _view.getHeight(),Bitmap.Config.ARGB_8888); 
-		Canvas canvas = new Canvas(bm);
-		android.graphics.drawable.Drawable bgDrawable =_view.getBackground();
-		_view.setDrawingCacheEnabled(true);
-		
-		if (bgDrawable!=null) {
-				bgDrawable.draw(canvas);
-		} else {
-				canvas.drawColor(Color.WHITE);}
-		_view.draw(canvas);
-		PrintHelper printHelper = new PrintHelper(getApplicationContext()); //change the activity name
-		// Set the desired scale mode. 
-		printHelper.setScaleMode(PrintHelper.SCALE_MODE_FIT);
-		 // Get the bitmap for the ImageView's drawable. 
-		// Bitmap bitmap = ((BitmapDrawable) mImageView.getDrawable()).getBitmap(); 
-		 // Print the bitmap. 
-		 printHelper.printBitmap("Print Bitmap", bm);
+		_PrintHelper(_view);
 	}
-	
+
+	public void _PrintHelper(final View _view) {
+		StringBuilder htmlContent = new StringBuilder();
+		htmlContent.append("<!DOCTYPE html><html><head><meta charset=\"UTF-8\">");
+		htmlContent.append("<style>body{font-family:Arial,sans-serif;direction:rtl;padding:16px;}</style></head><body>");
+		_collectViewsHtml(_view, htmlContent);
+		htmlContent.append("</body></html>");
+		android.webkit.WebView webView = new android.webkit.WebView(ToipccEjectionLinePriceAndStudyssActivity.this);
+		webView.loadDataWithBaseURL(null, htmlContent.toString(), "text/html", "UTF-8", null);
+		webView.setWebViewClient(new android.webkit.WebViewClient() {
+			@Override
+			public void onPageFinished(android.webkit.WebView view, String url) {
+				android.print.PrintManager pm = (android.print.PrintManager) ToipccEjectionLinePriceAndStudyssActivity.this.getSystemService(PRINT_SERVICE);
+				if (pm != null) pm.print("طباعة", view.createPrintDocumentAdapter("طباعة"), new android.print.PrintAttributes.Builder().build());
+			}
+		});
+	}
+
+	private void _collectViewsHtml(View v, StringBuilder sb) {
+		if (v instanceof android.view.ViewGroup) {
+			android.view.ViewGroup vg = (android.view.ViewGroup) v;
+			for (int i = 0; i < vg.getChildCount(); i++) _collectViewsHtml(vg.getChildAt(i), sb);
+		} else if (v instanceof TextView) {
+			String text = ((TextView) v).getText().toString().trim();
+			if (!text.isEmpty()) sb.append("<p>").append(android.text.Html.escapeHtml(text)).append("</p>");
+		}
+	}
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		getMenuInflater().inflate(R.menu.menu_calc, menu);
+		return true;
+	}
+
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		int id = item.getItemId();
+		if (id == R.id.action_help) {
+			new androidx.appcompat.app.AlertDialog.Builder(this)
+				.setTitle("طريقة الاستخدام")
+				.setMessage("دليل المدخلات\n" +
+                "---------------\n" +
+                "١ - \" * \" علامة وجود تعريفات أو ملاحظات\n" +
+                "-----------------------------------------\n" +
+                "فى حالة وجود علامة \" * \" بجوار أسم أو منطوق أو صيغة أي مدخل فيمكنك الضغط علي الأسم أو الصيغة أو المنطوق للمدخل ضغطة طويله وسيظهر تعريف أو ملاحظة لهذا المدخل\n" +
+                "٢ - مدخل أساسي يجب إدخاله\n" +
+                "٣ - مدخل إختياري يمكن تعديله وفي حالة عدم إدخاله سيقوم البرنامج بإفتراض قيمته بالقيمة الموجودة داخل المستطيل وذلك عند الضغط علي زرار \" أحسب = \"\n" +
+                "٤ - ناتج قابل للتعديل\n" +
+                "أحسب\n" +
+                "=\n" +
+                "٥ - للحصول علي الناتج أضغط علي الزر الأسود وعند تعديل أو تغيير أي مدخل يتم الضغط مرة أخرى علي الزر الأسود\n" +
+                "٦ - لأضافة أو إظهار قائمة أضغط علي الزر\n" +
+                "-----‐---------------------------------")
+				.setPositiveButton("حسناً", null)
+				.show();
+			return true;
+		} else if (id == R.id.action_print) {
+			_PrintHelper(linear1);
+			return true;
+		}
+		return super.onOptionsItemSelected(item);
+	}
+
+
 }

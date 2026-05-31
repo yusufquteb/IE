@@ -120,4 +120,29 @@ public class ToipccBaseCourseLayersForRoadActivity extends AppCompatActivity {
 	public void onResume() {
 		super.onResume();
 	}
+
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		getMenuInflater().inflate(R.menu.menu_calc, menu);
+		return true;
+	}
+
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		int id = item.getItemId();
+		if (id == R.id.action_help) {
+			new androidx.appcompat.app.AlertDialog.Builder(this)
+				.setTitle("طريقة الاستخدام")
+				.setMessage("أدخل القيم في الحقول المُدخلة (ذات الخلفية الخضراء) ثم اضغط على زر الحساب للحصول على النتائج.")
+				.setPositiveButton("حسناً", null)
+				.show();
+			return true;
+		} else if (id == R.id.action_print) {
+			_PrintHelper(linear2);
+			return true;
+		}
+		return super.onOptionsItemSelected(item);
+	}
+
+
 }
