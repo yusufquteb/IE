@@ -52,7 +52,6 @@ import android.print.PrintManager;
 import android.print.PrintDocumentAdapter;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
-import androidx.print.PrintHelper;
 
 
 public class EipCheckSewagePipeLinesLevelssActivity extends AppCompatActivity {
