@@ -14,7 +14,7 @@
 			android:id="@+id/_toolbar"
 			android:layout_width="match_parent"
 			android:layout_height="?attr/actionBarSize"
-			android:background="?attr/colorPrimary"
+			android:background="?attr/colorPrimary" 
 			app:menu="@menu/menu_calc" />
 	</com.google.android.material.appbar.AppBarLayout>
 	<LinearLayout
@@ -22,10 +22,10 @@
 		android:layout_height="match_parent"
 		android:orientation="vertical"
 		app:layout_behavior="@string/appbar_scrolling_view_behavior">
-<ScrollView
-			android:id="@+id/vscroll1"
+		<ScrollView
 			android:paddingBottom="88dp"
 			android:clipToPadding="false"
+			android:id="@+id/vscroll1"
 			android:layout_width="match_parent"
 			android:layout_height="match_parent"
 			android:padding="8dp"
@@ -47,8 +47,7 @@
 					android:textStyle="bold"
 					android:textColor="#000000"
 					android:layout_gravity="center_horizontal" />
-				<com.google.android.material.button.MaterialButton
-							style="@style/Widget.Material3.Button"
+				<Button
 					android:id="@+id/button1"
 					android:layout_width="250dp"
 					android:layout_height="wrap_content"
@@ -58,10 +57,8 @@
 					android:textSize="14sp"
 					android:textStyle="bold"
 					android:textColor="#000000"
-					android:layout_gravity="center_horizontal"
-							app:cornerRadius="16dp" />
-				<com.google.android.material.button.MaterialButton
-							style="@style/Widget.Material3.Button"
+					android:layout_gravity="center_horizontal" />
+				<Button
 					android:id="@+id/button2"
 					android:layout_width="250dp"
 					android:layout_height="wrap_content"
@@ -71,10 +68,8 @@
 					android:textSize="14sp"
 					android:textStyle="bold"
 					android:textColor="#000000"
-					android:layout_gravity="center_horizontal"
-							app:cornerRadius="16dp" />
-				<com.google.android.material.button.MaterialButton
-							style="@style/Widget.Material3.Button"
+					android:layout_gravity="center_horizontal" />
+				<Button
 					android:id="@+id/button3"
 					android:layout_width="250dp"
 					android:layout_height="wrap_content"
@@ -83,8 +78,7 @@
 					android:textSize="14sp"
 					android:textStyle="bold"
 					android:textColor="#000000"
-					android:layout_gravity="center_horizontal"
-							app:cornerRadius="16dp" />
+					android:layout_gravity="center_horizontal" />
 			</LinearLayout>
 		</ScrollView>
 	</LinearLayout>

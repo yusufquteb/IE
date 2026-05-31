@@ -14,7 +14,7 @@
 			android:id="@+id/_toolbar"
 			android:layout_width="match_parent"
 			android:layout_height="?attr/actionBarSize"
-			android:background="?attr/colorPrimary"
+			android:background="?attr/colorPrimary" 
 			app:menu="@menu/menu_calc" />
 	</com.google.android.material.appbar.AppBarLayout>
 	<LinearLayout
@@ -22,10 +22,10 @@
 		android:layout_height="match_parent"
 		android:orientation="vertical"
 		app:layout_behavior="@string/appbar_scrolling_view_behavior">
-<ScrollView
-			android:id="@+id/vscroll1"
+		<ScrollView
 			android:paddingBottom="88dp"
 			android:clipToPadding="false"
+			android:id="@+id/vscroll1"
 			android:layout_width="match_parent"
 			android:layout_height="match_parent"
 			android:padding="8dp"
@@ -36,7 +36,7 @@
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
 				android:padding="8dp"
-				android:background="#E0F2F1"
+				android:background="?android:attr/colorBackground"
 				android:gravity="center_horizontal|top"
 				android:orientation="vertical"
 				android:layout_gravity="center_horizontal|top">
@@ -63,8 +63,7 @@
 						android:layout_height="wrap_content"
 						android:gravity="right|center_vertical"
 						android:orientation="horizontal">
-						<com.google.android.material.button.MaterialButton
-							style="@style/Widget.Material3.Button"
+						<Button
 							android:id="@+id/button195"
 							android:layout_width="wrap_content"
 							android:layout_height="wrap_content"
@@ -73,8 +72,7 @@
 							android:text="فيديو شرح\nطريقة الأستخدام"
 							android:textSize="12sp"
 							android:textStyle="bold"
-							android:textColor="#000000"
-							app:cornerRadius="16dp" />
+							android:textColor="#000000" />
 						<LinearLayout
 							android:id="@+id/linear720"
 							android:layout_width="wrap_content"
@@ -82,8 +80,7 @@
 							android:padding="8dp"
 							android:orientation="horizontal"
 							android:layout_weight="1" />
-						<com.google.android.material.button.MaterialButton
-							style="@style/Widget.Material3.Button"
+						<Button
 							android:id="@+id/button196"
 							android:layout_width="wrap_content"
 							android:layout_height="wrap_content"
@@ -91,8 +88,7 @@
 							android:text="قائمة اسعار\nالهيئة القومية\nلمياه الشرب\nوالصرف الصحي\nلبنود التجفيف"
 							android:textSize="12sp"
 							android:textStyle="bold"
-							android:textColor="#000000"
-							app:cornerRadius="16dp" />
+							android:textColor="#000000" />
 						<LinearLayout
 							android:id="@+id/linear707"
 							android:layout_width="wrap_content"
@@ -241,15 +237,13 @@
 						android:gravity="center_horizontal|center_vertical"
 						android:orientation="horizontal"
 						android:layout_gravity="center_horizontal">
-						<com.google.android.material.button.MaterialButton
-							style="@style/Widget.Material3.Button"
+						<Button
 							android:id="@+id/button9"
 							android:layout_width="40dp"
 							android:layout_height="30dp"
 							android:padding="8dp"
 							android:textSize="12sp"
-							android:textColor="#000000"
-							app:cornerRadius="16dp" />
+							android:textColor="#000000" />
 						<TextView
 							android:id="@+id/textview809"
 							android:layout_width="match_parent"
@@ -660,25 +654,18 @@
 						android:textSize="12sp"
 						android:textStyle="bold"
 						android:textColor="#000000" />
-										<com.google.android.material.textfield.TextInputLayout
-					    android:layout_width="match_parent"
-					    android:layout_height="wrap_content"
-					    style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense"
-					    app:boxBackgroundColor="#C8E6C9"
-					    app:boxStrokeColor="#388E3C"
-					    app:hintEnabled="false">
-					    <com.google.android.material.textfield.TextInputEditText
+					<EditText
 						android:id="@+id/edittext94"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
 						android:padding="8dp"
+						android:background="#C8E6C9"
 						android:gravity="right|center_vertical"
 						android:text="علاوة المتر الطولى من خطوط المواسير لشبكات الانحدار لاعمال تخفيض المياه الجوفيه ( النزح الجوفي ) وتوريد وعمل وتشغيل دائرة تجفيف باستخدام الابار العميقه فى وقت واحد لحين الانتهاء من الاعمال والبند يشمل الاتى :- \nجميع الابار المستخدمه لعمق 20 : 22 متر من سطح الارض الطبيعيه تنفذ داخل قيسونات بقطر  16 - 18 بوصه وتتكون من مواسير ساده ومصافى قطر 10 : 12 بوصه ومغطاه بسلك شبك بلاستيك لايسمح بمرور المواد الناعمه وفلتر زلطى متدرج .\nالطلمبات المستخدمه تصرف 60 : 70 م3 /ساعه عند رافع 20 : 35 متر وتعمل بشكل مستمر حتى منسوب المياه الجوفيه.\nخط الطرد من مواسير حديد قطر 12 : 16 بوصه وبطول من 300 متر : 500 متر طولى والى اقرب مصرف من استخدام المحابس اللازمه\nتوفير عدد ( 2 ) مولد ( اساسي واحتياطى ) ولوحات تحكم وتشغيل تشمل جميع المكونات\n \n• فرعة عليها عدد ( 6 ) بئر بمسافات بينية من 5.00 الى 5.99 م "
 						android:textSize="12sp"
 						android:textStyle="bold"
 						android:textColor="#000000"
-						android:textColorHint="#B0BEC5" 
-					        android:layout_width="match_parent"
-					        android:layout_height="wrap_content" />
-					</com.google.android.material.textfield.TextInputLayout>
+						android:textColorHint="#B0BEC5" />
 					<TextView
 						android:id="@+id/textview1796"
 						android:layout_width="wrap_content"
@@ -714,25 +701,18 @@
 								android:textSize="12sp"
 								android:textStyle="bold"
 								android:textColor="#000000" />
-														<com.google.android.material.textfield.TextInputLayout
-							    android:layout_width="80dp"
-							    android:layout_height="wrap_content"
-							    style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense"
-							    app:boxBackgroundColor="#BBDEFB"
-							    app:boxStrokeColor="#1565C0"
-							    app:hintEnabled="false">
-							    <com.google.android.material.textfield.TextInputEditText
+							<EditText
 								android:id="@+id/edittext1"
+								android:layout_width="80dp"
+								android:layout_height="wrap_content"
 								android:padding="8dp"
+								android:background="#BBDEFB"
 								android:gravity="center_horizontal|center_vertical"
 								android:textSize="12sp"
 								android:textStyle="bold"
 								android:textColor="#000000"
 								android:textColorHint="#B0BEC5"
-								android:inputType="numberDecimal" 
-							        android:layout_width="match_parent"
-							        android:layout_height="wrap_content" />
-							</com.google.android.material.textfield.TextInputLayout>
+								android:inputType="numberDecimal" />
 							<TextView
 								android:id="@+id/textview124"
 								android:layout_width="wrap_content"
@@ -762,26 +742,19 @@
 							android:background="#F3E5F5"
 							android:gravity="center_horizontal|center_vertical"
 							android:orientation="horizontal">
-														<com.google.android.material.textfield.TextInputLayout
-							    android:layout_width="80dp"
-							    android:layout_height="wrap_content"
-							    style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense"
-							    app:boxBackgroundColor="#C8E6C9"
-							    app:boxStrokeColor="#388E3C"
-							    app:hintEnabled="false">
-							    <com.google.android.material.textfield.TextInputEditText
+							<EditText
 								android:id="@+id/edittext2"
+								android:layout_width="80dp"
+								android:layout_height="wrap_content"
 								android:padding="8dp"
+								android:background="#C8E6C9"
 								android:gravity="center_horizontal|center_vertical"
 								android:textSize="12sp"
 								android:textStyle="bold"
 								android:textColor="#000000"
 								android:hint="65"
 								android:textColorHint="#B0BEC5"
-								android:inputType="numberDecimal" 
-							        android:layout_width="match_parent"
-							        android:layout_height="wrap_content" />
-							</com.google.android.material.textfield.TextInputLayout>
+								android:inputType="numberDecimal" />
 							<TextView
 								android:id="@+id/textview1073"
 								android:layout_width="wrap_content"
@@ -811,26 +784,19 @@
 							android:background="#F3E5F5"
 							android:gravity="center_horizontal|center_vertical"
 							android:orientation="horizontal">
-														<com.google.android.material.textfield.TextInputLayout
-							    android:layout_width="80dp"
-							    android:layout_height="35dp"
-							    style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense"
-							    app:boxBackgroundColor="#C8E6C9"
-							    app:boxStrokeColor="#388E3C"
-							    app:hintEnabled="false">
-							    <com.google.android.material.textfield.TextInputEditText
+							<EditText
 								android:id="@+id/edittext3"
+								android:layout_width="80dp"
+								android:layout_height="35dp"
 								android:padding="8dp"
+								android:background="#C8E6C9"
 								android:gravity="center_horizontal|center_vertical"
 								android:textSize="12sp"
 								android:textStyle="bold"
 								android:textColor="#000000"
 								android:hint="0.42"
 								android:textColorHint="#B0BEC5"
-								android:inputType="numberDecimal" 
-							        android:layout_width="match_parent"
-							        android:layout_height="wrap_content" />
-							</com.google.android.material.textfield.TextInputLayout>
+								android:inputType="numberDecimal" />
 							<TextView
 								android:id="@+id/textview403"
 								android:layout_width="wrap_content"
@@ -887,25 +853,18 @@
 								android:textSize="12sp"
 								android:textStyle="bold"
 								android:textColor="#000000" />
-														<com.google.android.material.textfield.TextInputLayout
-							    android:layout_width="80dp"
-							    android:layout_height="wrap_content"
-							    style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense"
-							    app:boxBackgroundColor="#BBDEFB"
-							    app:boxStrokeColor="#1565C0"
-							    app:hintEnabled="false">
-							    <com.google.android.material.textfield.TextInputEditText
+							<EditText
 								android:id="@+id/edittext4"
+								android:layout_width="80dp"
+								android:layout_height="wrap_content"
 								android:padding="8dp"
+								android:background="#BBDEFB"
 								android:gravity="center_horizontal|center_vertical"
 								android:textSize="12sp"
 								android:textStyle="bold"
 								android:textColor="#000000"
 								android:textColorHint="#B0BEC5"
-								android:inputType="numberDecimal" 
-							        android:layout_width="match_parent"
-							        android:layout_height="wrap_content" />
-							</com.google.android.material.textfield.TextInputLayout>
+								android:inputType="numberDecimal" />
 							<TextView
 								android:id="@+id/textview1992"
 								android:layout_width="wrap_content"
@@ -935,26 +894,19 @@
 							android:background="#F3E5F5"
 							android:gravity="center_horizontal|center_vertical"
 							android:orientation="horizontal">
-														<com.google.android.material.textfield.TextInputLayout
-							    android:layout_width="80dp"
-							    android:layout_height="wrap_content"
-							    style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense"
-							    app:boxBackgroundColor="#C8E6C9"
-							    app:boxStrokeColor="#388E3C"
-							    app:hintEnabled="false">
-							    <com.google.android.material.textfield.TextInputEditText
+							<EditText
 								android:id="@+id/edittext5"
+								android:layout_width="80dp"
+								android:layout_height="wrap_content"
 								android:padding="8dp"
+								android:background="#C8E6C9"
 								android:gravity="center_horizontal|center_vertical"
 								android:textSize="12sp"
 								android:textStyle="bold"
 								android:textColor="#000000"
 								android:hint="21"
 								android:textColorHint="#B0BEC5"
-								android:inputType="numberDecimal" 
-							        android:layout_width="match_parent"
-							        android:layout_height="wrap_content" />
-							</com.google.android.material.textfield.TextInputLayout>
+								android:inputType="numberDecimal" />
 							<TextView
 								android:id="@+id/textview1994"
 								android:layout_width="wrap_content"
@@ -984,26 +936,19 @@
 							android:background="#F3E5F5"
 							android:gravity="center_horizontal|center_vertical"
 							android:orientation="horizontal">
-														<com.google.android.material.textfield.TextInputLayout
-							    android:layout_width="80dp"
-							    android:layout_height="35dp"
-							    style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense"
-							    app:boxBackgroundColor="#C8E6C9"
-							    app:boxStrokeColor="#388E3C"
-							    app:hintEnabled="false">
-							    <com.google.android.material.textfield.TextInputEditText
+							<EditText
 								android:id="@+id/edittext6"
+								android:layout_width="80dp"
+								android:layout_height="35dp"
 								android:padding="8dp"
+								android:background="#C8E6C9"
 								android:gravity="center_horizontal|center_vertical"
 								android:textSize="12sp"
 								android:textStyle="bold"
 								android:textColor="#000000"
 								android:hint="0.41"
 								android:textColorHint="#B0BEC5"
-								android:inputType="numberDecimal" 
-							        android:layout_width="match_parent"
-							        android:layout_height="wrap_content" />
-							</com.google.android.material.textfield.TextInputLayout>
+								android:inputType="numberDecimal" />
 							<TextView
 								android:id="@+id/textview1996"
 								android:layout_width="wrap_content"
@@ -1058,25 +1003,18 @@
 								android:textSize="12sp"
 								android:textStyle="bold"
 								android:textColor="#000000" />
-														<com.google.android.material.textfield.TextInputLayout
-							    android:layout_width="80dp"
-							    android:layout_height="wrap_content"
-							    style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense"
-							    app:boxBackgroundColor="#BBDEFB"
-							    app:boxStrokeColor="#1565C0"
-							    app:hintEnabled="false">
-							    <com.google.android.material.textfield.TextInputEditText
+							<EditText
 								android:id="@+id/edittext7"
+								android:layout_width="80dp"
+								android:layout_height="wrap_content"
 								android:padding="8dp"
+								android:background="#BBDEFB"
 								android:gravity="center_horizontal|center_vertical"
 								android:textSize="12sp"
 								android:textStyle="bold"
 								android:textColor="#000000"
 								android:textColorHint="#B0BEC5"
-								android:inputType="numberDecimal" 
-							        android:layout_width="match_parent"
-							        android:layout_height="wrap_content" />
-							</com.google.android.material.textfield.TextInputLayout>
+								android:inputType="numberDecimal" />
 							<TextView
 								android:id="@+id/textview1999"
 								android:layout_width="wrap_content"
@@ -1106,26 +1044,19 @@
 							android:background="#F3E5F5"
 							android:gravity="center_horizontal|center_vertical"
 							android:orientation="horizontal">
-														<com.google.android.material.textfield.TextInputLayout
-							    android:layout_width="80dp"
-							    android:layout_height="wrap_content"
-							    style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense"
-							    app:boxBackgroundColor="#C8E6C9"
-							    app:boxStrokeColor="#388E3C"
-							    app:hintEnabled="false">
-							    <com.google.android.material.textfield.TextInputEditText
+							<EditText
 								android:id="@+id/edittext8"
+								android:layout_width="80dp"
+								android:layout_height="wrap_content"
 								android:padding="8dp"
+								android:background="#C8E6C9"
 								android:gravity="center_horizontal|center_vertical"
 								android:textSize="12sp"
 								android:textStyle="bold"
 								android:textColor="#000000"
 								android:hint="400"
 								android:textColorHint="#B0BEC5"
-								android:inputType="numberDecimal" 
-							        android:layout_width="match_parent"
-							        android:layout_height="wrap_content" />
-							</com.google.android.material.textfield.TextInputLayout>
+								android:inputType="numberDecimal" />
 							<TextView
 								android:id="@+id/textview2001"
 								android:layout_width="wrap_content"
@@ -1155,26 +1086,19 @@
 							android:background="#F3E5F5"
 							android:gravity="center_horizontal|center_vertical"
 							android:orientation="horizontal">
-														<com.google.android.material.textfield.TextInputLayout
-							    android:layout_width="80dp"
-							    android:layout_height="35dp"
-							    style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense"
-							    app:boxBackgroundColor="#C8E6C9"
-							    app:boxStrokeColor="#388E3C"
-							    app:hintEnabled="false">
-							    <com.google.android.material.textfield.TextInputEditText
+							<EditText
 								android:id="@+id/edittext9"
+								android:layout_width="80dp"
+								android:layout_height="35dp"
 								android:padding="8dp"
+								android:background="#C8E6C9"
 								android:gravity="center_horizontal|center_vertical"
 								android:textSize="12sp"
 								android:textStyle="bold"
 								android:textColor="#000000"
 								android:hint="0.05"
 								android:textColorHint="#B0BEC5"
-								android:inputType="numberDecimal" 
-							        android:layout_width="match_parent"
-							        android:layout_height="wrap_content" />
-							</com.google.android.material.textfield.TextInputLayout>
+								android:inputType="numberDecimal" />
 							<TextView
 								android:id="@+id/textview2003"
 								android:layout_width="wrap_content"
@@ -1204,26 +1128,19 @@
 							android:background="#F3E5F5"
 							android:gravity="center_horizontal|center_vertical"
 							android:orientation="horizontal">
-														<com.google.android.material.textfield.TextInputLayout
-							    android:layout_width="80dp"
-							    android:layout_height="35dp"
-							    style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense"
-							    app:boxBackgroundColor="#C8E6C9"
-							    app:boxStrokeColor="#388E3C"
-							    app:hintEnabled="false">
-							    <com.google.android.material.textfield.TextInputEditText
+							<EditText
 								android:id="@+id/edittext10"
+								android:layout_width="80dp"
+								android:layout_height="35dp"
 								android:padding="8dp"
+								android:background="#C8E6C9"
 								android:gravity="center_horizontal|center_vertical"
 								android:textSize="12sp"
 								android:textStyle="bold"
 								android:textColor="#000000"
 								android:hint="0.12"
 								android:textColorHint="#B0BEC5"
-								android:inputType="numberDecimal" 
-							        android:layout_width="match_parent"
-							        android:layout_height="wrap_content" />
-							</com.google.android.material.textfield.TextInputLayout>
+								android:inputType="numberDecimal" />
 							<TextView
 								android:id="@+id/textview2010"
 								android:layout_width="wrap_content"
@@ -1269,25 +1186,18 @@
 							android:textSize="12sp"
 							android:textStyle="bold"
 							android:textColor="#000000" />
-												<com.google.android.material.textfield.TextInputLayout
-						    android:layout_width="95dp"
-						    android:layout_height="wrap_content"
-						    style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense"
-						    app:boxBackgroundColor="#BBDEFB"
-						    app:boxStrokeColor="#1565C0"
-						    app:hintEnabled="false">
-						    <com.google.android.material.textfield.TextInputEditText
+						<EditText
 							android:id="@+id/edittext11"
+							android:layout_width="95dp"
+							android:layout_height="wrap_content"
 							android:padding="8dp"
+							android:background="#BBDEFB"
 							android:gravity="center_horizontal|center_vertical"
 							android:textSize="12sp"
 							android:textStyle="bold"
 							android:textColor="#000000"
 							android:textColorHint="#B0BEC5"
-							android:inputType="numberDecimal" 
-						        android:layout_width="match_parent"
-						        android:layout_height="wrap_content" />
-						</com.google.android.material.textfield.TextInputLayout>
+							android:inputType="numberDecimal" />
 						<TextView
 							android:id="@+id/textview532"
 							android:layout_width="wrap_content"
@@ -1316,19 +1226,17 @@
 						android:padding="8dp"
 						android:gravity="center_horizontal|center_vertical"
 						android:orientation="horizontal">
-						<com.google.android.material.button.MaterialButton
-							style="@style/Widget.Material3.Button"
+						<Button
 							android:id="@+id/button1"
 							android:layout_width="wrap_content"
 							android:layout_height="wrap_content"
 							android:padding="8dp"
-							android:backgroundTint="#000000"
+							android:background="#000000"
 							android:gravity="center_horizontal|center_vertical"
 							android:text="أضغط للحصول علي النتائج\n="
 							android:textSize="12sp"
 							android:textStyle="bold"
-							android:textColor="#4CAF50"
-							app:cornerRadius="16dp" />
+							android:textColor="#4CAF50" />
 					</LinearLayout>
 					<TextView
 						android:id="@+id/textview281"
@@ -1363,16 +1271,12 @@
 							android:padding="8dp"
 							android:gravity="center_horizontal|center_vertical"
 							android:orientation="horizontal">
-														<com.google.android.material.textfield.TextInputLayout
-							    android:layout_width="100dp"
-							    android:layout_height="35dp"
-							    style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense"
-							    app:boxBackgroundColor="#D7CCC8"
-							    app:boxStrokeColor="#795548"
-							    app:hintEnabled="false">
-							    <com.google.android.material.textfield.TextInputEditText
+							<EditText
 								android:id="@+id/edittext13"
+								android:layout_width="100dp"
+								android:layout_height="35dp"
 								android:padding="8dp"
+								android:background="#D7CCC8"
 								android:gravity="center_horizontal|center_vertical"
 								android:text="00.00"
 								android:textSize="12sp"
@@ -1380,10 +1284,7 @@
 								android:textColor="#000000"
 								android:textColorHint="#B0BEC5"
 								android:inputType="numberDecimal"
-								android:enabled="false" 
-							        android:layout_width="match_parent"
-							        android:layout_height="wrap_content" />
-							</com.google.android.material.textfield.TextInputLayout>
+								android:enabled="false" />
 							<TextView
 								android:id="@+id/textview405"
 								android:layout_width="wrap_content"
@@ -1394,16 +1295,12 @@
 								android:textSize="12sp"
 								android:textStyle="bold"
 								android:textColor="#000000" />
-														<com.google.android.material.textfield.TextInputLayout
-							    android:layout_width="100dp"
-							    android:layout_height="wrap_content"
-							    style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense"
-							    app:boxBackgroundColor="#D7CCC8"
-							    app:boxStrokeColor="#795548"
-							    app:hintEnabled="false">
-							    <com.google.android.material.textfield.TextInputEditText
+							<EditText
 								android:id="@+id/edittext12"
+								android:layout_width="100dp"
+								android:layout_height="wrap_content"
 								android:padding="8dp"
+								android:background="#D7CCC8"
 								android:gravity="center_horizontal|center_vertical"
 								android:text="00.00"
 								android:textSize="12sp"
@@ -1411,10 +1308,7 @@
 								android:textColor="#000000"
 								android:textColorHint="#B0BEC5"
 								android:inputType="numberDecimal"
-								android:enabled="false" 
-							        android:layout_width="match_parent"
-							        android:layout_height="wrap_content" />
-							</com.google.android.material.textfield.TextInputLayout>
+								android:enabled="false" />
 							<TextView
 								android:id="@+id/textview4b"
 								android:layout_width="wrap_content"
@@ -1433,16 +1327,12 @@
 							android:padding="8dp"
 							android:gravity="center_horizontal|center_vertical"
 							android:orientation="horizontal">
-														<com.google.android.material.textfield.TextInputLayout
-							    android:layout_width="100dp"
-							    android:layout_height="wrap_content"
-							    style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense"
-							    app:boxBackgroundColor="#D7CCC8"
-							    app:boxStrokeColor="#795548"
-							    app:hintEnabled="false">
-							    <com.google.android.material.textfield.TextInputEditText
+							<EditText
 								android:id="@+id/edittext15"
+								android:layout_width="100dp"
+								android:layout_height="wrap_content"
 								android:padding="8dp"
+								android:background="#D7CCC8"
 								android:gravity="center_horizontal|center_vertical"
 								android:text="00.00"
 								android:textSize="12sp"
@@ -1450,10 +1340,7 @@
 								android:textColor="#000000"
 								android:textColorHint="#B0BEC5"
 								android:inputType="numberDecimal"
-								android:enabled="false" 
-							        android:layout_width="match_parent"
-							        android:layout_height="wrap_content" />
-							</com.google.android.material.textfield.TextInputLayout>
+								android:enabled="false" />
 							<TextView
 								android:id="@+id/textview1803"
 								android:layout_width="wrap_content"
@@ -1473,16 +1360,12 @@
 								android:textSize="14sp"
 								android:textStyle="bold"
 								android:textColor="#000000" />
-														<com.google.android.material.textfield.TextInputLayout
-							    android:layout_width="100dp"
-							    android:layout_height="35dp"
-							    style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense"
-							    app:boxBackgroundColor="#D7CCC8"
-							    app:boxStrokeColor="#795548"
-							    app:hintEnabled="false">
-							    <com.google.android.material.textfield.TextInputEditText
+							<EditText
 								android:id="@+id/edittext14"
+								android:layout_width="100dp"
+								android:layout_height="35dp"
 								android:padding="8dp"
+								android:background="#D7CCC8"
 								android:gravity="center_horizontal|center_vertical"
 								android:text="00.00"
 								android:textSize="12sp"
@@ -1490,10 +1373,7 @@
 								android:textColor="#000000"
 								android:textColorHint="#607D8B"
 								android:inputType="numberDecimal"
-								android:enabled="false" 
-							        android:layout_width="match_parent"
-							        android:layout_height="wrap_content" />
-							</com.google.android.material.textfield.TextInputLayout>
+								android:enabled="false" />
 							<TextView
 								android:id="@+id/textview5h"
 								android:layout_width="wrap_content"
@@ -1522,16 +1402,12 @@
 								android:textSize="12sp"
 								android:textStyle="bold"
 								android:textColor="#000000" />
-														<com.google.android.material.textfield.TextInputLayout
-							    android:layout_width="120dp"
-							    android:layout_height="wrap_content"
-							    style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense"
-							    app:boxBackgroundColor="#FFC107"
-							    app:boxStrokeColor="#F57F17"
-							    app:hintEnabled="false">
-							    <com.google.android.material.textfield.TextInputEditText
+							<EditText
 								android:id="@+id/edittext16"
+								android:layout_width="120dp"
+								android:layout_height="wrap_content"
 								android:padding="8dp"
+								android:background="#FFC107"
 								android:gravity="center_horizontal|center_vertical"
 								android:text="00.00"
 								android:textSize="12sp"
@@ -1539,10 +1415,7 @@
 								android:textColor="#000000"
 								android:textColorHint="#607D8B"
 								android:inputType="numberDecimal"
-								android:enabled="false" 
-							        android:layout_width="match_parent"
-							        android:layout_height="wrap_content" />
-							</com.google.android.material.textfield.TextInputLayout>
+								android:enabled="false" />
 							<TextView
 								android:id="@+id/textview355"
 								android:layout_width="wrap_content"
@@ -1582,26 +1455,19 @@
 							android:textSize="12sp"
 							android:textStyle="bold"
 							android:textColor="#000000" />
-												<com.google.android.material.textfield.TextInputLayout
-						    android:layout_width="80dp"
-						    android:layout_height="wrap_content"
-						    style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense"
-						    app:boxBackgroundColor="#C8E6C9"
-						    app:boxStrokeColor="#388E3C"
-						    app:hintEnabled="false">
-						    <com.google.android.material.textfield.TextInputEditText
+						<EditText
 							android:id="@+id/edittext17"
+							android:layout_width="80dp"
+							android:layout_height="wrap_content"
 							android:padding="8dp"
+							android:background="#C8E6C9"
 							android:gravity="center_horizontal|center_vertical"
 							android:textSize="12sp"
 							android:textStyle="bold"
 							android:textColor="#000000"
 							android:hint="19"
 							android:textColorHint="#B0BEC5"
-							android:inputType="numberDecimal" 
-						        android:layout_width="match_parent"
-						        android:layout_height="wrap_content" />
-						</com.google.android.material.textfield.TextInputLayout>
+							android:inputType="numberDecimal" />
 						<TextView
 							android:id="@+id/textview834"
 							android:layout_width="wrap_content"
@@ -1649,20 +1515,18 @@
 							android:textColorHint="#607D8B"
 							android:enabled="false"
 							android:layout_gravity="right" />
-						<com.google.android.material.button.MaterialButton
-							style="@style/Widget.Material3.Button"
+						<Button
 							android:id="@+id/button2"
 							android:layout_width="200dp"
 							android:layout_height="wrap_content"
 							android:padding="8dp"
-							android:backgroundTint="#000000"
+							android:background="#000000"
 							android:gravity="center_horizontal|center_vertical"
 							android:text="أحسب\n="
 							android:textSize="12sp"
 							android:textStyle="bold"
 							android:textColor="#4CAF50"
-							android:layout_gravity="center_horizontal|center_vertical"
-							app:cornerRadius="16dp" />
+							android:layout_gravity="center_horizontal|center_vertical" />
 						<LinearLayout
 							android:id="@+id/linear388"
 							android:layout_width="match_parent"
@@ -1679,16 +1543,12 @@
 								android:textSize="12sp"
 								android:textStyle="bold"
 								android:textColor="#000000" />
-														<com.google.android.material.textfield.TextInputLayout
-							    android:layout_width="140dp"
-							    android:layout_height="wrap_content"
-							    style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense"
-							    app:boxBackgroundColor="#FFC107"
-							    app:boxStrokeColor="#F57F17"
-							    app:hintEnabled="false">
-							    <com.google.android.material.textfield.TextInputEditText
+							<EditText
 								android:id="@+id/edittext18"
+								android:layout_width="140dp"
+								android:layout_height="wrap_content"
 								android:padding="8dp"
+								android:background="#FFC107"
 								android:gravity="center_horizontal|center_vertical"
 								android:text="00.00"
 								android:textSize="14sp"
@@ -1696,10 +1556,7 @@
 								android:textColor="#000000"
 								android:textColorHint="#607D8B"
 								android:inputType="numberDecimal"
-								android:enabled="false" 
-							        android:layout_width="match_parent"
-							        android:layout_height="wrap_content" />
-							</com.google.android.material.textfield.TextInputLayout>
+								android:enabled="false" />
 						</LinearLayout>
 					</LinearLayout>
 					<TextView
@@ -1729,26 +1586,19 @@
 							android:textSize="12sp"
 							android:textStyle="bold"
 							android:textColor="#000000" />
-												<com.google.android.material.textfield.TextInputLayout
-						    android:layout_width="80dp"
-						    android:layout_height="wrap_content"
-						    style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense"
-						    app:boxBackgroundColor="#C8E6C9"
-						    app:boxStrokeColor="#388E3C"
-						    app:hintEnabled="false">
-						    <com.google.android.material.textfield.TextInputEditText
+						<EditText
 							android:id="@+id/edittext19"
+							android:layout_width="80dp"
+							android:layout_height="wrap_content"
 							android:padding="8dp"
+							android:background="#C8E6C9"
 							android:gravity="center_horizontal|center_vertical"
 							android:textSize="12sp"
 							android:textStyle="bold"
 							android:textColor="#000000"
 							android:hint="0.4"
 							android:textColorHint="#B0BEC5"
-							android:inputType="numberDecimal" 
-						        android:layout_width="match_parent"
-						        android:layout_height="wrap_content" />
-						</com.google.android.material.textfield.TextInputLayout>
+							android:inputType="numberDecimal" />
 						<TextView
 							android:id="@+id/textview2012"
 							android:layout_width="wrap_content"
@@ -1796,20 +1646,18 @@
 							android:textColorHint="#607D8B"
 							android:enabled="false"
 							android:layout_gravity="right" />
-						<com.google.android.material.button.MaterialButton
-							style="@style/Widget.Material3.Button"
+						<Button
 							android:id="@+id/button3"
 							android:layout_width="200dp"
 							android:layout_height="wrap_content"
 							android:padding="8dp"
-							android:backgroundTint="#000000"
+							android:background="#000000"
 							android:gravity="center_horizontal|center_vertical"
 							android:text="أحسب\n="
 							android:textSize="12sp"
 							android:textStyle="bold"
 							android:textColor="#4CAF50"
-							android:layout_gravity="center_horizontal|center_vertical"
-							app:cornerRadius="16dp" />
+							android:layout_gravity="center_horizontal|center_vertical" />
 						<LinearLayout
 							android:id="@+id/linear2322"
 							android:layout_width="match_parent"
@@ -1826,16 +1674,12 @@
 								android:textSize="12sp"
 								android:textStyle="bold"
 								android:textColor="#000000" />
-														<com.google.android.material.textfield.TextInputLayout
-							    android:layout_width="140dp"
-							    android:layout_height="wrap_content"
-							    style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense"
-							    app:boxBackgroundColor="#FFC107"
-							    app:boxStrokeColor="#F57F17"
-							    app:hintEnabled="false">
-							    <com.google.android.material.textfield.TextInputEditText
+							<EditText
 								android:id="@+id/edittext20"
+								android:layout_width="140dp"
+								android:layout_height="wrap_content"
 								android:padding="8dp"
+								android:background="#FFC107"
 								android:gravity="center_horizontal|center_vertical"
 								android:text="00.00"
 								android:textSize="14sp"
@@ -1843,10 +1687,7 @@
 								android:textColor="#000000"
 								android:textColorHint="#607D8B"
 								android:inputType="numberDecimal"
-								android:enabled="false" 
-							        android:layout_width="match_parent"
-							        android:layout_height="wrap_content" />
-							</com.google.android.material.textfield.TextInputLayout>
+								android:enabled="false" />
 						</LinearLayout>
 					</LinearLayout>
 					<TextView
@@ -1876,25 +1717,18 @@
 							android:textSize="12sp"
 							android:textStyle="bold"
 							android:textColor="#000000" />
-												<com.google.android.material.textfield.TextInputLayout
-						    android:layout_width="100dp"
-						    android:layout_height="wrap_content"
-						    style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense"
-						    app:boxBackgroundColor="#B3E5FC"
-						    app:boxStrokeColor="#90A4AE"
-						    app:hintEnabled="false">
-						    <com.google.android.material.textfield.TextInputEditText
+						<EditText
 							android:id="@+id/edittext21"
+							android:layout_width="100dp"
+							android:layout_height="wrap_content"
 							android:padding="8dp"
+							android:background="#B3E5FC"
 							android:gravity="center_horizontal|center_vertical"
 							android:textSize="12sp"
 							android:textStyle="bold"
 							android:textColor="#000000"
 							android:textColorHint="#B0BEC5"
-							android:inputType="numberDecimal" 
-						        android:layout_width="match_parent"
-						        android:layout_height="wrap_content" />
-						</com.google.android.material.textfield.TextInputLayout>
+							android:inputType="numberDecimal" />
 						<TextView
 							android:id="@+id/textview2016"
 							android:layout_width="wrap_content"
@@ -1969,16 +1803,12 @@
 								android:textSize="12sp"
 								android:textStyle="bold"
 								android:textColor="#000000" />
-														<com.google.android.material.textfield.TextInputLayout
-							    android:layout_width="140dp"
-							    android:layout_height="wrap_content"
-							    style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense"
-							    app:boxBackgroundColor="#D7CCC8"
-							    app:boxStrokeColor="#795548"
-							    app:hintEnabled="false">
-							    <com.google.android.material.textfield.TextInputEditText
+							<EditText
 								android:id="@+id/edittext22"
+								android:layout_width="140dp"
+								android:layout_height="wrap_content"
 								android:padding="8dp"
+								android:background="#D7CCC8"
 								android:gravity="center_horizontal|center_vertical"
 								android:text="00.00"
 								android:textSize="14sp"
@@ -1986,10 +1816,7 @@
 								android:textColor="#000000"
 								android:textColorHint="#607D8B"
 								android:inputType="numberDecimal"
-								android:enabled="false" 
-							        android:layout_width="match_parent"
-							        android:layout_height="wrap_content" />
-							</com.google.android.material.textfield.TextInputLayout>
+								android:enabled="false" />
 						</LinearLayout>
 					</LinearLayout>
 				</LinearLayout>
@@ -2017,8 +1844,7 @@
 						android:textSize="12sp"
 						android:textColor="#000000"
 						android:layout_weight="2" />
-					<com.google.android.material.button.MaterialButton
-							style="@style/Widget.Material3.Button"
+					<Button
 						android:id="@+id/add_dynamic_element"
 						android:layout_width="wrap_content"
 						android:layout_height="wrap_content"
@@ -2027,8 +1853,7 @@
 						android:textSize="16sp"
 						android:textStyle="bold"
 						android:textColor="#000000"
-						android:layout_weight="1"
-							app:cornerRadius="16dp" />
+						android:layout_weight="1" />
 				</LinearLayout>
 				<LinearLayout
 					android:id="@+id/linear152"
@@ -2047,16 +1872,12 @@
 						android:textSize="12sp"
 						android:textStyle="bold"
 						android:textColor="#000000" />
-										<com.google.android.material.textfield.TextInputLayout
-					    android:layout_width="100dp"
-					    android:layout_height="wrap_content"
-					    style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense"
-					    app:boxBackgroundColor="#D7CCC8"
-					    app:boxStrokeColor="#795548"
-					    app:hintEnabled="false">
-					    <com.google.android.material.textfield.TextInputEditText
+					<EditText
 						android:id="@+id/edittext23"
+						android:layout_width="100dp"
+						android:layout_height="wrap_content"
 						android:padding="8dp"
+						android:background="#D7CCC8"
 						android:gravity="center_horizontal|center_vertical"
 						android:text="00.00"
 						android:textSize="12sp"
@@ -2064,10 +1885,7 @@
 						android:textColor="#000000"
 						android:textColorHint="#B0BEC5"
 						android:inputType="numberDecimal"
-						android:enabled="false" 
-					        android:layout_width="match_parent"
-					        android:layout_height="wrap_content" />
-					</com.google.android.material.textfield.TextInputLayout>
+						android:enabled="false" />
 					<TextView
 						android:id="@+id/textview630"
 						android:layout_width="wrap_content"
@@ -2136,16 +1954,12 @@
 							android:textSize="12sp"
 							android:textStyle="bold"
 							android:textColor="#FFFFFF" />
-												<com.google.android.material.textfield.TextInputLayout
-						    android:layout_width="160dp"
-						    android:layout_height="wrap_content"
-						    style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense"
-						    app:boxBackgroundColor="#FFC107"
-						    app:boxStrokeColor="#F57F17"
-						    app:hintEnabled="false">
-						    <com.google.android.material.textfield.TextInputEditText
+						<EditText
 							android:id="@+id/edittext24"
+							android:layout_width="160dp"
+							android:layout_height="wrap_content"
 							android:padding="8dp"
+							android:background="#FFC107"
 							android:gravity="center_horizontal|center_vertical"
 							android:text="00.00"
 							android:textSize="14sp"
@@ -2153,10 +1967,7 @@
 							android:textColor="#000000"
 							android:textColorHint="#607D8B"
 							android:inputType="numberDecimal"
-							android:enabled="false" 
-						        android:layout_width="match_parent"
-						        android:layout_height="wrap_content" />
-						</com.google.android.material.textfield.TextInputLayout>
+							android:enabled="false" />
 					</LinearLayout>
 				</LinearLayout>
 			</LinearLayout>
@@ -2168,5 +1979,5 @@
 		android:layout_height="wrap_content"
 		android:layout_margin="16dp"
 		android:layout_gravity="right|bottom"
-		app:srcCompat="@drawable/ic_menu_home" />
+		app:srcCompat="@drawable/ic_print" />
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
