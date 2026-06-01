@@ -25,14 +25,14 @@
 			android:layout_width="match_parent"
 			android:layout_height="match_parent"
 			android:padding="8dp"
-			android:background="#E0F2F1"
+			android:background="?attr/colorSecondaryContainer"
 			android:layout_gravity="center_horizontal">
 			<LinearLayout
 				android:id="@+id/linear1"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
 				android:padding="8dp"
-				android:background="#E0F2F1"
+				android:background="?attr/colorSecondaryContainer"
 				android:gravity="center_horizontal|top"
 				android:orientation="vertical"
 				android:layout_gravity="center_horizontal|top">
@@ -41,12 +41,12 @@
 					android:layout_width="match_parent"
 					android:layout_height="wrap_content"
 					android:padding="8dp"
-					android:background="#FFFFFF"
+					android:background="?attr/colorSurface"
 					android:gravity="right|center_vertical"
 					android:text="دراسة سرعة السريان بمواسير الأنحدار\n---------------------------------------"
 					android:textSize="16sp"
 					android:textStyle="bold"
-					android:textColor="#000000" />
+					android:textColor="?attr/colorOnSurface" />
 				<LinearLayout
 					android:id="@+id/linear176"
 					android:layout_width="wrap_content"
@@ -62,7 +62,7 @@
 						android:text="طريقة الأستخدام :"
 						android:textSize="14sp"
 						android:textStyle="bold"
-						android:textColor="#E91E63"
+						android:textColor="?attr/colorPrimary"
 						android:layout_gravity="right|center_vertical" />
 					<TextView
 						android:id="@+id/textview1222"
@@ -73,7 +73,7 @@
 						android:text="دليل المدخلات\n---------------"
 						android:textSize="12sp"
 						android:textStyle="bold"
-						android:textColor="#000000"
+						android:textColor="?attr/colorOnSurface"
 						android:layout_gravity="right|bottom" />
 					<LinearLayout
 						android:id="@+id/linear386"
@@ -91,7 +91,7 @@
 							android:text="١ - &quot; * &quot; علامة وجود تعريفات أو ملاحظات\n-----------------------------------------\nفى حالة وجود علامة &quot; * &quot; بجوار أسم أو منطوق أو صيغة أي مدخل فيمكنك الضغط علي الأسم أو الصيغة أو المنطوق للمدخل ضغطة طويله وسيظهر تعريف أو ملاحظة لهذا المدخل"
 							android:textSize="12sp"
 							android:textStyle="bold"
-							android:textColor="#000000"
+							android:textColor="?attr/colorOnSurface"
 							android:layout_gravity="right" />
 					</LinearLayout>
 					<LinearLayout
@@ -106,10 +106,10 @@
 							android:layout_width="40dp"
 							android:layout_height="30dp"
 							android:padding="8dp"
-							android:background="#BBDEFB"
+							android:background="?attr/colorPrimaryContainer"
 							android:textSize="12sp"
-							android:textColor="#000000"
-							android:textColorHint="#607D8B"
+							android:textColor="?attr/colorOnSurface"
+							android:textColorHint="?attr/colorOnSurfaceVariant"
 							android:inputType="numberDecimal"
 							android:enabled="false" />
 						<TextView
@@ -120,7 +120,7 @@
 							android:text="٢ - مدخل أساسي يجب إدخاله"
 							android:textSize="11sp"
 							android:textStyle="bold"
-							android:textColor="#000000" />
+							android:textColor="?attr/colorOnSurface" />
 					</LinearLayout>
 					<LinearLayout
 						android:id="@+id/linear173"
@@ -134,13 +134,13 @@
 							android:layout_width="40dp"
 							android:layout_height="30dp"
 							android:padding="8dp"
-							android:background="#C8E6C9"
+							android:background="?attr/colorSecondaryContainer"
 							android:gravity="center_horizontal|center_vertical"
 							android:textSize="12sp"
 							android:textStyle="bold"
-							android:textColor="#000000"
+							android:textColor="?attr/colorOnSurface"
 							android:hint="##"
-							android:textColorHint="#B0BEC5"
+							android:textColorHint="?attr/colorOnSurfaceVariant"
 							android:inputType="numberDecimal"
 							android:enabled="false" />
 						<TextView
@@ -151,7 +151,7 @@
 							android:text="٣ - مدخل إختياري في حالة عدم إدخاله سيقوم البرنامج بإفتراض قيمته بالقيمة الموجودة داخل المستطيل وذلك عند الضغط علي زرار &quot; أحسب = &quot;"
 							android:textSize="11sp"
 							android:textStyle="bold"
-							android:textColor="#000000" />
+							android:textColor="?attr/colorOnSurface" />
 					</LinearLayout>
 					<LinearLayout
 						android:id="@+id/linear175"
@@ -166,12 +166,12 @@
 							android:layout_width="wrap_content"
 							android:layout_height="wrap_content"
 							android:padding="8dp"
-							android:background="#000000"
+							android:background="?attr/colorPrimary"
 							android:gravity="center_horizontal|center_vertical"
 							android:text="أحسب\n="
 							android:textSize="10sp"
 							android:textStyle="bold"
-							android:textColor="#4CAF50" />
+							android:textColor="?attr/colorSecondary" />
 						<TextView
 							android:id="@+id/textview584"
 							android:layout_width="match_parent"
@@ -181,7 +181,7 @@
 							android:text="٤ - للحصول علي الناتج أضغط علي الزر الأسود وعند تعديل أو تغيير أي مدخل يتم الضغط مرة أخرى علي الزر الأسود"
 							android:textSize="11sp"
 							android:textStyle="bold"
-							android:textColor="#000000" />
+							android:textColor="?attr/colorOnSurface" />
 					</LinearLayout>
 					<LinearLayout
 						android:id="@+id/linear289"
@@ -191,13 +191,14 @@
 						android:gravity="center_horizontal|center_vertical"
 						android:orientation="horizontal"
 						android:layout_gravity="center_horizontal">
-						<Button
+						<com.google.android.material.button.MaterialButton
+				style="@style/Widget.Material3.Button"
 							android:id="@+id/button90"
 							android:layout_width="40dp"
 							android:layout_height="30dp"
 							android:padding="8dp"
 							android:textSize="12sp"
-							android:textColor="#000000" />
+							android:textColor="?attr/colorOnSurface" />
 						<TextView
 							android:id="@+id/textview809"
 							android:layout_width="match_parent"
@@ -207,7 +208,7 @@
 							android:text="٥ - لأضافة أو إلغاء أو إظهار قائمة أضغط علي الزر"
 							android:textSize="11sp"
 							android:textStyle="bold"
-							android:textColor="#000000" />
+							android:textColor="?attr/colorOnSurface" />
 					</LinearLayout>
 					<TextView
 						android:id="@+id/textview555"
@@ -218,7 +219,7 @@
 						android:text="-----‐---------------------------------"
 						android:textSize="14sp"
 						android:textStyle="bold"
-						android:textColor="#E91E63" />
+						android:textColor="?attr/colorPrimary" />
 				</LinearLayout>
 				<LinearLayout
 					android:id="@+id/linear2303"
@@ -226,7 +227,7 @@
 					android:layout_height="match_parent"
 					android:padding="8dp"
 					android:orientation="vertical"
-					android:background="@drawable/rectangle_0_purplefff3e5f5_050_blackff000000">
+					android:background="?attr/colorTertiaryContainer">
 					<TextView
 						android:id="@+id/textview988"
 						android:layout_width="match_parent"
@@ -236,7 +237,7 @@
 						android:text="السرعة\nV \n( م / ث )"
 						android:textSize="14sp"
 						android:textStyle="bold"
-						android:textColor="#000000" />
+						android:textColor="?attr/colorOnSurface" />
 					<TextView
 						android:id="@+id/textview987"
 						android:layout_width="wrap_content"
@@ -246,7 +247,7 @@
 						android:text="="
 						android:textSize="16sp"
 						android:textStyle="bold"
-						android:textColor="#000000"
+						android:textColor="?attr/colorOnSurface"
 						android:layout_gravity="center_horizontal" />
 					<LinearLayout
 						android:id="@+id/linear2304"
@@ -263,7 +264,7 @@
 							android:text="("
 							android:textSize="16sp"
 							android:textStyle="bold"
-							android:textColor="#000000" />
+							android:textColor="?attr/colorOnSurface" />
 						<TextView
 							android:id="@+id/textview92"
 							android:layout_width="wrap_content"
@@ -273,7 +274,7 @@
 							android:text="("
 							android:textSize="12sp"
 							android:textStyle="bold"
-							android:textColor="#000000" />
+							android:textColor="?attr/colorOnSurface" />
 						<TextView
 							android:id="@+id/textview1802"
 							android:layout_width="wrap_content"
@@ -283,7 +284,7 @@
 							android:text="1\n‐-------\nn"
 							android:textSize="12sp"
 							android:textStyle="bold"
-							android:textColor="#000000" />
+							android:textColor="?attr/colorOnSurface" />
 						<TextView
 							android:id="@+id/textview1823"
 							android:layout_width="wrap_content"
@@ -292,7 +293,7 @@
 							android:text=")"
 							android:textSize="12sp"
 							android:textStyle="bold"
-							android:textColor="#000000" />
+							android:textColor="?attr/colorOnSurface" />
 						<TextView
 							android:id="@+id/textview90"
 							android:layout_width="wrap_content"
@@ -302,7 +303,7 @@
 							android:text="حيث n = معامل ماننج للأحتكاك ويتغير تبعآ ل مادة الماسورة ( والقيم موجودة بالكود )"
 							android:textSize="12sp"
 							android:textStyle="bold"
-							android:textColor="#000000" />
+							android:textColor="?attr/colorOnSurface" />
 						<TextView
 							android:id="@+id/textview401"
 							android:layout_width="wrap_content"
@@ -312,7 +313,7 @@
 							android:text=")"
 							android:textSize="12sp"
 							android:textStyle="bold"
-							android:textColor="#000000"
+							android:textColor="?attr/colorOnSurface"
 							android:enabled="false" />
 					</LinearLayout>
 					<TextView
@@ -324,7 +325,7 @@
 						android:text="x"
 						android:textSize="12sp"
 						android:textStyle="bold"
-						android:textColor="#000000"
+						android:textColor="?attr/colorOnSurface"
 						android:layout_gravity="center_horizontal" />
 					<LinearLayout
 						android:id="@+id/linear2305"
@@ -342,7 +343,7 @@
 							android:text="("
 							android:textSize="12sp"
 							android:textStyle="bold"
-							android:textColor="#000000" />
+							android:textColor="?attr/colorOnSurface" />
 						<TextView
 							android:id="@+id/textview1977"
 							android:layout_width="wrap_content"
@@ -352,7 +353,7 @@
 							android:text="R"
 							android:textSize="12sp"
 							android:textStyle="bold"
-							android:textColor="#000000" />
+							android:textColor="?attr/colorOnSurface" />
 						<TextView
 							android:id="@+id/textview1976"
 							android:layout_width="wrap_content"
@@ -362,7 +363,7 @@
 							android:text="^"
 							android:textSize="16sp"
 							android:textStyle="bold"
-							android:textColor="#000000"
+							android:textColor="?attr/colorOnSurface"
 							android:layout_gravity="center_horizontal|top" />
 						<TextView
 							android:id="@+id/textview1975"
@@ -373,7 +374,7 @@
 							android:text="2\n‐----\n3"
 							android:textSize="12sp"
 							android:textStyle="bold"
-							android:textColor="#000000" />
+							android:textColor="?attr/colorOnSurface" />
 						<TextView
 							android:id="@+id/textview1978"
 							android:layout_width="wrap_content"
@@ -383,7 +384,7 @@
 							android:text=")"
 							android:textSize="12sp"
 							android:textStyle="bold"
-							android:textColor="#000000"
+							android:textColor="?attr/colorOnSurface"
 							android:enabled="false" />
 						<TextView
 							android:id="@+id/textview1824"
@@ -394,7 +395,7 @@
 							android:text="حيث R يعبر عن نصف القطر الهيدروليكي ل خط الأنحدار ( م ) \n=\nالمساحة المبتلة / المحيط المبتل"
 							android:textSize="12sp"
 							android:textStyle="bold"
-							android:textColor="#000000"
+							android:textColor="?attr/colorOnSurface"
 							android:layout_gravity="center_horizontal|center_vertical" />
 					</LinearLayout>
 					<TextView
@@ -405,7 +406,7 @@
 						android:text="x"
 						android:textSize="12sp"
 						android:textStyle="bold"
-						android:textColor="#000000"
+						android:textColor="?attr/colorOnSurface"
 						android:layout_gravity="center_horizontal|center_vertical" />
 					<LinearLayout
 						android:id="@+id/linear2306"
@@ -423,7 +424,7 @@
 							android:text="("
 							android:textSize="12sp"
 							android:textStyle="bold"
-							android:textColor="#000000" />
+							android:textColor="?attr/colorOnSurface" />
 						<TextView
 							android:id="@+id/textview1983"
 							android:layout_width="wrap_content"
@@ -433,7 +434,7 @@
 							android:text="S"
 							android:textSize="12sp"
 							android:textStyle="bold"
-							android:textColor="#000000" />
+							android:textColor="?attr/colorOnSurface" />
 						<TextView
 							android:id="@+id/textview1982"
 							android:layout_width="wrap_content"
@@ -443,7 +444,7 @@
 							android:text="^"
 							android:textSize="16sp"
 							android:textStyle="bold"
-							android:textColor="#000000"
+							android:textColor="?attr/colorOnSurface"
 							android:layout_gravity="center_horizontal|top" />
 						<TextView
 							android:id="@+id/textview1981"
@@ -454,7 +455,7 @@
 							android:text="1\n‐-----\n2"
 							android:textSize="12sp"
 							android:textStyle="bold"
-							android:textColor="#000000" />
+							android:textColor="?attr/colorOnSurface" />
 						<TextView
 							android:id="@+id/textview1984"
 							android:layout_width="wrap_content"
@@ -464,7 +465,7 @@
 							android:text=")"
 							android:textSize="12sp"
 							android:textStyle="bold"
-							android:textColor="#000000"
+							android:textColor="?attr/colorOnSurface"
 							android:enabled="false" />
 						<TextView
 							android:id="@+id/textview2003"
@@ -474,7 +475,7 @@
 							android:gravity="center_horizontal|center_vertical"
 							android:textSize="12sp"
 							android:textStyle="bold"
-							android:textColor="#000000" />
+							android:textColor="?attr/colorOnSurface" />
 						<TextView
 							android:id="@+id/textview1813"
 							android:layout_width="wrap_content"
@@ -484,7 +485,7 @@
 							android:text="حيث S\n= ميل خط الأنحدار\n( م/كم )"
 							android:textSize="12sp"
 							android:textStyle="bold"
-							android:textColor="#000000" />
+							android:textColor="?attr/colorOnSurface" />
 						<TextView
 							android:id="@+id/textview1814"
 							android:layout_width="wrap_content"
@@ -493,7 +494,7 @@
 							android:text=")"
 							android:textSize="12sp"
 							android:textStyle="bold"
-							android:textColor="#000000" />
+							android:textColor="?attr/colorOnSurface" />
 						<TextView
 							android:id="@+id/textview1979"
 							android:layout_width="wrap_content"
@@ -502,7 +503,7 @@
 							android:text=")"
 							android:textSize="16sp"
 							android:textStyle="bold"
-							android:textColor="#000000" />
+							android:textColor="?attr/colorOnSurface" />
 					</LinearLayout>
 				</LinearLayout>
 				<LinearLayout
@@ -519,13 +520,13 @@
 					android:gravity="center_horizontal|center_vertical"
 					android:orientation="vertical"
 					android:layout_gravity="center_horizontal|center_vertical"
-					android:background="@drawable/rectangle_0_tealffe0f2f1_1_blackff000000">
+					android:background="?attr/colorSecondaryContainer">
 					<LinearLayout
 						android:id="@+id/linear389"
 						android:layout_width="wrap_content"
 						android:layout_height="wrap_content"
 						android:padding="8dp"
-						android:background="#FFFFFF"
+						android:background="?attr/colorSurface"
 						android:gravity="right|center_vertical"
 						android:orientation="horizontal"
 						android:layout_gravity="right">
@@ -538,7 +539,7 @@
 							android:text="("
 							android:textSize="14sp"
 							android:textStyle="bold"
-							android:textColor="#000000" />
+							android:textColor="?attr/colorOnSurface" />
 						<EditText
 							android:id="@+id/element_nums"
 							android:layout_width="40dp"
@@ -549,8 +550,8 @@
 							android:text="1"
 							android:textSize="14sp"
 							android:textStyle="bold"
-							android:textColor="#000000"
-							android:textColorHint="#607D8B"
+							android:textColor="?attr/colorOnSurface"
+							android:textColorHint="?attr/colorOnSurfaceVariant"
 							android:enabled="false" />
 						<TextView
 							android:id="@+id/textview17"
@@ -560,7 +561,7 @@
 							android:text="ف"
 							android:textSize="14sp"
 							android:textStyle="bold"
-							android:textColor="#000000" />
+							android:textColor="?attr/colorOnSurface" />
 						<TextView
 							android:id="@+id/textview16"
 							android:layout_width="wrap_content"
@@ -569,19 +570,19 @@
 							android:text=")"
 							android:textSize="14sp"
 							android:textStyle="bold"
-							android:textColor="#000000" />
+							android:textColor="?attr/colorOnSurface" />
 						<EditText
 							android:id="@+id/element_num"
 							android:layout_width="40dp"
 							android:layout_height="wrap_content"
 							android:padding="2dp"
-							android:background="#C8E6C9"
+							android:background="?attr/colorSecondaryContainer"
 							android:gravity="center_horizontal|center_vertical"
 							android:text="1"
 							android:textSize="14sp"
 							android:textStyle="bold"
-							android:textColor="#000000"
-							android:textColorHint="#607D8B"
+							android:textColor="?attr/colorOnSurface"
+							android:textColorHint="?attr/colorOnSurfaceVariant"
 							android:inputType="numberSigned" />
 						<TextView
 							android:id="@+id/textview101"
@@ -592,7 +593,7 @@
 							android:text="خط أو فرعة رقم :"
 							android:textSize="14sp"
 							android:textStyle="bold"
-							android:textColor="#000000"
+							android:textColor="?attr/colorOnSurface"
 							android:layout_gravity="right|center_vertical" />
 					</LinearLayout>
 					<HorizontalScrollView
@@ -600,16 +601,17 @@
 						android:layout_width="match_parent"
 						android:layout_height="7dp"
 						android:padding="8dp" />
-					<Button
+					<com.google.android.material.button.MaterialButton
+				style="@style/Widget.Material3.Button"
 						android:id="@+id/button1"
 						android:layout_width="match_parent"
 						android:layout_height="wrap_content"
 						android:padding="8dp"
-						android:background="#CDDC39"
+						android:background="?attr/colorTertiaryContainer"
 						android:text="اضغط علي الزرار لاختيار نوع الماسورة"
 						android:textSize="14sp"
 						android:textStyle="bold"
-						android:textColor="#000000" />
+						android:textColor="?attr/colorOnSurface" />
 					<LinearLayout
 						android:id="@+id/linear11"
 						android:layout_width="match_parent"
@@ -624,8 +626,9 @@
 							android:padding="8dp"
 							android:gravity="center_horizontal"
 							android:orientation="vertical"
-							android:background="@drawable/rectangle_0_purplefff3e5f5_050_blackff000000">
-							<Button
+							android:background="?attr/colorTertiaryContainer">
+							<com.google.android.material.button.MaterialButton
+				style="@style/Widget.Material3.Button"
 								android:id="@+id/button8"
 								android:layout_width="wrap_content"
 								android:layout_height="wrap_content"
@@ -633,8 +636,9 @@
 								android:text="البلاستيك uPVC"
 								android:textSize="12sp"
 								android:textStyle="bold"
-								android:textColor="#000000" />
-							<Button
+								android:textColor="?attr/colorOnSurface" />
+							<com.google.android.material.button.MaterialButton
+				style="@style/Widget.Material3.Button"
 								android:id="@+id/button9"
 								android:layout_width="wrap_content"
 								android:layout_height="wrap_content"
@@ -642,8 +646,9 @@
 								android:text="البولي ايثلين عالي الكثافة HDPE"
 								android:textSize="12sp"
 								android:textStyle="bold"
-								android:textColor="#000000" />
-							<Button
+								android:textColor="?attr/colorOnSurface" />
+							<com.google.android.material.button.MaterialButton
+				style="@style/Widget.Material3.Button"
 								android:id="@+id/button10"
 								android:layout_width="wrap_content"
 								android:layout_height="wrap_content"
@@ -651,7 +656,7 @@
 								android:text="الحديد الزهر"
 								android:textSize="12sp"
 								android:textStyle="bold"
-								android:textColor="#000000" />
+								android:textColor="?attr/colorOnSurface" />
 						</LinearLayout>
 						<LinearLayout
 							android:id="@+id/linear2332"
@@ -661,8 +666,9 @@
 							android:gravity="center_horizontal|center_vertical"
 							android:orientation="vertical"
 							android:layout_gravity="right"
-							android:background="@drawable/rectangle_0_purplefff3e5f5_050_blackff000000">
-							<Button
+							android:background="?attr/colorTertiaryContainer">
+							<com.google.android.material.button.MaterialButton
+				style="@style/Widget.Material3.Button"
 								android:id="@+id/button4"
 								android:layout_width="wrap_content"
 								android:layout_height="wrap_content"
@@ -670,8 +676,9 @@
 								android:text="الأسبستوس الأسمنتي"
 								android:textSize="12sp"
 								android:textStyle="bold"
-								android:textColor="#000000" />
-							<Button
+								android:textColor="?attr/colorOnSurface" />
+							<com.google.android.material.button.MaterialButton
+				style="@style/Widget.Material3.Button"
 								android:id="@+id/button5"
 								android:layout_width="wrap_content"
 								android:layout_height="wrap_content"
@@ -679,8 +686,9 @@
 								android:text="البلاستيك المسلح بألياف الزجاج GRP"
 								android:textSize="12sp"
 								android:textStyle="bold"
-								android:textColor="#000000" />
-							<Button
+								android:textColor="?attr/colorOnSurface" />
+							<com.google.android.material.button.MaterialButton
+				style="@style/Widget.Material3.Button"
 								android:id="@+id/button6"
 								android:layout_width="wrap_content"
 								android:layout_height="wrap_content"
@@ -688,8 +696,9 @@
 								android:text="الفخار المزجج VC"
 								android:textSize="12sp"
 								android:textStyle="bold"
-								android:textColor="#000000" />
-							<Button
+								android:textColor="?attr/colorOnSurface" />
+							<com.google.android.material.button.MaterialButton
+				style="@style/Widget.Material3.Button"
 								android:id="@+id/button7"
 								android:layout_width="wrap_content"
 								android:layout_height="wrap_content"
@@ -697,7 +706,7 @@
 								android:text="الخرسانة"
 								android:textSize="12sp"
 								android:textStyle="bold"
-								android:textColor="#000000" />
+								android:textColor="?attr/colorOnSurface" />
 						</LinearLayout>
 					</LinearLayout>
 					<LinearLayout
@@ -707,19 +716,19 @@
 						android:padding="8dp"
 						android:gravity="center_horizontal|center_vertical"
 						android:orientation="horizontal"
-						android:background="@drawable/rectangle_0_purplefff3e5f5_075_blackff000000">
+						android:background="?attr/colorTertiaryContainer">
 						<EditText
 							android:id="@+id/edittext1"
 							android:layout_width="80dp"
 							android:layout_height="wrap_content"
 							android:padding="8dp"
-							android:background="#CFD8DC"
+							android:background="?attr/colorSurfaceVariant"
 							android:gravity="center_horizontal|center_vertical"
 							android:text="00.00"
 							android:textSize="12sp"
 							android:textStyle="bold"
-							android:textColor="#000000"
-							android:textColorHint="#B0BEC5"
+							android:textColor="?attr/colorOnSurface"
+							android:textColorHint="?attr/colorOnSurfaceVariant"
 							android:inputType="numberDecimal" />
 						<TextView
 							android:id="@+id/textview124"
@@ -730,7 +739,7 @@
 							android:text="="
 							android:textSize="12sp"
 							android:textStyle="bold"
-							android:textColor="#000000" />
+							android:textColor="?attr/colorOnSurface" />
 						<TextView
 							android:id="@+id/textview1"
 							android:layout_width="match_parent"
@@ -740,7 +749,7 @@
 							android:text="n\n معامل ماننج للأحتكاك ويتغير تبعآ ل مادة الماسورة ( والقيم موجودة بالكود )"
 							android:textSize="12sp"
 							android:textStyle="bold"
-							android:textColor="#000000" />
+							android:textColor="?attr/colorOnSurface" />
 					</LinearLayout>
 					<TextView
 						android:id="@+id/textview612"
@@ -750,17 +759,18 @@
 						android:gravity="center_horizontal|center_vertical"
 						android:textSize="14sp"
 						android:textStyle="bold"
-						android:textColor="#000000" />
-					<Button
+						android:textColor="?attr/colorOnSurface" />
+					<com.google.android.material.button.MaterialButton
+				style="@style/Widget.Material3.Button"
 						android:id="@+id/button2"
 						android:layout_width="match_parent"
 						android:layout_height="wrap_content"
 						android:padding="8dp"
-						android:background="#CDDC39"
+						android:background="?attr/colorTertiaryContainer"
 						android:text="اضغط علي الزرار لاختيار نوع الشبكة"
 						android:textSize="14sp"
 						android:textStyle="bold"
-						android:textColor="#000000" />
+						android:textColor="?attr/colorOnSurface" />
 					<LinearLayout
 						android:id="@+id/linear23"
 						android:layout_width="match_parent"
@@ -768,7 +778,8 @@
 						android:padding="8dp"
 						android:gravity="center_horizontal|center_vertical"
 						android:orientation="horizontal">
-						<Button
+						<com.google.android.material.button.MaterialButton
+				style="@style/Widget.Material3.Button"
 							android:id="@+id/button12"
 							android:layout_width="150dp"
 							android:layout_height="wrap_content"
@@ -776,8 +787,9 @@
 							android:text="شبكة\nمشتركة"
 							android:textSize="14sp"
 							android:textStyle="bold"
-							android:textColor="#000000" />
-						<Button
+							android:textColor="?attr/colorOnSurface" />
+						<com.google.android.material.button.MaterialButton
+				style="@style/Widget.Material3.Button"
 							android:id="@+id/button11"
 							android:layout_width="150dp"
 							android:layout_height="wrap_content"
@@ -785,14 +797,14 @@
 							android:text="شبكة منفصلة\nشبكة واحدة"
 							android:textSize="14sp"
 							android:textStyle="bold"
-							android:textColor="#000000" />
+							android:textColor="?attr/colorOnSurface" />
 					</LinearLayout>
 					<LinearLayout
 						android:id="@+id/linear2"
 						android:layout_width="match_parent"
 						android:layout_height="wrap_content"
 						android:padding="8dp"
-						android:background="#F3E5F5"
+						android:background="?attr/colorTertiaryContainer"
 						android:gravity="center_horizontal|center_vertical"
 						android:orientation="horizontal">
 						<TextView
@@ -803,18 +815,18 @@
 							android:text="مم"
 							android:textSize="12sp"
 							android:textStyle="bold"
-							android:textColor="#000000" />
+							android:textColor="?attr/colorOnSurface" />
 						<EditText
 							android:id="@+id/edittext2"
 							android:layout_width="80dp"
 							android:layout_height="wrap_content"
 							android:padding="8dp"
-							android:background="#BBDEFB"
+							android:background="?attr/colorPrimaryContainer"
 							android:gravity="center_horizontal|center_vertical"
 							android:textSize="12sp"
 							android:textStyle="bold"
-							android:textColor="#000000"
-							android:textColorHint="#B0BEC5"
+							android:textColor="?attr/colorOnSurface"
+							android:textColorHint="?attr/colorOnSurfaceVariant"
 							android:inputType="numberSigned" />
 						<TextView
 							android:id="@+id/textview1992"
@@ -825,7 +837,7 @@
 							android:text="="
 							android:textSize="12sp"
 							android:textStyle="bold"
-							android:textColor="#000000" />
+							android:textColor="?attr/colorOnSurface" />
 						<TextView
 							android:id="@+id/textview2"
 							android:layout_width="match_parent"
@@ -835,7 +847,7 @@
 							android:text="D ( mm )\nقطر الماسورة ( مم )"
 							android:textSize="12sp"
 							android:textStyle="bold"
-							android:textColor="#000000" />
+							android:textColor="?attr/colorOnSurface" />
 					</LinearLayout>
 					<LinearLayout
 						android:id="@+id/linear3"
@@ -844,7 +856,7 @@
 						android:padding="8dp"
 						android:gravity="center_horizontal|center_vertical"
 						android:orientation="horizontal"
-						android:background="@drawable/rectangle_0_purplefff3e5f5_075_blackff000000">
+						android:background="?attr/colorTertiaryContainer">
 						<TextView
 							android:id="@+id/textview65"
 							android:layout_width="wrap_content"
@@ -854,19 +866,19 @@
 							android:text="م"
 							android:textSize="12sp"
 							android:textStyle="bold"
-							android:textColor="#000000" />
+							android:textColor="?attr/colorOnSurface" />
 						<EditText
 							android:id="@+id/edittext3"
 							android:layout_width="80dp"
 							android:layout_height="wrap_content"
 							android:padding="8dp"
-							android:background="#CFD8DC"
+							android:background="?attr/colorSurfaceVariant"
 							android:gravity="center_horizontal|center_vertical"
 							android:text="00.00"
 							android:textSize="12sp"
 							android:textStyle="bold"
-							android:textColor="#000000"
-							android:textColorHint="#B0BEC5"
+							android:textColor="?attr/colorOnSurface"
+							android:textColorHint="?attr/colorOnSurfaceVariant"
 							android:inputType="numberDecimal" />
 						<TextView
 							android:id="@+id/textview1073"
@@ -877,7 +889,7 @@
 							android:text="="
 							android:textSize="12sp"
 							android:textStyle="bold"
-							android:textColor="#000000" />
+							android:textColor="?attr/colorOnSurface" />
 						<TextView
 							android:id="@+id/textview4"
 							android:layout_width="match_parent"
@@ -887,14 +899,14 @@
 							android:text="R\nنصف القطر الهيدروليكي ل خط الأنحدار ( م ) "
 							android:textSize="12sp"
 							android:textStyle="bold"
-							android:textColor="#000000" />
+							android:textColor="?attr/colorOnSurface" />
 					</LinearLayout>
 					<LinearLayout
 						android:id="@+id/linear4"
 						android:layout_width="match_parent"
 						android:layout_height="wrap_content"
 						android:padding="8dp"
-						android:background="#F3E5F5"
+						android:background="?attr/colorTertiaryContainer"
 						android:gravity="center_horizontal|center_vertical"
 						android:orientation="horizontal">
 						<TextView
@@ -906,18 +918,18 @@
 							android:text="مم"
 							android:textSize="12sp"
 							android:textStyle="bold"
-							android:textColor="#000000" />
+							android:textColor="?attr/colorOnSurface" />
 						<EditText
 							android:id="@+id/edittext4"
 							android:layout_width="80dp"
 							android:layout_height="wrap_content"
 							android:padding="8dp"
-							android:background="#B3E5FC"
+							android:background="?attr/colorPrimaryContainer"
 							android:gravity="center_horizontal|center_vertical"
 							android:textSize="12sp"
 							android:textStyle="bold"
-							android:textColor="#000000"
-							android:textColorHint="#B0BEC5"
+							android:textColor="?attr/colorOnSurface"
+							android:textColorHint="?attr/colorOnSurfaceVariant"
 							android:inputType="numberSigned" />
 						<TextView
 							android:id="@+id/textview403"
@@ -928,7 +940,7 @@
 							android:text="="
 							android:textSize="12sp"
 							android:textStyle="bold"
-							android:textColor="#000000" />
+							android:textColor="?attr/colorOnSurface" />
 						<TextView
 							android:id="@+id/textview5"
 							android:layout_width="match_parent"
@@ -938,7 +950,7 @@
 							android:text="D ( mm )\nقطر الماسورة ( مم )"
 							android:textSize="12sp"
 							android:textStyle="bold"
-							android:textColor="#000000" />
+							android:textColor="?attr/colorOnSurface" />
 					</LinearLayout>
 					<LinearLayout
 						android:id="@+id/linear5"
@@ -947,7 +959,7 @@
 						android:padding="8dp"
 						android:gravity="center_horizontal|center_vertical"
 						android:orientation="horizontal"
-						android:background="@drawable/rectangle_0_purplefff3e5f5_075_blackff000000">
+						android:background="?attr/colorTertiaryContainer">
 						<TextView
 							android:id="@+id/textview1996"
 							android:layout_width="wrap_content"
@@ -957,19 +969,19 @@
 							android:text="م"
 							android:textSize="12sp"
 							android:textStyle="bold"
-							android:textColor="#000000" />
+							android:textColor="?attr/colorOnSurface" />
 						<EditText
 							android:id="@+id/edittext5"
 							android:layout_width="80dp"
 							android:layout_height="wrap_content"
 							android:padding="8dp"
-							android:background="#CFD8DC"
+							android:background="?attr/colorSurfaceVariant"
 							android:gravity="center_horizontal|center_vertical"
 							android:text="00.00"
 							android:textSize="12sp"
 							android:textStyle="bold"
-							android:textColor="#000000"
-							android:textColorHint="#B0BEC5"
+							android:textColor="?attr/colorOnSurface"
+							android:textColorHint="?attr/colorOnSurfaceVariant"
 							android:inputType="numberDecimal" />
 						<TextView
 							android:id="@+id/textview1994"
@@ -980,7 +992,7 @@
 							android:text="="
 							android:textSize="12sp"
 							android:textStyle="bold"
-							android:textColor="#000000" />
+							android:textColor="?attr/colorOnSurface" />
 						<TextView
 							android:id="@+id/textview6"
 							android:layout_width="match_parent"
@@ -990,7 +1002,7 @@
 							android:text="R\nنصف القطر الهيدروليكي ل خط الأنحدار ( م ) "
 							android:textSize="12sp"
 							android:textStyle="bold"
-							android:textColor="#000000" />
+							android:textColor="?attr/colorOnSurface" />
 					</LinearLayout>
 					<HorizontalScrollView
 						android:id="@+id/hscroll8s1"
@@ -998,16 +1010,17 @@
 						android:layout_height="7dp"
 						android:padding="8dp"
 						android:layout_gravity="right|center_vertical" />
-					<Button
+					<com.google.android.material.button.MaterialButton
+				style="@style/Widget.Material3.Button"
 						android:id="@+id/button3"
 						android:layout_width="match_parent"
 						android:layout_height="wrap_content"
 						android:padding="8dp"
-						android:background="#CDDC39"
+						android:background="?attr/colorTertiaryContainer"
 						android:text="اضغط علي الزرار لإدخال ميل ماسورة الانحدار ( م / كم )"
 						android:textSize="14sp"
 						android:textStyle="bold"
-						android:textColor="#000000" />
+						android:textColor="?attr/colorOnSurface" />
 					<HorizontalScrollView
 						android:id="@+id/hscroll1"
 						android:layout_width="match_parent"
@@ -1020,7 +1033,7 @@
 						android:padding="8dp"
 						android:gravity="center_horizontal|center_vertical"
 						android:orientation="horizontal"
-						android:background="@drawable/rectangle_0_purplefff3e5f5_075_blackff000000">
+						android:background="?attr/colorTertiaryContainer">
 						<TextView
 							android:id="@+id/textview1998"
 							android:layout_width="wrap_content"
@@ -1029,18 +1042,18 @@
 							android:text="م/كم"
 							android:textSize="12sp"
 							android:textStyle="bold"
-							android:textColor="#000000" />
+							android:textColor="?attr/colorOnSurface" />
 						<EditText
 							android:id="@+id/edittext6"
 							android:layout_width="80dp"
 							android:layout_height="wrap_content"
 							android:padding="8dp"
-							android:background="#BBDEFB"
+							android:background="?attr/colorPrimaryContainer"
 							android:gravity="center_horizontal|center_vertical"
 							android:textSize="12sp"
 							android:textStyle="bold"
-							android:textColor="#000000"
-							android:textColorHint="#B0BEC5"
+							android:textColor="?attr/colorOnSurface"
+							android:textColorHint="?attr/colorOnSurfaceVariant"
 							android:inputType="numberDecimal" />
 						<TextView
 							android:id="@+id/textview1999"
@@ -1051,7 +1064,7 @@
 							android:text="="
 							android:textSize="12sp"
 							android:textStyle="bold"
-							android:textColor="#000000" />
+							android:textColor="?attr/colorOnSurface" />
 						<TextView
 							android:id="@+id/textview3"
 							android:layout_width="match_parent"
@@ -1061,7 +1074,7 @@
 							android:text="S ( m/km )\nميل ماسورة الأنحدار ( م / كم )"
 							android:textSize="12sp"
 							android:textStyle="bold"
-							android:textColor="#000000" />
+							android:textColor="?attr/colorOnSurface" />
 					</LinearLayout>
 					<TextView
 						android:id="@+id/textview1650"
@@ -1069,7 +1082,7 @@
 						android:layout_height="7dp"
 						android:padding="8dp"
 						android:textSize="12sp"
-						android:textColor="#000000" />
+						android:textColor="?attr/colorOnSurface" />
 					<LinearLayout
 						android:id="@+id/linear7"
 						android:layout_width="match_parent"
@@ -1077,7 +1090,7 @@
 						android:padding="8dp"
 						android:gravity="center_horizontal|center_vertical"
 						android:orientation="vertical"
-						android:background="@drawable/rectangle_0_indigoff9fa8da_075_blackff000000">
+						android:background="?attr/colorPrimaryContainer">
 						<TextView
 							android:id="@+id/textview12"
 							android:layout_width="wrap_content"
@@ -1087,7 +1100,7 @@
 							android:text="السرعة\nV \n( م / ث )\n="
 							android:textSize="14sp"
 							android:textStyle="bold"
-							android:textColor="#000000"
+							android:textColor="?attr/colorOnSurface"
 							android:layout_gravity="center_horizontal" />
 						<LinearLayout
 							android:id="@+id/linear155"
@@ -1105,19 +1118,19 @@
 								android:text="م / ث"
 								android:textSize="12sp"
 								android:textStyle="bold"
-								android:textColor="#000000" />
+								android:textColor="?attr/colorOnSurface" />
 							<EditText
 								android:id="@+id/edittext7"
 								android:layout_width="120dp"
 								android:layout_height="wrap_content"
 								android:padding="8dp"
-								android:background="#FFC107"
+								android:background="?attr/colorTertiary"
 								android:gravity="center_horizontal|center_vertical"
 								android:text="00.00"
 								android:textSize="12sp"
 								android:textStyle="bold"
-								android:textColor="#000000"
-								android:textColorHint="#607D8B"
+								android:textColor="?attr/colorOnSurface"
+								android:textColorHint="?attr/colorOnSurfaceVariant"
 								android:inputType="numberDecimal"
 								android:enabled="false" />
 							<TextView
@@ -1129,7 +1142,7 @@
 								android:text="="
 								android:textSize="12sp"
 								android:textStyle="bold"
-								android:textColor="#000000" />
+								android:textColor="?attr/colorOnSurface" />
 						</LinearLayout>
 						<TextView
 							android:id="@+id/textview7"
@@ -1140,7 +1153,7 @@
 							android:text="…..………………………........................."
 							android:textSize="12sp"
 							android:textStyle="bold"
-							android:textColor="#000000" />
+							android:textColor="?attr/colorOnSurface" />
 					</LinearLayout>
 				</LinearLayout>
 				<LinearLayout
@@ -1166,9 +1179,10 @@
 						android:layout_height="wrap_content"
 						android:padding="8dp"
 						android:textSize="12sp"
-						android:textColor="#000000"
+						android:textColor="?attr/colorOnSurface"
 						android:layout_weight="2" />
-					<Button
+					<com.google.android.material.button.MaterialButton
+				style="@style/Widget.Material3.Button"
 						android:id="@+id/add_dynamic_element"
 						android:layout_width="wrap_content"
 						android:layout_height="wrap_content"
@@ -1176,7 +1190,7 @@
 						android:text="أضافة فرعة\nجديدة"
 						android:textSize="16sp"
 						android:textStyle="bold"
-						android:textColor="#000000"
+						android:textColor="?attr/colorOnSurface"
 						android:layout_weight="1" />
 				</LinearLayout>
 			</LinearLayout>

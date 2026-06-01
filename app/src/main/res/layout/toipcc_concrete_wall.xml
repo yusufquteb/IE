@@ -45,7 +45,7 @@
 					android:text="الحوائط الخرسانية\n&quot; سواء حوائط خرسانة عادية أو حوائط خرسانة مسلحة &quot;\n----------------------------"
 					android:textSize="16sp"
 					android:textStyle="bold"
-					android:textColor="#000000"
+					android:textColor="?attr/colorOnSurface"
 					android:layout_gravity="center_horizontal" />
 				<TextView
 					android:id="@+id/textview2"
@@ -55,9 +55,10 @@
 					android:text="أولآ حوائط من الخرسانة العادية"
 					android:textSize="14sp"
 					android:textStyle="bold"
-					android:textColor="#000000"
+					android:textColor="?attr/colorOnSurface"
 					android:layout_gravity="right" />
-				<Button
+				<com.google.android.material.button.MaterialButton
+				style="@style/Widget.Material3.Button"
 					android:id="@+id/button1"
 					android:layout_width="250dp"
 					android:layout_height="wrap_content"
@@ -66,9 +67,10 @@
 					android:text="حصر الكميات والخامات وحساب التكلفة للحوائط من الخرسانة العادية &quot; حالة الحائط مستطيل * العرض ثابت بكامل ارتفاع الحائط * عرض الحائط من أعلي يساوي عرض الحائط من أسفل &quot;"
 					android:textSize="14sp"
 					android:textStyle="bold"
-					android:textColor="#000000"
+					android:textColor="?attr/colorOnSurface"
 					android:layout_gravity="center_horizontal" />
-				<Button
+				<com.google.android.material.button.MaterialButton
+				style="@style/Widget.Material3.Button"
 					android:id="@+id/button2"
 					android:layout_width="250dp"
 					android:layout_height="wrap_content"
@@ -77,7 +79,7 @@
 					android:text="حصر الكميات والخامات وحساب التكلفة للحوائط من الخرسانة العادية &quot; حالة الحائط شبه منحرف * عرض الحائط متغير * عرض الحائط من أعلي مختلف عن عرض الحائط من أسفل &quot;"
 					android:textSize="14sp"
 					android:textStyle="bold"
-					android:textColor="#000000"
+					android:textColor="?attr/colorOnSurface"
 					android:layout_gravity="center_horizontal" />
 				<TextView
 					android:id="@+id/textview3"
@@ -88,7 +90,7 @@
 					android:text="----------------------------"
 					android:textSize="14sp"
 					android:textStyle="bold"
-					android:textColor="#000000"
+					android:textColor="?attr/colorOnSurface"
 					android:layout_gravity="center_horizontal" />
 				<TextView
 					android:id="@+id/textview4"
@@ -99,9 +101,10 @@
 					android:text="ثانيآ حوائط من الخرسانة المسلحة"
 					android:textSize="14sp"
 					android:textStyle="bold"
-					android:textColor="#000000"
+					android:textColor="?attr/colorOnSurface"
 					android:layout_gravity="right" />
-				<Button
+				<com.google.android.material.button.MaterialButton
+				style="@style/Widget.Material3.Button"
 					android:id="@+id/button3"
 					android:layout_width="250dp"
 					android:layout_height="wrap_content"
@@ -109,9 +112,10 @@
 					android:text="حصر الكميات والخامات وحساب التكلفة للحوائط الخرسانية المسلحة &quot; حالة الحائط مستطيل * العرض ثابت بكامل ارتفاع الحائط * عرض الحائط من أعلي يساوي عرض الحائط من أسفل &quot; ( في حالة حديد التسليح نسبة من كمية الخرسانة المسلحة )"
 					android:textSize="14sp"
 					android:textStyle="bold"
-					android:textColor="#000000"
+					android:textColor="?attr/colorOnSurface"
 					android:layout_gravity="center_horizontal" />
-				<Button
+				<com.google.android.material.button.MaterialButton
+				style="@style/Widget.Material3.Button"
 					android:id="@+id/button4"
 					android:layout_width="250dp"
 					android:layout_height="wrap_content"
@@ -120,7 +124,7 @@
 					android:text="حصر الكميات والخامات وحساب التكلفة للحوائط الخرسانية المسلحة &quot; حالة الحائط شبه منحرف * عرض الحائط متغير * عرض الحائط من أعلي مختلف عن عرض الحائط من أسفل &quot; ( في حالة حديد التسليح نسبة من كمية الخرسانة المسلحة )"
 					android:textSize="14sp"
 					android:textStyle="bold"
-					android:textColor="#000000"
+					android:textColor="?attr/colorOnSurface"
 					android:layout_gravity="center_horizontal" />
 			</LinearLayout>
 		</ScrollView>

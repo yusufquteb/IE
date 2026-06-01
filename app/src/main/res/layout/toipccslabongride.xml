@@ -25,7 +25,7 @@
 			android:layout_width="match_parent"
 			android:layout_height="match_parent"
 			android:padding="8dp"
-			android:background="#E0F2F1">
+			android:background="?attr/colorSecondaryContainer">
 			<LinearLayout
 				android:id="@+id/linear2"
 				android:layout_width="match_parent"
@@ -41,9 +41,10 @@
 					android:text="حصر الكميات والخامات وحساب التكلفة للبلاطات الأرضية الخرسانية\nConcrete Slab On Gride\n-------------------------------------------"
 					android:textSize="16sp"
 					android:textStyle="bold"
-					android:textColor="#000000"
+					android:textColor="?attr/colorOnSurface"
 					android:layout_gravity="center_horizontal" />
-				<Button
+				<com.google.android.material.button.MaterialButton
+				style="@style/Widget.Material3.Button"
 					android:id="@+id/button1"
 					android:layout_width="250dp"
 					android:layout_height="wrap_content"
@@ -52,9 +53,10 @@
 					android:text="حصر الكميات والخامات وحساب التكلفة للأرضيات الخرسانية العادية\nPlain Concrete Slab On Gride"
 					android:textSize="14sp"
 					android:textStyle="bold"
-					android:textColor="#000000"
+					android:textColor="?attr/colorOnSurface"
 					android:layout_gravity="center_horizontal" />
-				<Button
+				<com.google.android.material.button.MaterialButton
+				style="@style/Widget.Material3.Button"
 					android:id="@+id/button2"
 					android:layout_width="250dp"
 					android:layout_height="wrap_content"
@@ -63,7 +65,7 @@
 					android:text="حصر الكميات والخامات وحساب التكلفة للبلاطات الأرضية الخرسانية المسلحة &quot; حديد التسليح نسبه من كميه الخرسانه المسلحه &quot;\nReinforced Concrete Slab On Gride"
 					android:textSize="14sp"
 					android:textStyle="bold"
-					android:textColor="#000000"
+					android:textColor="?attr/colorOnSurface"
 					android:layout_gravity="center_horizontal" />
 			</LinearLayout>
 		</ScrollView>
