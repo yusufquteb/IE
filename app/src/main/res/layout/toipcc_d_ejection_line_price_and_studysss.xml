@@ -1,1279 +1,191 @@
-<LinearLayout
-	xmlns:android="http://schemas.android.com/apk/res/android"
-	xmlns:app="http://schemas.android.com/apk/res-auto"
-	xmlns:tools="http://schemas.android.com/tools"
-	android:layout_width="match_parent"
-	android:layout_height="match_parent"
-	android:orientation="vertical">
-	<TextView
-		android:id="@+id/textview519"
-		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
-		android:padding="8dp"
-		android:gravity="center_horizontal|center_vertical"
-		android:text="-----‐---------------------------"
-		android:textSize="14sp"
-		android:textStyle="bold"
-		android:textColor="#E91E63" />
-	<ScrollView
-		android:id="@+id/vscroll1"
-			android:paddingBottom="88dp"
-			android:clipToPadding="false"
-		android:layout_width="match_parent"
-		android:layout_height="match_parent"
-		android:paddingTop="8dp">
-		<LinearLayout
-			android:id="@+id/linear205"
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:padding="8dp"
-			android:orientation="vertical"
-			android:background="@drawable/rectangle_0_tealffe0f2f1_1_blackff000000">
-			<LinearLayout
-				android:id="@+id/linear713"
-				android:layout_width="match_parent"
-				android:layout_height="wrap_content"
-				android:gravity="right|center_vertical"
-				android:orientation="horizontal"
-				android:background="@drawable/rectangle_0_greyffe0e0e0_050_blackff000000">
-				<ImageView
-					android:id="@+id/close"
-					android:layout_width="30dp"
-					android:layout_height="30dp"
-					android:src="@drawable/ic_close_24"
-					android:scaleType="fitCenter"
-					android:layout_gravity="left|center_vertical" />
-				<LinearLayout
-					android:id="@+id/linear720"
-					android:layout_width="wrap_content"
-					android:layout_height="15dp"
-					android:padding="8dp"
-					android:orientation="horizontal"
-					android:layout_weight="1" />
-			</LinearLayout>
-			<LinearLayout
-				android:id="@+id/linear1053"
-				android:layout_width="match_parent"
-				android:layout_height="10dp"
-				android:padding="8dp"
-				android:orientation="vertical" />
-			<LinearLayout
-				android:id="@+id/linear389"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:background="#FFFFFF"
-				android:gravity="right|center_vertical"
-				android:orientation="horizontal"
-				android:layout_gravity="right">
-				<TextView
-					android:id="@+id/textview180"
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					android:padding="2dp"
-					android:gravity="center_horizontal|center_vertical"
-					android:text="("
-					android:textSize="14sp"
-					android:textStyle="bold"
-					android:textColor="#000000" />
-				<TextView
-					android:id="@+id/textview170d"
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					android:padding="8dp"
-					android:text="L"
-					android:textSize="14sp"
-					android:textStyle="bold"
-					android:textColor="#000000" />
-				<EditText
-					android:id="@+id/element_nums_d"
-					android:layout_width="40dp"
-					android:layout_height="wrap_content"
-					android:padding="2dp"
-					android:background="@android:color/transparent"
-					android:gravity="center_horizontal|center_vertical"
-					android:text="1"
-					android:textSize="14sp"
-					android:textStyle="bold"
-					android:textColor="#000000"
-					android:textColorHint="#607D8B"
-					android:inputType="numberDecimal"
-					android:enabled="false" />
-				<TextView
-					android:id="@+id/textview160"
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					android:padding="8dp"
-					android:text=")"
-					android:textSize="14sp"
-					android:textStyle="bold"
-					android:textColor="#000000" />
-				<EditText
-					android:id="@+id/element_num_d"
-					android:layout_width="40dp"
-					android:layout_height="wrap_content"
-					android:padding="2dp"
-					android:background="#C8E6C9"
-					android:gravity="center_horizontal|center_vertical"
-					android:text="1"
-					android:textSize="14sp"
-					android:textStyle="bold"
-					android:textColor="#000000"
-					android:textColorHint="#607D8B"
-					android:inputType="numberDecimal" />
-				<TextView
-					android:id="@+id/textview150d"
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					android:padding="8dp"
-					android:gravity="right"
-					android:text="خط طرد رقم :"
-					android:textSize="14sp"
-					android:textStyle="bold"
-					android:textColor="#000000"
-					android:layout_gravity="right|center_vertical" />
-			</LinearLayout>
-			<LinearLayout
-				android:id="@+id/linear575"
-				android:layout_width="match_parent"
-				android:layout_height="10dp"
-				android:padding="8dp"
-				android:orientation="vertical" />
-			<TextView
-				android:id="@+id/textview65d"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:gravity="center_horizontal|center_vertical"
-				android:text="أولآ مدخلات التوريد :-"
-				android:textSize="14sp"
-				android:textStyle="bold"
-				android:textColor="#000000"
-				android:layout_gravity="right" />
-			<LinearLayout
-				android:id="@+id/linear1049"
-				android:layout_width="match_parent"
-				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:gravity="center_horizontal|center_vertical"
-				android:orientation="horizontal"
-				android:background="@drawable/rectangle_0_purplefff3e5f5_050_blackff000000">
-								<com.google.android.material.textfield.TextInputLayout
-				    android:layout_width="200dp"
-				    android:layout_height="wrap_content"
-				    style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense"
-				    app:boxBackgroundColor="#C8E6C9"
-				    app:boxStrokeColor="#388E3C"
-				    app:hintEnabled="false">
-				    <com.google.android.material.textfield.TextInputEditText
-					android:id="@+id/edittext1d"
-					android:padding="8dp"
-					android:gravity="center_horizontal|center_vertical"
-					android:textSize="12sp"
-					android:textStyle="bold"
-					android:textColor="#000000"
-					android:textColorHint="#B0BEC5" 
-				        android:layout_width="match_parent"
-				        android:layout_height="wrap_content" />
-				</com.google.android.material.textfield.TextInputLayout>
-				<TextView
-					android:id="@+id/textview2353"
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					android:padding="8dp"
-					android:gravity="center_horizontal|center_vertical"
-					android:text=":"
-					android:textSize="12sp"
-					android:textStyle="bold"
-					android:textColor="#000000" />
-				<TextView
-					android:id="@+id/textview1d"
-					android:layout_width="match_parent"
-					android:layout_height="wrap_content"
-					android:padding="8dp"
-					android:gravity="center_horizontal|center_vertical"
-					android:text="نوع مواسير\nخط الطرد"
-					android:textSize="12sp"
-					android:textStyle="bold"
-					android:textColor="#000000" />
-			</LinearLayout>
-			<HorizontalScrollView
-				android:id="@+id/hscroll138"
-				android:layout_width="match_parent"
-				android:layout_height="7dp"
-				android:padding="8dp" />
-			<LinearLayout
-				android:id="@+id/linear195"
-				android:layout_width="match_parent"
-				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:gravity="center_horizontal|center_vertical"
-				android:orientation="horizontal"
-				android:background="@drawable/rectangle_0_purplefff3e5f5_050_blackff000000">
-				<TextView
-					android:id="@+id/textview277"
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					android:padding="8dp"
-					android:gravity="center_horizontal|center_vertical"
-					android:text="مم"
-					android:textSize="12sp"
-					android:textStyle="bold"
-					android:textColor="#000000" />
-								<com.google.android.material.textfield.TextInputLayout
-				    android:layout_width="100dp"
-				    android:layout_height="wrap_content"
-				    style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense"
-				    app:boxBackgroundColor="#C8E6C9"
-				    app:boxStrokeColor="#388E3C"
-				    app:hintEnabled="false">
-				    <com.google.android.material.textfield.TextInputEditText
-					android:id="@+id/edittext2d"
-					android:padding="8dp"
-					android:gravity="center_horizontal|center_vertical"
-					android:textSize="12sp"
-					android:textStyle="bold"
-					android:textColor="#000000"
-					android:textColorHint="#607D8B" 
-				        android:layout_width="match_parent"
-				        android:layout_height="wrap_content" />
-				</com.google.android.material.textfield.TextInputLayout>
-				<TextView
-					android:id="@+id/textview603"
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					android:padding="8dp"
-					android:gravity="center_horizontal|center_vertical"
-					android:text="="
-					android:textSize="12sp"
-					android:textStyle="bold"
-					android:textColor="#000000" />
-				<TextView
-					android:id="@+id/textview2d"
-					android:layout_width="match_parent"
-					android:layout_height="wrap_content"
-					android:padding="8dp"
-					android:gravity="center_horizontal|center_vertical"
-					android:text="قطر خط الطرد ( مم )"
-					android:textSize="12sp"
-					android:textStyle="bold"
-					android:textColor="#000000" />
-			</LinearLayout>
-			<HorizontalScrollView
-				android:id="@+id/hscroll80"
-				android:layout_width="match_parent"
-				android:layout_height="7dp"
-				android:padding="8dp" />
-			<LinearLayout
-				android:id="@+id/linear127"
-				android:layout_width="match_parent"
-				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:gravity="left|center_vertical"
-				android:orientation="horizontal"
-				android:background="@drawable/rectangle_0_purplefff3e5f5_050_blackff000000">
-				<TextView
-					android:id="@+id/textview3d"
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					android:padding="8dp"
-					android:gravity="center_horizontal|center_vertical"
-					android:text="PN"
-					android:textSize="12sp"
-					android:textStyle="bold"
-					android:textColor="#000000" />
-				<TextView
-					android:id="@+id/textview697"
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					android:padding="8dp"
-					android:text="="
-					android:textSize="12sp"
-					android:textStyle="bold"
-					android:textColor="#000000" />
-								<com.google.android.material.textfield.TextInputLayout
-				    android:layout_width="100dp"
-				    android:layout_height="wrap_content"
-				    style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense"
-				    app:boxBackgroundColor="#C8E6C9"
-				    app:boxStrokeColor="#388E3C"
-				    app:hintEnabled="false">
-				    <com.google.android.material.textfield.TextInputEditText
-					android:id="@+id/edittext3d"
-					android:padding="8dp"
-					android:gravity="center_horizontal|center_vertical"
-					android:textSize="12sp"
-					android:textStyle="bold"
-					android:textColor="#000000"
-					android:textColorHint="#B0BEC5"
-					android:inputType="numberDecimal" 
-				        android:layout_width="match_parent"
-				        android:layout_height="wrap_content" />
-				</com.google.android.material.textfield.TextInputLayout>
-				<TextView
-					android:id="@+id/textview354"
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					android:padding="8dp"
-					android:gravity="center_horizontal|center_vertical"
-					android:text="bar"
-					android:textSize="12sp"
-					android:textStyle="bold"
-					android:textColor="#000000" />
-			</LinearLayout>
-			<LinearLayout
-				android:id="@+id/linear202"
-				android:layout_width="match_parent"
-				android:layout_height="7dp"
-				android:padding="8dp"
-				android:orientation="horizontal" />
-			<LinearLayout
-				android:id="@+id/linear186"
-				android:layout_width="match_parent"
-				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:gravity="center_horizontal|center_vertical"
-				android:orientation="horizontal"
-				android:background="@drawable/rectangle_0_purplefff3e5f5_050_blackff000000">
-				<TextView
-					android:id="@+id/textview698"
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					android:padding="8dp"
-					android:text="بار"
-					android:textSize="12sp"
-					android:textStyle="bold"
-					android:textColor="#000000" />
-								<com.google.android.material.textfield.TextInputLayout
-				    android:layout_width="100dp"
-				    android:layout_height="wrap_content"
-				    style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense"
-				    app:boxBackgroundColor="#C8E6C9"
-				    app:boxStrokeColor="#388E3C"
-				    app:hintEnabled="false">
-				    <com.google.android.material.textfield.TextInputEditText
-					android:id="@+id/edittext4d"
-					android:padding="8dp"
-					android:gravity="center_horizontal|center_vertical"
-					android:textSize="12sp"
-					android:textStyle="bold"
-					android:textColor="#000000"
-					android:textColorHint="#607D8B"
-					android:inputType="numberDecimal" 
-				        android:layout_width="match_parent"
-				        android:layout_height="wrap_content" />
-				</com.google.android.material.textfield.TextInputLayout>
-				<TextView
-					android:id="@+id/textview287"
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					android:padding="8dp"
-					android:gravity="center_horizontal|center_vertical"
-					android:text="="
-					android:textSize="12sp"
-					android:textStyle="bold"
-					android:textColor="#000000" />
-				<TextView
-					android:id="@+id/textview4d"
-					android:layout_width="match_parent"
-					android:layout_height="wrap_content"
-					android:padding="8dp"
-					android:gravity="center_horizontal|center_vertical"
-					android:text="ضغط التشغيل"
-					android:textSize="12sp"
-					android:textStyle="bold"
-					android:textColor="#000000" />
-			</LinearLayout>
-			<LinearLayout
-				android:id="@+id/linear184"
-				android:layout_width="match_parent"
-				android:layout_height="7dp"
-				android:padding="8dp"
-				android:gravity="left|center_vertical"
-				android:orientation="horizontal" />
-			<LinearLayout
-				android:id="@+id/linear120"
-				android:layout_width="match_parent"
-				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:gravity="center_horizontal|center_vertical"
-				android:orientation="horizontal"
-				android:background="@drawable/rectangle_0_purplefff3e5f5_050_blackff000000">
-				<TextView
-					android:id="@+id/textview1421"
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					android:padding="8dp"
-					android:text="بار"
-					android:textSize="12sp"
-					android:textStyle="bold"
-					android:textColor="#000000" />
-								<com.google.android.material.textfield.TextInputLayout
-				    android:layout_width="100dp"
-				    android:layout_height="wrap_content"
-				    style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense"
-				    app:boxBackgroundColor="#C8E6C9"
-				    app:boxStrokeColor="#388E3C"
-				    app:hintEnabled="false">
-				    <com.google.android.material.textfield.TextInputEditText
-					android:id="@+id/edittext5d"
-					android:padding="8dp"
-					android:gravity="center_horizontal|center_vertical"
-					android:textSize="12sp"
-					android:textStyle="bold"
-					android:textColor="#000000"
-					android:textColorHint="#B0BEC5"
-					android:inputType="numberDecimal" 
-				        android:layout_width="match_parent"
-				        android:layout_height="wrap_content" />
-				</com.google.android.material.textfield.TextInputLayout>
-				<TextView
-					android:id="@+id/textview1422"
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					android:padding="8dp"
-					android:gravity="center_horizontal|center_vertical"
-					android:text="="
-					android:textSize="12sp"
-					android:textStyle="bold"
-					android:textColor="#000000" />
-				<TextView
-					android:id="@+id/textview5d"
-					android:layout_width="match_parent"
-					android:layout_height="wrap_content"
-					android:padding="8dp"
-					android:gravity="center_horizontal|center_vertical"
-					android:text="ضغط اختبار"
-					android:textSize="12sp"
-					android:textStyle="bold"
-					android:textColor="#000000" />
-			</LinearLayout>
-			<LinearLayout
-				android:id="@+id/linear201"
-				android:layout_width="match_parent"
-				android:layout_height="7dp"
-				android:padding="8dp"
-				android:orientation="horizontal" />
-			<LinearLayout
-				android:id="@+id/linear198"
-				android:layout_width="match_parent"
-				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:gravity="left|center_vertical"
-				android:orientation="horizontal"
-				android:background="@drawable/rectangle_0_purplefff3e5f5_050_blackff000000">
-				<TextView
-					android:id="@+id/textview6d"
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					android:padding="8dp"
-					android:gravity="center_horizontal|center_vertical"
-					android:text="SDR"
-					android:textSize="12sp"
-					android:textStyle="bold"
-					android:textColor="#000000" />
-				<TextView
-					android:id="@+id/textview61"
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					android:padding="8dp"
-					android:gravity="center_horizontal|center_vertical"
-					android:text="="
-					android:textSize="12sp"
-					android:textStyle="bold"
-					android:textColor="#000000" />
-								<com.google.android.material.textfield.TextInputLayout
-				    android:layout_width="100dp"
-				    android:layout_height="wrap_content"
-				    style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense"
-				    app:boxBackgroundColor="#C8E6C9"
-				    app:boxStrokeColor="#388E3C"
-				    app:hintEnabled="false">
-				    <com.google.android.material.textfield.TextInputEditText
-					android:id="@+id/edittext6d"
-					android:padding="8dp"
-					android:gravity="center_horizontal|center_vertical"
-					android:textSize="12sp"
-					android:textStyle="bold"
-					android:textColor="#000000"
-					android:textColorHint="#607D8B"
-					android:inputType="numberDecimal" 
-				        android:layout_width="match_parent"
-				        android:layout_height="wrap_content" />
-				</com.google.android.material.textfield.TextInputLayout>
-			</LinearLayout>
-			<HorizontalScrollView
-				android:id="@+id/hscroll10"
-				android:layout_width="match_parent"
-				android:layout_height="7dp"
-				android:padding="8dp" />
-			<LinearLayout
-				android:id="@+id/linear126"
-				android:layout_width="match_parent"
-				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:gravity="center_horizontal|center_vertical"
-				android:orientation="horizontal"
-				android:background="@drawable/rectangle_0_purplefff3e5f5_050_blackff000000">
-				<TextView
-					android:id="@+id/textview58"
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					android:padding="8dp"
-					android:gravity="center_horizontal|center_vertical"
-					android:text="كجم / م.ط"
-					android:textSize="12sp"
-					android:textStyle="bold"
-					android:textColor="#000000" />
-								<com.google.android.material.textfield.TextInputLayout
-				    android:layout_width="80dp"
-				    android:layout_height="wrap_content"
-				    style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense"
-				    app:boxBackgroundColor="#BBDEFB"
-				    app:boxStrokeColor="#1565C0"
-				    app:hintEnabled="false">
-				    <com.google.android.material.textfield.TextInputEditText
-					android:id="@+id/edittext7d"
-					android:padding="8dp"
-					android:gravity="center_horizontal|center_vertical"
-					android:textSize="12sp"
-					android:textStyle="bold"
-					android:textColor="#000000"
-					android:textColorHint="#607D8B"
-					android:inputType="numberDecimal" 
-				        android:layout_width="match_parent"
-				        android:layout_height="wrap_content" />
-				</com.google.android.material.textfield.TextInputLayout>
-				<TextView
-					android:id="@+id/textview353"
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					android:padding="8dp"
-					android:gravity="center_horizontal|center_vertical"
-					android:text="="
-					android:textSize="12sp"
-					android:textStyle="bold"
-					android:textColor="#000000" />
-				<TextView
-					android:id="@+id/textview7d"
-					android:layout_width="match_parent"
-					android:layout_height="wrap_content"
-					android:padding="8dp"
-					android:gravity="center_horizontal|center_vertical"
-					android:text="وزن المتر الطولي من المأسورة\n( كجم / م.ط )"
-					android:textSize="12sp"
-					android:textStyle="bold"
-					android:textColor="#000000" />
-			</LinearLayout>
-			<HorizontalScrollView
-				android:id="@+id/hscroll137"
-				android:layout_width="match_parent"
-				android:layout_height="7dp"
-				android:padding="8dp" />
-			<LinearLayout
-				android:id="@+id/linear144"
-				android:layout_width="match_parent"
-				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:gravity="center_horizontal|center_vertical"
-				android:orientation="horizontal"
-				android:background="@drawable/rectangle_0_purplefff3e5f5_050_blackff000000">
-				<TextView
-					android:id="@+id/textview60"
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					android:padding="8dp"
-					android:text="جنيه / كجم"
-					android:textSize="12sp"
-					android:textStyle="bold"
-					android:textColor="#000000" />
-								<com.google.android.material.textfield.TextInputLayout
-				    android:layout_width="100dp"
-				    android:layout_height="wrap_content"
-				    style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense"
-				    app:boxBackgroundColor="#BBDEFB"
-				    app:boxStrokeColor="#1565C0"
-				    app:hintEnabled="false">
-				    <com.google.android.material.textfield.TextInputEditText
-					android:id="@+id/edittext8d"
-					android:padding="8dp"
-					android:gravity="center_horizontal|center_vertical"
-					android:textSize="12sp"
-					android:textStyle="bold"
-					android:textColor="#000000"
-					android:textColorHint="#B0BEC5"
-					android:inputType="numberDecimal" 
-				        android:layout_width="match_parent"
-				        android:layout_height="wrap_content" />
-				</com.google.android.material.textfield.TextInputLayout>
-				<TextView
-					android:id="@+id/textview602"
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					android:padding="8dp"
-					android:gravity="center_horizontal|center_vertical"
-					android:text="="
-					android:textSize="12sp"
-					android:textStyle="bold"
-					android:textColor="#000000" />
-				<TextView
-					android:id="@+id/textview8d"
-					android:layout_width="match_parent"
-					android:layout_height="wrap_content"
-					android:padding="8dp"
-					android:gravity="center_horizontal|center_vertical"
-					android:text="سعر ال كجم من الماسورة بدون اي تحميلات\n( جنيه / كجم )"
-					android:textSize="12sp"
-					android:textStyle="bold"
-					android:textColor="#000000" />
-			</LinearLayout>
-			<LinearLayout
-				android:id="@+id/linear523"
-				android:layout_width="match_parent"
-				android:layout_height="7dp"
-				android:padding="8dp"
-				android:gravity="center_horizontal|bottom"
-				android:orientation="vertical" />
-			<LinearLayout
-				android:id="@+id/linear584"
-				android:layout_width="match_parent"
-				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:gravity="center_horizontal|center_vertical"
-				android:orientation="horizontal"
-				android:background="@drawable/rectangle_0_purplefff3e5f5_050_blackff000000">
-				<TextView
-					android:id="@+id/textview1262"
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					android:padding="8dp"
-					android:text="%"
-					android:textSize="12sp"
-					android:textStyle="bold"
-					android:textColor="#000000" />
-								<com.google.android.material.textfield.TextInputLayout
-				    android:layout_width="80dp"
-				    android:layout_height="wrap_content"
-				    style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense"
-				    app:boxBackgroundColor="#C8E6C9"
-				    app:boxStrokeColor="#388E3C"
-				    app:hintEnabled="false">
-				    <com.google.android.material.textfield.TextInputEditText
-					android:id="@+id/edittext9d"
-					android:padding="8dp"
-					android:gravity="center_horizontal|center_vertical"
-					android:textSize="12sp"
-					android:textStyle="bold"
-					android:textColor="#000000"
-					android:hint="19"
-					android:textColorHint="#B0BEC5"
-					android:inputType="numberDecimal" 
-				        android:layout_width="match_parent"
-				        android:layout_height="wrap_content" />
-				</com.google.android.material.textfield.TextInputLayout>
-				<TextView
-					android:id="@+id/textview1263"
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					android:padding="8dp"
-					android:gravity="center_horizontal|center_vertical"
-					android:text="="
-					android:textSize="12sp"
-					android:textStyle="bold"
-					android:textColor="#000000" />
-				<TextView
-					android:id="@+id/textview9d"
-					android:layout_width="match_parent"
-					android:layout_height="wrap_content"
-					android:padding="8dp"
-					android:gravity="center_horizontal|center_vertical"
-					android:text="* نسبة التحميلات علي التوريد\n( % )"
-					android:textSize="12sp"
-					android:textStyle="bold"
-					android:textColor="#000000" />
-			</LinearLayout>
-			<LinearLayout
-				android:id="@+id/linear524"
-				android:layout_width="match_parent"
-				android:layout_height="7dp"
-				android:padding="8dp"
-				android:gravity="center_horizontal|bottom"
-				android:orientation="vertical" />
-			<LinearLayout
-				android:id="@+id/linear522"
-				android:layout_width="match_parent"
-				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:gravity="center_horizontal|center_vertical"
-				android:orientation="horizontal"
-				android:layout_gravity="center_horizontal|center_vertical"
-				android:background="@drawable/rectangle_0_purplefff3e5f5_050_blackff000000">
-				<TextView
-					android:id="@+id/textview1148"
-					android:layout_width="wrap_content"
-					android:layout_height="match_parent"
-					android:padding="8dp"
-					android:gravity="center_horizontal|center_vertical"
-					android:text="%"
-					android:textSize="12sp"
-					android:textStyle="bold"
-					android:textColor="#000000" />
-								<com.google.android.material.textfield.TextInputLayout
-				    android:layout_width="80dp"
-				    android:layout_height="wrap_content"
-				    style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense"
-				    app:boxBackgroundColor="#C8E6C9"
-				    app:boxStrokeColor="#388E3C"
-				    app:hintEnabled="false">
-				    <com.google.android.material.textfield.TextInputEditText
-					android:id="@+id/edittext10d"
-					android:padding="8dp"
-					android:gravity="center_horizontal|center_vertical"
-					android:textSize="12sp"
-					android:textStyle="bold"
-					android:textColor="#000000"
-					android:hint="30"
-					android:textColorHint="#B0BEC5"
-					android:inputType="numberDecimal" 
-				        android:layout_width="match_parent"
-				        android:layout_height="wrap_content" />
-				</com.google.android.material.textfield.TextInputLayout>
-				<TextView
-					android:id="@+id/textview1149"
-					android:layout_width="wrap_content"
-					android:layout_height="match_parent"
-					android:padding="8dp"
-					android:gravity="center_horizontal|center_vertical"
-					android:text="="
-					android:textSize="12sp"
-					android:textStyle="bold"
-					android:textColor="#000000" />
-				<TextView
-					android:id="@+id/textview10d"
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					android:padding="8dp"
-					android:gravity="center_horizontal|center_vertical"
-					android:text="* نسبة المصاريف الأدارية والأرباح علي التوريد ( % )"
-					android:textSize="12sp"
-					android:textStyle="bold"
-					android:textColor="#000000" />
-			</LinearLayout>
-			<LinearLayout
-				android:id="@+id/linear525"
-				android:layout_width="match_parent"
-				android:layout_height="7dp"
-				android:padding="8dp"
-				android:gravity="center_horizontal|bottom"
-				android:orientation="vertical" />
-			<TextView
-				android:id="@+id/textview66d"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:gravity="center_horizontal|center_vertical"
-				android:text="ثانيآ مدخلات مصنعية التركيب :-"
-				android:textSize="14sp"
-				android:textStyle="bold"
-				android:textColor="#000000"
-				android:layout_gravity="right" />
-			<HorizontalScrollView
-				android:id="@+id/hscroll75"
-				android:layout_width="match_parent"
-				android:layout_height="10dp"
-				android:padding="8dp" />
-			<LinearLayout
-				android:id="@+id/linear183"
-				android:layout_width="match_parent"
-				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:gravity="center_horizontal|center_vertical"
-				android:orientation="horizontal"
-				android:background="@drawable/rectangle_0_purplefff3e5f5_050_blackff000000">
-				<TextView
-					android:id="@+id/textview696"
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					android:padding="8dp"
-					android:text="جنيه / م.ط"
-					android:textSize="12sp"
-					android:textStyle="bold"
-					android:textColor="#000000" />
-								<com.google.android.material.textfield.TextInputLayout
-				    android:layout_width="100dp"
-				    android:layout_height="wrap_content"
-				    style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense"
-				    app:boxBackgroundColor="#BBDEFB"
-				    app:boxStrokeColor="#1565C0"
-				    app:hintEnabled="false">
-				    <com.google.android.material.textfield.TextInputEditText
-					android:id="@+id/edittext11d"
-					android:padding="8dp"
-					android:gravity="center_horizontal|center_vertical"
-					android:textSize="12sp"
-					android:textStyle="bold"
-					android:textColor="#000000"
-					android:textColorHint="#607D8B"
-					android:inputType="numberDecimal" 
-				        android:layout_width="match_parent"
-				        android:layout_height="wrap_content" />
-				</com.google.android.material.textfield.TextInputLayout>
-				<TextView
-					android:id="@+id/textview271"
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					android:padding="8dp"
-					android:gravity="center_horizontal|center_vertical"
-					android:text="="
-					android:textSize="12sp"
-					android:textStyle="bold"
-					android:textColor="#000000" />
-				<TextView
-					android:id="@+id/textview11d"
-					android:layout_width="match_parent"
-					android:layout_height="wrap_content"
-					android:padding="8dp"
-					android:gravity="center_horizontal|center_vertical"
-					android:text="سعر مصنعية تركيب خط الطرد بقائمة الهيئة القومية لمياه الشرب والصرف الصحي بجمهورية مصر العربية ( شامل المصاريف الأدارية والأرباح )\n( جنيه / م.ط )"
-					android:textSize="12sp"
-					android:textStyle="bold"
-					android:textColor="#000000" />
-			</LinearLayout>
-			<HorizontalScrollView
-				android:id="@+id/hscroll63"
-				android:layout_width="match_parent"
-				android:layout_height="7dp"
-				android:padding="8dp" />
-			<LinearLayout
-				android:id="@+id/linear431"
-				android:layout_width="match_parent"
-				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:gravity="center_horizontal|center_vertical"
-				android:orientation="horizontal"
-				android:background="@drawable/rectangle_0_purplefff3e5f5_050_blackff000000">
-				<TextView
-					android:id="@+id/textview874"
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					android:padding="8dp"
-					android:text="%"
-					android:textSize="12sp"
-					android:textStyle="bold"
-					android:textColor="#000000" />
-								<com.google.android.material.textfield.TextInputLayout
-				    android:layout_width="80dp"
-				    android:layout_height="wrap_content"
-				    style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense"
-				    app:boxBackgroundColor="#C8E6C9"
-				    app:boxStrokeColor="#388E3C"
-				    app:hintEnabled="false">
-				    <com.google.android.material.textfield.TextInputEditText
-					android:id="@+id/edittext12d"
-					android:padding="8dp"
-					android:gravity="center_horizontal|center_vertical"
-					android:textSize="12sp"
-					android:textStyle="bold"
-					android:textColor="#000000"
-					android:hint="0.40"
-					android:textColorHint="#B0BEC5"
-					android:inputType="numberDecimal" 
-				        android:layout_width="match_parent"
-				        android:layout_height="wrap_content" />
-				</com.google.android.material.textfield.TextInputLayout>
-				<TextView
-					android:id="@+id/textview875"
-					android:layout_width="wrap_content"
-					android:layout_height="match_parent"
-					android:padding="8dp"
-					android:gravity="center_horizontal|center_vertical"
-					android:text="="
-					android:textSize="12sp"
-					android:textStyle="bold"
-					android:textColor="#000000" />
-				<TextView
-					android:id="@+id/textview12d"
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					android:padding="8dp"
-					android:gravity="center_horizontal|center_vertical"
-					android:text="* نسبة مصاريف التصميم والأستشاري المصمم ( % )"
-					android:textStyle="bold"
-					android:textColor="#000000"
-					tools:replace="android:textSize"
-					android:textSize="12dp" />
-			</LinearLayout>
-			<LinearLayout
-				android:id="@+id/linear254"
-				android:layout_width="match_parent"
-				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:gravity="center_horizontal|center_vertical"
-				android:orientation="horizontal">
-				<com.google.android.material.button.MaterialButton
-							style="@style/Widget.Material3.Button"
-					android:id="@+id/button2d"
-					android:layout_width="200dp"
-					android:layout_height="wrap_content"
-					android:padding="8dp"
-					android:backgroundTint="#000000"
-					android:text="أحسب\n="
-					android:textSize="12sp"
-					android:textStyle="bold"
-					android:textColor="#4CAF50"
-							app:cornerRadius="16dp" />
-			</LinearLayout>
-			<HorizontalScrollView
-				android:id="@+id/hscroll9"
-				android:layout_width="match_parent"
-				android:layout_height="7dp"
-				android:padding="8dp" />
-			<LinearLayout
-				android:id="@+id/linear1051"
-				android:layout_width="match_parent"
-				android:layout_height="match_parent"
-				android:padding="8dp"
-				android:gravity="center_horizontal|center_vertical"
-				android:orientation="vertical"
-				android:background="@drawable/rectangle_0_purplefff3e5f5_075_blackff000000">
-				<TextView
-					android:id="@+id/textview13d"
-					android:layout_width="match_parent"
-					android:layout_height="wrap_content"
-					android:padding="8dp"
-					android:gravity="center_horizontal|center_vertical"
-					android:text="اجمالى السعر للتوريد\n( جنيه / م.ط )"
-					android:textSize="12sp"
-					android:textStyle="bold"
-					android:textColor="#000000" />
-				<TextView
-					android:id="@+id/textview2342"
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					android:padding="8dp"
-					android:gravity="center_horizontal|center_vertical"
-					android:text="="
-					android:textSize="12sp"
-					android:textStyle="bold"
-					android:textColor="#000000" />
-				<LinearLayout
-					android:id="@+id/linear1040"
-					android:layout_width="match_parent"
-					android:layout_height="wrap_content"
-					android:padding="8dp"
-					android:gravity="center_horizontal|center_vertical"
-					android:orientation="horizontal">
-					<TextView
-						android:id="@+id/textview2341"
-						android:layout_width="wrap_content"
-						android:layout_height="wrap_content"
-						android:padding="8dp"
-						android:text="جنيه / م.ط"
-						android:textSize="12sp"
-						android:textStyle="bold"
-						android:textColor="#000000" />
-										<com.google.android.material.textfield.TextInputLayout
-					    android:layout_width="wrap_content"
-					    android:layout_height="wrap_content"
-					    style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense"
-					    app:boxBackgroundColor="#D7CCC8"
-					    app:boxStrokeColor="#795548"
-					    app:hintEnabled="false">
-					    <com.google.android.material.textfield.TextInputEditText
-						android:id="@+id/edittext13d"
-						android:padding="8dp"
-						android:gravity="center_horizontal|center_vertical"
-						android:text="00.00"
-						android:textSize="12sp"
-						android:textStyle="bold"
-						android:textColor="#000000"
-						android:textColorHint="#B0BEC5"
-						android:inputType="numberDecimal"
-						android:enabled="false" 
-					        android:layout_width="match_parent"
-					        android:layout_height="wrap_content" />
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical">
+	<TextView android:id="@+id/textview519" android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="8dp" android:gravity="center_horizontal|center_vertical" android:text="-----‐---------------------------" android:textSize="14sp" android:textStyle="bold" android:textColor="?attr/colorPrimary" />
+	<androidx.core.widget.NestedScrollView android:paddingBottom="88dp" android:clipToPadding="false" android:id="@+id/vscroll1" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingTop="8dp">
+		<com.google.android.material.card.MaterialCardView android:id="@+id/linear205" android:layout_width="match_parent" android:layout_height="wrap_content" app:cardBackgroundColor="?attr/colorSecondaryContainer" app:cardElevation="2dp" app:cardCornerRadius="8dp" app:strokeWidth="0dp" style="@style/Widget.Material3.CardView.Filled">
+			<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="8dp" android:orientation="vertical">
+				<LinearLayout android:id="@+id/linear713" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="?attr/colorSurfaceVariant" android:orientation="horizontal" android:gravity="right|center_vertical">
+					<ImageView android:id="@+id/close" android:layout_width="30dp" android:layout_height="30dp" android:src="@drawable/clos1" android:background="?attr/selectableItemBackgroundBorderless" android:padding="4dp" android:scaleType="fitCenter" android:layout_gravity="left|center_vertical" />
+					<LinearLayout android:id="@+id/linear720" android:layout_width="wrap_content" android:layout_height="15dp" android:padding="8dp" android:orientation="horizontal" android:layout_weight="1" />
+				</LinearLayout>
+				<LinearLayout android:id="@+id/linear1053" android:layout_width="match_parent" android:layout_height="10dp" android:padding="8dp" android:orientation="vertical" />
+				<LinearLayout android:id="@+id/linear389" android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="8dp" android:background="?attr/colorSurface" android:gravity="right|center_vertical" android:orientation="horizontal" android:layout_gravity="right">
+					<TextView android:id="@+id/textview180" android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="2dp" android:gravity="center_horizontal|center_vertical" android:text="(" android:textSize="14sp" android:textStyle="bold" android:textColor="?attr/colorOnSurface" />
+					<TextView android:id="@+id/textview170d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="8dp" android:text="L" android:textSize="14sp" android:textStyle="bold" android:textColor="?attr/colorOnSurface" />
+					<com.google.android.material.textfield.TextInputLayout android:layout_width="40dp" android:layout_height="wrap_content" style="@style/Widget.Material3.TextInputLayout.FilledBox.Dense">
+						<com.google.android.material.textfield.TextInputEditText android:id="@+id/element_nums_d" android:text="1" android:textSize="14sp" android:textStyle="bold" android:textColor="?attr/colorOnSurface" android:textColorHint="?attr/colorOnSurfaceVariant" android:inputType="numberDecimal" android:enabled="false" android:layout_width="match_parent" android:layout_height="wrap_content" />
+					</com.google.android.material.textfield.TextInputLayout>
+					<TextView android:id="@+id/textview160" android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="8dp" android:text=")" android:textSize="14sp" android:textStyle="bold" android:textColor="?attr/colorOnSurface" />
+					<com.google.android.material.textfield.TextInputLayout android:layout_width="40dp" android:layout_height="wrap_content" style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense">
+						<com.google.android.material.textfield.TextInputEditText android:id="@+id/element_num_d" android:text="1" android:textSize="14sp" android:textStyle="bold" android:textColor="?attr/colorOnSurface" android:textColorHint="?attr/colorOnSurfaceVariant" android:inputType="numberDecimal" android:layout_width="match_parent" android:layout_height="wrap_content" />
+					</com.google.android.material.textfield.TextInputLayout>
+					<TextView android:id="@+id/textview150d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="8dp" android:gravity="right" android:text="خط طرد رقم :" android:textSize="14sp" android:textStyle="bold" android:textColor="?attr/colorOnSurface" android:layout_gravity="right|center_vertical" />
+				</LinearLayout>
+				<LinearLayout android:id="@+id/linear575" android:layout_width="match_parent" android:layout_height="10dp" android:padding="8dp" android:orientation="vertical" />
+				<TextView android:id="@+id/textview65d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="8dp" android:gravity="center_horizontal|center_vertical" android:text="أولآ مدخلات التوريد :-" android:textSize="14sp" android:textStyle="bold" android:textColor="?attr/colorOnSurface" android:layout_gravity="right" />
+				<LinearLayout android:id="@+id/linear1049" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="?attr/colorTertiaryContainer" android:orientation="horizontal" android:gravity="center_horizontal|center_vertical" android:padding="8dp">
+					<com.google.android.material.textfield.TextInputLayout android:layout_width="200dp" android:layout_height="wrap_content" style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense">
+						<com.google.android.material.textfield.TextInputEditText android:id="@+id/edittext1d" android:textSize="12sp" android:textStyle="bold" android:textColor="?attr/colorOnSurface" android:textColorHint="?attr/colorOnSurfaceVariant" android:layout_width="match_parent" android:layout_height="wrap_content" />
+					</com.google.android.material.textfield.TextInputLayout>
+					<TextView android:id="@+id/textview2353" android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="8dp" android:gravity="center_horizontal|center_vertical" android:text=":" android:textSize="12sp" android:textStyle="bold" android:textColor="?attr/colorOnSurface" />
+					<TextView android:id="@+id/textview1d" android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="8dp" android:gravity="center_horizontal|center_vertical" android:text="نوع مواسير\nخط الطرد" android:textSize="12sp" android:textStyle="bold" android:textColor="?attr/colorOnSurface" />
+				</LinearLayout>
+				<HorizontalScrollView android:id="@+id/hscroll138" android:layout_width="match_parent" android:layout_height="7dp" android:padding="8dp" />
+				<LinearLayout android:id="@+id/linear195" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="?attr/colorTertiaryContainer" android:orientation="horizontal" android:gravity="center_horizontal|center_vertical" android:padding="8dp">
+					<TextView android:id="@+id/textview277" android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="8dp" android:gravity="center_horizontal|center_vertical" android:text="مم" android:textSize="12sp" android:textStyle="bold" android:textColor="?attr/colorOnSurface" />
+					<com.google.android.material.textfield.TextInputLayout android:layout_width="100dp" android:layout_height="wrap_content" style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense">
+						<com.google.android.material.textfield.TextInputEditText android:id="@+id/edittext2d" android:textSize="12sp" android:textStyle="bold" android:textColor="?attr/colorOnSurface" android:textColorHint="?attr/colorOnSurfaceVariant" android:layout_width="match_parent" android:layout_height="wrap_content" />
+					</com.google.android.material.textfield.TextInputLayout>
+					<TextView android:id="@+id/textview603" android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="8dp" android:gravity="center_horizontal|center_vertical" android:text="=" android:textSize="12sp" android:textStyle="bold" android:textColor="?attr/colorOnSurface" />
+					<TextView android:id="@+id/textview2d" android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="8dp" android:gravity="center_horizontal|center_vertical" android:text="قطر خط الطرد ( مم )" android:textSize="12sp" android:textStyle="bold" android:textColor="?attr/colorOnSurface" />
+				</LinearLayout>
+				<HorizontalScrollView android:id="@+id/hscroll80" android:layout_width="match_parent" android:layout_height="7dp" android:padding="8dp" />
+				<LinearLayout android:id="@+id/linear127" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="?attr/colorTertiaryContainer" android:orientation="horizontal" android:gravity="left|center_vertical" android:padding="8dp">
+					<TextView android:id="@+id/textview3d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="8dp" android:gravity="center_horizontal|center_vertical" android:text="PN" android:textSize="12sp" android:textStyle="bold" android:textColor="?attr/colorOnSurface" />
+					<TextView android:id="@+id/textview697" android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="8dp" android:text="=" android:textSize="12sp" android:textStyle="bold" android:textColor="?attr/colorOnSurface" />
+					<com.google.android.material.textfield.TextInputLayout android:layout_width="100dp" android:layout_height="wrap_content" style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense">
+						<com.google.android.material.textfield.TextInputEditText android:id="@+id/edittext3d" android:textSize="12sp" android:textStyle="bold" android:textColor="?attr/colorOnSurface" android:textColorHint="?attr/colorOnSurfaceVariant" android:inputType="numberDecimal" android:layout_width="match_parent" android:layout_height="wrap_content" />
+					</com.google.android.material.textfield.TextInputLayout>
+					<TextView android:id="@+id/textview354" android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="8dp" android:gravity="center_horizontal|center_vertical" android:text="bar" android:textSize="12sp" android:textStyle="bold" android:textColor="?attr/colorOnSurface" />
+				</LinearLayout>
+				<LinearLayout android:id="@+id/linear202" android:layout_width="match_parent" android:layout_height="7dp" android:padding="8dp" android:orientation="horizontal" />
+				<LinearLayout android:id="@+id/linear186" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="?attr/colorTertiaryContainer" android:orientation="horizontal" android:gravity="center_horizontal|center_vertical" android:padding="8dp">
+					<TextView android:id="@+id/textview698" android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="8dp" android:text="بار" android:textSize="12sp" android:textStyle="bold" android:textColor="?attr/colorOnSurface" />
+					<com.google.android.material.textfield.TextInputLayout android:layout_width="100dp" android:layout_height="wrap_content" style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense">
+						<com.google.android.material.textfield.TextInputEditText android:id="@+id/edittext4d" android:textSize="12sp" android:textStyle="bold" android:textColor="?attr/colorOnSurface" android:textColorHint="?attr/colorOnSurfaceVariant" android:inputType="numberDecimal" android:layout_width="match_parent" android:layout_height="wrap_content" />
+					</com.google.android.material.textfield.TextInputLayout>
+					<TextView android:id="@+id/textview287" android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="8dp" android:gravity="center_horizontal|center_vertical" android:text="=" android:textSize="12sp" android:textStyle="bold" android:textColor="?attr/colorOnSurface" />
+					<TextView android:id="@+id/textview4d" android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="8dp" android:gravity="center_horizontal|center_vertical" android:text="ضغط التشغيل" android:textSize="12sp" android:textStyle="bold" android:textColor="?attr/colorOnSurface" />
+				</LinearLayout>
+				<LinearLayout android:id="@+id/linear184" android:layout_width="match_parent" android:layout_height="7dp" android:padding="8dp" android:gravity="left|center_vertical" android:orientation="horizontal" />
+				<LinearLayout android:id="@+id/linear120" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="?attr/colorTertiaryContainer" android:orientation="horizontal" android:gravity="center_horizontal|center_vertical" android:padding="8dp">
+					<TextView android:id="@+id/textview1421" android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="8dp" android:text="بار" android:textSize="12sp" android:textStyle="bold" android:textColor="?attr/colorOnSurface" />
+					<com.google.android.material.textfield.TextInputLayout android:layout_width="100dp" android:layout_height="wrap_content" style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense">
+						<com.google.android.material.textfield.TextInputEditText android:id="@+id/edittext5d" android:textSize="12sp" android:textStyle="bold" android:textColor="?attr/colorOnSurface" android:textColorHint="?attr/colorOnSurfaceVariant" android:inputType="numberDecimal" android:layout_width="match_parent" android:layout_height="wrap_content" />
+					</com.google.android.material.textfield.TextInputLayout>
+					<TextView android:id="@+id/textview1422" android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="8dp" android:gravity="center_horizontal|center_vertical" android:text="=" android:textSize="12sp" android:textStyle="bold" android:textColor="?attr/colorOnSurface" />
+					<TextView android:id="@+id/textview5d" android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="8dp" android:gravity="center_horizontal|center_vertical" android:text="ضغط اختبار" android:textSize="12sp" android:textStyle="bold" android:textColor="?attr/colorOnSurface" />
+				</LinearLayout>
+				<LinearLayout android:id="@+id/linear201" android:layout_width="match_parent" android:layout_height="7dp" android:padding="8dp" android:orientation="horizontal" />
+				<LinearLayout android:id="@+id/linear198" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="?attr/colorTertiaryContainer" android:orientation="horizontal" android:gravity="left|center_vertical" android:padding="8dp">
+					<TextView android:id="@+id/textview6d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="8dp" android:gravity="center_horizontal|center_vertical" android:text="SDR" android:textSize="12sp" android:textStyle="bold" android:textColor="?attr/colorOnSurface" />
+					<TextView android:id="@+id/textview61" android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="8dp" android:gravity="center_horizontal|center_vertical" android:text="=" android:textSize="12sp" android:textStyle="bold" android:textColor="?attr/colorOnSurface" />
+					<com.google.android.material.textfield.TextInputLayout android:layout_width="100dp" android:layout_height="wrap_content" style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense">
+						<com.google.android.material.textfield.TextInputEditText android:id="@+id/edittext6d" android:textSize="12sp" android:textStyle="bold" android:textColor="?attr/colorOnSurface" android:textColorHint="?attr/colorOnSurfaceVariant" android:inputType="numberDecimal" android:layout_width="match_parent" android:layout_height="wrap_content" />
 					</com.google.android.material.textfield.TextInputLayout>
 				</LinearLayout>
-			</LinearLayout>
-			<HorizontalScrollView
-				android:id="@+id/hscroll126"
-				android:layout_width="match_parent"
-				android:layout_height="7dp"
-				android:padding="8dp" />
-			<LinearLayout
-				android:id="@+id/linear1052"
-				android:layout_width="match_parent"
-				android:layout_height="match_parent"
-				android:padding="8dp"
-				android:gravity="center_horizontal|center_vertical"
-				android:orientation="vertical"
-				android:background="@drawable/rectangle_0_purplefff3e5f5_075_blackff000000">
-				<TextView
-					android:id="@+id/textview14d"
-					android:layout_width="match_parent"
-					android:layout_height="wrap_content"
-					android:padding="8dp"
-					android:gravity="center_horizontal|center_vertical"
-					android:text="اجمالي سعر التركيب أو المصنعية شامل مصاريف التصميم والاستشارى المصمم\n( جنيه / م.ط )"
-					android:textSize="12sp"
-					android:textStyle="bold"
-					android:textColor="#000000" />
-				<TextView
-					android:id="@+id/textview43"
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					android:padding="8dp"
-					android:gravity="center_horizontal|center_vertical"
-					android:text="="
-					android:textSize="12sp"
-					android:textStyle="bold"
-					android:textColor="#000000" />
-				<LinearLayout
-					android:id="@+id/linear157"
-					android:layout_width="match_parent"
-					android:layout_height="wrap_content"
-					android:padding="8dp"
-					android:gravity="center_horizontal|center_vertical"
-					android:orientation="horizontal">
-					<TextView
-						android:id="@+id/textview68"
-						android:layout_width="wrap_content"
-						android:layout_height="wrap_content"
-						android:padding="8dp"
-						android:text="جنيه / م.ط"
-						android:textSize="12sp"
-						android:textStyle="bold"
-						android:textColor="#000000" />
-										<com.google.android.material.textfield.TextInputLayout
-					    android:layout_width="wrap_content"
-					    android:layout_height="wrap_content"
-					    style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense"
-					    app:boxBackgroundColor="#D7CCC8"
-					    app:boxStrokeColor="#795548"
-					    app:hintEnabled="false">
-					    <com.google.android.material.textfield.TextInputEditText
-						android:id="@+id/edittext14d"
-						android:padding="8dp"
-						android:gravity="center_horizontal|center_vertical"
-						android:text="00.00"
-						android:textSize="12sp"
-						android:textStyle="bold"
-						android:textColor="#000000"
-						android:textColorHint="#B0BEC5"
-						android:inputType="numberDecimal"
-						android:enabled="false" 
-					        android:layout_width="match_parent"
-					        android:layout_height="wrap_content" />
+				<HorizontalScrollView android:id="@+id/hscroll10" android:layout_width="match_parent" android:layout_height="7dp" android:padding="8dp" />
+				<LinearLayout android:id="@+id/linear126" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="?attr/colorTertiaryContainer" android:orientation="horizontal" android:gravity="center_horizontal|center_vertical" android:padding="8dp">
+					<TextView android:id="@+id/textview58" android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="8dp" android:gravity="center_horizontal|center_vertical" android:text="كجم / م.ط" android:textSize="12sp" android:textStyle="bold" android:textColor="?attr/colorOnSurface" />
+					<com.google.android.material.textfield.TextInputLayout android:layout_width="80dp" android:layout_height="wrap_content" style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense">
+						<com.google.android.material.textfield.TextInputEditText android:id="@+id/edittext7d" android:textSize="12sp" android:textStyle="bold" android:textColor="?attr/colorOnSurface" android:textColorHint="?attr/colorOnSurfaceVariant" android:inputType="numberDecimal" android:layout_width="match_parent" android:layout_height="wrap_content" />
 					</com.google.android.material.textfield.TextInputLayout>
+					<TextView android:id="@+id/textview353" android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="8dp" android:gravity="center_horizontal|center_vertical" android:text="=" android:textSize="12sp" android:textStyle="bold" android:textColor="?attr/colorOnSurface" />
+					<TextView android:id="@+id/textview7d" android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="8dp" android:gravity="center_horizontal|center_vertical" android:text="وزن المتر الطولي من المأسورة\n( كجم / م.ط )" android:textSize="12sp" android:textStyle="bold" android:textColor="?attr/colorOnSurface" />
+				</LinearLayout>
+				<HorizontalScrollView android:id="@+id/hscroll137" android:layout_width="match_parent" android:layout_height="7dp" android:padding="8dp" />
+				<LinearLayout android:id="@+id/linear144" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="?attr/colorTertiaryContainer" android:orientation="horizontal" android:gravity="center_horizontal|center_vertical" android:padding="8dp">
+					<TextView android:id="@+id/textview60" android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="8dp" android:text="جنيه / كجم" android:textSize="12sp" android:textStyle="bold" android:textColor="?attr/colorOnSurface" />
+					<com.google.android.material.textfield.TextInputLayout android:layout_width="100dp" android:layout_height="wrap_content" style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense">
+						<com.google.android.material.textfield.TextInputEditText android:id="@+id/edittext8d" android:textSize="12sp" android:textStyle="bold" android:textColor="?attr/colorOnSurface" android:textColorHint="?attr/colorOnSurfaceVariant" android:inputType="numberDecimal" android:layout_width="match_parent" android:layout_height="wrap_content" />
+					</com.google.android.material.textfield.TextInputLayout>
+					<TextView android:id="@+id/textview602" android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="8dp" android:gravity="center_horizontal|center_vertical" android:text="=" android:textSize="12sp" android:textStyle="bold" android:textColor="?attr/colorOnSurface" />
+					<TextView android:id="@+id/textview8d" android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="8dp" android:gravity="center_horizontal|center_vertical" android:text="سعر ال كجم من الماسورة بدون اي تحميلات\n( جنيه / كجم )" android:textSize="12sp" android:textStyle="bold" android:textColor="?attr/colorOnSurface" />
+				</LinearLayout>
+				<LinearLayout android:id="@+id/linear523" android:layout_width="match_parent" android:layout_height="7dp" android:padding="8dp" android:gravity="center_horizontal|bottom" android:orientation="vertical" />
+				<LinearLayout android:id="@+id/linear584" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="?attr/colorTertiaryContainer" android:orientation="horizontal" android:gravity="center_horizontal|center_vertical" android:padding="8dp">
+					<TextView android:id="@+id/textview1262" android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="8dp" android:text="%" android:textSize="12sp" android:textStyle="bold" android:textColor="?attr/colorOnSurface" />
+					<com.google.android.material.textfield.TextInputLayout android:layout_width="80dp" android:layout_height="wrap_content" style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense">
+						<com.google.android.material.textfield.TextInputEditText android:id="@+id/edittext9d" android:textSize="12sp" android:textStyle="bold" android:textColor="?attr/colorOnSurface" android:hint="19" android:textColorHint="?attr/colorOnSurfaceVariant" android:inputType="numberDecimal" android:layout_width="match_parent" android:layout_height="wrap_content" />
+					</com.google.android.material.textfield.TextInputLayout>
+					<TextView android:id="@+id/textview1263" android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="8dp" android:gravity="center_horizontal|center_vertical" android:text="=" android:textSize="12sp" android:textStyle="bold" android:textColor="?attr/colorOnSurface" />
+					<TextView android:id="@+id/textview9d" android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="8dp" android:gravity="center_horizontal|center_vertical" android:text="* نسبة التحميلات علي التوريد\n( % )" android:textSize="12sp" android:textStyle="bold" android:textColor="?attr/colorOnSurface" />
+				</LinearLayout>
+				<LinearLayout android:id="@+id/linear524" android:layout_width="match_parent" android:layout_height="7dp" android:padding="8dp" android:gravity="center_horizontal|bottom" android:orientation="vertical" />
+				<LinearLayout android:id="@+id/linear522" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="?attr/colorTertiaryContainer" android:layout_gravity="center_horizontal|center_vertical" android:orientation="horizontal" android:gravity="center_horizontal|center_vertical" android:padding="8dp">
+					<TextView android:id="@+id/textview1148" android:layout_width="wrap_content" android:layout_height="match_parent" android:padding="8dp" android:gravity="center_horizontal|center_vertical" android:text="%" android:textSize="12sp" android:textStyle="bold" android:textColor="?attr/colorOnSurface" />
+					<com.google.android.material.textfield.TextInputLayout android:layout_width="80dp" android:layout_height="wrap_content" style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense">
+						<com.google.android.material.textfield.TextInputEditText android:id="@+id/edittext10d" android:textSize="12sp" android:textStyle="bold" android:textColor="?attr/colorOnSurface" android:hint="30" android:textColorHint="?attr/colorOnSurfaceVariant" android:inputType="numberDecimal" android:layout_width="match_parent" android:layout_height="wrap_content" />
+					</com.google.android.material.textfield.TextInputLayout>
+					<TextView android:id="@+id/textview1149" android:layout_width="wrap_content" android:layout_height="match_parent" android:padding="8dp" android:gravity="center_horizontal|center_vertical" android:text="=" android:textSize="12sp" android:textStyle="bold" android:textColor="?attr/colorOnSurface" />
+					<TextView android:id="@+id/textview10d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="8dp" android:gravity="center_horizontal|center_vertical" android:text="* نسبة المصاريف الأدارية والأرباح علي التوريد ( % )" android:textSize="12sp" android:textStyle="bold" android:textColor="?attr/colorOnSurface" />
+				</LinearLayout>
+				<LinearLayout android:id="@+id/linear525" android:layout_width="match_parent" android:layout_height="7dp" android:padding="8dp" android:gravity="center_horizontal|bottom" android:orientation="vertical" />
+				<TextView android:id="@+id/textview66d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="8dp" android:gravity="center_horizontal|center_vertical" android:text="ثانيآ مدخلات مصنعية التركيب :-" android:textSize="14sp" android:textStyle="bold" android:textColor="?attr/colorOnSurface" android:layout_gravity="right" />
+				<HorizontalScrollView android:id="@+id/hscroll75" android:layout_width="match_parent" android:layout_height="10dp" android:padding="8dp" />
+				<LinearLayout android:id="@+id/linear183" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="?attr/colorTertiaryContainer" android:orientation="horizontal" android:gravity="center_horizontal|center_vertical" android:padding="8dp">
+					<TextView android:id="@+id/textview696" android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="8dp" android:text="جنيه / م.ط" android:textSize="12sp" android:textStyle="bold" android:textColor="?attr/colorOnSurface" />
+					<com.google.android.material.textfield.TextInputLayout android:layout_width="100dp" android:layout_height="wrap_content" style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense">
+						<com.google.android.material.textfield.TextInputEditText android:id="@+id/edittext11d" android:textSize="12sp" android:textStyle="bold" android:textColor="?attr/colorOnSurface" android:textColorHint="?attr/colorOnSurfaceVariant" android:inputType="numberDecimal" android:layout_width="match_parent" android:layout_height="wrap_content" />
+					</com.google.android.material.textfield.TextInputLayout>
+					<TextView android:id="@+id/textview271" android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="8dp" android:gravity="center_horizontal|center_vertical" android:text="=" android:textSize="12sp" android:textStyle="bold" android:textColor="?attr/colorOnSurface" />
+					<TextView android:id="@+id/textview11d" android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="8dp" android:gravity="center_horizontal|center_vertical" android:text="سعر مصنعية تركيب خط الطرد بقائمة الهيئة القومية لمياه الشرب والصرف الصحي بجمهورية مصر العربية ( شامل المصاريف الأدارية والأرباح )\n( جنيه / م.ط )" android:textSize="12sp" android:textStyle="bold" android:textColor="?attr/colorOnSurface" />
+				</LinearLayout>
+				<HorizontalScrollView android:id="@+id/hscroll63" android:layout_width="match_parent" android:layout_height="7dp" android:padding="8dp" />
+				<LinearLayout android:id="@+id/linear431" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="?attr/colorTertiaryContainer" android:orientation="horizontal" android:gravity="center_horizontal|center_vertical" android:padding="8dp">
+					<TextView android:id="@+id/textview874" android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="8dp" android:text="%" android:textSize="12sp" android:textStyle="bold" android:textColor="?attr/colorOnSurface" />
+					<com.google.android.material.textfield.TextInputLayout android:layout_width="80dp" android:layout_height="wrap_content" style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense">
+						<com.google.android.material.textfield.TextInputEditText android:id="@+id/edittext12d" android:textSize="12sp" android:textStyle="bold" android:textColor="?attr/colorOnSurface" android:hint="0.40" android:textColorHint="?attr/colorOnSurfaceVariant" android:inputType="numberDecimal" android:layout_width="match_parent" android:layout_height="wrap_content" />
+					</com.google.android.material.textfield.TextInputLayout>
+					<TextView android:id="@+id/textview875" android:layout_width="wrap_content" android:layout_height="match_parent" android:padding="8dp" android:gravity="center_horizontal|center_vertical" android:text="=" android:textSize="12sp" android:textStyle="bold" android:textColor="?attr/colorOnSurface" />
+					<TextView android:id="@+id/textview12d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="8dp" android:gravity="center_horizontal|center_vertical" android:text="* نسبة مصاريف التصميم والأستشاري المصمم ( % )" android:textStyle="bold" android:textColor="?attr/colorOnSurface" tools:replace="android:textSize" android:textSize="12dp" />
+				</LinearLayout>
+				<LinearLayout android:id="@+id/linear254" android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="8dp" android:gravity="center_horizontal|center_vertical" android:orientation="horizontal">
+					<com.google.android.material.button.MaterialButton style="@style/Widget.Material3.Button" android:id="@+id/button2d" android:layout_width="200dp" android:layout_height="wrap_content" android:padding="8dp" android:background="?attr/colorPrimary" android:text="أحسب\n=" android:textSize="12sp" android:textStyle="bold" android:textColor="?attr/colorSecondary" />
+				</LinearLayout>
+				<HorizontalScrollView android:id="@+id/hscroll9" android:layout_width="match_parent" android:layout_height="7dp" android:padding="8dp" />
+				<LinearLayout android:id="@+id/linear1051" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="?attr/colorTertiaryContainer" android:orientation="vertical" android:gravity="center_horizontal|center_vertical" android:padding="8dp">
+					<TextView android:id="@+id/textview13d" android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="8dp" android:gravity="center_horizontal|center_vertical" android:text="اجمالى السعر للتوريد\n( جنيه / م.ط )" android:textSize="12sp" android:textStyle="bold" android:textColor="?attr/colorOnSurface" />
+					<TextView android:id="@+id/textview2342" android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="8dp" android:gravity="center_horizontal|center_vertical" android:text="=" android:textSize="12sp" android:textStyle="bold" android:textColor="?attr/colorOnSurface" />
+					<LinearLayout android:id="@+id/linear1040" android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="8dp" android:gravity="center_horizontal|center_vertical" android:orientation="horizontal">
+						<TextView android:id="@+id/textview2341" android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="8dp" android:text="جنيه / م.ط" android:textSize="12sp" android:textStyle="bold" android:textColor="?attr/colorOnSurface" />
+						<com.google.android.material.textfield.TextInputLayout android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Widget.Material3.TextInputLayout.FilledBox.Dense">
+							<com.google.android.material.textfield.TextInputEditText android:id="@+id/edittext13d" android:text="00.00" android:textSize="12sp" android:textStyle="bold" android:textColor="?attr/colorOnSurface" android:textColorHint="?attr/colorOnSurfaceVariant" android:inputType="numberDecimal" android:enabled="false" android:layout_width="match_parent" android:layout_height="wrap_content" />
+						</com.google.android.material.textfield.TextInputLayout>
+					</LinearLayout>
+				</LinearLayout>
+				<HorizontalScrollView android:id="@+id/hscroll126" android:layout_width="match_parent" android:layout_height="7dp" android:padding="8dp" />
+				<LinearLayout android:id="@+id/linear1052" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="?attr/colorTertiaryContainer" android:orientation="vertical" android:gravity="center_horizontal|center_vertical" android:padding="8dp">
+					<TextView android:id="@+id/textview14d" android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="8dp" android:gravity="center_horizontal|center_vertical" android:text="اجمالي سعر التركيب أو المصنعية شامل مصاريف التصميم والاستشارى المصمم\n( جنيه / م.ط )" android:textSize="12sp" android:textStyle="bold" android:textColor="?attr/colorOnSurface" />
+					<TextView android:id="@+id/textview43" android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="8dp" android:gravity="center_horizontal|center_vertical" android:text="=" android:textSize="12sp" android:textStyle="bold" android:textColor="?attr/colorOnSurface" />
+					<LinearLayout android:id="@+id/linear157" android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="8dp" android:gravity="center_horizontal|center_vertical" android:orientation="horizontal">
+						<TextView android:id="@+id/textview68" android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="8dp" android:text="جنيه / م.ط" android:textSize="12sp" android:textStyle="bold" android:textColor="?attr/colorOnSurface" />
+						<com.google.android.material.textfield.TextInputLayout android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Widget.Material3.TextInputLayout.FilledBox.Dense">
+							<com.google.android.material.textfield.TextInputEditText android:id="@+id/edittext14d" android:text="00.00" android:textSize="12sp" android:textStyle="bold" android:textColor="?attr/colorOnSurface" android:textColorHint="?attr/colorOnSurfaceVariant" android:inputType="numberDecimal" android:enabled="false" android:layout_width="match_parent" android:layout_height="wrap_content" />
+						</com.google.android.material.textfield.TextInputLayout>
+					</LinearLayout>
+				</LinearLayout>
+				<HorizontalScrollView android:id="@+id/hscroll18" android:layout_width="match_parent" android:layout_height="7dp" android:padding="8dp" />
+				<LinearLayout android:id="@+id/linear432" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="?attr/colorPrimaryContainer" android:orientation="vertical" android:gravity="center_horizontal|center_vertical" android:padding="8dp">
+					<TextView android:id="@+id/textview15d" android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="8dp" android:gravity="center_horizontal|center_vertical" android:text="اجمالي سعر خط الطرد ( توريد وتركيب )\n( جنيه / م.ط )" android:textSize="14sp" android:textStyle="bold" android:textColor="?attr/colorOnSurface" />
+					<TextView android:id="@+id/textview891" android:layout_width="wrap_content" android:layout_height="match_parent" android:padding="8dp" android:gravity="center_horizontal|center_vertical" android:text="=" android:textSize="14sp" android:textStyle="bold" android:textColor="?attr/colorOnSurface" />
+					<LinearLayout android:id="@+id/linear433" android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="8dp" android:gravity="center_horizontal|center_vertical" android:orientation="horizontal">
+						<TextView android:id="@+id/textview878" android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="8dp" android:text="جنيه / م.ط" android:textSize="12sp" android:textStyle="bold" android:textColor="?attr/colorOnSurface" />
+						<com.google.android.material.textfield.TextInputLayout android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Widget.Material3.TextInputLayout.FilledBox.Dense">
+							<com.google.android.material.textfield.TextInputEditText android:id="@+id/edittext15d" android:text="00.00" android:textSize="14sp" android:textStyle="bold" android:textColor="?attr/colorOnSurface" android:textColorHint="?attr/colorOnSurfaceVariant" android:inputType="numberDecimal" android:enabled="false" android:layout_width="match_parent" android:layout_height="wrap_content" />
+						</com.google.android.material.textfield.TextInputLayout>
+					</LinearLayout>
+				</LinearLayout>
+				<HorizontalScrollView android:id="@+id/hscroll140" android:layout_width="match_parent" android:layout_height="7dp" android:padding="8dp" />
+				<LinearLayout android:id="@+id/linear1050" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="?attr/colorTertiaryContainer" android:orientation="horizontal" android:gravity="center_horizontal|center_vertical" android:padding="8dp">
+					<TextView android:id="@+id/textview2354" android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="8dp" android:text="م.ط" android:textSize="12sp" android:textStyle="bold" android:textColor="?attr/colorOnSurface" />
+					<com.google.android.material.textfield.TextInputLayout android:layout_width="100dp" android:layout_height="wrap_content" style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense">
+						<com.google.android.material.textfield.TextInputEditText android:id="@+id/edittext16d" android:textSize="12sp" android:textStyle="bold" android:textColor="?attr/colorOnSurface" android:textColorHint="?attr/colorOnSurfaceVariant" android:inputType="numberDecimal" android:layout_width="match_parent" android:layout_height="wrap_content" />
+					</com.google.android.material.textfield.TextInputLayout>
+					<TextView android:id="@+id/textview2355" android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="8dp" android:gravity="center_horizontal|center_vertical" android:text="=" android:textSize="12sp" android:textStyle="bold" android:textColor="?attr/colorOnSurface" />
+					<TextView android:id="@+id/textview16d" android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="8dp" android:gravity="center_horizontal|center_vertical" android:text="الكمية\n( م.ط )" android:textSize="12sp" android:textStyle="bold" android:textColor="?attr/colorOnSurface" />
+				</LinearLayout>
+				<LinearLayout android:id="@+id/linear119" android:layout_width="match_parent" android:layout_height="7dp" android:padding="8dp" android:gravity="center_horizontal|center_vertical" android:orientation="horizontal" />
+				<LinearLayout android:id="@+id/linear585" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="?attr/colorTertiaryContainer" android:orientation="vertical" android:gravity="center_horizontal|center_vertical" android:padding="8dp">
+					<TextView android:id="@+id/textview17d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="8dp" android:gravity="center_horizontal|center_vertical" android:text="اجمالي قيمة خط الطرد\n( جنيه )" android:textSize="14sp" android:textStyle="bold" android:textColor="?attr/colorOnSurface" />
+					<TextView android:id="@+id/textview2224" android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="8dp" android:text="=" android:textSize="14sp" android:textStyle="bold" android:textColor="?attr/colorOnSurface" />
+					<LinearLayout android:id="@+id/linear586" android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="8dp" android:gravity="center_horizontal|center_vertical" android:orientation="horizontal">
+						<TextView android:id="@+id/textview1266" android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="8dp" android:text="جنيه" android:textSize="12sp" android:textStyle="bold" android:textColor="?attr/colorOnSurface" />
+						<com.google.android.material.textfield.TextInputLayout android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Widget.Material3.TextInputLayout.FilledBox.Dense">
+							<com.google.android.material.textfield.TextInputEditText android:id="@+id/edittext17d" android:text="00.00" android:textSize="14sp" android:textStyle="bold" android:textColor="?attr/colorOnSurface" android:textColorHint="?attr/colorOnSurfaceVariant" android:inputType="numberDecimal" android:enabled="false" android:layout_width="match_parent" android:layout_height="wrap_content" />
+						</com.google.android.material.textfield.TextInputLayout>
+					</LinearLayout>
 				</LinearLayout>
 			</LinearLayout>
-			<HorizontalScrollView
-				android:id="@+id/hscroll18"
-				android:layout_width="match_parent"
-				android:layout_height="7dp"
-				android:padding="8dp" />
-			<LinearLayout
-				android:id="@+id/linear432"
-				android:layout_width="match_parent"
-				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:gravity="center_horizontal|center_vertical"
-				android:orientation="vertical"
-				android:background="@drawable/rectangle_0_indigoff9fa8da_075_blackff000000">
-				<TextView
-					android:id="@+id/textview15d"
-					android:layout_width="match_parent"
-					android:layout_height="wrap_content"
-					android:padding="8dp"
-					android:gravity="center_horizontal|center_vertical"
-					android:text="اجمالي سعر خط الطرد ( توريد وتركيب )\n( جنيه / م.ط )"
-					android:textSize="14sp"
-					android:textStyle="bold"
-					android:textColor="#000000" />
-				<TextView
-					android:id="@+id/textview891"
-					android:layout_width="wrap_content"
-					android:layout_height="match_parent"
-					android:padding="8dp"
-					android:gravity="center_horizontal|center_vertical"
-					android:text="="
-					android:textSize="14sp"
-					android:textStyle="bold"
-					android:textColor="#000000" />
-				<LinearLayout
-					android:id="@+id/linear433"
-					android:layout_width="match_parent"
-					android:layout_height="wrap_content"
-					android:padding="8dp"
-					android:gravity="center_horizontal|center_vertical"
-					android:orientation="horizontal">
-					<TextView
-						android:id="@+id/textview878"
-						android:layout_width="wrap_content"
-						android:layout_height="wrap_content"
-						android:padding="8dp"
-						android:text="جنيه / م.ط"
-						android:textSize="12sp"
-						android:textStyle="bold"
-						android:textColor="#000000" />
-										<com.google.android.material.textfield.TextInputLayout
-					    android:layout_width="wrap_content"
-					    android:layout_height="wrap_content"
-					    style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense"
-					    app:boxBackgroundColor="#FFC107"
-					    app:boxStrokeColor="#F57F17"
-					    app:hintEnabled="false">
-					    <com.google.android.material.textfield.TextInputEditText
-						android:id="@+id/edittext15d"
-						android:padding="8dp"
-						android:gravity="center_horizontal|center_vertical"
-						android:text="00.00"
-						android:textSize="14sp"
-						android:textStyle="bold"
-						android:textColor="#000000"
-						android:textColorHint="#607D8B"
-						android:inputType="numberDecimal"
-						android:enabled="false" 
-					        android:layout_width="match_parent"
-					        android:layout_height="wrap_content" />
-					</com.google.android.material.textfield.TextInputLayout>
-				</LinearLayout>
-			</LinearLayout>
-			<HorizontalScrollView
-				android:id="@+id/hscroll140"
-				android:layout_width="match_parent"
-				android:layout_height="7dp"
-				android:padding="8dp" />
-			<LinearLayout
-				android:id="@+id/linear1050"
-				android:layout_width="match_parent"
-				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:gravity="center_horizontal|center_vertical"
-				android:orientation="horizontal"
-				android:background="@drawable/rectangle_0_purplefff3e5f5_050_blackff000000">
-				<TextView
-					android:id="@+id/textview2354"
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					android:padding="8dp"
-					android:text="م.ط"
-					android:textSize="12sp"
-					android:textStyle="bold"
-					android:textColor="#000000" />
-								<com.google.android.material.textfield.TextInputLayout
-				    android:layout_width="100dp"
-				    android:layout_height="wrap_content"
-				    style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense"
-				    app:boxBackgroundColor="#BBDEFB"
-				    app:boxStrokeColor="#1565C0"
-				    app:hintEnabled="false">
-				    <com.google.android.material.textfield.TextInputEditText
-					android:id="@+id/edittext16d"
-					android:padding="8dp"
-					android:gravity="center_horizontal|center_vertical"
-					android:textSize="12sp"
-					android:textStyle="bold"
-					android:textColor="#000000"
-					android:textColorHint="#B0BEC5"
-					android:inputType="numberDecimal" 
-				        android:layout_width="match_parent"
-				        android:layout_height="wrap_content" />
-				</com.google.android.material.textfield.TextInputLayout>
-				<TextView
-					android:id="@+id/textview2355"
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					android:padding="8dp"
-					android:gravity="center_horizontal|center_vertical"
-					android:text="="
-					android:textSize="12sp"
-					android:textStyle="bold"
-					android:textColor="#000000" />
-				<TextView
-					android:id="@+id/textview16d"
-					android:layout_width="match_parent"
-					android:layout_height="wrap_content"
-					android:padding="8dp"
-					android:gravity="center_horizontal|center_vertical"
-					android:text="الكمية\n( م.ط )"
-					android:textSize="12sp"
-					android:textStyle="bold"
-					android:textColor="#000000" />
-			</LinearLayout>
-			<LinearLayout
-				android:id="@+id/linear119"
-				android:layout_width="match_parent"
-				android:layout_height="7dp"
-				android:padding="8dp"
-				android:gravity="center_horizontal|center_vertical"
-				android:orientation="horizontal" />
-			<LinearLayout
-				android:id="@+id/linear585"
-				android:layout_width="match_parent"
-				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:gravity="center_horizontal|center_vertical"
-				android:orientation="vertical"
-				android:background="@drawable/rectangle_0_limefff0f4c3_075_blackff000000">
-				<TextView
-					android:id="@+id/textview17d"
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					android:padding="8dp"
-					android:gravity="center_horizontal|center_vertical"
-					android:text="اجمالي قيمة خط الطرد\n( جنيه )"
-					android:textSize="14sp"
-					android:textStyle="bold"
-					android:textColor="#000000" />
-				<TextView
-					android:id="@+id/textview2224"
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					android:padding="8dp"
-					android:text="="
-					android:textSize="14sp"
-					android:textStyle="bold"
-					android:textColor="#000000" />
-				<LinearLayout
-					android:id="@+id/linear586"
-					android:layout_width="match_parent"
-					android:layout_height="wrap_content"
-					android:padding="8dp"
-					android:gravity="center_horizontal|center_vertical"
-					android:orientation="horizontal">
-					<TextView
-						android:id="@+id/textview1266"
-						android:layout_width="wrap_content"
-						android:layout_height="wrap_content"
-						android:padding="8dp"
-						android:text="جنيه"
-						android:textSize="12sp"
-						android:textStyle="bold"
-						android:textColor="#000000" />
-										<com.google.android.material.textfield.TextInputLayout
-					    android:layout_width="wrap_content"
-					    android:layout_height="wrap_content"
-					    style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense"
-					    app:boxBackgroundColor="#FFC107"
-					    app:boxStrokeColor="#F57F17"
-					    app:hintEnabled="false">
-					    <com.google.android.material.textfield.TextInputEditText
-						android:id="@+id/edittext17d"
-						android:padding="8dp"
-						android:gravity="center_horizontal|center_vertical"
-						android:text="00.00"
-						android:textSize="14sp"
-						android:textStyle="bold"
-						android:textColor="#000000"
-						android:textColorHint="#607D8B"
-						android:inputType="numberDecimal"
-						android:enabled="false" 
-					        android:layout_width="match_parent"
-					        android:layout_height="wrap_content" />
-					</com.google.android.material.textfield.TextInputLayout>
-				</LinearLayout>
-			</LinearLayout>
-		</LinearLayout>
-	</ScrollView>
+		</com.google.android.material.card.MaterialCardView>
+	</androidx.core.widget.NestedScrollView>
 </LinearLayout>

@@ -1,444 +1,72 @@
-<LinearLayout
-	xmlns:android="http://schemas.android.com/apk/res/android"
-	xmlns:app="http://schemas.android.com/apk/res-auto"
-	xmlns:tools="http://schemas.android.com/tools"
-	android:layout_width="match_parent"
-	android:layout_height="match_parent"
-	android:orientation="vertical"
-	android:theme="@style/AppTheme.DayNight">
-	<ScrollView
-		android:id="@+id/scroll_view"
-		android:layout_width="match_parent"
-		android:layout_height="match_parent"
-		android:fillViewport="true">
-		<LinearLayout
-			android:id="@+id/main_container"
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:orientation="vertical"
-			android:padding="@dimen/content_padding">
-			<com.google.android.material.card.MaterialCardView
-				android:id="@+id/cardview7"
-				android:layout_width="match_parent"
-				android:layout_height="wrap_content"
-				android:layout_marginBottom="@dimen/card_spacing"
-				style="@style/CardViewStyle.DayNight">
-				<LinearLayout
-					android:id="@+id/linear25"
-					android:layout_width="match_parent"
-					android:layout_height="wrap_content"
-					android:orientation="vertical">
-					<LinearLayout
-						android:id="@+id/header_section"
-						android:layout_width="match_parent"
-						android:layout_height="wrap_content"
-						android:gravity="center_vertical"
-						android:orientation="horizontal"
-						android:padding="@dimen/section_padding">
-						<com.google.android.material.textfield.TextInputLayout
-							android:id="@+id/textinputlayout4"
-							android:layout_width="0dp"
-							android:layout_height="wrap_content"
-							android:layout_weight="1"
-							style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense.DayNight">
-							<com.google.android.material.textfield.TextInputEditText
-								android:id="@+id/name"
-								android:layout_width="match_parent"
-								android:layout_height="wrap_content"
-								android:text="Wall:1"
-								android:textSize="12sp"
-								android:hint="@string/wall_name_hint"
-								android:imeOptions="actionNext"
-								android:textColor="?attr/colorOnSurface"
-								android:textColorHint="?attr/colorOutline"
-								android:textAppearance="@style/TextAppearance.Material3.BodyMedium" />
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:theme="@style/AppTheme.DayNight">
+	<androidx.core.widget.NestedScrollView android:id="@+id/scroll_view" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+		<LinearLayout android:id="@+id/main_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="@dimen/content_padding">
+			<com.google.android.material.card.MaterialCardView android:id="@+id/cardview7" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/card_spacing" style="@style/CardViewStyle.DayNight">
+				<LinearLayout android:id="@+id/linear25" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+					<LinearLayout android:id="@+id/header_section" android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:orientation="horizontal" android:padding="@dimen/section_padding">
+						<com.google.android.material.textfield.TextInputLayout android:id="@+id/textinputlayout4" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense.DayNight">
+							<com.google.android.material.textfield.TextInputEditText android:id="@+id/name" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Wall:1" android:textSize="12sp" android:hint="@string/wall_name_hint" android:imeOptions="actionNext" android:textColor="?attr/colorOnSurface" android:textColorHint="?attr/colorOutline" android:textAppearance="@style/TextAppearance.Material3.BodyMedium" />
 						</com.google.android.material.textfield.TextInputLayout>
-						<com.google.android.material.button.MaterialButton
-							android:id="@+id/helpButton"
-							android:layout_width="30dp"
-							android:layout_height="30dp"
-							android:textSize="12sp"
-							android:textColor="?attr/colorOnSurface"
-							style="@style/Widget.Material3.Button.IconButton.DayNight"
-							android:contentDescription="@string/help_icon"
-							app:icon="@drawable/icon_live_help_round"
-							app:iconTint="?attr/colorPrimary" />
-						<com.google.android.material.button.MaterialButton
-							android:id="@+id/expand_arrow"
-							android:layout_width="30dp"
-							android:layout_height="30dp"
-							android:textSize="12sp"
-							android:textColor="?attr/colorOnSurface"
-							style="@style/Widget.Material3.Button.IconButton.DayNight"
-							android:contentDescription="@string/expand_icon"
-							app:icon="@drawable/icon_arrow_drop_down_round"
-							app:iconTint="?attr/colorOnSurface" />
-						<com.google.android.material.button.MaterialButton
-							android:id="@+id/close"
-							android:layout_width="30dp"
-							android:layout_height="30dp"
-							android:textSize="12sp"
-							android:textColor="?attr/colorOnSurface"
-							style="@style/Widget.Material3.Button.IconButton.DayNight"
-							android:contentDescription="@string/close_icon"
-							app:icon="@drawable/icon_disabled_by_default_round"
-							app:iconTint="?attr/colorError" />
+						<com.google.android.material.button.MaterialButton android:id="@+id/helpButton" android:layout_width="30dp" android:layout_height="30dp" android:textSize="12sp" android:textColor="?attr/colorOnSurface" style="@style/Widget.Material3.Button.IconButton.DayNight" android:contentDescription="@string/help_icon" app:icon="@drawable/icon_live_help_round" app:iconTint="?attr/colorPrimary" />
+						<com.google.android.material.button.MaterialButton android:id="@+id/expand_arrow" android:layout_width="30dp" android:layout_height="30dp" android:textSize="12sp" android:textColor="?attr/colorOnSurface" style="@style/Widget.Material3.Button.IconButton.DayNight" android:contentDescription="@string/expand_icon" app:icon="@drawable/icon_arrow_drop_down_round" app:iconTint="?attr/colorOnSurface" />
+						<com.google.android.material.button.MaterialButton android:id="@+id/close" android:layout_width="30dp" android:layout_height="30dp" android:textSize="12sp" android:textColor="?attr/colorOnSurface" style="@style/Widget.Material3.Button.IconButton.DayNight" android:contentDescription="@string/close_icon" app:icon="@drawable/icon_disabled_by_default_round" app:iconTint="?attr/colorError" />
 					</LinearLayout>
-					<com.google.android.material.divider.MaterialDivider
-						android:id="@+id/material_divider26"
-						android:layout_width="match_parent"
-						android:layout_height="wrap_content"
-						style="@style/DividerStyle.DayNight" />
-					<LinearLayout
-						android:id="@+id/linear27"
-						android:layout_width="match_parent"
-						android:layout_height="wrap_content"
-						android:orientation="vertical"
-						android:padding="@dimen/section_padding">
-						<LinearLayout
-							android:id="@+id/linear718"
-							android:layout_width="match_parent"
-							android:layout_height="wrap_content"
-							android:orientation="horizontal"
-							android:layout_marginBottom="@dimen/input_margin">
-							<com.google.android.material.textfield.TextInputLayout
-								android:id="@+id/shape_layout"
-								android:layout_width="0dp"
-								android:layout_height="wrap_content"
-								android:layout_weight="1"
-								android:layout_marginEnd="@dimen/input_margin_half"
-								style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
-								app:helperTextEnabled="true"
-								app:helperText="@string/shape_helper">
-								<AutoCompleteTextView
-									android:id="@+id/shape_dropdown"
-									android:layout_width="match_parent"
-									android:layout_height="wrap_content"
-									android:padding="10dp"
-									android:textSize="12sp"
-									android:hint="@string/shape_hint"
-									android:textColor="?attr/colorOnSurface"
-									android:textColorHint="?attr/colorOutline"
-									android:inputType="none"
-									android:textAppearance="@style/TextAppearance.Material3.BodyMedium" />
+					<com.google.android.material.divider.MaterialDivider android:id="@+id/material_divider26" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/DividerStyle.DayNight" />
+					<LinearLayout android:id="@+id/linear27" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="@dimen/section_padding">
+						<LinearLayout android:id="@+id/linear718" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="@dimen/input_margin">
+							<com.google.android.material.textfield.TextInputLayout android:id="@+id/shape_layout" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginEnd="@dimen/input_margin_half" style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu" app:helperTextEnabled="true" app:helperText="@string/shape_helper">
+								<AutoCompleteTextView android:id="@+id/shape_dropdown" android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="10dp" android:textSize="12sp" android:hint="@string/shape_hint" android:textColor="?attr/colorOnSurface" android:textColorHint="?attr/colorOutline" android:inputType="none" android:textAppearance="@style/TextAppearance.Material3.BodyMedium" />
 							</com.google.android.material.textfield.TextInputLayout>
-							<com.google.android.material.textfield.TextInputLayout
-								android:id="@+id/type_layout"
-								android:layout_width="0dp"
-								android:layout_height="wrap_content"
-								android:layout_weight="1"
-								android:layout_marginStart="@dimen/input_margin_half"
-								style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
-								app:helperTextEnabled="true"
-								app:helperText="@string/type_helper">
-								<AutoCompleteTextView
-									android:id="@+id/type_dropdown"
-									android:layout_width="match_parent"
-									android:layout_height="wrap_content"
-									android:padding="10dp"
-									android:textSize="12sp"
-									android:hint="@string/type_hint"
-									android:textColor="?attr/colorOnSurface"
-									android:textColorHint="?attr/colorOutline"
-									android:inputType="none"
-									android:textAppearance="@style/TextAppearance.Material3.BodyMedium" />
+							<com.google.android.material.textfield.TextInputLayout android:id="@+id/type_layout" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="@dimen/input_margin_half" style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu" app:helperTextEnabled="true" app:helperText="@string/type_helper">
+								<AutoCompleteTextView android:id="@+id/type_dropdown" android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="10dp" android:textSize="12sp" android:hint="@string/type_hint" android:textColor="?attr/colorOnSurface" android:textColorHint="?attr/colorOutline" android:inputType="none" android:textAppearance="@style/TextAppearance.Material3.BodyMedium" />
 							</com.google.android.material.textfield.TextInputLayout>
 						</LinearLayout>
-						<com.google.android.material.textfield.TextInputLayout
-							android:id="@+id/textinputlayout_no"
-							android:layout_width="match_parent"
-							android:layout_height="wrap_content"
-							android:layout_marginBottom="@dimen/input_margin"
-							style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense.DayNight"
-							app:helperTextEnabled="true"
-							app:helperText="@string/repetitions_helper"
-							app:startIconDrawable="@drawable/icon_repeat"
-							app:startIconContentDescription="@string/repetitions_icon">
-							<com.google.android.material.textfield.TextInputEditText
-								android:id="@+id/no"
-								android:layout_width="match_parent"
-								android:layout_height="wrap_content"
-								android:textSize="12sp"
-								android:hint="@string/repetitions_hint"
-								android:inputType="numberDecimal"
-								android:imeOptions="actionNext"
-								android:textColor="?attr/colorOnSurface"
-								android:textColorHint="?attr/colorOutline"
-								android:textAppearance="@style/TextAppearance.Material3.BodyMedium" />
+						<com.google.android.material.textfield.TextInputLayout android:id="@+id/textinputlayout_no" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/input_margin" style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense.DayNight" app:helperTextEnabled="true" app:helperText="@string/repetitions_helper" app:startIconDrawable="@drawable/icon_repeat" app:startIconContentDescription="@string/repetitions_icon">
+							<com.google.android.material.textfield.TextInputEditText android:id="@+id/no" android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="12sp" android:hint="@string/repetitions_hint" android:inputType="numberDecimal" android:imeOptions="actionNext" android:textColor="?attr/colorOnSurface" android:textColorHint="?attr/colorOutline" android:textAppearance="@style/TextAppearance.Material3.BodyMedium" />
 						</com.google.android.material.textfield.TextInputLayout>
-						<com.google.android.material.textfield.TextInputLayout
-							android:id="@+id/textinputlayout_depth"
-							android:layout_width="match_parent"
-							android:layout_height="wrap_content"
-							android:layout_marginBottom="@dimen/input_margin"
-							style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense.DayNight"
-							app:helperTextEnabled="true"
-							app:helperText="@string/depth_helper"
-							app:suffixText="m"
-							app:startIconDrawable="@drawable/icon_depth"
-							app:startIconContentDescription="@string/depth_icon">
-							<com.google.android.material.textfield.TextInputEditText
-								android:id="@+id/depth"
-								android:layout_width="match_parent"
-								android:layout_height="wrap_content"
-								android:textSize="12sp"
-								android:hint="@string/Depth_hint"
-								android:inputType="numberDecimal"
-								android:imeOptions="actionNext"
-								android:textColor="?attr/colorOnSurface"
-								android:textColorHint="?attr/colorOutline"
-								android:textAppearance="@style/TextAppearance.Material3.BodyMedium" />
+						<com.google.android.material.textfield.TextInputLayout android:id="@+id/textinputlayout_depth" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/input_margin" style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense.DayNight" app:helperTextEnabled="true" app:helperText="@string/depth_helper" app:suffixText="m" app:startIconDrawable="@drawable/icon_depth" app:startIconContentDescription="@string/depth_icon">
+							<com.google.android.material.textfield.TextInputEditText android:id="@+id/depth" android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="12sp" android:hint="@string/Depth_hint" android:inputType="numberDecimal" android:imeOptions="actionNext" android:textColor="?attr/colorOnSurface" android:textColorHint="?attr/colorOutline" android:textAppearance="@style/TextAppearance.Material3.BodyMedium" />
 						</com.google.android.material.textfield.TextInputLayout>
-						<LinearLayout
-							android:id="@+id/linear28"
-							android:layout_width="match_parent"
-							android:layout_height="wrap_content"
-							android:orientation="horizontal"
-							android:layout_marginBottom="@dimen/input_margin">
-							<com.google.android.material.textfield.TextInputLayout
-								android:id="@+id/textinputlayout_length"
-								android:layout_width="0dp"
-								android:layout_height="wrap_content"
-								android:layout_weight="1"
-								android:layout_marginEnd="@dimen/input_margin_half"
-								style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense.DayNight"
-								app:helperTextEnabled="true"
-								app:helperText="@string/length_helper"
-								app:suffixText="m"
-								app:startIconDrawable="@drawable/icon_straighten"
-								app:startIconContentDescription="@string/length_icon">
-								<com.google.android.material.textfield.TextInputEditText
-									android:id="@+id/len"
-									android:layout_width="match_parent"
-									android:layout_height="wrap_content"
-									android:textSize="12sp"
-									android:hint="@string/length_hint"
-									android:inputType="numberDecimal"
-									android:imeOptions="actionNext"
-									android:textColor="?attr/colorOnSurface"
-									android:textColorHint="?attr/colorOutline"
-									android:textAppearance="@style/TextAppearance.Material3.BodyMedium" />
+						<LinearLayout android:id="@+id/linear28" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="@dimen/input_margin">
+							<com.google.android.material.textfield.TextInputLayout android:id="@+id/textinputlayout_length" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginEnd="@dimen/input_margin_half" style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense.DayNight" app:helperTextEnabled="true" app:helperText="@string/length_helper" app:suffixText="m" app:startIconDrawable="@drawable/icon_straighten" app:startIconContentDescription="@string/length_icon">
+								<com.google.android.material.textfield.TextInputEditText android:id="@+id/len" android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="12sp" android:hint="@string/length_hint" android:inputType="numberDecimal" android:imeOptions="actionNext" android:textColor="?attr/colorOnSurface" android:textColorHint="?attr/colorOutline" android:textAppearance="@style/TextAppearance.Material3.BodyMedium" />
 							</com.google.android.material.textfield.TextInputLayout>
-							<com.google.android.material.textfield.TextInputLayout
-								android:id="@+id/textinputlayout_width"
-								android:layout_width="0dp"
-								android:layout_height="wrap_content"
-								android:layout_weight="1"
-								android:layout_marginStart="@dimen/input_margin_half"
-								style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense.DayNight"
-								app:helperTextEnabled="true"
-								app:helperText="@string/width_helper"
-								app:suffixText="m"
-								app:startIconDrawable="@drawable/icon_width"
-								app:startIconContentDescription="@string/width_icon">
-								<com.google.android.material.textfield.TextInputEditText
-									android:id="@+id/wed"
-									android:layout_width="match_parent"
-									android:layout_height="wrap_content"
-									android:textSize="12sp"
-									android:hint="@string/width_hint"
-									android:inputType="numberDecimal"
-									android:imeOptions="actionNext"
-									android:textColor="?attr/colorOnSurface"
-									android:textColorHint="?attr/colorOutline"
-									android:textAppearance="@style/TextAppearance.Material3.BodyMedium" />
+							<com.google.android.material.textfield.TextInputLayout android:id="@+id/textinputlayout_width" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="@dimen/input_margin_half" style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense.DayNight" app:helperTextEnabled="true" app:helperText="@string/width_helper" app:suffixText="m" app:startIconDrawable="@drawable/icon_width" app:startIconContentDescription="@string/width_icon">
+								<com.google.android.material.textfield.TextInputEditText android:id="@+id/wed" android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="12sp" android:hint="@string/width_hint" android:inputType="numberDecimal" android:imeOptions="actionNext" android:textColor="?attr/colorOnSurface" android:textColorHint="?attr/colorOutline" android:textAppearance="@style/TextAppearance.Material3.BodyMedium" />
 							</com.google.android.material.textfield.TextInputLayout>
 						</LinearLayout>
-						<com.google.android.material.textfield.TextInputLayout
-							android:id="@+id/textinputlayout_radius"
-							android:layout_width="match_parent"
-							android:layout_height="wrap_content"
-							android:layout_marginBottom="@dimen/input_margin"
-							style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense.DayNight"
-							app:helperTextEnabled="true"
-							app:helperText="@string/radius_helper"
-							app:suffixText="m"
-							app:startIconDrawable="@drawable/icon_radius"
-							app:startIconContentDescription="@string/radius_icon">
-							<com.google.android.material.textfield.TextInputEditText
-								android:id="@+id/radius"
-								android:layout_width="match_parent"
-								android:layout_height="wrap_content"
-								android:textSize="12sp"
-								android:hint="@string/radius_hint"
-								android:inputType="numberDecimal"
-								android:imeOptions="actionNext"
-								android:textColor="?attr/colorOnSurface"
-								android:textColorHint="?attr/colorOutline"
-								android:textAppearance="@style/TextAppearance.Material3.BodyMedium" />
+						<com.google.android.material.textfield.TextInputLayout android:id="@+id/textinputlayout_radius" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/input_margin" style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense.DayNight" app:helperTextEnabled="true" app:helperText="@string/radius_helper" app:suffixText="m" app:startIconDrawable="@drawable/icon_radius" app:startIconContentDescription="@string/radius_icon">
+							<com.google.android.material.textfield.TextInputEditText android:id="@+id/radius" android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="12sp" android:hint="@string/radius_hint" android:inputType="numberDecimal" android:imeOptions="actionNext" android:textColor="?attr/colorOnSurface" android:textColorHint="?attr/colorOutline" android:textAppearance="@style/TextAppearance.Material3.BodyMedium" />
 						</com.google.android.material.textfield.TextInputLayout>
-						<com.google.android.material.textfield.TextInputLayout
-							android:id="@+id/textinputlayout_area"
-							android:layout_width="match_parent"
-							android:layout_height="wrap_content"
-							android:layout_marginBottom="@dimen/input_margin"
-							style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense.DayNight"
-							app:helperTextEnabled="true"
-							app:helperText="@string/area_helper"
-							app:suffixText="m²"
-							app:startIconDrawable="@drawable/icon_area"
-							app:startIconContentDescription="@string/area_icon">
-							<com.google.android.material.textfield.TextInputEditText
-								android:id="@+id/area"
-								android:layout_width="match_parent"
-								android:layout_height="wrap_content"
-								android:textSize="12sp"
-								android:hint="@string/area_hint"
-								android:inputType="numberDecimal"
-								android:imeOptions="actionDone"
-								android:textColor="?attr/colorOnSurface"
-								android:textColorHint="?attr/colorOutline"
-								android:textAppearance="@style/TextAppearance.Material3.BodyMedium" />
+						<com.google.android.material.textfield.TextInputLayout android:id="@+id/textinputlayout_area" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/input_margin" style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense.DayNight" app:helperTextEnabled="true" app:helperText="@string/area_helper" app:suffixText="m²" app:startIconDrawable="@drawable/icon_area" app:startIconContentDescription="@string/area_icon">
+							<com.google.android.material.textfield.TextInputEditText android:id="@+id/area" android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="12sp" android:hint="@string/area_hint" android:inputType="numberDecimal" android:imeOptions="actionDone" android:textColor="?attr/colorOnSurface" android:textColorHint="?attr/colorOutline" android:textAppearance="@style/TextAppearance.Material3.BodyMedium" />
 						</com.google.android.material.textfield.TextInputLayout>
-						<com.google.android.material.card.MaterialCardView
-							android:id="@+id/cardview8"
-							android:layout_width="match_parent"
-							android:layout_height="wrap_content"
-							android:layout_margin="10dp"
-							style="@style/CardViewStyle.DayNight"
-							app:cardCornerRadius="@dimen/card_corner_radius_small"
-							app:cardElevation="2dp">
-							<LinearLayout
-								android:id="@+id/linear29"
-								android:layout_width="match_parent"
-								android:layout_height="wrap_content"
-								android:orientation="vertical"
-								android:padding="@dimen/section_padding">
-								<TextView
-									android:id="@+id/textview7"
-									android:layout_width="match_parent"
-									android:layout_height="wrap_content"
-									android:text="@string/concrete_results_header"
-									android:textSize="12sp"
-									android:layout_marginBottom="@dimen/input_margin"
-									android:textColor="?attr/colorOnSurface"
-									style="@style/TextHeader.DayNight"
-									android:textAppearance="@style/TextAppearance.Material3.LabelLarge" />
-								<LinearLayout
-									android:id="@+id/linear30"
-									android:layout_width="match_parent"
-									android:layout_height="wrap_content"
-									android:orientation="horizontal"
-									android:layout_marginBottom="@dimen/input_margin">
-									<com.google.android.material.textfield.TextInputLayout
-										android:id="@+id/textinputlayout_volume"
-										android:layout_width="0dp"
-										android:layout_height="wrap_content"
-										android:layout_weight="1"
-										android:layout_marginEnd="@dimen/input_margin_half"
-										style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense.DayNight"
-										app:helperTextEnabled="true"
-										app:helperText="@string/volume_helper"
-										app:suffixText="m³">
-										<com.google.android.material.textfield.TextInputEditText
-											android:id="@+id/total_volume"
-											android:layout_width="match_parent"
-											android:layout_height="wrap_content"
-											android:textSize="12sp"
-											android:hint="@string/volume_hint"
-											android:enabled="false"
-											android:textColor="?attr/colorOnSurfaceVariant"
-											android:textColorHint="?attr/colorOutline"
-											android:textAppearance="@style/TextAppearance.Material3.BodyMedium" />
-									</com.google.android.material.textfield.TextInputLayout>
-									<com.google.android.material.textfield.TextInputLayout
-										android:id="@+id/textinputlayout_reinforcement"
-										android:layout_width="0dp"
-										android:layout_height="wrap_content"
-										android:layout_weight="1"
-										android:layout_marginStart="@dimen/input_margin_half"
-										style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense.DayNight"
-										app:helperTextEnabled="true"
-										app:helperText="@string/steel_helper"
-										app:suffixText="kg">
-										<com.google.android.material.textfield.TextInputEditText
-											android:id="@+id/reinforcement"
-											android:layout_width="match_parent"
-											android:layout_height="wrap_content"
-											android:textSize="12sp"
-											android:hint="@string/Steel_hint"
-											android:enabled="false"
-											android:textColor="?attr/colorOnSurfaceVariant"
-											android:textColorHint="?attr/colorOutline"
-											android:textAppearance="@style/TextAppearance.Material3.BodyMedium" />
-									</com.google.android.material.textfield.TextInputLayout>
-								</LinearLayout>
-								<com.google.android.material.textfield.TextInputLayout
-									android:id="@+id/textinputlayout_net_concrete"
-									android:layout_width="match_parent"
-									android:layout_height="wrap_content"
-									style="@style/Widget.Material3.TextInputLayout.FilledBox.Dense.DayNight"
-									app:helperTextEnabled="true"
-									app:helperText="@string/net_concrete_helper"
-									app:suffixText="m³">
-									<com.google.android.material.textfield.TextInputEditText
-										android:id="@+id/net_concrete_volume"
-										android:layout_width="match_parent"
-										android:layout_height="wrap_content"
-										android:textSize="12sp"
-										android:textStyle="bold"
-										android:hint="@string/net_concrete_hint"
-										android:enabled="false"
-										android:textColor="?attr/colorOnPrimaryContainer"
-										android:textColorHint="?attr/colorOutline"
-										android:textAppearance="@style/TextAppearance.Material3.BodyMedium" />
+						<LinearLayout android:id="@+id/cardview8" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp" android:orientation="vertical" android:padding="@dimen/section_padding">
+							<TextView android:id="@+id/textview7" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/concrete_results_header" android:textSize="12sp" android:layout_marginBottom="@dimen/input_margin" android:textColor="?attr/colorOnSurface" style="@style/TextHeader.DayNight" android:textAppearance="@style/TextAppearance.Material3.LabelLarge" />
+							<LinearLayout android:id="@+id/linear30" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="@dimen/input_margin">
+								<com.google.android.material.textfield.TextInputLayout android:id="@+id/textinputlayout_volume" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginEnd="@dimen/input_margin_half" style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense.DayNight" app:helperTextEnabled="true" app:helperText="@string/volume_helper" app:suffixText="m³">
+									<com.google.android.material.textfield.TextInputEditText android:id="@+id/total_volume" android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="12sp" android:hint="@string/volume_hint" android:enabled="false" android:textColor="?attr/colorOnSurfaceVariant" android:textColorHint="?attr/colorOutline" android:textAppearance="@style/TextAppearance.Material3.BodyMedium" />
+								</com.google.android.material.textfield.TextInputLayout>
+								<com.google.android.material.textfield.TextInputLayout android:id="@+id/textinputlayout_reinforcement" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="@dimen/input_margin_half" style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense.DayNight" app:helperTextEnabled="true" app:helperText="@string/steel_helper" app:suffixText="kg">
+									<com.google.android.material.textfield.TextInputEditText android:id="@+id/reinforcement" android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="12sp" android:hint="@string/Steel_hint" android:enabled="false" android:textColor="?attr/colorOnSurfaceVariant" android:textColorHint="?attr/colorOutline" android:textAppearance="@style/TextAppearance.Material3.BodyMedium" />
 								</com.google.android.material.textfield.TextInputLayout>
 							</LinearLayout>
-						</com.google.android.material.card.MaterialCardView>
+							<com.google.android.material.textfield.TextInputLayout android:id="@+id/textinputlayout_net_concrete" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Widget.Material3.TextInputLayout.FilledBox.Dense.DayNight" app:helperTextEnabled="true" app:helperText="@string/net_concrete_helper" app:suffixText="m³">
+								<com.google.android.material.textfield.TextInputEditText android:id="@+id/net_concrete_volume" android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="12sp" android:textStyle="bold" android:hint="@string/net_concrete_hint" android:enabled="false" android:textColor="?attr/colorOnPrimaryContainer" android:textColorHint="?attr/colorOutline" android:textAppearance="@style/TextAppearance.Material3.BodyMedium" />
+							</com.google.android.material.textfield.TextInputLayout>
+						</LinearLayout>
 					</LinearLayout>
-					<net.cachapa.expandablelayout.ExpandableLayout
-						android:id="@+id/expandableLayout"
-						android:layout_width="match_parent"
-						android:layout_height="wrap_content"
-						android:orientation="vertical"
-						app:el_expanded="false">
-						<LinearLayout
-							android:id="@+id/linear33"
-							android:layout_width="match_parent"
-							android:layout_height="match_parent"
-							android:padding="8dp"
-							android:orientation="vertical">
-							<TextView
-								android:id="@+id/textview8"
-								android:layout_width="match_parent"
-								android:layout_height="wrap_content"
-								android:layout_margin="5dp"
-								android:padding="8dp"
-								android:text="add reinforcement bars"
-								android:textSize="12sp"
-								android:background="?attr/colorSurfaceVariant"
-								android:textColor="?attr/colorOnSurface" />
-							<com.google.android.material.divider.MaterialDivider
-								android:id="@+id/linear34"
-								android:layout_width="match_parent"
-								android:layout_height="wrap_content"
-								style="@style/DividerStyle.DayNight" />
-							<LinearLayout
-								android:id="@+id/linear719"
-								android:layout_width="match_parent"
-								android:layout_height="wrap_content"
-								android:padding="8dp"
-								android:orientation="horizontal" />
-							<LinearLayout
-								android:id="@+id/mn_st_lyot"
-								android:layout_width="match_parent"
-								android:layout_height="match_parent"
-								android:padding="2dp"
-								android:orientation="vertical" />
+					<net.cachapa.expandablelayout.ExpandableLayout android:id="@+id/expandableLayout" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" app:el_expanded="false">
+						<LinearLayout android:id="@+id/linear33" android:layout_width="match_parent" android:layout_height="match_parent" android:padding="8dp" android:orientation="vertical">
+							<TextView android:id="@+id/textview8" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp" android:padding="8dp" android:text="add reinforcement bars" android:textSize="12sp" android:background="?attr/colorSurfaceVariant" android:textColor="?attr/colorOnSurface" />
+							<com.google.android.material.divider.MaterialDivider android:id="@+id/linear34" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/DividerStyle.DayNight" />
+							<LinearLayout android:id="@+id/linear719" android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="8dp" android:orientation="horizontal" />
+							<LinearLayout android:id="@+id/mn_st_lyot" android:layout_width="match_parent" android:layout_height="match_parent" android:padding="2dp" android:orientation="vertical" />
 						</LinearLayout>
 					</net.cachapa.expandablelayout.ExpandableLayout>
-					<com.google.android.material.button.MaterialButton
-						android:id="@+id/add_opening_button"
-						android:layout_width="wrap_content"
-						android:layout_height="wrap_content"
-						android:text="add reinforcement bars"
-						android:textSize="12sp"
-						android:layout_gravity="center_horizontal"
-						android:textColor="?attr/colorOnSurface"
-						style="@style/ButtonSecondary.DayNight"
-						app:icon="@drawable/icon_add_box_round" />
+					<com.google.android.material.button.MaterialButton android:id="@+id/add_opening_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="add reinforcement bars" android:textSize="12sp" android:layout_gravity="center_horizontal" android:textColor="?attr/colorOnSurface" style="@style/ButtonSecondary.DayNight" app:icon="@drawable/icon_add_box_round" />
 				</LinearLayout>
 			</com.google.android.material.card.MaterialCardView>
 		</LinearLayout>
-	</ScrollView>
+	</androidx.core.widget.NestedScrollView>
 </LinearLayout>
