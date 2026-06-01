@@ -1,195 +1,44 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="?android:attr/colorBackground"
-    android:layoutDirection="rtl">
-
-    <com.google.android.material.appbar.AppBarLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar"
-            style="@style/Toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize" />
-    </com.google.android.material.appbar.AppBarLayout>
-
-    <androidx.core.widget.NestedScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior"
-        android:padding="16dp">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <!-- Project Header Card -->
-            <com.google.android.material.card.MaterialCardView
-                style="@style/CardViewStyle_total"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="12dp">
-                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
-                    android:orientation="vertical" android:padding="16dp">
-
-                    <TextView
-                        android:id="@+id/tv_summary_project_name"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:textSize="18sp"
-                        android:textStyle="bold"
-                        android:textColor="?attr/colorPrimary"
-                        android:gravity="center"
-                        android:layout_marginBottom="12dp" />
-
-                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-                        <com.google.android.material.card.MaterialCardView
-                        	android:layout_width="0dp"
-                        	android:layout_height="wrap_content"
-                        	android:layout_weight="1"
-                        	android:layout_marginEnd="6dp"
-                        	app:cardBackgroundColor="?attr/colorPrimaryContainer"
-                        	app:cardElevation="2dp"
-                        	app:cardCornerRadius="8dp"
-                        	app:strokeWidth="0dp"
-                        	style="@style/Widget.Material3.CardView.Filled">
-                        	<LinearLayout
-                        		android:layout_width="match_parent"
-                        		android:layout_height="wrap_content"
-                        		android:orientation="vertical"
-                        		android:gravity="center"
-                        		android:padding="12dp"
-                        	>
-                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                                android:text="إجمالي التكلفة" android:textSize="11sp"
-                                android:textColor="?attr/colorOnPrimaryContainer" />
-                            <TextView
-                                android:id="@+id/tv_summary_total_cost"
-                                android:layout_width="wrap_content" android:layout_height="wrap_content"
-                                android:text="0.00  جنيه" android:textSize="15sp"
-                                android:textStyle="bold"
-                                android:textColor="?attr/colorOnPrimaryContainer" />
-                        	</LinearLayout>
-                        </com.google.android.material.card.MaterialCardView>
-
-                        <com.google.android.material.card.MaterialCardView
-                        	android:layout_width="0dp"
-                        	android:layout_height="wrap_content"
-                        	android:layout_weight="1"
-                        	android:layout_marginStart="6dp"
-                        	app:cardBackgroundColor="?attr/colorSecondaryContainer"
-                        	app:cardElevation="2dp"
-                        	app:cardCornerRadius="8dp"
-                        	app:strokeWidth="0dp"
-                        	style="@style/Widget.Material3.CardView.Filled">
-                        	<LinearLayout
-                        		android:layout_width="match_parent"
-                        		android:layout_height="wrap_content"
-                        		android:orientation="vertical"
-                        		android:gravity="center"
-                        		android:padding="12dp"
-                        	>
-                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                                android:text="عدد البنود" android:textSize="11sp"
-                                android:textColor="?attr/colorOnSecondaryContainer" />
-                            <TextView
-                                android:id="@+id/tv_summary_item_count"
-                                android:layout_width="wrap_content" android:layout_height="wrap_content"
-                                android:text="0 بند" android:textSize="15sp"
-                                android:textStyle="bold"
-                                android:textColor="?attr/colorOnSecondaryContainer" />
-                        	</LinearLayout>
-                        </com.google.android.material.card.MaterialCardView>
-                    </LinearLayout>
-                </LinearLayout>
-            </com.google.android.material.card.MaterialCardView>
-
-            <!-- Pie Chart Card -->
-            <com.google.android.material.card.MaterialCardView
-                style="@style/CardViewStyle"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="12dp">
-                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
-                    android:orientation="vertical" android:padding="12dp">
-                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                        android:text="توزيع التكاليف بالقطاع" android:textSize="14sp"
-                        android:textStyle="bold" android:textColor="?attr/colorPrimary"
-                        android:layout_marginBottom="8dp" />
-                    <com.github.mikephil.charting.charts.PieChart
-                        android:id="@+id/pie_chart"
-                        android:layout_width="match_parent"
-                        android:layout_height="220dp" />
-                </LinearLayout>
-            </com.google.android.material.card.MaterialCardView>
-
-            <!-- BOQ Items Table -->
-            <com.google.android.material.card.MaterialCardView
-                style="@style/CardViewStyle"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp">
-                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
-                    android:orientation="vertical" android:padding="12dp">
-
-                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                        android:text="تفاصيل بنود الحصر" android:textSize="14sp"
-                        android:textStyle="bold" android:textColor="?attr/colorPrimary"
-                        android:layout_marginBottom="8dp" />
-
-                    <!-- Table header -->
-                    <com.google.android.material.card.MaterialCardView
-                    	android:layout_width="match_parent"
-                    	android:layout_height="wrap_content"
-                    	app:cardBackgroundColor="?attr/colorPrimaryContainer"
-                    	app:cardElevation="2dp"
-                    	app:cardCornerRadius="8dp"
-                    	app:strokeWidth="0dp"
-                    	style="@style/Widget.Material3.CardView.Filled">
-                    	<LinearLayout
-                    		android:layout_width="match_parent"
-                    		android:layout_height="wrap_content"
-                    		android:orientation="horizontal"
-                    		android:padding="6dp"
-                    	>
-                        <TextView android:layout_width="30dp" android:layout_height="wrap_content"
-                            android:text="بند" android:textSize="10sp" android:textStyle="bold"
-                            android:textColor="?attr/colorOnPrimaryContainer"/>
-                        <TextView android:layout_width="0dp" android:layout_height="wrap_content"
-                            android:layout_weight="2" android:text="الوصف" android:textSize="10sp"
-                            android:textStyle="bold" android:textColor="?attr/colorOnPrimaryContainer"/>
-                        <TextView android:layout_width="32dp" android:layout_height="wrap_content"
-                            android:text="وحدة" android:textSize="10sp" android:textStyle="bold"
-                            android:textColor="?attr/colorOnPrimaryContainer" android:gravity="center"/>
-                        <TextView android:layout_width="55dp" android:layout_height="wrap_content"
-                            android:text="الكمية" android:textSize="10sp" android:textStyle="bold"
-                            android:textColor="?attr/colorOnPrimaryContainer" android:gravity="end"/>
-                        <TextView android:layout_width="55dp" android:layout_height="wrap_content"
-                            android:text="سعر الوحدة" android:textSize="10sp" android:textStyle="bold"
-                            android:textColor="?attr/colorOnPrimaryContainer" android:gravity="end"/>
-                        <TextView android:layout_width="60dp" android:layout_height="wrap_content"
-                            android:text="الإجمالي" android:textSize="10sp" android:textStyle="bold"
-                            android:textColor="?attr/colorOnPrimaryContainer" android:gravity="end"/>
-                    	</LinearLayout>
-                    </com.google.android.material.card.MaterialCardView>
-
-                    <androidx.recyclerview.widget.RecyclerView
-                        android:id="@+id/rv_boq_items"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:nestedScrollingEnabled="false" />
-
-                </LinearLayout>
-            </com.google.android.material.card.MaterialCardView>
-
-        </LinearLayout>
-    </androidx.core.widget.NestedScrollView>
-
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" android:background="?android:attr/colorBackground" android:layoutDirection="rtl">
+	<com.google.android.material.appbar.AppBarLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+		<androidx.appcompat.widget.Toolbar android:id="@+id/toolbar" style="@style/Toolbar" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" />
+	</com.google.android.material.appbar.AppBarLayout>
+	<androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" android:padding="16dp">
+		<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+			<com.google.android.material.card.MaterialCardView style="@style/CardViewStyle_total" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12dp">
+				<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp">
+					<TextView android:id="@+id/tv_summary_project_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="18sp" android:textStyle="bold" android:textColor="?attr/colorPrimary" android:gravity="center" android:layout_marginBottom="12dp" />
+					<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+						<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:background="?attr/colorPrimaryContainer" android:layout_weight="1" android:layout_marginEnd="6dp" android:orientation="vertical" android:gravity="center" android:padding="12dp">
+							<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="إجمالي التكلفة" android:textSize="11sp" android:textColor="?attr/colorOnPrimaryContainer" />
+							<TextView android:id="@+id/tv_summary_total_cost" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0.00  جنيه" android:textSize="15sp" android:textStyle="bold" android:textColor="?attr/colorOnPrimaryContainer" />
+						</LinearLayout>
+						<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:background="?attr/colorSecondaryContainer" android:layout_weight="1" android:layout_marginStart="6dp" android:orientation="vertical" android:gravity="center" android:padding="12dp">
+							<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="عدد البنود" android:textSize="11sp" android:textColor="?attr/colorOnSecondaryContainer" />
+							<TextView android:id="@+id/tv_summary_item_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0 بند" android:textSize="15sp" android:textStyle="bold" android:textColor="?attr/colorOnSecondaryContainer" />
+						</LinearLayout>
+					</LinearLayout>
+				</LinearLayout>
+			</com.google.android.material.card.MaterialCardView>
+			<com.google.android.material.card.MaterialCardView style="@style/CardViewStyle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12dp">
+				<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="12dp">
+					<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="توزيع التكاليف بالقطاع" android:textSize="14sp" android:textStyle="bold" android:textColor="?attr/colorPrimary" android:layout_marginBottom="8dp" />
+					<com.github.mikephil.charting.charts.PieChart android:id="@+id/pie_chart" android:layout_width="match_parent" android:layout_height="220dp" />
+				</LinearLayout>
+			</com.google.android.material.card.MaterialCardView>
+			<com.google.android.material.card.MaterialCardView style="@style/CardViewStyle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16dp">
+				<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="12dp">
+					<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="تفاصيل بنود الحصر" android:textSize="14sp" android:textStyle="bold" android:textColor="?attr/colorPrimary" android:layout_marginBottom="8dp" />
+					<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:background="?attr/colorPrimaryContainer" android:orientation="horizontal" android:padding="6dp">
+						<TextView android:layout_width="30dp" android:layout_height="wrap_content" android:text="بند" android:textSize="10sp" android:textStyle="bold" android:textColor="?attr/colorOnPrimaryContainer" />
+						<TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="2" android:text="الوصف" android:textSize="10sp" android:textStyle="bold" android:textColor="?attr/colorOnPrimaryContainer" />
+						<TextView android:layout_width="32dp" android:layout_height="wrap_content" android:text="وحدة" android:textSize="10sp" android:textStyle="bold" android:textColor="?attr/colorOnPrimaryContainer" android:gravity="center" />
+						<TextView android:layout_width="55dp" android:layout_height="wrap_content" android:text="الكمية" android:textSize="10sp" android:textStyle="bold" android:textColor="?attr/colorOnPrimaryContainer" android:gravity="end" />
+						<TextView android:layout_width="55dp" android:layout_height="wrap_content" android:text="سعر الوحدة" android:textSize="10sp" android:textStyle="bold" android:textColor="?attr/colorOnPrimaryContainer" android:gravity="end" />
+						<TextView android:layout_width="60dp" android:layout_height="wrap_content" android:text="الإجمالي" android:textSize="10sp" android:textStyle="bold" android:textColor="?attr/colorOnPrimaryContainer" android:gravity="end" />
+					</LinearLayout>
+					<androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_boq_items" android:layout_width="match_parent" android:layout_height="wrap_content" android:nestedScrollingEnabled="false" />
+				</LinearLayout>
+			</com.google.android.material.card.MaterialCardView>
+		</LinearLayout>
+	</androidx.core.widget.NestedScrollView>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

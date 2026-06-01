@@ -6,7 +6,7 @@
 	android:layout_height="match_parent"
 	android:orientation="vertical"
 	android:theme="@style/AppTheme.DayNight">
-	<androidx.core.widget.NestedScrollView
+	<ScrollView
 		android:id="@+id/scroll_view"
 		android:layout_width="match_parent"
 		android:layout_height="match_parent"
@@ -440,5 +440,5 @@
 				</LinearLayout>
 			</com.google.android.material.card.MaterialCardView>
 		</LinearLayout>
-	</androidx.core.widget.NestedScrollView>
+	</ScrollView>
 </LinearLayout>
