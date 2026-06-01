@@ -6,7 +6,7 @@
 	android:layout_height="match_parent"
 	android:orientation="vertical"
 	android:theme="@style/AppTheme.DayNight">
-	<ScrollView
+	<androidx.core.widget.NestedScrollView
 		android:id="@+id/vscroll1"
 		android:layout_width="match_parent"
 		android:layout_height="match_parent"
@@ -88,24 +88,34 @@
 					android:textSize="12sp"
 					android:textColor="?attr/colorOnSurface"
 					style="@style/TableHeaderStyle.DayNight" />
-				<EditText
-					android:id="@+id/unitPriceConcrete"
+				<com.google.android.material.textfield.TextInputLayout
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:textSize="12sp"
-					android:textColor="?attr/colorOnSurface"
-					android:hint="0.00"
-					android:textColorHint="?attr/colorOnSurfaceVariant"
-					style="@style/TableEditTextStyle.DayNight" />
-				<EditText
-					android:id="@+id/quantityConcrete"
+					style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense">
+					<com.google.android.material.textfield.TextInputEditText
+						android:id="@+id/unitPriceConcrete"
+						android:textSize="12sp"
+						android:textColor="?attr/colorOnSurface"
+						android:hint="0.00"
+						android:textColorHint="?attr/colorOnSurfaceVariant"
+						style="@style/TableEditTextStyle.DayNight"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content" />
+				</com.google.android.material.textfield.TextInputLayout>
+				<com.google.android.material.textfield.TextInputLayout
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:textSize="12sp"
-					android:textColor="?attr/colorOnSurface"
-					android:hint="0.00"
-					android:textColorHint="?attr/colorOnSurfaceVariant"
-					style="@style/TableEditTextStyle.DayNight" />
+					style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense">
+					<com.google.android.material.textfield.TextInputEditText
+						android:id="@+id/quantityConcrete"
+						android:textSize="12sp"
+						android:textColor="?attr/colorOnSurface"
+						android:hint="0.00"
+						android:textColorHint="?attr/colorOnSurfaceVariant"
+						style="@style/TableEditTextStyle.DayNight"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content" />
+				</com.google.android.material.textfield.TextInputLayout>
 				<TextView
 					android:id="@+id/totalPriceConcrete"
 					android:layout_width="wrap_content"
@@ -135,24 +145,34 @@
 					android:textSize="12sp"
 					android:textColor="?attr/colorOnSurface"
 					style="@style/TableHeaderStyle.DayNight" />
-				<EditText
-					android:id="@+id/unitPriceSteel"
+				<com.google.android.material.textfield.TextInputLayout
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:textSize="12sp"
-					android:textColor="?attr/colorOnSurface"
-					android:hint="0.00"
-					android:textColorHint="?attr/colorOnSurfaceVariant"
-					style="@style/TableEditTextStyle.DayNight" />
-				<EditText
-					android:id="@+id/quantitySteel"
+					style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense">
+					<com.google.android.material.textfield.TextInputEditText
+						android:id="@+id/unitPriceSteel"
+						android:textSize="12sp"
+						android:textColor="?attr/colorOnSurface"
+						android:hint="0.00"
+						android:textColorHint="?attr/colorOnSurfaceVariant"
+						style="@style/TableEditTextStyle.DayNight"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content" />
+				</com.google.android.material.textfield.TextInputLayout>
+				<com.google.android.material.textfield.TextInputLayout
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:textSize="12sp"
-					android:textColor="?attr/colorOnSurface"
-					android:hint="0.00"
-					android:textColorHint="?attr/colorOnSurfaceVariant"
-					style="@style/TableEditTextStyle.DayNight" />
+					style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense">
+					<com.google.android.material.textfield.TextInputEditText
+						android:id="@+id/quantitySteel"
+						android:textSize="12sp"
+						android:textColor="?attr/colorOnSurface"
+						android:hint="0.00"
+						android:textColorHint="?attr/colorOnSurfaceVariant"
+						style="@style/TableEditTextStyle.DayNight"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content" />
+				</com.google.android.material.textfield.TextInputLayout>
 				<TextView
 					android:id="@+id/totalPriceSteel"
 					android:layout_width="wrap_content"
@@ -182,24 +202,34 @@
 					android:textSize="12sp"
 					android:textColor="?attr/colorOnSurface"
 					style="@style/TableHeaderStyle.DayNight" />
-				<EditText
-					android:id="@+id/unitPriceBrickwork"
+				<com.google.android.material.textfield.TextInputLayout
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:textSize="12sp"
-					android:textColor="?attr/colorOnSurface"
-					android:hint="0.00"
-					android:textColorHint="?attr/colorOnSurfaceVariant"
-					style="@style/TableEditTextStyle.DayNight" />
-				<EditText
-					android:id="@+id/quantityBrickwork"
+					style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense">
+					<com.google.android.material.textfield.TextInputEditText
+						android:id="@+id/unitPriceBrickwork"
+						android:textSize="12sp"
+						android:textColor="?attr/colorOnSurface"
+						android:hint="0.00"
+						android:textColorHint="?attr/colorOnSurfaceVariant"
+						style="@style/TableEditTextStyle.DayNight"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content" />
+				</com.google.android.material.textfield.TextInputLayout>
+				<com.google.android.material.textfield.TextInputLayout
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:textSize="12sp"
-					android:textColor="?attr/colorOnSurface"
-					android:hint="0.00"
-					android:textColorHint="?attr/colorOnSurfaceVariant"
-					style="@style/TableEditTextStyle.DayNight" />
+					style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense">
+					<com.google.android.material.textfield.TextInputEditText
+						android:id="@+id/quantityBrickwork"
+						android:textSize="12sp"
+						android:textColor="?attr/colorOnSurface"
+						android:hint="0.00"
+						android:textColorHint="?attr/colorOnSurfaceVariant"
+						style="@style/TableEditTextStyle.DayNight"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content" />
+				</com.google.android.material.textfield.TextInputLayout>
 				<TextView
 					android:id="@+id/totalPriceBrickwork"
 					android:layout_width="wrap_content"
@@ -229,24 +259,34 @@
 					android:textSize="12sp"
 					android:textColor="?attr/colorOnSurface"
 					style="@style/TableHeaderStyle.DayNight" />
-				<EditText
-					android:id="@+id/unitPricePlaster"
+				<com.google.android.material.textfield.TextInputLayout
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:textSize="12sp"
-					android:textColor="?attr/colorOnSurface"
-					android:hint="0.00"
-					android:textColorHint="?attr/colorOnSurfaceVariant"
-					style="@style/TableEditTextStyle.DayNight" />
-				<EditText
-					android:id="@+id/quantityPlaster"
+					style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense">
+					<com.google.android.material.textfield.TextInputEditText
+						android:id="@+id/unitPricePlaster"
+						android:textSize="12sp"
+						android:textColor="?attr/colorOnSurface"
+						android:hint="0.00"
+						android:textColorHint="?attr/colorOnSurfaceVariant"
+						style="@style/TableEditTextStyle.DayNight"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content" />
+				</com.google.android.material.textfield.TextInputLayout>
+				<com.google.android.material.textfield.TextInputLayout
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:textSize="12sp"
-					android:textColor="?attr/colorOnSurface"
-					android:hint="0.00"
-					android:textColorHint="?attr/colorOnSurfaceVariant"
-					style="@style/TableEditTextStyle.DayNight" />
+					style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense">
+					<com.google.android.material.textfield.TextInputEditText
+						android:id="@+id/quantityPlaster"
+						android:textSize="12sp"
+						android:textColor="?attr/colorOnSurface"
+						android:hint="0.00"
+						android:textColorHint="?attr/colorOnSurfaceVariant"
+						style="@style/TableEditTextStyle.DayNight"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content" />
+				</com.google.android.material.textfield.TextInputLayout>
 				<TextView
 					android:id="@+id/totalPricePlaster"
 					android:layout_width="wrap_content"
@@ -276,24 +316,34 @@
 					android:textSize="12sp"
 					android:textColor="?attr/colorOnSurface"
 					style="@style/TableHeaderStyle.DayNight" />
-				<EditText
-					android:id="@+id/unitPricePainting"
+				<com.google.android.material.textfield.TextInputLayout
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:textSize="12sp"
-					android:textColor="?attr/colorOnSurface"
-					android:hint="0.00"
-					android:textColorHint="?attr/colorOnSurfaceVariant"
-					style="@style/TableEditTextStyle.DayNight" />
-				<EditText
-					android:id="@+id/quantityPainting"
+					style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense">
+					<com.google.android.material.textfield.TextInputEditText
+						android:id="@+id/unitPricePainting"
+						android:textSize="12sp"
+						android:textColor="?attr/colorOnSurface"
+						android:hint="0.00"
+						android:textColorHint="?attr/colorOnSurfaceVariant"
+						style="@style/TableEditTextStyle.DayNight"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content" />
+				</com.google.android.material.textfield.TextInputLayout>
+				<com.google.android.material.textfield.TextInputLayout
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:textSize="12sp"
-					android:textColor="?attr/colorOnSurface"
-					android:hint="0.00"
-					android:textColorHint="?attr/colorOnSurfaceVariant"
-					style="@style/TableEditTextStyle.DayNight" />
+					style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense">
+					<com.google.android.material.textfield.TextInputEditText
+						android:id="@+id/quantityPainting"
+						android:textSize="12sp"
+						android:textColor="?attr/colorOnSurface"
+						android:hint="0.00"
+						android:textColorHint="?attr/colorOnSurfaceVariant"
+						style="@style/TableEditTextStyle.DayNight"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content" />
+				</com.google.android.material.textfield.TextInputLayout>
 				<TextView
 					android:id="@+id/totalPricePainting"
 					android:layout_width="wrap_content"
@@ -323,24 +373,34 @@
 					android:textSize="12sp"
 					android:textColor="?attr/colorOnSurface"
 					style="@style/TableHeaderStyle.DayNight" />
-				<EditText
-					android:id="@+id/unitPriceFlooring"
+				<com.google.android.material.textfield.TextInputLayout
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:textSize="12sp"
-					android:textColor="?attr/colorOnSurface"
-					android:hint="0.00"
-					android:textColorHint="?attr/colorOnSurfaceVariant"
-					style="@style/TableEditTextStyle.DayNight" />
-				<EditText
-					android:id="@+id/quantityFlooring"
+					style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense">
+					<com.google.android.material.textfield.TextInputEditText
+						android:id="@+id/unitPriceFlooring"
+						android:textSize="12sp"
+						android:textColor="?attr/colorOnSurface"
+						android:hint="0.00"
+						android:textColorHint="?attr/colorOnSurfaceVariant"
+						style="@style/TableEditTextStyle.DayNight"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content" />
+				</com.google.android.material.textfield.TextInputLayout>
+				<com.google.android.material.textfield.TextInputLayout
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:textSize="12sp"
-					android:textColor="?attr/colorOnSurface"
-					android:hint="0.00"
-					android:textColorHint="?attr/colorOnSurfaceVariant"
-					style="@style/TableEditTextStyle.DayNight" />
+					style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense">
+					<com.google.android.material.textfield.TextInputEditText
+						android:id="@+id/quantityFlooring"
+						android:textSize="12sp"
+						android:textColor="?attr/colorOnSurface"
+						android:hint="0.00"
+						android:textColorHint="?attr/colorOnSurfaceVariant"
+						style="@style/TableEditTextStyle.DayNight"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content" />
+				</com.google.android.material.textfield.TextInputLayout>
 				<TextView
 					android:id="@+id/totalPriceFlooring"
 					android:layout_width="wrap_content"
@@ -370,24 +430,34 @@
 					android:textSize="12sp"
 					android:textColor="?attr/colorOnSurface"
 					style="@style/TableHeaderStyle.DayNight" />
-				<EditText
-					android:id="@+id/unitPriceRoofing"
+				<com.google.android.material.textfield.TextInputLayout
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:textSize="12sp"
-					android:textColor="?attr/colorOnSurface"
-					android:hint="0.00"
-					android:textColorHint="?attr/colorOnSurfaceVariant"
-					style="@style/TableEditTextStyle.DayNight" />
-				<EditText
-					android:id="@+id/quantityRoofing"
+					style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense">
+					<com.google.android.material.textfield.TextInputEditText
+						android:id="@+id/unitPriceRoofing"
+						android:textSize="12sp"
+						android:textColor="?attr/colorOnSurface"
+						android:hint="0.00"
+						android:textColorHint="?attr/colorOnSurfaceVariant"
+						style="@style/TableEditTextStyle.DayNight"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content" />
+				</com.google.android.material.textfield.TextInputLayout>
+				<com.google.android.material.textfield.TextInputLayout
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:textSize="12sp"
-					android:textColor="?attr/colorOnSurface"
-					android:hint="0.00"
-					android:textColorHint="?attr/colorOnSurfaceVariant"
-					style="@style/TableEditTextStyle.DayNight" />
+					style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense">
+					<com.google.android.material.textfield.TextInputEditText
+						android:id="@+id/quantityRoofing"
+						android:textSize="12sp"
+						android:textColor="?attr/colorOnSurface"
+						android:hint="0.00"
+						android:textColorHint="?attr/colorOnSurfaceVariant"
+						style="@style/TableEditTextStyle.DayNight"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content" />
+				</com.google.android.material.textfield.TextInputLayout>
 				<TextView
 					android:id="@+id/totalPriceRoofing"
 					android:layout_width="wrap_content"
@@ -417,24 +487,34 @@
 					android:textSize="12sp"
 					android:textColor="?attr/colorOnSurface"
 					style="@style/TableHeaderStyle.DayNight" />
-				<EditText
-					android:id="@+id/unitPriceDoors"
+				<com.google.android.material.textfield.TextInputLayout
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:textSize="12sp"
-					android:textColor="?attr/colorOnSurface"
-					android:hint="0.00"
-					android:textColorHint="?attr/colorOnSurfaceVariant"
-					style="@style/TableEditTextStyle.DayNight" />
-				<EditText
-					android:id="@+id/quantityDoors"
+					style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense">
+					<com.google.android.material.textfield.TextInputEditText
+						android:id="@+id/unitPriceDoors"
+						android:textSize="12sp"
+						android:textColor="?attr/colorOnSurface"
+						android:hint="0.00"
+						android:textColorHint="?attr/colorOnSurfaceVariant"
+						style="@style/TableEditTextStyle.DayNight"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content" />
+				</com.google.android.material.textfield.TextInputLayout>
+				<com.google.android.material.textfield.TextInputLayout
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:textSize="12sp"
-					android:textColor="?attr/colorOnSurface"
-					android:hint="0.00"
-					android:textColorHint="?attr/colorOnSurfaceVariant"
-					style="@style/TableEditTextStyle.DayNight" />
+					style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense">
+					<com.google.android.material.textfield.TextInputEditText
+						android:id="@+id/quantityDoors"
+						android:textSize="12sp"
+						android:textColor="?attr/colorOnSurface"
+						android:hint="0.00"
+						android:textColorHint="?attr/colorOnSurfaceVariant"
+						style="@style/TableEditTextStyle.DayNight"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content" />
+				</com.google.android.material.textfield.TextInputLayout>
 				<TextView
 					android:id="@+id/totalPriceDoors"
 					android:layout_width="wrap_content"
@@ -464,24 +544,34 @@
 					android:textSize="12sp"
 					android:textColor="?attr/colorOnSurface"
 					style="@style/TableHeaderStyle.DayNight" />
-				<EditText
-					android:id="@+id/unitPriceWindows"
+				<com.google.android.material.textfield.TextInputLayout
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:textSize="12sp"
-					android:textColor="?attr/colorOnSurface"
-					android:hint="0.00"
-					android:textColorHint="?attr/colorOnSurfaceVariant"
-					style="@style/TableEditTextStyle.DayNight" />
-				<EditText
-					android:id="@+id/quantityWindows"
+					style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense">
+					<com.google.android.material.textfield.TextInputEditText
+						android:id="@+id/unitPriceWindows"
+						android:textSize="12sp"
+						android:textColor="?attr/colorOnSurface"
+						android:hint="0.00"
+						android:textColorHint="?attr/colorOnSurfaceVariant"
+						style="@style/TableEditTextStyle.DayNight"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content" />
+				</com.google.android.material.textfield.TextInputLayout>
+				<com.google.android.material.textfield.TextInputLayout
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:textSize="12sp"
-					android:textColor="?attr/colorOnSurface"
-					android:hint="0.00"
-					android:textColorHint="?attr/colorOnSurfaceVariant"
-					style="@style/TableEditTextStyle.DayNight" />
+					style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense">
+					<com.google.android.material.textfield.TextInputEditText
+						android:id="@+id/quantityWindows"
+						android:textSize="12sp"
+						android:textColor="?attr/colorOnSurface"
+						android:hint="0.00"
+						android:textColorHint="?attr/colorOnSurfaceVariant"
+						style="@style/TableEditTextStyle.DayNight"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content" />
+				</com.google.android.material.textfield.TextInputLayout>
 				<TextView
 					android:id="@+id/totalPriceWindows"
 					android:layout_width="wrap_content"
@@ -511,24 +601,34 @@
 					android:textSize="12sp"
 					android:textColor="?attr/colorOnSurface"
 					style="@style/TableHeaderStyle.DayNight" />
-				<EditText
-					android:id="@+id/unitPriceCeiling"
+				<com.google.android.material.textfield.TextInputLayout
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:textSize="12sp"
-					android:textColor="?attr/colorOnSurface"
-					android:hint="0.00"
-					android:textColorHint="?attr/colorOnSurfaceVariant"
-					style="@style/TableEditTextStyle.DayNight" />
-				<EditText
-					android:id="@+id/quantityCeiling"
+					style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense">
+					<com.google.android.material.textfield.TextInputEditText
+						android:id="@+id/unitPriceCeiling"
+						android:textSize="12sp"
+						android:textColor="?attr/colorOnSurface"
+						android:hint="0.00"
+						android:textColorHint="?attr/colorOnSurfaceVariant"
+						style="@style/TableEditTextStyle.DayNight"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content" />
+				</com.google.android.material.textfield.TextInputLayout>
+				<com.google.android.material.textfield.TextInputLayout
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:textSize="12sp"
-					android:textColor="?attr/colorOnSurface"
-					android:hint="0.00"
-					android:textColorHint="?attr/colorOnSurfaceVariant"
-					style="@style/TableEditTextStyle.DayNight" />
+					style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense">
+					<com.google.android.material.textfield.TextInputEditText
+						android:id="@+id/quantityCeiling"
+						android:textSize="12sp"
+						android:textColor="?attr/colorOnSurface"
+						android:hint="0.00"
+						android:textColorHint="?attr/colorOnSurfaceVariant"
+						style="@style/TableEditTextStyle.DayNight"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content" />
+				</com.google.android.material.textfield.TextInputLayout>
 				<TextView
 					android:id="@+id/totalPriceCeiling"
 					android:layout_width="wrap_content"
@@ -558,24 +658,34 @@
 					android:textSize="12sp"
 					android:textColor="?attr/colorOnSurface"
 					style="@style/TableHeaderStyle.DayNight" />
-				<EditText
-					android:id="@+id/unitPriceElectricWork"
+				<com.google.android.material.textfield.TextInputLayout
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:textSize="12sp"
-					android:textColor="?attr/colorOnSurface"
-					android:hint="0.00"
-					android:textColorHint="?attr/colorOnSurfaceVariant"
-					style="@style/TableEditTextStyle.DayNight" />
-				<EditText
-					android:id="@+id/quantityElectricWork"
+					style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense">
+					<com.google.android.material.textfield.TextInputEditText
+						android:id="@+id/unitPriceElectricWork"
+						android:textSize="12sp"
+						android:textColor="?attr/colorOnSurface"
+						android:hint="0.00"
+						android:textColorHint="?attr/colorOnSurfaceVariant"
+						style="@style/TableEditTextStyle.DayNight"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content" />
+				</com.google.android.material.textfield.TextInputLayout>
+				<com.google.android.material.textfield.TextInputLayout
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:textSize="12sp"
-					android:textColor="?attr/colorOnSurface"
-					android:hint="0.00"
-					android:textColorHint="?attr/colorOnSurfaceVariant"
-					style="@style/TableEditTextStyle.DayNight" />
+					style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense">
+					<com.google.android.material.textfield.TextInputEditText
+						android:id="@+id/quantityElectricWork"
+						android:textSize="12sp"
+						android:textColor="?attr/colorOnSurface"
+						android:hint="0.00"
+						android:textColorHint="?attr/colorOnSurfaceVariant"
+						style="@style/TableEditTextStyle.DayNight"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content" />
+				</com.google.android.material.textfield.TextInputLayout>
 				<TextView
 					android:id="@+id/totalPriceElectricWork"
 					android:layout_width="wrap_content"
@@ -605,24 +715,34 @@
 					android:textSize="12sp"
 					android:textColor="?attr/colorOnSurface"
 					style="@style/TableHeaderStyle.DayNight" />
-				<EditText
-					android:id="@+id/unitPricePlumbingWork"
+				<com.google.android.material.textfield.TextInputLayout
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:textSize="12sp"
-					android:textColor="?attr/colorOnSurface"
-					android:hint="0.00"
-					android:textColorHint="?attr/colorOnSurfaceVariant"
-					style="@style/TableEditTextStyle.DayNight" />
-				<EditText
-					android:id="@+id/quantityPlumbingWork"
+					style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense">
+					<com.google.android.material.textfield.TextInputEditText
+						android:id="@+id/unitPricePlumbingWork"
+						android:textSize="12sp"
+						android:textColor="?attr/colorOnSurface"
+						android:hint="0.00"
+						android:textColorHint="?attr/colorOnSurfaceVariant"
+						style="@style/TableEditTextStyle.DayNight"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content" />
+				</com.google.android.material.textfield.TextInputLayout>
+				<com.google.android.material.textfield.TextInputLayout
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:textSize="12sp"
-					android:textColor="?attr/colorOnSurface"
-					android:hint="0.00"
-					android:textColorHint="?attr/colorOnSurfaceVariant"
-					style="@style/TableEditTextStyle.DayNight" />
+					style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense">
+					<com.google.android.material.textfield.TextInputEditText
+						android:id="@+id/quantityPlumbingWork"
+						android:textSize="12sp"
+						android:textColor="?attr/colorOnSurface"
+						android:hint="0.00"
+						android:textColorHint="?attr/colorOnSurfaceVariant"
+						style="@style/TableEditTextStyle.DayNight"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content" />
+				</com.google.android.material.textfield.TextInputLayout>
 				<TextView
 					android:id="@+id/totalPricePlumbingWork"
 					android:layout_width="wrap_content"
@@ -652,24 +772,34 @@
 					android:textSize="12sp"
 					android:textColor="?attr/colorOnSurface"
 					style="@style/TableHeaderStyle.DayNight" />
-				<EditText
-					android:id="@+id/unitPriceTiles"
+				<com.google.android.material.textfield.TextInputLayout
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:textSize="12sp"
-					android:textColor="?attr/colorOnSurface"
-					android:hint="0.00"
-					android:textColorHint="?attr/colorOnSurfaceVariant"
-					style="@style/TableEditTextStyle.DayNight" />
-				<EditText
-					android:id="@+id/quantityTiles"
+					style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense">
+					<com.google.android.material.textfield.TextInputEditText
+						android:id="@+id/unitPriceTiles"
+						android:textSize="12sp"
+						android:textColor="?attr/colorOnSurface"
+						android:hint="0.00"
+						android:textColorHint="?attr/colorOnSurfaceVariant"
+						style="@style/TableEditTextStyle.DayNight"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content" />
+				</com.google.android.material.textfield.TextInputLayout>
+				<com.google.android.material.textfield.TextInputLayout
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:textSize="12sp"
-					android:textColor="?attr/colorOnSurface"
-					android:hint="0.00"
-					android:textColorHint="?attr/colorOnSurfaceVariant"
-					style="@style/TableEditTextStyle.DayNight" />
+					style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense">
+					<com.google.android.material.textfield.TextInputEditText
+						android:id="@+id/quantityTiles"
+						android:textSize="12sp"
+						android:textColor="?attr/colorOnSurface"
+						android:hint="0.00"
+						android:textColorHint="?attr/colorOnSurfaceVariant"
+						style="@style/TableEditTextStyle.DayNight"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content" />
+				</com.google.android.material.textfield.TextInputLayout>
 				<TextView
 					android:id="@+id/totalPriceTiles"
 					android:layout_width="wrap_content"
@@ -699,24 +829,34 @@
 					android:textSize="12sp"
 					android:textColor="?attr/colorOnSurface"
 					style="@style/TableHeaderStyle.DayNight" />
-				<EditText
-					android:id="@+id/unitPriceGlasswork"
+				<com.google.android.material.textfield.TextInputLayout
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:textSize="12sp"
-					android:textColor="?attr/colorOnSurface"
-					android:hint="0.00"
-					android:textColorHint="?attr/colorOnSurfaceVariant"
-					style="@style/TableEditTextStyle.DayNight" />
-				<EditText
-					android:id="@+id/quantityGlasswork"
+					style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense">
+					<com.google.android.material.textfield.TextInputEditText
+						android:id="@+id/unitPriceGlasswork"
+						android:textSize="12sp"
+						android:textColor="?attr/colorOnSurface"
+						android:hint="0.00"
+						android:textColorHint="?attr/colorOnSurfaceVariant"
+						style="@style/TableEditTextStyle.DayNight"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content" />
+				</com.google.android.material.textfield.TextInputLayout>
+				<com.google.android.material.textfield.TextInputLayout
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:textSize="12sp"
-					android:textColor="?attr/colorOnSurface"
-					android:hint="0.00"
-					android:textColorHint="?attr/colorOnSurfaceVariant"
-					style="@style/TableEditTextStyle.DayNight" />
+					style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense">
+					<com.google.android.material.textfield.TextInputEditText
+						android:id="@+id/quantityGlasswork"
+						android:textSize="12sp"
+						android:textColor="?attr/colorOnSurface"
+						android:hint="0.00"
+						android:textColorHint="?attr/colorOnSurfaceVariant"
+						style="@style/TableEditTextStyle.DayNight"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content" />
+				</com.google.android.material.textfield.TextInputLayout>
 				<TextView
 					android:id="@+id/totalPriceGlasswork"
 					android:layout_width="wrap_content"
@@ -746,24 +886,34 @@
 					android:textSize="12sp"
 					android:textColor="?attr/colorOnSurface"
 					style="@style/TableHeaderStyle.DayNight" />
-				<EditText
-					android:id="@+id/unitPriceWoodwork"
+				<com.google.android.material.textfield.TextInputLayout
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:textSize="12sp"
-					android:textColor="?attr/colorOnSurface"
-					android:hint="0.00"
-					android:textColorHint="?attr/colorOnSurfaceVariant"
-					style="@style/TableEditTextStyle.DayNight" />
-				<EditText
-					android:id="@+id/quantityWoodwork"
+					style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense">
+					<com.google.android.material.textfield.TextInputEditText
+						android:id="@+id/unitPriceWoodwork"
+						android:textSize="12sp"
+						android:textColor="?attr/colorOnSurface"
+						android:hint="0.00"
+						android:textColorHint="?attr/colorOnSurfaceVariant"
+						style="@style/TableEditTextStyle.DayNight"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content" />
+				</com.google.android.material.textfield.TextInputLayout>
+				<com.google.android.material.textfield.TextInputLayout
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:textSize="12sp"
-					android:textColor="?attr/colorOnSurface"
-					android:hint="0.00"
-					android:textColorHint="?attr/colorOnSurfaceVariant"
-					style="@style/TableEditTextStyle.DayNight" />
+					style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense">
+					<com.google.android.material.textfield.TextInputEditText
+						android:id="@+id/quantityWoodwork"
+						android:textSize="12sp"
+						android:textColor="?attr/colorOnSurface"
+						android:hint="0.00"
+						android:textColorHint="?attr/colorOnSurfaceVariant"
+						style="@style/TableEditTextStyle.DayNight"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content" />
+				</com.google.android.material.textfield.TextInputLayout>
 				<TextView
 					android:id="@+id/totalPriceWoodwork"
 					android:layout_width="wrap_content"
@@ -793,24 +943,34 @@
 					android:textSize="12sp"
 					android:textColor="?attr/colorOnSurface"
 					style="@style/TableHeaderStyle.DayNight" />
-				<EditText
-					android:id="@+id/unitPriceWaterproofing"
+				<com.google.android.material.textfield.TextInputLayout
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:textSize="12sp"
-					android:textColor="?attr/colorOnSurface"
-					android:hint="0.00"
-					android:textColorHint="?attr/colorOnSurfaceVariant"
-					style="@style/TableEditTextStyle.DayNight" />
-				<EditText
-					android:id="@+id/quantityWaterproofing"
+					style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense">
+					<com.google.android.material.textfield.TextInputEditText
+						android:id="@+id/unitPriceWaterproofing"
+						android:textSize="12sp"
+						android:textColor="?attr/colorOnSurface"
+						android:hint="0.00"
+						android:textColorHint="?attr/colorOnSurfaceVariant"
+						style="@style/TableEditTextStyle.DayNight"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content" />
+				</com.google.android.material.textfield.TextInputLayout>
+				<com.google.android.material.textfield.TextInputLayout
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:textSize="12sp"
-					android:textColor="?attr/colorOnSurface"
-					android:hint="0.00"
-					android:textColorHint="?attr/colorOnSurfaceVariant"
-					style="@style/TableEditTextStyle.DayNight" />
+					style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense">
+					<com.google.android.material.textfield.TextInputEditText
+						android:id="@+id/quantityWaterproofing"
+						android:textSize="12sp"
+						android:textColor="?attr/colorOnSurface"
+						android:hint="0.00"
+						android:textColorHint="?attr/colorOnSurfaceVariant"
+						style="@style/TableEditTextStyle.DayNight"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content" />
+				</com.google.android.material.textfield.TextInputLayout>
 				<TextView
 					android:id="@+id/totalPriceWaterproofing"
 					android:layout_width="wrap_content"
@@ -840,24 +1000,34 @@
 					android:textSize="12sp"
 					android:textColor="?attr/colorOnSurface"
 					style="@style/TableHeaderStyle.DayNight" />
-				<EditText
-					android:id="@+id/unitPriceLandscaping"
+				<com.google.android.material.textfield.TextInputLayout
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:textSize="12sp"
-					android:textColor="?attr/colorOnSurface"
-					android:hint="0.00"
-					android:textColorHint="?attr/colorOnSurfaceVariant"
-					style="@style/TableEditTextStyle.DayNight" />
-				<EditText
-					android:id="@+id/quantityLandscaping"
+					style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense">
+					<com.google.android.material.textfield.TextInputEditText
+						android:id="@+id/unitPriceLandscaping"
+						android:textSize="12sp"
+						android:textColor="?attr/colorOnSurface"
+						android:hint="0.00"
+						android:textColorHint="?attr/colorOnSurfaceVariant"
+						style="@style/TableEditTextStyle.DayNight"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content" />
+				</com.google.android.material.textfield.TextInputLayout>
+				<com.google.android.material.textfield.TextInputLayout
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:textSize="12sp"
-					android:textColor="?attr/colorOnSurface"
-					android:hint="0.00"
-					android:textColorHint="?attr/colorOnSurfaceVariant"
-					style="@style/TableEditTextStyle.DayNight" />
+					style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense">
+					<com.google.android.material.textfield.TextInputEditText
+						android:id="@+id/quantityLandscaping"
+						android:textSize="12sp"
+						android:textColor="?attr/colorOnSurface"
+						android:hint="0.00"
+						android:textColorHint="?attr/colorOnSurfaceVariant"
+						style="@style/TableEditTextStyle.DayNight"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content" />
+				</com.google.android.material.textfield.TextInputLayout>
 				<TextView
 					android:id="@+id/totalPriceLandscaping"
 					android:layout_width="wrap_content"
@@ -896,5 +1066,5 @@
 					android:textColor="?attr/colorOnPrimary" />
 			</TableRow>
 		</TableLayout>
-	</ScrollView>
+	</androidx.core.widget.NestedScrollView>
 </LinearLayout>

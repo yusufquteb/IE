@@ -20,7 +20,7 @@
 		android:layout_height="match_parent"
 		android:orientation="vertical"
 		app:layout_behavior="@string/appbar_scrolling_view_behavior">
-<ScrollView
+<androidx.core.widget.NestedScrollView
 			android:id="@+id/vscroll1"
 			android:layout_width="match_parent"
 			android:layout_height="match_parent"
@@ -132,17 +132,20 @@
 						android:padding="8dp"
 						android:gravity="right|center_vertical"
 						android:orientation="horizontal">
-						<EditText
-							android:id="@+id/edittext129"
+						<com.google.android.material.textfield.TextInputLayout
 							android:layout_width="40dp"
 							android:layout_height="30dp"
-							android:padding="8dp"
-							android:background="?attr/colorPrimaryContainer"
-							android:textSize="12sp"
-							android:textColor="?attr/colorOnSurface"
-							android:textColorHint="?attr/colorOnSurfaceVariant"
-							android:inputType="numberDecimal"
-							android:enabled="false" />
+							style="@style/Widget.Material3.TextInputLayout.FilledBox.Dense">
+							<com.google.android.material.textfield.TextInputEditText
+								android:id="@+id/edittext129"
+								android:textSize="12sp"
+								android:textColor="?attr/colorOnSurface"
+								android:textColorHint="?attr/colorOnSurfaceVariant"
+								android:inputType="numberDecimal"
+								android:enabled="false"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content" />
+						</com.google.android.material.textfield.TextInputLayout>
 						<TextView
 							android:id="@+id/textview579"
 							android:layout_width="match_parent"
@@ -160,20 +163,22 @@
 						android:padding="8dp"
 						android:gravity="right|center_vertical"
 						android:orientation="horizontal">
-						<EditText
-							android:id="@+id/edittext125"
+						<com.google.android.material.textfield.TextInputLayout
 							android:layout_width="40dp"
 							android:layout_height="30dp"
-							android:padding="8dp"
-							android:background="?attr/colorSecondaryContainer"
-							android:gravity="center_horizontal|center_vertical"
-							android:textSize="12sp"
-							android:textStyle="bold"
-							android:textColor="?attr/colorOnSurface"
-							android:hint="##"
-							android:textColorHint="?attr/colorOnSurfaceVariant"
-							android:inputType="numberDecimal"
-							android:enabled="false" />
+							style="@style/Widget.Material3.TextInputLayout.FilledBox.Dense">
+							<com.google.android.material.textfield.TextInputEditText
+								android:id="@+id/edittext125"
+								android:textSize="12sp"
+								android:textStyle="bold"
+								android:textColor="?attr/colorOnSurface"
+								android:hint="##"
+								android:textColorHint="?attr/colorOnSurfaceVariant"
+								android:inputType="numberDecimal"
+								android:enabled="false"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content" />
+						</com.google.android.material.textfield.TextInputLayout>
 						<TextView
 							android:id="@+id/textview580"
 							android:layout_width="match_parent"
@@ -276,7 +281,7 @@
 						android:layout_weight="1" />
 				</LinearLayout>
 			</LinearLayout>
-		</ScrollView>
+		</androidx.core.widget.NestedScrollView>
 	</LinearLayout>
 	<com.google.android.material.floatingactionbutton.FloatingActionButton
 		android:id="@+id/_fab"

@@ -15,35 +15,53 @@
 		android:textSize="14sp"
 		android:textStyle="bold"
 		android:textColor="?attr/colorPrimary" />
-	<ScrollView
+	<androidx.core.widget.NestedScrollView
 			android:paddingBottom="88dp"
 			android:clipToPadding="false"
 		android:id="@+id/vscroll1"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
 		android:paddingTop="8dp">
-		<LinearLayout
+		<com.google.android.material.card.MaterialCardView
 			android:id="@+id/linear2"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:padding="8dp"
-			android:gravity="center_horizontal|top"
-			android:orientation="vertical"
 			android:layout_gravity="center_horizontal|top"
-			android:background="?attr/colorSecondaryContainer">
+			app:cardBackgroundColor="?attr/colorSecondaryContainer"
+			app:cardElevation="2dp"
+			app:cardCornerRadius="8dp"
+			app:strokeWidth="0dp"
+			style="@style/Widget.Material3.CardView.Filled">
 			<LinearLayout
-				android:id="@+id/linear713"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
 				android:padding="8dp"
-				android:gravity="right|center_vertical"
-				android:orientation="horizontal"
-				android:background="?attr/colorSurfaceVariant">
+				android:gravity="center_horizontal|top"
+				android:orientation="vertical"
+			>
+			<com.google.android.material.card.MaterialCardView
+				android:id="@+id/linear713"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				app:cardBackgroundColor="?attr/colorSurfaceVariant"
+				app:cardElevation="2dp"
+				app:cardCornerRadius="8dp"
+				app:strokeWidth="0dp"
+				style="@style/Widget.Material3.CardView.Filled">
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:gravity="right|center_vertical"
+					android:orientation="horizontal"
+				>
 				<ImageView
 					android:id="@+id/d_close_wall"
 					android:layout_width="30dp"
 					android:layout_height="30dp"
 					android:src="@drawable/clos1"
+android:background="?attr/selectableItemBackgroundBorderless"
+android:padding="4dp"
 					android:scaleType="fitCenter"
 					android:layout_gravity="left|center_vertical" />
 				<LinearLayout
@@ -53,21 +71,30 @@
 					android:padding="8dp"
 					android:orientation="horizontal"
 					android:layout_weight="1" />
-			</LinearLayout>
+				</LinearLayout>
+			</com.google.android.material.card.MaterialCardView>
 			<HorizontalScrollView
 				android:id="@+id/hscroll60"
 				android:layout_width="match_parent"
 				android:layout_height="7dp"
 				android:padding="8dp" />
-			<LinearLayout
+			<com.google.android.material.card.MaterialCardView
 				android:id="@+id/linear389"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:background="?attr/colorTertiaryContainer"
-				android:gravity="right|center_vertical"
-				android:orientation="horizontal"
-				android:layout_gravity="right">
+				android:layout_gravity="right"
+				app:cardBackgroundColor="?attr/colorTertiaryContainer"
+				app:cardElevation="2dp"
+				app:cardCornerRadius="8dp"
+				app:strokeWidth="0dp"
+				style="@style/Widget.Material3.CardView.Filled">
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:gravity="right|center_vertical"
+					android:orientation="horizontal"
+				>
 				<TextView
 					android:id="@+id/textview18"
 					android:layout_width="wrap_content"
@@ -78,19 +105,21 @@
 					android:textSize="14sp"
 					android:textStyle="bold"
 					android:textColor="?attr/colorOnSurface" />
-				<EditText
-					android:id="@+id/d_edittext7"
+				<com.google.android.material.textfield.TextInputLayout
 					android:layout_width="40dp"
 					android:layout_height="wrap_content"
-					android:padding="2dp"
-					android:background="@android:color/transparent"
-					android:gravity="center_horizontal|center_vertical"
-					android:text="1"
-					android:textSize="14sp"
-					android:textStyle="bold"
-					android:textColor="?attr/colorOnSurface"
-					android:textColorHint="?attr/colorOnSurfaceVariant"
-					android:enabled="false" />
+					style="@style/Widget.Material3.TextInputLayout.FilledBox.Dense">
+					<com.google.android.material.textfield.TextInputEditText
+						android:id="@+id/d_edittext7"
+						android:text="1"
+						android:textSize="14sp"
+						android:textStyle="bold"
+						android:textColor="?attr/colorOnSurface"
+						android:textColorHint="?attr/colorOnSurfaceVariant"
+						android:enabled="false"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content" />
+				</com.google.android.material.textfield.TextInputLayout>
 				<TextView
 					android:id="@+id/d_textview2"
 					android:layout_width="wrap_content"
@@ -109,19 +138,21 @@
 					android:textSize="14sp"
 					android:textStyle="bold"
 					android:textColor="?attr/colorOnSurface" />
-				<EditText
-					android:id="@+id/d_edittext6"
+				<com.google.android.material.textfield.TextInputLayout
 					android:layout_width="40dp"
 					android:layout_height="wrap_content"
-					android:padding="2dp"
-					android:background="?attr/colorSecondaryContainer"
-					android:gravity="center_horizontal|center_vertical"
-					android:text=" 1"
-					android:textSize="14sp"
-					android:textStyle="bold"
-					android:textColor="?attr/colorOnSurface"
-					android:textColorHint="?attr/colorOnSurfaceVariant"
-					android:inputType="numberSigned" />
+					style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense">
+					<com.google.android.material.textfield.TextInputEditText
+						android:id="@+id/d_edittext6"
+						android:text=" 1"
+						android:textSize="14sp"
+						android:textStyle="bold"
+						android:textColor="?attr/colorOnSurface"
+						android:textColorHint="?attr/colorOnSurfaceVariant"
+						android:inputType="numberSigned"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content" />
+				</com.google.android.material.textfield.TextInputLayout>
 				<TextView
 					android:id="@+id/d_textview1"
 					android:layout_width="wrap_content"
@@ -133,20 +164,29 @@
 					android:textStyle="bold"
 					android:textColor="?attr/colorOnSurface"
 					android:layout_gravity="right|center_vertical" />
-			</LinearLayout>
-			<ScrollView
+				</LinearLayout>
+			</com.google.android.material.card.MaterialCardView>
+			<androidx.core.widget.NestedScrollView
 				android:id="@+id/vscroll2"
 				android:layout_width="match_parent"
 				android:layout_height="7dp"
 				android:padding="8dp" />
-			<LinearLayout
+			<com.google.android.material.card.MaterialCardView
 				android:id="@+id/linear56"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:gravity="center_horizontal|center_vertical"
-				android:orientation="horizontal"
-				android:background="?attr/colorTertiaryContainer">
+				app:cardBackgroundColor="?attr/colorTertiaryContainer"
+				app:cardElevation="2dp"
+				app:cardCornerRadius="8dp"
+				app:strokeWidth="0dp"
+				style="@style/Widget.Material3.CardView.Filled">
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:gravity="center_horizontal|center_vertical"
+					android:orientation="horizontal"
+				>
 				<TextView
 					android:id="@+id/textview446"
 					android:layout_width="wrap_content"
@@ -156,18 +196,20 @@
 					android:textSize="12sp"
 					android:textStyle="bold"
 					android:textColor="?attr/colorOnSurface" />
-				<EditText
-					android:id="@+id/d_edittext1"
+				<com.google.android.material.textfield.TextInputLayout
 					android:layout_width="80dp"
 					android:layout_height="wrap_content"
-					android:padding="8dp"
-					android:background="?attr/colorPrimaryContainer"
-					android:gravity="center_horizontal|center_vertical"
-					android:textSize="12sp"
-					android:textStyle="bold"
-					android:textColor="?attr/colorOnSurface"
-					android:textColorHint="?attr/colorOnSurfaceVariant"
-					android:inputType="numberDecimal" />
+					style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense">
+					<com.google.android.material.textfield.TextInputEditText
+						android:id="@+id/d_edittext1"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="?attr/colorOnSurface"
+						android:textColorHint="?attr/colorOnSurfaceVariant"
+						android:inputType="numberDecimal"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content" />
+				</com.google.android.material.textfield.TextInputLayout>
 				<TextView
 					android:id="@+id/textview81"
 					android:layout_width="50dp"
@@ -188,21 +230,30 @@
 					android:textSize="12sp"
 					android:textStyle="bold"
 					android:textColor="?attr/colorOnSurface" />
-			</LinearLayout>
+				</LinearLayout>
+			</com.google.android.material.card.MaterialCardView>
 			<HorizontalScrollView
 				android:id="@+id/hscroll33"
 				android:layout_width="match_parent"
 				android:layout_height="7dp"
 				android:padding="8dp"
 				android:layout_gravity="center_horizontal|center_vertical" />
-			<LinearLayout
+			<com.google.android.material.card.MaterialCardView
 				android:id="@+id/linear162"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:gravity="center_horizontal|center_vertical"
-				android:orientation="horizontal"
-				android:background="?attr/colorTertiaryContainer">
+				app:cardBackgroundColor="?attr/colorTertiaryContainer"
+				app:cardElevation="2dp"
+				app:cardCornerRadius="8dp"
+				app:strokeWidth="0dp"
+				style="@style/Widget.Material3.CardView.Filled">
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:gravity="center_horizontal|center_vertical"
+					android:orientation="horizontal"
+				>
 				<TextView
 					android:id="@+id/textview448"
 					android:layout_width="wrap_content"
@@ -212,18 +263,20 @@
 					android:textSize="12sp"
 					android:textStyle="bold"
 					android:textColor="?attr/colorOnSurface" />
-				<EditText
-					android:id="@+id/d_edittext2"
+				<com.google.android.material.textfield.TextInputLayout
 					android:layout_width="80dp"
 					android:layout_height="wrap_content"
-					android:padding="8dp"
-					android:background="?attr/colorPrimaryContainer"
-					android:gravity="center_horizontal|center_vertical"
-					android:textSize="12sp"
-					android:textStyle="bold"
-					android:textColor="?attr/colorOnSurface"
-					android:textColorHint="?attr/colorOnSurfaceVariant"
-					android:inputType="numberDecimal" />
+					style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense">
+					<com.google.android.material.textfield.TextInputEditText
+						android:id="@+id/d_edittext2"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="?attr/colorOnSurface"
+						android:textColorHint="?attr/colorOnSurfaceVariant"
+						android:inputType="numberDecimal"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content" />
+				</com.google.android.material.textfield.TextInputLayout>
 				<TextView
 					android:id="@+id/textview422"
 					android:layout_width="wrap_content"
@@ -244,7 +297,8 @@
 					android:textSize="12sp"
 					android:textStyle="bold"
 					android:textColor="?attr/colorOnSurface" />
-			</LinearLayout>
+				</LinearLayout>
+			</com.google.android.material.card.MaterialCardView>
 			<LinearLayout
 				android:id="@+id/d_linear33"
 				android:layout_width="match_parent"
@@ -260,14 +314,22 @@
 					android:gravity="center_horizontal|center_vertical"
 					android:orientation="horizontal"
 					android:layout_gravity="center_horizontal">
-					<LinearLayout
+					<com.google.android.material.card.MaterialCardView
 						android:id="@+id/linear35"
 						android:layout_width="wrap_content"
 						android:layout_height="wrap_content"
-						android:padding="8dp"
-						android:gravity="center_horizontal|center_vertical"
-						android:orientation="vertical"
-						android:background="?attr/colorTertiaryContainer">
+						app:cardBackgroundColor="?attr/colorTertiaryContainer"
+						app:cardElevation="2dp"
+						app:cardCornerRadius="8dp"
+						app:strokeWidth="0dp"
+						style="@style/Widget.Material3.CardView.Filled">
+						<LinearLayout
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:orientation="vertical"
+						>
 						<TextView
 							android:id="@+id/textview35"
 							android:layout_width="wrap_content"
@@ -295,20 +357,23 @@
 								android:textSize="12sp"
 								android:textStyle="bold"
 								android:textColor="?attr/colorOnSurface" />
-							<EditText
-								android:id="@+id/d_edittext35"
+							<com.google.android.material.textfield.TextInputLayout
 								android:layout_width="80dp"
 								android:layout_height="wrap_content"
-								android:padding="8dp"
-								android:background="?attr/colorPrimaryContainer"
-								android:gravity="center_horizontal|center_vertical"
-								android:textSize="12sp"
-								android:textStyle="bold"
-								android:textColor="?attr/colorOnSurface"
-								android:textColorHint="?attr/colorOnSurfaceVariant"
-								android:inputType="numberDecimal" />
+								style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense">
+								<com.google.android.material.textfield.TextInputEditText
+									android:id="@+id/d_edittext35"
+									android:textSize="12sp"
+									android:textStyle="bold"
+									android:textColor="?attr/colorOnSurface"
+									android:textColorHint="?attr/colorOnSurfaceVariant"
+									android:inputType="numberDecimal"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content" />
+							</com.google.android.material.textfield.TextInputLayout>
 						</LinearLayout>
-					</LinearLayout>
+						</LinearLayout>
+					</com.google.android.material.card.MaterialCardView>
 					<TextView
 						android:id="@+id/textview33"
 						android:layout_width="wrap_content"
@@ -318,14 +383,22 @@
 						android:textSize="12sp"
 						android:textStyle="bold"
 						android:textColor="?attr/colorOnSurface" />
-					<LinearLayout
+					<com.google.android.material.card.MaterialCardView
 						android:id="@+id/linear36"
 						android:layout_width="wrap_content"
 						android:layout_height="wrap_content"
-						android:padding="8dp"
-						android:gravity="center_horizontal|center_vertical"
-						android:orientation="vertical"
-						android:background="?attr/colorTertiaryContainer">
+						app:cardBackgroundColor="?attr/colorTertiaryContainer"
+						app:cardElevation="2dp"
+						app:cardCornerRadius="8dp"
+						app:strokeWidth="0dp"
+						style="@style/Widget.Material3.CardView.Filled">
+						<LinearLayout
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:orientation="vertical"
+						>
 						<TextView
 							android:id="@+id/textview36"
 							android:layout_width="wrap_content"
@@ -352,34 +425,45 @@
 								android:textSize="12sp"
 								android:textStyle="bold"
 								android:textColor="?attr/colorOnSurface" />
-							<EditText
-								android:id="@+id/d_edittext36"
+							<com.google.android.material.textfield.TextInputLayout
 								android:layout_width="80dp"
 								android:layout_height="wrap_content"
-								android:padding="8dp"
-								android:background="?attr/colorPrimaryContainer"
-								android:gravity="center_horizontal|center_vertical"
-								android:textSize="12sp"
-								android:textStyle="bold"
-								android:textColor="?attr/colorOnSurface"
-								android:textColorHint="?attr/colorOnSurfaceVariant"
-								android:inputType="numberDecimal" />
+								style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense">
+								<com.google.android.material.textfield.TextInputEditText
+									android:id="@+id/d_edittext36"
+									android:textSize="12sp"
+									android:textStyle="bold"
+									android:textColor="?attr/colorOnSurface"
+									android:textColorHint="?attr/colorOnSurfaceVariant"
+									android:inputType="numberDecimal"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content" />
+							</com.google.android.material.textfield.TextInputLayout>
 						</LinearLayout>
-					</LinearLayout>
+						</LinearLayout>
+					</com.google.android.material.card.MaterialCardView>
 				</LinearLayout>
 				<HorizontalScrollView
 					android:id="@+id/hscroll82"
 					android:layout_width="match_parent"
 					android:layout_height="7dp"
 					android:padding="8dp" />
-				<LinearLayout
+				<com.google.android.material.card.MaterialCardView
 					android:id="@+id/linear32"
 					android:layout_width="match_parent"
 					android:layout_height="wrap_content"
-					android:padding="8dp"
-					android:gravity="center_horizontal|center_vertical"
-					android:orientation="horizontal"
-					android:background="?attr/colorTertiaryContainer">
+					app:cardBackgroundColor="?attr/colorTertiaryContainer"
+					app:cardElevation="2dp"
+					app:cardCornerRadius="8dp"
+					app:strokeWidth="0dp"
+					style="@style/Widget.Material3.CardView.Filled">
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:gravity="center_horizontal|center_vertical"
+						android:orientation="horizontal"
+					>
 					<TextView
 						android:id="@+id/textview38"
 						android:layout_width="wrap_content"
@@ -389,20 +473,22 @@
 						android:textSize="12sp"
 						android:textStyle="bold"
 						android:textColor="?attr/colorOnSurface" />
-					<EditText
-						android:id="@+id/d_edittext32"
+					<com.google.android.material.textfield.TextInputLayout
 						android:layout_width="80dp"
 						android:layout_height="wrap_content"
-						android:padding="8dp"
-						android:background="?attr/colorSurfaceVariant"
-						android:gravity="center_horizontal|center_vertical"
-						android:text="00.00"
-						android:textSize="12sp"
-						android:textStyle="bold"
-						android:textColor="?attr/colorOnSurface"
-						android:textColorHint="?attr/colorOnSurfaceVariant"
-						android:inputType="numberDecimal"
-						android:enabled="false" />
+						style="@style/Widget.Material3.TextInputLayout.FilledBox.Dense">
+						<com.google.android.material.textfield.TextInputEditText
+							android:id="@+id/d_edittext32"
+							android:text="00.00"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="?attr/colorOnSurface"
+							android:textColorHint="?attr/colorOnSurfaceVariant"
+							android:inputType="numberDecimal"
+							android:enabled="false"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content" />
+					</com.google.android.material.textfield.TextInputLayout>
 					<TextView
 						android:id="@+id/textview2054"
 						android:layout_width="wrap_content"
@@ -423,7 +509,8 @@
 						android:textSize="12sp"
 						android:textStyle="bold"
 						android:textColor="?attr/colorOnSurface" />
-				</LinearLayout>
+					</LinearLayout>
+				</com.google.android.material.card.MaterialCardView>
 			</LinearLayout>
 			<HorizontalScrollView
 				android:id="@+id/hscroll35"
@@ -431,14 +518,22 @@
 				android:layout_height="7dp"
 				android:padding="8dp"
 				android:layout_gravity="center_horizontal|center_vertical" />
-			<LinearLayout
+			<com.google.android.material.card.MaterialCardView
 				android:id="@+id/d_linear161"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:gravity="center_horizontal|center_vertical"
-				android:orientation="horizontal"
-				android:background="?attr/colorTertiaryContainer">
+				app:cardBackgroundColor="?attr/colorTertiaryContainer"
+				app:cardElevation="2dp"
+				app:cardCornerRadius="8dp"
+				app:strokeWidth="0dp"
+				style="@style/Widget.Material3.CardView.Filled">
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:gravity="center_horizontal|center_vertical"
+					android:orientation="horizontal"
+				>
 				<TextView
 					android:id="@+id/textview447"
 					android:layout_width="wrap_content"
@@ -448,19 +543,21 @@
 					android:textSize="12sp"
 					android:textStyle="bold"
 					android:textColor="?attr/colorOnSurface" />
-				<EditText
-					android:id="@+id/d_edittext22"
+				<com.google.android.material.textfield.TextInputLayout
 					android:layout_width="75dp"
 					android:layout_height="35dp"
-					android:padding="8dp"
-					android:background="?attr/colorSecondaryContainer"
-					android:gravity="center_horizontal|center_vertical"
-					android:textSize="12sp"
-					android:textStyle="bold"
-					android:textColor="?attr/colorOnSurface"
-					android:hint="0.12"
-					android:textColorHint="?attr/colorOnSurfaceVariant"
-					android:inputType="numberDecimal" />
+					style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense">
+					<com.google.android.material.textfield.TextInputEditText
+						android:id="@+id/d_edittext22"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="?attr/colorOnSurface"
+						android:hint="0.12"
+						android:textColorHint="?attr/colorOnSurfaceVariant"
+						android:inputType="numberDecimal"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content" />
+				</com.google.android.material.textfield.TextInputLayout>
 				<TextView
 					android:id="@+id/textview421"
 					android:layout_width="wrap_content"
@@ -481,7 +578,8 @@
 					android:textSize="12sp"
 					android:textStyle="bold"
 					android:textColor="?attr/colorOnSurface" />
-			</LinearLayout>
+				</LinearLayout>
+			</com.google.android.material.card.MaterialCardView>
 			<TextView
 				android:id="@+id/d_textview14"
 				android:layout_width="match_parent"
@@ -492,14 +590,22 @@
 				android:textSize="12sp"
 				android:textStyle="bold"
 				android:textColor="?attr/colorOnSurface" />
-			<LinearLayout
+			<com.google.android.material.card.MaterialCardView
 				android:id="@+id/linear164"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:gravity="center_horizontal|center_vertical"
-				android:orientation="horizontal"
-				android:background="?attr/colorTertiaryContainer">
+				app:cardBackgroundColor="?attr/colorTertiaryContainer"
+				app:cardElevation="2dp"
+				app:cardCornerRadius="8dp"
+				app:strokeWidth="0dp"
+				style="@style/Widget.Material3.CardView.Filled">
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:gravity="center_horizontal|center_vertical"
+					android:orientation="horizontal"
+				>
 				<TextView
 					android:id="@+id/textview1424"
 					android:layout_width="wrap_content"
@@ -510,19 +616,21 @@
 					android:textSize="12sp"
 					android:textStyle="bold"
 					android:textColor="?attr/colorOnSurface" />
-				<EditText
-					android:id="@+id/d_edittext3"
+				<com.google.android.material.textfield.TextInputLayout
 					android:layout_width="80dp"
 					android:layout_height="wrap_content"
-					android:padding="8dp"
-					android:background="?attr/colorSecondaryContainer"
-					android:gravity="center_horizontal|center_vertical"
-					android:textSize="12sp"
-					android:textStyle="bold"
-					android:textColor="?attr/colorOnSurface"
-					android:hint="1"
-					android:textColorHint="?attr/colorOnSurfaceVariant"
-					android:inputType="numberSigned" />
+					style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense">
+					<com.google.android.material.textfield.TextInputEditText
+						android:id="@+id/d_edittext3"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="?attr/colorOnSurface"
+						android:hint="1"
+						android:textColorHint="?attr/colorOnSurfaceVariant"
+						android:inputType="numberSigned"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content" />
+				</com.google.android.material.textfield.TextInputLayout>
 				<TextView
 					android:id="@+id/textview426"
 					android:layout_width="wrap_content"
@@ -543,7 +651,8 @@
 					android:textSize="12sp"
 					android:textStyle="bold"
 					android:textColor="?attr/colorOnSurface" />
-			</LinearLayout>
+				</LinearLayout>
+			</com.google.android.material.card.MaterialCardView>
 			<HorizontalScrollView
 				android:id="@+id/hscroll37"
 				android:layout_width="match_parent"
@@ -557,18 +666,21 @@
 				android:padding="8dp"
 				android:gravity="center_horizontal|center_vertical"
 				android:orientation="horizontal">
-				<EditText
-					android:id="@+id/d_edittext444"
+				<com.google.android.material.textfield.TextInputLayout
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:padding="8dp"
-					android:background="?attr/colorTertiaryContainer"
-					android:text="00.00"
-					android:textSize="12sp"
-					android:textColor="?attr/colorOnSurface"
-					android:textColorHint="?attr/colorOnSurfaceVariant"
-					android:inputType="numberDecimal"
-					android:enabled="false" />
+					style="@style/Widget.Material3.TextInputLayout.FilledBox.Dense">
+					<com.google.android.material.textfield.TextInputEditText
+						android:id="@+id/d_edittext444"
+						android:text="00.00"
+						android:textSize="12sp"
+						android:textColor="?attr/colorOnSurface"
+						android:textColorHint="?attr/colorOnSurfaceVariant"
+						android:inputType="numberDecimal"
+						android:enabled="false"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content" />
+				</com.google.android.material.textfield.TextInputLayout>
 				<com.google.android.material.button.MaterialButton
 				style="@style/Widget.Material3.Button"
 					android:id="@+id/d_button1"
@@ -632,14 +744,22 @@
 				android:textSize="12sp"
 				android:textStyle="bold"
 				android:textColor="?attr/colorPrimary" />
-			<LinearLayout
+			<com.google.android.material.card.MaterialCardView
 				android:id="@+id/linear188"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:gravity="center_horizontal|center_vertical"
-				android:orientation="horizontal"
-				android:background="?attr/colorTertiaryContainer">
+				app:cardBackgroundColor="?attr/colorTertiaryContainer"
+				app:cardElevation="2dp"
+				app:cardCornerRadius="8dp"
+				app:strokeWidth="0dp"
+				style="@style/Widget.Material3.CardView.Filled">
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:gravity="center_horizontal|center_vertical"
+					android:orientation="horizontal"
+				>
 				<TextView
 					android:id="@+id/d_textview510"
 					android:layout_width="wrap_content"
@@ -649,19 +769,21 @@
 					android:textSize="12sp"
 					android:textStyle="bold"
 					android:textColor="?attr/colorOnSurface" />
-				<EditText
-					android:id="@+id/d_edittext4"
+				<com.google.android.material.textfield.TextInputLayout
 					android:layout_width="80dp"
 					android:layout_height="wrap_content"
-					android:padding="8dp"
-					android:background="?attr/colorSurfaceVariant"
-					android:gravity="center_horizontal|center_vertical"
-					android:text="00.00"
-					android:textSize="12sp"
-					android:textStyle="bold"
-					android:textColor="?attr/colorOnSurface"
-					android:textColorHint="?attr/colorOnSurfaceVariant"
-					android:inputType="numberDecimal" />
+					style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense">
+					<com.google.android.material.textfield.TextInputEditText
+						android:id="@+id/d_edittext4"
+						android:text="00.00"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="?attr/colorOnSurface"
+						android:textColorHint="?attr/colorOnSurfaceVariant"
+						android:inputType="numberDecimal"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content" />
+				</com.google.android.material.textfield.TextInputLayout>
 				<TextView
 					android:id="@+id/textview508"
 					android:layout_width="wrap_content"
@@ -682,20 +804,29 @@
 					android:textSize="12sp"
 					android:textStyle="bold"
 					android:textColor="?attr/colorOnSurface" />
-			</LinearLayout>
+				</LinearLayout>
+			</com.google.android.material.card.MaterialCardView>
 			<HorizontalScrollView
 				android:id="@+id/hscroll57"
 				android:layout_width="match_parent"
 				android:layout_height="7dp"
 				android:padding="8dp" />
-			<LinearLayout
+			<com.google.android.material.card.MaterialCardView
 				android:id="@+id/linear13"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:gravity="center_horizontal|center_vertical"
-				android:orientation="horizontal"
-				android:background="?attr/colorTertiaryContainer">
+				app:cardBackgroundColor="?attr/colorTertiaryContainer"
+				app:cardElevation="2dp"
+				app:cardCornerRadius="8dp"
+				app:strokeWidth="0dp"
+				style="@style/Widget.Material3.CardView.Filled">
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:gravity="center_horizontal|center_vertical"
+					android:orientation="horizontal"
+				>
 				<TextView
 					android:id="@+id/d_textview511"
 					android:layout_width="wrap_content"
@@ -705,20 +836,22 @@
 					android:textSize="12sp"
 					android:textStyle="bold"
 					android:textColor="?attr/colorOnSurface" />
-				<EditText
-					android:id="@+id/d_edittext5"
+				<com.google.android.material.textfield.TextInputLayout
 					android:layout_width="80dp"
 					android:layout_height="wrap_content"
-					android:padding="8dp"
-					android:background="?attr/colorTertiary"
-					android:gravity="center_horizontal|center_vertical"
-					android:text="00.00"
-					android:textSize="12sp"
-					android:textStyle="bold"
-					android:textColor="?attr/colorOnSurface"
-					android:textColorHint="?attr/colorOnSurfaceVariant"
-					android:inputType="numberDecimal"
-					android:enabled="false" />
+					style="@style/Widget.Material3.TextInputLayout.FilledBox.Dense">
+					<com.google.android.material.textfield.TextInputEditText
+						android:id="@+id/d_edittext5"
+						android:text="00.00"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="?attr/colorOnSurface"
+						android:textColorHint="?attr/colorOnSurfaceVariant"
+						android:inputType="numberDecimal"
+						android:enabled="false"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content" />
+				</com.google.android.material.textfield.TextInputLayout>
 				<TextView
 					android:id="@+id/textview13"
 					android:layout_width="wrap_content"
@@ -739,7 +872,8 @@
 					android:textSize="12sp"
 					android:textStyle="bold"
 					android:textColor="?attr/colorOnSurface" />
-			</LinearLayout>
+				</LinearLayout>
+			</com.google.android.material.card.MaterialCardView>
 			<HorizontalScrollView
 				android:id="@+id/hscroll2"
 				android:layout_width="match_parent"
@@ -762,14 +896,22 @@
 				android:gravity="center_horizontal|center_vertical"
 				android:orientation="vertical"
 				android:layout_gravity="center_horizontal|center_vertical" />
-			<LinearLayout
+			<com.google.android.material.card.MaterialCardView
 				android:id="@+id/d_linear722"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:gravity="center_horizontal|center_vertical"
-				android:orientation="horizontal"
-				android:background="?attr/colorTertiaryContainer">
+				app:cardBackgroundColor="?attr/colorTertiaryContainer"
+				app:cardElevation="2dp"
+				app:cardCornerRadius="8dp"
+				app:strokeWidth="0dp"
+				style="@style/Widget.Material3.CardView.Filled">
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:gravity="center_horizontal|center_vertical"
+					android:orientation="horizontal"
+				>
 				<TextView
 					android:id="@+id/d_textview512"
 					android:layout_width="wrap_content"
@@ -779,20 +921,22 @@
 					android:textSize="12sp"
 					android:textStyle="bold"
 					android:textColor="?attr/colorOnSurface" />
-				<EditText
-					android:id="@+id/d_edittext16"
+				<com.google.android.material.textfield.TextInputLayout
 					android:layout_width="80dp"
 					android:layout_height="wrap_content"
-					android:padding="8dp"
-					android:background="?attr/colorSurfaceVariant"
-					android:gravity="center_horizontal|center_vertical"
-					android:text="00.00"
-					android:textSize="12sp"
-					android:textStyle="bold"
-					android:textColor="?attr/colorOnSurface"
-					android:textColorHint="?attr/colorOnSurfaceVariant"
-					android:inputType="numberDecimal"
-					android:enabled="false" />
+					style="@style/Widget.Material3.TextInputLayout.FilledBox.Dense">
+					<com.google.android.material.textfield.TextInputEditText
+						android:id="@+id/d_edittext16"
+						android:text="00.00"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="?attr/colorOnSurface"
+						android:textColorHint="?attr/colorOnSurfaceVariant"
+						android:inputType="numberDecimal"
+						android:enabled="false"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content" />
+				</com.google.android.material.textfield.TextInputLayout>
 				<TextView
 					android:id="@+id/textview706"
 					android:layout_width="wrap_content"
@@ -813,20 +957,29 @@
 					android:textSize="12sp"
 					android:textStyle="bold"
 					android:textColor="?attr/colorOnSurface" />
-			</LinearLayout>
+				</LinearLayout>
+			</com.google.android.material.card.MaterialCardView>
 			<HorizontalScrollView
 				android:id="@+id/hscroll58"
 				android:layout_width="match_parent"
 				android:layout_height="7dp"
 				android:padding="8dp" />
-			<LinearLayout
+			<com.google.android.material.card.MaterialCardView
 				android:id="@+id/d_linear74"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:gravity="center_horizontal|center_vertical"
-				android:orientation="horizontal"
-				android:background="?attr/colorTertiaryContainer">
+				app:cardBackgroundColor="?attr/colorTertiaryContainer"
+				app:cardElevation="2dp"
+				app:cardCornerRadius="8dp"
+				app:strokeWidth="0dp"
+				style="@style/Widget.Material3.CardView.Filled">
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:gravity="center_horizontal|center_vertical"
+					android:orientation="horizontal"
+				>
 				<TextView
 					android:id="@+id/textview467"
 					android:layout_width="wrap_content"
@@ -836,20 +989,22 @@
 					android:textSize="12sp"
 					android:textStyle="bold"
 					android:textColor="?attr/colorOnSurface" />
-				<EditText
-					android:id="@+id/d_edittext15"
+				<com.google.android.material.textfield.TextInputLayout
 					android:layout_width="80dp"
 					android:layout_height="wrap_content"
-					android:padding="8dp"
-					android:background="?attr/colorSurfaceVariant"
-					android:gravity="center_horizontal|center_vertical"
-					android:text="00.00"
-					android:textSize="12sp"
-					android:textStyle="bold"
-					android:textColor="?attr/colorOnSurface"
-					android:textColorHint="?attr/colorOnSurfaceVariant"
-					android:inputType="numberDecimal"
-					android:enabled="false" />
+					style="@style/Widget.Material3.TextInputLayout.FilledBox.Dense">
+					<com.google.android.material.textfield.TextInputEditText
+						android:id="@+id/d_edittext15"
+						android:text="00.00"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="?attr/colorOnSurface"
+						android:textColorHint="?attr/colorOnSurfaceVariant"
+						android:inputType="numberDecimal"
+						android:enabled="false"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content" />
+				</com.google.android.material.textfield.TextInputLayout>
 				<TextView
 					android:id="@+id/textview286"
 					android:layout_width="wrap_content"
@@ -870,7 +1025,8 @@
 					android:textSize="12sp"
 					android:textStyle="bold"
 					android:textColor="?attr/colorOnSurface" />
-			</LinearLayout>
+				</LinearLayout>
+			</com.google.android.material.card.MaterialCardView>
 			<com.google.android.material.button.MaterialButton
 				style="@style/Widget.Material3.Button"
 				android:id="@+id/d_add_dynamic_hole"
@@ -897,14 +1053,22 @@
 				android:textSize="12sp"
 				android:textStyle="bold"
 				android:textColor="?attr/colorPrimary" />
-			<LinearLayout
+			<com.google.android.material.card.MaterialCardView
 				android:id="@+id/d_linear183"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:gravity="center_horizontal|center_vertical"
-				android:orientation="horizontal"
-				android:background="?attr/colorTertiaryContainer">
+				app:cardBackgroundColor="?attr/colorTertiaryContainer"
+				app:cardElevation="2dp"
+				app:cardCornerRadius="8dp"
+				app:strokeWidth="0dp"
+				style="@style/Widget.Material3.CardView.Filled">
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:gravity="center_horizontal|center_vertical"
+					android:orientation="horizontal"
+				>
 				<TextView
 					android:id="@+id/d_textview513"
 					android:layout_width="wrap_content"
@@ -914,20 +1078,22 @@
 					android:textSize="14sp"
 					android:textStyle="bold"
 					android:textColor="?attr/colorOnSurface" />
-				<EditText
-					android:id="@+id/d_edittext17"
+				<com.google.android.material.textfield.TextInputLayout
 					android:layout_width="80dp"
 					android:layout_height="37dp"
-					android:padding="8dp"
-					android:background="?attr/colorSecondaryContainer"
-					android:gravity="center_horizontal|center_vertical"
-					android:text="00.00"
-					android:textSize="12sp"
-					android:textStyle="bold"
-					android:textColor="?attr/colorOnSurface"
-					android:textColorHint="?attr/colorOnSurfaceVariant"
-					android:inputType="numberDecimal"
-					android:enabled="false" />
+					style="@style/Widget.Material3.TextInputLayout.FilledBox.Dense">
+					<com.google.android.material.textfield.TextInputEditText
+						android:id="@+id/d_edittext17"
+						android:text="00.00"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="?attr/colorOnSurface"
+						android:textColorHint="?attr/colorOnSurfaceVariant"
+						android:inputType="numberDecimal"
+						android:enabled="false"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content" />
+				</com.google.android.material.textfield.TextInputLayout>
 				<TextView
 					android:id="@+id/textview489"
 					android:layout_width="wrap_content"
@@ -948,7 +1114,8 @@
 					android:textSize="12sp"
 					android:textStyle="bold"
 					android:textColor="?attr/colorOnSurface" />
-			</LinearLayout>
+				</LinearLayout>
+			</com.google.android.material.card.MaterialCardView>
 			<TextView
 				android:id="@+id/d_textview15"
 				android:layout_width="match_parent"
@@ -968,14 +1135,22 @@
 				android:textSize="12sp"
 				android:textStyle="bold"
 				android:textColor="?attr/colorPrimary" />
-			<LinearLayout
+			<com.google.android.material.card.MaterialCardView
 				android:id="@+id/d_linear758"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:gravity="center_horizontal|center_vertical"
-				android:orientation="horizontal"
-				android:background="?attr/colorTertiaryContainer">
+				app:cardBackgroundColor="?attr/colorTertiaryContainer"
+				app:cardElevation="2dp"
+				app:cardCornerRadius="8dp"
+				app:strokeWidth="0dp"
+				style="@style/Widget.Material3.CardView.Filled">
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:gravity="center_horizontal|center_vertical"
+					android:orientation="horizontal"
+				>
 				<TextView
 					android:id="@+id/d_textview514"
 					android:layout_width="wrap_content"
@@ -985,20 +1160,22 @@
 					android:textSize="12sp"
 					android:textStyle="bold"
 					android:textColor="?attr/colorOnSurface" />
-				<EditText
-					android:id="@+id/d_edittext20"
+				<com.google.android.material.textfield.TextInputLayout
 					android:layout_width="80dp"
 					android:layout_height="wrap_content"
-					android:padding="8dp"
-					android:background="?attr/colorTertiaryContainer"
-					android:gravity="center_horizontal|center_vertical"
-					android:text="00.00"
-					android:textSize="12sp"
-					android:textStyle="bold"
-					android:textColor="?attr/colorOnSurface"
-					android:textColorHint="?attr/colorOnSurfaceVariant"
-					android:inputType="numberDecimal"
-					android:enabled="false" />
+					style="@style/Widget.Material3.TextInputLayout.FilledBox.Dense">
+					<com.google.android.material.textfield.TextInputEditText
+						android:id="@+id/d_edittext20"
+						android:text="00.00"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="?attr/colorOnSurface"
+						android:textColorHint="?attr/colorOnSurfaceVariant"
+						android:inputType="numberDecimal"
+						android:enabled="false"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content" />
+				</com.google.android.material.textfield.TextInputLayout>
 				<TextView
 					android:id="@+id/textview1422"
 					android:layout_width="wrap_content"
@@ -1019,7 +1196,9 @@
 					android:textSize="12sp"
 					android:textStyle="bold"
 					android:textColor="?attr/colorOnSurface" />
+				</LinearLayout>
+			</com.google.android.material.card.MaterialCardView>
 			</LinearLayout>
-		</LinearLayout>
-	</ScrollView>
+		</com.google.android.material.card.MaterialCardView>
+	</androidx.core.widget.NestedScrollView>
 </LinearLayout>

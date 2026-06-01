@@ -5,14 +5,22 @@
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
 	android:orientation="vertical">
-	<LinearLayout
+	<com.google.android.material.card.MaterialCardView
 		android:id="@+id/linear119dl"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:gravity="left|center_vertical"
-		android:orientation="horizontal"
 		android:layout_gravity="right"
-		android:background="?attr/colorSurfaceVariant">
+		app:cardBackgroundColor="?attr/colorSurfaceVariant"
+		app:cardElevation="2dp"
+		app:cardCornerRadius="8dp"
+		app:strokeWidth="0dp"
+		style="@style/Widget.Material3.CardView.Filled">
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="left|center_vertical"
+			android:orientation="horizontal"
+		>
 		<ImageView
 			android:id="@+id/close3dl"
 			android:layout_width="30dp"
@@ -20,14 +28,22 @@
 			android:src="@drawable/ic_close_24"
 			android:scaleType="fitCenter"
 			android:layout_gravity="left|center_vertical" />
-		<LinearLayout
+		<com.google.android.material.card.MaterialCardView
 			android:id="@+id/linear116dl"
 			android:layout_width="wrap_content"
 			android:layout_height="match_parent"
-			android:padding="8dp"
-			android:gravity="center_horizontal|center_vertical"
-			android:orientation="vertical"
-			android:background="?attr/colorTertiaryContainer">
+			app:cardBackgroundColor="?attr/colorTertiaryContainer"
+			app:cardElevation="2dp"
+			app:cardCornerRadius="8dp"
+			app:strokeWidth="0dp"
+			style="@style/Widget.Material3.CardView.Filled">
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:gravity="center_horizontal|center_vertical"
+				android:orientation="vertical"
+			>
 						<com.google.android.material.textfield.TextInputLayout
 			    android:layout_width="100dp"
 			    android:layout_height="wrap_content"
@@ -60,15 +76,24 @@
 				android:textColorHint="?attr/colorOnSurfaceVariant"
 				android:inputType="numberSigned|numberDecimal"
 				android:enabled="false" />
-		</LinearLayout>
-		<LinearLayout
+			</LinearLayout>
+		</com.google.android.material.card.MaterialCardView>
+		<com.google.android.material.card.MaterialCardView
 			android:id="@+id/linear115dl"
 			android:layout_width="91dp"
 			android:layout_height="match_parent"
-			android:padding="8dp"
-			android:gravity="center_horizontal|center_vertical"
-			android:orientation="vertical"
-			android:background="?attr/colorTertiaryContainer">
+			app:cardBackgroundColor="?attr/colorTertiaryContainer"
+			app:cardElevation="2dp"
+			app:cardCornerRadius="8dp"
+			app:strokeWidth="0dp"
+			style="@style/Widget.Material3.CardView.Filled">
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:gravity="center_horizontal|center_vertical"
+				android:orientation="vertical"
+			>
 						<com.google.android.material.textfield.TextInputLayout
 			    android:layout_width="70dp"
 			    android:layout_height="wrap_content"
@@ -101,15 +126,24 @@
 				android:textColorHint="?attr/colorOnSurfaceVariant"
 				android:inputType="numberSigned|numberDecimal"
 				android:enabled="false" />
-		</LinearLayout>
-		<LinearLayout
+			</LinearLayout>
+		</com.google.android.material.card.MaterialCardView>
+		<com.google.android.material.card.MaterialCardView
 			android:id="@+id/linear114dl"
 			android:layout_width="91dp"
 			android:layout_height="100dp"
-			android:padding="8dp"
-			android:gravity="center_horizontal|center_vertical"
-			android:orientation="vertical"
-			android:background="?attr/colorTertiaryContainer">
+			app:cardBackgroundColor="?attr/colorTertiaryContainer"
+			app:cardElevation="2dp"
+			app:cardCornerRadius="8dp"
+			app:strokeWidth="0dp"
+			style="@style/Widget.Material3.CardView.Filled">
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:gravity="center_horizontal|center_vertical"
+				android:orientation="vertical"
+			>
 						<com.google.android.material.textfield.TextInputLayout
 			    android:layout_width="wrap_content"
 			    android:layout_height="wrap_content"
@@ -130,6 +164,8 @@
 			        android:layout_width="match_parent"
 			        android:layout_height="wrap_content" />
 			</com.google.android.material.textfield.TextInputLayout>
+			</LinearLayout>
+		</com.google.android.material.card.MaterialCardView>
 		</LinearLayout>
-	</LinearLayout>
+	</com.google.android.material.card.MaterialCardView>
 </LinearLayout>
