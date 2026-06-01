@@ -20,12 +20,12 @@
 		android:layout_height="match_parent"
 		android:orientation="vertical"
 		app:layout_behavior="@string/appbar_scrolling_view_behavior">
-<ScrollView
+<androidx.core.widget.NestedScrollView
 			android:id="@+id/vscroll1"
 			android:layout_width="match_parent"
 			android:layout_height="match_parent"
 			android:padding="8dp"
-			android:background="#E0F2F1">
+			android:background="?attr/colorSecondaryContainer">
 			<LinearLayout
 				android:id="@+id/linear1"
 				android:layout_width="match_parent"
@@ -38,12 +38,12 @@
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
 					android:padding="8dp"
-					android:background="#FFFFFF"
+					android:background="?attr/colorSurface"
 					android:gravity="right"
 					android:text="القواعد المسلحة :-\n-------------------"
 					android:textSize="18sp"
 					android:textStyle="bold"
-					android:textColor="#000000"
+					android:textColor="?attr/colorOnSurface"
 					android:layout_gravity="right" />
 				<TextView
 					android:id="@+id/textview2"
@@ -51,8 +51,9 @@
 					android:layout_height="15dp"
 					android:padding="8dp"
 					android:textSize="12sp"
-					android:textColor="#000000" />
-				<Button
+					android:textColor="?attr/colorOnSurface" />
+				<com.google.android.material.button.MaterialButton
+				style="@style/Widget.Material3.Button"
 					android:id="@+id/button1"
 					android:layout_width="300dp"
 					android:layout_height="wrap_content"
@@ -60,15 +61,16 @@
 					android:text="حصر الكميات والخامات وحساب التكلفة للقواعد الخرسانية المسلحة &quot; حديد التسليح نسبة من كمية الخرسانة &quot;"
 					android:textSize="16sp"
 					android:textStyle="bold"
-					android:textColor="#000000" />
+					android:textColor="?attr/colorOnSurface" />
 				<TextView
 					android:id="@+id/textview3"
 					android:layout_width="match_parent"
 					android:layout_height="5dp"
 					android:padding="8dp"
 					android:textSize="12sp"
-					android:textColor="#000000" />
-				<Button
+					android:textColor="?attr/colorOnSurface" />
+				<com.google.android.material.button.MaterialButton
+				style="@style/Widget.Material3.Button"
 					android:id="@+id/button2"
 					android:layout_width="300dp"
 					android:layout_height="wrap_content"
@@ -76,8 +78,8 @@
 					android:text="حصر الكميات والخامات وحساب التكلفة للقواعد الخرسانية المسلحة شامل حديد التسليح بالتفصيل"
 					android:textSize="16sp"
 					android:textStyle="bold"
-					android:textColor="#000000" />
+					android:textColor="?attr/colorOnSurface" />
 			</LinearLayout>
-		</ScrollView>
+		</androidx.core.widget.NestedScrollView>
 	</LinearLayout>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

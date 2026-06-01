@@ -14,7 +14,7 @@
 			android:id="@+id/_toolbar"
 			android:layout_width="match_parent"
 			android:layout_height="?attr/actionBarSize"
-			android:background="?attr/colorPrimary"
+			android:background="?attr/colorPrimary" 
 			app:menu="@menu/menu_calc" />
 	</com.google.android.material.appbar.AppBarLayout>
 	<LinearLayout
@@ -22,10 +22,10 @@
 		android:layout_height="match_parent"
 		android:orientation="vertical"
 		app:layout_behavior="@string/appbar_scrolling_view_behavior">
-<ScrollView
-			android:id="@+id/vscroll1"
+		<androidx.core.widget.NestedScrollView
 			android:paddingBottom="88dp"
 			android:clipToPadding="false"
+			android:id="@+id/vscroll1"
 			android:layout_width="match_parent"
 			android:layout_height="match_parent"
 			android:padding="8dp"
@@ -45,10 +45,10 @@
 					android:text="الدهانات\n----------------"
 					android:textSize="16sp"
 					android:textStyle="bold"
-					android:textColor="#000000"
+					android:textColor="?attr/colorOnSurface"
 					android:layout_gravity="center_horizontal" />
 				<com.google.android.material.button.MaterialButton
-							style="@style/Widget.Material3.Button"
+				style="@style/Widget.Material3.Button"
 					android:id="@+id/button1"
 					android:layout_width="250dp"
 					android:layout_height="wrap_content"
@@ -57,11 +57,10 @@
 					android:text="حصر كميات وحساب خامات وتكلفة بند دهانات الحوائط"
 					android:textSize="14sp"
 					android:textStyle="bold"
-					android:textColor="#000000"
-					android:layout_gravity="center_horizontal"
-							app:cornerRadius="16dp" />
+					android:textColor="?attr/colorOnSurface"
+					android:layout_gravity="center_horizontal" />
 				<com.google.android.material.button.MaterialButton
-							style="@style/Widget.Material3.Button"
+				style="@style/Widget.Material3.Button"
 					android:id="@+id/button2"
 					android:layout_width="250dp"
 					android:layout_height="wrap_content"
@@ -70,10 +69,9 @@
 					android:text="حصر كميات وحساب خامات وتكلفة بند دهانات الاسقف"
 					android:textSize="14sp"
 					android:textStyle="bold"
-					android:textColor="#000000"
-					android:layout_gravity="center_horizontal"
-							app:cornerRadius="16dp" />
+					android:textColor="?attr/colorOnSurface"
+					android:layout_gravity="center_horizontal" />
 			</LinearLayout>
-		</ScrollView>
+		</androidx.core.widget.NestedScrollView>
 	</LinearLayout>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -296,7 +296,7 @@
         parent="Widget.Material3.TextInputLayout.FilledBox.Dense" />
     <style
         name="Widget.Material3.Button.IconButton"
-        parent="Widget.Material3.Button.IconButton">
+        parent="Widget.Material3.Button.TextButton">
         <item
             name="iconTint">?attr/colorOnSurfaceVariant</item>
         <item
@@ -340,7 +340,7 @@
         parent="DividerStyle" />
     <style
         name="Widget.Material3.BottomSheet"
-        parent="Widget.Material3.BottomSheet">
+        parent="Widget.MaterialComponents.BottomSheet">
         <item
             name="backgroundTint">?attr/colorSurface</item>
         <item
@@ -351,7 +351,7 @@
         parent="Widget.Material3.BottomSheet" />
     <style
         name="Widget.Material3.TabLayout"
-        parent="Widget.Material3.TabLayout">
+        parent="Widget.MaterialComponents.TabLayout">
         <item
             name="tabTextAppearance">@style/CustomTabText</item>
         <item

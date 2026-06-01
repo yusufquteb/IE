@@ -134,7 +134,7 @@ public class EipDSoil1Activity extends AppCompatActivity {
 				.show();
 			return true;
 		} else if (id == R.id.action_print) {
-			_PrintHelper(linear1);
+			_PrintHelper(getWindow().getDecorView());
 			return true;
 		}
 		return super.onOptionsItemSelected(item);

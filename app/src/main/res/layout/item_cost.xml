@@ -62,17 +62,30 @@
                     android:textSize="12sp" android:textColor="?attr/colorOnSurface" android:textStyle="bold" />
             </LinearLayout>
 
-            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
-                android:layout_weight="1.5" android:orientation="vertical"
-                android:gravity="center" android:background="?attr/colorPrimaryContainer"
-                android:padding="6dp">
+            <com.google.android.material.card.MaterialCardView
+            	android:layout_width="0dp"
+            	android:layout_height="wrap_content"
+            	android:layout_weight="1.5"
+            	app:cardBackgroundColor="?attr/colorPrimaryContainer"
+            	app:cardElevation="2dp"
+            	app:cardCornerRadius="8dp"
+            	app:strokeWidth="0dp"
+            	style="@style/Widget.Material3.CardView.Filled">
+            	<LinearLayout
+            		android:layout_width="match_parent"
+            		android:layout_height="wrap_content"
+            		android:orientation="vertical"
+            		android:gravity="center"
+            		android:padding="6dp"
+            	>
                 <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
                     android:text="الإجمالي" android:textSize="9sp" android:textColor="?attr/colorOnPrimaryContainer" />
                 <TextView android:id="@+id/tv_cost_total"
                     android:layout_width="wrap_content" android:layout_height="wrap_content"
                     android:text="0.00" android:textSize="12sp"
                     android:textStyle="bold" android:textColor="?attr/colorOnPrimaryContainer" />
-            </LinearLayout>
+            	</LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
         </LinearLayout>
     </LinearLayout>
 </com.google.android.material.card.MaterialCardView>

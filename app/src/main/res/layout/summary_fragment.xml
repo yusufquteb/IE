@@ -5,7 +5,7 @@
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
 	android:orientation="vertical">
-	<ScrollView
+	<androidx.core.widget.NestedScrollView
 		android:id="@+id/vscroll1"
 		android:layout_width="match_parent"
 		android:layout_height="match_parent">
@@ -34,13 +34,21 @@
 					android:background="@drawable/strok_radius"
 					
 					>
-					<LinearLayout
+					<com.google.android.material.card.MaterialCardView
 						android:id="@+id/linear122"
 						android:layout_width="match_parent"
 						android:layout_height="wrap_content"
-						android:paddingLeft="8dp"
-						android:background="#383D41"
-						android:orientation="horizontal">
+						app:cardBackgroundColor="?attr/colorOnSurface"
+						app:cardElevation="2dp"
+						app:cardCornerRadius="8dp"
+						app:strokeWidth="0dp"
+						style="@style/Widget.Material3.CardView.Filled">
+						<LinearLayout
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:paddingLeft="8dp"
+							android:orientation="horizontal"
+						>
 						<TextView
 							android:id="@+id/textview1"
 							android:layout_width="wrap_content"
@@ -48,10 +56,11 @@
 							android:padding="8dp"
 							android:text="Concrete Total Amounts"
 							android:textStyle="bold"
-							android:textColor="#BB86FC"
+							android:textColor="?attr/colorTertiary"
 							tools:replace="android:textSize"
 							android:textSize="14dp" />
-					</LinearLayout>
+						</LinearLayout>
+					</com.google.android.material.card.MaterialCardView>
 					<LinearLayout
 						android:id="@+id/linear9"
 						android:layout_width="match_parent"
@@ -80,7 +89,7 @@
 									android:layout_height="wrap_content"
 									android:text="Item"
 									android:textStyle="bold"
-									android:textColor="#C6C6D0"
+									android:textColor="?attr/colorOnSurfaceVariant"
 									tools:replace="android:textSize"
 									android:textSize="12dp" />
 							</LinearLayout>
@@ -100,7 +109,7 @@
 									android:layout_height="wrap_content"
 									android:text="PC Footings"
 									android:textStyle="bold"
-									android:textColor="#C6C6D0"
+									android:textColor="?attr/colorOnSurfaceVariant"
 									tools:replace="android:textSize"
 									android:textSize="12dp" />
 							</LinearLayout>
@@ -118,7 +127,7 @@
 									android:layout_height="wrap_content"
 									android:text="RC Footings"
 									android:textStyle="bold"
-									android:textColor="#C6C6D0"
+									android:textColor="?attr/colorOnSurfaceVariant"
 									tools:replace="android:textSize"
 									android:textSize="12dp" />
 							</LinearLayout>
@@ -138,7 +147,7 @@
 									android:layout_height="wrap_content"
 									android:text="Columns RC"
 									android:textStyle="bold"
-									android:textColor="#C6C6D0"
+									android:textColor="?attr/colorOnSurfaceVariant"
 									tools:replace="android:textSize"
 									android:textSize="12dp" />
 							</LinearLayout>
@@ -156,7 +165,7 @@
 									android:layout_height="wrap_content"
 									android:text="Beams"
 									android:textStyle="bold"
-									android:textColor="#C6C6D0"
+									android:textColor="?attr/colorOnSurfaceVariant"
 									tools:replace="android:textSize"
 									android:textSize="12dp" />
 							</LinearLayout>
@@ -176,7 +185,7 @@
 									android:layout_height="wrap_content"
 									android:text="Slabs"
 									android:textStyle="bold"
-									android:textColor="#C6C6D0"
+									android:textColor="?attr/colorOnSurfaceVariant"
 									tools:replace="android:textSize"
 									android:textSize="12dp" />
 							</LinearLayout>
@@ -205,7 +214,7 @@
 									android:layout_height="wrap_content"
 									android:text="Unit"
 									android:textStyle="bold"
-									android:textColor="#C6C6D0"
+									android:textColor="?attr/colorOnSurfaceVariant"
 									tools:replace="android:textSize"
 									android:textSize="12dp" />
 							</LinearLayout>
@@ -224,7 +233,7 @@
 									android:layout_width="wrap_content"
 									android:layout_height="wrap_content"
 									android:text="m3"
-									android:textColor="#E3E0E6"
+									android:textColor="?attr/colorOnSurfaceVariant"
 									tools:replace="android:textSize"
 									android:textSize="12dp" />
 							</LinearLayout>
@@ -241,7 +250,7 @@
 									android:layout_width="wrap_content"
 									android:layout_height="wrap_content"
 									android:text="m3"
-									android:textColor="#E3E0E6"
+									android:textColor="?attr/colorOnSurfaceVariant"
 									tools:replace="android:textSize"
 									android:textSize="12dp" />
 							</LinearLayout>
@@ -260,7 +269,7 @@
 									android:layout_width="wrap_content"
 									android:layout_height="wrap_content"
 									android:text="m3"
-									android:textColor="#E3E0E6"
+									android:textColor="?attr/colorOnSurfaceVariant"
 									tools:replace="android:textSize"
 									android:textSize="12dp" />
 							</LinearLayout>
@@ -277,7 +286,7 @@
 									android:layout_width="wrap_content"
 									android:layout_height="wrap_content"
 									android:text="m3"
-									android:textColor="#E3E0E6"
+									android:textColor="?attr/colorOnSurfaceVariant"
 									tools:replace="android:textSize"
 									android:textSize="12dp" />
 							</LinearLayout>
@@ -296,7 +305,7 @@
 									android:layout_width="wrap_content"
 									android:layout_height="wrap_content"
 									android:text="m3"
-									android:textColor="#E3E0E6"
+									android:textColor="?attr/colorOnSurfaceVariant"
 									tools:replace="android:textSize"
 									android:textSize="12dp" />
 							</LinearLayout>
@@ -327,7 +336,7 @@
 									android:gravity="center_horizontal|center_vertical"
 									android:text="Unit Price"
 									android:textStyle="bold"
-									android:textColor="#C6C6D0"
+									android:textColor="?attr/colorOnSurfaceVariant"
 									tools:replace="android:textSize"
 									android:textSize="12dp" />
 							</LinearLayout>
@@ -341,20 +350,23 @@
 								android:gravity="center_horizontal|center_vertical"
 								android:orientation="horizontal"
 								android:background="@drawable/strok_radius">
-								<EditText
-									android:id="@+id/Unit_Price1"
+								<com.google.android.material.textfield.TextInputLayout
 									android:layout_width="match_parent"
 									android:layout_height="wrap_content"
-									android:background="@android:color/transparent"
-									android:gravity="center_horizontal|center_vertical"
-									android:textColor="#E3E0E6"
-									android:hint="0.00"
-									android:textColorHint="#E3E0E6"
-									android:inputType="numberDecimal"
-									android:imeOptions="actionNext"
-									android:digits="1234567890."
-									tools:replace="android:textSize"
-									android:textSize="12dp" />
+									style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense">
+									<com.google.android.material.textfield.TextInputEditText
+										android:id="@+id/Unit_Price1"
+										android:textColor="?attr/colorOnSurfaceVariant"
+										android:hint="0.00"
+										android:textColorHint="?attr/colorOnSurfaceVariant"
+										android:inputType="numberDecimal"
+										android:imeOptions="actionNext"
+										android:digits="1234567890."
+										tools:replace="android:textSize"
+										android:textSize="12dp"
+										android:layout_width="match_parent"
+										android:layout_height="wrap_content" />
+								</com.google.android.material.textfield.TextInputLayout>
 							</LinearLayout>
 							<LinearLayout
 								android:id="@+id/linear42"
@@ -364,20 +376,23 @@
 								android:gravity="center_horizontal|center_vertical"
 								android:orientation="horizontal"
 								android:background="@drawable/strok_radius">
-								<EditText
-									android:id="@+id/Unit_Price2"
+								<com.google.android.material.textfield.TextInputLayout
 									android:layout_width="match_parent"
 									android:layout_height="wrap_content"
-									android:background="@android:color/transparent"
-									android:gravity="center_horizontal|center_vertical"
-									android:textColor="#E3E0E6"
-									android:hint="0.00"
-									android:textColorHint="#E3E0E6"
-									android:inputType="numberDecimal"
-									android:imeOptions="actionNext"
-									android:digits="1234567890."
-									tools:replace="android:textSize"
-									android:textSize="12dp" />
+									style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense">
+									<com.google.android.material.textfield.TextInputEditText
+										android:id="@+id/Unit_Price2"
+										android:textColor="?attr/colorOnSurfaceVariant"
+										android:hint="0.00"
+										android:textColorHint="?attr/colorOnSurfaceVariant"
+										android:inputType="numberDecimal"
+										android:imeOptions="actionNext"
+										android:digits="1234567890."
+										tools:replace="android:textSize"
+										android:textSize="12dp"
+										android:layout_width="match_parent"
+										android:layout_height="wrap_content" />
+								</com.google.android.material.textfield.TextInputLayout>
 							</LinearLayout>
 							<LinearLayout
 								android:id="@+id/linear43"
@@ -389,20 +404,23 @@
 								android:gravity="center_horizontal|center_vertical"
 								android:orientation="horizontal"
 								android:background="@drawable/strok_radius">
-								<EditText
-									android:id="@+id/Unit_Price3"
+								<com.google.android.material.textfield.TextInputLayout
 									android:layout_width="match_parent"
 									android:layout_height="wrap_content"
-									android:background="@android:color/transparent"
-									android:gravity="center_horizontal|center_vertical"
-									android:textColor="#E3E0E6"
-									android:hint="0.00"
-									android:textColorHint="#E3E0E6"
-									android:inputType="numberDecimal"
-									android:imeOptions="actionNext"
-									android:digits="1234567890."
-									tools:replace="android:textSize"
-									android:textSize="12dp" />
+									style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense">
+									<com.google.android.material.textfield.TextInputEditText
+										android:id="@+id/Unit_Price3"
+										android:textColor="?attr/colorOnSurfaceVariant"
+										android:hint="0.00"
+										android:textColorHint="?attr/colorOnSurfaceVariant"
+										android:inputType="numberDecimal"
+										android:imeOptions="actionNext"
+										android:digits="1234567890."
+										tools:replace="android:textSize"
+										android:textSize="12dp"
+										android:layout_width="match_parent"
+										android:layout_height="wrap_content" />
+								</com.google.android.material.textfield.TextInputLayout>
 							</LinearLayout>
 							<LinearLayout
 								android:id="@+id/linear44"
@@ -412,20 +430,23 @@
 								android:gravity="center_horizontal|center_vertical"
 								android:orientation="horizontal"
 								android:background="@drawable/strok_radius">
-								<EditText
-									android:id="@+id/Unit_Price4"
+								<com.google.android.material.textfield.TextInputLayout
 									android:layout_width="match_parent"
 									android:layout_height="wrap_content"
-									android:background="@android:color/transparent"
-									android:gravity="center_horizontal|center_vertical"
-									android:textColor="#E3E0E6"
-									android:hint="0.00"
-									android:textColorHint="#E3E0E6"
-									android:inputType="numberDecimal"
-									android:imeOptions="actionNext"
-									android:digits="1234567890."
-									tools:replace="android:textSize"
-									android:textSize="12dp" />
+									style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense">
+									<com.google.android.material.textfield.TextInputEditText
+										android:id="@+id/Unit_Price4"
+										android:textColor="?attr/colorOnSurfaceVariant"
+										android:hint="0.00"
+										android:textColorHint="?attr/colorOnSurfaceVariant"
+										android:inputType="numberDecimal"
+										android:imeOptions="actionNext"
+										android:digits="1234567890."
+										tools:replace="android:textSize"
+										android:textSize="12dp"
+										android:layout_width="match_parent"
+										android:layout_height="wrap_content" />
+								</com.google.android.material.textfield.TextInputLayout>
 							</LinearLayout>
 							<LinearLayout
 								android:id="@+id/linear45"
@@ -437,20 +458,23 @@
 								android:gravity="center_horizontal|center_vertical"
 								android:orientation="horizontal"
 								android:background="@drawable/strok_radius">
-								<EditText
-									android:id="@+id/Unit_Price5"
+								<com.google.android.material.textfield.TextInputLayout
 									android:layout_width="match_parent"
 									android:layout_height="wrap_content"
-									android:background="@android:color/transparent"
-									android:gravity="center_horizontal|center_vertical"
-									android:textColor="#E3E0E6"
-									android:hint="0.00"
-									android:textColorHint="#E3E0E6"
-									android:inputType="numberDecimal"
-									android:imeOptions="actionDone"
-									android:digits="1234567890."
-									tools:replace="android:textSize"
-									android:textSize="12dp" />
+									style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense">
+									<com.google.android.material.textfield.TextInputEditText
+										android:id="@+id/Unit_Price5"
+										android:textColor="?attr/colorOnSurfaceVariant"
+										android:hint="0.00"
+										android:textColorHint="?attr/colorOnSurfaceVariant"
+										android:inputType="numberDecimal"
+										android:imeOptions="actionDone"
+										android:digits="1234567890."
+										tools:replace="android:textSize"
+										android:textSize="12dp"
+										android:layout_width="match_parent"
+										android:layout_height="wrap_content" />
+								</com.google.android.material.textfield.TextInputLayout>
 							</LinearLayout>
 						</LinearLayout>
 						<LinearLayout
@@ -478,7 +502,7 @@
 									android:layout_height="wrap_content"
 									android:text="Amount"
 									android:textStyle="bold"
-									android:textColor="#C6C6D0"
+									android:textColor="?attr/colorOnSurfaceVariant"
 									tools:replace="android:textSize"
 									android:textSize="12dp" />
 							</LinearLayout>
@@ -497,7 +521,7 @@
 									android:layout_width="wrap_content"
 									android:layout_height="wrap_content"
 									android:text="0.00"
-									android:textColor="#E3E0E6"
+									android:textColor="?attr/colorOnSurfaceVariant"
 									tools:replace="android:textSize"
 									android:textSize="12dp" />
 							</LinearLayout>
@@ -514,7 +538,7 @@
 									android:layout_width="wrap_content"
 									android:layout_height="wrap_content"
 									android:text="0.00"
-									android:textColor="#E3E0E6"
+									android:textColor="?attr/colorOnSurfaceVariant"
 									tools:replace="android:textSize"
 									android:textSize="12dp" />
 							</LinearLayout>
@@ -533,7 +557,7 @@
 									android:layout_width="wrap_content"
 									android:layout_height="wrap_content"
 									android:text="0.00"
-									android:textColor="#E3E0E6"
+									android:textColor="?attr/colorOnSurfaceVariant"
 									tools:replace="android:textSize"
 									android:textSize="12dp" />
 							</LinearLayout>
@@ -550,7 +574,7 @@
 									android:layout_width="wrap_content"
 									android:layout_height="wrap_content"
 									android:text="0.00"
-									android:textColor="#E3E0E6"
+									android:textColor="?attr/colorOnSurfaceVariant"
 									tools:replace="android:textSize"
 									android:textSize="12dp" />
 							</LinearLayout>
@@ -569,7 +593,7 @@
 									android:layout_width="wrap_content"
 									android:layout_height="wrap_content"
 									android:text="0.00"
-									android:textColor="#E3E0E6"
+									android:textColor="?attr/colorOnSurfaceVariant"
 									tools:replace="android:textSize"
 									android:textSize="12dp" />
 							</LinearLayout>
@@ -596,7 +620,7 @@
 									android:layout_height="wrap_content"
 									android:text="Total Price"
 									android:textStyle="bold"
-									android:textColor="#C6C6D0"
+									android:textColor="?attr/colorOnSurfaceVariant"
 									tools:replace="android:textSize"
 									android:textSize="12dp" />
 							</LinearLayout>
@@ -615,7 +639,7 @@
 									android:layout_width="match_parent"
 									android:layout_height="wrap_content"
 									android:text="0.00"
-									android:textColor="#E3E0E6"
+									android:textColor="?attr/colorOnSurfaceVariant"
 									tools:replace="android:textSize"
 									android:textSize="12dp" />
 							</LinearLayout>
@@ -632,7 +656,7 @@
 									android:layout_width="match_parent"
 									android:layout_height="wrap_content"
 									android:text="0.00"
-									android:textColor="#E3E0E6"
+									android:textColor="?attr/colorOnSurfaceVariant"
 									tools:replace="android:textSize"
 									android:textSize="12dp" />
 							</LinearLayout>
@@ -651,7 +675,7 @@
 									android:layout_width="match_parent"
 									android:layout_height="wrap_content"
 									android:text="0.00"
-									android:textColor="#E3E0E6"
+									android:textColor="?attr/colorOnSurfaceVariant"
 									tools:replace="android:textSize"
 									android:textSize="12dp" />
 							</LinearLayout>
@@ -668,7 +692,7 @@
 									android:layout_width="match_parent"
 									android:layout_height="wrap_content"
 									android:text="0.00"
-									android:textColor="#E3E0E6"
+									android:textColor="?attr/colorOnSurfaceVariant"
 									tools:replace="android:textSize"
 									android:textSize="12dp" />
 							</LinearLayout>
@@ -687,7 +711,7 @@
 									android:layout_width="match_parent"
 									android:layout_height="wrap_content"
 									android:text="0.00"
-									android:textColor="#E3E0E6"
+									android:textColor="?attr/colorOnSurfaceVariant"
 									tools:replace="android:textSize"
 									android:textSize="12dp" />
 							</LinearLayout>
@@ -716,13 +740,21 @@
 					
 					
 					>
-					<LinearLayout
+					<com.google.android.material.card.MaterialCardView
 						android:id="@+id/linear124"
 						android:layout_width="match_parent"
 						android:layout_height="wrap_content"
-						android:paddingLeft="8dp"
-						android:background="#383D41"
-						android:orientation="horizontal">
+						app:cardBackgroundColor="?attr/colorOnSurface"
+						app:cardElevation="2dp"
+						app:cardCornerRadius="8dp"
+						app:strokeWidth="0dp"
+						style="@style/Widget.Material3.CardView.Filled">
+						<LinearLayout
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:paddingLeft="8dp"
+							android:orientation="horizontal"
+						>
 						<TextView
 							android:id="@+id/textview2"
 							android:layout_width="wrap_content"
@@ -730,10 +762,11 @@
 							android:padding="8dp"
 							android:text="Reinforcement Steel Total Amounts"
 							android:textStyle="bold"
-							android:textColor="#BB86FC"
+							android:textColor="?attr/colorTertiary"
 							tools:replace="android:textSize"
 							android:textSize="14dp" />
-					</LinearLayout>
+						</LinearLayout>
+					</com.google.android.material.card.MaterialCardView>
 					<LinearLayout
 						android:id="@+id/linear50"
 						android:layout_width="match_parent"
@@ -763,7 +796,7 @@
 									android:layout_height="wrap_content"
 									android:text="Item"
 									android:textStyle="bold"
-									android:textColor="#C6C6D0"
+									android:textColor="?attr/colorOnSurfaceVariant"
 									tools:replace="android:textSize"
 									android:textSize="12dp" />
 							</LinearLayout>
@@ -783,7 +816,7 @@
 									android:layout_height="wrap_content"
 									android:text="RC Footings"
 									android:textStyle="bold"
-									android:textColor="#C6C6D0"
+									android:textColor="?attr/colorOnSurfaceVariant"
 									tools:replace="android:textSize"
 									android:textSize="12dp" />
 							</LinearLayout>
@@ -802,7 +835,7 @@
 									android:layout_height="wrap_content"
 									android:text="Columns"
 									android:textStyle="bold"
-									android:textColor="#C6C6D0"
+									android:textColor="?attr/colorOnSurfaceVariant"
 									tools:replace="android:textSize"
 									android:textSize="12dp" />
 							</LinearLayout>
@@ -820,7 +853,7 @@
 									android:layout_height="wrap_content"
 									android:text="Beams"
 									android:textStyle="bold"
-									android:textColor="#C6C6D0"
+									android:textColor="?attr/colorOnSurfaceVariant"
 									tools:replace="android:textSize"
 									android:textSize="12dp" />
 							</LinearLayout>
@@ -840,7 +873,7 @@
 									android:layout_height="wrap_content"
 									android:text="Slabs"
 									android:textStyle="bold"
-									android:textColor="#C6C6D0"
+									android:textColor="?attr/colorOnSurfaceVariant"
 									tools:replace="android:textSize"
 									android:textSize="12dp" />
 							</LinearLayout>
@@ -869,7 +902,7 @@
 									android:layout_height="wrap_content"
 									android:text="Unit"
 									android:textStyle="bold"
-									android:textColor="#C6C6D0"
+									android:textColor="?attr/colorOnSurfaceVariant"
 									tools:replace="android:textSize"
 									android:textSize="12dp" />
 							</LinearLayout>
@@ -888,7 +921,7 @@
 									android:layout_width="wrap_content"
 									android:layout_height="wrap_content"
 									android:text="kg"
-									android:textColor="#E3E0E6"
+									android:textColor="?attr/colorOnSurfaceVariant"
 									tools:replace="android:textSize"
 									android:textSize="12dp" />
 							</LinearLayout>
@@ -906,7 +939,7 @@
 									android:layout_width="wrap_content"
 									android:layout_height="wrap_content"
 									android:text="kg"
-									android:textColor="#E3E0E6"
+									android:textColor="?attr/colorOnSurfaceVariant"
 									tools:replace="android:textSize"
 									android:textSize="12dp" />
 							</LinearLayout>
@@ -923,7 +956,7 @@
 									android:layout_width="wrap_content"
 									android:layout_height="wrap_content"
 									android:text="kg"
-									android:textColor="#E3E0E6"
+									android:textColor="?attr/colorOnSurfaceVariant"
 									tools:replace="android:textSize"
 									android:textSize="12dp" />
 							</LinearLayout>
@@ -942,7 +975,7 @@
 									android:layout_width="wrap_content"
 									android:layout_height="wrap_content"
 									android:text="kg"
-									android:textColor="#E3E0E6"
+									android:textColor="?attr/colorOnSurfaceVariant"
 									tools:replace="android:textSize"
 									android:textSize="12dp" />
 							</LinearLayout>
@@ -973,7 +1006,7 @@
 									android:gravity="center_horizontal|center_vertical"
 									android:text="Unit Price"
 									android:textStyle="bold"
-									android:textColor="#C6C6D0"
+									android:textColor="?attr/colorOnSurfaceVariant"
 									tools:replace="android:textSize"
 									android:textSize="12dp" />
 							</LinearLayout>
@@ -987,20 +1020,23 @@
 								android:gravity="center_horizontal|center_vertical"
 								android:orientation="horizontal"
 								android:background="@drawable/strok_radius">
-								<EditText
-									android:id="@+id/Unit_Price6"
+								<com.google.android.material.textfield.TextInputLayout
 									android:layout_width="match_parent"
 									android:layout_height="wrap_content"
-									android:background="@android:color/transparent"
-									android:gravity="center_horizontal|center_vertical"
-									android:textColor="#E3E0E6"
-									android:hint="0.00"
-									android:textColorHint="#E3E0E6"
-									android:inputType="numberDecimal"
-									android:imeOptions="actionNext"
-									android:digits="1234567890."
-									tools:replace="android:textSize"
-									android:textSize="12dp" />
+									style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense">
+									<com.google.android.material.textfield.TextInputEditText
+										android:id="@+id/Unit_Price6"
+										android:textColor="?attr/colorOnSurfaceVariant"
+										android:hint="0.00"
+										android:textColorHint="?attr/colorOnSurfaceVariant"
+										android:inputType="numberDecimal"
+										android:imeOptions="actionNext"
+										android:digits="1234567890."
+										tools:replace="android:textSize"
+										android:textSize="12dp"
+										android:layout_width="match_parent"
+										android:layout_height="wrap_content" />
+								</com.google.android.material.textfield.TextInputLayout>
 							</LinearLayout>
 							<LinearLayout
 								android:id="@+id/linear71"
@@ -1011,20 +1047,23 @@
 								android:gravity="center_horizontal|center_vertical"
 								android:orientation="horizontal"
 								android:background="@drawable/strok_radius">
-								<EditText
-									android:id="@+id/Unit_Price7"
+								<com.google.android.material.textfield.TextInputLayout
 									android:layout_width="match_parent"
 									android:layout_height="wrap_content"
-									android:background="@android:color/transparent"
-									android:gravity="center_horizontal|center_vertical"
-									android:textColor="#E3E0E6"
-									android:hint="0.00"
-									android:textColorHint="#E3E0E6"
-									android:inputType="numberDecimal"
-									android:imeOptions="actionNext"
-									android:digits="1234567890."
-									tools:replace="android:textSize"
-									android:textSize="12dp" />
+									style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense">
+									<com.google.android.material.textfield.TextInputEditText
+										android:id="@+id/Unit_Price7"
+										android:textColor="?attr/colorOnSurfaceVariant"
+										android:hint="0.00"
+										android:textColorHint="?attr/colorOnSurfaceVariant"
+										android:inputType="numberDecimal"
+										android:imeOptions="actionNext"
+										android:digits="1234567890."
+										tools:replace="android:textSize"
+										android:textSize="12dp"
+										android:layout_width="match_parent"
+										android:layout_height="wrap_content" />
+								</com.google.android.material.textfield.TextInputLayout>
 							</LinearLayout>
 							<LinearLayout
 								android:id="@+id/linear72"
@@ -1034,20 +1073,23 @@
 								android:gravity="center_horizontal|center_vertical"
 								android:orientation="horizontal"
 								android:background="@drawable/strok_radius">
-								<EditText
-									android:id="@+id/Unit_Price8"
+								<com.google.android.material.textfield.TextInputLayout
 									android:layout_width="match_parent"
 									android:layout_height="wrap_content"
-									android:background="@android:color/transparent"
-									android:gravity="center_horizontal|center_vertical"
-									android:textColor="#E3E0E6"
-									android:hint="0.00"
-									android:textColorHint="#E3E0E6"
-									android:inputType="numberDecimal"
-									android:imeOptions="actionNext"
-									android:digits="1234567890."
-									tools:replace="android:textSize"
-									android:textSize="12dp" />
+									style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense">
+									<com.google.android.material.textfield.TextInputEditText
+										android:id="@+id/Unit_Price8"
+										android:textColor="?attr/colorOnSurfaceVariant"
+										android:hint="0.00"
+										android:textColorHint="?attr/colorOnSurfaceVariant"
+										android:inputType="numberDecimal"
+										android:imeOptions="actionNext"
+										android:digits="1234567890."
+										tools:replace="android:textSize"
+										android:textSize="12dp"
+										android:layout_width="match_parent"
+										android:layout_height="wrap_content" />
+								</com.google.android.material.textfield.TextInputLayout>
 							</LinearLayout>
 							<LinearLayout
 								android:id="@+id/linear73"
@@ -1059,20 +1101,23 @@
 								android:gravity="center_horizontal|center_vertical"
 								android:orientation="horizontal"
 								android:background="@drawable/strok_radius">
-								<EditText
-									android:id="@+id/Unit_Price9"
+								<com.google.android.material.textfield.TextInputLayout
 									android:layout_width="match_parent"
 									android:layout_height="wrap_content"
-									android:background="@android:color/transparent"
-									android:gravity="center_horizontal|center_vertical"
-									android:textColor="#E3E0E6"
-									android:hint="0.00"
-									android:textColorHint="#E3E0E6"
-									android:inputType="numberDecimal"
-									android:imeOptions="actionDone"
-									android:digits="1234567890."
-									tools:replace="android:textSize"
-									android:textSize="12dp" />
+									style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense">
+									<com.google.android.material.textfield.TextInputEditText
+										android:id="@+id/Unit_Price9"
+										android:textColor="?attr/colorOnSurfaceVariant"
+										android:hint="0.00"
+										android:textColorHint="?attr/colorOnSurfaceVariant"
+										android:inputType="numberDecimal"
+										android:imeOptions="actionDone"
+										android:digits="1234567890."
+										tools:replace="android:textSize"
+										android:textSize="12dp"
+										android:layout_width="match_parent"
+										android:layout_height="wrap_content" />
+								</com.google.android.material.textfield.TextInputLayout>
 							</LinearLayout>
 						</LinearLayout>
 						<LinearLayout
@@ -1100,7 +1145,7 @@
 									android:layout_height="wrap_content"
 									android:text="Amount"
 									android:textStyle="bold"
-									android:textColor="#C6C6D0"
+									android:textColor="?attr/colorOnSurfaceVariant"
 									tools:replace="android:textSize"
 									android:textSize="12dp" />
 							</LinearLayout>
@@ -1119,7 +1164,7 @@
 									android:layout_width="wrap_content"
 									android:layout_height="wrap_content"
 									android:text="0.00"
-									android:textColor="#E3E0E6"
+									android:textColor="?attr/colorOnSurfaceVariant"
 									tools:replace="android:textSize"
 									android:textSize="12dp" />
 							</LinearLayout>
@@ -1137,7 +1182,7 @@
 									android:layout_width="wrap_content"
 									android:layout_height="wrap_content"
 									android:text="0.00"
-									android:textColor="#E3E0E6"
+									android:textColor="?attr/colorOnSurfaceVariant"
 									tools:replace="android:textSize"
 									android:textSize="12dp" />
 							</LinearLayout>
@@ -1154,7 +1199,7 @@
 									android:layout_width="wrap_content"
 									android:layout_height="wrap_content"
 									android:text="0.00"
-									android:textColor="#E3E0E6"
+									android:textColor="?attr/colorOnSurfaceVariant"
 									tools:replace="android:textSize"
 									android:textSize="12dp" />
 							</LinearLayout>
@@ -1173,7 +1218,7 @@
 									android:layout_width="wrap_content"
 									android:layout_height="wrap_content"
 									android:text="0.00"
-									android:textColor="#E3E0E6"
+									android:textColor="?attr/colorOnSurfaceVariant"
 									tools:replace="android:textSize"
 									android:textSize="12dp" />
 							</LinearLayout>
@@ -1200,7 +1245,7 @@
 									android:layout_height="wrap_content"
 									android:text="Total Price"
 									android:textStyle="bold"
-									android:textColor="#C6C6D0"
+									android:textColor="?attr/colorOnSurfaceVariant"
 									tools:replace="android:textSize"
 									android:textSize="12dp" />
 							</LinearLayout>
@@ -1219,7 +1264,7 @@
 									android:layout_width="match_parent"
 									android:layout_height="wrap_content"
 									android:text="0.00"
-									android:textColor="#E3E0E6"
+									android:textColor="?attr/colorOnSurfaceVariant"
 									tools:replace="android:textSize"
 									android:textSize="12dp" />
 							</LinearLayout>
@@ -1237,7 +1282,7 @@
 									android:layout_width="match_parent"
 									android:layout_height="wrap_content"
 									android:text="0.00"
-									android:textColor="#E3E0E6"
+									android:textColor="?attr/colorOnSurfaceVariant"
 									tools:replace="android:textSize"
 									android:textSize="12dp" />
 							</LinearLayout>
@@ -1254,7 +1299,7 @@
 									android:layout_width="match_parent"
 									android:layout_height="wrap_content"
 									android:text="0.00"
-									android:textColor="#E3E0E6"
+									android:textColor="?attr/colorOnSurfaceVariant"
 									tools:replace="android:textSize"
 									android:textSize="12dp" />
 							</LinearLayout>
@@ -1273,7 +1318,7 @@
 									android:layout_width="match_parent"
 									android:layout_height="wrap_content"
 									android:text="0.00"
-									android:textColor="#E3E0E6"
+									android:textColor="?attr/colorOnSurfaceVariant"
 									tools:replace="android:textSize"
 									android:textSize="12dp" />
 							</LinearLayout>
@@ -1301,13 +1346,21 @@
 					
 					
 					>
-					<LinearLayout
+					<com.google.android.material.card.MaterialCardView
 						android:id="@+id/linear126"
 						android:layout_width="match_parent"
 						android:layout_height="wrap_content"
-						android:paddingLeft="8dp"
-						android:background="#383D41"
-						android:orientation="horizontal">
+						app:cardBackgroundColor="?attr/colorOnSurface"
+						app:cardElevation="2dp"
+						app:cardCornerRadius="8dp"
+						app:strokeWidth="0dp"
+						style="@style/Widget.Material3.CardView.Filled">
+						<LinearLayout
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:paddingLeft="8dp"
+							android:orientation="horizontal"
+						>
 						<TextView
 							android:id="@+id/textview3"
 							android:layout_width="wrap_content"
@@ -1315,10 +1368,11 @@
 							android:padding="8dp"
 							android:text="Finishes"
 							android:textStyle="bold"
-							android:textColor="#BB86FC"
+							android:textColor="?attr/colorTertiary"
 							tools:replace="android:textSize"
 							android:textSize="16dp" />
-					</LinearLayout>
+						</LinearLayout>
+					</com.google.android.material.card.MaterialCardView>
 					<LinearLayout
 						android:id="@+id/linear86"
 						android:layout_width="match_parent"
@@ -1348,7 +1402,7 @@
 									android:layout_height="wrap_content"
 									android:text="Item"
 									android:textStyle="bold"
-									android:textColor="#C6C6D0"
+									android:textColor="?attr/colorOnSurfaceVariant"
 									tools:replace="android:textSize"
 									android:textSize="12dp" />
 							</LinearLayout>
@@ -1368,7 +1422,7 @@
 									android:layout_height="wrap_content"
 									android:text="Masonry"
 									android:textStyle="bold"
-									android:textColor="#C6C6D0"
+									android:textColor="?attr/colorOnSurfaceVariant"
 									tools:replace="android:textSize"
 									android:textSize="12dp" />
 							</LinearLayout>
@@ -1386,7 +1440,7 @@
 									android:layout_height="wrap_content"
 									android:text="Plaster"
 									android:textStyle="bold"
-									android:textColor="#C6C6D0"
+									android:textColor="?attr/colorOnSurfaceVariant"
 									tools:replace="android:textSize"
 									android:textSize="12dp" />
 							</LinearLayout>
@@ -1406,7 +1460,7 @@
 									android:layout_height="wrap_content"
 									android:text="Painting"
 									android:textStyle="bold"
-									android:textColor="#C6C6D0"
+									android:textColor="?attr/colorOnSurfaceVariant"
 									tools:replace="android:textSize"
 									android:textSize="12dp" />
 							</LinearLayout>
@@ -1435,7 +1489,7 @@
 									android:layout_height="wrap_content"
 									android:text="Unit"
 									android:textStyle="bold"
-									android:textColor="#C6C6D0"
+									android:textColor="?attr/colorOnSurfaceVariant"
 									tools:replace="android:textSize"
 									android:textSize="12dp" />
 							</LinearLayout>
@@ -1454,7 +1508,7 @@
 									android:layout_width="wrap_content"
 									android:layout_height="wrap_content"
 									android:text="m2"
-									android:textColor="#E3E0E6"
+									android:textColor="?attr/colorOnSurfaceVariant"
 									tools:replace="android:textSize"
 									android:textSize="12dp" />
 							</LinearLayout>
@@ -1471,7 +1525,7 @@
 									android:layout_width="wrap_content"
 									android:layout_height="wrap_content"
 									android:text="m2"
-									android:textColor="#E3E0E6"
+									android:textColor="?attr/colorOnSurfaceVariant"
 									tools:replace="android:textSize"
 									android:textSize="12dp" />
 							</LinearLayout>
@@ -1490,7 +1544,7 @@
 									android:layout_width="wrap_content"
 									android:layout_height="wrap_content"
 									android:text="m2"
-									android:textColor="#E3E0E6"
+									android:textColor="?attr/colorOnSurfaceVariant"
 									tools:replace="android:textSize"
 									android:textSize="12dp" />
 							</LinearLayout>
@@ -1521,7 +1575,7 @@
 									android:gravity="center_horizontal|center_vertical"
 									android:text="Unit Price"
 									android:textStyle="bold"
-									android:textColor="#C6C6D0"
+									android:textColor="?attr/colorOnSurfaceVariant"
 									tools:replace="android:textSize"
 									android:textSize="12dp" />
 							</LinearLayout>
@@ -1535,20 +1589,23 @@
 								android:gravity="center_horizontal|center_vertical"
 								android:orientation="horizontal"
 								android:background="@drawable/strok_radius">
-								<EditText
-									android:id="@+id/Unit_Price10"
+								<com.google.android.material.textfield.TextInputLayout
 									android:layout_width="match_parent"
 									android:layout_height="wrap_content"
-									android:background="@android:color/transparent"
-									android:gravity="center_horizontal|center_vertical"
-									android:textColor="#E3E0E6"
-									android:hint="0.00"
-									android:textColorHint="#E3E0E6"
-									android:inputType="numberDecimal"
-									android:imeOptions="actionNext"
-									android:digits="1234567890."
-									tools:replace="android:textSize"
-									android:textSize="12dp" />
+									style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense">
+									<com.google.android.material.textfield.TextInputEditText
+										android:id="@+id/Unit_Price10"
+										android:textColor="?attr/colorOnSurfaceVariant"
+										android:hint="0.00"
+										android:textColorHint="?attr/colorOnSurfaceVariant"
+										android:inputType="numberDecimal"
+										android:imeOptions="actionNext"
+										android:digits="1234567890."
+										tools:replace="android:textSize"
+										android:textSize="12dp"
+										android:layout_width="match_parent"
+										android:layout_height="wrap_content" />
+								</com.google.android.material.textfield.TextInputLayout>
 							</LinearLayout>
 							<LinearLayout
 								android:id="@+id/linear106"
@@ -1558,20 +1615,23 @@
 								android:gravity="center_horizontal|center_vertical"
 								android:orientation="horizontal"
 								android:background="@drawable/strok_radius">
-								<EditText
-									android:id="@+id/Unit_Price11"
+								<com.google.android.material.textfield.TextInputLayout
 									android:layout_width="match_parent"
 									android:layout_height="wrap_content"
-									android:background="@android:color/transparent"
-									android:gravity="center_horizontal|center_vertical"
-									android:textColor="#E3E0E6"
-									android:hint="0.00"
-									android:textColorHint="#E3E0E6"
-									android:inputType="numberDecimal"
-									android:imeOptions="actionNext"
-									android:digits="1234567890."
-									tools:replace="android:textSize"
-									android:textSize="12dp" />
+									style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense">
+									<com.google.android.material.textfield.TextInputEditText
+										android:id="@+id/Unit_Price11"
+										android:textColor="?attr/colorOnSurfaceVariant"
+										android:hint="0.00"
+										android:textColorHint="?attr/colorOnSurfaceVariant"
+										android:inputType="numberDecimal"
+										android:imeOptions="actionNext"
+										android:digits="1234567890."
+										tools:replace="android:textSize"
+										android:textSize="12dp"
+										android:layout_width="match_parent"
+										android:layout_height="wrap_content" />
+								</com.google.android.material.textfield.TextInputLayout>
 							</LinearLayout>
 							<LinearLayout
 								android:id="@+id/linear107"
@@ -1583,20 +1643,23 @@
 								android:gravity="center_horizontal|center_vertical"
 								android:orientation="horizontal"
 								android:background="@drawable/strok_radius">
-								<EditText
-									android:id="@+id/Unit_Price12"
+								<com.google.android.material.textfield.TextInputLayout
 									android:layout_width="match_parent"
 									android:layout_height="wrap_content"
-									android:background="@android:color/transparent"
-									android:gravity="center_horizontal|center_vertical"
-									android:textColor="#E3E0E6"
-									android:hint="0.00"
-									android:textColorHint="#E3E0E6"
-									android:inputType="numberDecimal"
-									android:imeOptions="actionNext"
-									android:digits="1234567890."
-									tools:replace="android:textSize"
-									android:textSize="12dp" />
+									style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense">
+									<com.google.android.material.textfield.TextInputEditText
+										android:id="@+id/Unit_Price12"
+										android:textColor="?attr/colorOnSurfaceVariant"
+										android:hint="0.00"
+										android:textColorHint="?attr/colorOnSurfaceVariant"
+										android:inputType="numberDecimal"
+										android:imeOptions="actionNext"
+										android:digits="1234567890."
+										tools:replace="android:textSize"
+										android:textSize="12dp"
+										android:layout_width="match_parent"
+										android:layout_height="wrap_content" />
+								</com.google.android.material.textfield.TextInputLayout>
 							</LinearLayout>
 						</LinearLayout>
 						<LinearLayout
@@ -1624,7 +1687,7 @@
 									android:layout_height="wrap_content"
 									android:text="Amount"
 									android:textStyle="bold"
-									android:textColor="#C6C6D0"
+									android:textColor="?attr/colorOnSurfaceVariant"
 									tools:replace="android:textSize"
 									android:textSize="12dp" />
 							</LinearLayout>
@@ -1643,7 +1706,7 @@
 									android:layout_width="wrap_content"
 									android:layout_height="wrap_content"
 									android:text="0.00"
-									android:textColor="#E3E0E6"
+									android:textColor="?attr/colorOnSurfaceVariant"
 									tools:replace="android:textSize"
 									android:textSize="12dp" />
 							</LinearLayout>
@@ -1660,7 +1723,7 @@
 									android:layout_width="wrap_content"
 									android:layout_height="wrap_content"
 									android:text="0.00"
-									android:textColor="#E3E0E6"
+									android:textColor="?attr/colorOnSurfaceVariant"
 									tools:replace="android:textSize"
 									android:textSize="12dp" />
 							</LinearLayout>
@@ -1679,7 +1742,7 @@
 									android:layout_width="wrap_content"
 									android:layout_height="wrap_content"
 									android:text="0.00"
-									android:textColor="#E3E0E6"
+									android:textColor="?attr/colorOnSurfaceVariant"
 									tools:replace="android:textSize"
 									android:textSize="12dp" />
 							</LinearLayout>
@@ -1706,7 +1769,7 @@
 									android:layout_height="wrap_content"
 									android:text="Total Price"
 									android:textStyle="bold"
-									android:textColor="#C6C6D0"
+									android:textColor="?attr/colorOnSurfaceVariant"
 									tools:replace="android:textSize"
 									android:textSize="12dp" />
 							</LinearLayout>
@@ -1725,7 +1788,7 @@
 									android:layout_width="wrap_content"
 									android:layout_height="wrap_content"
 									android:text="0.00"
-									android:textColor="#E3E0E6"
+									android:textColor="?attr/colorOnSurfaceVariant"
 									tools:replace="android:textSize"
 									android:textSize="12dp" />
 							</LinearLayout>
@@ -1742,7 +1805,7 @@
 									android:layout_width="wrap_content"
 									android:layout_height="wrap_content"
 									android:text="0.00"
-									android:textColor="#E3E0E6"
+									android:textColor="?attr/colorOnSurfaceVariant"
 									tools:replace="android:textSize"
 									android:textSize="12dp" />
 							</LinearLayout>
@@ -1761,7 +1824,7 @@
 									android:layout_width="wrap_content"
 									android:layout_height="wrap_content"
 									android:text="0.00"
-									android:textColor="#E3E0E6"
+									android:textColor="?attr/colorOnSurfaceVariant"
 									tools:replace="android:textSize"
 									android:textSize="12dp" />
 							</LinearLayout>
@@ -1788,13 +1851,21 @@
 					android:background="@drawable/strok_radius"
 					
 					>
-					<LinearLayout
+					<com.google.android.material.card.MaterialCardView
 						android:id="@+id/linear128"
 						android:layout_width="match_parent"
 						android:layout_height="wrap_content"
-						android:paddingLeft="8dp"
-						android:background="#383D41"
-						android:orientation="horizontal">
+						app:cardBackgroundColor="?attr/colorOnSurface"
+						app:cardElevation="2dp"
+						app:cardCornerRadius="8dp"
+						app:strokeWidth="0dp"
+						style="@style/Widget.Material3.CardView.Filled">
+						<LinearLayout
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:paddingLeft="8dp"
+							android:orientation="horizontal"
+						>
 						<TextView
 							android:id="@+id/textview67"
 							android:layout_width="wrap_content"
@@ -1802,10 +1873,11 @@
 							android:padding="8dp"
 							android:text="Manholes"
 							android:textStyle="bold"
-							android:textColor="#BB86FC"
+							android:textColor="?attr/colorTertiary"
 							tools:replace="android:textSize"
 							android:textSize="16dp" />
-					</LinearLayout>
+						</LinearLayout>
+					</com.google.android.material.card.MaterialCardView>
 					<LinearLayout
 						android:id="@+id/linear129"
 						android:layout_width="match_parent"
@@ -1835,7 +1907,7 @@
 									android:text="Item"
 									android:textSize="12sp"
 									android:textStyle="bold"
-									android:textColor="#C6C6D0" />
+									android:textColor="?attr/colorOnSurfaceVariant" />
 							</LinearLayout>
 							<LinearLayout
 								android:id="@+id/linear136"
@@ -1854,7 +1926,7 @@
 									android:text="PC Footings"
 									android:textSize="12sp"
 									android:textStyle="bold"
-									android:textColor="#C6C6D0" />
+									android:textColor="?attr/colorOnSurfaceVariant" />
 							</LinearLayout>
 							<LinearLayout
 								android:id="@+id/linear137"
@@ -1871,7 +1943,7 @@
 									android:text="RC Footings"
 									android:textSize="12sp"
 									android:textStyle="bold"
-									android:textColor="#C6C6D0" />
+									android:textColor="?attr/colorOnSurfaceVariant" />
 							</LinearLayout>
 							<LinearLayout
 								android:id="@+id/linear138"
@@ -1890,7 +1962,7 @@
 									android:text="Columns RC"
 									android:textSize="12sp"
 									android:textStyle="bold"
-									android:textColor="#C6C6D0" />
+									android:textColor="?attr/colorOnSurfaceVariant" />
 							</LinearLayout>
 							<LinearLayout
 								android:id="@+id/linear139"
@@ -1907,7 +1979,7 @@
 									android:text="Beams"
 									android:textSize="12sp"
 									android:textStyle="bold"
-									android:textColor="#C6C6D0" />
+									android:textColor="?attr/colorOnSurfaceVariant" />
 							</LinearLayout>
 							<LinearLayout
 								android:id="@+id/linear140"
@@ -1926,7 +1998,7 @@
 									android:text="Slabs"
 									android:textSize="12sp"
 									android:textStyle="bold"
-									android:textColor="#C6C6D0" />
+									android:textColor="?attr/colorOnSurfaceVariant" />
 							</LinearLayout>
 						</LinearLayout>
 						<LinearLayout
@@ -1954,7 +2026,7 @@
 									android:text="Unit"
 									android:textSize="12sp"
 									android:textStyle="bold"
-									android:textColor="#C6C6D0" />
+									android:textColor="?attr/colorOnSurfaceVariant" />
 							</LinearLayout>
 							<LinearLayout
 								android:id="@+id/linear142"
@@ -1972,7 +2044,7 @@
 									android:layout_height="wrap_content"
 									android:text="m3"
 									android:textSize="12sp"
-									android:textColor="#E3E0E6" />
+									android:textColor="?attr/colorOnSurfaceVariant" />
 							</LinearLayout>
 							<LinearLayout
 								android:id="@+id/linear143"
@@ -1988,7 +2060,7 @@
 									android:layout_height="wrap_content"
 									android:text="m3"
 									android:textSize="12sp"
-									android:textColor="#E3E0E6" />
+									android:textColor="?attr/colorOnSurfaceVariant" />
 							</LinearLayout>
 							<LinearLayout
 								android:id="@+id/linear144"
@@ -2006,7 +2078,7 @@
 									android:layout_height="wrap_content"
 									android:text="m3"
 									android:textSize="12sp"
-									android:textColor="#E3E0E6" />
+									android:textColor="?attr/colorOnSurfaceVariant" />
 							</LinearLayout>
 							<LinearLayout
 								android:id="@+id/linear145"
@@ -2022,7 +2094,7 @@
 									android:layout_height="wrap_content"
 									android:text="m3"
 									android:textSize="12sp"
-									android:textColor="#E3E0E6" />
+									android:textColor="?attr/colorOnSurfaceVariant" />
 							</LinearLayout>
 							<LinearLayout
 								android:id="@+id/linear146"
@@ -2040,7 +2112,7 @@
 									android:layout_height="wrap_content"
 									android:text="m3"
 									android:textSize="12sp"
-									android:textColor="#E3E0E6" />
+									android:textColor="?attr/colorOnSurfaceVariant" />
 							</LinearLayout>
 						</LinearLayout>
 						<LinearLayout
@@ -2070,7 +2142,7 @@
 									android:text="Unit Price"
 									android:textSize="12sp"
 									android:textStyle="bold"
-									android:textColor="#C6C6D0" />
+									android:textColor="?attr/colorOnSurfaceVariant" />
 							</LinearLayout>
 							<LinearLayout
 								android:id="@+id/linear148"
@@ -2082,19 +2154,22 @@
 								android:gravity="center_horizontal|center_vertical"
 								android:orientation="horizontal"
 								android:background="@drawable/strok_radius">
-								<EditText
-									android:id="@+id/edittext1"
+								<com.google.android.material.textfield.TextInputLayout
 									android:layout_width="match_parent"
 									android:layout_height="wrap_content"
-									android:background="@android:color/transparent"
-									android:gravity="center_horizontal|center_vertical"
-									android:textSize="12sp"
-									android:textColor="#E3E0E6"
-									android:hint="0.00"
-									android:textColorHint="#E3E0E6"
-									android:inputType="numberSigned|numberDecimal"
-									android:imeOptions="actionNext"
-									android:digits="1234567890." />
+									style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense">
+									<com.google.android.material.textfield.TextInputEditText
+										android:id="@+id/edittext1"
+										android:textSize="12sp"
+										android:textColor="?attr/colorOnSurfaceVariant"
+										android:hint="0.00"
+										android:textColorHint="?attr/colorOnSurfaceVariant"
+										android:inputType="numberSigned|numberDecimal"
+										android:imeOptions="actionNext"
+										android:digits="1234567890."
+										android:layout_width="match_parent"
+										android:layout_height="wrap_content" />
+								</com.google.android.material.textfield.TextInputLayout>
 							</LinearLayout>
 							<LinearLayout
 								android:id="@+id/linear149"
@@ -2104,19 +2179,22 @@
 								android:gravity="center_horizontal|center_vertical"
 								android:orientation="horizontal"
 								android:background="@drawable/strok_radius">
-								<EditText
-									android:id="@+id/edittext2"
+								<com.google.android.material.textfield.TextInputLayout
 									android:layout_width="match_parent"
 									android:layout_height="wrap_content"
-									android:background="@android:color/transparent"
-									android:gravity="center_horizontal|center_vertical"
-									android:textSize="12sp"
-									android:textColor="#E3E0E6"
-									android:hint="0.00"
-									android:textColorHint="#E3E0E6"
-									android:inputType="numberDecimal"
-									android:imeOptions="actionNext"
-									android:digits="1234567890." />
+									style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense">
+									<com.google.android.material.textfield.TextInputEditText
+										android:id="@+id/edittext2"
+										android:textSize="12sp"
+										android:textColor="?attr/colorOnSurfaceVariant"
+										android:hint="0.00"
+										android:textColorHint="?attr/colorOnSurfaceVariant"
+										android:inputType="numberDecimal"
+										android:imeOptions="actionNext"
+										android:digits="1234567890."
+										android:layout_width="match_parent"
+										android:layout_height="wrap_content" />
+								</com.google.android.material.textfield.TextInputLayout>
 							</LinearLayout>
 							<LinearLayout
 								android:id="@+id/linear150"
@@ -2128,19 +2206,22 @@
 								android:gravity="center_horizontal|center_vertical"
 								android:orientation="horizontal"
 								android:background="@drawable/strok_radius">
-								<EditText
-									android:id="@+id/edittext3"
+								<com.google.android.material.textfield.TextInputLayout
 									android:layout_width="match_parent"
 									android:layout_height="wrap_content"
-									android:background="@android:color/transparent"
-									android:gravity="center_horizontal|center_vertical"
-									android:textSize="12sp"
-									android:textColor="#E3E0E6"
-									android:hint="0.00"
-									android:textColorHint="#E3E0E6"
-									android:inputType="numberDecimal"
-									android:imeOptions="actionNext"
-									android:digits="1234567890." />
+									style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense">
+									<com.google.android.material.textfield.TextInputEditText
+										android:id="@+id/edittext3"
+										android:textSize="12sp"
+										android:textColor="?attr/colorOnSurfaceVariant"
+										android:hint="0.00"
+										android:textColorHint="?attr/colorOnSurfaceVariant"
+										android:inputType="numberDecimal"
+										android:imeOptions="actionNext"
+										android:digits="1234567890."
+										android:layout_width="match_parent"
+										android:layout_height="wrap_content" />
+								</com.google.android.material.textfield.TextInputLayout>
 							</LinearLayout>
 							<LinearLayout
 								android:id="@+id/linear151"
@@ -2150,19 +2231,22 @@
 								android:gravity="center_horizontal|center_vertical"
 								android:orientation="horizontal"
 								android:background="@drawable/strok_radius">
-								<EditText
-									android:id="@+id/edittext4"
+								<com.google.android.material.textfield.TextInputLayout
 									android:layout_width="match_parent"
 									android:layout_height="wrap_content"
-									android:background="@android:color/transparent"
-									android:gravity="center_horizontal|center_vertical"
-									android:textSize="12sp"
-									android:textColor="#E3E0E6"
-									android:hint="0.00"
-									android:textColorHint="#E3E0E6"
-									android:inputType="numberDecimal"
-									android:imeOptions="actionNext"
-									android:digits="1234567890." />
+									style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense">
+									<com.google.android.material.textfield.TextInputEditText
+										android:id="@+id/edittext4"
+										android:textSize="12sp"
+										android:textColor="?attr/colorOnSurfaceVariant"
+										android:hint="0.00"
+										android:textColorHint="?attr/colorOnSurfaceVariant"
+										android:inputType="numberDecimal"
+										android:imeOptions="actionNext"
+										android:digits="1234567890."
+										android:layout_width="match_parent"
+										android:layout_height="wrap_content" />
+								</com.google.android.material.textfield.TextInputLayout>
 							</LinearLayout>
 							<LinearLayout
 								android:id="@+id/linear152"
@@ -2174,19 +2258,22 @@
 								android:gravity="center_horizontal|center_vertical"
 								android:orientation="horizontal"
 								android:background="@drawable/strok_radius">
-								<EditText
-									android:id="@+id/edittext5"
+								<com.google.android.material.textfield.TextInputLayout
 									android:layout_width="match_parent"
 									android:layout_height="wrap_content"
-									android:background="@android:color/transparent"
-									android:gravity="center_horizontal|center_vertical"
-									android:textSize="12sp"
-									android:textColor="#E3E0E6"
-									android:hint="0.00"
-									android:textColorHint="#E3E0E6"
-									android:inputType="numberDecimal"
-									android:imeOptions="actionDone"
-									android:digits="1234567890." />
+									style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense">
+									<com.google.android.material.textfield.TextInputEditText
+										android:id="@+id/edittext5"
+										android:textSize="12sp"
+										android:textColor="?attr/colorOnSurfaceVariant"
+										android:hint="0.00"
+										android:textColorHint="?attr/colorOnSurfaceVariant"
+										android:inputType="numberDecimal"
+										android:imeOptions="actionDone"
+										android:digits="1234567890."
+										android:layout_width="match_parent"
+										android:layout_height="wrap_content" />
+								</com.google.android.material.textfield.TextInputLayout>
 							</LinearLayout>
 						</LinearLayout>
 						<LinearLayout
@@ -2215,7 +2302,7 @@
 									android:text="Amount"
 									android:textSize="12sp"
 									android:textStyle="bold"
-									android:textColor="#C6C6D0" />
+									android:textColor="?attr/colorOnSurfaceVariant" />
 							</LinearLayout>
 							<LinearLayout
 								android:id="@+id/linear154"
@@ -2233,7 +2320,7 @@
 									android:layout_height="wrap_content"
 									android:text="0.00"
 									android:textSize="12sp"
-									android:textColor="#E3E0E6" />
+									android:textColor="?attr/colorOnSurfaceVariant" />
 							</LinearLayout>
 							<LinearLayout
 								android:id="@+id/linear155"
@@ -2249,7 +2336,7 @@
 									android:layout_height="wrap_content"
 									android:text="0.00"
 									android:textSize="12sp"
-									android:textColor="#E3E0E6" />
+									android:textColor="?attr/colorOnSurfaceVariant" />
 							</LinearLayout>
 							<LinearLayout
 								android:id="@+id/linear156"
@@ -2267,7 +2354,7 @@
 									android:layout_height="wrap_content"
 									android:text="0.00"
 									android:textSize="12sp"
-									android:textColor="#E3E0E6" />
+									android:textColor="?attr/colorOnSurfaceVariant" />
 							</LinearLayout>
 							<LinearLayout
 								android:id="@+id/linear157"
@@ -2283,7 +2370,7 @@
 									android:layout_height="wrap_content"
 									android:text="0.00"
 									android:textSize="12sp"
-									android:textColor="#E3E0E6" />
+									android:textColor="?attr/colorOnSurfaceVariant" />
 							</LinearLayout>
 							<LinearLayout
 								android:id="@+id/linear158"
@@ -2301,7 +2388,7 @@
 									android:layout_height="wrap_content"
 									android:text="0.00"
 									android:textSize="12sp"
-									android:textColor="#E3E0E6" />
+									android:textColor="?attr/colorOnSurfaceVariant" />
 							</LinearLayout>
 						</LinearLayout>
 						<LinearLayout
@@ -2327,7 +2414,7 @@
 									android:text="Total Price"
 									android:textSize="12sp"
 									android:textStyle="bold"
-									android:textColor="#C6C6D0" />
+									android:textColor="?attr/colorOnSurfaceVariant" />
 							</LinearLayout>
 							<LinearLayout
 								android:id="@+id/linear160"
@@ -2345,7 +2432,7 @@
 									android:layout_height="wrap_content"
 									android:text="0.00"
 									android:textSize="12sp"
-									android:textColor="#E3E0E6" />
+									android:textColor="?attr/colorOnSurfaceVariant" />
 							</LinearLayout>
 							<LinearLayout
 								android:id="@+id/linear161"
@@ -2361,7 +2448,7 @@
 									android:layout_height="wrap_content"
 									android:text="0.00"
 									android:textSize="12sp"
-									android:textColor="#E3E0E6" />
+									android:textColor="?attr/colorOnSurfaceVariant" />
 							</LinearLayout>
 							<LinearLayout
 								android:id="@+id/linear162"
@@ -2379,7 +2466,7 @@
 									android:layout_height="wrap_content"
 									android:text="0.00"
 									android:textSize="12sp"
-									android:textColor="#E3E0E6" />
+									android:textColor="?attr/colorOnSurfaceVariant" />
 							</LinearLayout>
 							<LinearLayout
 								android:id="@+id/linear163"
@@ -2395,7 +2482,7 @@
 									android:layout_height="wrap_content"
 									android:text="0.00"
 									android:textSize="12sp"
-									android:textColor="#E3E0E6" />
+									android:textColor="?attr/colorOnSurfaceVariant" />
 							</LinearLayout>
 							<LinearLayout
 								android:id="@+id/linear164"
@@ -2413,12 +2500,12 @@
 									android:layout_height="wrap_content"
 									android:text="0.00"
 									android:textSize="12sp"
-									android:textColor="#E3E0E6" />
+									android:textColor="?attr/colorOnSurfaceVariant" />
 							</LinearLayout>
 						</LinearLayout>
 					</LinearLayout>
 				</LinearLayout>
 			</androidx.cardview.widget.CardView>
 		</LinearLayout>
-	</ScrollView>
+	</androidx.core.widget.NestedScrollView>
 </LinearLayout>
