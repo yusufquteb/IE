@@ -1,8 +1,10 @@
 package com.my.iengineer1.ui.boq
 
+import android.content.Context
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import com.my.iengineer1.core.base.BaseViewModel
+import com.my.iengineer1.data.export.BOQPdfExporter
 import com.my.iengineer1.domain.engine.BOQEngine
 import com.my.iengineer1.domain.engine.BOQSection
 import com.my.iengineer1.domain.engine.BOQSummary
@@ -10,13 +12,36 @@ import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject
 
 @HiltViewModel
-class BOQSummaryViewModel @Inject constructor() : BaseViewModel() {
+class BOQSummaryViewModel @Inject constructor(
+    private val pdfExporter: BOQPdfExporter
+) : BaseViewModel() {
+
+    sealed class ExportResult {
+        data class Success(val path: String) : ExportResult()
+        data class Failure(val msg: String) : ExportResult()
+    }
 
     private val _sections = MutableLiveData<List<BOQSection>>(emptyList())
     val sections: LiveData<List<BOQSection>> get() = _sections
 
     private val _summary = MutableLiveData<BOQSummary?>()
     val summary: LiveData<BOQSummary?> get() = _summary
+
+    private val _exportResult = MutableLiveData<ExportResult?>()
+    val exportResult: LiveData<ExportResult?> = _exportResult
+
+    fun exportPdf(context: Context, summary: BOQSummary) = launch {
+        val path = pdfExporter.export(
+            context = context,
+            boqSummary = summary,
+            projectName = summary.projectName
+        )
+        _exportResult.postValue(
+            if (path != null) ExportResult.Success(path) else ExportResult.Failure("فشل تصدير PDF")
+        )
+    }
+
+    fun openPdf(context: Context, path: String) = pdfExporter.openPdf(context, path)
 
     fun addConcreteSection(
         projectName: String,
@@ -74,7 +99,6 @@ class BOQSummaryViewModel @Inject constructor() : BaseViewModel() {
         _summary.value = null
     }
 
-    // Demo: load sample BOQ
     fun loadSampleBOQ() {
         val conc = BOQEngine.buildConcreteSection(
             "مشروع نموذجي",

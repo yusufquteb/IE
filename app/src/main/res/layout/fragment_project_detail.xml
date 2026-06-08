@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorSurface">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:navigationIcon="@drawable/ic_back"
+            app:title="@string/project_detail_title" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Project Info Card -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/project_info"
+                        android:textAppearance="?attr/textAppearanceTitleMedium"
+                        android:textColor="?attr/colorOnSurface"
+                        android:layout_marginBottom="12dp" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/til_name"
+                        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/project_name"
+                        android:layout_marginBottom="12dp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/et_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:imeOptions="actionNext"
+                            android:inputType="text" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/til_client"
+                        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/project_client"
+                        android:layout_marginBottom="12dp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/et_client"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:imeOptions="actionNext"
+                            android:inputType="text" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/til_engineer"
+                        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/project_engineer"
+                        android:layout_marginBottom="12dp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/et_engineer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:imeOptions="actionNext"
+                            android:inputType="text" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/til_location"
+                        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/project_location">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/et_location"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:imeOptions="actionDone"
+                            android:inputType="text" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Save Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:paddingVertical="12dp"
+                android:text="@string/save_project"
+                android:textAllCaps="false" />
+
+            <!-- Export PDF Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_export_pdf"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:paddingVertical="12dp"
+                android:text="@string/export_pdf"
+                android:textAllCaps="false"
+                app:icon="@drawable/ic_export" />
+
+            <!-- Status text -->
+            <TextView
+                android:id="@+id/tv_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:textAppearance="?attr/textAppearanceBodySmall"
+                android:textColor="?attr/colorPrimary"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,8 +1,11 @@
 package com.my.iengineer1.ui.projects
 
+import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.fragment.app.viewModels
+import androidx.navigation.fragment.findNavController
+import com.my.iengineer1.R
 import com.my.iengineer1.core.base.BaseFragment
 import com.my.iengineer1.core.extensions.hide
 import com.my.iengineer1.core.extensions.show
@@ -19,7 +22,10 @@ class ProjectsFragment : BaseFragment<FragmentProjectsBinding>() {
 
     override fun setupViews() {
         binding.fabAddProject.setOnClickListener {
-            viewModel.createProject("مشروع جديد")
+            findNavController().navigate(
+                R.id.projectDetailFragment,
+                Bundle().apply { putLong(ProjectDetailFragment.ARG_PROJECT_ID, -1L) }
+            )
         }
     }
 
@@ -31,9 +37,16 @@ class ProjectsFragment : BaseFragment<FragmentProjectsBinding>() {
             } else {
                 binding.rvProjects.show()
                 binding.layoutEmpty.hide()
-                binding.rvProjects.adapter = ProjectsAdapter(projects) { project ->
-                    viewModel.deleteProject(project)
-                }
+                binding.rvProjects.adapter = ProjectsAdapter(
+                    projects,
+                    onOpen = { project ->
+                        findNavController().navigate(
+                            R.id.projectDetailFragment,
+                            ProjectDetailFragment.newBundle(project.id)
+                        )
+                    },
+                    onDelete = { project -> viewModel.deleteProject(project) }
+                )
             }
         }
     }

@@ -2,6 +2,7 @@ package com.my.iengineer1.ui.boq
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import com.my.iengineer1.core.base.BaseFragment
@@ -18,9 +19,12 @@ class BOQSummaryFragment : BaseFragment<FragmentBoqSummaryBinding>() {
 
     override fun setupViews() {
         binding.toolbar.setNavigationOnClickListener { findNavController().navigateUp() }
-        binding.btnExportPdf.setOnClickListener { /* TODO: wire PDF export */ }
 
-        // Load sample for demonstration
+        binding.btnExportPdf.setOnClickListener {
+            val summary = viewModel.summary.value ?: return@setOnClickListener
+            viewModel.exportPdf(requireContext(), summary)
+        }
+
         viewModel.loadSampleBOQ()
     }
 
@@ -35,6 +39,19 @@ class BOQSummaryFragment : BaseFragment<FragmentBoqSummaryBinding>() {
                 binding.tvOverhead.text = String.format("%.2f", summary.overhead)
                 binding.tvVat.text = String.format("%.2f", summary.vat)
                 binding.tvGrandTotal.text = String.format("%.2f", summary.grandTotal)
+            }
+        }
+
+        viewModel.exportResult.observe(viewLifecycleOwner) { result ->
+            when (result) {
+                is BOQSummaryViewModel.ExportResult.Success -> {
+                    Toast.makeText(requireContext(), getString(com.my.iengineer1.R.string.export_saved, result.path), Toast.LENGTH_LONG).show()
+                    viewModel.openPdf(requireContext(), result.path)
+                }
+                is BOQSummaryViewModel.ExportResult.Failure -> {
+                    Toast.makeText(requireContext(), result.msg, Toast.LENGTH_SHORT).show()
+                }
+                null -> {}
             }
         }
     }

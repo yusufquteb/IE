@@ -11,6 +11,7 @@ import java.util.Locale
 
 class ProjectsAdapter(
     private val projects: List<Project>,
+    private val onOpen: (Project) -> Unit,
     private val onDelete: (Project) -> Unit
 ) : RecyclerView.Adapter<ProjectsAdapter.VH>() {
 
@@ -23,6 +24,7 @@ class ProjectsAdapter(
             binding.tvName.text = project.name
             binding.tvDate.text = dateFormat.format(Date(project.updatedAt))
             binding.tvCategory.text = project.category.ifEmpty { "—" }
+            binding.root.setOnClickListener { onOpen(project) }
             binding.btnDelete.setOnClickListener { onDelete(project) }
         }
     }

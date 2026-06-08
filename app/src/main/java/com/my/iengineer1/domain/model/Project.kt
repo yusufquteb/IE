@@ -5,6 +5,9 @@ data class Project(
     val name: String,
     val description: String = "",
     val category: String = "",
+    val client: String = "",
+    val engineer: String = "",
+    val location: String = "",
     val createdAt: Long = System.currentTimeMillis(),
     val updatedAt: Long = System.currentTimeMillis()
 )

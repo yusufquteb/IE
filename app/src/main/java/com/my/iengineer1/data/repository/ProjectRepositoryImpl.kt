@@ -27,6 +27,6 @@ class ProjectRepositoryImpl @Inject constructor(
     override suspend fun deleteById(id: Long) =
         dao.deleteById(id)
 
-    private fun ProjectEntity.toDomain() = Project(id, name, description, category, createdAt, updatedAt)
-    private fun Project.toEntity() = ProjectEntity(id, name, description, category, createdAt, updatedAt)
+    private fun ProjectEntity.toDomain() = Project(id, name, description, category, client, engineer, location, createdAt, updatedAt)
+    private fun Project.toEntity() = ProjectEntity(id, name, description, category, client, engineer, location, createdAt, updatedAt)
 }

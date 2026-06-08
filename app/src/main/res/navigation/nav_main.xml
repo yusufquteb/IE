@@ -9,7 +9,18 @@
         android:id="@+id/homeFragment"
         android:name="com.my.iengineer1.ui.home.HomeFragment"
         android:label="@string/nav_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_home_to_search"
+            app:destination="@id/searchFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.my.iengineer1.ui.search.SearchFragment"
+        android:label="@string/search"
+        tools:layout="@layout/fragment_search" />
 
     <fragment
         android:id="@+id/calculationsFragment"
@@ -136,6 +147,22 @@
         <action
             android:id="@+id/action_projects_to_boq"
             app:destination="@id/boqSummaryFragment" />
+
+        <action
+            android:id="@+id/action_projects_to_detail"
+            app:destination="@id/projectDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/projectDetailFragment"
+        android:name="com.my.iengineer1.ui.projects.ProjectDetailFragment"
+        android:label="@string/project_detail_title"
+        tools:layout="@layout/fragment_project_detail">
+
+        <argument
+            android:name="projectId"
+            app:argType="long"
+            android:defaultValue="-1" />
     </fragment>
 
     <fragment

@@ -3,7 +3,6 @@ package com.my.iengineer1.ui.home
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import androidx.core.widget.addTextChangedListener
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import com.my.iengineer1.R
@@ -32,8 +31,10 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>() {
             findNavController().navigate(R.id.projectsFragment)
         }
 
-        binding.etSearch.addTextChangedListener { text ->
-            viewModel.search(text?.toString() ?: "")
+        // Tapping search bar opens dedicated search screen
+        binding.etSearch.isFocusable = false
+        binding.etSearch.setOnClickListener {
+            findNavController().navigate(R.id.searchFragment)
         }
     }
 
