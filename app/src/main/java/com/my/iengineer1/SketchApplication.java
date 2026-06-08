@@ -3,23 +3,15 @@ package com.my.iengineer1;
 import android.app.Application;
 import com.my.iengineer1.db.AppDatabase;
 
+// Legacy stub — kept so old Activities compile during migration.
+// The real Application class is IEngineerApp (Hilt).
 public class SketchApplication extends Application {
 
-    private static SketchApplication instance;
-
-    @Override
-    public void onCreate() {
-        super.onCreate();
-        instance = this;
-        // Warm up Room DB on background thread
-        new Thread(() -> AppDatabase.getInstance(this)).start();
-    }
-
     public static SketchApplication getInstance() {
-        return instance;
+        return (SketchApplication) IEngineerApp.getInstance();
     }
 
     public static AppDatabase getDatabase() {
-        return AppDatabase.getInstance(instance);
+        return IEngineerApp.getDatabase();
     }
 }

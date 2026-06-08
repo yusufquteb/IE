@@ -1,6 +1,108 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">iEngineer - الحصر الهندسي</string>
+    <string name="app_name_full">iEngineer Pro</string>
+
+    <!-- Bottom Nav -->
+    <string name="nav_home">الرئيسية</string>
+    <string name="nav_calculations">الحسابات</string>
+    <string name="nav_projects">المشاريع</string>
+    <string name="nav_ai">المساعد الذكي</string>
+    <string name="nav_settings">الإعدادات</string>
+
+    <!-- Home -->
+    <string name="home_greeting">مرحباً، المهندس</string>
+    <string name="home_search_hint">ابحث عن أداة أو حساب…</string>
+    <string name="home_quick_access">وصول سريع</string>
+    <string name="home_categories">الأقسام</string>
+    <string name="home_recent_projects">آخر المشاريع</string>
+    <string name="home_no_projects">لا توجد مشاريع حتى الآن</string>
+    <string name="home_create_project">إنشاء مشروع جديد</string>
+    <string name="see_all">عرض الكل</string>
+    <string name="search">بحث</string>
+
+    <!-- Calculation Categories -->
+    <string name="calc_concrete">الخرسانة المسلحة</string>
+    <string name="calc_concrete_sub">أساسات، أعمدة، جدران</string>
+    <string name="calc_roads">الطرق والأسفلت</string>
+    <string name="calc_roads_sub">طبقات الأسفلت، حصر كميات</string>
+    <string name="calc_sanitation">الصرف الصحي</string>
+    <string name="calc_sanitation_sub">مواسير، خطوط، أعماق</string>
+    <string name="calc_structural">الحسابات الإنشائية</string>
+    <string name="calc_structural_sub">عوارض، بلاطات، حمولات</string>
+    <string name="calc_concrete_footing">أساس خرسانة مسلحة</string>
+    <string name="calc_asphalt">حساب طبقات الأسفلت</string>
+    <string name="calc_sewer_pipe">حساب خط صرف صحي</string>
+
+    <!-- Input Labels -->
+    <string name="input_data">بيانات الإدخال</string>
+    <string name="results">النتائج</string>
+    <string name="calculate">احسب</string>
+    <string name="column_load_kn">حمل العمود</string>
+    <string name="soil_bearing_capacity">طاقة تحمل التربة</string>
+    <string name="concrete_grade">درجة الخرسانة</string>
+    <string name="steel_grade">درجة الصلب</string>
+    <string name="road_length_m">طول الطريق</string>
+    <string name="road_width_m">عرض الطريق</string>
+    <string name="wearing_thickness_mm">سماكة الطبقة السطحية</string>
+    <string name="binder_thickness_mm">سماكة طبقة الرابط</string>
+    <string name="base_thickness_mm">سماكة طبقة الأساس</string>
+    <string name="pipe_length_m">طول الماسورة</string>
+    <string name="pipe_diameter_mm">قطر الماسورة</string>
+    <string name="slope_promille">الميلان</string>
+    <string name="slope_helper">الحد الأدنى المسموح 5‰ (1:200)</string>
+    <string name="excavation_width_m">عرض الحفر</string>
+    <string name="excavation_depth_m">عمق الحفر</string>
+
+    <!-- Result Labels -->
+    <string name="result_footing_size">أبعاد الأساس</string>
+    <string name="result_footing_depth">عمق الأساس</string>
+    <string name="result_steel_area">مساحة الحديد</string>
+    <string name="result_bar_diameter">قطر الأسياخ</string>
+    <string name="result_bar_spacing">مسافة بين الأسياخ</string>
+    <string name="result_bars_count">عدد الأسياخ</string>
+    <string name="result_concrete_volume">حجم الخرسانة</string>
+    <string name="result_steel_weight">وزن الحديد</string>
+    <string name="road_area">مساحة الطريق</string>
+    <string name="wearing_volume">حجم الطبقة السطحية</string>
+    <string name="wearing_weight">وزن الطبقة السطحية</string>
+    <string name="binder_volume">حجم طبقة الرابط</string>
+    <string name="binder_weight">وزن طبقة الرابط</string>
+    <string name="base_volume">حجم طبقة الأساس</string>
+    <string name="total_asphalt_weight">إجمالي وزن الأسفلت</string>
+    <string name="flow_velocity">سرعة التدفق</string>
+    <string name="flow_capacity">سعة التدفق</string>
+    <string name="slope_status">حالة الميلان</string>
+    <string name="excavation_volume">حجم الحفر</string>
+    <string name="pipe_volume">حجم الماسورة</string>
+    <string name="sand_bedding_volume">حجم فرشة الرمل</string>
+    <string name="backfill_volume">حجم الردم</string>
+
+    <!-- Status -->
+    <string name="status_ok">✓ مناسب</string>
+    <string name="status_warning">⚠ تحقق</string>
+
+    <!-- Projects -->
+    <string name="new_project">مشروع جديد</string>
+    <string name="projects_empty_title">لا توجد مشاريع</string>
+    <string name="projects_empty_subtitle">اضغط على + لإنشاء مشروعك الأول</string>
+
+    <!-- AI -->
+    <string name="ai_input_hint">اسأل المهندس الذكي…</string>
+    <string name="send">إرسال</string>
+
+    <!-- Settings -->
+    <string name="settings_appearance">المظهر</string>
+    <string name="settings_dark_mode">الوضع الداكن</string>
+    <string name="settings_general">عام</string>
+    <string name="settings_language">اللغة</string>
+    <string name="settings_about">عن التطبيق</string>
+    <string name="lang_arabic">العربية</string>
+
+    <!-- Common -->
+    <string name="coming_soon">قريباً…</string>
+    <string name="error_fill_fields">يرجى ملء جميع الحقول</string>
+    <string name="export_saved">تم الحفظ: %s</string>
     <string name="app_name_en">iEngineer</string>
     <string name="module_structures">الإنشاءات</string>
     <string name="module_roads">الطرق</string>
