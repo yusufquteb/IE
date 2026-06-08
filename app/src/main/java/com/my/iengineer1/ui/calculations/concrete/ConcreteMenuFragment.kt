@@ -17,5 +17,14 @@ class ConcreteMenuFragment : BaseFragment<FragmentConcreteMenuBinding>() {
         binding.btnFooting.setOnClickListener {
             findNavController().navigate(R.id.action_concrete_to_footing)
         }
+        binding.btnColumn.setOnClickListener {
+            findNavController().navigate(R.id.action_concrete_to_column)
+        }
+        binding.btnBeam.setOnClickListener {
+            findNavController().navigate(R.id.action_concrete_to_beam)
+        }
+        binding.btnSlab.setOnClickListener {
+            findNavController().navigate(R.id.action_concrete_to_slab)
+        }
     }
 }

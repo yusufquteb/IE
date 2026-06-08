@@ -43,6 +43,18 @@
         <action
             android:id="@+id/action_concrete_to_footing"
             app:destination="@id/concreteFootingFragment" />
+
+        <action
+            android:id="@+id/action_concrete_to_column"
+            app:destination="@id/rcColumnFragment" />
+
+        <action
+            android:id="@+id/action_concrete_to_beam"
+            app:destination="@id/rcBeamFragment" />
+
+        <action
+            android:id="@+id/action_concrete_to_slab"
+            app:destination="@id/concreteSlabFragment" />
     </fragment>
 
     <fragment
@@ -50,6 +62,24 @@
         android:name="com.my.iengineer1.ui.calculations.concrete.ConcreteFootingFragment"
         android:label="@string/calc_concrete_footing"
         tools:layout="@layout/fragment_concrete_footing" />
+
+    <fragment
+        android:id="@+id/rcColumnFragment"
+        android:name="com.my.iengineer1.ui.calculations.concrete.RCColumnFragment"
+        android:label="@string/calc_rc_column"
+        tools:layout="@layout/fragment_rc_column" />
+
+    <fragment
+        android:id="@+id/rcBeamFragment"
+        android:name="com.my.iengineer1.ui.calculations.concrete.RCBeamFragment"
+        android:label="@string/calc_rc_beam"
+        tools:layout="@layout/fragment_rc_beam" />
+
+    <fragment
+        android:id="@+id/concreteSlabFragment"
+        android:name="com.my.iengineer1.ui.calculations.concrete.ConcreteSlabFragment"
+        android:label="@string/calc_concrete_slab"
+        tools:layout="@layout/fragment_concrete_slab" />
 
     <fragment
         android:id="@+id/roadsFragment"
@@ -92,10 +122,21 @@
         tools:layout="@layout/fragment_structural_menu" />
 
     <fragment
+        android:id="@+id/boqSummaryFragment"
+        android:name="com.my.iengineer1.ui.boq.BOQSummaryFragment"
+        android:label="@string/boq_summary"
+        tools:layout="@layout/fragment_boq_summary" />
+
+    <fragment
         android:id="@+id/projectsFragment"
         android:name="com.my.iengineer1.ui.projects.ProjectsFragment"
         android:label="@string/nav_projects"
-        tools:layout="@layout/fragment_projects" />
+        tools:layout="@layout/fragment_projects">
+
+        <action
+            android:id="@+id/action_projects_to_boq"
+            app:destination="@id/boqSummaryFragment" />
+    </fragment>
 
     <fragment
         android:id="@+id/aiFragment"
