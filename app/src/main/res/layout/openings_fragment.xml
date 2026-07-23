@@ -7,7 +7,9 @@
 	android:orientation="vertical"
 	android:importantForAccessibility="yes"
 	android:contentDescription="Openings input form"
-	android:theme="@style/AppTheme.DayNight">
+	android:theme="@style/AppTheme.DayNight"
+	tools:viewBindingIgnore="true"
+>
 	<com.google.android.material.card.MaterialCardView
 		android:id="@+id/cardview1"
 		android:layout_width="match_parent"

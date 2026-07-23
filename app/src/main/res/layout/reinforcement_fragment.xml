@@ -7,7 +7,9 @@
 	android:orientation="vertical"
 	android:importantForAccessibility="yes"
 	android:contentDescription="Reinforcement input form"
-	android:theme="@style/Theme.Material3.DayNight">
+	android:theme="@style/Theme.Material3.DayNight"
+	tools:viewBindingIgnore="true"
+>
 	<com.google.android.material.card.MaterialCardView
 		android:id="@+id/cardview1"
 		android:layout_width="match_parent"
