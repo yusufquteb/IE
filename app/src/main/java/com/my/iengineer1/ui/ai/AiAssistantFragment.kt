@@ -3,6 +3,7 @@ package com.my.iengineer1.ui.ai
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.fragment.app.viewModels
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.my.iengineer1.core.base.BaseFragment
 import com.my.iengineer1.core.extensions.toast
 import com.my.iengineer1.databinding.FragmentAiBinding
@@ -17,6 +18,7 @@ class AiAssistantFragment : BaseFragment<FragmentAiBinding>() {
         FragmentAiBinding.inflate(inflater, container, false)
 
     override fun setupViews() {
+        (binding.rvChat.layoutManager as? LinearLayoutManager)?.stackFromEnd = true
         binding.btnSend.setOnClickListener {
             val message = binding.etMessage.text?.toString()?.trim() ?: return@setOnClickListener
             if (message.isEmpty()) return@setOnClickListener
