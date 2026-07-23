@@ -13,6 +13,7 @@ import com.my.iengineer1.core.extensions.show
 import com.my.iengineer1.core.extensions.toast
 import com.my.iengineer1.databinding.FragmentConcreteFootingBinding
 import com.my.iengineer1.domain.engine.concrete.ConcreteFootingEngine
+import com.my.iengineer1.ui.calculations.ResultRowAdapter
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
