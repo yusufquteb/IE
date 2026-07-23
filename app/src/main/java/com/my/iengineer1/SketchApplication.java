@@ -7,10 +7,6 @@ import com.my.iengineer1.db.AppDatabase;
 // The real Application class is IEngineerApp (Hilt).
 public class SketchApplication extends Application {
 
-    public static SketchApplication getInstance() {
-        return (SketchApplication) IEngineerApp.getInstance();
-    }
-
     public static AppDatabase getDatabase() {
         return IEngineerApp.getDatabase();
     }
