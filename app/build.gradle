@@ -19,6 +19,13 @@ android {
 
         ksp {
             arg("room.schemaLocation", "$projectDir/schemas".toString())
+            arg("room.incremental", "false")
+        }
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments += ["room.incremental": "false"]
+            }
         }
     }
 
