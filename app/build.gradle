@@ -96,9 +96,10 @@ dependencies {
     // ── Room Database ────────────────────────────────────────────────────────
     implementation 'androidx.room:room-runtime:2.6.1'
     implementation 'androidx.room:room-ktx:2.6.1'
+    // KSP's Room processor (via XProcessing) handles the legacy Java DAOs too.
+    // Also declaring annotationProcessor here makes both configs generate the
+    // same *_Impl class for the Java DAOs, causing a FilerException collision.
     ksp 'androidx.room:room-compiler:2.6.1'
-    // Keep annotationProcessor for old Java DAOs during migration
-    annotationProcessor 'androidx.room:room-compiler:2.6.1'
 
     // ── Retrofit + OkHttp (AI API) ───────────────────────────────────────────
     implementation 'com.squareup.retrofit2:retrofit:2.11.0'
