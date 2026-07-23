@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.my.iengineer1.ui.home.HomeFragment"
+        android:label="@string/nav_home"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_home_to_search"
+            app:destination="@id/searchFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.my.iengineer1.ui.search.SearchFragment"
+        android:label="@string/search"
+        tools:layout="@layout/fragment_search" />
+
+    <fragment
+        android:id="@+id/calculationsFragment"
+        android:name="com.my.iengineer1.ui.calculations.CalculationsFragment"
+        android:label="@string/nav_calculations"
+        tools:layout="@layout/fragment_calculations">
+
+        <action
+            android:id="@+id/action_calculations_to_concrete"
+            app:destination="@id/concreteFragment" />
+
+        <action
+            android:id="@+id/action_calculations_to_roads"
+            app:destination="@id/roadsFragment" />
+
+        <action
+            android:id="@+id/action_calculations_to_sanitation"
+            app:destination="@id/sanitationFragment" />
+
+        <action
+            android:id="@+id/action_calculations_to_structural"
+            app:destination="@id/structuralFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/concreteFragment"
+        android:name="com.my.iengineer1.ui.calculations.concrete.ConcreteMenuFragment"
+        android:label="@string/calc_concrete"
+        tools:layout="@layout/fragment_concrete_menu">
+
+        <action
+            android:id="@+id/action_concrete_to_footing"
+            app:destination="@id/concreteFootingFragment" />
+
+        <action
+            android:id="@+id/action_concrete_to_column"
+            app:destination="@id/rcColumnFragment" />
+
+        <action
+            android:id="@+id/action_concrete_to_beam"
+            app:destination="@id/rcBeamFragment" />
+
+        <action
+            android:id="@+id/action_concrete_to_slab"
+            app:destination="@id/concreteSlabFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/concreteFootingFragment"
+        android:name="com.my.iengineer1.ui.calculations.concrete.ConcreteFootingFragment"
+        android:label="@string/calc_concrete_footing"
+        tools:layout="@layout/fragment_concrete_footing" />
+
+    <fragment
+        android:id="@+id/rcColumnFragment"
+        android:name="com.my.iengineer1.ui.calculations.concrete.RCColumnFragment"
+        android:label="@string/calc_rc_column"
+        tools:layout="@layout/fragment_rc_column" />
+
+    <fragment
+        android:id="@+id/rcBeamFragment"
+        android:name="com.my.iengineer1.ui.calculations.concrete.RCBeamFragment"
+        android:label="@string/calc_rc_beam"
+        tools:layout="@layout/fragment_rc_beam" />
+
+    <fragment
+        android:id="@+id/concreteSlabFragment"
+        android:name="com.my.iengineer1.ui.calculations.concrete.ConcreteSlabFragment"
+        android:label="@string/calc_concrete_slab"
+        tools:layout="@layout/fragment_concrete_slab" />
+
+    <fragment
+        android:id="@+id/roadsFragment"
+        android:name="com.my.iengineer1.ui.calculations.roads.RoadsMenuFragment"
+        android:label="@string/calc_roads"
+        tools:layout="@layout/fragment_roads_menu">
+
+        <action
+            android:id="@+id/action_roads_to_asphalt"
+            app:destination="@id/asphaltFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/asphaltFragment"
+        android:name="com.my.iengineer1.ui.calculations.roads.AsphaltFragment"
+        android:label="@string/calc_asphalt"
+        tools:layout="@layout/fragment_asphalt" />
+
+    <fragment
+        android:id="@+id/sanitationFragment"
+        android:name="com.my.iengineer1.ui.calculations.sanitation.SanitationMenuFragment"
+        android:label="@string/calc_sanitation"
+        tools:layout="@layout/fragment_sanitation_menu">
+
+        <action
+            android:id="@+id/action_sanitation_to_sewer"
+            app:destination="@id/sewerPipeFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/sewerPipeFragment"
+        android:name="com.my.iengineer1.ui.calculations.sanitation.SewerPipeFragment"
+        android:label="@string/calc_sewer_pipe"
+        tools:layout="@layout/fragment_sewer_pipe" />
+
+    <fragment
+        android:id="@+id/structuralFragment"
+        android:name="com.my.iengineer1.ui.calculations.structural.StructuralMenuFragment"
+        android:label="@string/calc_structural"
+        tools:layout="@layout/fragment_structural_menu" />
+
+    <fragment
+        android:id="@+id/boqSummaryFragment"
+        android:name="com.my.iengineer1.ui.boq.BOQSummaryFragment"
+        android:label="@string/boq_summary"
+        tools:layout="@layout/fragment_boq_summary" />
+
+    <fragment
+        android:id="@+id/projectsFragment"
+        android:name="com.my.iengineer1.ui.projects.ProjectsFragment"
+        android:label="@string/nav_projects"
+        tools:layout="@layout/fragment_projects">
+
+        <action
+            android:id="@+id/action_projects_to_boq"
+            app:destination="@id/boqSummaryFragment" />
+
+        <action
+            android:id="@+id/action_projects_to_detail"
+            app:destination="@id/projectDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/projectDetailFragment"
+        android:name="com.my.iengineer1.ui.projects.ProjectDetailFragment"
+        android:label="@string/project_detail_title"
+        tools:layout="@layout/fragment_project_detail">
+
+        <argument
+            android:name="projectId"
+            app:argType="long"
+            android:defaultValue="-1" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/aiFragment"
+        android:name="com.my.iengineer1.ui.ai.AiAssistantFragment"
+        android:label="@string/nav_ai"
+        tools:layout="@layout/fragment_ai" />
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.my.iengineer1.ui.settings.SettingsFragment"
+        android:label="@string/nav_settings"
+        tools:layout="@layout/fragment_settings" />
+
+</navigation>

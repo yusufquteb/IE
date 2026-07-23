@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
+	xmlns:tools="http://schemas.android.com/tools"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -9,7 +10,9 @@
     android:paddingEnd="12dp"
     android:paddingTop="16dp"
     android:paddingBottom="6dp"
-    android:layoutDirection="rtl">
+    android:layoutDirection="rtl"
+	tools:viewBindingIgnore="true"
+>
 
     <View
         android:layout_width="4dp"

@@ -5,7 +5,9 @@
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
 	android:orientation="vertical"
-	android:theme="@style/AppTheme">
+	android:theme="@style/AppTheme"
+	tools:viewBindingIgnore="true"
+>
 	<com.google.android.material.tabs.TabLayout
 		android:id="@+id/tablayout1"
 		android:layout_width="match_parent"
